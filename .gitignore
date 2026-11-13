@@ -1,11 +1,13 @@
 node_modules/
 dist/
 coverage/
+reports/raw/coverage/
+submission/
 .env
 .env.*
 !.env.example
 *.log
-reports/raw/coverage/
 .idea/
 .vscode/
 .DS_Store
+docs/source/

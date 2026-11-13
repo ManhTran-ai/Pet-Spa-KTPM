@@ -77,7 +77,9 @@ Hệ thống độc lập theo kiến trúc client–server (web React, REST API
 
 ### 2.4 Môi trường vận hành
 
-Trình duyệt Chrome, Firefox, Edge bản mới nhất; điện thoại Android/iOS. Công nghệ gợi ý: React, Node/Express, MySQL hoặc PostgreSQL **\[Cần chốt\]**.
+Trình duyệt Chrome, Firefox, Edge bản mới nhất; điện thoại Android/iOS. Công nghệ đã chốt tại Ngày 1: React + TypeScript + Vite (client), Node/Express + TypeScript (server), **PostgreSQL + Prisma** (CSDL). Xem ADR-01.
+
+> **[Đã chốt Ngày 1 — ADR-01]** CSDL chọn PostgreSQL + Prisma thay cho mục "MySQL hoặc PostgreSQL \[Cần chốt\]" của bản gốc. Lý do: FR-M4-05 cần giao dịch và khoá theo nhân viên; PostgreSQL là lựa chọn duy nhất trong hai giả định đáp ứng yêu cầu này.
 
 ### 2.5 Ràng buộc
 

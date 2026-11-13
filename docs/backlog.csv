@@ -29,7 +29,7 @@ BL-027,M5,Khách hủy lịch theo bảng quyết định SRS 8.2,Must,FR-M5-04,
 BL-028,M5,Khách đổi lịch tối đa 2 lần trước 12 giờ,Should,FR-M5-05,Ngân,Tài,Sprint 2,Todo,
 BL-029,M5,Tự động chuyển No-show sau 30 phút,Should,FR-M5-06,Ngân,Tài,Sprint 2,Todo,
 BL-030,M5,Từ chối chuyển trạng thái không hợp lệ,Must,FR-M5-07,Ngân,Tài,Sprint 1,Todo,
-BL-031,M6,Tính giá theo nhóm cân nặng phụ phí và nhiều dịch vụ,Must,FR-M6-01,Lộc,Ngân,Sprint 1,Todo,
+BL-031,M6,Tính giá theo nhóm cân nặng phụ phí và nhiều dịch vụ,Must,FR-M6-01,Lộc,Ngân,Sprint 1,Todo,Mức Must theo đề xuất SRS 10.B và TP-01 7; chờ nhóm chốt tại Inspection ngày 3 (CR-07)
 BL-032,M6,Áp mã khuyến mãi,Should,FR-M6-02,Lộc,Ngân,Sprint 1,Todo,
 BL-033,M6,Giảm giá thành viên VIP không cộng dồn,Should,FR-M6-03,Lộc,Ngân,Sprint 1,Todo,
 BL-034,M6,Đặt cọc và thanh toán qua cổng giả lập,Should,FR-M6-04,Lộc,Ngân,Sprint 1,Todo,

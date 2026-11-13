@@ -8,7 +8,15 @@ Trạng thái CR: `Chờ nhóm` | `Đã chấp nhận` | `Từ chối` | `Đã �
 
 | CR | Ngày mở | Người đề xuất | Tiêu đề | Yêu cầu liên quan | Trạng thái | Ghi chú |
 |---|---|---|---|---|---|---|
-| — | — | — | — | — | — | Chưa có CR nào được mở. Danh sách ứng viên sẽ ghi ở Ngày 3 sau khi đọc lại SRS. |
+| CHG-2026-11-13-01 | 2026-11-13 | Mạnh | Chốt CSDL trong §2.4 là PostgreSQL + Prisma | Mục 2.4 (không có ID yêu cầu) | Đã áp dụng | Theo ADR-01; ghi chú ngay dưới §2.4 trong `docs/srs.md`; không ảnh hưởng FR/NFR nên không cần cập nhật RTM |
+
+## Thay đổi đã áp dụng trên bản làm việc
+
+| Mã | Ngày | Nội dung | Căn cứ | Tác động RTM / test case |
+|---|---|---|---|---|
+| CHG-2026-11-13-01 | 2026-11-13 | SRS §2.4: "MySQL hoặc PostgreSQL \[Cần chốt\]" → "PostgreSQL + Prisma", có ghi chú giải thích | ADR-01 (xác nhận của người dùng ngày 2026-11-13) | Không có FR/NFR liên quan; RTM và test case không đổi |
+
+Ghi chú quy trình: đây là khoản trống của bản nháp v0.1 được điền trong Ngày 1 theo yêu cầu "rà SRS §1–2 và hoàn thiện nếu thiếu", nên không phải thay đổi yêu cầu sau baseline. Mọi thay đổi sau ngày 3 vẫn phải đi qua CR như SRS §10.C.
 
 ## Mẫu CR
 
@@ -35,3 +43,4 @@ Nguồn: `day-playbook.md` § Ngày 3 (danh sách mầm lỗi đã biết). Tr�
 | CR-04 | Không có cách KH thành VIP (BR-10) và cách tạo tài khoản NV/AD (FR-M1-01 chỉ đăng ký KH) | Chờ Ngày 3 |
 | CR-05 | BR-01 chưa nói lịch có kết thúc trước 18:00 hay không | Chờ Ngày 3 |
 | CR-06 | BR-05 (tối đa 3 lịch Pending/Confirmed cùng lúc) không có trong tiêu chí chấp nhận của FR-M4-01 | Chờ Ngày 3 |
+| CR-07 | FR-M6-01 (tính giá) đang để mức Should trong SRS §5.6, nhưng là điều kiện của FR-M4-01 (Must) và TP-01 §7 đề xuất nâng lên Must. Backlog đang xếp Must theo đề xuất này | Chờ Ngày 3 |

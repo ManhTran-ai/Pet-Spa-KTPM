@@ -4,6 +4,8 @@
 **Bản làm việc** · Phiên bản 0.1 (Ngày 1) · Ngày 2026-11-13 · Người lập: Mạnh (TV1)
 
 Nguồn: `docs/source/Kế hoạch Kiểm thử (Test Plan).md` (TP-01 v0.1). Bản làm việc này được chỉnh sửa theo change control; mọi thay đổi yêu cầu phải kèm CR trong `docs/change-requests.md` và cập nhật RTM cùng commit.
+
+**Xác nhận Ngày 1:** TP-01 v0.1 khớp stack đã chốt (ADR-01, ADR-06). Bổ sung mục 1.4 (stack và công nghệ) và ghi chú môi trường ở mục 6.1; các ngưỡng và tiêu chí trong bản gốc giữ nguyên. Phiên bản v1.0 sau Technical Review thiết kế (Ngày 5).
 # Kế hoạch Kiểm thử (Test Plan)
 
 ## Hệ thống Đặt lịch Dịch vụ Chăm sóc Thú cưng / Spa
@@ -36,6 +38,24 @@ Kế hoạch này xác định phạm vi, chiến lược, nguồn lực, lịch
 | Nghịch lý thuốc trừ sâu | Sau vòng 1 (ngày 11) rà soát, bổ sung test case mới và 60 phút kiểm thử khám phá |
 | Phụ thuộc bối cảnh | Ưu tiên đặt trùng lịch, tính tiền, phân quyền là các rủi ro đặc thù của hệ thống đặt lịch |
 | Ngụy biện không có lỗi | UAT ngày 13 để xác nhận hệ thống đúng nhu cầu người dùng |
+
+### 1.4 Stack và công nghệ đã chốt (Ngày 1)
+
+Test Plan này được viết cho stack đã chốt tại Ngày 1 (xem ADR-01 và ADR-06 trong `docs/decisions.md`):
+
+| Lớp | Công nghệ | Ghi chú kiểm thử |
+| --- | --- | --- |
+| Client | React + TypeScript + Vite + Bootstrap 5 + React Router | Test thủ công; responsive từ 360px (NFR-03) |
+| Server | Node LTS + Express + TypeScript strict, CommonJS | Jest + ts-jest + supertest |
+| CSDL | PostgreSQL + Prisma | `DATABASE_URL_TEST` riêng; bắt buộc vì FR-M4-05 cần giao dịch và khoá |
+| Xác thực | bcrypt + JWT 60 phút | NFR-02 |
+| Kiểm thử tự động | Jest (4 project: unit, integration, system, nfr) | Mỗi test tự động có nạn `[TC-Mx-nnn]` |
+| API regression | Postman + Newman (Ngân) | Bộ smoke và API cho yêu cầu Must |
+| Hiệu năng | k6 nếu cài được, nếu không `autocannon` (npm) | NFR-01, ngưỡng p95 ≤ 2 giây với 50 người dùng |
+| Lint, format | ESLint (+ typescript-eslint, `complexity` ≤ 10) + Prettier | NFR-06 |
+| Môi trường dev | Docker Compose (`postgres:16-alpine`) | `npm run db:up` / `db:down` |
+
+Các ngưỡng trong mục 5.2 và mục 10 giữ nguyên như bản gốc; không điều chỉnh theo stack.
 
 ## 2. Phạm vi kiểm thử
 
@@ -161,6 +181,8 @@ Tạm dừng khi build không chạy được, hoặc từ 30% test case bị ch
 | --- | --- | --- |
 | Dev | Máy cá nhân, cơ sở dữ liệu riêng của từng người | Từng thành viên |
 | Test / UAT | Một máy chủ chung, cơ sở dữ liệu tách biệt, build cập nhật theo ngày và đóng băng từ ngày 13 | Mạnh |
+
+Ghi chú Ngày 1: môi trường dùng Docker Compose cho PostgreSQL (ADR-06). Test dùng `DATABASE_URL_TEST` trỏ tới CSDL `petspa_test` trên cùng instance, dữ liệu được dọn giữa các file test. Chi tiết chuẩn bị môi trường và dữ liệu mẫu nằm ở `docs/test-data.md` (Ngày 9).
 
 ### 6.2 Công cụ
 

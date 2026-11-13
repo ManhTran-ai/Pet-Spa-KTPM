@@ -4,6 +4,8 @@
 **Bản làm việc** · Phiên bản 0.1 (Ngày 1) · Ngày 2026-11-13 · Người lập: Mạnh (TV1)
 
 Nguồn: `docs/source/Ma trận Truy xuất Yêu cầu (RTM).md` (RTM-01 v0.1). Bản làm việc này được chỉnh sửa theo change control; mọi thay đổi yêu cầu phải kèm CR trong `docs/change-requests.md` và cập nhật RTM cùng commit.
+
+**Xác nhận Ngày 1:** RTM-01 v0.1 khớp SRS-01 v0.1 (46 yêu cầu: 40 FR + 6 NFR; 175 test case dự kiến) và khớp phân công trong `docs/backlog.csv`. Bản máy đọc được `docs/rtm.csv` sẽ dựng ở Ngày 5.
 # Ma trận Truy xuất Yêu cầu (RTM)
 
 ## Hệ thống Đặt lịch Dịch vụ Chăm sóc Thú cưng / Spa

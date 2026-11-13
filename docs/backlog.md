@@ -51,3 +51,4 @@ Rủi ro: mất nhóm Must sẽ vi phạm Exit criteria (TP-01 §5.2: 100% yêu 
 - BL-014: API dịch vụ cho Admin thuộc M3 (Tài code theo RTM-01), giao diện quản trị thuộc M7 (Mạnh code). Mục này ghi rõ để tránh trùng lặp khi chia việc.
 - BL-041, BL-042: giao diện M4/M5 mới được giao cho Lộc tại quyết định của người dùng ngày 2026-11-13 (ADR-03).
 - BL-046: NFR-04 là Must; phần kiểm thử độ tin cậy do Ngân chịu trách nhiệm.
+- BL-031: SRS §5.6 để FR-M6-01 ở mức Should, còn TP-01 §7 và SRS §10.B đề xuất nâng lên Must. Backlog xếp Must theo đề xuất này; việc nâng mức chính thức cần nhóm chốt tại Inspection Ngày 3 (CR-07 trong `docs/change-requests.md`).

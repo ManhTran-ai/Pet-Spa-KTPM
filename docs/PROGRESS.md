@@ -19,7 +19,7 @@ Phiên này đại diện DUY NHẤT cho Mạnh.
 
 | Ngày | Trạng thái | Gate | Việc còn dở | HUMAN đang chờ |
 |---|---|---|---|---|
-| 1 | TODO | | | |
+| 1 | DONE-HUMAN-PENDING | Đạt (xem `reports/gates/day-01.md`) | Khảo sát 3–5 tiệm spa (Lộc), bảng Jira/Trello, họp kick-off chốt `[Cần chốt]` | Họp kick-off; tạo bảng Jira/Trello; khảo sát spa |
 | 2 | TODO | | | |
 | 3 | TODO | | | |
 | 4 | TODO | | | |
@@ -43,3 +43,10 @@ Trạng thái: `TODO` | `IN-PROGRESS` | `DONE` | `DONE-HUMAN-PENDING` | `BLOCKED
 - Lệnh đã chạy và kết quả thật: `git status` → `fatal: not a git repository` (trước khởi tạo); `node -v` → v26.7.0; `npm -v` → 11.19.0.
 - Quyết định/CR mới: ADR-01..ADR-05 (xem `docs/decisions.md`).
 - Còn dở / HUMAN: chưa bắt đầu Ngày 1 (chờ lệnh "NGÀY 1").
+
+### Phiên 1 · Ngày 1 · Vai DEV + tài liệu · 2026-11-13
+- Đã làm: bản làm việc `docs/srs.md`, `docs/test-plan.md`, `docs/rtm.md` (có đầu tệp phiên bản/ngày, có xác nhận khớp stack); `docs/backlog.md` + `docs/backlog.csv` (48 mục: 24 Must, 20 Should, 4 Could); `docs/survey-template.md` mẫu trống; cập nhật `docs/decisions.md` (ADR-01..06) và `docs/change-requests.md` (CHG-2026-11-13-01, thêm ứng viên CR-07); hạ tầng monorepo npm workspaces `client`/`server` với TypeScript strict, ESLint 9 + Prettier, Jest + ts-jest 4 project; `.env.example`, `docker-compose.yml`, `.github/workflows/ci.yml`, `CONTRIBUTING.md`; 9 script khung `scripts/*.mjs`; khung mã `server/src`, `client/src`, 1 test mẫu `server/tests/unit/health.test.ts`; rà SRS §1–2 và điền khoản trống §2.4 (CSDL) kèm ghi chú ADR-01.
+- Lệnh đã chạy và kết quả thật: `npm install` → 546 gói, exit 0 (cảnh báo audit 17 lỗ hổng: 7 low, 9 moderate, 1 high; cảnh báo install-scripts cho esbuild); `npm run lint` → 0 lỗi, exit 0; `npm run typecheck` → server + client sạch, exit 0; `npm test` → unit 1 suite 1 test Pass, integration/system 0 test, exit 0; `npm run build` → server tsc + client vite build thành công, exit 0; `npm run infra:check` → "Cấu hình CI và docker-compose hợp lệ", exit 0; `docker compose config --quiet` → exit 0. Chi tiết: `reports/gates/day-01.md`, file thô `reports/raw/day-01-*.txt`.
+- Quyết định/CR mới: ADR-06 (Docker cho PostgreSQL); ADR-01..05 bổ sung mục "Xác nhận" theo quyết định của người dùng ngày 2026-11-13; CHG-2026-11-13-01 (SRS §2.4 chốt PostgreSQL + Prisma); CR-07 thêm vào danh sách ứng viên (nâng FR-M6-01 lên Must).
+- Phát hiện: `npm audit` báo 1 lỗ hổng mức high trong cây phụ thuộc, chưa xử lý bằng `audit fix --force`; sẽ rà ở Ngày 9. Chưa có `server/prisma/schema.prisma` nên `db:migrate`/`db:seed` mới chỉ là khai báo.
+- Còn dở / HUMAN: họp kick-off (chốt giá trị `[Cần chốt]`), tạo bảng Jira/Trello, Lộc khảo sát 3–5 tiệm spa và điền phiếu — cả ba là `HUMAN-PENDING`.
