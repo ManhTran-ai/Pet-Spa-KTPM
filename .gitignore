@@ -10,3 +10,5 @@ submission/
 .idea/
 .vscode/
 .DS_Store
+.cursor/
+MASTER_PROMPT.md
