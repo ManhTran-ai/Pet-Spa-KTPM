@@ -32,6 +32,7 @@
     "tc:sync": "node scripts/tc-sync.mjs",
     "tc:record": "node scripts/tc-record.mjs",
     "rtm:check": "node scripts/rtm-check.mjs",
+    "req:check": "node scripts/req-check.mjs",
     "exit:check": "node scripts/exit-check.mjs",
     "report:static": "node scripts/static-analysis.mjs",
     "docs:openapi": "node scripts/openapi-check.mjs",

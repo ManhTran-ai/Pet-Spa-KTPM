@@ -1,0 +1,47 @@
+id,type,module,priority,uc,title,code_owner,test_owner
+FR-M1-01,FR,M1,Must,UC-01,Đăng ký tài khoản khách hàng bằng họ tên email SĐT và mật khẩu,Mạnh,Lộc
+FR-M1-02,FR,M1,Must,UC-01,Đăng nhập bằng email và mật khẩu cấp JWT hết hạn 60 phút,Mạnh,Lộc
+FR-M1-03,FR,M1,Must,UC-01,Đăng xuất thu hồi token và hết hạn phiên,Mạnh,Lộc
+FR-M1-04,FR,M1,Should,UC-01,Đổi mật khẩu và quên mật khẩu với liên kết đặt lại giả lập,Mạnh,Lộc
+FR-M1-05,FR,M1,Must,UC-01,Phân quyền theo vai trò KH NV AD và kiểm tra quyền sở hữu đối tượng,Mạnh,Lộc
+FR-M1-06,FR,M1,Should,UC-01,Khóa tạm tài khoản 15 phút sau 5 lần đăng nhập sai liên tiếp,Mạnh,Lộc
+FR-M2-01,FR,M2,Must,UC-02,Thêm hồ sơ thú cưng với đầy đủ thuộc tính và ghi chú sức khỏe,Tài,Mạnh
+FR-M2-02,FR,M2,Must,UC-02,Xem danh sách và chi tiết thú cưng của chính mình,Tài,Mạnh
+FR-M2-03,FR,M2,Must,UC-02,Sửa thông tin thú cưng theo cùng ràng buộc khi thêm,Tài,Mạnh
+FR-M2-04,FR,M2,Must,UC-02,Xóa thú cưng khi thỏa BR-15 nếu không có lịch đang hoạt động,Tài,Mạnh
+FR-M2-05,FR,M2,Should,UC-02,Giới hạn tối đa 5 thú cưng mỗi tài khoản,Tài,Mạnh
+FR-M3-01,FR,M3,Must,UC-03,Xem danh mục dịch vụ đang bật gồm tên mô tả thời lượng và giá,Tài,Mạnh
+FR-M3-02,FR,M3,Must,UC-03,Bảng giá theo nhóm cân nặng S M L XL và theo loài,Tài,Mạnh
+FR-M3-03,FR,M3,Must,UC-08,Admin thêm sửa và ẩn dịch vụ API ở M3 giao diện ở M7,Mạnh,Mạnh
+FR-M3-04,FR,M3,Could,UC-03,Tìm kiếm và lọc dịch vụ theo loài và tên không phân biệt hoa thường,Tài,Mạnh
+FR-M4-01,FR,M4,Must,UC-04,Đặt lịch chọn thú cưng 1-5 dịch vụ ngày giờ và nhân viên tùy chọn,Ngân,Tài
+FR-M4-02,FR,M4,Must,UC-04,Hiển thị slot trống theo giờ làm và tổng thời lượng dịch vụ,Ngân,Tài
+FR-M4-03,FR,M4,Must,UC-04,Chặn đặt trùng và chồng lịch của cùng một nhân viên,Ngân,Tài
+FR-M4-04,FR,M4,Must,UC-04,Giới hạn thời điểm đặt trước từ 2 giờ đến 30 ngày theo BR-03,Ngân,Tài
+FR-M4-05,FR,M4,Must,UC-04,Chống đặt trùng khi nhiều khách cùng chọn một slot theo BR-17,Ngân,Tài
+FR-M4-06,FR,M4,Should,UC-04,Tự gán nhân viên rảnh có ít lịch nhất khi khách không chọn nhân viên,Ngân,Tài
+FR-M4-07,FR,M4,Should,UC-05,Khách hàng xem lịch sử và chi tiết lịch hẹn của chính mình,Ngân,Tài
+FR-M4-08,FR,M4,Should,UC-06,Nhân viên xem lịch làm việc của mình theo ngày và theo tuần,Ngân,Tài
+FR-M5-01,FR,M5,Must,UC-06,Quản lý trạng thái lịch hẹn theo bảng chuyển trạng thái và ghi log thao tác,Ngân,Tài
+FR-M5-02,FR,M5,Must,UC-06,Nhân viên được gán hoặc Admin xác nhận lịch ở trạng thái Pending,Ngân,Tài
+FR-M5-03,FR,M5,Must,UC-06,Nhân viên bắt đầu và hoàn thành dịch vụ theo đúng trạng thái trước đó,Ngân,Tài
+FR-M5-04,FR,M5,Must,UC-05,Khách hàng hủy lịch theo bảng quyết định hủy R1 đến R5 ở SRS mục 8.2,Ngân,Tài
+FR-M5-05,FR,M5,Should,UC-05,Khách hàng đổi lịch tối đa 2 lần và trước giờ hẹn ít nhất 12 giờ theo BR-07,Ngân,Tài
+FR-M5-06,FR,M5,Should,UC-06,Tự động chuyển lịch sang No-show quá 30 phút sau giờ hẹn theo BR-12,Ngân,Tài
+FR-M5-07,FR,M5,Must,UC-05,Từ chối chuyển trạng thái không hợp lệ với mã lỗi 409,Ngân,Tài
+FR-M6-01,FR,M6,Must,UC-04,Tính giá theo nhóm cân nặng phụ phí lông dài và cộng nhiều dịch vụ theo BR-18,Lộc,Ngân
+FR-M6-02,FR,M6,Should,UC-04,Áp mã khuyến mãi tối đa 1 mã mỗi lịch có kiểm tra hạn và giá trị tối thiểu,Lộc,Ngân
+FR-M6-03,FR,M6,Should,UC-07,Giảm giá thành viên VIP 10 phần trăm không cộng dồn với mã khuyến mãi,Lộc,Ngân
+FR-M6-04,FR,M6,Should,UC-04,Đặt cọc 30 phần trăm và thanh toán qua cổng giả lập có xử lý idempotent,Lộc,Ngân
+FR-M6-05,FR,M6,Should,UC-07,Xuất hóa đơn nêu dịch vụ phụ phí giảm giá cọc và số còn lại,Lộc,Ngân
+FR-M6-06,FR,M6,Could,UC-06,Nhắc lịch trước 24 giờ và ghi log thông báo xác nhận hủy đổi lịch,Lộc,Ngân
+FR-M7-01,FR,M7,Should,UC-08,Admin quản lý nhân viên gồm thêm sửa khóa giờ làm và ngày nghỉ,Mạnh,Lộc
+FR-M7-02,FR,M7,Should,UC-08,Admin quản lý mã khuyến mãi gồm hạn dùng giá trị tối thiểu và trạng thái bật tắt,Mạnh,Lộc
+FR-M7-03,FR,M7,Could,UC-08,Báo cáo số lịch theo ngày tuần dịch vụ và doanh thu lấy từ lịch Completed,Mạnh,Lộc
+FR-M7-04,FR,M7,Could,UC-08,Admin xem và điều chỉnh mọi lịch hẹn kèm ghi nhật ký thao tác,Mạnh,Lộc
+NFR-01,NFR,NFR,Should,,Hiệu năng p95 không quá 2 giây với 50 người dùng đồng thời và LCP trang chủ không quá 3 giây,Lộc,Lộc
+NFR-02,NFR,NFR,Must,,Bảo mật bcrypt chống SQL injection XSS truy cập chéo dữ liệu JWT có hạn và không lộ stack trace,Mạnh,Mạnh
+NFR-03,NFR,NFR,Should,,Khả năng sử dụng đặt lịch trong tối đa 5 bước lỗi nêu rõ trường và dùng được từ 360px,Tài,Tài
+NFR-04,NFR,NFR,Must,,Độ tin cậy không đặt trùng khi đồng thời không mất dữ liệu khi thanh toán lỗi và chịu dữ liệu bất thường,Ngân,Ngân
+NFR-05,NFR,NFR,Should,,Tương thích Chrome Firefox Edge bản mới nhất và trình duyệt di động,Tài,Tài
+NFR-06,NFR,NFR,Should,,Khả năng bảo trì ESLint không lỗi error V(G) hàm lõi không quá 10 và độ phủ theo Test Plan,Mạnh,Tài

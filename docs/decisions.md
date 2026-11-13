@@ -13,6 +13,8 @@ Mỗi quyết định có: bối cảnh, quyết định, lý do, hệ quả, tr
 | ADR-04 | Mock `PaymentGateway` và `Notifier` dựng sớm | 2026-11-13 | Đã chốt |
 | ADR-05 | Hạ tầng repo/Git/ESLint/Jest và rà SRS §1–2 chuyển từ Tài sang Mạnh | 2026-11-13 | Đã chốt |
 | ADR-06 | Dùng Docker cho PostgreSQL ở môi trường dev | 2026-11-13 | Đã chốt |
+| ADR-07 | Mã lỗi khi người gọi không sở hữu đối tượng là 403 FORBIDDEN | 2026-11-13 | Đã chốt (chờ nhóm xác nhận ở kick-off) |
+| ADR-08 | Ngày nghỉ của nhân viên và cách tính bộ đếm đăng nhập sai | 2026-11-13 | Đã chốt (chờ nhóm xác nhận ở kick-off) |
 
 ---
 
@@ -80,3 +82,24 @@ Mỗi quyết định có: bối cảnh, quyết định, lý do, hệ quả, tr
 - **Lý do:** người dùng xác nhận ngày 2026-11-13 có dùng Docker; giúp 4 thành viên có cùng phiên bản PostgreSQL mà không cài Postgres trên từng máy.
 - **Hệ quả:** mỗi thành viên cần Docker Desktop; nếu một người không có Docker thì dùng PostgreSQL cài sẵn và chỉ cần đặt `DATABASE_URL`/`DATABASE_URL_TEST` trong `.env`. Việc cài Docker là `HUMAN-PENDING` (không tự cài phần mềm ngoài npm).
 - **Trạng thái:** Đã chốt.
+
+## ADR-07: Mã lỗi khi người gọi không sở hữu đối tượng là 403 FORBIDDEN
+
+- **Bối cảnh:** SRS §3.2 quy định 403 là "không đủ quyền" và 404 là "không tìm thấy", nhưng chưa nêu trường hợp người dùng đã đăng nhập hợp lệ nhưng yêu cầu một đối tượng thuộc tài khoản khác (truy cập chéo dữ liệu). FR-M1-05 và NFR-02 đều yêu cầu chặn truy cập chéo nhưng không chốt mã lỗi.
+- **Quyết định:** khi tài khoản đã xác thực nhưng không sở hữu đối tượng, API trả **HTTP 403 với mã `FORBIDDEN`** — không dùng 404.
+- **Lý do:** 404 thường bị hiểu là "đối tượng không tồn tại", gây nhầm lẫn cho lập trình viên và cho người dùng; 403 phản ánh đúng nguyên nhân là thiếu quyền, đồng thời không rò rỉ nội dung dữ liệu của tài khoản khác (phản hồi không chứa dữ liệu). Quyết định này chỉ áp dụng cho **đối tượng có thật**; đối tượng không tồn tại thực sự vẫn trả 404 `NOT_FOUND`.
+- **Hệ quả:** FR-M1-05, FR-M2-02, FR-M4-07 và NFR-02.4 dùng 403; test case của Lộc (M1), Mạnh (M2) và Tài (M4) phải kỳ vọng 403 cho các trường hợp truy cập chéo.
+- **Xác nhận:** người dùng chỉ định giữ mặc định khi chưa có quyết định khác; mục này chưa được nhóm xác nhận riêng.
+- **Trạng thái:** Đã chốt (chờ nhóm xác nhận ở họp kick-off).
+
+## ADR-08: Ngày nghỉ của nhân viên và cách tính bộ đếm đăng nhập sai
+
+- **Bối cảnh:** BR-01 để trống phần "ngày nghỉ"; FR-M7-01 yêu cầu Admin cấu hình ngày nghỉ nhưng chưa nêu ảnh hưởng tới lịch đã có. BR-16 nói "sai 5 lần liên tiếp" nhưng chưa nêu cách đặt lại bộ đếm.
+- **Quyết định:**
+  1. Giờ làm việc 08:00–18:00 mỗi ngày (BR-01). Admin cấu hình ngày nghỉ theo từng nhân viên; **ngày nghỉ chỉ chặn tạo lịch mới**, lịch `Pending`/`Confirmed` đã có vẫn tồn tại nhưng thao tác của Admin lên lịch đó phải trả kèm cảnh báo.
+  2. Khoảng giờ làm riêng của nhân viên nằm trong khung 08:00–18:00; `work_end ≤ work_start` là dữ liệu không hợp lệ.
+  3. Bộ đếm `failed_attempts` tính **riêng theo tài khoản**, tăng 1 mỗi lần đăng nhập sai, và **được đặt lại về 0 khi đăng nhập thành công**; đạt 5 lần thì khóa 15 phút tính từ thời điểm lần sai thứ 5.
+- **Lý do:** cần một quy tắc duy nhất để thiết kế test case M1 (FR-M1-06) và M7 (FR-M7-01) mà không phụ thuộc vào việc nhóm đã họp; các giá trị mặc định đã được nhóm đồng ý giữ theo ADR-02.
+- **Hệ quả:** FR-M1-06, FR-M7-01, BR-01, BR-16; FR-M4-02 (slot trống không hiển thị ngày nghỉ của NV).
+- **Xác nhận:** người dùng chỉ định giữ mặc định khi chưa có quyết định khác; mục này chưa được nhóm xác nhận riêng.
+- **Trạng thái:** Đã chốt (chờ nhóm xác nhận ở họp kick-off).

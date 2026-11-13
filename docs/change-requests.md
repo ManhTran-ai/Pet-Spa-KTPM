@@ -15,8 +15,11 @@ Trạng thái CR: `Chờ nhóm` | `Đã chấp nhận` | `Từ chối` | `Đã �
 | Mã | Ngày | Nội dung | Căn cứ | Tác động RTM / test case |
 |---|---|---|---|---|
 | CHG-2026-11-13-01 | 2026-11-13 | SRS §2.4: "MySQL hoặc PostgreSQL \[Cần chốt\]" → "PostgreSQL + Prisma", có ghi chú giải thích | ADR-01 (xác nhận của người dùng ngày 2026-11-13) | Không có FR/NFR liên quan; RTM và test case không đổi |
+| CHG-2026-11-13-02 | 2026-11-13 | SRS §5.1a, §5.7a, §9a, §9b: bổ sung tiêu chí chấp nhận đo được cho M1, M7 và toàn bộ 6 NFR. Làm rõ 10 tiêu chí còn mơ hồ ở M2–M6. Chuyển 5 mục `[Cần chốt]` thành `[Cần chốt → ADR-xx]`. SRS v0.1 → v0.2 | Yêu cầu Ngày 2 (Mạnh) + ADR-02, ADR-07, ADR-08 | Không thêm/bớt ID yêu cầu: `docs/requirements.csv` giữ 46 dòng (40 FR + 6 NFR); RTM-01 giữ nguyên danh sách yêu cầu; test case chưa viết nên không cần sửa |
 
 Ghi chú quy trình: đây là khoản trống của bản nháp v0.1 được điền trong Ngày 1 theo yêu cầu "rà SRS §1–2 và hoàn thiện nếu thiếu", nên không phải thay đổi yêu cầu sau baseline. Mọi thay đổi sau ngày 3 vẫn phải đi qua CR như SRS §10.C.
+
+Ghi chú CHG-2026-11-13-02: đây là thay đổi **trước baseline** (baseline v1.0 dự kiến ngày 3) nên không cần nhóm biểu quyết riêng; tuy nhiên các giá trị mặc định nêu trong ADR-07 và ADR-08 vẫn phải được nhóm xác nhận tại họp kick-off.
 
 ## Mẫu CR
 
@@ -44,3 +47,5 @@ Nguồn: `day-playbook.md` § Ngày 3 (danh sách mầm lỗi đã biết). Tr�
 | CR-05 | BR-01 chưa nói lịch có kết thúc trước 18:00 hay không | Chờ Ngày 3 |
 | CR-06 | BR-05 (tối đa 3 lịch Pending/Confirmed cùng lúc) không có trong tiêu chí chấp nhận của FR-M4-01 | Chờ Ngày 3 |
 | CR-07 | FR-M6-01 (tính giá) đang để mức Should trong SRS §5.6, nhưng là điều kiện của FR-M4-01 (Must) và TP-01 §7 đề xuất nâng lên Must. Backlog đang xếp Must theo đề xuất này | Chờ Ngày 3 |
+| CR-08 | FR-M7-04 (ghi nhật ký thao tác của Admin) đang để mức Could trong SRS §5.7, nhưng là cơ sở cho nghiệp vụ `audit_log` của FR-M7-01…03 và cho yêu cầu an toàn dữ liệu. Đề xuất nâng lên Should | Chờ Ngày 3 |
+| CR-09 | Bảng §9 không có cột ưu tiên cho NFR; §9a đã làm rõ ngưỡng đạt của NFR-02 (không còn phát hiện Critical/High theo TP-01 §9.5) và §9b làm rõ 5 NFR còn lại | Chờ Ngày 3 |
