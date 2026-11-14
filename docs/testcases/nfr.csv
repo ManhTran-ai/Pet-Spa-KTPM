@@ -1,0 +1,45 @@
+TC_ID,Requirement_ID,System,Title,Priority,Technique,Type,Owner,Status
+TC-NFR-01-001,NFR-01,ALL,Lighthouse Performance mobile trên trang chủ đạt thang điểm ≥ 70,High,Lighthouse,Auto,Ngân,Chưa thực thi
+TC-NFR-01-002,NFR-01,ALL,Lighthouse Performance mobile trên trang đặt lịch đạt thang điểm ≥ 70,High,Lighthouse,Auto,Ngân,Chưa thực thi
+TC-NFR-01-003,NFR-01,ALL,DOMContentLoaded trong ≤ 3 giây trên mạng 4G mô phỏng,High,Use case,Auto,Ngân,Chưa thực thi
+TC-NFR-01-004,NFR-01,ALL,"LCP ≤ 2,5 giây trên mạng 4G mô phỏng",High,Use case,Auto,Ngân,Chưa thực thi
+TC-NFR-01-005,NFR-01,ALL,"LCP ≤ 2,5 giây trên trang đặt lịch T1 và T2",High,Use case,Auto,Ngân,Chưa thực thi
+TC-NFR-01-006,NFR-01,ALL,k6 tải đọc 10 VU trong 1 phút không gây lỗi 5xx,Medium,Use case,Auto,Ngân,Chưa thực thi
+TC-NFR-02-001,NFR-02,ALL,Site bật HTTPS và có HSTS,Critical,Use case,Auto,Mạnh,Fail
+TC-NFR-02-002,NFR-02,ALL,Trang trả về X-Content-Type-Options: nosniff,Critical,Use case,Auto,Mạnh,Fail
+TC-NFR-02-003,NFR-02,ALL,Trang có X-Frame-Options hoặc CSP frame-ancestors,Critical,Use case,Auto,Mạnh,Fail
+TC-NFR-02-004,NFR-02,ALL,Trang có Referrer-Policy,High,Use case,Auto,Mạnh,Fail
+TC-NFR-02-005,NFR-02,ALL,Cookie phiên có cờ Secure và HttpOnly,Critical,Use case,Auto,Mạnh,Pass
+TC-NFR-02-006,NFR-02,ALL,Không có cookie phiên không mã hoá dạng sessionid,Critical,Use case,Manual,Mạnh,Chưa thực thi
+TC-NFR-02-007,NFR-02,ALL,"Payload script trong tên bé hiển thị dạng văn bản, không có hộp thoại alert",Critical,Use case,Manual,Mạnh,Chưa thực thi
+TC-NFR-02-008,NFR-02,ALL,"URL sai trả trang lỗi thân thiện, không lộ stack trace",Critical,Use case,Auto,Mạnh,Pass
+TC-NFR-02-009,NFR-02,ALL,TLS bật và không nhận được lỗi bắt tay,Critical,Use case,Manual,Mạnh,Chưa thực thi
+TC-NFR-02-010,NFR-02,ALL,"Không rò rỉ khoá API, khoá xác thực hoặc chuỗi kết nối",Critical,Use case,Manual,Mạnh,Chưa thực thi
+TC-NFR-02-011,NFR-02,ALL,Không rò rỉ email hay SĐT thực của khách hàng trong HTML nguồn,High,Use case,Manual,Mạnh,Chưa thực thi
+TC-NFR-02-012,NFR-02,ALL,Form giữ chỗ không gửi tới URL bên thứ ba,Critical,Use case,Manual,Mạnh,Chưa thực thi
+TC-NFR-03-001,NFR-03,ALL,Hoàn tất luồng tính giá trong ≤ 5 thao tác,High,Use case,Manual,Tài,Chưa thực thi
+TC-NFR-03-002,NFR-03,ALL,Thông báo lỗi nêu rõ tên trường bị lỗi,High,Use case,Manual,Tài,Chưa thực thi
+TC-NFR-03-003,NFR-03,ALL,Nhãn các trường form nhất quán giữa các trang,Medium,Use case,Manual,Tài,Chưa thực thi
+TC-NFR-03-004,NFR-03,ALL,Điều hướng và thao tác form được bằng bàn phím,High,Use case,Manual,Tài,Chưa thực thi
+TC-NFR-04-001,NFR-04,ALL,Chức năng tính giá chạy đúng trên Chrome,High,UC,Auto,Tài,Pass
+TC-NFR-04-002,NFR-04,ALL,Chức năng tính giá chạy đúng trên Firefox,High,UC,Manual,Tài,Chưa thực thi
+TC-NFR-04-003,NFR-04,ALL,Chức năng tính giá chạy đúng trên Edge,High,UC,Manual,Tài,Chưa thực thi
+TC-NFR-04-004,NFR-04,ALL,Chức năng tính giá chạy đúng trên Safari,High,UC,Manual,Tài,Chưa thực thi
+TC-NFR-04-005,NFR-04,ALL,Không có cuộn ngang ở màn hình 360px trên trang đặt lịch,High,Use case,Auto,Tài,Fail
+TC-NFR-04-006,NFR-04,ALL,Chức năng tính giá chạy đúng trên khung nhìn di động 360x740,High,UC,Auto,Tài,Pass
+TC-NFR-05-001,NFR-05,ALL,Gửi form 3 lần liên tiếp không tạo bản ghi trùng,High,Use case,Manual,Ngân,Chưa thực thi
+TC-NFR-05-002,NFR-05,ALL,"Lỗi mạng hiển thị thông báo, không treo trang",High,Use case,Manual,Ngân,Chưa thực thi
+TC-NFR-05-003,NFR-05,ALL,Tải lại trang giữ nguyên trạng thái đã chọn,High,Use case,Manual,Ngân,Chưa thực thi
+TC-NFR-05-004,NFR-05,ALL,Tải lại trang trong luồng wizard không làm mất lựa chọn,High,Use case,Manual,Ngân,Chưa thực thi
+TC-NFR-06-001,NFR-06,ALL,axe-core không có vi phạm mức critical,Critical,Accessibility,Auto,Lộc,Fail
+TC-NFR-06-002,NFR-06,ALL,"Mọi vùng chữ đạt tương phản ≥ 4,5:1",High,Accessibility,Auto,Lộc,Fail
+TC-NFR-06-003,NFR-06,ALL,Mọi trường form có nhãn gắn liền,High,Accessibility,Auto,Lộc,Pass
+TC-NFR-06-004,NFR-06,ALL,Mọi ảnh nội dung có thuộc tính alt,Medium,Accessibility,Auto,Lộc,Fail
+TC-NFR-06-005,NFR-06,ALL,Mỗi trang có đúng một tiêu đề h1,Medium,Accessibility,Auto,Lộc,Fail
+TC-NFR-06-006,NFR-06,ALL,Điều hướng trang bằng bàn phím đến hết các phần tử tương tác,High,Accessibility,Manual,Lộc,Chưa thực thi
+TC-NFR-07-001,NFR-07,ALL,Mỗi trang có một thẻ title duy nhất và không rỗng,High,SEO,Auto,Lộc,Pass
+TC-NFR-07-002,NFR-07,ALL,Mỗi trang có thẻ meta description không rỗng,High,SEO,Auto,Lộc,Pass
+TC-NFR-07-003,NFR-07,ALL,Thẻ html có thuộc tính lang,Medium,SEO,Auto,Lộc,Pass
+TC-NFR-07-004,NFR-07,ALL,sitemap.xml tồn tại và không chặn trang quan trọng,Medium,SEO,Auto,Lộc,Fail
+TC-NFR-07-005,NFR-07,ALL,robots.txt tồn tại và không chặn toàn bộ site,Medium,SEO,Auto,Lộc,Fail
+TC-NFR-07-006,NFR-07,ALL,"Thẻ Open Graph có title, description và image",Low,SEO,Auto,Lộc,Fail

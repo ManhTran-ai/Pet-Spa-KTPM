@@ -1,0 +1,7 @@
+﻿System,Rule_ID,Impact,Severity,Occurrences,Help_URL
+T1,color-contrast,serious,serious,40,https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright
+T2,color-contrast,serious,serious,3,https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright
+T3,image-alt,critical,critical,49,https://dequeuniversity.com/rules/axe/4.14/image-alt?application=playwright
+T3,list,serious,serious,1,https://dequeuniversity.com/rules/axe/4.14/list?application=playwright
+T3,meta-viewport,moderate,moderate,1,https://dequeuniversity.com/rules/axe/4.14/meta-viewport?application=playwright
+T3,scrollable-region-focusable,serious,serious,1,https://dequeuniversity.com/rules/axe/4.14/scrollable-region-focusable?application=playwright

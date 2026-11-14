@@ -1,54 +1,161 @@
-# Backlog sản phẩm (MoSCoW)
+# Backlog công việc kiểm thử (MoSCoW)
 
-Phiên bản 0.1 · Ngày 2026-11-13 · Người lập: Mạnh (TV1) · Nguồn: SRS-01 §2.2 (mức module), SRS-01 §5 (ưu tiên từng FR), SRS-01 §9 (NFR)
+Phiên bản 1.0 · Ngày 2026-11-13 · Người lập: Mạnh (TV1) · Nguồn: SRS-01 v1.0 và bộ test case `docs/testcases/*.csv`
 
-Bản máy đọc được để nhập vào Jira/Trello: `docs/backlog.csv` (48 dòng). Quy ước mã: `BL-nnn`.
+Bản máy đọc được: `docs/backlog.csv` (105 mục). Quy ước mã: `BL-nnn`.
+
+> Backlog này thay thế backlog của hệ thống tự xây (đã archive). Mỗi mục là **một nhóm test case cho một yêu cầu trên một hệ thống đích**, quy đổi trực tiếp từ RTM-01.
 
 ## 1. Quy tắc xếp mức
 
-- **Must**: bắt buộc, không được cắt (file kế hoạch gốc §7: chỉ cắt từ Could/Should).
-- **Should**: nên có, cắt được nếu thiếu thời gian.
-- **Could**: có thể bỏ.
-- Mức lấy từ ưu tiên của từng FR trong SRS §5 và §9; với M7 (Should/Could) áp dụng mức riêng của từng FR: FR-M7-01/02 = Should, FR-M7-03/04 = Could.
+- **Must**: yêu cầu mức Must trong SRS-01, hoặc test case mức Critical — bắt buộc thực thi, không được cắt.
+- **Should**: yêu cầu Should hoặc test case High — cắt được nếu thiếu thời gian, nhưng phải ghi rõ lý do trong báo cáo.
+- **Could**: yêu cầu Could hoặc test case Medium/Low — có thể bỏ.
+- **Không bao giờ cắt nhóm Must**: vi phạm Exit criteria của Test Plan (100% yêu cầu Must có ít nhất 1 test case đã thực thi).
 
 ## 2. Tổng hợp
 
-| Mức | Số mục | Mã |
-|---|---|---|
-| Must | 24 | BL-001, BL-002, BL-003, BL-005, BL-007, BL-008, BL-009, BL-010, BL-012, BL-013, BL-014, BL-016, BL-017, BL-018, BL-019, BL-020, BL-024, BL-025, BL-026, BL-027, BL-030, BL-031, BL-044, BL-046 |
-| Should | 20 | BL-004, BL-011, BL-021, BL-022, BL-023, BL-028, BL-029, BL-032, BL-033, BL-034, BL-035, BL-037, BL-038, BL-041, BL-042, BL-043, BL-045, BL-047, BL-048 |
-| Could | 4 | BL-015, BL-036, BL-039, BL-040 |
-| **Tổng** | **48** | |
+| Mức | Số mục |
+|---|---|
+| Critical | 49 |
+| High | 42 |
+| Medium | 12 |
+| Low | 2 |
+| **Tổng** | **105** |
 
-## 3. Backlog theo module
+| Hệ thống | Số mục |
+|---|---|
+| T1 — Pet NGON (petngon.vn) | 34 |
+| T2 — Mật Pet Family (matpet.vn) | 36 |
+| T3 — Pretty Paws (groomore.com) | 28 |
+| ALL — Cả 3 hệ thống | 7 |
 
-| Mã | Module | Mức | Số mục backlog | Người code | Người viết/chạy test | Mục tiêu sprint |
-|---|---|---|---|---|---|---|
-| M1 | Tài khoản và phân quyền | Must | 6 | Mạnh | Lộc | Sprint 1 |
-| M2 | Hồ sơ thú cưng | Must | 5 | Tài | Mạnh | Sprint 1 |
-| M3 | Danh mục dịch vụ và bảng giá | Must | 4 | Tài (Mạnh cho API M7) | Mạnh | Sprint 1–2 |
-| M4 | Đặt lịch | Must | 8 API + 1 UI (BL-041) | Ngân | Tài | Sprint 1–2 |
-| M5 | Vòng đời lịch hẹn | Must | 7 API + 1 UI (BL-042) | Ngân | Tài | Sprint 1–2 |
-| M6 | Tính giá, khuyến mãi, thanh toán, thông báo | Should | 6 | Lộc | Ngân | Sprint 1–2 |
-| M7 | Quản trị | Should/Could | 4 | Mạnh | Lộc | Sprint 2 |
-| NFR | Yêu cầu phi chức năng | Must/Should | 6 | Theo mục 4.6 của Test Plan | Theo chuyên trách | Sprint 3 |
-| UI | Giao diện M4/M5 theo ADR-03 | Should | 2 | Lộc | Tài | Sprint 2 |
+| Người phụ trách | Số mục |
+|---|---|
+| Lộc | 27 |
+| Mạnh | 29 |
+| Ngân | 28 |
+| Tài | 21 |
 
-## 4. Thứ tự thực hiện đề xuất
+## 3. Backlog chi tiết
 
-- **Sprint 1 (Ngày 6–7):** BL-001…BL-013, BL-016…BL-020, BL-024…BL-027, BL-030, BL-031 — tất cả mục Must của lõi M1–M5 và M6-01.
-- **Sprint 2 (Ngày 7–9):** BL-014…BL-015, BL-021…BL-023, BL-028, BL-029, BL-032…BL-042.
-- **Sprint 3 (Ngày 12–13):** BL-043…BL-048 và phần Could còn lại.
+| Mã | Yêu cầu | Hệ thống | Mức | Kỹ thuật | Loại | SL | Người phụ trách |
+|---|---|---|---|---|---|---|---|
+| BL-001 | FR-M1-01 | T1 | Critical | UC | Auto | 1 | Lộc |
+| BL-002 | FR-M1-01 | T2 | Critical | UC | Auto | 1 | Ngân |
+| BL-003 | FR-M1-01 | T3 | Critical | UC | Auto | 1 | Mạnh |
+| BL-004 | FR-M1-03 | T1 | Critical | Use case | Manual | 1 | Tài |
+| BL-005 | FR-M1-03 | T2 | Critical | Use case | Manual | 1 | Ngân |
+| BL-006 | FR-M1-03 | T3 | Critical | Use case | Manual | 1 | Mạnh |
+| BL-007 | FR-M1-04 | T1 | Critical | Use case | Auto | 1 | Tài |
+| BL-008 | FR-M1-04 | T2 | Critical | Use case | Auto | 1 | Ngân |
+| BL-009 | FR-M2-05 | T1 | Critical | UC | Manual | 2 | Tài |
+| BL-010 | FR-M3-01 | T1 | Critical | UC | Manual | 1 | Tài |
+| BL-011 | FR-M3-01 | T2 | Critical | UC | Manual | 1 | Ngân |
+| BL-012 | FR-M3-01 | T3 | Critical | UC | Manual | 1 | Mạnh |
+| BL-013 | FR-M3-02 | T1 | Critical | EP | Manual | 14 | Tài |
+| BL-014 | FR-M3-02 | T2 | Critical | EP | Auto | 16 | Ngân |
+| BL-015 | FR-M3-02 | T3 | Critical | EP | Manual | 11 | Mạnh |
+| BL-016 | FR-M3-03 | T2 | Critical | UC | Auto | 3 | Ngân |
+| BL-017 | FR-M3-04 | T2 | Critical | EP | Auto | 2 | Ngân |
+| BL-018 | FR-M3-05 | T1 | Critical | UC | Manual | 1 | Tài |
+| BL-019 | FR-M3-05 | T2 | Critical | UC | Manual | 1 | Ngân |
+| BL-020 | FR-M3-05 | T3 | Critical | UC | Manual | 1 | Mạnh |
+| BL-021 | FR-M4-01 | T1 | Critical | UC | Manual | 1 | Lộc |
+| BL-022 | FR-M4-01 | T2 | Critical | UC | Auto | 1 | Ngân |
+| BL-023 | FR-M4-01 | T3 | Critical | UC | Manual | 1 | Mạnh |
+| BL-024 | FR-M4-02 | T1 | Critical | EP | Manual | 1 | Lộc |
+| BL-025 | FR-M4-02 | T2 | Critical | EP | Auto | 1 | Ngân |
+| BL-026 | FR-M4-02 | T3 | Critical | EP | Manual | 1 | Mạnh |
+| BL-027 | FR-M4-03 | T2 | Critical | EP | Manual | 3 | Ngân |
+| BL-028 | FR-M4-06 | T1 | Critical | ST | Manual | 3 | Tài |
+| BL-029 | FR-M4-06 | T2 | Critical | ST | Manual | 2 | Ngân |
+| BL-030 | FR-M4-07 | T1 | Critical | UC | Manual | 2 | Tài |
+| BL-031 | FR-M4-07 | T2 | Critical | UC | Auto | 2 | Ngân |
+| BL-032 | FR-M4-07 | T3 | Critical | UC | Manual | 2 | Mạnh |
+| BL-033 | FR-M4-10 | T2 | Critical | UC | Manual | 1 | Ngân |
+| BL-034 | FR-M4-12 | T1 | Critical | UC | Manual | 1 | Tài |
+| BL-035 | FR-M4-12 | T2 | Critical | UC | Auto | 1 | Ngân |
+| BL-036 | FR-M4-12 | T3 | Critical | UC | Manual | 1 | Mạnh |
+| BL-037 | FR-M5-01 | T1 | Critical | UC | Manual | 1 | Lộc |
+| BL-038 | FR-M5-01 | T2 | Critical | UC | Manual | 1 | Lộc |
+| BL-039 | FR-M5-02 | T1 | Critical | UC | Manual | 1 | Lộc |
+| BL-040 | FR-M5-02 | T2 | Critical | UC | Manual | 1 | Lộc |
+| BL-041 | FR-M5-06 | T3 | Critical | EP | Manual | 2 | Lộc |
+| BL-042 | FR-M5-07 | T3 | Critical | UC | Manual | 1 | Lộc |
+| BL-043 | FR-M6-01 | T1 | Critical | ST | Manual | 2 | Lộc |
+| BL-044 | FR-M6-03 | T1 | Critical | DT | Manual | 4 | Tài |
+| BL-045 | FR-M7-01 | T2 | Critical | UC | Auto | 1 | Mạnh |
+| BL-046 | FR-M7-04 | T1 | Critical | UC | Manual | 1 | Lộc |
+| BL-047 | FR-M7-04 | T2 | Critical | UC | Manual | 1 | Mạnh |
+| BL-048 | FR-M7-04 | T3 | Critical | UC | Manual | 1 | Mạnh |
+| BL-049 | NFR-02 | ALL | Critical | Use case | Auto | 12 | Mạnh |
+| BL-050 | FR-M1-02 | T1 | High | UC | Auto | 1 | Lộc |
+| BL-051 | FR-M1-02 | T2 | High | UC | Auto | 1 | Ngân |
+| BL-052 | FR-M1-02 | T3 | High | UC | Auto | 1 | Mạnh |
+| BL-053 | FR-M1-05 | T1 | High | Use case | Auto | 1 | Lộc |
+| BL-054 | FR-M1-05 | T2 | High | Use case | Auto | 1 | Ngân |
+| BL-055 | FR-M1-05 | T3 | High | Use case | Auto | 1 | Mạnh |
+| BL-056 | FR-M1-06 | T1 | High | Use case | Manual | 1 | Tài |
+| BL-057 | FR-M1-06 | T2 | High | Use case | Manual | 1 | Ngân |
+| BL-058 | FR-M1-06 | T3 | High | Use case | Manual | 1 | Mạnh |
+| BL-059 | FR-M2-01 | T1 | High | UC | Manual | 2 | Lộc |
+| BL-060 | FR-M2-01 | T2 | High | UC | Manual | 2 | Ngân |
+| BL-061 | FR-M2-01 | T3 | High | UC | Manual | 2 | Mạnh |
+| BL-062 | FR-M2-02 | T1 | High | UC | Manual | 1 | Lộc |
+| BL-063 | FR-M2-02 | T2 | High | UC | Manual | 1 | Ngân |
+| BL-064 | FR-M2-02 | T3 | High | UC | Manual | 1 | Mạnh |
+| BL-065 | FR-M2-03 | T1 | High | UC | Manual | 2 | Tài |
+| BL-066 | FR-M4-03 | T3 | High | EP | Manual | 2 | Mạnh |
+| BL-067 | FR-M4-04 | T1 | High | EP | Manual | 1 | Lộc |
+| BL-068 | FR-M4-04 | T2 | High | EP | Manual | 1 | Ngân |
+| BL-069 | FR-M4-04 | T3 | High | EP | Manual | 1 | Mạnh |
+| BL-070 | FR-M4-08 | T1 | High | ST | Manual | 3 | Tài |
+| BL-071 | FR-M4-08 | T2 | High | ST | Auto | 3 | Ngân |
+| BL-072 | FR-M4-08 | T3 | High | ST | Manual | 2 | Mạnh |
+| BL-073 | FR-M4-09 | T2 | High | UC | Auto | 1 | Ngân |
+| BL-074 | FR-M4-11 | T3 | High | UC | Manual | 1 | Mạnh |
+| BL-075 | FR-M5-01 | T3 | High | UC | Manual | 1 | Lộc |
+| BL-076 | FR-M5-03 | T1 | High | UC | Manual | 3 | Lộc |
+| BL-077 | FR-M5-04 | T2 | High | UC | Manual | 3 | Lộc |
+| BL-078 | FR-M5-04 | T3 | High | UC | Manual | 1 | Lộc |
+| BL-079 | FR-M6-02 | T1 | High | DT | Manual | 9 | Tài |
+| BL-080 | FR-M6-04 | T1 | High | UC | Manual | 2 | Tài |
+| BL-081 | FR-M6-05 | T1 | High | UC | Manual | 1 | Tài |
+| BL-082 | FR-M6-06 | T1 | High | EP | Manual | 2 | Tài |
+| BL-083 | FR-M7-02 | T2 | High | EP | Auto | 3 | Mạnh |
+| BL-084 | FR-M7-03 | T1 | High | UC | Manual | 1 | Lộc |
+| BL-085 | FR-M7-03 | T2 | High | UC | Manual | 1 | Mạnh |
+| BL-086 | NFR-01 | ALL | High | Lighthouse | Auto | 6 | Ngân |
+| BL-087 | NFR-03 | ALL | High | Use case | Manual | 4 | Tài |
+| BL-088 | NFR-04 | ALL | High | UC | Auto | 6 | Tài |
+| BL-089 | NFR-05 | ALL | High | Use case | Auto | 4 | Ngân |
+| BL-090 | NFR-06 | ALL | High | Accessibility | Auto | 6 | Lộc |
+| BL-091 | NFR-07 | ALL | High | SEO | Auto | 6 | Lộc |
+| BL-092 | FR-M2-04 | T2 | Medium | UC | Manual | 2 | Ngân |
+| BL-093 | FR-M2-06 | T3 | Medium | UC | Manual | 1 | Mạnh |
+| BL-094 | FR-M2-07 | T2 | Medium | UC | Manual | 1 | Lộc |
+| BL-095 | FR-M2-07 | T3 | Medium | UC | Manual | 1 | Lộc |
+| BL-096 | FR-M3-06 | T2 | Medium | UC | Manual | 1 | Ngân |
+| BL-097 | FR-M3-06 | T3 | Medium | UC | Manual | 1 | Mạnh |
+| BL-098 | FR-M3-07 | T1 | Medium | UC | Manual | 2 | Tài |
+| BL-099 | FR-M4-05 | T2 | Medium | EP | Manual | 1 | Ngân |
+| BL-100 | FR-M5-04 | T1 | Medium | UC | Manual | 1 | Lộc |
+| BL-101 | FR-M5-05 | T2 | Medium | UC | Manual | 1 | Lộc |
+| BL-102 | FR-M7-05 | T2 | Medium | UC | Auto | 1 | Mạnh |
+| BL-103 | FR-M7-06 | T1 | Medium | ST | Manual | 1 | Tài |
+| BL-104 | FR-M1-04 | T3 | Low | Use case | Auto | 2 | Mạnh |
+| BL-105 | FR-M7-03 | T3 | Low | UC | Manual | 1 | Mạnh |
 
-## 5. Cắt phạm vi và phương án dự phòng
+## 4. Thứ tự thực hiện
 
-Theo file kế hoạch gốc §7, chỉ cắt từ nhóm Could/Should. Thứ tự cắt đề xuất nếu thiếu thời gian: BL-040 → BL-039 → BL-036 → BL-015 → BL-048.
+- **Ngày 6–8:** viết test case cho nhóm Must và Critical theo bảng chi tiết.
+- **Ngày 9:** chuẩn bị môi trường và script smoke, xác nhận bộ test case chạy được.
+- **Ngày 10:** kiểm thử tích hợp (quan sát hợp đồng dữ liệu giao diện ↔ API).
+- **Ngày 11:** system test vòng 1, ưu tiên toàn bộ nhóm Critical.
+- **Ngày 12:** re-test và nhóm NFR.
+- **Ngày 13:** regression và UAT.
 
-Rủi ro: mất nhóm Must sẽ vi phạm Exit criteria (TP-01 §5.2: 100% yêu cầu Must có ít nhất 1 test case), nên không bao giờ cắt Must.
+## 5. Cắt phạm vi
 
-## 6. Ghi chú
-
-- BL-014: API dịch vụ cho Admin thuộc M3 (Tài code theo RTM-01), giao diện quản trị thuộc M7 (Mạnh code). Mục này ghi rõ để tránh trùng lặp khi chia việc.
-- BL-041, BL-042: giao diện M4/M5 mới được giao cho Lộc tại quyết định của người dùng ngày 2026-11-13 (ADR-03).
-- BL-046: NFR-04 là Must; phần kiểm thử độ tin cậy do Ngân chịu trách nhiệm.
-- BL-031: SRS §5.6 để FR-M6-01 ở mức Should, còn TP-01 §7 và SRS §10.B đề xuất nâng lên Must. Backlog xếp Must theo đề xuất này; việc nâng mức chính thức cần nhóm chốt tại Inspection Ngày 3 (CR-07 trong `docs/change-requests.md`).
+Thứ tự cắt đề xuất khi thiếu thời gian: nhóm Medium trước, sau đó nhóm Low. Không cắt nhóm Critical. Mọi mục bị cắt phải được liệt kê trong Final Test Report kèm lý do.

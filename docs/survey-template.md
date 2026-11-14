@@ -1,8 +1,10 @@
 # Phiếu khảo sát nghiệp vụ tiệm spa thú cưng
 
-Phiên bản 0.1 · Ngày 2026-11-13 · Người phụ trách thu thập: Lộc (TV4) · Mạnh chỉ chuẩn bị mẫu trống.
+Phiên bản 1.0 · Ngày 2026-11-13 · Người thu thập: Lộc (TV4)
 
-> Mẫu trống. **Không điền dữ liệu giả.** Kết quả khảo sát chỉ được đưa vào tài liệu khi có dữ liệu thật từ 3–5 tiệm spa (HUMAN-PENDING). Dữ liệu khảo sát chỉ dùng để đối chiếu các giá trị `[Cần chốt]` của SRS §6 và §10.B.
+> Mẫu trống. **Không điền dữ liệu giả.** Kết quả khảo sát chỉ được đưa vào tài liệu khi có dữ liệu thật (HUMAN-PENDING).
+>
+> Vì đồ án chuyển sang kiểm thử ba hệ thống web đang vận hành (ADR-09), khảo sát này có mục đích **đối chiếu nghiệp vụ thật của ngành với hành vi quan sát được trên site**, nhằm đánh giá xem site đáp ứng đúng nhu cầu người dùng hay không (phục vụ UAT ngày 13) và để hiểu ý nghĩa nghiệp vụ của các quy tắc trong SRS-01 §6 (BR-01…BR-16). Không dùng để suy ra yêu cầu mới ngoài phạm vi quan sát được.
 
 ## Thông tin tiệm
 
@@ -14,6 +16,7 @@ Phiên bản 0.1 · Ngày 2026-11-13 · Người phụ trách thu thập: Lộc 
 | Ngày khảo sát | |
 | Người phỏng vấn | |
 | Người trả lời | |
+| Hệ thống web đang dùng (nếu có) | |
 
 ## A. Quy trình đặt lịch
 
@@ -68,32 +71,44 @@ Phiên bản 0.1 · Ngày 2026-11-13 · Người phụ trách thu thập: Lộc 
 | Câu hỏi | Trả lời |
 | --- | --- |
 | F1. Bảng giá tính theo loài (chó/mèo) và cân nặng? Các mốc phân nhóm cân nặng là gì? | |
-| F2. Có chương trình giảm giá cho khách thân hoặc thành viên không? Mức giảm? | |
-| F3. Có mã khuyến mãi, đơn tối thiểu, hạn dùng không? | |
-| F4. VIP và mã khuyến mãi có cộng dồn không? | |
-| F5. Có bảng giá theo mức cân nặng khác nhau cho từng dịch vụ không? | |
+| F2. Dịch vụ nào được tính giá riêng (không có bảng giá cố định)? | |
+| F3. Có chương trình giảm giá cho khách thân hoặc thành viên không? Mức giảm? | |
+| F4. Có mã khuyến mãi, đơn tối thiểu, hạn dùng không? | |
+| F5. VIP và mã khuyến mãi có cộng dồn không? | |
+| F6. Có bảng giá theo mức cân nặng khác nhau cho từng dịch vụ không? | |
 
-## G. Giới hạn và quy định khác
-
-| Câu hỏi | Trả lời |
-| --- | --- |
-| G1. Mỗi khách được đặt tối đa mấy lịch cùng lúc? Có giới hạn số thú cưng mỗi tài khoản không? | |
-| G2. Có yêu cầu đặt trước tối thiểu / tối đa bao nhiêu giờ không? | |
-| G3. Có ghi nhận lịch bùng (no-show) và phạt gì không? | |
-| G4. Lịch có thể đổi sang ngày khác không? Hạn chót đổi lịch? | |
-
-## H. Vai trò nhân viên
+## G. Phụ thu dịch vụ tại nhà
 
 | Câu hỏi | Trả lời |
 | --- | --- |
-| H1. Nhân viên có tự xác nhận lịch không, hay lễ tân xác nhận? | |
-| H2. Nhân viên có xem được lịch của nhau không? | |
-| H3. Ai quản lý dịch vụ, bảng giá, ngày nghỉ? | |
+| G1. Phụ thu dịch vụ tại nhà là bao nhiêu, có cố định không? | |
+| G2. Phụ thu di chuyển tính theo công thức nào? Có mốc miễn phí không? | |
+| G3. Trên quãng cách nào thì không báo giá cố định mà phải liên hệ? | |
+| G4. Phụ thu có ghi rõ chưa gồm phí di chuyển không? | |
 
-## Kết luận và điểm khác biệt so với SRS
+## H. Giới hạn và quy định khác
+
+| Câu hỏi | Trả lời |
+| --- | --- |
+| H1. Mỗi khách được đặt tối đa mấy lịch cùng lúc? | |
+| H2. Có yêu cầu đặt trước tối thiểu / tối đa bao nhiêu giờ không? | |
+| H3. Có ghi nhận lịch bùng (no-show) và phạt gì không? | |
+| H4. Lịch có thể đổi sang ngày khác không? Hạn lót đổi lịch? | |
+
+## I. Vai trò nhân viên
+
+| Câu hỏi | Trả lời |
+| --- | --- |
+| I1. Nhân viên có tự xác nhận lịch không, hay lễ tân xác nhận? | |
+| I2. Nhân viên có xem được lịch của nhau không? | |
+| I3. Ai quản lý dịch vụ, bảng giá, ngày nghỉ? | |
+
+## J. Đối chiếu với hành vi quan sát được trên site
 
 | Nội dung | Ghi chú |
 | --- | --- |
-| Điểm khảo sát khác với SRS §6 và §10.B | |
-| Đề xuất giá trị `[Cần chốt]` cần điều chỉnh | |
-| Hạng mục cần mở CR | |
+| Hệ thống web đang dùng có phản ánh đúng quy trình thật không? | |
+| Bảng giá trên site có khớp giá thực tế không? | |
+| Điều gì trên site khó hiểu với khách? (đưa vào UAT) | |
+| Hạng mục nào của SRS-01 §6 cần hiệu chỉnh sau khảo sát? | |
+| Hạng mục cần mở CR? | |

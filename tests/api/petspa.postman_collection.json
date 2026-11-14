@@ -1,0 +1,112 @@
+{
+  "info": {
+    "name": "Pet Spa KTPM — API doc cua site dich",
+    "description": "Chi GET theo ADR-11. Endpoint rut tu network log quan sat duoc ngay 2026-11-13; neu endpoint khong con ton tai thi ghi vao defect log thay vi xoa. Moi request co assertion HTTP 200 de Newman bao cao co ket qua that.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "TC-T2-M1-001: T2 Mat Pet — trang spa",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 200', () => pm.response.to.have.status(200));",
+              "pm.test('Tra ve HTML', () => pm.expect(pm.response.headers.get('Content-Type')).to.include('text/html'));"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [{ "key": "Accept", "value": "text/html" }],
+        "url": { "raw": "https://matpet.vn/spa", "protocol": "https", "host": ["matpet", "vn"], "path": ["spa"] }
+      }
+    },
+    {
+      "name": "TC-T1-M1-001: T1 Pet NGON — trang chu tieng Viet",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 200', () => pm.response.to.have.status(200));",
+              "pm.test('Tra ve HTML', () => pm.expect(pm.response.headers.get('Content-Type')).to.include('text/html'));"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [{ "key": "Accept", "value": "text/html" }],
+        "url": { "raw": "https://petngon.vn/vi", "protocol": "https", "host": ["petngon", "vn"], "path": ["vi"] }
+      }
+    },
+    {
+      "name": "TC-T3-M1-001: T3 Pretty Paws — trang chu",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 200', () => pm.response.to.have.status(200));",
+              "pm.test('Tra ve HTML', () => pm.expect(pm.response.headers.get('Content-Type')).to.include('text/html'));"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [{ "key": "Accept", "value": "text/html" }],
+        "url": {
+          "raw": "https://prettypawscatanddoggrooming.groomore.com",
+          "protocol": "https",
+          "host": ["prettypawscatanddoggrooming", "groomore", "com"],
+          "path": [""]
+        }
+      }
+    },
+    {
+      "name": "TC-NFR-07-005: NFR-07 — robots.txt (T1)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 200', () => pm.response.to.have.status(200));",
+              "pm.test('Co noi dung robots.txt', () => pm.expect(pm.response.text().length).to.be.above(0));"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "url": { "raw": "https://petngon.vn/robots.txt", "protocol": "https", "host": ["petngon", "vn"], "path": ["robots.txt"] }
+      }
+    },
+    {
+      "name": "TC-NFR-07-004: NFR-07 — sitemap.xml (T2)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 200', () => pm.response.to.have.status(200));",
+              "pm.test('La sitemap XML', () => pm.expect(pm.response.text()).to.include('<urlset'));"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "url": { "raw": "https://matpet.vn/sitemap.xml", "protocol": "https", "host": ["matpet", "vn"], "path": ["sitemap.xml"] }
+      }
+    }
+  ]
+}

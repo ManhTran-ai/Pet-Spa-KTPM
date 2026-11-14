@@ -1,47 +1,59 @@
-id,type,module,priority,uc,title,code_owner,test_owner
-FR-M1-01,FR,M1,Must,UC-01,Đăng ký tài khoản khách hàng bằng họ tên email SĐT và mật khẩu,Mạnh,Lộc
-FR-M1-02,FR,M1,Must,UC-01,Đăng nhập bằng email và mật khẩu cấp JWT hết hạn 60 phút,Mạnh,Lộc
-FR-M1-03,FR,M1,Must,UC-01,Đăng xuất thu hồi token và hết hạn phiên,Mạnh,Lộc
-FR-M1-04,FR,M1,Should,UC-01,Đổi mật khẩu và quên mật khẩu với liên kết đặt lại giả lập,Mạnh,Lộc
-FR-M1-05,FR,M1,Must,UC-01,Phân quyền theo vai trò KH NV AD và kiểm tra quyền sở hữu đối tượng,Mạnh,Lộc
-FR-M1-06,FR,M1,Should,UC-01,Khóa tạm tài khoản 15 phút sau 5 lần đăng nhập sai liên tiếp,Mạnh,Lộc
-FR-M2-01,FR,M2,Must,UC-02,Thêm hồ sơ thú cưng với đầy đủ thuộc tính và ghi chú sức khỏe,Tài,Mạnh
-FR-M2-02,FR,M2,Must,UC-02,Xem danh sách và chi tiết thú cưng của chính mình,Tài,Mạnh
-FR-M2-03,FR,M2,Must,UC-02,Sửa thông tin thú cưng theo cùng ràng buộc khi thêm,Tài,Mạnh
-FR-M2-04,FR,M2,Must,UC-02,Xóa thú cưng khi thỏa BR-15 nếu không có lịch đang hoạt động,Tài,Mạnh
-FR-M2-05,FR,M2,Should,UC-02,Giới hạn tối đa 5 thú cưng mỗi tài khoản,Tài,Mạnh
-FR-M3-01,FR,M3,Must,UC-03,Xem danh mục dịch vụ đang bật gồm tên mô tả thời lượng và giá,Tài,Mạnh
-FR-M3-02,FR,M3,Must,UC-03,Bảng giá theo nhóm cân nặng S M L XL và theo loài,Tài,Mạnh
-FR-M3-03,FR,M3,Must,UC-08,Admin thêm sửa và ẩn dịch vụ API ở M3 giao diện ở M7,Mạnh,Mạnh
-FR-M3-04,FR,M3,Could,UC-03,Tìm kiếm và lọc dịch vụ theo loài và tên không phân biệt hoa thường,Tài,Mạnh
-FR-M4-01,FR,M4,Must,UC-04,Đặt lịch chọn thú cưng 1-5 dịch vụ ngày giờ và nhân viên tùy chọn,Ngân,Tài
-FR-M4-02,FR,M4,Must,UC-04,Hiển thị slot trống theo giờ làm và tổng thời lượng dịch vụ,Ngân,Tài
-FR-M4-03,FR,M4,Must,UC-04,Chặn đặt trùng và chồng lịch của cùng một nhân viên,Ngân,Tài
-FR-M4-04,FR,M4,Must,UC-04,Giới hạn thời điểm đặt trước từ 2 giờ đến 30 ngày theo BR-03,Ngân,Tài
-FR-M4-05,FR,M4,Must,UC-04,Chống đặt trùng khi nhiều khách cùng chọn một slot theo BR-17,Ngân,Tài
-FR-M4-06,FR,M4,Should,UC-04,Tự gán nhân viên rảnh có ít lịch nhất khi khách không chọn nhân viên,Ngân,Tài
-FR-M4-07,FR,M4,Should,UC-05,Khách hàng xem lịch sử và chi tiết lịch hẹn của chính mình,Ngân,Tài
-FR-M4-08,FR,M4,Should,UC-06,Nhân viên xem lịch làm việc của mình theo ngày và theo tuần,Ngân,Tài
-FR-M5-01,FR,M5,Must,UC-06,Quản lý trạng thái lịch hẹn theo bảng chuyển trạng thái và ghi log thao tác,Ngân,Tài
-FR-M5-02,FR,M5,Must,UC-06,Nhân viên được gán hoặc Admin xác nhận lịch ở trạng thái Pending,Ngân,Tài
-FR-M5-03,FR,M5,Must,UC-06,Nhân viên bắt đầu và hoàn thành dịch vụ theo đúng trạng thái trước đó,Ngân,Tài
-FR-M5-04,FR,M5,Must,UC-05,Khách hàng hủy lịch theo bảng quyết định hủy R1 đến R5 ở SRS mục 8.2,Ngân,Tài
-FR-M5-05,FR,M5,Should,UC-05,Khách hàng đổi lịch tối đa 2 lần và trước giờ hẹn ít nhất 12 giờ theo BR-07,Ngân,Tài
-FR-M5-06,FR,M5,Should,UC-06,Tự động chuyển lịch sang No-show quá 30 phút sau giờ hẹn theo BR-12,Ngân,Tài
-FR-M5-07,FR,M5,Must,UC-05,Từ chối chuyển trạng thái không hợp lệ với mã lỗi 409,Ngân,Tài
-FR-M6-01,FR,M6,Must,UC-04,Tính giá theo nhóm cân nặng phụ phí lông dài và cộng nhiều dịch vụ theo BR-18,Lộc,Ngân
-FR-M6-02,FR,M6,Should,UC-04,Áp mã khuyến mãi tối đa 1 mã mỗi lịch có kiểm tra hạn và giá trị tối thiểu,Lộc,Ngân
-FR-M6-03,FR,M6,Should,UC-07,Giảm giá thành viên VIP 10 phần trăm không cộng dồn với mã khuyến mãi,Lộc,Ngân
-FR-M6-04,FR,M6,Should,UC-04,Đặt cọc 30 phần trăm và thanh toán qua cổng giả lập có xử lý idempotent,Lộc,Ngân
-FR-M6-05,FR,M6,Should,UC-07,Xuất hóa đơn nêu dịch vụ phụ phí giảm giá cọc và số còn lại,Lộc,Ngân
-FR-M6-06,FR,M6,Could,UC-06,Nhắc lịch trước 24 giờ và ghi log thông báo xác nhận hủy đổi lịch,Lộc,Ngân
-FR-M7-01,FR,M7,Should,UC-08,Admin quản lý nhân viên gồm thêm sửa khóa giờ làm và ngày nghỉ,Mạnh,Lộc
-FR-M7-02,FR,M7,Should,UC-08,Admin quản lý mã khuyến mãi gồm hạn dùng giá trị tối thiểu và trạng thái bật tắt,Mạnh,Lộc
-FR-M7-03,FR,M7,Could,UC-08,Báo cáo số lịch theo ngày tuần dịch vụ và doanh thu lấy từ lịch Completed,Mạnh,Lộc
-FR-M7-04,FR,M7,Could,UC-08,Admin xem và điều chỉnh mọi lịch hẹn kèm ghi nhật ký thao tác,Mạnh,Lộc
-NFR-01,NFR,NFR,Should,,Hiệu năng p95 không quá 2 giây với 50 người dùng đồng thời và LCP trang chủ không quá 3 giây,Lộc,Lộc
-NFR-02,NFR,NFR,Must,,Bảo mật bcrypt chống SQL injection XSS truy cập chéo dữ liệu JWT có hạn và không lộ stack trace,Mạnh,Mạnh
-NFR-03,NFR,NFR,Should,,Khả năng sử dụng đặt lịch trong tối đa 5 bước lỗi nêu rõ trường và dùng được từ 360px,Tài,Tài
-NFR-04,NFR,NFR,Must,,Độ tin cậy không đặt trùng khi đồng thời không mất dữ liệu khi thanh toán lỗi và chịu dữ liệu bất thường,Ngân,Ngân
-NFR-05,NFR,NFR,Should,,Tương thích Chrome Firefox Edge bản mới nhất và trình duyệt di động,Tài,Tài
-NFR-06,NFR,NFR,Should,,Khả năng bảo trì ESLint không lỗi error V(G) hàm lõi không quá 10 và độ phủ theo Test Plan,Mạnh,Tài
+id,type,module,priority,systems,title,acceptance_criteria,uc_refs,test_owner
+FR-M1-01,FR,M1,Must,"T1, T2, T3",Trang chủ tải được bằng HTTP 200 không cần đăng nhập,HTTP 200; không có lỗi console nghiêm trọng; trang hiển thị tiêu đề và điều hướng chính,,Lộc Ngân Mạnh
+FR-M1-02,FR,M1,Must,"T1, T2, T3",Điều hướng chính mở được từ mọi trang và quay lại được,Mọi liên kết menu trả HTTP 200; nút quay lại hoạt động trên trang con,,Lộc Ngân Mạnh
+FR-M1-03,FR,M1,Must,"T1, T2, T3","Hiển thị đầy đủ thông tin liên hệ: địa chỉ, điện thoại, email, giờ mở cửa",Cả 4 trường xuất hiện; điện thoại đúng định dạng số; giờ mở cửa khớp giữa header và footer,,Tài Ngân Mạnh
+FR-M1-04,FR,M1,Must,"T1, T2, T3",Không có lỗi liên kết chết (404) trong menu và footer,0 liên kết 404 trong menu/footer; liên kết ngoài mở ở tab mới,,Tài Ngân Mạnh
+FR-M1-05,FR,M1,Must,"T1, T2, T3","Trang hiển thị đúng trên màn hình di động, không tràn ngang",Ở 360px không có cuộn ngang; bảng giá T1 cuộn ngang có thao tác vuốt,,Lộc Ngân Mạnh
+FR-M1-06,FR,M1,Should,"T1, T2, T3",Ứng dụng báo lỗi thân thiện khi tải trang con thất bại,"Lỗi 404/500 hiển thị trang thông báo, không hiện stack trace",,Tài Ngân Mạnh
+FR-M2-01,FR,M2,Must,"T1, T2, T3","Hiển thị danh sách dịch vụ kèm tên, mô tả, giá và thời lượng",Mỗi dịch vụ có đủ 4 thuộc tính; số dịch vụ khớp bảng giá mục 3,UC-01,Lộc Tài Ngân Mạnh
+FR-M2-02,FR,M2,Must,"T1, T2, T3",Mỗi dịch vụ nêu rõ phạm vi bao gồm (thành phần),"Không dịch vụ nào thiếu mô tả ""bao gồm""; danh sách thành phần khớp mô tả",,Lộc Ngân Mạnh
+FR-M2-03,FR,M2,Must,T1,Phân biệt dịch vụ tại spa và tại nhà,"Dịch vụ không hỗ trợ tại nhà có nhãn ""Chỉ tại spa""; dịch vụ hỗ trợ có nhãn ""Có tận nhà""",,Tài
+FR-M2-04,FR,M2,Should,T2,"Tách dịch vụ grooming, nhuộm và dịch vụ giá riêng thành nhóm","Ít nhất 3 nhóm hiển thị tách biệt; mỗi dịch vụ ""báo giá riêng"" được đánh dấu rõ",,Ngân
+FR-M2-05,FR,M2,Should,T1,Nêu rõ gói phổ biến và phụ thu thêm của gói tại nhà,Gói phổ biến được đánh dấu; mỗi gói tại nhà ghi rõ mức phụ thu cộng thêm,,Tài
+FR-M2-06,FR,M2,Should,T3,Phân biệt rõ dịch vụ dành cho chó và dịch vụ dành cho mèo,"Danh mục có đúng 2 nhóm dịch vụ cho chó và cho mèo, tách biệt",,Mạnh
+FR-M2-07,FR,M2,Should,"T1, T2, T3",Không niêm yết dịch vụ mà hệ thống không thực hiện được,Không dịch vụ nào có nhãn tại nhà nếu hệ thống không cung cấp dịch vụ tại nhà,,Lộc
+FR-M3-01,FR,M3,Must,"T1, T2, T3",Công bố bảng giá theo bậc cân nặng và loài,"Bảng có đủ cột cho mọi bậc cân nặng và mọi dịch vụ; giá ở mỗi ô là số xác định, không có ""tùy""",UC-01,Tài Ngân Mạnh
+FR-M3-02,FR,M3,Must,"T1, T2, T3",Tra bảng giá đúng theo loài và bậc cân nặng được chọn,"Chọn (Chó, >3–6kg) + Combo Tắm Vệ Sinh → 200.000₫ đúng bảng; cùng bậc cân nặng nhưng Mèo → giá khác",UC-02,Tài Ngân Mạnh
+FR-M3-03,FR,M3,Must,T2,"Giá hiển thị được tính tức thì khi chọn đủ loài, cân nặng, dịch vụ",Chọn xong bước 3 → hiển thị giá dự kiến cụ thể và tóm tắt lựa chọn; đổi bất kỳ lựa chọn nào → giá cập nhật,,Ngân
+FR-M3-04,FR,M3,Must,T2,Tính giá riêng cho dịch vụ cần khảo giá,"Dịch vụ ""báo giá riêng"" hiển thị khoảng 50.000–500.000₫ hoặc ""tuỳ thiết kế"", tuyệt đối không hiện một con số đơn lẻ",,Ngân
+FR-M3-05,FR,M3,Must,"T1, T2, T3","Giá dự kiến được ghi rõ là dự kiến, không phải giá cuối",Mỗi trang có bảng giá phải chứa ≥ 1 câu ghi rõ giá cuối xác nhận tại spa/cân thực tế,,Tài Ngân Mạnh
+FR-M3-06,FR,M3,Should,T2,Bảng giá nêu rõ điều kiện bảo hành hoặc ngoại lệ phát sinh phí,"Có ghi chú bảng giá không bao gồm phí gỡ rối, tẩy ố, tắm trắng",,Ngân Mạnh
+FR-M3-07,FR,M3,Should,T1,"Nêu giá ""từ ...₫"" và khoảng min–max cho gói",Mỗi gói hiển thị cả mức tối thiểu và khoảng min–max khớp bảng,,Tài
+FR-M4-01,FR,M4,Must,"T1, T2",Cung cấp form giữ chỗ với trường liên hệ bắt buộc và tuỳ chọn,"T2: SĐT bắt buộc, tên bé tuỳ chọn; T1: có bước chọn loài, cân nặng, ngày giờ, địa chỉ",UC-03 UC-04,Lộc Ngân Mạnh
+FR-M4-02,FR,M4,Must,"T1, T2",Từ chối gửi form khi thiếu trường bắt buộc,"Bỏ trống SĐT → không gửi được, có thông báo lỗi nêu đúng trường",,Lộc Ngân Mạnh
+FR-M4-03,FR,M4,Must,"T1, T2",Kiểm tra định dạng số điện thoại,Chuỗi không phải số bị từ chối; số không đủ độ dài bị từ chối hoặc cảnh báo,,Ngân Mạnh
+FR-M4-04,FR,M4,Must,"T1, T2",Cho phép chọn ngày mong muốn trong tương lai,"Ngày hôm nay được chọn; ngày trong quá khứ không chọn được; có lựa chọn nhanh ""hôm nay"" và ""ngày mai""",,Lộc Ngân Mạnh
+FR-M4-05,FR,M4,Should,T2,Chặn ngày mong muốn nằm quá xa trong tương lai,Ngày quá 30 ngày bị từ chối hoặc giới hạn theo lịch mở cửa,,Ngân
+FR-M4-06,FR,M4,Must,T1,Chọn được loài và cân nặng trước khi xem giá,Wizard bắt buộc qua bước loài và cân nặng; không bỏ qua được,,Tài Ngân
+FR-M4-07,FR,M4,Must,"T1, T2",Chọn được dịch vụ trước khi xác nhận,Mỗi hệ thống có bước chọn dịch vụ rõ ràng; không dịch vụ nào vô hình khi tiếp tục,,Tài Ngân Mạnh
+FR-M4-08,FR,M4,Must,"T1, T2",Cho phép quay lại bước trước mà không mất lựa chọn,Quay lại từ bước 3 giữ nguyên loài và cân nặng; nút quay lại hoạt động,,Tài Ngân Mạnh
+FR-M4-09,FR,M4,Should,T2,Hiển thị tóm tắt lựa chọn trước khi gửi,"Tóm tắt hiển thị đủ 4 trường: loài, bậc cân nặng, dịch vụ, giá",,Ngân
+FR-M4-10,FR,M4,Must,T2,Yêu cầu sự đồng ý về việc liên hệ lại trước khi gửi,Có 1 thông báo đồng ý liên hệ qua điện thoại/Zalo và 1 điều khoản che khuất tùy chọn,,Ngân
+FR-M4-11,FR,M4,Should,T3,Cho phép đặt lịch ngoài giờ mở cửa,"Nút ""Book Now"" hoạt động 24/7, kể cả ngoài giờ mở cửa",,Mạnh
+FR-M4-12,FR,M4,Must,"T1, T2, T3",Không yêu cầu tạo tài khoản để đặt lịch,Không có bước đăng ký/đăng nhập trong luồng đặt lịch,,Tài Ngân Mạnh
+FR-M5-01,FR,M5,Must,"T1, T2, T3",Nêu rõ quy trình từ đặt lịch đến nhận thú cưng,Có mô tả 4 bước (T1) hoặc 4 bước (T2) khớp thực tế,UC-05,Lộc
+FR-M5-02,FR,M5,Must,"T1, T2",Công bố thời gian xác nhận lịch,"T1: ""xác nhận trong 5 phút qua Zalo""; T2: ""spa sẽ gọi xác nhận khung giờ"" — thời gian nêu rõ",,Lộc
+FR-M5-03,FR,M5,Must,T1,Nêu rõ có thể đổi hoặc hủy lịch và điều kiện,"Mục FAQ ""Có thể đổi/huỷ lịch không?"" trả lời có ≥ 2 điều kiện cụ thể về thời gian và phí",,Lộc
+FR-M5-04,FR,M5,Must,"T2, T3",Nêu rõ chính sách hủy và hoàn tiền,"Có nội dung về hủy/đổi và hoàn cọc, không chỉ ""liên hệ tiệm""",,Lộc
+FR-M5-05,FR,M5,Should,T2,Nêu rõ thời gian nên đặt trước cho từng loại dịch vụ,"Có câu ""nên đặt lịch trước ít nhất 2–4 giờ"" theo dịch vụ",,Lộc
+FR-M5-06,FR,M5,Must,T3,Thông báo khi bị từ chối lịch do ngoài giờ làm việc,Chọn khung giờ ngoài giờ mở cửa bị từ chối kèm ≥ 1 câu giải thích lý do,,Lộc
+FR-M5-07,FR,M5,Must,T3,Hiển thị trạng thái hiện tại của tiệm (đang mở/đã đóng),"Trang hiển thị 1 trạng thái ""Open""/""Closed"" kèm khung giờ mở cửa đầy đủ",,Lộc
+FR-M6-01,FR,M6,Must,T1,Cho phép chọn dịch vụ tại spa hoặc tại nhà,"Bước 3 của wizard có lựa chọn ""đến spa"" hoặc ""tại nhà""",,Lộc
+FR-M6-02,FR,M6,Must,T1,Tính phụ thu di chuyển theo công thức công bố,"`max(0, km − 5) × 8.000₫`; 5 km miễn phí; phụ thu hiển thị ngay khi nhập địa chỉ",,Tài
+FR-M6-03,FR,M6,Must,T1,Cộng phụ thu cố định của gói tại nhà vào tổng,"Tắm +50.000₫, Cạo +80.000₫, Combo Tắm+Cạo +100.000₫",,Tài
+FR-M6-04,FR,M6,Must,T1,Nêu rõ mức phụ thu cố định không gồm phí di chuyển,"Mỗi gói tại nhà ghi rõ ""(chưa gồm phí di chuyển)""",,Tài
+FR-M6-05,FR,M6,Must,T1,"Phụ thu di chuyển tăng dần theo khoảng cách, có mốc miễn phí","Có bảng 4 dảng km: 0–5, 5–10, 10–15, trên 15 km",,Tài
+FR-M6-06,FR,M6,Must,T1,Trên 15 km không báo giá cố định mà chuyển sang liên hệ,"Trên 15 km hiển thị ""Liên hệ — Báo giá riêng theo lộ trình""",,Tài
+FR-M7-01,FR,M7,Must,T2,Có chức năng tìm kiếm nội dung,Nhập 1 từ khoá ra ≥ 1 kết quả lọc theo từ khoá,UC-06,Mạnh
+FR-M7-02,FR,M7,Must,T2,Tìm kiếm không phân biệt hoa thường và xử lý từ khoá rỗng,"""SPA"" và ""spa"" cho cùng kết quả; từ khoá rỗng không gây lỗi",,Mạnh
+FR-M7-03,FR,M7,Should,"T1, T2",Chuyển đổi ngôn ngữ và giữ ngữ cảnh trang,Chuyển sang tiếng Anh vẫn ở trang hiện tại; 0 chuỗi tiếng Việt còn sót lại ở nội dung chính,UC-07,Lộc Mạnh
+FR-M7-04,FR,M7,Must,"T1, T2, T3","Cung cấp kênh liên hệ đa dạng (điện thoại, email, Zalo/chat)",Ít nhất 2 kênh liên hệ hoạt động; liên kết Zalo/messenger mở đúng ứng dụng,UC-08,Lộc Mạnh
+FR-M7-05,FR,M7,Could,T2,Trang tìm bé thương và bảo hành không chặn người dùng,"Hai trang mở được, không bắt đăng nhập",,Mạnh
+FR-M7-06,FR,M7,Should,T1,Nội dung FAQ dạng accordion mở/đóng được,"Mỗi mục mở độc lập, đóng lại được, biểu tượng đổi theo trạng thái",,Tài
+NFR-01,NFR,NFR,Must,"T1, T2, T3","Hiệu năng: trang chủ tải xong (DOMContentLoaded) trong ≤ 3 giây trên mạng 4G mô phỏng; LCP ≤ 2,5 giây","Lighthouse (mobile, thang 0–100), 3 lần lấy trung vị; ngưỡng đạt: điểm Performance ≥ 70, DOMContentLoaded ≤ 3 giây, LCP ≤ 2,5 giây",,Ngân
+NFR-02,NFR,NFR,Must,"T1, T2, T3","Bảo mật: HTTPS bật, HSTS có, `X-Content-Type-Options: nosniff`, `X-Frame-Options` hoặc CSP `frame-ancestors`, `Referrer-Policy`; không lộ stack trace; phản xạ đầu vào không thực thi (XSS)","Kiểm tra header qua HTTP client và trình duyệt; payload vô hại; ngưỡng đạt: đủ 4/4 header, cookie phiên có `Secure` + `HttpOnly`, 0 phát hiện mức Critical/High",,Mạnh
+NFR-03,NFR,NFR,Should,"T1, T2, T3",Khả năng dùng: hoàn tất luồng tính giá trong ≤ 5 thao tác; thông báo lỗi nêu rõ trường; nhãn nhất quán; dùng được bằng bàn phím,"Checklist thủ công, đo số thao tác; ngưỡng đạt: ≤ 5 thao tác ra giá ở T2, mọi thông báo lỗi nêu đúng tên trường, 100% thao tác form bằng bàn phím",,Tài
+NFR-04,NFR,NFR,Must,"T1, T2, T3","Tương thích: chạy đúng chức năng chính trên Chrome, Firefox, Edge và Safari bản mới nhất; trình duyệt di động 360px","Playwright đa trình duyệt + kiểm tra thủ công; ngưỡng đạt: 0 lỗi chức năng trên 4 trình duyệt, 0 lần cuộn ngang ở 360px",,Tài
+NFR-05,NFR,NFR,Should,"T1, T2, T3","Độ tin cậy: gửi form nhiều lần liên tiếp không tạo bản ghi trùng; lỗi mạng hiển thị thông báo, không treo; tải lại trang không mất trạng thái đã chọn","Script tự động + mô phỏng mạng lỗi; ngưỡng đạt: 3 lần gửi tạo tối đa 1 bản ghi, mọi lỗi mạng có thông báo trong ≤ 10 giây, 100% lựa chọn được giữ sau khi tải lại trang",,Ngân
+NFR-06,NFR,NFR,Should,"T1, T2, T3","Khả năng tiếp cận: đủ tương phản chữ ≥ 4,5:1; mọi trường form có nhãn; ảnh có `alt`; điều hướng bằng bàn phím; tiêu đề trang duy nhất","Lighthouse Accessibility + axe-core; ngưỡng đạt: 0 vi phạm axe-core mức critical, tương phản ≥ 4,5:1 ở mọi vùng chữ",,Lộc
+NFR-07,NFR,NFR,Could,"T1, T2, T3",SEO và kỹ thuật bảo trì: mỗi trang có `title` và `meta description` duy nhất; có `lang`; sitemap.xml và robots.txt tồn tại và không chặn; Open Graph đầy đủ,"Kiểm tra thẻ meta, phân tích sitemap; ngưỡng đạt: 1 `title` và 1 `meta description` không rỗng trên mỗi trang, sitemap.xml và robots.txt trả HTTP 200",,Lộc

@@ -1,0 +1,33 @@
+﻿
+Running 21 tests using 1 worker
+
+node.exe : (node:7424) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ((node:7424) War... env being set.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x   1 [security] â€º tests\security\accessibility.spec.ts:40:3 â€º NFR-06 â€” Kháº£ nÄƒng tiáº¿p cáº­n â€º TC-NFR-06-001: axe-core khĂ´ng cĂ³ vi pháº¡m má»©c critical trĂªn cáº£ 3 site (37.4s)
+(node:20064) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x   2 [security] â€º tests\security\accessibility.spec.ts:72:3 â€º NFR-06 â€” Kháº£ nÄƒng tiáº¿p cáº­n â€º TC-NFR-06-002: má»i vĂ¹ng chá»¯ Ä‘áº¡t tÆ°Æ¡ng pháº£n â‰¥ 4,5:1 trĂªn cáº£ 3 site (14.6s)
+(node:20264) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x   3 [security] â€º tests\security\accessibility.spec.ts:86:3 â€º NFR-06 â€” Kháº£ nÄƒng tiáº¿p cáº­n â€º TC-NFR-06-003: má»i trÆ°á»ng form cĂ³ nhĂ£n gáº¯n liá»n trĂªn cáº£ 3 site (22.1s)
+(node:19744) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x   4 [security] â€º tests\security\accessibility.spec.ts:100:3 â€º NFR-06 â€” Kháº£ nÄƒng tiáº¿p cáº­n â€º TC-NFR-06-004: má»i áº£nh ná»™i dung cĂ³ thuá»™c tĂ­nh alt trĂªn cáº£ 3 site (45.3s)
+(node:18680) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x   5 [security] â€º tests\security\accessibility.spec.ts:114:3 â€º NFR-06 â€” Kháº£ nÄƒng tiáº¿p cáº­n â€º TC-NFR-06-005: má»—i trang cĂ³ Ä‘Ăºng má»™t tiĂªu Ä‘á» h1 trĂªn cáº£ 3 site (28.4s)
+(node:1980) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  6 [security] â€º tests\security\headers.spec.ts:41:3 â€º NFR-02 â€” Baseline báº£o máº­t â€º tá»•ng há»£p HTTP security header cá»§a 3 site vĂ o reports/raw/security-summary.csv (7.6s)
+  x   7 [security] â€º tests\security\headers.spec.ts:55:3 â€º NFR-02 â€” Baseline báº£o máº­t â€º TC-NFR-02-001: cáº£ 3 site báº­t HTTPS vĂ  tráº£ header Strict-Transport-Security (8.6s)
+(node:20308) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x   8 [security] â€º tests\security\headers.spec.ts:65:3 â€º NFR-02 â€” Baseline báº£o máº­t â€º TC-NFR-02-002: cáº£ 3 site tráº£ header X-Content-Type-Options: nosniff (9.6s)
+(node:5404) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)

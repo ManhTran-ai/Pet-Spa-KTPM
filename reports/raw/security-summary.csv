@@ -1,0 +1,16 @@
+﻿System,Header,Present,Value
+T1,X-Content-Type-Options,No,
+T1,X-Frame-Options,No,
+T1,Content-Security-Policy,No,
+T1,Referrer-Policy,No,
+T1,Strict-Transport-Security,No,
+T2,X-Content-Type-Options,No,
+T2,X-Frame-Options,No,
+T2,Content-Security-Policy,No,
+T2,Referrer-Policy,No,
+T2,Strict-Transport-Security,Yes,max-age=63072000
+T3,X-Content-Type-Options,No,
+T3,X-Frame-Options,No,
+T3,Content-Security-Policy,No,
+T3,Referrer-Policy,No,
+T3,Strict-Transport-Security,No,

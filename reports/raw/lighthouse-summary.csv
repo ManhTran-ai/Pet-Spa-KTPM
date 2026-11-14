@@ -1,0 +1,19 @@
+﻿System,Category,Score,Metric,Value,Runs
+T1,performance,67,,,3
+T1,accessibility,94,,,3
+T1,best-practices,100,,,3
+T1,seo,100,,,3
+T1,metric,,LCP (ms),4887,3
+T1,metric,,CLS,0.000,3
+T2,performance,59,,,3
+T2,accessibility,94,,,3
+T2,best-practices,96,,,3
+T2,seo,100,,,3
+T2,metric,,LCP (ms),6473,3
+T2,metric,,CLS,0.000,3
+T3,performance,3,,,3
+T3,accessibility,81,,,3
+T3,best-practices,79,,,3
+T3,seo,91,,,3
+T3,metric,,LCP (ms),17621,3
+T3,metric,,CLS,0.991,3

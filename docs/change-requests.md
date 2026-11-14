@@ -1,14 +1,15 @@
 # Change Requests (CR)
 
-Đối tượng: Hệ thống Đặt lịch Dịch vụ Chăm sóc Thú cưng / Spa · Người ghi: Mạnh (TV1) · Ngày mở: 2026-11-13
+Đối tượng: Kiểm thử ba hệ thống web Pet Spa (T1 Pet NGON, T2 Mật Pet Family, T3 Pretty Paws) · Người ghi: Mạnh (TV1) · Ngày mở: 2026-11-13
 
-Nguyên tắc (SRS §10.C): mọi thay đổi SRS sau baseline ngày 3 phải có CR, tăng phiên bản SRS, và cập nhật `docs/requirements.csv`, RTM và test case liên quan trong vòng 1 ngày; Mạnh duyệt.
+Nguyên tắc (SRS-01 §13): mọi thay đổi SRS đích sau baseline ngày 3 phải có CR, tăng phiên bản SRS, và cập nhật `docs/requirements.csv`, RTM và test case liên quan trong vòng 1 ngày; Mạnh duyệt.
 
 Trạng thái CR: `Chờ nhóm` | `Đã chấp nhận` | `Từ chối` | `Đã áp dụng`.
 
 | CR | Ngày mở | Người đề xuất | Tiêu đề | Yêu cầu liên quan | Trạng thái | Ghi chú |
 |---|---|---|---|---|---|---|
 | CHG-2026-11-13-01 | 2026-11-13 | Mạnh | Chốt CSDL trong §2.4 là PostgreSQL + Prisma | Mục 2.4 (không có ID yêu cầu) | Đã áp dụng | Theo ADR-01; ghi chú ngay dưới §2.4 trong `docs/srs.md`; không ảnh hưởng FR/NFR nên không cần cập nhật RTM |
+| CHG-2026-11-13-03 | 2026-11-13 | Mạnh | Đổi hướng đồ án: kiểm thử 3 hệ thống web đang vận hành thay vì tự xây hệ thống | Toàn bộ FR/NFR (SRS-01 v1.0 mới) | Đã áp dụng | Theo ADR-09..ADR-13; mốc 14 ngày tính lại từ 2026-11-13; bộ testware cũ archive |
 
 ## Thay đổi đã áp dụng trên bản làm việc
 
@@ -16,6 +17,7 @@ Trạng thái CR: `Chờ nhóm` | `Đã chấp nhận` | `Từ chối` | `Đã �
 |---|---|---|---|---|
 | CHG-2026-11-13-01 | 2026-11-13 | SRS §2.4: "MySQL hoặc PostgreSQL \[Cần chốt\]" → "PostgreSQL + Prisma", có ghi chú giải thích | ADR-01 (xác nhận của người dùng ngày 2026-11-13) | Không có FR/NFR liên quan; RTM và test case không đổi |
 | CHG-2026-11-13-02 | 2026-11-13 | SRS §5.1a, §5.7a, §9a, §9b: bổ sung tiêu chí chấp nhận đo được cho M1, M7 và toàn bộ 6 NFR. Làm rõ 10 tiêu chí còn mơ hồ ở M2–M6. Chuyển 5 mục `[Cần chốt]` thành `[Cần chốt → ADR-xx]`. SRS v0.1 → v0.2 | Yêu cầu Ngày 2 (Mạnh) + ADR-02, ADR-07, ADR-08 | Không thêm/bớt ID yêu cầu: `docs/requirements.csv` giữ 46 dòng (40 FR + 6 NFR); RTM-01 giữ nguyên danh sách yêu cầu; test case chưa viết nên không cần sửa |
+| CHG-2026-11-13-03 | 2026-11-13 | **Đổi hướng đồ án.** Giảng viên không yêu cầu sinh viên tự xây dựng ứng dụng web. Toàn bộ testware cũ (SRS/TP/RTM v0.x của hệ thống tự xây, mã nguồn `client`/`server`) được archive vào `archive/2026-11-13-webapp-pivot/`. Viết mới: SRS-01 v1.0 (đặc tả yêu cầu **đích**, as-observed, 58 FR + 7 NFR), TP-01 v1.0, RTM-01 v1.0, bộ test case 226 ca. Đổi định danh ID từ `FR-M<n>-<nn>` của hệ thống cũ sang `FR-M<n>-<nn>` tái sử dụng theo module mới (M1–M7 giữ nguyên ý nghĩa module) | ADR-09, ADR-10, ADR-11, ADR-12, ADR-13 | `docs/requirements.csv` → 65 yêu cầu; RTM-01 viết lại, truy xuất 100%; test case mới trong `docs/testcases/`; `docs/PROGRESS.md` lịch 14 ngày tính lại từ 2026-11-13 |
 
 Ghi chú quy trình: đây là khoản trống của bản nháp v0.1 được điền trong Ngày 1 theo yêu cầu "rà SRS §1–2 và hoàn thiện nếu thiếu", nên không phải thay đổi yêu cầu sau baseline. Mọi thay đổi sau ngày 3 vẫn phải đi qua CR như SRS §10.C.
 
@@ -34,18 +36,15 @@ Trạng thái: Chờ nhóm | Đã chấp nhận | Từ chối | Đã áp dụng
 Quyết định của nhóm: <nội dung họp, ngày>
 ```
 
-## Ứng viên chưa đề xuất (ghi để chuẩn bị Inspection ngày 3)
+## Ứng viên chưa đề xuất (ghi để chuẩn bị Inspection Ngày 3)
 
-Nguồn: `day-playbook.md` § Ngày 3 (danh sách mầm lỗi đã biết). Trạng thái hiện tại: **chưa kiểm chứng**; phải đọc lại SRS rồi mới xác nhận mỗi mục và mở CR chính thức nếu đúng.
+Nguồn: quan sát ban đầu trên 3 site đích. Trạng thái hiện tại: **chưa kiểm chứng**; phải đọc lại SRS-01 rồi mới xác nhận mỗi mục và mở CR chính thức nếu đúng.
 
 | Mã ứng viên | Vấn đề | Kiểm chứng |
 |---|---|---|
-| CR-01 | Bảng quyết định hủy SRS §8.2: cột R3 ("đã đặt cọc" = N) chỉ khả thi khi có lịch không thu cọc, trong khi BR-11 bắt buộc cọc và FR-M7-04 chỉ cho Admin xem/điều chỉnh | Chờ Ngày 3 |
-| CR-02 | FR-M6-04 (thanh toán cọc, Should) là điều kiện của FR-M4-01 và UC-04 (Must) | Chờ Ngày 3 |
-| CR-03 | Lịch `Pending` quá giờ hẹn không có đường ra: No-show chỉ áp dụng từ `Confirmed` (SRS §8.1, BR-12) | Chờ Ngày 3 |
-| CR-04 | Không có cách KH thành VIP (BR-10) và cách tạo tài khoản NV/AD (FR-M1-01 chỉ đăng ký KH) | Chờ Ngày 3 |
-| CR-05 | BR-01 chưa nói lịch có kết thúc trước 18:00 hay không | Chờ Ngày 3 |
-| CR-06 | BR-05 (tối đa 3 lịch Pending/Confirmed cùng lúc) không có trong tiêu chí chấp nhận của FR-M4-01 | Chờ Ngày 3 |
-| CR-07 | FR-M6-01 (tính giá) đang để mức Should trong SRS §5.6, nhưng là điều kiện của FR-M4-01 (Must) và TP-01 §7 đề xuất nâng lên Must. Backlog đang xếp Must theo đề xuất này | Chờ Ngày 3 |
-| CR-08 | FR-M7-04 (ghi nhật ký thao tác của Admin) đang để mức Could trong SRS §5.7, nhưng là cơ sở cho nghiệp vụ `audit_log` của FR-M7-01…03 và cho yêu cầu an toàn dữ liệu. Đề xuất nâng lên Should | Chờ Ngày 3 |
-| CR-09 | Bảng §9 không có cột ưu tiên cho NFR; §9a đã làm rõ ngưỡng đạt của NFR-02 (không còn phát hiện Critical/High theo TP-01 §9.5) và §9b làm rõ 5 NFR còn lại | Chờ Ngày 3 |
+| CR-10 | T1: công thức phụ thu di chuyển `max(0, km − 5) × 8.000₫` không nêu rõ làm tròn thế nào khi khoảng cách không nguyên, và không nêu cách ước lượng khoảng cách từ địa chỉ | Chờ Ngày 3 |
+| CR-11 | T2: giá tính tức thì có khớp bảng giá tĩnh ở mọi ô hay không — quan sát mới xác nhận một ô (Chó, >3–6 kg, Combo Tắm Vệ Sinh = 200.000₫) | Chờ Ngày 3 |
+| CR-12 | T2: nhóm "báo giá riêng" hiển thị khoảng giá cụ thể hay chỉ câu chữ "tuỳ thiết kế" — ảnh hưởng tiêu chí chấp nhận của FR-M3-04 | Chờ Ngày 3 |
+| CR-13 | T3: bảng giá theo lbs nhưng form đặt lịch có nhập cân nặng bằng lbs hay kg — cần chốt đơn vị nhập để viết BVA | Chờ Ngày 3 |
+| CR-14 | T3: phí lễ tân 52 USD/30 phút gắn với dịch vụ nào, có hiển thị trong bảng giá hay chỉ ở trang đặt lịch | Chờ Ngày 3 |
+| CR-15 | Cả 3 site: ngưỡng "trong vòng 30 ngày" của FR-M4-05 (chỉ ghi ở T2) có áp dụng đồng nhất cho T1 và T3 hay không | Chờ Ngày 3 |

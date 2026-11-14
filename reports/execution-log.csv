@@ -1,0 +1,31 @@
+TC_ID,Requirement_ID,System,Title,Type,Owner,Executed_By,Executed_At,Result,Defect_ID,Note
+TC-NFR-02-001,NFR-02,ALL,Site bật HTTPS và có HSTS,Auto,Mạnh,Mạnh (script),2026-11-14,Fail,DEF-002 DEF-009,Playwright — bằng chứng trong reports/playwright/
+TC-NFR-02-002,NFR-02,ALL,Trang trả về X-Content-Type-Options: nosniff,Auto,Mạnh,Mạnh (script),2026-11-14,Fail,DEF-003 DEF-006 DEF-010,Playwright — bằng chứng trong reports/playwright/
+TC-NFR-02-003,NFR-02,ALL,Trang có X-Frame-Options hoặc CSP frame-ancestors,Auto,Mạnh,Mạnh (script),2026-11-14,Fail,DEF-004 DEF-007 DEF-011,Playwright — bằng chứng trong reports/playwright/
+TC-NFR-02-004,NFR-02,ALL,Trang có Referrer-Policy,Auto,Mạnh,Mạnh (script),2026-11-14,Fail,DEF-005 DEF-008 DEF-012,Playwright — bằng chứng trong reports/playwright/
+TC-NFR-02-005,NFR-02,ALL,Cookie phiên có cờ Secure và HttpOnly,Auto,Mạnh,Mạnh (script),2026-11-14,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-NFR-02-008,NFR-02,ALL,"URL sai trả trang lỗi thân thiện, không lộ stack trace",Auto,Mạnh,Mạnh (script),2026-11-14,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-NFR-04-001,NFR-04,ALL,Chức năng tính giá chạy đúng trên Chrome,Auto,Tài,Mạnh (script),2026-11-14,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-NFR-04-005,NFR-04,ALL,Không có cuộn ngang ở màn hình 360px trên trang đặt lịch,Auto,Tài,Mạnh (script),2026-11-14,Fail,DEF-016,Playwright — bằng chứng trong reports/playwright/
+TC-NFR-04-006,NFR-04,ALL,Chức năng tính giá chạy đúng trên khung nhìn di động 360x740,Auto,Tài,Mạnh (script),2026-11-14,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-NFR-06-001,NFR-06,ALL,axe-core không có vi phạm mức critical,Auto,Lộc,Mạnh (script),2026-11-14,Fail,DEF-013,Playwright — bằng chứng trong reports/playwright/
+TC-NFR-06-002,NFR-06,ALL,"Mọi vùng chữ đạt tương phản ≥ 4,5:1",Auto,Lộc,Mạnh (script),2026-11-14,Fail,DEF-014 DEF-015,Playwright — bằng chứng trong reports/playwright/
+TC-NFR-06-003,NFR-06,ALL,Mọi trường form có nhãn gắn liền,Auto,Lộc,Mạnh (script),2026-11-14,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-NFR-06-004,NFR-06,ALL,Mọi ảnh nội dung có thuộc tính alt,Auto,Lộc,Mạnh (script),2026-11-14,Fail,DEF-013,Playwright — bằng chứng trong reports/playwright/
+TC-NFR-06-005,NFR-06,ALL,Mỗi trang có đúng một tiêu đề h1,Auto,Lộc,Mạnh (script),2026-11-14,Fail,DEF-001,Playwright — bằng chứng trong reports/playwright/
+TC-NFR-07-001,NFR-07,ALL,Mỗi trang có một thẻ title duy nhất và không rỗng,Auto,Lộc,Mạnh (script),2026-11-14,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-NFR-07-002,NFR-07,ALL,Mỗi trang có thẻ meta description không rỗng,Auto,Lộc,Mạnh (script),2026-11-14,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-NFR-07-003,NFR-07,ALL,Thẻ html có thuộc tính lang,Auto,Lộc,Mạnh (script),2026-11-14,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-NFR-07-004,NFR-07,ALL,sitemap.xml tồn tại và không chặn trang quan trọng,Auto,Lộc,Mạnh (script),2026-11-14,Fail,DEF-017,Playwright — bằng chứng trong reports/playwright/ (2 biến thể)
+TC-NFR-07-005,NFR-07,ALL,robots.txt tồn tại và không chặn toàn bộ site,Auto,Lộc,Mạnh (script),2026-11-14,Fail,DEF-018,Playwright — bằng chứng trong reports/playwright/ (2 biến thể)
+TC-NFR-07-006,NFR-07,ALL,"Thẻ Open Graph có title, description và image",Auto,Lộc,Mạnh (script),2026-11-14,Fail,DEF-021,Playwright — bằng chứng trong reports/playwright/
+TC-T1-M1-001,FR-M1-01,T1,Trang chủ Pet NGON trả HTTP 200 và hiển thị tiêu đề + điều hướng chính,Auto,Lộc,Mạnh (script),2026-11-14,Pass,,Playwright — xem reports/raw/playwright-report.json (2 biến thể)
+TC-T1-M1-002,FR-M1-02,T1,Mọi liên kết menu điều hướng đến trang con trả HTTP 200,Auto,Lộc,Mạnh (script),2026-11-14,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T1-M1-004,FR-M1-04,T1,Không có liên kết chết 404 trong menu và footer,Auto,Tài,Mạnh (script),2026-11-14,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T2-M1-001,FR-M1-01,T2,Trang chủ Mật Pet trả HTTP 200 và hiển thị tiêu đề + điều hướng chính,Auto,Ngân,Tài (Newman),2026-11-14,Pass,,"Newman — 2 assertion, 0 fail"
+TC-T2-M3-002,FR-M3-02,T2,"Tra bảng giá đúng cho (Chó, bậc >3-6kg) + Combo Tắm Vệ Sinh = 200.000đ",Auto,Ngân,Mạnh (script),2026-11-14,Pass,,Playwright — xem reports/raw/playwright-report.json (3 biến thể)
+TC-T2-M3-004,FR-M3-03,T2,"Chọn xong loài, cân nặng, dịch vụ thì giá dự kiến hiển thị tức thì",Auto,Ngân,Mạnh (script),2026-11-14,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T3-M1-001,FR-M1-01,T3,Trang chủ Pretty Paws trả HTTP 200 và hiển thị tiêu đề + điều hướng chính,Auto,Mạnh,Mạnh (script),2026-11-14,Pass,,Playwright — xem reports/raw/playwright-report.json (2 biến thể)
+TC-T3-M1-003,FR-M1-03,T3,"Trang hiển thị đủ địa chỉ, điện thoại, email và giờ mở cửa",Manual,Mạnh,Mạnh (script),2026-11-14,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T3-M4-009,FR-M4-12,T3,Luồng đặt lịch không yêu cầu đăng nhập hoặc tạo tài khoản,Manual,Mạnh,Mạnh (script),2026-11-14,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T3-M5-005,FR-M5-07,T3,Trang hiển thị trạng thái Open/Closed và giờ mở cửa,Manual,Lộc,Mạnh (script),2026-11-14,Pass,,Playwright — xem reports/raw/playwright-report.json

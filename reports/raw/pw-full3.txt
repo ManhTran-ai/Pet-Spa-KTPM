@@ -1,0 +1,528 @@
+
+Running 32 tests using 1 worker
+
+  ok  1 [t1] › tests\e2e\t1\m1-navigation.spec.ts:9:3 › T1 Pet NGON — M1 Truy cập và điều hướng › TC-T1-M1-001: trang chủ trả HTTP 200 và hiển thị tiêu đề (14.1s)
+  ok  2 [t1] › tests\e2e\t1\m1-navigation.spec.ts:15:3 › T1 Pet NGON — M1 Truy cập và điều hướng › TC-T1-M1-002: mọi liên kết menu trả HTTP 200 (12.0s)
+  ok  3 [t1] › tests\e2e\t1\m1-navigation.spec.ts:30:3 › T1 Pet NGON — M1 Truy cập và điều hướng › TC-T1-M1-004: không có liên kết chết 404 trong menu và footer (40.0s)
+  ok  4 [t2] › tests\e2e\t2\m3-pricing.spec.ts:41:5 › T2 Mật Pet — M3 Bảng giá theo cân nặng › TC-T2-M3-002: giá tính tức thì Chó >3–6kg Combo Tắm Vệ Sinh khớp bảng giá tĩnh (19.5s)
+  ok  5 [t2] › tests\e2e\t2\m3-pricing.spec.ts:41:5 › T2 Mật Pet — M3 Bảng giá theo cân nặng › TC-T2-M3-002: giá tính tức thì Chó >3–6kg Combo Tắm Cạo khớp bảng giá tĩnh (4.1s)
+  ok  6 [t2] › tests\e2e\t2\m3-pricing.spec.ts:41:5 › T2 Mật Pet — M3 Bảng giá theo cân nặng › TC-T2-M3-002: giá tính tức thì Chó >6–10kg Combo Tắm Vệ Sinh khớp bảng giá tĩnh (3.7s)
+  ok  7 [t2] › tests\e2e\t2\m3-pricing.spec.ts:53:3 › T2 Mật Pet — M3 Bảng giá theo cân nặng › TC-T2-M3-004: giá cập nhật tức thì khi đổi bậc cân nặng (6.4s)
+  ok  8 [t3] › tests\e2e\t3\m1-m5-info.spec.ts:17:3 › T3 Pretty Paws — M1/M5 Truy cập, liên hệ và trạng thái tiệm › TC-T3-M1-001: trang chủ trả HTTP 200 và có tiêu đề (3.7s)
+  ok  9 [t3] › tests\e2e\t3\m1-m5-info.spec.ts:23:3 › T3 Pretty Paws — M1/M5 Truy cập, liên hệ và trạng thái tiệm › TC-T3-M1-003: trang hiển thị đủ điện thoại, email và địa chỉ (8.6s)
+  ok 10 [t3] › tests\e2e\t3\m1-m5-info.spec.ts:32:3 › T3 Pretty Paws — M1/M5 Truy cập, liên hệ và trạng thái tiệm › TC-T3-M5-005: trang hiển thị trạng thái mở/đóng kèm khung giờ mở cửa đầy đủ (10.6s)
+  ok 11 [t3] › tests\e2e\t3\m1-m5-info.spec.ts:40:3 › T3 Pretty Paws — M1/M5 Truy cập, liên hệ và trạng thái tiệm › TC-T3-M4-009: có nút "Book Now" để đặt lịch 24/7 mà không cần đăng nhập (9.5s)
+  x  12 [security] › tests\security\accessibility.spec.ts:40:3 › NFR-06 — Khả năng tiếp cận › TC-NFR-06-001: axe-core không có vi phạm mức critical trên cả 3 site (34.1s)
+  x  13 [security] › tests\security\accessibility.spec.ts:72:3 › NFR-06 — Khả năng tiếp cận › TC-NFR-06-002: mọi vùng chữ đạt tương phản ≥ 4,5:1 trên cả 3 site (28.1s)
+  ok 14 [security] › tests\security\accessibility.spec.ts:86:3 › NFR-06 — Khả năng tiếp cận › TC-NFR-06-003: mọi trường form có nhãn gắn liền trên cả 3 site (41.5s)
+  x  15 [security] › tests\security\accessibility.spec.ts:100:3 › NFR-06 — Khả năng tiếp cận › TC-NFR-06-004: mọi ảnh nội dung có thuộc tính alt trên cả 3 site (29.3s)
+  x  16 [security] › tests\security\accessibility.spec.ts:114:3 › NFR-06 — Khả năng tiếp cận › TC-NFR-06-005: mỗi trang có đúng một tiêu đề h1 trên cả 3 site (41.2s)
+  ok 17 [security] › tests\security\headers.spec.ts:42:3 › NFR-02 — Baseline bảo mật › tổng hợp HTTP security header của 3 site vào reports/raw/security-summary.csv (8.9s)
+  x  18 [security] › tests\security\headers.spec.ts:56:3 › NFR-02 — Baseline bảo mật › TC-NFR-02-001: cả 3 site bật HTTPS và trả header Strict-Transport-Security (8.5s)
+  x  19 [security] › tests\security\headers.spec.ts:66:3 › NFR-02 — Baseline bảo mật › TC-NFR-02-002: cả 3 site trả header X-Content-Type-Options: nosniff (7.9s)
+  x  20 [security] › tests\security\headers.spec.ts:78:3 › NFR-02 — Baseline bảo mật › TC-NFR-02-003: cả 3 site có X-Frame-Options hoặc CSP frame-ancestors (7.4s)
+  x  21 [security] › tests\security\headers.spec.ts:90:3 › NFR-02 — Baseline bảo mật › TC-NFR-02-004: cả 3 site có header Referrer-Policy (9.0s)
+  ok 22 [security] › tests\security\headers.spec.ts:99:3 › NFR-02 — Baseline bảo mật › TC-NFR-02-005: cookie phiên của cả 3 site có Secure và HttpOnly (22.2s)
+  ok 23 [security] › tests\security\headers.spec.ts:114:3 › NFR-02 — Baseline bảo mật › TC-NFR-02-008: URL sai trả trang lỗi thân thiện, không lộ stack trace (8.1s)
+  ok 24 [security] › tests\security\responsive.spec.ts:17:3 › NFR-04 — Tương thích di động 360px › TC-NFR-04-001: chức năng tính giá của T2 chạy đúng trên Chrome (8.6s)
+  x  25 [security] › tests\security\responsive.spec.ts:34:3 › NFR-04 — Tương thích di động 360px › TC-NFR-04-005: không có cuộn ngang ở màn hình 360px trên cả 3 site (27.1s)
+  ok 26 [security] › tests\security\responsive.spec.ts:50:3 › NFR-04 — Tương thích di động 360px › TC-NFR-04-006: luồng tính giá của T2 dùng được trên khung nhìn 360x740 (6.9s)
+  ok 27 [security] › tests\security\seo.spec.ts:16:3 › NFR-07 — SEO và kỹ thuật bảo trì › TC-NFR-07-001: mỗi trang có đúng một thẻ title không rỗng (20.2s)
+  ok 28 [security] › tests\security\seo.spec.ts:30:3 › NFR-07 — SEO và kỹ thuật bảo trì › TC-NFR-07-002: mỗi trang có thẻ meta description không rỗng (23.7s)
+  ok 29 [security] › tests\security\seo.spec.ts:48:3 › NFR-07 — SEO và kỹ thuật bảo trì › TC-NFR-07-003: thẻ html có thuộc tính lang (16.1s)
+  x  30 [security] › tests\security\seo.spec.ts:61:3 › NFR-07 — SEO và kỹ thuật bảo trì › TC-NFR-07-004: sitemap.xml tồn tại và không chặn trang quan trọng (8.6s)
+  x  31 [security] › tests\security\seo.spec.ts:76:3 › NFR-07 — SEO và kỹ thuật bảo trì › TC-NFR-07-005: robots.txt tồn tại và không chặn toàn bộ site (9.1s)
+  x  32 [security] › tests\security\seo.spec.ts:94:3 › NFR-07 — SEO và kỹ thuật bảo trì › TC-NFR-07-006: thẻ Open Graph có title, description và image (22.9s)
+
+
+  1) [security] › tests\security\accessibility.spec.ts:40:3 › NFR-06 — Khả năng tiếp cận › TC-NFR-06-001: axe-core không có vi phạm mức critical trên cả 3 site 
+
+    Error: vi phạm axe-core mức critical: T3 image-alt (49 node)
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 3
+
+    - Array []
+    + Array [
+    +   "T3 image-alt (49 node)",
+    + ]
+
+      67 |     writeFileSync(AXE_CSV, `\uFEFF${toCsv(rows)}\n`, 'utf8');
+      68 |
+    > 69 |     expect(critical, `vi phạm axe-core mức critical: ${critical.join('; ')}`).toEqual([]);
+         |                                                                               ^
+      70 |   });
+      71 |
+      72 |   test('TC-NFR-06-002: mọi vùng chữ đạt tương phản ≥ 4,5:1 trên cả 3 site', async ({ browser }) => {
+        at D:\Thiết Kế và Kiểm Thử Phần Mềm\Pet-Spa-KTPM\tests\security\accessibility.spec.ts:69:79
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    reports\playwright\security-accessibility-NFR-07ce0-mức-critical-trên-cả-3-site-security\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    reports\playwright\security-accessibility-NFR-07ce0-mức-critical-trên-cả-3-site-security\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
+    reports\playwright\security-accessibility-NFR-07ce0-mức-critical-trên-cả-3-site-security\test-failed-3.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: reports\playwright\security-accessibility-NFR-07ce0-mức-critical-trên-cả-3-site-security\error-context.md
+
+    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
+    reports\playwright\security-accessibility-NFR-07ce0-mức-critical-trên-cả-3-site-security\trace.zip
+    Usage:
+
+        npx playwright show-trace reports\playwright\security-accessibility-NFR-07ce0-mức-critical-trên-cả-3-site-security\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [security] › tests\security\accessibility.spec.ts:72:3 › NFR-06 — Khả năng tiếp cận › TC-NFR-06-002: mọi vùng chữ đạt tương phản ≥ 4,5:1 trên cả 3 site 
+
+    Error: vi phạm tương phản màu: T1 color-contrast (40 node); T2 color-contrast (3 node)
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 4
+
+    - Array []
+    + Array [
+    +   "T1 color-contrast (40 node)",
+    +   "T2 color-contrast (3 node)",
+    + ]
+
+      81 |       await context.close();
+      82 |     }
+    > 83 |     expect(violations, `vi phạm tương phản màu: ${violations.join('; ')}`).toEqual([]);
+         |                                                                            ^
+      84 |   });
+      85 |
+      86 |   test('TC-NFR-06-003: mọi trường form có nhãn gắn liền trên cả 3 site', async ({ browser }) => {
+        at D:\Thiết Kế và Kiểm Thử Phần Mềm\Pet-Spa-KTPM\tests\security\accessibility.spec.ts:83:76
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    reports\playwright\security-accessibility-NFR-47fd6-phản-≥-4-5-1-trên-cả-3-site-security\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    reports\playwright\security-accessibility-NFR-47fd6-phản-≥-4-5-1-trên-cả-3-site-security\test-failed-3.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
+    reports\playwright\security-accessibility-NFR-47fd6-phản-≥-4-5-1-trên-cả-3-site-security\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: reports\playwright\security-accessibility-NFR-47fd6-phản-≥-4-5-1-trên-cả-3-site-security\error-context.md
+
+    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
+    reports\playwright\security-accessibility-NFR-47fd6-phản-≥-4-5-1-trên-cả-3-site-security\trace.zip
+    Usage:
+
+        npx playwright show-trace reports\playwright\security-accessibility-NFR-47fd6-phản-≥-4-5-1-trên-cả-3-site-security\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [security] › tests\security\accessibility.spec.ts:100:3 › NFR-06 — Khả năng tiếp cận › TC-NFR-06-004: mọi ảnh nội dung có thuộc tính alt trên cả 3 site 
+
+    Error: vi phạm thuộc tính alt: T3 image-alt (49 node)
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 3
+
+    - Array []
+    + Array [
+    +   "T3 image-alt (49 node)",
+    + ]
+
+      109 |       await context.close();
+      110 |     }
+    > 111 |     expect(violations, `vi phạm thuộc tính alt: ${violations.join('; ')}`).toEqual([]);
+          |                                                                            ^
+      112 |   });
+      113 |
+      114 |   test('TC-NFR-06-005: mỗi trang có đúng một tiêu đề h1 trên cả 3 site', async ({ browser }) => {
+        at D:\Thiết Kế và Kiểm Thử Phần Mềm\Pet-Spa-KTPM\tests\security\accessibility.spec.ts:111:76
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    reports\playwright\security-accessibility-NFR-26e9a-uộc-tính-alt-trên-cả-3-site-security\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    reports\playwright\security-accessibility-NFR-26e9a-uộc-tính-alt-trên-cả-3-site-security\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
+    reports\playwright\security-accessibility-NFR-26e9a-uộc-tính-alt-trên-cả-3-site-security\test-failed-3.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: reports\playwright\security-accessibility-NFR-26e9a-uộc-tính-alt-trên-cả-3-site-security\error-context.md
+
+    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
+    reports\playwright\security-accessibility-NFR-26e9a-uộc-tính-alt-trên-cả-3-site-security\trace.zip
+    Usage:
+
+        npx playwright show-trace reports\playwright\security-accessibility-NFR-26e9a-uộc-tính-alt-trên-cả-3-site-security\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4) [security] › tests\security\accessibility.spec.ts:114:3 › NFR-06 — Khả năng tiếp cận › TC-NFR-06-005: mỗi trang có đúng một tiêu đề h1 trên cả 3 site 
+
+    Error: tiêu đề h1 không đúng: T3 có 0 phần tử h1
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 3
+
+    - Array []
+    + Array [
+    +   "T3 có 0 phần tử h1",
+    + ]
+
+      123 |       await context.close();
+      124 |     }
+    > 125 |     expect(details, `tiêu đề h1 không đúng: ${details.join('; ')}`).toEqual([]);
+          |                                                                     ^
+      126 |   });
+      127 | });
+      128 |
+        at D:\Thiết Kế và Kiểm Thử Phần Mềm\Pet-Spa-KTPM\tests\security\accessibility.spec.ts:125:69
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    reports\playwright\security-accessibility-NFR-e457e-t-tiêu-đề-h1-trên-cả-3-site-security\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    reports\playwright\security-accessibility-NFR-e457e-t-tiêu-đề-h1-trên-cả-3-site-security\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
+    reports\playwright\security-accessibility-NFR-e457e-t-tiêu-đề-h1-trên-cả-3-site-security\test-failed-3.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: reports\playwright\security-accessibility-NFR-e457e-t-tiêu-đề-h1-trên-cả-3-site-security\error-context.md
+
+    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
+    reports\playwright\security-accessibility-NFR-e457e-t-tiêu-đề-h1-trên-cả-3-site-security\trace.zip
+    Usage:
+
+        npx playwright show-trace reports\playwright\security-accessibility-NFR-e457e-t-tiêu-đề-h1-trên-cả-3-site-security\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  5) [security] › tests\security\headers.spec.ts:56:3 › NFR-02 — Baseline bảo mật › TC-NFR-02-001: cả 3 site bật HTTPS và trả header Strict-Transport-Security 
+
+    Error: T1 thiếu HSTS; T3 thiếu HSTS
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 4
+
+    - Array []
+    + Array [
+    +   "T1 thiếu HSTS",
+    +   "T3 thiếu HSTS",
+    + ]
+
+      61 |       if (!response.headers()['strict-transport-security']) missing.push(`${target.id} thiếu HSTS`);
+      62 |     }
+    > 63 |     expect(missing, missing.join('; ')).toEqual([]);
+         |                                         ^
+      64 |   });
+      65 |
+      66 |   test('TC-NFR-02-002: cả 3 site trả header X-Content-Type-Options: nosniff', async ({ request }) => {
+        at D:\Thiết Kế và Kiểm Thử Phần Mềm\Pet-Spa-KTPM\tests\security\headers.spec.ts:63:41
+
+    Error Context: reports\playwright\security-headers-NFR-02-—--ce1e8-r-Strict-Transport-Security-security\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    reports\playwright\security-headers-NFR-02-—--ce1e8-r-Strict-Transport-Security-security\trace.zip
+    Usage:
+
+        npx playwright show-trace reports\playwright\security-headers-NFR-02-—--ce1e8-r-Strict-Transport-Security-security\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  6) [security] › tests\security\headers.spec.ts:66:3 › NFR-02 — Baseline bảo mật › TC-NFR-02-002: cả 3 site trả header X-Content-Type-Options: nosniff 
+
+    Error: T1 thiếu X-Content-Type-Options: nosniff; T2 thiếu X-Content-Type-Options: nosniff; T3 thiếu X-Content-Type-Options: nosniff
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 5
+
+    - Array []
+    + Array [
+    +   "T1 thiếu X-Content-Type-Options: nosniff",
+    +   "T2 thiếu X-Content-Type-Options: nosniff",
+    +   "T3 thiếu X-Content-Type-Options: nosniff",
+    + ]
+
+      73 |       }
+      74 |     }
+    > 75 |     expect(missing, missing.join('; ')).toEqual([]);
+         |                                         ^
+      76 |   });
+      77 |
+      78 |   test('TC-NFR-02-003: cả 3 site có X-Frame-Options hoặc CSP frame-ancestors', async ({ request }) => {
+        at D:\Thiết Kế và Kiểm Thử Phần Mềm\Pet-Spa-KTPM\tests\security\headers.spec.ts:75:41
+
+    Error Context: reports\playwright\security-headers-NFR-02-—--3005a-ontent-Type-Options-nosniff-security\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    reports\playwright\security-headers-NFR-02-—--3005a-ontent-Type-Options-nosniff-security\trace.zip
+    Usage:
+
+        npx playwright show-trace reports\playwright\security-headers-NFR-02-—--3005a-ontent-Type-Options-nosniff-security\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  7) [security] › tests\security\headers.spec.ts:78:3 › NFR-02 — Baseline bảo mật › TC-NFR-02-003: cả 3 site có X-Frame-Options hoặc CSP frame-ancestors 
+
+    Error: T1 thiếu X-Frame-Options hoặc CSP frame-ancestors; T2 thiếu X-Frame-Options hoặc CSP frame-ancestors; T3 thiếu X-Frame-Options hoặc CSP frame-ancestors
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 5
+
+    - Array []
+    + Array [
+    +   "T1 thiếu X-Frame-Options hoặc CSP frame-ancestors",
+    +   "T2 thiếu X-Frame-Options hoặc CSP frame-ancestors",
+    +   "T3 thiếu X-Frame-Options hoặc CSP frame-ancestors",
+    + ]
+
+      85 |       }
+      86 |     }
+    > 87 |     expect(missing, missing.join('; ')).toEqual([]);
+         |                                         ^
+      88 |   });
+      89 |
+      90 |   test('TC-NFR-02-004: cả 3 site có header Referrer-Policy', async ({ request }) => {
+        at D:\Thiết Kế và Kiểm Thử Phần Mềm\Pet-Spa-KTPM\tests\security\headers.spec.ts:87:41
+
+    Error Context: reports\playwright\security-headers-NFR-02-—--ccd56-ns-hoặc-CSP-frame-ancestors-security\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    reports\playwright\security-headers-NFR-02-—--ccd56-ns-hoặc-CSP-frame-ancestors-security\trace.zip
+    Usage:
+
+        npx playwright show-trace reports\playwright\security-headers-NFR-02-—--ccd56-ns-hoặc-CSP-frame-ancestors-security\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  8) [security] › tests\security\headers.spec.ts:90:3 › NFR-02 — Baseline bảo mật › TC-NFR-02-004: cả 3 site có header Referrer-Policy 
+
+    Error: T1 thiếu Referrer-Policy; T2 thiếu Referrer-Policy; T3 thiếu Referrer-Policy
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 5
+
+    - Array []
+    + Array [
+    +   "T1 thiếu Referrer-Policy",
+    +   "T2 thiếu Referrer-Policy",
+    +   "T3 thiếu Referrer-Policy",
+    + ]
+
+      94 |       if (!response.headers()['referrer-policy']) missing.push(`${target.id} thiếu Referrer-Policy`);
+      95 |     }
+    > 96 |     expect(missing, missing.join('; ')).toEqual([]);
+         |                                         ^
+      97 |   });
+      98 |
+      99 |   test('TC-NFR-02-005: cookie phiên của cả 3 site có Secure và HttpOnly', async ({ request }) => {
+        at D:\Thiết Kế và Kiểm Thử Phần Mềm\Pet-Spa-KTPM\tests\security\headers.spec.ts:96:41
+
+    Error Context: reports\playwright\security-headers-NFR-02-—--5e338-e-có-header-Referrer-Policy-security\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    reports\playwright\security-headers-NFR-02-—--5e338-e-có-header-Referrer-Policy-security\trace.zip
+    Usage:
+
+        npx playwright show-trace reports\playwright\security-headers-NFR-02-—--5e338-e-có-header-Referrer-Policy-security\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  9) [security] › tests\security\responsive.spec.ts:34:3 › NFR-04 — Tương thích di động 360px › TC-NFR-04-005: không có cuộn ngang ở màn hình 360px trên cả 3 site 
+
+    Error: T1 tràn ngang 19px ở 360px
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 3
+
+    - Array []
+    + Array [
+    +   "T1 tràn ngang 19px ở 360px",
+    + ]
+
+      45 |       await context.close();
+      46 |     }
+    > 47 |     expect(problems, problems.join('; ')).toEqual([]);
+         |                                           ^
+      48 |   });
+      49 |
+      50 |   test('TC-NFR-04-006: luồng tính giá của T2 dùng được trên khung nhìn 360x740', async ({ browser }) => {
+        at D:\Thiết Kế và Kiểm Thử Phần Mềm\Pet-Spa-KTPM\tests\security\responsive.spec.ts:47:43
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    reports\playwright\security-responsive-NFR-04-a0852-n-hình-360px-trên-cả-3-site-security\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    reports\playwright\security-responsive-NFR-04-a0852-n-hình-360px-trên-cả-3-site-security\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
+    reports\playwright\security-responsive-NFR-04-a0852-n-hình-360px-trên-cả-3-site-security\test-failed-3.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: reports\playwright\security-responsive-NFR-04-a0852-n-hình-360px-trên-cả-3-site-security\error-context.md
+
+    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
+    reports\playwright\security-responsive-NFR-04-a0852-n-hình-360px-trên-cả-3-site-security\trace.zip
+    Usage:
+
+        npx playwright show-trace reports\playwright\security-responsive-NFR-04-a0852-n-hình-360px-trên-cả-3-site-security\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  10) [security] › tests\security\seo.spec.ts:61:3 › NFR-07 — SEO và kỹ thuật bảo trì › TC-NFR-07-004: sitemap.xml tồn tại và không chặn trang quan trọng 
+
+    Error: T3 sitemap.xml trả 404
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 3
+
+    - Array []
+    + Array [
+    +   "T3 sitemap.xml trả 404",
+    + ]
+
+      71 |       if (!body.includes('<urlset')) problems.push(`${target.id} sitemap.xml không phải định dạng urlset`);
+      72 |     }
+    > 73 |     expect(problems, problems.join('; ')).toEqual([]);
+         |                                           ^
+      74 |   });
+      75 |
+      76 |   test('TC-NFR-07-005: robots.txt tồn tại và không chặn toàn bộ site', async ({ request }) => {
+        at D:\Thiết Kế và Kiểm Thử Phần Mềm\Pet-Spa-KTPM\tests\security\seo.spec.ts:73:43
+
+    Error Context: reports\playwright\security-seo-NFR-07-—-SEO--c82d4-không-chặn-trang-quan-trọng-security\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    reports\playwright\security-seo-NFR-07-—-SEO--c82d4-không-chặn-trang-quan-trọng-security\trace.zip
+    Usage:
+
+        npx playwright show-trace reports\playwright\security-seo-NFR-07-—-SEO--c82d4-không-chặn-trang-quan-trọng-security\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  11) [security] › tests\security\seo.spec.ts:76:3 › NFR-07 — SEO và kỹ thuật bảo trì › TC-NFR-07-005: robots.txt tồn tại và không chặn toàn bộ site 
+
+    Error: T3 robots.txt trả 404
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 3
+
+    - Array []
+    + Array [
+    +   "T3 robots.txt trả 404",
+    + ]
+
+      89 |       }
+      90 |     }
+    > 91 |     expect(problems, problems.join('; ')).toEqual([]);
+         |                                           ^
+      92 |   });
+      93 |
+      94 |   test('TC-NFR-07-006: thẻ Open Graph có title, description và image', async ({ browser }) => {
+        at D:\Thiết Kế và Kiểm Thử Phần Mềm\Pet-Spa-KTPM\tests\security\seo.spec.ts:91:43
+
+    Error Context: reports\playwright\security-seo-NFR-07-—-SEO--77f60--và-không-chặn-toàn-bộ-site-security\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    reports\playwright\security-seo-NFR-07-—-SEO--77f60--và-không-chặn-toàn-bộ-site-security\trace.zip
+    Usage:
+
+        npx playwright show-trace reports\playwright\security-seo-NFR-07-—-SEO--77f60--và-không-chặn-toàn-bộ-site-security\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  12) [security] › tests\security\seo.spec.ts:94:3 › NFR-07 — SEO và kỹ thuật bảo trì › TC-NFR-07-006: thẻ Open Graph có title, description và image 
+
+    Error: T1 thiếu og:image; T2 thiếu og:image
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 4
+
+    - Array []
+    + Array [
+    +   "T1 thiếu og:image",
+    +   "T2 thiếu og:image",
+    + ]
+
+      111 |       await context.close();
+      112 |     }
+    > 113 |     expect(problems, problems.join('; ')).toEqual([]);
+          |                                           ^
+      114 |   });
+      115 | });
+      116 |
+        at D:\Thiết Kế và Kiểm Thử Phần Mềm\Pet-Spa-KTPM\tests\security\seo.spec.ts:113:43
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    reports\playwright\security-seo-NFR-07-—-SEO--8d265--title-description-và-image-security\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    reports\playwright\security-seo-NFR-07-—-SEO--8d265--title-description-và-image-security\test-failed-3.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
+    reports\playwright\security-seo-NFR-07-—-SEO--8d265--title-description-và-image-security\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: reports\playwright\security-seo-NFR-07-—-SEO--8d265--title-description-và-image-security\error-context.md
+
+    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
+    reports\playwright\security-seo-NFR-07-—-SEO--8d265--title-description-và-image-security\trace.zip
+    Usage:
+
+        npx playwright show-trace reports\playwright\security-seo-NFR-07-—-SEO--8d265--title-description-và-image-security\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  12 failed
+    [security] › tests\security\accessibility.spec.ts:40:3 › NFR-06 — Khả năng tiếp cận › TC-NFR-06-001: axe-core không có vi phạm mức critical trên cả 3 site 
+    [security] › tests\security\accessibility.spec.ts:72:3 › NFR-06 — Khả năng tiếp cận › TC-NFR-06-002: mọi vùng chữ đạt tương phản ≥ 4,5:1 trên cả 3 site 
+    [security] › tests\security\accessibility.spec.ts:100:3 › NFR-06 — Khả năng tiếp cận › TC-NFR-06-004: mọi ảnh nội dung có thuộc tính alt trên cả 3 site 
+    [security] › tests\security\accessibility.spec.ts:114:3 › NFR-06 — Khả năng tiếp cận › TC-NFR-06-005: mỗi trang có đúng một tiêu đề h1 trên cả 3 site 
+    [security] › tests\security\headers.spec.ts:56:3 › NFR-02 — Baseline bảo mật › TC-NFR-02-001: cả 3 site bật HTTPS và trả header Strict-Transport-Security 
+    [security] › tests\security\headers.spec.ts:66:3 › NFR-02 — Baseline bảo mật › TC-NFR-02-002: cả 3 site trả header X-Content-Type-Options: nosniff 
+    [security] › tests\security\headers.spec.ts:78:3 › NFR-02 — Baseline bảo mật › TC-NFR-02-003: cả 3 site có X-Frame-Options hoặc CSP frame-ancestors 
+    [security] › tests\security\headers.spec.ts:90:3 › NFR-02 — Baseline bảo mật › TC-NFR-02-004: cả 3 site có header Referrer-Policy 
+    [security] › tests\security\responsive.spec.ts:34:3 › NFR-04 — Tương thích di động 360px › TC-NFR-04-005: không có cuộn ngang ở màn hình 360px trên cả 3 site 
+    [security] › tests\security\seo.spec.ts:61:3 › NFR-07 — SEO và kỹ thuật bảo trì › TC-NFR-07-004: sitemap.xml tồn tại và không chặn trang quan trọng 
+    [security] › tests\security\seo.spec.ts:76:3 › NFR-07 — SEO và kỹ thuật bảo trì › TC-NFR-07-005: robots.txt tồn tại và không chặn toàn bộ site 
+    [security] › tests\security\seo.spec.ts:94:3 › NFR-07 — SEO và kỹ thuật bảo trì › TC-NFR-07-006: thẻ Open Graph có title, description và image 
+  20 passed (9.1m)

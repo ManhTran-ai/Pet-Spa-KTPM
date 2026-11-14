@@ -1,0 +1,683 @@
+﻿
+Running 31 tests using 1 worker
+
+node.exe : (node:17104) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ((node:17104) Wa... env being set.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [t1] â€º tests\e2e\t1\m1-navigation.spec.ts:9:3 â€º T1 Pet NGON â€” M1 Truy cáº­p vĂ  Ä‘iá»u hÆ°á»›ng â€º TC-T1-M1-001: trang chá»§ tráº£ HTTP 200 vĂ  hiá»ƒn thá»‹ tiĂªu Ä‘á» (5.7s)
+  ok  2 [t1] â€º tests\e2e\t1\m1-navigation.spec.ts:15:3 â€º T1 Pet NGON â€” M1 Truy cáº­p vĂ  Ä‘iá»u hÆ°á»›ng â€º TC-T1-M1-002: má»i liĂªn káº¿t menu tráº£ HTTP 200 (7.7s)
+  ok  3 [t1] â€º tests\e2e\t1\m1-navigation.spec.ts:30:3 â€º T1 Pet NGON â€” M1 Truy cáº­p vĂ  Ä‘iá»u hÆ°á»›ng â€º TC-T1-M1-004: khĂ´ng cĂ³ liĂªn káº¿t cháº¿t 404 trong menu vĂ  footer (10.6s)
+(node:13964) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  4 [t2] â€º tests\e2e\t2\m3-pricing.spec.ts:41:5 â€º T2 Máº­t Pet â€” M3 Báº£ng giĂ¡ theo cĂ¢n náº·ng â€º TC-T2-M3-002: giĂ¡ tĂ­nh tá»©c thĂ¬ ChĂ³ >3â€“6kg Combo Táº¯m Vá»‡ Sinh khá»›p báº£ng giĂ¡ tÄ©nh (5.3s)
+  ok  5 [t2] â€º tests\e2e\t2\m3-pricing.spec.ts:41:5 â€º T2 Máº­t Pet â€” M3 Báº£ng giĂ¡ theo cĂ¢n náº·ng â€º TC-T2-M3-002: giĂ¡ tĂ­nh tá»©c thĂ¬ ChĂ³ >3â€“6kg Combo Táº¯m Cáº¡o khá»›p báº£ng giĂ¡ tÄ©nh (4.4s)
+  ok  6 [t2] â€º tests\e2e\t2\m3-pricing.spec.ts:41:5 â€º T2 Máº­t Pet â€” M3 Báº£ng giĂ¡ theo cĂ¢n náº·ng â€º TC-T2-M3-002: giĂ¡ tĂ­nh tá»©c thĂ¬ ChĂ³ >6â€“10kg Combo Táº¯m Vá»‡ Sinh khá»›p báº£ng giĂ¡ tÄ©nh (3.4s)
+  ok  7 [t2] â€º tests\e2e\t2\m3-pricing.spec.ts:53:3 â€º T2 Máº­t Pet â€” M3 Báº£ng giĂ¡ theo cĂ¢n náº·ng â€º TC-T2-M3-004: giĂ¡ cáº­p nháº­t tá»©c thĂ¬ khi Ä‘á»•i báº­c cĂ¢n náº·ng (5.9s)
+(node:17088) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  8 [t3] â€º tests\e2e\t3\m1-m5-info.spec.ts:17:3 â€º T3 Pretty Paws â€” M1/M5 Truy cáº­p, liĂªn há»‡ vĂ  tráº¡ng thĂ¡i tiá»‡m â€º TC-T3-M1-001: trang chá»§ tráº£ HTTP 200 vĂ  cĂ³ tiĂªu Ä‘á» (5.4s)
+  ok  9 [t3] â€º tests\e2e\t3\m1-m5-info.spec.ts:23:3 â€º T3 Pretty Paws â€” M1/M5 Truy cáº­p, liĂªn há»‡ vĂ  tráº¡ng thĂ¡i tiá»‡m â€º TC-T3-M1-003: trang hiá»ƒn thá»‹ Ä‘á»§ Ä‘iá»‡n thoáº¡i, email vĂ  Ä‘á»‹a chá»‰ (4.2s)
+  x  10 [t3] â€º tests\e2e\t3\m1-m5-info.spec.ts:32:3 â€º T3 Pretty Paws â€” M1/M5 Truy cáº­p, liĂªn há»‡ vĂ  tráº¡ng thĂ¡i tiá»‡m â€º TC-T3-M5-005: trang hiá»ƒn thá»‹ tráº¡ng thĂ¡i má»Ÿ/Ä‘Ă³ng kĂ¨m khung giá» má»Ÿ cá»­a Ä‘áº§y Ä‘á»§ (4.3s)
+(node:2880) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 11 [t3] â€º tests\e2e\t3\m1-m5-info.spec.ts:40:3 â€º T3 Pretty Paws â€” M1/M5 Truy cáº­p, liĂªn há»‡ vĂ  tráº¡ng thĂ¡i tiá»‡m â€º TC-T3-M4-009: cĂ³ nĂºt "Book Now" Ä‘á»ƒ Ä‘áº·t lá»‹ch 24/7 mĂ  khĂ´ng cáº§n Ä‘Äƒng nháº­p (5.1s)
+(node:18064) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  12 [security] â€º tests\security\accessibility.spec.ts:40:3 â€º NFR-06 â€” Kháº£ nÄƒng tiáº¿p cáº­n â€º TC-NFR-06-001: axe-core khĂ´ng cĂ³ vi pháº¡m má»©c critical trĂªn cáº£ 3 site (1.0m)
+(node:5976) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  13 [security] â€º tests\security\accessibility.spec.ts:72:3 â€º NFR-06 â€” Kháº£ nÄƒng tiáº¿p cáº­n â€º TC-NFR-06-002: má»i vĂ¹ng chá»¯ Ä‘áº¡t tÆ°Æ¡ng pháº£n â‰¥ 4,5:1 trĂªn cáº£ 3 site (1.0m)
+(node:12868) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 14 [security] â€º tests\security\accessibility.spec.ts:86:3 â€º NFR-06 â€” Kháº£ nÄƒng tiáº¿p cáº­n â€º TC-NFR-06-003: má»i trÆ°á»ng form cĂ³ nhĂ£n gáº¯n liá»n trĂªn cáº£ 3 site (31.8s)
+  x  15 [security] â€º tests\security\accessibility.spec.ts:100:3 â€º NFR-06 â€” Kháº£ nÄƒng tiáº¿p cáº­n â€º TC-NFR-06-004: má»i áº£nh ná»™i dung cĂ³ thuá»™c tĂ­nh alt trĂªn cáº£ 3 site (11.7s)
+(node:4648) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  16 [security] â€º tests\security\accessibility.spec.ts:114:3 â€º NFR-06 â€” Kháº£ nÄƒng tiáº¿p cáº­n â€º TC-NFR-06-005: má»—i trang cĂ³ Ä‘Ăºng má»™t tiĂªu Ä‘á» h1 trĂªn cáº£ 3 site (1.0m)
+(node:4688) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 17 [security] â€º tests\security\headers.spec.ts:41:3 â€º NFR-02 â€” Baseline báº£o máº­t â€º tá»•ng há»£p HTTP security header cá»§a 3 site vĂ o reports/raw/security-summary.csv (5.4s)
+  x  18 [security] â€º tests\security\headers.spec.ts:55:3 â€º NFR-02 â€” Baseline báº£o máº­t â€º TC-NFR-02-001: cáº£ 3 site báº­t HTTPS vĂ  tráº£ header Strict-Transport-Security (4.6s)
+(node:4404) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  19 [security] â€º tests\security\headers.spec.ts:65:3 â€º NFR-02 â€” Baseline báº£o máº­t â€º TC-NFR-02-002: cáº£ 3 site tráº£ header X-Content-Type-Options: nosniff (6.5s)
+(node:9752) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  20 [security] â€º tests\security\headers.spec.ts:77:3 â€º NFR-02 â€” Baseline báº£o máº­t â€º TC-NFR-02-003: cáº£ 3 site cĂ³ X-Frame-Options hoáº·c CSP frame-ancestors (11.6s)
+(node:9372) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  21 [security] â€º tests\security\headers.spec.ts:89:3 â€º NFR-02 â€” Baseline báº£o máº­t â€º TC-NFR-02-004: cáº£ 3 site cĂ³ header Referrer-Policy (5.8s)
+(node:5248) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 22 [security] â€º tests\security\headers.spec.ts:98:3 â€º NFR-02 â€” Baseline báº£o máº­t â€º TC-NFR-02-005: cookie phiĂªn cá»§a cáº£ 3 site cĂ³ Secure vĂ  HttpOnly (10.7s)
+  ok 23 [security] â€º tests\security\headers.spec.ts:113:3 â€º NFR-02 â€” Baseline báº£o máº­t â€º TC-NFR-02-008: URL sai tráº£ trang lá»—i thĂ¢n thiá»‡n, khĂ´ng lá»™ stack trace (7.2s)
+  x  24 [security] â€º tests\security\responsive.spec.ts:17:3 â€º NFR-04 â€” TÆ°Æ¡ng thĂ­ch di Ä‘á»™ng 360px â€º TC-NFR-04-005: khĂ´ng cĂ³ cuá»™n ngang á»Ÿ mĂ n hĂ¬nh 360px trĂªn cáº£ 3 site (1.0m)
+(node:16120) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 25 [security] â€º tests\security\responsive.spec.ts:33:3 â€º NFR-04 â€” TÆ°Æ¡ng thĂ­ch di Ä‘á»™ng 360px â€º TC-NFR-04-006: luá»“ng tĂ­nh giĂ¡ cá»§a T2 dĂ¹ng Ä‘Æ°á»£c trĂªn khung nhĂ¬n 360x740 (20.0s)
+  x  26 [security] â€º tests\security\seo.spec.ts:15:3 â€º NFR-07 â€” SEO vĂ  ká»¹ thuáº­t báº£o trĂ¬ â€º TC-NFR-07-001: má»—i trang cĂ³ Ä‘Ăºng má»™t tháº» title khĂ´ng rá»—ng (1.0m)
+(node:14584) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  27 [security] â€º tests\security\seo.spec.ts:29:3 â€º NFR-07 â€” SEO vĂ  ká»¹ thuáº­t báº£o trĂ¬ â€º TC-NFR-07-002: má»—i trang cĂ³ tháº» meta description khĂ´ng rá»—ng (1.0m)
+(node:9472) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 28 [security] â€º tests\security\seo.spec.ts:47:3 â€º NFR-07 â€” SEO vĂ  ká»¹ thuáº­t báº£o trĂ¬ â€º TC-NFR-07-003: tháº» html cĂ³ thuá»™c tĂ­nh lang (34.5s)
+  x  29 [security] â€º tests\security\seo.spec.ts:60:3 â€º NFR-07 â€” SEO vĂ  ká»¹ thuáº­t báº£o trĂ¬ â€º TC-NFR-07-004: sitemap.xml tá»“n táº¡i vĂ  khĂ´ng cháº·n trang quan trá»ng (3.9s)
+(node:3384) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  30 [security] â€º tests\security\seo.spec.ts:75:3 â€º NFR-07 â€” SEO vĂ  ká»¹ thuáº­t báº£o trĂ¬ â€º TC-NFR-07-005: robots.txt tá»“n táº¡i vĂ  khĂ´ng cháº·n toĂ n bá»™ site (6.6s)
+(node:4588) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  31 [security] â€º tests\security\seo.spec.ts:93:3 â€º NFR-07 â€” SEO vĂ  ká»¹ thuáº­t báº£o trĂ¬ â€º TC-NFR-07-006: tháº» Open Graph cĂ³ title, description vĂ  image (28.2s)
+
+
+  1) [t3] â€º tests\e2e\t3\m1-m5-info.spec.ts:32:3 â€º T3 Pretty Paws â€” M1/M5 Truy cáº­p, liĂªn há»‡ vĂ  tráº¡ng thĂ¡i tiá»‡m â€º TC-T3-M5-005: trang hiá»ƒn thá»‹ tráº¡ng thĂ¡i má»Ÿ/Ä‘Ă³ng kĂ¨m khung giá» má»Ÿ cá»­a Ä‘áº§y Ä‘á»§ 
+
+    Error: expect(received).toMatch(expected)
+
+    Expected pattern: /\b(Open|Closed)\b/
+    Received string:  "Pretty Paws Cat and Dog Grooming
+    Pretty Paws Cat and Dog Grooming
+    (609) 816-7755
+    nycoleco@yahoo.com
+    Hamilton, NJ, US
+    Direction
+    8:00 AM - 8:00 PM
+    Book Now
+    Business Hours
+    SUN
+    8:00 AM
+    -
+    8:00 PM
+    MON
+    8:00 AM
+    -
+    8:00 PM
+    TUE
+    8:00 AM
+    -
+    8:00 PM
+    WED
+    8:00 AM
+    -
+    8:00 PM
+    THU
+    8:00 AM
+    -
+    8:00 PM
+    FRI
+    8:00 AM
+    -
+    8:00 PM
+    SAT
+    8:00 AM
+    -
+    8:00 PM
+    About us
+    My name is Nycole, and Iâ€™m the owner and groomer behind Pretty Paws Cat and Dog Grooming! đŸ©·đŸ¾
+    Iâ€™ve been grooming for over 10 years and have had the pleasure of working with cats and dogs of all sizes and breeds. Animals have always been a huge part of my life, and Iâ€™m a true animal lover with pets of my own, ranging from cats to horses! đŸ±đŸ¶đŸ´
+    At Pretty Paws, I believe every pet deserves patience, love, and individualized care. Thatâ€™s why I offer a kennel-free grooming experience, where each pet is groomed straight through with one-on-one attention in a calm, relaxed environment.
+    My goal is to make every visit feel like a little spa day for your babies, treating each one with the same love and care I give my own. Thank you for trusting me with your furry family members. It truly means so much to me! đŸ©·đŸ¾
+    Services
+    Powered by GrooMore, Inc.
+    Book Now"
+
+      34 |     const body = await noiDungTrang(page);
+      35 |
+    > 36 |     expect(body).toMatch(/\b(Open|Closed)\b/);
+         |                  ^
+      37 |     expect(body).toMatch(/\d{1,2}:\d{2}\s*AM\s*-\s*\d{1,2}:\d{2}\s*PM/);
+      38 |   });
+      39 |
+        at D:\Thiáº¿t Káº¿ vĂ  Kiá»ƒm Thá»­ Pháº§n Má»m\Pet-Spa-KTPM\tests\e2e\t3\m1-m5-info.spec.ts:36:18
+
+    attachment #1: screenshot (image/png) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    reports\playwright\e2e-t3-m1-m5-info-T3-Prett-552a8-kĂ¨m-khung-giá»-má»Ÿ-cá»­a-Ä‘áº§y-Ä‘á»§-t3\test-failed-1.png
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+    Error Context: reports\playwright\e2e-t3-m1-m5-info-T3-Prett-552a8-kĂ¨m-khung-giá»-má»Ÿ-cá»­a-Ä‘áº§y-Ä‘á»§-t3\error-context.md
+
+    attachment #3: trace (application/zip) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    reports\playwright\e2e-t3-m1-m5-info-T3-Prett-552a8-kĂ¨m-khung-giá»-má»Ÿ-cá»­a-Ä‘áº§y-Ä‘á»§-t3\trace.zip
+    Usage:
+
+        npx playwright show-trace reports\playwright\e2e-t3-m1-m5-info-T3-Prett-552a8-kĂ¨m-khung-giá»-má»Ÿ-cá»­a-Ä‘áº§y-Ä‘á»§-t3\trace.zip
+
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+  2) [security] â€º tests\security\accessibility.spec.ts:40:3 â€º NFR-06 â€” Kháº£ nÄƒng tiáº¿p cáº­n â€º TC-NFR-06-001: axe-core khĂ´ng cĂ³ vi pháº¡m má»©c critical trĂªn cáº£ 3 site 
+
+    Test timeout of 60000ms exceeded.
+
+    Error: page.goto: Test ended.
+    Call log:
+      - navigating to "https://prettypawscatanddoggrooming.groomore.com/", waiting until "load"
+
+
+      24 | /** Chá» áº£nh vĂ  ná»™i dung render xong â€” quĂ©t sá»›m sáº½ bá» sĂ³t lá»—i alt/contrast. */
+      25 | async function quetAxe(page: Page, url: string) {
+    > 26 |   await page.goto(url, { waitUntil: 'load' });
+         |              ^
+      27 |   await page.waitForTimeout(3000);
+      28 |   return new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa']).analyze();
+      29 | }
+        at quetAxe (D:\Thiáº¿t Káº¿ vĂ  Kiá»ƒm Thá»­ Pháº§n Má»m\Pet-Spa-KTPM\tests\security\accessibility.spec.ts:26:14)
+        at D:\Thiáº¿t Káº¿ vĂ  Kiá»ƒm Thá»­ Pháº§n Má»m\Pet-Spa-KTPM\tests\security\accessibility.spec.ts:47:29
+
+    attachment #1: screenshot (image/png) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    reports\playwright\security-accessibility-NFR-07ce0-má»©c-critical-trĂªn-cáº£-3-site-security\test-failed-1.png
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+    attachment #2: screenshot (image/png) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    reports\playwright\security-accessibility-NFR-07ce0-má»©c-critical-trĂªn-cáº£-3-site-security\test-failed-1.png
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+    attachment #3: screenshot (image/png) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    reports\playwright\security-accessibility-NFR-07ce0-má»©c-critical-trĂªn-cáº£-3-site-security\test-failed-2.png
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+    Error Context: reports\playwright\security-accessibility-NFR-07ce0-má»©c-critical-trĂªn-cáº£-3-site-security\error-context.md
+
+    attachment #5: trace (application/zip) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    reports\playwright\security-accessibility-NFR-07ce0-má»©c-critical-trĂªn-cáº£-3-site-security\trace.zip
+    Usage:
+
+        npx playwright show-trace reports\playwright\security-accessibility-NFR-07ce0-má»©c-critical-trĂªn-cáº£-3-site-security\trace.zip
+
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+  3) [security] â€º tests\security\accessibility.spec.ts:72:3 â€º NFR-06 â€” Kháº£ nÄƒng tiáº¿p cáº­n â€º TC-NFR-06-002: má»i vĂ¹ng chá»¯ Ä‘áº¡t tÆ°Æ¡ng pháº£n â‰¥ 4,5:1 trĂªn cáº£ 3 site 
+
+    Test timeout of 60000ms exceeded.
+
+    Error: page.goto: Test ended.
+    Call log:
+      - navigating to "https://prettypawscatanddoggrooming.groomore.com/", waiting until "load"
+
+
+      24 | /** Chá» áº£nh vĂ  ná»™i dung render xong â€” quĂ©t sá»›m sáº½ bá» sĂ³t lá»—i alt/contrast. */
+      25 | async function quetAxe(page: Page, url: string) {
+    > 26 |   await page.goto(url, { waitUntil: 'load' });
+         |              ^
+      27 |   await page.waitForTimeout(3000);
+      28 |   return new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa']).analyze();
+      29 | }
+        at quetAxe (D:\Thiáº¿t Káº¿ vĂ  Kiá»ƒm Thá»­ Pháº§n Má»m\Pet-Spa-KTPM\tests\security\accessibility.spec.ts:26:14)
+        at D:\Thiáº¿t Káº¿ vĂ  Kiá»ƒm Thá»­ Pháº§n Má»m\Pet-Spa-KTPM\tests\security\accessibility.spec.ts:77:29
+
+    attachment #1: screenshot (image/png) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    reports\playwright\security-accessibility-NFR-47fd6-pháº£n-â‰¥-4-5-1-trĂªn-cáº£-3-site-security\test-failed-1.png
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+    attachment #2: screenshot (image/png) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    reports\playwright\security-accessibility-NFR-47fd6-pháº£n-â‰¥-4-5-1-trĂªn-cáº£-3-site-security\test-failed-1.png
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+    attachment #3: screenshot (image/png) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    reports\playwright\security-accessibility-NFR-47fd6-pháº£n-â‰¥-4-5-1-trĂªn-cáº£-3-site-security\test-failed-2.png
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+    Error Context: reports\playwright\security-accessibility-NFR-47fd6-pháº£n-â‰¥-4-5-1-trĂªn-cáº£-3-site-security\error-context.md
+
+    attachment #5: trace (application/zip) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    reports\playwright\security-accessibility-NFR-47fd6-pháº£n-â‰¥-4-5-1-trĂªn-cáº£-3-site-security\trace.zip
+    Usage:
+
+        npx playwright show-trace reports\playwright\security-accessibility-NFR-47fd6-pháº£n-â‰¥-4-5-1-trĂªn-cáº£-3-site-security\trace.zip
+
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+  4) [security] â€º tests\security\accessibility.spec.ts:100:3 â€º NFR-06 â€” Kháº£ nÄƒng tiáº¿p cáº­n â€º TC-NFR-06-004: má»i áº£nh ná»™i dung cĂ³ thuá»™c tĂ­nh alt trĂªn cáº£ 3 site 
+
+    Error: apiRequestContext._wrapApiCall: ENOENT: no such file or directory, copyfile 'D:\Thiáº¿t Káº¿ vĂ  Kiá»ƒm Thá»­ Pháº§n Má»m\Pet-Spa-KTPM\reports\playwright\.playwright-artifacts-6\traces\81da87a0a6e56d3e1759-46cb1884bc46f59e6c70-recording7.network' -> 'D:\Thiáº¿t Káº¿ vĂ  Kiá»ƒm Thá»­ Pháº§n Má»m\Pet-Spa-KTPM\reports\playwright\.playwright-artifacts-6\traces\81da87a0a6e56d3e1759-46cb1884bc46f59e6c70-recording7-pwnetcopy-1.network'
+
+      107 |         violations.push(`${target.id} image-alt (${violation.nodes.length} node)`);
+      108 |       }
+    > 109 |       await context.close();
+          |                     ^
+      110 |     }
+      111 |     expect(violations, `vi pháº¡m thuá»™c tĂ­nh alt: ${violations.join('; ')}`).toEqual([]);
+      112 |   });
+        at D:\Thiáº¿t Káº¿ vĂ  Kiá»ƒm Thá»­ Pháº§n Má»m\Pet-Spa-KTPM\tests\security\accessibility.spec.ts:109:21
+
+    Error: browserContext._wrapApiCall: ENOENT: no such file or directory, open 'D:\Thiáº¿t Káº¿ vĂ  Kiá»ƒm Thá»­ Pháº§n Má»m\Pet-Spa-KTPM\reports\playwright\.playwright-artifacts-6\traces\81da87a0a6e56d3e1759-46cb1884bc46f59e6c70-recording6.network'
+
+    Error: ENOENT: no such file or directory, open 'D:\Thiáº¿t Káº¿ vĂ  Kiá»ƒm Thá»­ Pháº§n Má»m\Pet-Spa-KTPM\reports\playwright\.playwright-artifacts-6\4b0f92486df68cbb4e9f0c38d95a5014.zip'
+
+    attachment #1: screenshot (image/png) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    reports\playwright\security-accessibility-NFR-26e9a-uá»™c-tĂ­nh-alt-trĂªn-cáº£-3-site-security\test-failed-1.png
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+  5) [security] â€º tests\security\accessibility.spec.ts:114:3 â€º NFR-06 â€” Kháº£ nÄƒng tiáº¿p cáº­n â€º TC-NFR-06-005: má»—i trang cĂ³ Ä‘Ăºng má»™t tiĂªu Ä‘á» h1 trĂªn cáº£ 3 site 
+
+    Test timeout of 60000ms exceeded.
+
+    Error: page.goto: Test ended.
+    Call log:
+      - navigating to "https://prettypawscatanddoggrooming.groomore.com/", waiting until "load"
+
+
+      117 |       const context = await browser.newContext();
+      118 |       const page = await context.newPage();
+    > 119 |       await page.goto(target.url, { waitUntil: 'load' });
+          |                  ^
+      120 |       await page.waitForTimeout(3000);
+      121 |       const count = await page.locator('h1').count();
+      122 |       if (count !== 1) details.push(`${target.id} cĂ³ ${count} pháº§n tá»­ h1`);
+        at D:\Thiáº¿t Káº¿ vĂ  Kiá»ƒm Thá»­ Pháº§n Má»m\Pet-Spa-KTPM\tests\security\accessibility.spec.ts:119:18
+
+    attachment #1: screenshot (image/png) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    reports\playwright\security-accessibility-NFR-e457e-t-tiĂªu-Ä‘á»-h1-trĂªn-cáº£-3-site-security\test-failed-1.png
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+    attachment #2: screenshot (image/png) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    reports\playwright\security-accessibility-NFR-e457e-t-tiĂªu-Ä‘á»-h1-trĂªn-cáº£-3-site-security\test-failed-2.png
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+    attachment #3: screenshot (image/png) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    reports\playwright\security-accessibility-NFR-e457e-t-tiĂªu-Ä‘á»-h1-trĂªn-cáº£-3-site-security\test-failed-1.png
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+    Error Context: reports\playwright\security-accessibility-NFR-e457e-t-tiĂªu-Ä‘á»-h1-trĂªn-cáº£-3-site-security\error-context.md
+
+    attachment #5: trace (application/zip) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    reports\playwright\security-accessibility-NFR-e457e-t-tiĂªu-Ä‘á»-h1-trĂªn-cáº£-3-site-security\trace.zip
+    Usage:
+
+        npx playwright show-trace reports\playwright\security-accessibility-NFR-e457e-t-tiĂªu-Ä‘á»-h1-trĂªn-cáº£-3-site-security\trace.zip
+
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+  6) [security] â€º tests\security\headers.spec.ts:55:3 â€º NFR-02 â€” Baseline báº£o máº­t â€º TC-NFR-02-001: cáº£ 3 site báº­t HTTPS vĂ  tráº£ header Strict-Transport-Security 
+
+    Error: T1 thiáº¿u HSTS; T3 thiáº¿u HSTS
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 4
+
+    - Array []
+    + Array [
+    +   "T1 thiáº¿u HSTS",
+    +   "T3 thiáº¿u HSTS",
+    + ]
+
+      60 |       if (!response.headers()['strict-transport-security']) missing.push(`${target.id} thiáº¿u HSTS`);
+      61 |     }
+    > 62 |     expect(missing, missing.join('; ')).toEqual([]);
+         |                                         ^
+      63 |   });
+      64 |
+      65 |   test('TC-NFR-02-002: cáº£ 3 site tráº£ header X-Content-Type-Options: nosniff', async ({ request }) => {
+        at D:\Thiáº¿t Káº¿ vĂ  Kiá»ƒm Thá»­ Pháº§n Má»m\Pet-Spa-KTPM\tests\security\headers.spec.ts:62:41
+
+    Error Context: reports\playwright\security-headers-NFR-02-â€”--ce1e8-r-Strict-Transport-Security-security\error-context.md
+
+    attachment #2: trace (application/zip) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    reports\playwright\security-headers-NFR-02-â€”--ce1e8-r-Strict-Transport-Security-security\trace.zip
+    Usage:
+
+        npx playwright show-trace reports\playwright\security-headers-NFR-02-â€”--ce1e8-r-Strict-Transport-Security-security\trace.zip
+
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+  7) [security] â€º tests\security\headers.spec.ts:65:3 â€º NFR-02 â€” Baseline báº£o máº­t â€º TC-NFR-02-002: cáº£ 3 site tráº£ header X-Content-Type-Options: nosniff 
+
+    Error: T1 thiáº¿u X-Content-Type-Options: nosniff; T2 thiáº¿u X-Content-Type-Options: nosniff; T3 thiáº¿u X-Content-Type-Options: nosniff
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 5
+
+    - Array []
+    + Array [
+    +   "T1 thiáº¿u X-Content-Type-Options: nosniff",
+    +   "T2 thiáº¿u X-Content-Type-Options: nosniff",
+    +   "T3 thiáº¿u X-Content-Type-Options: nosniff",
+    + ]
+
+      72 |       }
+      73 |     }
+    > 74 |     expect(missing, missing.join('; ')).toEqual([]);
+         |                                         ^
+      75 |   });
+      76 |
+      77 |   test('TC-NFR-02-003: cáº£ 3 site cĂ³ X-Frame-Options hoáº·c CSP frame-ancestors', async ({ request }) => {
+        at D:\Thiáº¿t Káº¿ vĂ  Kiá»ƒm Thá»­ Pháº§n Má»m\Pet-Spa-KTPM\tests\security\headers.spec.ts:74:41
+
+    Error Context: reports\playwright\security-headers-NFR-02-â€”--3005a-ontent-Type-Options-nosniff-security\error-context.md
+
+    attachment #2: trace (application/zip) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    reports\playwright\security-headers-NFR-02-â€”--3005a-ontent-Type-Options-nosniff-security\trace.zip
+    Usage:
+
+        npx playwright show-trace reports\playwright\security-headers-NFR-02-â€”--3005a-ontent-Type-Options-nosniff-security\trace.zip
+
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+  8) [security] â€º tests\security\headers.spec.ts:77:3 â€º NFR-02 â€” Baseline báº£o máº­t â€º TC-NFR-02-003: cáº£ 3 site cĂ³ X-Frame-Options hoáº·c CSP frame-ancestors 
+
+    Error: T1 thiáº¿u X-Frame-Options hoáº·c CSP frame-ancestors; T2 thiáº¿u X-Frame-Options hoáº·c CSP frame-ancestors; T3 thiáº¿u X-Frame-Options hoáº·c CSP frame-ancestors
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 5
+
+    - Array []
+    + Array [
+    +   "T1 thiáº¿u X-Frame-Options hoáº·c CSP frame-ancestors",
+    +   "T2 thiáº¿u X-Frame-Options hoáº·c CSP frame-ancestors",
+    +   "T3 thiáº¿u X-Frame-Options hoáº·c CSP frame-ancestors",
+    + ]
+
+      84 |       }
+      85 |     }
+    > 86 |     expect(missing, missing.join('; ')).toEqual([]);
+         |                                         ^
+      87 |   });
+      88 |
+      89 |   test('TC-NFR-02-004: cáº£ 3 site cĂ³ header Referrer-Policy', async ({ request }) => {
+        at D:\Thiáº¿t Káº¿ vĂ  Kiá»ƒm Thá»­ Pháº§n Má»m\Pet-Spa-KTPM\tests\security\headers.spec.ts:86:41
+
+    Error Context: reports\playwright\security-headers-NFR-02-â€”--ccd56-ns-hoáº·c-CSP-frame-ancestors-security\error-context.md
+
+    attachment #2: trace (application/zip) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    reports\playwright\security-headers-NFR-02-â€”--ccd56-ns-hoáº·c-CSP-frame-ancestors-security\trace.zip
+    Usage:
+
+        npx playwright show-trace reports\playwright\security-headers-NFR-02-â€”--ccd56-ns-hoáº·c-CSP-frame-ancestors-security\trace.zip
+
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+  9) [security] â€º tests\security\headers.spec.ts:89:3 â€º NFR-02 â€” Baseline báº£o máº­t â€º TC-NFR-02-004: cáº£ 3 site cĂ³ header Referrer-Policy 
+
+    Error: T1 thiáº¿u Referrer-Policy; T2 thiáº¿u Referrer-Policy; T3 thiáº¿u Referrer-Policy
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 5
+
+    - Array []
+    + Array [
+    +   "T1 thiáº¿u Referrer-Policy",
+    +   "T2 thiáº¿u Referrer-Policy",
+    +   "T3 thiáº¿u Referrer-Policy",
+    + ]
+
+      93 |       if (!response.headers()['referrer-policy']) missing.push(`${target.id} thiáº¿u Referrer-Policy`);
+      94 |     }
+    > 95 |     expect(missing, missing.join('; ')).toEqual([]);
+         |                                         ^
+      96 |   });
+      97 |
+      98 |   test('TC-NFR-02-005: cookie phiĂªn cá»§a cáº£ 3 site cĂ³ Secure vĂ  HttpOnly', async ({ request }) => {
+        at D:\Thiáº¿t Káº¿ vĂ  Kiá»ƒm Thá»­ Pháº§n Má»m\Pet-Spa-KTPM\tests\security\headers.spec.ts:95:41
+
+    Error Context: reports\playwright\security-headers-NFR-02-â€”--5e338-e-cĂ³-header-Referrer-Policy-security\error-context.md
+
+    attachment #2: trace (application/zip) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    reports\playwright\security-headers-NFR-02-â€”--5e338-e-cĂ³-header-Referrer-Policy-security\trace.zip
+    Usage:
+
+        npx playwright show-trace reports\playwright\security-headers-NFR-02-â€”--5e338-e-cĂ³-header-Referrer-Policy-security\trace.zip
+
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+  10) [security] â€º tests\security\responsive.spec.ts:17:3 â€º NFR-04 â€” TÆ°Æ¡ng thĂ­ch di Ä‘á»™ng 360px â€º TC-NFR-04-005: khĂ´ng cĂ³ cuá»™n ngang á»Ÿ mĂ n hĂ¬nh 360px trĂªn cáº£ 3 site 
+
+    Test timeout of 60000ms exceeded.
+
+    Error: page.goto: Test ended.
+    Call log:
+      - navigating to "https://prettypawscatanddoggrooming.groomore.com/", waiting until "load"
+
+
+      20 |       const context = await browser.newContext({ viewport: VIEWPORT });
+      21 |       const page = await context.newPage();
+    > 22 |       await page.goto(target.url, { waitUntil: 'load' });
+         |                  ^
+      23 |       await page.waitForTimeout(2000);
+      24 |       const overflow = await page.evaluate(
+      25 |         () => document.documentElement.scrollWidth - document.documentElement.clientWidth,
+        at D:\Thiáº¿t Káº¿ vĂ  Kiá»ƒm Thá»­ Pháº§n Má»m\Pet-Spa-KTPM\tests\security\responsive.spec.ts:22:18
+
+    attachment #1: screenshot (image/png) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    reports\playwright\security-responsive-NFR-04-a0852-n-hĂ¬nh-360px-trĂªn-cáº£-3-site-security\test-failed-1.png
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+    attachment #2: screenshot (image/png) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    reports\playwright\security-responsive-NFR-04-a0852-n-hĂ¬nh-360px-trĂªn-cáº£-3-site-security\test-failed-2.png
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+    attachment #3: screenshot (image/png) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    reports\playwright\security-responsive-NFR-04-a0852-n-hĂ¬nh-360px-trĂªn-cáº£-3-site-security\test-failed-3.png
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+    Error Context: reports\playwright\security-responsive-NFR-04-a0852-n-hĂ¬nh-360px-trĂªn-cáº£-3-site-security\error-context.md
+
+    attachment #5: trace (application/zip) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    reports\playwright\security-responsive-NFR-04-a0852-n-hĂ¬nh-360px-trĂªn-cáº£-3-site-security\trace.zip
+    Usage:
+
+        npx playwright show-trace reports\playwright\security-responsive-NFR-04-a0852-n-hĂ¬nh-360px-trĂªn-cáº£-3-site-security\trace.zip
+
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+  11) [security] â€º tests\security\seo.spec.ts:15:3 â€º NFR-07 â€” SEO vĂ  ká»¹ thuáº­t báº£o trĂ¬ â€º TC-NFR-07-001: má»—i trang cĂ³ Ä‘Ăºng má»™t tháº» title khĂ´ng rá»—ng 
+
+    Test timeout of 60000ms exceeded.
+
+    Error: page.goto: Test ended.
+    Call log:
+      - navigating to "https://prettypawscatanddoggrooming.groomore.com/", waiting until "load"
+
+
+      18 |       const context = await browser.newContext();
+      19 |       const page = await context.newPage();
+    > 20 |       await page.goto(target.url, { waitUntil: 'load' });
+         |                  ^
+      21 |       const titles = await page.locator('title').allTextContents();
+      22 |       if (titles.length !== 1) problems.push(`${target.id} cĂ³ ${titles.length} tháº» title`);
+      23 |       else if (!titles[0]?.trim()) problems.push(`${target.id} cĂ³ tháº» title rá»—ng`);
+        at D:\Thiáº¿t Káº¿ vĂ  Kiá»ƒm Thá»­ Pháº§n Má»m\Pet-Spa-KTPM\tests\security\seo.spec.ts:20:18
+
+    attachment #1: screenshot (image/png) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    reports\playwright\security-seo-NFR-07-â€”-SEO--0a630-ng-má»™t-tháº»-title-khĂ´ng-rá»—ng-security\test-failed-1.png
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+    attachment #2: screenshot (image/png) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    reports\playwright\security-seo-NFR-07-â€”-SEO--0a630-ng-má»™t-tháº»-title-khĂ´ng-rá»—ng-security\test-failed-3.png
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+    attachment #3: screenshot (image/png) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    reports\playwright\security-seo-NFR-07-â€”-SEO--0a630-ng-má»™t-tháº»-title-khĂ´ng-rá»—ng-security\test-failed-2.png
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+    Error Context: reports\playwright\security-seo-NFR-07-â€”-SEO--0a630-ng-má»™t-tháº»-title-khĂ´ng-rá»—ng-security\error-context.md
+
+    attachment #5: trace (application/zip) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    reports\playwright\security-seo-NFR-07-â€”-SEO--0a630-ng-má»™t-tháº»-title-khĂ´ng-rá»—ng-security\trace.zip
+    Usage:
+
+        npx playwright show-trace reports\playwright\security-seo-NFR-07-â€”-SEO--0a630-ng-má»™t-tháº»-title-khĂ´ng-rá»—ng-security\trace.zip
+
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+  12) [security] â€º tests\security\seo.spec.ts:29:3 â€º NFR-07 â€” SEO vĂ  ká»¹ thuáº­t báº£o trĂ¬ â€º TC-NFR-07-002: má»—i trang cĂ³ tháº» meta description khĂ´ng rá»—ng 
+
+    Test timeout of 60000ms exceeded.
+
+    Error: page.goto: Test ended.
+    Call log:
+      - navigating to "https://prettypawscatanddoggrooming.groomore.com/", waiting until "load"
+
+
+      32 |       const context = await browser.newContext();
+      33 |       const page = await context.newPage();
+    > 34 |       await page.goto(target.url, { waitUntil: 'load' });
+         |                  ^
+      35 |       const count = await page.locator('meta[name="description"]').count();
+      36 |       if (count === 0) {
+      37 |         problems.push(`${target.id} thiáº¿u tháº» meta description`);
+        at D:\Thiáº¿t Káº¿ vĂ  Kiá»ƒm Thá»­ Pháº§n Má»m\Pet-Spa-KTPM\tests\security\seo.spec.ts:34:18
+
+    attachment #1: screenshot (image/png) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    reports\playwright\security-seo-NFR-07-â€”-SEO--6c06d-meta-description-khĂ´ng-rá»—ng-security\test-failed-1.png
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+    attachment #2: screenshot (image/png) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    reports\playwright\security-seo-NFR-07-â€”-SEO--6c06d-meta-description-khĂ´ng-rá»—ng-security\test-failed-2.png
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+    attachment #3: screenshot (image/png) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    reports\playwright\security-seo-NFR-07-â€”-SEO--6c06d-meta-description-khĂ´ng-rá»—ng-security\test-failed-3.png
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+    Error Context: reports\playwright\security-seo-NFR-07-â€”-SEO--6c06d-meta-description-khĂ´ng-rá»—ng-security\error-context.md
+
+    attachment #5: trace (application/zip) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    reports\playwright\security-seo-NFR-07-â€”-SEO--6c06d-meta-description-khĂ´ng-rá»—ng-security\trace.zip
+    Usage:
+
+        npx playwright show-trace reports\playwright\security-seo-NFR-07-â€”-SEO--6c06d-meta-description-khĂ´ng-rá»—ng-security\trace.zip
+
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+  13) [security] â€º tests\security\seo.spec.ts:60:3 â€º NFR-07 â€” SEO vĂ  ká»¹ thuáº­t báº£o trĂ¬ â€º TC-NFR-07-004: sitemap.xml tá»“n táº¡i vĂ  khĂ´ng cháº·n trang quan trá»ng 
+
+    Error: T3 sitemap.xml tráº£ 404
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 3
+
+    - Array []
+    + Array [
+    +   "T3 sitemap.xml tráº£ 404",
+    + ]
+
+      70 |       if (!body.includes('<urlset')) problems.push(`${target.id} sitemap.xml khĂ´ng pháº£i Ä‘á»‹nh dáº¡ng urlset`);
+      71 |     }
+    > 72 |     expect(problems, problems.join('; ')).toEqual([]);
+         |                                           ^
+      73 |   });
+      74 |
+      75 |   test('TC-NFR-07-005: robots.txt tá»“n táº¡i vĂ  khĂ´ng cháº·n toĂ n bá»™ site', async ({ request }) => {
+        at D:\Thiáº¿t Káº¿ vĂ  Kiá»ƒm Thá»­ Pháº§n Má»m\Pet-Spa-KTPM\tests\security\seo.spec.ts:72:43
+
+    Error Context: reports\playwright\security-seo-NFR-07-â€”-SEO--c82d4-khĂ´ng-cháº·n-trang-quan-trá»ng-security\error-context.md
+
+    attachment #2: trace (application/zip) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    reports\playwright\security-seo-NFR-07-â€”-SEO--c82d4-khĂ´ng-cháº·n-trang-quan-trá»ng-security\trace.zip
+    Usage:
+
+        npx playwright show-trace reports\playwright\security-seo-NFR-07-â€”-SEO--c82d4-khĂ´ng-cháº·n-trang-quan-trá»ng-security\trace.zip
+
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+  14) [security] â€º tests\security\seo.spec.ts:75:3 â€º NFR-07 â€” SEO vĂ  ká»¹ thuáº­t báº£o trĂ¬ â€º TC-NFR-07-005: robots.txt tá»“n táº¡i vĂ  khĂ´ng cháº·n toĂ n bá»™ site 
+
+    Error: T3 robots.txt tráº£ 404
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 3
+
+    - Array []
+    + Array [
+    +   "T3 robots.txt tráº£ 404",
+    + ]
+
+      88 |       }
+      89 |     }
+    > 90 |     expect(problems, problems.join('; ')).toEqual([]);
+         |                                           ^
+      91 |   });
+      92 |
+      93 |   test('TC-NFR-07-006: tháº» Open Graph cĂ³ title, description vĂ  image', async ({ browser }) => {
+        at D:\Thiáº¿t Káº¿ vĂ  Kiá»ƒm Thá»­ Pháº§n Má»m\Pet-Spa-KTPM\tests\security\seo.spec.ts:90:43
+
+    Error Context: reports\playwright\security-seo-NFR-07-â€”-SEO--77f60--vĂ -khĂ´ng-cháº·n-toĂ n-bá»™-site-security\error-context.md
+
+    attachment #2: trace (application/zip) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    reports\playwright\security-seo-NFR-07-â€”-SEO--77f60--vĂ -khĂ´ng-cháº·n-toĂ n-bá»™-site-security\trace.zip
+    Usage:
+
+        npx playwright show-trace reports\playwright\security-seo-NFR-07-â€”-SEO--77f60--vĂ -khĂ´ng-cháº·n-toĂ n-bá»™-site-security\trace.zip
+
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+  15) [security] â€º tests\security\seo.spec.ts:93:3 â€º NFR-07 â€” SEO vĂ  ká»¹ thuáº­t báº£o trĂ¬ â€º TC-NFR-07-006: tháº» Open Graph cĂ³ title, description vĂ  image 
+
+    Error: T1 thiáº¿u og:image; T2 thiáº¿u og:image
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 4
+
+    - Array []
+    + Array [
+    +   "T1 thiáº¿u og:image",
+    +   "T2 thiáº¿u og:image",
+    + ]
+
+      110 |       await context.close();
+      111 |     }
+    > 112 |     expect(problems, problems.join('; ')).toEqual([]);
+          |                                           ^
+      113 |   });
+      114 | });
+      115 |
+        at D:\Thiáº¿t Káº¿ vĂ  Kiá»ƒm Thá»­ Pháº§n Má»m\Pet-Spa-KTPM\tests\security\seo.spec.ts:112:43
+
+    attachment #1: screenshot (image/png) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    reports\playwright\security-seo-NFR-07-â€”-SEO--8d265--title-description-vĂ -image-security\test-failed-1.png
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+    attachment #2: screenshot (image/png) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    reports\playwright\security-seo-NFR-07-â€”-SEO--8d265--title-description-vĂ -image-security\test-failed-2.png
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+    attachment #3: screenshot (image/png) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    reports\playwright\security-seo-NFR-07-â€”-SEO--8d265--title-description-vĂ -image-security\test-failed-3.png
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+    Error Context: reports\playwright\security-seo-NFR-07-â€”-SEO--8d265--title-description-vĂ -image-security\error-context.md
+
+    attachment #5: trace (application/zip) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    reports\playwright\security-seo-NFR-07-â€”-SEO--8d265--title-description-vĂ -image-security\trace.zip
+    Usage:
+
+        npx playwright show-trace reports\playwright\security-seo-NFR-07-â€”-SEO--8d265--title-description-vĂ -image-security\trace.zip
+
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+  15 failed
+    [t3] â€º tests\e2e\t3\m1-m5-info.spec.ts:32:3 â€º T3 Pretty Paws â€” M1/M5 Truy cáº­p, liĂªn há»‡ vĂ  tráº¡ng thĂ¡i tiá»‡m â€º TC-T3-M5-005: trang hiá»ƒn thá»‹ tráº¡ng thĂ¡i má»Ÿ/Ä‘Ă³ng kĂ¨m khung giá» má»Ÿ cá»­a Ä‘áº§y Ä‘á»§ 
+    [security] â€º tests\security\accessibility.spec.ts:40:3 â€º NFR-06 â€” Kháº£ nÄƒng tiáº¿p cáº­n â€º TC-NFR-06-001: axe-core khĂ´ng cĂ³ vi pháº¡m má»©c critical trĂªn cáº£ 3 site 
+    [security] â€º tests\security\accessibility.spec.ts:72:3 â€º NFR-06 â€” Kháº£ nÄƒng tiáº¿p cáº­n â€º TC-NFR-06-002: má»i vĂ¹ng chá»¯ Ä‘áº¡t tÆ°Æ¡ng pháº£n â‰¥ 4,5:1 trĂªn cáº£ 3 site 
+    [security] â€º tests\security\accessibility.spec.ts:100:3 â€º NFR-06 â€” Kháº£ nÄƒng tiáº¿p cáº­n â€º TC-NFR-06-004: má»i áº£nh ná»™i dung cĂ³ thuá»™c tĂ­nh alt trĂªn cáº£ 3 site 
+    [security] â€º tests\security\accessibility.spec.ts:114:3 â€º NFR-06 â€” Kháº£ nÄƒng tiáº¿p cáº­n â€º TC-NFR-06-005: má»—i trang cĂ³ Ä‘Ăºng má»™t tiĂªu Ä‘á» h1 trĂªn cáº£ 3 site 
+    [security] â€º tests\security\headers.spec.ts:55:3 â€º NFR-02 â€” Baseline báº£o máº­t â€º TC-NFR-02-001: cáº£ 3 site báº­t HTTPS vĂ  tráº£ header Strict-Transport-Security 
+    [security] â€º tests\security\headers.spec.ts:65:3 â€º NFR-02 â€” Baseline báº£o máº­t â€º TC-NFR-02-002: cáº£ 3 site tráº£ header X-Content-Type-Options: nosniff 
+    [security] â€º tests\security\headers.spec.ts:77:3 â€º NFR-02 â€” Baseline báº£o máº­t â€º TC-NFR-02-003: cáº£ 3 site cĂ³ X-Frame-Options hoáº·c CSP frame-ancestors 
+    [security] â€º tests\security\headers.spec.ts:89:3 â€º NFR-02 â€” Baseline báº£o máº­t â€º TC-NFR-02-004: cáº£ 3 site cĂ³ header Referrer-Policy 
+    [security] â€º tests\security\responsive.spec.ts:17:3 â€º NFR-04 â€” TÆ°Æ¡ng thĂ­ch di Ä‘á»™ng 360px â€º TC-NFR-04-005: khĂ´ng cĂ³ cuá»™n ngang á»Ÿ mĂ n hĂ¬nh 360px trĂªn cáº£ 3 site 
+    [security] â€º tests\security\seo.spec.ts:15:3 â€º NFR-07 â€” SEO vĂ  ká»¹ thuáº­t báº£o trĂ¬ â€º TC-NFR-07-001: má»—i trang cĂ³ Ä‘Ăºng má»™t tháº» title khĂ´ng rá»—ng 
+    [security] â€º tests\security\seo.spec.ts:29:3 â€º NFR-07 â€” SEO vĂ  ká»¹ thuáº­t báº£o trĂ¬ â€º TC-NFR-07-002: má»—i trang cĂ³ tháº» meta description khĂ´ng rá»—ng 
+    [security] â€º tests\security\seo.spec.ts:60:3 â€º NFR-07 â€” SEO vĂ  ká»¹ thuáº­t báº£o trĂ¬ â€º TC-NFR-07-004: sitemap.xml tá»“n táº¡i vĂ  khĂ´ng cháº·n trang quan trá»ng 
+    [security] â€º tests\security\seo.spec.ts:75:3 â€º NFR-07 â€” SEO vĂ  ká»¹ thuáº­t báº£o trĂ¬ â€º TC-NFR-07-005: robots.txt tá»“n táº¡i vĂ  khĂ´ng cháº·n toĂ n bá»™ site 
+    [security] â€º tests\security\seo.spec.ts:93:3 â€º NFR-07 â€” SEO vĂ  ká»¹ thuáº­t báº£o trĂ¬ â€º TC-NFR-07-006: tháº» Open Graph cĂ³ title, description vĂ  image 
+  16 passed (10.7m)

@@ -1,122 +1,133 @@
 # Ma trận Truy xuất Yêu cầu (RTM)
 
-## Hệ thống Đặt lịch Dịch vụ Chăm sóc Thú cưng / Spa
+Mã tài liệu: RTM-01 · Phiên bản 1.0 · Ngày 8, sau Technical Review thiết kế test · Người phụ trách: Mạnh (Test Lead)
 
-Mã tài liệu: RTM-01 · Phiên bản 0.1 (khung, hoàn thiện đủ 100% yêu cầu vào ngày 8) · Người phụ trách: Mạnh; Tài cập nhật bản cuối ngày 13
+Đầu vào: SRS-01 (`docs/source/Đặc tả Yêu cầu Phần Mềm (SRS).md`) và Test Case Specification (`docs/testcases/*.csv`)
 
-Nguồn: SRS-01 (40 yêu cầu chức năng và 6 yêu cầu phi chức năng), TP-01. Ma trận cho phép truy vết hai chiều: từ yêu cầu đến test case để biết còn yêu cầu nào chưa được kiểm thử, và từ test case ngược về yêu cầu để phát hiện test case thừa.
+> Bản này thay thế RTM v0.1 của hệ thống do nhóm tự xây (đã archive). Mỗi yêu cầu trong SRS đích đều được truy xuất tới ít nhất một test case; nguyên tắc truy xuất hai chiều (hai chiều đầy đủ) được kiểm tra tự động bằng `scripts/rtm-check.mjs`.
 
-**Chú giải.** Kỹ thuật: EP phân vùng tương đương, BVA giá trị biên, DT bảng quyết định, ST chuyển đổi trạng thái, UC use case/workflow, WB hộp trắng. Mức: U unit, I tích hợp, S hệ thống, A chấp nhận. Mã test case là dải dự kiến, thay bằng danh sách thực tế sau ngày 8. Cột Kết quả nhận: Chưa chạy, Pass, Fail (ghi DEF-nnn), Blocked.
+## 1. Tổng quan độ phủ
 
-## 1. Tổng hợp
+| Chỉ số | Giá trị |
+|---|---|
+| Tổng số yêu cầu trong SRS-01 | 58 |
+| Yêu cầu có ít nhất 1 test case | 58 (100.0%) |
+| Yêu cầu Must có ít nhất 1 test case | 40/40 (100.0%) |
+| Tổng số test case | 226 |
+| Yêu cầu chưa được phủ | 0 |
+| Test case truy xuất tới yêu cầu không tồn tại trong SRS | 0 |
+| Test case ID bị trùng | 0 |
 
-| Module | Code | Số yêu cầu | Test case dự kiến | Người viết và chạy test |
-| --- | --- | --- | --- | --- |
-| M1 Tài khoản, phân quyền | Mạnh | 6 | 28 | Lộc |
-| M2 Hồ sơ thú cưng | Tài | 5 | 22 | Mạnh |
-| M3 Danh mục, bảng giá | Tài | 4 | 16 | Mạnh |
-| M4 Đặt lịch | Ngân | 8 | 24 | Tài |
-| M5 Vòng đời lịch hẹn | Ngân | 7 | 24 | Tài |
-| M6 Giá, khuyến mãi, thanh toán | Lộc | 6 | 32 | Ngân |
-| M7 Quản trị | Mạnh | 4 | 10 | Lộc |
-| Phi chức năng (NFR-01 đến NFR-06) | Cả nhóm | 6 | 19 | Theo chuyên trách |
-| **Tổng** |  | **46** | **175** |  |
+## 2. Ma trận truy xuất chi tiết
 
-Ưu tiên của 40 yêu cầu chức năng: Must 22, Should 14, Could 4. Yêu cầu phi chức năng Must: NFR-02, NFR-04.
+| Yêu cầu | Nội dung | Hệ thống | Ưu tiên | Module | Test case | SL | Kỹ thuật | Phụ trách |
+|---|---|---|---|---|---|---|---|---|
+| FR-M1-01 | Trang chủ tải được bằng HTTP 200 không cần đăng nhập | T1, T2, T3 | Must | M1 | TC-T1-M1-001; TC-T2-M1-001; TC-T3-M1-001 | 3 | UC | Lộc, Ngân, Mạnh |
+| FR-M1-02 | Điều hướng chính mở được từ mọi trang và quay lại được | T1, T2, T3 | Must | M1 | TC-T1-M1-002; TC-T2-M1-002; TC-T3-M1-002 | 3 | UC | Lộc, Ngân, Mạnh |
+| FR-M1-03 | Hiển thị đầy đủ thông tin liên hệ: địa chỉ, điện thoại, email, giờ mở cửa | T1, T2, T3 | Must | M1 | TC-T1-M1-003; TC-T2-M1-003; TC-T3-M1-003 | 3 | Use case | Tài, Ngân, Mạnh |
+| FR-M1-04 | Không có lỗi liên kết chết (404) trong menu và footer | T1, T2, T3 | Must | M1 | TC-T1-M1-004; TC-T2-M1-004; TC-T3-M1-004; TC-T3-M1-007 | 4 | Use case, UC | Tài, Ngân, Mạnh |
+| FR-M1-05 | Trang hiển thị đúng trên màn hình di động, không tràn ngang | T1, T2, T3 | Must | M1 | TC-T1-M1-005; TC-T2-M1-005; TC-T3-M1-005 | 3 | Use case | Lộc, Ngân, Mạnh |
+| FR-M1-06 | Ứng dụng báo lỗi thân thiện khi tải trang con thất bại | T1, T2, T3 | Should | M1 | TC-T1-M1-006; TC-T2-M1-006; TC-T3-M1-006 | 3 | Use case | Tài, Ngân, Mạnh |
+| FR-M2-01 | Hiển thị danh sách dịch vụ kèm tên, mô tả, giá và thời lượng | T1, T2, T3 | Must | M2 | TC-T1-M2-001; TC-T1-M2-007; TC-T2-M2-001; TC-T2-M2-006; TC-T3-M2-001; TC-T3-M2-007 | 6 | UC | Lộc, Tài, Ngân, Mạnh |
+| FR-M2-02 | Mỗi dịch vụ nêu rõ phạm vi bao gồm (thành phần) | T1, T2, T3 | Must | M2 | TC-T1-M2-002; TC-T2-M2-002; TC-T3-M2-002 | 3 | UC | Lộc, Ngân, Mạnh |
+| FR-M2-03 | Phân biệt dịch vụ tại spa và tại nhà | T1 | Must | M2 | TC-T1-M2-003; TC-T1-M2-004 | 2 | UC | Tài |
+| FR-M2-04 | Tách dịch vụ grooming, nhuộm và dịch vụ giá riêng thành nhóm | T2 | Should | M2 | TC-T2-M2-004; TC-T2-M2-005 | 2 | UC | Ngân |
+| FR-M2-05 | Nêu rõ gói phổ biến và phụ thu thêm của gói tại nhà | T1 | Should | M2 | TC-T1-M2-005; TC-T1-M2-006 | 2 | UC | Tài |
+| FR-M2-06 | Phân biệt rõ dịch vụ dành cho chó và dịch vụ dành cho mèo | T3 | Should | M2 | TC-T3-M2-008 | 1 | UC | Mạnh |
+| FR-M2-07 | Không niêm yết dịch vụ mà hệ thống không thực hiện được | T1, T2, T3 | Should | M2 | TC-T2-M6-001; TC-T3-M2-009 | 2 | UC | Lộc |
+| FR-M3-01 | Công bố bảng giá theo bậc cân nặng và loài | T1, T2, T3 | Must | M3 | TC-T1-M3-001; TC-T2-M3-001; TC-T3-M3-001 | 3 | UC | Tài, Ngân, Mạnh |
+| FR-M3-02 | Tra bảng giá đúng theo loài và bậc cân nặng được chọn | T1, T2, T3 | Must | M3 | TC-T1-M3-002; TC-T1-M3-003; TC-T1-M3-007; TC-T1-M3-008; TC-T1-M3-009; TC-T1-M3-010; TC-T1-M3-011; TC-T1-M3-012; TC-T1-M3-013; TC-T1-M3-014; TC-T1-M3-015; TC-T1-M3-016; TC-T1-M3-017; TC-T1-M3-018; TC-T2-M3-002; TC-T2-M3-003; TC-T2-M3-011; TC-T2-M3-012; TC-T2-M3-013; TC-T2-M3-014; TC-T2-M3-015; TC-T2-M3-016; TC-T2-M3-017; TC-T2-M3-018; TC-T2-M3-019; TC-T2-M3-020; TC-T2-M3-021; TC-T2-M3-022; TC-T2-M3-023; TC-T2-M3-024; TC-T3-M3-002; TC-T3-M3-003; TC-T3-M3-006; TC-T3-M3-007; TC-T3-M3-008; TC-T3-M3-009; TC-T3-M3-010; TC-T3-M3-011; TC-T3-M3-012; TC-T3-M3-013; TC-T3-M3-014 | 41 | EP, DT, BVA, UC | Tài, Ngân, Mạnh |
+| FR-M3-03 | Giá hiển thị được tính tức thì khi chọn đủ loài, cân nặng, dịch vụ | T2 | Must | M3 | TC-T2-M3-004; TC-T2-M3-005; TC-T2-M3-006 | 3 | UC | Ngân |
+| FR-M3-04 | Tính giá riêng cho dịch vụ cần khảo giá | T2 | Must | M3 | TC-T2-M3-007; TC-T2-M3-008 | 2 | EP, DT | Ngân |
+| FR-M3-05 | Giá dự kiến được ghi rõ là dự kiến, không phải giá cuối | T1, T2, T3 | Must | M3 | TC-T1-M3-004; TC-T2-M3-009; TC-T3-M3-004 | 3 | UC | Tài, Ngân, Mạnh |
+| FR-M3-06 | Bảng giá nêu rõ điều kiện bảo hành hoặc ngoại lệ phát sinh phí | T2 | Should | M3 | TC-T2-M3-010; TC-T3-M3-005 | 2 | UC | Ngân, Mạnh |
+| FR-M3-07 | Nêu giá "từ ...₫" và khoảng min–max cho gói | T1 | Should | M3 | TC-T1-M3-005; TC-T1-M3-006 | 2 | UC, EP | Tài |
+| FR-M4-01 | Cung cấp form giữ chỗ với trường liên hệ bắt buộc và tuỳ chọn | T1, T2 | Must | M4 | TC-T1-M4-001; TC-T2-M4-001; TC-T3-M4-001 | 3 | UC | Lộc, Ngân, Mạnh |
+| FR-M4-02 | Từ chối gửi form khi thiếu trường bắt buộc | T1, T2 | Must | M4 | TC-T1-M4-002; TC-T2-M4-002; TC-T3-M4-002 | 3 | EP | Lộc, Ngân, Mạnh |
+| FR-M4-03 | Kiểm tra định dạng số điện thoại | T1, T2 | Must | M4 | TC-T2-M4-003; TC-T2-M4-004; TC-T2-M4-005; TC-T3-M4-003; TC-T3-M4-004 | 5 | EP | Ngân, Mạnh |
+| FR-M4-04 | Cho phép chọn ngày mong muốn trong tương lai | T1, T2 | Must | M4 | TC-T1-M4-003; TC-T2-M4-006; TC-T3-M4-005 | 3 | EP | Lộc, Ngân, Mạnh |
+| FR-M4-05 | Chặn ngày mong muốn nằm quá xa trong tương lai | T2 | Should | M4 | TC-T2-M4-007 | 1 | EP | Ngân |
+| FR-M4-06 | Chọn được loài và cân nặng trước khi xem giá | T1 | Must | M4 | TC-T1-M4-004; TC-T1-M4-005; TC-T1-M4-009; TC-T2-M4-013; TC-T2-M4-014 | 5 | ST | Tài, Ngân |
+| FR-M4-07 | Chọn được dịch vụ trước khi xác nhận | T1, T2 | Must | M4 | TC-T1-M4-006; TC-T1-M4-010; TC-T2-M4-008; TC-T2-M4-015; TC-T3-M4-006; TC-T3-M4-010 | 6 | UC, ST | Tài, Ngân, Mạnh |
+| FR-M4-08 | Cho phép quay lại bước trước mà không mất lựa chọn | T1, T2 | Must | M4 | TC-T1-M4-007; TC-T1-M4-011; TC-T1-M4-012; TC-T2-M4-009; TC-T2-M4-016; TC-T2-M4-017; TC-T3-M4-007; TC-T3-M4-011 | 8 | ST | Tài, Ngân, Mạnh |
+| FR-M4-09 | Hiển thị tóm tắt lựa chọn trước khi gửi | T2 | Should | M4 | TC-T2-M4-010 | 1 | UC | Ngân |
+| FR-M4-10 | Yêu cầu sự đồng ý về việc liên hệ lại trước khi gửi | T2 | Must | M4 | TC-T2-M4-011 | 1 | UC | Ngân |
+| FR-M4-11 | Cho phép đặt lịch ngoài giờ mở cửa | T3 | Should | M4 | TC-T3-M4-008 | 1 | UC | Mạnh |
+| FR-M4-12 | Không yêu cầu tạo tài khoản để đặt lịch | T1, T2, T3 | Must | M4 | TC-T1-M4-008; TC-T2-M4-012; TC-T3-M4-009 | 3 | UC | Tài, Ngân, Mạnh |
+| FR-M5-01 | Nêu rõ quy trình từ đặt lịch đến nhận thú cưng | T1, T2, T3 | Must | M5 | TC-T1-M5-001; TC-T2-M5-001; TC-T3-M5-001 | 3 | UC | Lộc |
+| FR-M5-02 | Công bố thời gian xác nhận lịch | T1, T2 | Must | M5 | TC-T1-M5-002; TC-T2-M5-002 | 2 | UC | Lộc |
+| FR-M5-03 | Nêu rõ có thể đổi hoặc hủy lịch và điều kiện | T1 | Must | M5 | TC-T1-M5-003; TC-T1-M5-004; TC-T1-M5-005 | 3 | UC, DT | Lộc |
+| FR-M5-04 | Nêu rõ chính sách hủy và hoàn tiền | T2, T3 | Must | M5 | TC-T1-M5-006; TC-T2-M5-003; TC-T2-M5-004; TC-T2-M5-005; TC-T3-M5-002 | 5 | UC, DT | Lộc |
+| FR-M5-05 | Nêu rõ thời gian nên đặt trước cho từng loại dịch vụ | T2 | Should | M5 | TC-T2-M5-006 | 1 | UC | Lộc |
+| FR-M5-06 | Thông báo khi bị từ chối lịch do ngoài giờ làm việc | T3 | Must | M5 | TC-T3-M5-003; TC-T3-M5-004 | 2 | EP | Lộc |
+| FR-M5-07 | Hiển thị trạng thái hiện tại của tiệm (đang mở/đã đóng) | T3 | Must | M5 | TC-T3-M5-005 | 1 | UC | Lộc |
+| FR-M6-01 | Cho phép chọn dịch vụ tại spa hoặc tại nhà | T1 | Must | M6 | TC-T1-M6-001; TC-T1-M6-002 | 2 | ST | Lộc |
+| FR-M6-02 | Tính phụ thu di chuyển theo công thức công bố | T1 | Must | M6 | TC-T1-M6-003; TC-T1-M6-004; TC-T1-M6-005; TC-T1-M6-006; TC-T1-M6-007; TC-T1-M6-008; TC-T1-M6-009; TC-T1-M6-010; TC-T1-M6-020 | 9 | DT, UC | Tài |
+| FR-M6-03 | Cộng phụ thu cố định của gói tại nhà vào tổng | T1 | Must | M6 | TC-T1-M6-011; TC-T1-M6-012; TC-T1-M6-013; TC-T1-M6-014 | 4 | DT | Tài |
+| FR-M6-04 | Nêu rõ mức phụ thu cố định không gồm phí di chuyển | T1 | Must | M6 | TC-T1-M6-015; TC-T1-M6-016 | 2 | UC | Tài |
+| FR-M6-05 | Phụ thu di chuyển tăng dần theo khoảng cách, có mốc miễn phí | T1 | Must | M6 | TC-T1-M6-017 | 1 | UC | Tài |
+| FR-M6-06 | Trên 15 km không báo giá cố định mà chuyển sang liên hệ | T1 | Must | M6 | TC-T1-M6-018; TC-T1-M6-019 | 2 | EP | Tài |
+| FR-M7-01 | Có chức năng tìm kiếm nội dung | T2 | Must | M7 | TC-T2-M7-001 | 1 | UC | Mạnh |
+| FR-M7-02 | Tìm kiếm không phân biệt hoa thường và xử lý từ khoá rỗng | T2 | Must | M7 | TC-T2-M7-002; TC-T2-M7-003; TC-T2-M7-004 | 3 | EP | Mạnh |
+| FR-M7-03 | Chuyển đổi ngôn ngữ và giữ ngữ cảnh trang | T1, T2 | Should | M7 | TC-T1-M7-001; TC-T2-M7-005; TC-T3-M7-002 | 3 | UC | Lộc, Mạnh |
+| FR-M7-04 | Cung cấp kênh liên hệ đa dạng (điện thoại, email, Zalo/chat) | T1, T2, T3 | Must | M7 | TC-T1-M7-002; TC-T2-M7-006; TC-T3-M7-001 | 3 | UC | Lộc, Mạnh |
+| FR-M7-05 | Trang tìm bé thương và bảo hành không chặn người dùng | T2 | Could | M7 | TC-T2-M7-007 | 1 | UC | Mạnh |
+| FR-M7-06 | Nội dung FAQ dạng accordion mở/đóng được | T1 | Should | M7 | TC-T1-M7-003 | 1 | ST | Tài |
+| NFR-01 | Hiệu năng: trang chủ tải xong (DOMContentLoaded) trong ≤ 3 giây trên mạng 4G mô phỏng; LCP ≤ 2,5 giây | T1, T2, T3 | Must | NFR | TC-NFR-01-001; TC-NFR-01-002; TC-NFR-01-003; TC-NFR-01-004; TC-NFR-01-005; TC-NFR-01-006 | 6 | Lighthouse, Use case | Ngân |
+| NFR-02 | Bảo mật: HTTPS bật, HSTS có, `X-Content-Type-Options: nosniff`, `X-Frame-Options` hoặc CSP `frame-ancestors`, `Referrer-Policy`; không lộ stack trace; phản xạ đầu vào không thực thi (XSS) | T1, T2, T3 | Must | NFR | TC-NFR-02-001; TC-NFR-02-002; TC-NFR-02-003; TC-NFR-02-004; TC-NFR-02-005; TC-NFR-02-006; TC-NFR-02-007; TC-NFR-02-008; TC-NFR-02-009; TC-NFR-02-010; TC-NFR-02-011; TC-NFR-02-012 | 12 | Use case | Mạnh |
+| NFR-03 | Khả năng dùng: hoàn tất luồng tính giá trong ≤ 5 thao tác; thông báo lỗi nêu rõ trường; nhãn nhất quán; dùng được bằng bàn phím | T1, T2, T3 | Should | NFR | TC-NFR-03-001; TC-NFR-03-002; TC-NFR-03-003; TC-NFR-03-004 | 4 | Use case | Tài |
+| NFR-04 | Tương thích: chạy đúng chức năng chính trên Chrome, Firefox, Edge và Safari bản mới nhất; trình duyệt di động 360px | T1, T2, T3 | Must | NFR | TC-NFR-04-001; TC-NFR-04-002; TC-NFR-04-003; TC-NFR-04-004; TC-NFR-04-005; TC-NFR-04-006 | 6 | UC, Use case | Tài |
+| NFR-05 | Độ tin cậy: gửi form nhiều lần liên tiếp không tạo bản ghi trùng; lỗi mạng hiển thị thông báo, không treo; tải lại trang không mất trạng thái đã chọn | T1, T2, T3 | Should | NFR | TC-NFR-05-001; TC-NFR-05-002; TC-NFR-05-003; TC-NFR-05-004 | 4 | Use case | Ngân |
+| NFR-06 | Khả năng tiếp cận: đủ tương phản chữ ≥ 4,5:1; mọi trường form có nhãn; ảnh có `alt`; điều hướng bằng bàn phím; tiêu đề trang duy nhất | T1, T2, T3 | Should | NFR | TC-NFR-06-001; TC-NFR-06-002; TC-NFR-06-003; TC-NFR-06-004; TC-NFR-06-005; TC-NFR-06-006 | 6 | Accessibility | Lộc |
+| NFR-07 | SEO và kỹ thuật bảo trì: mỗi trang có `title` và `meta description` duy nhất; có `lang`; sitemap.xml và robots.txt tồn tại và không chặn; Open Graph đầy đủ | T1, T2, T3 | Could | NFR | TC-NFR-07-001; TC-NFR-07-002; TC-NFR-07-003; TC-NFR-07-004; TC-NFR-07-005; TC-NFR-07-006 | 6 | SEO | Lộc |
 
-## 2. Yêu cầu chức năng
+## 3. Độ phủ theo hệ thống đích
 
-### M1 – Tài khoản và phân quyền (Lộc viết và chạy test)
+| Hệ thống | Số yêu cầu áp dụng | Số yêu cầu đã phủ | Độ phủ | Số test case |
+|---|---|---|---|---|
+| T1 | 42 | 40 | 95.2% | 72 |
+| T2 | 42 | 42 | 100.0% | 66 |
+| T3 | 27 | 27 | 100.0% | 44 |
 
-| Yêu cầu | Nội dung | Ưu tiên | UC | Kỹ thuật | Mức | Test case dự kiến | Kết quả |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| FR-M1-01 | Đăng ký tài khoản | Must | UC-01 | EP, BVA | U, S | TC-M1-001…009 (9) | Chưa chạy |
-| FR-M1-02 | Đăng nhập, cấp JWT | Must | UC-01 | EP, UC | U, I, S | TC-M1-010…015 (6) | Chưa chạy |
-| FR-M1-03 | Đăng xuất, hết hạn phiên | Must | UC-01 | UC | I, S | TC-M1-016…018 (3) | Chưa chạy |
-| FR-M1-04 | Đổi và quên mật khẩu | Should | UC-01 | EP, BVA, UC | S | TC-M1-019…022 (4) | Chưa chạy |
-| FR-M1-05 | Phân quyền theo vai trò | Must | UC-01 | EP, UC | I, S | TC-M1-023…026 (4) | Chưa chạy |
-| FR-M1-06 | Khóa sau 5 lần đăng nhập sai | Should | UC-01 | BVA, ST | U, S | TC-M1-027…028 (2) | Chưa chạy |
+## 4. Độ phủ theo kỹ thuật thiết kế test
 
-### M2 – Hồ sơ thú cưng (Mạnh viết và chạy test)
+| Kỹ thuật | Số test case |
+|---|---|
+| UC | 78 |
+| Use case | 37 |
+| BVA | 34 |
+| EP | 24 |
+| DT | 20 |
+| ST | 19 |
+| Accessibility | 6 |
+| SEO | 6 |
+| Lighthouse | 2 |
 
-| Yêu cầu | Nội dung | Ưu tiên | UC | Kỹ thuật | Mức | Test case dự kiến | Kết quả |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| FR-M2-01 | Thêm thú cưng | Must | UC-02 | EP, BVA | U, S | TC-M2-001…009 (9) | Chưa chạy |
-| FR-M2-02 | Xem danh sách, chi tiết | Must | UC-02 | UC | S | TC-M2-010…012 (3) | Chưa chạy |
-| FR-M2-03 | Sửa thông tin thú cưng | Must | UC-02 | EP, BVA | U, S | TC-M2-013…016 (4) | Chưa chạy |
-| FR-M2-04 | Xóa thú cưng (BR-15) | Must | UC-02 | EP, UC | U, S | TC-M2-017…020 (4) | Chưa chạy |
-| FR-M2-05 | Giới hạn 5 thú cưng mỗi tài khoản | Should | UC-02 | BVA | U, S | TC-M2-021…022 (2) | Chưa chạy |
+## 5. Độ phủ theo mức ưu tiên
 
-### M3 – Danh mục dịch vụ và bảng giá (Mạnh viết và chạy test)
+| Ưu tiên | Số test case |
+|---|---|
+| Critical | 129 |
+| High | 74 |
+| Medium | 20 |
+| Low | 3 |
 
-| Yêu cầu | Nội dung | Ưu tiên | UC | Kỹ thuật | Mức | Test case dự kiến | Kết quả |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| FR-M3-01 | Xem danh mục dịch vụ | Must | UC-03 | UC | S | TC-M3-001…003 (3) | Chưa chạy |
-| FR-M3-02 | Bảng giá theo nhóm cân nặng, loài | Must | UC-03 | BVA, DT | U, S | TC-M3-004…009 (6) | Chưa chạy |
-| FR-M3-03 | AD thêm, sửa, ẩn dịch vụ | Must | UC-08 | EP, BVA, UC | I, S | TC-M3-010…014 (5) | Chưa chạy |
-| FR-M3-04 | Tìm kiếm, lọc dịch vụ | Could | UC-03 | EP | S | TC-M3-015…016 (2) | Chưa chạy |
+## 6. Use case kiểm thử chấp nhận (UAT)
 
-### M4 – Đặt lịch (Tài viết và chạy test)
+| UC | Tên | Hệ thống | Kết quả mong đợi | Người tham gia | Ưu tiên |
+|---|---|---|---|---|---|
+| UC-01 | Tìm giá dịch vụ chăm sóc cho chó theo cân nặng | T1 | Người dùng thấy giá dự kiến đúng bảng cộng phụ thu cố định 100.000đ cộng phụ thu di chuyển 24.000đ, tổng tiền hiển thị rõ | 5-8 người ngoài nhóm | Critical |
+| UC-02 | Tra bảng giá dịch vụ lẻ theo loài và cân nặng | T2 | Giá hiển thị đúng ô trong bảng giá cột Mèo, bậc >3-6kg, dòng Combo Tắm Vệ Sinh | 5-8 người ngoài nhóm | Critical |
+| UC-03 | Đặt lịch giữ chỗ tại spa Mật Pet | T2 | Form được gửi, hiển thị thông báo giữ chỗ thành công và tóm tắt lựa chọn | 5-8 người ngoài nhóm | Critical |
+| UC-04 | Kiểm tra dịch vụ báo giá riêng trước khi đặt | T2 | Hệ thống không hiển thị một con số đơn lẻ, mà hiển thị khoảng hoặc yêu cầu liên hệ | 5-8 người ngoài nhóm | High |
+| UC-05 | Xem quy trình và thời gian xác nhận lịch | T1 | 5-8 người ngoài nhóm | High | Chưa thực thi |
+| UC-06 | Tra cứu chính sách hủy hoặc đổi lịch | T1 | Tìm thấy điều kiện cụ thể về thời gian và phí, không chỉ nói liên hệ tiệm | 5-8 người ngoài nhóm | High |
+| UC-07 | Tìm kiếm dịch vụ trên Mật Pet | T2 | Danh sách kết quả lọc theo từ khoá, hoa thường cho cùng kết quả, xóa từ khoá không gây lỗi | 5-8 người ngoài nhóm | Medium |
+| UC-08 | Liên hệ tiệm qua kênh khác nhau | T1 | 1. Mở trang liên hệ hoặc footer. 2. Kiểm tra số điện thoại, email, liên kết Zalo hoặc messenger. | Có ít nhất 2 kênh hoạt động, liên kết mở đúng ứng dụng | 5-8 người ngoài nhóm |
 
-| Yêu cầu | Nội dung | Ưu tiên | UC | Kỹ thuật | Mức | Test case dự kiến | Kết quả |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| FR-M4-01 | Chọn thú cưng, dịch vụ, giờ, nhân viên | Must | UC-04 | UC, EP | I, S, A | TC-M4-001…004 (4) | Chưa chạy |
-| FR-M4-02 | Hiển thị slot trống | Must | UC-04 | EP, BVA | U, S | TC-M4-005…008 (4) | Chưa chạy |
-| FR-M4-03 | Chặn trùng, chồng lịch nhân viên | Must | UC-04 | BVA, WB | U, I, S | TC-M4-009…012 (4) | Chưa chạy |
-| FR-M4-04 | Giới hạn đặt trước 2 giờ đến 30 ngày | Must | UC-04 | BVA | U, S | TC-M4-013…016 (4) | Chưa chạy |
-| FR-M4-05 | Chống đặt trùng khi đồng thời | Must | UC-04 | UC | I, S | TC-M4-017…018 (2) | Chưa chạy |
-| FR-M4-06 | Tự gán nhân viên rảnh | Should | UC-04 | EP | U, S | TC-M4-019…020 (2) | Chưa chạy |
-| FR-M4-07 | KH xem lịch sử lịch hẹn | Should | UC-05 | UC | S | TC-M4-021…022 (2) | Chưa chạy |
-| FR-M4-08 | NV xem lịch làm việc | Should | UC-06 | UC | S | TC-M4-023…024 (2) | Chưa chạy |
+## 7. Quy tắc bảo trì
 
-### M5 – Vòng đời lịch hẹn (Tài viết và chạy test)
-
-| Yêu cầu | Nội dung | Ưu tiên | UC | Kỹ thuật | Mức | Test case dự kiến | Kết quả |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| FR-M5-01 | Quản lý trạng thái lịch hẹn | Must | UC-06 | ST | U, S | TC-M5-001…006 (6) | Chưa chạy |
-| FR-M5-02 | NV, AD xác nhận lịch | Must | UC-06 | UC | I, S | TC-M5-007…008 (2) | Chưa chạy |
-| FR-M5-03 | Bắt đầu, hoàn thành dịch vụ | Must | UC-06 | ST, UC | I, S | TC-M5-009…011 (3) | Chưa chạy |
-| FR-M5-04 | Hủy lịch theo chính sách | Must | UC-05 | DT | U, S, A | TC-M5-012…017 (6) | Chưa chạy |
-| FR-M5-05 | Đổi lịch | Should | UC-05 | BVA, DT | U, S | TC-M5-018…020 (3) | Chưa chạy |
-| FR-M5-06 | Tự động chuyển No-show | Should | UC-06 | BVA, ST | U, S | TC-M5-021…022 (2) | Chưa chạy |
-| FR-M5-07 | Từ chối chuyển trạng thái không hợp lệ | Must | UC-05 | ST | U, S | TC-M5-023…024 (2) | Chưa chạy |
-
-### M6 – Tính giá, khuyến mãi, thanh toán, thông báo (Ngân viết và chạy test)
-
-| Yêu cầu | Nội dung | Ưu tiên | UC | Kỹ thuật | Mức | Test case dự kiến | Kết quả |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| FR-M6-01 | Tính giá theo cân nặng, phụ phí | Must | UC-04 | DT, BVA, WB | U, S | TC-M6-001…008 (8) | Chưa chạy |
-| FR-M6-02 | Áp mã khuyến mãi | Should | UC-04, UC-07 | EP, BVA, DT | U, S | TC-M6-009…015 (7) | Chưa chạy |
-| FR-M6-03 | Giảm giá VIP | Should | UC-04, UC-07 | DT | U, S | TC-M6-016…018 (3) | Chưa chạy |
-| FR-M6-04 | Đặt cọc, thanh toán giả lập | Should | UC-04, UC-07 | UC, EP | I, S, A | TC-M6-019…025 (7) | Chưa chạy |
-| FR-M6-05 | Xuất hóa đơn | Should | UC-07 | UC | S | TC-M6-026…029 (4) | Chưa chạy |
-| FR-M6-06 | Nhắc lịch, thông báo | Could | UC-06 | UC | I, S | TC-M6-030…032 (3) | Chưa chạy |
-
-### M7 – Quản trị (Lộc viết và chạy test)
-
-| Yêu cầu | Nội dung | Ưu tiên | UC | Kỹ thuật | Mức | Test case dự kiến | Kết quả |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| FR-M7-01 | Quản lý nhân viên | Should | UC-08 | UC, EP | S | TC-M7-001…004 (4) | Chưa chạy |
-| FR-M7-02 | Quản lý mã khuyến mãi | Should | UC-08 | EP, BVA | S | TC-M7-005…006 (2) | Chưa chạy |
-| FR-M7-03 | Báo cáo số lịch, doanh thu | Could | UC-08 | UC | S | TC-M7-007…008 (2) | Chưa chạy |
-| FR-M7-04 | AD xem, điều chỉnh mọi lịch | Could | UC-08 | UC | S | TC-M7-009…010 (2) | Chưa chạy |
-
-## 3. Yêu cầu phi chức năng
-
-| Yêu cầu | Nội dung | Ưu tiên | Loại kiểm thử | Mức | Test case dự kiến | Người | Kết quả |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| NFR-01 | Hiệu năng | Should | Kiểm thử tải | S | TC-NF-001…003 (3) | Lộc | Chưa chạy |
-| NFR-02 | Bảo mật | Must | SQL injection, XSS, truy cập chéo, quyền | S | TC-NF-004…009 (6) | Mạnh | Chưa chạy |
-| NFR-03 | Khả năng sử dụng | Should | Usability, responsive | S, A | TC-NF-010…013 (4) | Tài | Chưa chạy |
-| NFR-04 | Độ tin cậy | Must | Đồng thời, lỗi giữa chừng | S | TC-NF-014…016 (3) | Ngân | Chưa chạy |
-| NFR-05 | Tương thích | Should | Trình duyệt, di động | S | TC-NF-017…019 (3) | Tài | Chưa chạy |
-| NFR-06 | Khả năng bảo trì | Should | Phân tích tĩnh, coverage (không có test case riêng) |  | Báo cáo phân tích tĩnh, báo cáo coverage | Tài | Chưa chạy |
-
-## 4. Quy tắc sử dụng và cập nhật
-
-- **Truy vết xuôi:** mọi yêu cầu có ít nhất một test case. Mục tiêu ngày 8: 46 trên 46 yêu cầu (NFR-06 được đáp ứng bằng báo cáo công cụ); riêng 22 yêu cầu chức năng Must và 2 yêu cầu phi chức năng Must phải có test case trước mọi yêu cầu khác.
-- **Truy vết ngược:** mỗi test case ghi mã yêu cầu mà nó kiểm tra. Test case không gắn với yêu cầu nào thì xem xét xóa hoặc bổ sung yêu cầu vào SRS.
-- **Cập nhật kết quả:** người viết test case cập nhật cột Kết quả sau mỗi lần chạy; nếu Fail thì ghi DEF-nnn. Mạnh rà soát cuối ngày trong ngày 11–13.
-- **Khi SRS thay đổi:** tô màu các dòng bị ảnh hưởng, cập nhật test case trong 1 ngày (SRS mục 10.C).
-- **Bổ sung sau ngày 5:** thêm cột ánh xạ sang thành phần thiết kế (API, bảng dữ liệu) khi SDD v1.0 chốt.
-- **Kiểm tra cuối (ngày 13):** độ phủ yêu cầu 100%, tỷ lệ Pass, danh sách yêu cầu còn lỗi mở đưa vào Final Test Report.
+1. Mỗi yêu cầu trong SRS-01 phải có ít nhất một test case trước khi vào kiểm thử hệ thống (Entry criteria giai đoạn 2).
+2. Mỗi test case phải truy xuất về đúng một yêu cầu; test case không gắn yêu cầu nào bị loại khỏi RTM và không được thực thi.
+3. Test case bổ sung phải cập nhật đồng thời file CSV trong `docs/testcases/` và bảng mục 2 của RTM này.
+4. Thay đổi SRS phải kích hoạt kiểm tra truy xuất hai chiều trước khi baseline lại phiên bản RTM.

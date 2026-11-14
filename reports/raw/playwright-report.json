@@ -1,0 +1,2014 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\node_modules\\@playwright\\test\\cli.js",
+      "test"
+    ],
+    "configFile": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\playwright.config.ts",
+    "rootDir": "D:/Thiết Kế và Kiểm Thử Phần Mềm/Pet-Spa-KTPM/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": true,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/Thiết Kế và Kiểm Thử Phần Mềm/Pet-Spa-KTPM/reports/playwright",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "t1",
+        "name": "t1",
+        "testDir": "D:/Thiết Kế và Kiểm Thử Phần Mềm/Pet-Spa-KTPM/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/e2e[\\\\/]t1[\\\\/].*\\.spec\\.ts/"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "D:/Thiết Kế và Kiểm Thử Phần Mềm/Pet-Spa-KTPM/reports/playwright",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "t2",
+        "name": "t2",
+        "testDir": "D:/Thiết Kế và Kiểm Thử Phần Mềm/Pet-Spa-KTPM/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/e2e[\\\\/]t2[\\\\/].*\\.spec\\.ts/"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "D:/Thiết Kế và Kiểm Thử Phần Mềm/Pet-Spa-KTPM/reports/playwright",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "t3",
+        "name": "t3",
+        "testDir": "D:/Thiết Kế và Kiểm Thử Phần Mềm/Pet-Spa-KTPM/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/e2e[\\\\/]t3[\\\\/].*\\.spec\\.ts/"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "D:/Thiết Kế và Kiểm Thử Phần Mềm/Pet-Spa-KTPM/reports/playwright",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "security",
+        "name": "security",
+        "testDir": "D:/Thiết Kế và Kiểm Thử Phần Mềm/Pet-Spa-KTPM/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/security[\\\\/].*\\.spec\\.ts/"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\reports\\playwright",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "t1",
+        "testDir": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests",
+        "snapshotDir": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests",
+        "testIgnore": [],
+        "testMatch": {},
+        "timeout": 60000,
+        "use": {
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure",
+          "video": "off",
+          "actionTimeout": 15000,
+          "navigationTimeout": 60000,
+          "channel": "chrome",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/158.0.8127.18 Safari/537.36",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium",
+          "baseURL": "https://petngon.vn"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "t1"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\reports\\playwright",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "t2",
+        "testDir": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests",
+        "snapshotDir": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests",
+        "testIgnore": [],
+        "testMatch": {},
+        "timeout": 60000,
+        "use": {
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure",
+          "video": "off",
+          "actionTimeout": 15000,
+          "navigationTimeout": 60000,
+          "channel": "chrome",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/158.0.8127.18 Safari/537.36",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium",
+          "baseURL": "https://matpet.vn"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "t2"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\reports\\playwright",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "t3",
+        "testDir": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests",
+        "snapshotDir": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests",
+        "testIgnore": [],
+        "testMatch": {},
+        "timeout": 60000,
+        "use": {
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure",
+          "video": "off",
+          "actionTimeout": 15000,
+          "navigationTimeout": 60000,
+          "channel": "chrome",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/158.0.8127.18 Safari/537.36",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium",
+          "baseURL": "https://prettypawscatanddoggrooming.groomore.com"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "t3"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\reports\\playwright",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "security",
+        "testDir": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests",
+        "snapshotDir": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests",
+        "testIgnore": [],
+        "testMatch": {},
+        "timeout": 60000,
+        "use": {
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure",
+          "video": "off",
+          "actionTimeout": 15000,
+          "navigationTimeout": 60000,
+          "channel": "chrome",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/158.0.8127.18 Safari/537.36",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "security"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "reports/raw/playwright-report.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "reports/playwright-html",
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "e2e\\t1\\m1-navigation.spec.ts",
+      "file": "e2e/t1/m1-navigation.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "T1 Pet NGON — M1 Truy cập và điều hướng",
+          "file": "e2e/t1/m1-navigation.spec.ts",
+          "line": 8,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-T1-M1-001: trang chủ trả HTTP 200 và hiển thị tiêu đề",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "t1",
+                  "projectName": "t1",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 14075,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-14T16:13:57.057Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "bf2eb4103083a654a8b6-d655fe5573e3bf499bc1",
+              "file": "e2e/t1/m1-navigation.spec.ts",
+              "line": 9,
+              "column": 3
+            },
+            {
+              "title": "TC-T1-M1-002: mọi liên kết menu trả HTTP 200",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "t1",
+                  "projectName": "t1",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 12044,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-14T16:14:12.053Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "bf2eb4103083a654a8b6-6ffd596b4aabc6bfd1aa",
+              "file": "e2e/t1/m1-navigation.spec.ts",
+              "line": 15,
+              "column": 3
+            },
+            {
+              "title": "TC-T1-M1-004: không có liên kết chết 404 trong menu và footer",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "t1",
+                  "projectName": "t1",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 39996,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-14T16:14:24.128Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "bf2eb4103083a654a8b6-711e875da4b39bc0c6bb",
+              "file": "e2e/t1/m1-navigation.spec.ts",
+              "line": 30,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "e2e\\t2\\m3-pricing.spec.ts",
+      "file": "e2e/t2/m3-pricing.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "T2 Mật Pet — M3 Bảng giá theo cân nặng",
+          "file": "e2e/t2/m3-pricing.spec.ts",
+          "line": 39,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-T2-M3-002: giá tính tức thì Chó >3–6kg Combo Tắm Vệ Sinh khớp bảng giá tĩnh",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "t2",
+                  "projectName": "t2",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 19487,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-14T16:15:04.800Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f7a4edd9ac4748f05395-43b8f2916200d97a2d1a",
+              "file": "e2e/t2/m3-pricing.spec.ts",
+              "line": 41,
+              "column": 5
+            },
+            {
+              "title": "TC-T2-M3-002: giá tính tức thì Chó >3–6kg Combo Tắm Cạo khớp bảng giá tĩnh",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "t2",
+                  "projectName": "t2",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4096,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-14T16:15:25.062Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f7a4edd9ac4748f05395-5dc3667247fd9d3e47eb",
+              "file": "e2e/t2/m3-pricing.spec.ts",
+              "line": 41,
+              "column": 5
+            },
+            {
+              "title": "TC-T2-M3-002: giá tính tức thì Chó >6–10kg Combo Tắm Vệ Sinh khớp bảng giá tĩnh",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "t2",
+                  "projectName": "t2",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3652,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-14T16:15:29.292Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f7a4edd9ac4748f05395-7e9365b0086b8aaf34b8",
+              "file": "e2e/t2/m3-pricing.spec.ts",
+              "line": 41,
+              "column": 5
+            },
+            {
+              "title": "TC-T2-M3-004: giá cập nhật tức thì khi đổi bậc cân nặng",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "t2",
+                  "projectName": "t2",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6353,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-14T16:15:32.978Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f7a4edd9ac4748f05395-f1dfca5d9056a45eb9ad",
+              "file": "e2e/t2/m3-pricing.spec.ts",
+              "line": 53,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "e2e\\t3\\m1-m5-info.spec.ts",
+      "file": "e2e/t3/m1-m5-info.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "T3 Pretty Paws — M1/M5 Truy cập, liên hệ và trạng thái tiệm",
+          "file": "e2e/t3/m1-m5-info.spec.ts",
+          "line": 16,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-T3-M1-001: trang chủ trả HTTP 200 và có tiêu đề",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "t3",
+                  "projectName": "t3",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3670,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-14T16:15:40.202Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3cbc945b9f98a2336498-47d26360f1abaefb50d4",
+              "file": "e2e/t3/m1-m5-info.spec.ts",
+              "line": 17,
+              "column": 3
+            },
+            {
+              "title": "TC-T3-M1-003: trang hiển thị đủ điện thoại, email và địa chỉ",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "t3",
+                  "projectName": "t3",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 8585,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-14T16:15:44.110Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3cbc945b9f98a2336498-cadc1e827689e6c785db",
+              "file": "e2e/t3/m1-m5-info.spec.ts",
+              "line": 23,
+              "column": 3
+            },
+            {
+              "title": "TC-T3-M5-005: trang hiển thị trạng thái mở/đóng kèm khung giờ mở cửa đầy đủ",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "t3",
+                  "projectName": "t3",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 10558,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-14T16:15:52.710Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3cbc945b9f98a2336498-34f115a28ddfcd9f2914",
+              "file": "e2e/t3/m1-m5-info.spec.ts",
+              "line": 32,
+              "column": 3
+            },
+            {
+              "title": "TC-T3-M4-009: có nút \"Book Now\" để đặt lịch 24/7 mà không cần đăng nhập",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "t3",
+                  "projectName": "t3",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 9490,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-14T16:16:03.290Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3cbc945b9f98a2336498-37cfb060b83774a04917",
+              "file": "e2e/t3/m1-m5-info.spec.ts",
+              "line": 40,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "security\\accessibility.spec.ts",
+      "file": "security/accessibility.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "NFR-06 — Khả năng tiếp cận",
+          "file": "security/accessibility.spec.ts",
+          "line": 35,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-NFR-06-001: axe-core không có vi phạm mức critical trên cả 3 site",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "security",
+                  "projectName": "security",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 34116,
+                      "error": {
+                        "message": "Error: vi phạm axe-core mức critical: T3 image-alt (49 node)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T3 image-alt (49 node)\",\u001b[39m\n\u001b[31m+ ]\u001b[39m",
+                        "stack": "Error: vi phạm axe-core mức critical: T3 image-alt (49 node)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T3 image-alt (49 node)\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\accessibility.spec.ts:69:79",
+                        "location": {
+                          "file": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\accessibility.spec.ts",
+                          "column": 79,
+                          "line": 69
+                        },
+                        "snippet": "  67 |     writeFileSync(AXE_CSV, `\\uFEFF${toCsv(rows)}\\n`, 'utf8');\n  68 |\n> 69 |     expect(critical, `vi phạm axe-core mức critical: ${critical.join('; ')}`).toEqual([]);\n     |                                                                               ^\n  70 |   });\n  71 |\n  72 |   test('TC-NFR-06-002: mọi vùng chữ đạt tương phản ≥ 4,5:1 trên cả 3 site', async ({ browser }) => {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\accessibility.spec.ts",
+                            "column": 79,
+                            "line": 69
+                          },
+                          "message": "Error: vi phạm axe-core mức critical: T3 image-alt (49 node)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T3 image-alt (49 node)\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n\n  67 |     writeFileSync(AXE_CSV, `\\uFEFF${toCsv(rows)}\\n`, 'utf8');\n  68 |\n> 69 |     expect(critical, `vi phạm axe-core mức critical: ${critical.join('; ')}`).toEqual([]);\n     |                                                                               ^\n  70 |   });\n  71 |\n  72 |   test('TC-NFR-06-002: mọi vùng chữ đạt tương phản ≥ 4,5:1 trên cả 3 site', async ({ browser }) => {\n    at D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\accessibility.spec.ts:69:79"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-14T16:16:13.516Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\reports\\playwright\\security-accessibility-NFR-07ce0-mức-critical-trên-cả-3-site-security\\test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\reports\\playwright\\security-accessibility-NFR-07ce0-mức-critical-trên-cả-3-site-security\\test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\reports\\playwright\\security-accessibility-NFR-07ce0-mức-critical-trên-cả-3-site-security\\test-failed-3.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\reports\\playwright\\security-accessibility-NFR-07ce0-mức-critical-trên-cả-3-site-security\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\reports\\playwright\\security-accessibility-NFR-07ce0-mức-critical-trên-cả-3-site-security\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\accessibility.spec.ts",
+                        "column": 79,
+                        "line": 69
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "81da87a0a6e56d3e1759-507d825f31c5aaed332a",
+              "file": "security/accessibility.spec.ts",
+              "line": 40,
+              "column": 3
+            },
+            {
+              "title": "TC-NFR-06-002: mọi vùng chữ đạt tương phản ≥ 4,5:1 trên cả 3 site",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "security",
+                  "projectName": "security",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 28143,
+                      "error": {
+                        "message": "Error: vi phạm tương phản màu: T1 color-contrast (40 node); T2 color-contrast (3 node)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 4\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T1 color-contrast (40 node)\",\u001b[39m\n\u001b[31m+   \"T2 color-contrast (3 node)\",\u001b[39m\n\u001b[31m+ ]\u001b[39m",
+                        "stack": "Error: vi phạm tương phản màu: T1 color-contrast (40 node); T2 color-contrast (3 node)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 4\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T1 color-contrast (40 node)\",\u001b[39m\n\u001b[31m+   \"T2 color-contrast (3 node)\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\accessibility.spec.ts:83:76",
+                        "location": {
+                          "file": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\accessibility.spec.ts",
+                          "column": 76,
+                          "line": 83
+                        },
+                        "snippet": "  81 |       await context.close();\n  82 |     }\n> 83 |     expect(violations, `vi phạm tương phản màu: ${violations.join('; ')}`).toEqual([]);\n     |                                                                            ^\n  84 |   });\n  85 |\n  86 |   test('TC-NFR-06-003: mọi trường form có nhãn gắn liền trên cả 3 site', async ({ browser }) => {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\accessibility.spec.ts",
+                            "column": 76,
+                            "line": 83
+                          },
+                          "message": "Error: vi phạm tương phản màu: T1 color-contrast (40 node); T2 color-contrast (3 node)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 4\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T1 color-contrast (40 node)\",\u001b[39m\n\u001b[31m+   \"T2 color-contrast (3 node)\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n\n  81 |       await context.close();\n  82 |     }\n> 83 |     expect(violations, `vi phạm tương phản màu: ${violations.join('; ')}`).toEqual([]);\n     |                                                                            ^\n  84 |   });\n  85 |\n  86 |   test('TC-NFR-06-003: mọi trường form có nhãn gắn liền trên cả 3 site', async ({ browser }) => {\n    at D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\accessibility.spec.ts:83:76"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-14T16:16:50.245Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\reports\\playwright\\security-accessibility-NFR-47fd6-phản-≥-4-5-1-trên-cả-3-site-security\\test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\reports\\playwright\\security-accessibility-NFR-47fd6-phản-≥-4-5-1-trên-cả-3-site-security\\test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\reports\\playwright\\security-accessibility-NFR-47fd6-phản-≥-4-5-1-trên-cả-3-site-security\\test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\reports\\playwright\\security-accessibility-NFR-47fd6-phản-≥-4-5-1-trên-cả-3-site-security\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\reports\\playwright\\security-accessibility-NFR-47fd6-phản-≥-4-5-1-trên-cả-3-site-security\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\accessibility.spec.ts",
+                        "column": 76,
+                        "line": 83
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "81da87a0a6e56d3e1759-ff393a7e2202d133b357",
+              "file": "security/accessibility.spec.ts",
+              "line": 72,
+              "column": 3
+            },
+            {
+              "title": "TC-NFR-06-003: mọi trường form có nhãn gắn liền trên cả 3 site",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "security",
+                  "projectName": "security",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 41457,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-14T16:17:20.938Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "81da87a0a6e56d3e1759-a9c88af052bb6e111ae9",
+              "file": "security/accessibility.spec.ts",
+              "line": 86,
+              "column": 3
+            },
+            {
+              "title": "TC-NFR-06-004: mọi ảnh nội dung có thuộc tính alt trên cả 3 site",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "security",
+                  "projectName": "security",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 29303,
+                      "error": {
+                        "message": "Error: vi phạm thuộc tính alt: T3 image-alt (49 node)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T3 image-alt (49 node)\",\u001b[39m\n\u001b[31m+ ]\u001b[39m",
+                        "stack": "Error: vi phạm thuộc tính alt: T3 image-alt (49 node)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T3 image-alt (49 node)\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\accessibility.spec.ts:111:76",
+                        "location": {
+                          "file": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\accessibility.spec.ts",
+                          "column": 76,
+                          "line": 111
+                        },
+                        "snippet": "  109 |       await context.close();\n  110 |     }\n> 111 |     expect(violations, `vi phạm thuộc tính alt: ${violations.join('; ')}`).toEqual([]);\n      |                                                                            ^\n  112 |   });\n  113 |\n  114 |   test('TC-NFR-06-005: mỗi trang có đúng một tiêu đề h1 trên cả 3 site', async ({ browser }) => {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\accessibility.spec.ts",
+                            "column": 76,
+                            "line": 111
+                          },
+                          "message": "Error: vi phạm thuộc tính alt: T3 image-alt (49 node)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T3 image-alt (49 node)\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n\n  109 |       await context.close();\n  110 |     }\n> 111 |     expect(violations, `vi phạm thuộc tính alt: ${violations.join('; ')}`).toEqual([]);\n      |                                                                            ^\n  112 |   });\n  113 |\n  114 |   test('TC-NFR-06-005: mỗi trang có đúng một tiêu đề h1 trên cả 3 site', async ({ browser }) => {\n    at D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\accessibility.spec.ts:111:76"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-14T16:18:02.706Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\reports\\playwright\\security-accessibility-NFR-26e9a-uộc-tính-alt-trên-cả-3-site-security\\test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\reports\\playwright\\security-accessibility-NFR-26e9a-uộc-tính-alt-trên-cả-3-site-security\\test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\reports\\playwright\\security-accessibility-NFR-26e9a-uộc-tính-alt-trên-cả-3-site-security\\test-failed-3.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\reports\\playwright\\security-accessibility-NFR-26e9a-uộc-tính-alt-trên-cả-3-site-security\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\reports\\playwright\\security-accessibility-NFR-26e9a-uộc-tính-alt-trên-cả-3-site-security\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\accessibility.spec.ts",
+                        "column": 76,
+                        "line": 111
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "81da87a0a6e56d3e1759-46cb1884bc46f59e6c70",
+              "file": "security/accessibility.spec.ts",
+              "line": 100,
+              "column": 3
+            },
+            {
+              "title": "TC-NFR-06-005: mỗi trang có đúng một tiêu đề h1 trên cả 3 site",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "security",
+                  "projectName": "security",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 41201,
+                      "error": {
+                        "message": "Error: tiêu đề h1 không đúng: T3 có 0 phần tử h1\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T3 có 0 phần tử h1\",\u001b[39m\n\u001b[31m+ ]\u001b[39m",
+                        "stack": "Error: tiêu đề h1 không đúng: T3 có 0 phần tử h1\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T3 có 0 phần tử h1\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\accessibility.spec.ts:125:69",
+                        "location": {
+                          "file": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\accessibility.spec.ts",
+                          "column": 69,
+                          "line": 125
+                        },
+                        "snippet": "  123 |       await context.close();\n  124 |     }\n> 125 |     expect(details, `tiêu đề h1 không đúng: ${details.join('; ')}`).toEqual([]);\n      |                                                                     ^\n  126 |   });\n  127 | });\n  128 |"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\accessibility.spec.ts",
+                            "column": 69,
+                            "line": 125
+                          },
+                          "message": "Error: tiêu đề h1 không đúng: T3 có 0 phần tử h1\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T3 có 0 phần tử h1\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n\n  123 |       await context.close();\n  124 |     }\n> 125 |     expect(details, `tiêu đề h1 không đúng: ${details.join('; ')}`).toEqual([]);\n      |                                                                     ^\n  126 |   });\n  127 | });\n  128 |\n    at D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\accessibility.spec.ts:125:69"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-14T16:18:34.327Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\reports\\playwright\\security-accessibility-NFR-e457e-t-tiêu-đề-h1-trên-cả-3-site-security\\test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\reports\\playwright\\security-accessibility-NFR-e457e-t-tiêu-đề-h1-trên-cả-3-site-security\\test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\reports\\playwright\\security-accessibility-NFR-e457e-t-tiêu-đề-h1-trên-cả-3-site-security\\test-failed-3.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\reports\\playwright\\security-accessibility-NFR-e457e-t-tiêu-đề-h1-trên-cả-3-site-security\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\reports\\playwright\\security-accessibility-NFR-e457e-t-tiêu-đề-h1-trên-cả-3-site-security\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\accessibility.spec.ts",
+                        "column": 69,
+                        "line": 125
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "81da87a0a6e56d3e1759-e865ff79187b3bd9a517",
+              "file": "security/accessibility.spec.ts",
+              "line": 114,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "security\\headers.spec.ts",
+      "file": "security/headers.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "NFR-02 — Baseline bảo mật",
+          "file": "security/headers.spec.ts",
+          "line": 37,
+          "column": 6,
+          "specs": [
+            {
+              "title": "tổng hợp HTTP security header của 3 site vào reports/raw/security-summary.csv",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "security",
+                  "projectName": "security",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 8890,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-14T16:19:17.778Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "491a4e533e82d7b34aac-aa8846cf36cb7a6f3f69",
+              "file": "security/headers.spec.ts",
+              "line": 42,
+              "column": 3
+            },
+            {
+              "title": "TC-NFR-02-001: cả 3 site bật HTTPS và trả header Strict-Transport-Security",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "security",
+                  "projectName": "security",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 8547,
+                      "error": {
+                        "message": "Error: T1 thiếu HSTS; T3 thiếu HSTS\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 4\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T1 thiếu HSTS\",\u001b[39m\n\u001b[31m+   \"T3 thiếu HSTS\",\u001b[39m\n\u001b[31m+ ]\u001b[39m",
+                        "stack": "Error: T1 thiếu HSTS; T3 thiếu HSTS\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 4\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T1 thiếu HSTS\",\u001b[39m\n\u001b[31m+   \"T3 thiếu HSTS\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\headers.spec.ts:63:41",
+                        "location": {
+                          "file": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\headers.spec.ts",
+                          "column": 41,
+                          "line": 63
+                        },
+                        "snippet": "  61 |       if (!response.headers()['strict-transport-security']) missing.push(`${target.id} thiếu HSTS`);\n  62 |     }\n> 63 |     expect(missing, missing.join('; ')).toEqual([]);\n     |                                         ^\n  64 |   });\n  65 |\n  66 |   test('TC-NFR-02-002: cả 3 site trả header X-Content-Type-Options: nosniff', async ({ request }) => {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\headers.spec.ts",
+                            "column": 41,
+                            "line": 63
+                          },
+                          "message": "Error: T1 thiếu HSTS; T3 thiếu HSTS\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 4\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T1 thiếu HSTS\",\u001b[39m\n\u001b[31m+   \"T3 thiếu HSTS\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n\n  61 |       if (!response.headers()['strict-transport-security']) missing.push(`${target.id} thiếu HSTS`);\n  62 |     }\n> 63 |     expect(missing, missing.join('; ')).toEqual([]);\n     |                                         ^\n  64 |   });\n  65 |\n  66 |   test('TC-NFR-02-002: cả 3 site trả header X-Content-Type-Options: nosniff', async ({ request }) => {\n    at D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\headers.spec.ts:63:41"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-14T16:19:26.708Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\reports\\playwright\\security-headers-NFR-02-—--ce1e8-r-Strict-Transport-Security-security\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\reports\\playwright\\security-headers-NFR-02-—--ce1e8-r-Strict-Transport-Security-security\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\headers.spec.ts",
+                        "column": 41,
+                        "line": 63
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "491a4e533e82d7b34aac-a8feafc04947a8f5f3da",
+              "file": "security/headers.spec.ts",
+              "line": 56,
+              "column": 3
+            },
+            {
+              "title": "TC-NFR-02-002: cả 3 site trả header X-Content-Type-Options: nosniff",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "security",
+                  "projectName": "security",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 7910,
+                      "error": {
+                        "message": "Error: T1 thiếu X-Content-Type-Options: nosniff; T2 thiếu X-Content-Type-Options: nosniff; T3 thiếu X-Content-Type-Options: nosniff\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 5\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T1 thiếu X-Content-Type-Options: nosniff\",\u001b[39m\n\u001b[31m+   \"T2 thiếu X-Content-Type-Options: nosniff\",\u001b[39m\n\u001b[31m+   \"T3 thiếu X-Content-Type-Options: nosniff\",\u001b[39m\n\u001b[31m+ ]\u001b[39m",
+                        "stack": "Error: T1 thiếu X-Content-Type-Options: nosniff; T2 thiếu X-Content-Type-Options: nosniff; T3 thiếu X-Content-Type-Options: nosniff\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 5\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T1 thiếu X-Content-Type-Options: nosniff\",\u001b[39m\n\u001b[31m+   \"T2 thiếu X-Content-Type-Options: nosniff\",\u001b[39m\n\u001b[31m+   \"T3 thiếu X-Content-Type-Options: nosniff\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\headers.spec.ts:75:41",
+                        "location": {
+                          "file": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\headers.spec.ts",
+                          "column": 41,
+                          "line": 75
+                        },
+                        "snippet": "  73 |       }\n  74 |     }\n> 75 |     expect(missing, missing.join('; ')).toEqual([]);\n     |                                         ^\n  76 |   });\n  77 |\n  78 |   test('TC-NFR-02-003: cả 3 site có X-Frame-Options hoặc CSP frame-ancestors', async ({ request }) => {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\headers.spec.ts",
+                            "column": 41,
+                            "line": 75
+                          },
+                          "message": "Error: T1 thiếu X-Content-Type-Options: nosniff; T2 thiếu X-Content-Type-Options: nosniff; T3 thiếu X-Content-Type-Options: nosniff\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 5\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T1 thiếu X-Content-Type-Options: nosniff\",\u001b[39m\n\u001b[31m+   \"T2 thiếu X-Content-Type-Options: nosniff\",\u001b[39m\n\u001b[31m+   \"T3 thiếu X-Content-Type-Options: nosniff\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n\n  73 |       }\n  74 |     }\n> 75 |     expect(missing, missing.join('; ')).toEqual([]);\n     |                                         ^\n  76 |   });\n  77 |\n  78 |   test('TC-NFR-02-003: cả 3 site có X-Frame-Options hoặc CSP frame-ancestors', async ({ request }) => {\n    at D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\headers.spec.ts:75:41"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-14T16:19:35.629Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\reports\\playwright\\security-headers-NFR-02-—--3005a-ontent-Type-Options-nosniff-security\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\reports\\playwright\\security-headers-NFR-02-—--3005a-ontent-Type-Options-nosniff-security\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\headers.spec.ts",
+                        "column": 41,
+                        "line": 75
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "491a4e533e82d7b34aac-5ce68ccca2c2381ba262",
+              "file": "security/headers.spec.ts",
+              "line": 66,
+              "column": 3
+            },
+            {
+              "title": "TC-NFR-02-003: cả 3 site có X-Frame-Options hoặc CSP frame-ancestors",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "security",
+                  "projectName": "security",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 7353,
+                      "error": {
+                        "message": "Error: T1 thiếu X-Frame-Options hoặc CSP frame-ancestors; T2 thiếu X-Frame-Options hoặc CSP frame-ancestors; T3 thiếu X-Frame-Options hoặc CSP frame-ancestors\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 5\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T1 thiếu X-Frame-Options hoặc CSP frame-ancestors\",\u001b[39m\n\u001b[31m+   \"T2 thiếu X-Frame-Options hoặc CSP frame-ancestors\",\u001b[39m\n\u001b[31m+   \"T3 thiếu X-Frame-Options hoặc CSP frame-ancestors\",\u001b[39m\n\u001b[31m+ ]\u001b[39m",
+                        "stack": "Error: T1 thiếu X-Frame-Options hoặc CSP frame-ancestors; T2 thiếu X-Frame-Options hoặc CSP frame-ancestors; T3 thiếu X-Frame-Options hoặc CSP frame-ancestors\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 5\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T1 thiếu X-Frame-Options hoặc CSP frame-ancestors\",\u001b[39m\n\u001b[31m+   \"T2 thiếu X-Frame-Options hoặc CSP frame-ancestors\",\u001b[39m\n\u001b[31m+   \"T3 thiếu X-Frame-Options hoặc CSP frame-ancestors\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\headers.spec.ts:87:41",
+                        "location": {
+                          "file": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\headers.spec.ts",
+                          "column": 41,
+                          "line": 87
+                        },
+                        "snippet": "  85 |       }\n  86 |     }\n> 87 |     expect(missing, missing.join('; ')).toEqual([]);\n     |                                         ^\n  88 |   });\n  89 |\n  90 |   test('TC-NFR-02-004: cả 3 site có header Referrer-Policy', async ({ request }) => {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\headers.spec.ts",
+                            "column": 41,
+                            "line": 87
+                          },
+                          "message": "Error: T1 thiếu X-Frame-Options hoặc CSP frame-ancestors; T2 thiếu X-Frame-Options hoặc CSP frame-ancestors; T3 thiếu X-Frame-Options hoặc CSP frame-ancestors\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 5\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T1 thiếu X-Frame-Options hoặc CSP frame-ancestors\",\u001b[39m\n\u001b[31m+   \"T2 thiếu X-Frame-Options hoặc CSP frame-ancestors\",\u001b[39m\n\u001b[31m+   \"T3 thiếu X-Frame-Options hoặc CSP frame-ancestors\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n\n  85 |       }\n  86 |     }\n> 87 |     expect(missing, missing.join('; ')).toEqual([]);\n     |                                         ^\n  88 |   });\n  89 |\n  90 |   test('TC-NFR-02-004: cả 3 site có header Referrer-Policy', async ({ request }) => {\n    at D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\headers.spec.ts:87:41"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-14T16:19:43.952Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\reports\\playwright\\security-headers-NFR-02-—--ccd56-ns-hoặc-CSP-frame-ancestors-security\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\reports\\playwright\\security-headers-NFR-02-—--ccd56-ns-hoặc-CSP-frame-ancestors-security\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\headers.spec.ts",
+                        "column": 41,
+                        "line": 87
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "491a4e533e82d7b34aac-1f1afa42680cd442719f",
+              "file": "security/headers.spec.ts",
+              "line": 78,
+              "column": 3
+            },
+            {
+              "title": "TC-NFR-02-004: cả 3 site có header Referrer-Policy",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "security",
+                  "projectName": "security",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 9030,
+                      "error": {
+                        "message": "Error: T1 thiếu Referrer-Policy; T2 thiếu Referrer-Policy; T3 thiếu Referrer-Policy\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 5\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T1 thiếu Referrer-Policy\",\u001b[39m\n\u001b[31m+   \"T2 thiếu Referrer-Policy\",\u001b[39m\n\u001b[31m+   \"T3 thiếu Referrer-Policy\",\u001b[39m\n\u001b[31m+ ]\u001b[39m",
+                        "stack": "Error: T1 thiếu Referrer-Policy; T2 thiếu Referrer-Policy; T3 thiếu Referrer-Policy\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 5\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T1 thiếu Referrer-Policy\",\u001b[39m\n\u001b[31m+   \"T2 thiếu Referrer-Policy\",\u001b[39m\n\u001b[31m+   \"T3 thiếu Referrer-Policy\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\headers.spec.ts:96:41",
+                        "location": {
+                          "file": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\headers.spec.ts",
+                          "column": 41,
+                          "line": 96
+                        },
+                        "snippet": "  94 |       if (!response.headers()['referrer-policy']) missing.push(`${target.id} thiếu Referrer-Policy`);\n  95 |     }\n> 96 |     expect(missing, missing.join('; ')).toEqual([]);\n     |                                         ^\n  97 |   });\n  98 |\n  99 |   test('TC-NFR-02-005: cookie phiên của cả 3 site có Secure và HttpOnly', async ({ request }) => {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\headers.spec.ts",
+                            "column": 41,
+                            "line": 96
+                          },
+                          "message": "Error: T1 thiếu Referrer-Policy; T2 thiếu Referrer-Policy; T3 thiếu Referrer-Policy\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 5\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T1 thiếu Referrer-Policy\",\u001b[39m\n\u001b[31m+   \"T2 thiếu Referrer-Policy\",\u001b[39m\n\u001b[31m+   \"T3 thiếu Referrer-Policy\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n\n  94 |       if (!response.headers()['referrer-policy']) missing.push(`${target.id} thiếu Referrer-Policy`);\n  95 |     }\n> 96 |     expect(missing, missing.join('; ')).toEqual([]);\n     |                                         ^\n  97 |   });\n  98 |\n  99 |   test('TC-NFR-02-005: cookie phiên của cả 3 site có Secure và HttpOnly', async ({ request }) => {\n    at D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\headers.spec.ts:96:41"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-14T16:19:51.729Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\reports\\playwright\\security-headers-NFR-02-—--5e338-e-có-header-Referrer-Policy-security\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\reports\\playwright\\security-headers-NFR-02-—--5e338-e-có-header-Referrer-Policy-security\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\headers.spec.ts",
+                        "column": 41,
+                        "line": 96
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "491a4e533e82d7b34aac-185937ff7062c33dc3b6",
+              "file": "security/headers.spec.ts",
+              "line": 90,
+              "column": 3
+            },
+            {
+              "title": "TC-NFR-02-005: cookie phiên của cả 3 site có Secure và HttpOnly",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "security",
+                  "projectName": "security",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 22158,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-14T16:20:01.435Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "491a4e533e82d7b34aac-a7577d89defdaa3cb0bb",
+              "file": "security/headers.spec.ts",
+              "line": 99,
+              "column": 3
+            },
+            {
+              "title": "TC-NFR-02-008: URL sai trả trang lỗi thân thiện, không lộ stack trace",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "security",
+                  "projectName": "security",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 8143,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-14T16:20:23.632Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "491a4e533e82d7b34aac-a83405469eb138e87ff9",
+              "file": "security/headers.spec.ts",
+              "line": 114,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "security\\responsive.spec.ts",
+      "file": "security/responsive.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "NFR-04 — Tương thích di động 360px",
+          "file": "security/responsive.spec.ts",
+          "line": 16,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-NFR-04-001: chức năng tính giá của T2 chạy đúng trên Chrome",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "security",
+                  "projectName": "security",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 8575,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-14T16:20:31.818Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0db8434525e8702bbaf4-d8a038f1a037e83a385b",
+              "file": "security/responsive.spec.ts",
+              "line": 17,
+              "column": 3
+            },
+            {
+              "title": "TC-NFR-04-005: không có cuộn ngang ở màn hình 360px trên cả 3 site",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "security",
+                  "projectName": "security",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 27081,
+                      "error": {
+                        "message": "Error: T1 tràn ngang 19px ở 360px\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T1 tràn ngang 19px ở 360px\",\u001b[39m\n\u001b[31m+ ]\u001b[39m",
+                        "stack": "Error: T1 tràn ngang 19px ở 360px\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T1 tràn ngang 19px ở 360px\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\responsive.spec.ts:47:43",
+                        "location": {
+                          "file": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\responsive.spec.ts",
+                          "column": 43,
+                          "line": 47
+                        },
+                        "snippet": "  45 |       await context.close();\n  46 |     }\n> 47 |     expect(problems, problems.join('; ')).toEqual([]);\n     |                                           ^\n  48 |   });\n  49 |\n  50 |   test('TC-NFR-04-006: luồng tính giá của T2 dùng được trên khung nhìn 360x740', async ({ browser }) => {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\responsive.spec.ts",
+                            "column": 43,
+                            "line": 47
+                          },
+                          "message": "Error: T1 tràn ngang 19px ở 360px\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T1 tràn ngang 19px ở 360px\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n\n  45 |       await context.close();\n  46 |     }\n> 47 |     expect(problems, problems.join('; ')).toEqual([]);\n     |                                           ^\n  48 |   });\n  49 |\n  50 |   test('TC-NFR-04-006: luồng tính giá của T2 dùng được trên khung nhìn 360x740', async ({ browser }) => {\n    at D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\responsive.spec.ts:47:43"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-14T16:20:41.532Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\reports\\playwright\\security-responsive-NFR-04-a0852-n-hình-360px-trên-cả-3-site-security\\test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\reports\\playwright\\security-responsive-NFR-04-a0852-n-hình-360px-trên-cả-3-site-security\\test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\reports\\playwright\\security-responsive-NFR-04-a0852-n-hình-360px-trên-cả-3-site-security\\test-failed-3.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\reports\\playwright\\security-responsive-NFR-04-a0852-n-hình-360px-trên-cả-3-site-security\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\reports\\playwright\\security-responsive-NFR-04-a0852-n-hình-360px-trên-cả-3-site-security\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\responsive.spec.ts",
+                        "column": 43,
+                        "line": 47
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "0db8434525e8702bbaf4-5589d1b8180761f62c55",
+              "file": "security/responsive.spec.ts",
+              "line": 34,
+              "column": 3
+            },
+            {
+              "title": "TC-NFR-04-006: luồng tính giá của T2 dùng được trên khung nhìn 360x740",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "security",
+                  "projectName": "security",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6915,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-14T16:21:10.245Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0db8434525e8702bbaf4-49ddf56e54c627229334",
+              "file": "security/responsive.spec.ts",
+              "line": 50,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "security\\seo.spec.ts",
+      "file": "security/seo.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "NFR-07 — SEO và kỹ thuật bảo trì",
+          "file": "security/seo.spec.ts",
+          "line": 15,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-NFR-07-001: mỗi trang có đúng một thẻ title không rỗng",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "security",
+                  "projectName": "security",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 20215,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-14T16:21:17.475Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "92eaaff2e249e01d361f-c8ea0920f6e05da31697",
+              "file": "security/seo.spec.ts",
+              "line": 16,
+              "column": 3
+            },
+            {
+              "title": "TC-NFR-07-002: mỗi trang có thẻ meta description không rỗng",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "security",
+                  "projectName": "security",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 23692,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-14T16:21:37.705Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "92eaaff2e249e01d361f-56ea1d5adbd71b5b73b7",
+              "file": "security/seo.spec.ts",
+              "line": 30,
+              "column": 3
+            },
+            {
+              "title": "TC-NFR-07-003: thẻ html có thuộc tính lang",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "security",
+                  "projectName": "security",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 16135,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-14T16:22:01.445Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "92eaaff2e249e01d361f-d6d1a727a7386f1ff7d6",
+              "file": "security/seo.spec.ts",
+              "line": 48,
+              "column": 3
+            },
+            {
+              "title": "TC-NFR-07-004: sitemap.xml tồn tại và không chặn trang quan trọng",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "security",
+                  "projectName": "security",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 8612,
+                      "error": {
+                        "message": "Error: T3 sitemap.xml trả 404\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T3 sitemap.xml trả 404\",\u001b[39m\n\u001b[31m+ ]\u001b[39m",
+                        "stack": "Error: T3 sitemap.xml trả 404\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T3 sitemap.xml trả 404\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\seo.spec.ts:73:43",
+                        "location": {
+                          "file": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\seo.spec.ts",
+                          "column": 43,
+                          "line": 73
+                        },
+                        "snippet": "  71 |       if (!body.includes('<urlset')) problems.push(`${target.id} sitemap.xml không phải định dạng urlset`);\n  72 |     }\n> 73 |     expect(problems, problems.join('; ')).toEqual([]);\n     |                                           ^\n  74 |   });\n  75 |\n  76 |   test('TC-NFR-07-005: robots.txt tồn tại và không chặn toàn bộ site', async ({ request }) => {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\seo.spec.ts",
+                            "column": 43,
+                            "line": 73
+                          },
+                          "message": "Error: T3 sitemap.xml trả 404\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T3 sitemap.xml trả 404\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n\n  71 |       if (!body.includes('<urlset')) problems.push(`${target.id} sitemap.xml không phải định dạng urlset`);\n  72 |     }\n> 73 |     expect(problems, problems.join('; ')).toEqual([]);\n     |                                           ^\n  74 |   });\n  75 |\n  76 |   test('TC-NFR-07-005: robots.txt tồn tại và không chặn toàn bộ site', async ({ request }) => {\n    at D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\seo.spec.ts:73:43"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-14T16:22:17.610Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\reports\\playwright\\security-seo-NFR-07-—-SEO--c82d4-không-chặn-trang-quan-trọng-security\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\reports\\playwright\\security-seo-NFR-07-—-SEO--c82d4-không-chặn-trang-quan-trọng-security\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\seo.spec.ts",
+                        "column": 43,
+                        "line": 73
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "92eaaff2e249e01d361f-8f081066e366b8edaf3d",
+              "file": "security/seo.spec.ts",
+              "line": 61,
+              "column": 3
+            },
+            {
+              "title": "TC-NFR-07-005: robots.txt tồn tại và không chặn toàn bộ site",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "security",
+                  "projectName": "security",
+                  "results": [
+                    {
+                      "workerIndex": 13,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 9120,
+                      "error": {
+                        "message": "Error: T3 robots.txt trả 404\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T3 robots.txt trả 404\",\u001b[39m\n\u001b[31m+ ]\u001b[39m",
+                        "stack": "Error: T3 robots.txt trả 404\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T3 robots.txt trả 404\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\seo.spec.ts:91:43",
+                        "location": {
+                          "file": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\seo.spec.ts",
+                          "column": 43,
+                          "line": 91
+                        },
+                        "snippet": "  89 |       }\n  90 |     }\n> 91 |     expect(problems, problems.join('; ')).toEqual([]);\n     |                                           ^\n  92 |   });\n  93 |\n  94 |   test('TC-NFR-07-006: thẻ Open Graph có title, description và image', async ({ browser }) => {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\seo.spec.ts",
+                            "column": 43,
+                            "line": 91
+                          },
+                          "message": "Error: T3 robots.txt trả 404\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T3 robots.txt trả 404\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n\n  89 |       }\n  90 |     }\n> 91 |     expect(problems, problems.join('; ')).toEqual([]);\n     |                                           ^\n  92 |   });\n  93 |\n  94 |   test('TC-NFR-07-006: thẻ Open Graph có title, description và image', async ({ browser }) => {\n    at D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\seo.spec.ts:91:43"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-14T16:22:26.792Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\reports\\playwright\\security-seo-NFR-07-—-SEO--77f60--và-không-chặn-toàn-bộ-site-security\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\reports\\playwright\\security-seo-NFR-07-—-SEO--77f60--và-không-chặn-toàn-bộ-site-security\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\seo.spec.ts",
+                        "column": 43,
+                        "line": 91
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "92eaaff2e249e01d361f-d76cbde96da6ca5b0102",
+              "file": "security/seo.spec.ts",
+              "line": 76,
+              "column": 3
+            },
+            {
+              "title": "TC-NFR-07-006: thẻ Open Graph có title, description và image",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "security",
+                  "projectName": "security",
+                  "results": [
+                    {
+                      "workerIndex": 14,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 22875,
+                      "error": {
+                        "message": "Error: T1 thiếu og:image; T2 thiếu og:image\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 4\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T1 thiếu og:image\",\u001b[39m\n\u001b[31m+   \"T2 thiếu og:image\",\u001b[39m\n\u001b[31m+ ]\u001b[39m",
+                        "stack": "Error: T1 thiếu og:image; T2 thiếu og:image\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 4\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T1 thiếu og:image\",\u001b[39m\n\u001b[31m+   \"T2 thiếu og:image\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\seo.spec.ts:113:43",
+                        "location": {
+                          "file": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\seo.spec.ts",
+                          "column": 43,
+                          "line": 113
+                        },
+                        "snippet": "  111 |       await context.close();\n  112 |     }\n> 113 |     expect(problems, problems.join('; ')).toEqual([]);\n      |                                           ^\n  114 |   });\n  115 | });\n  116 |"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\seo.spec.ts",
+                            "column": 43,
+                            "line": 113
+                          },
+                          "message": "Error: T1 thiếu og:image; T2 thiếu og:image\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 4\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T1 thiếu og:image\",\u001b[39m\n\u001b[31m+   \"T2 thiếu og:image\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n\n  111 |       await context.close();\n  112 |     }\n> 113 |     expect(problems, problems.join('; ')).toEqual([]);\n      |                                           ^\n  114 |   });\n  115 | });\n  116 |\n    at D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\seo.spec.ts:113:43"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-14T16:22:36.690Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\reports\\playwright\\security-seo-NFR-07-—-SEO--8d265--title-description-và-image-security\\test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\reports\\playwright\\security-seo-NFR-07-—-SEO--8d265--title-description-và-image-security\\test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\reports\\playwright\\security-seo-NFR-07-—-SEO--8d265--title-description-và-image-security\\test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\reports\\playwright\\security-seo-NFR-07-—-SEO--8d265--title-description-và-image-security\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\reports\\playwright\\security-seo-NFR-07-—-SEO--8d265--title-description-và-image-security\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\seo.spec.ts",
+                        "column": 43,
+                        "line": 113
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "92eaaff2e249e01d361f-405168114891c661e5d2",
+              "file": "security/seo.spec.ts",
+              "line": 94,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-14T16:13:56.318Z",
+    "duration": 545048.701,
+    "expected": 20,
+    "skipped": 0,
+    "unexpected": 12,
+    "flaky": 0
+  }
+}

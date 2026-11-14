@@ -15,6 +15,13 @@ Mỗi quyết định có: bối cảnh, quyết định, lý do, hệ quả, tr
 | ADR-06 | Dùng Docker cho PostgreSQL ở môi trường dev | 2026-11-13 | Đã chốt |
 | ADR-07 | Mã lỗi khi người gọi không sở hữu đối tượng là 403 FORBIDDEN | 2026-11-13 | Đã chốt (chờ nhóm xác nhận ở kick-off) |
 | ADR-08 | Ngày nghỉ của nhân viên và cách tính bộ đếm đăng nhập sai | 2026-11-13 | Đã chốt (chờ nhóm xác nhận ở kick-off) |
+| ADR-09 | Đổi hướng đồ án: kiểm thử 3 hệ thống web đang vận hành thay vì tự xây hệ thống | 2026-11-13 | Đã chốt |
+| ADR-10 | Chọn ba hệ thống đích T1 Pet NGON, T2 Mật Pet Family, T3 Pretty Paws | 2026-11-13 | Đã chốt |
+| ADR-11 | Ranh giới kiểm thử an toàn: chỉ đọc và tương tác không phá hại | 2026-11-13 | Đã chốt |
+| ADR-12 | Bộ công cụ kiểm thử: Playwright, Postman/Newman, k6, Lighthouse, OWASP ZAP | 2026-11-13 | Đã chốt |
+| ADR-13 | Mô hình V thích nghi cho kiểm thử hộp đen/hộp xám và loại bỏ kiểm thử đơn vị mã nguồn đích | 2026-11-13 | Đã chốt |
+
+> **Lưu ý:** ADR-01 đến ADR-08 mô tả kiến trúc của hệ thống do nhóm tự xây. Sau khi đổi hướng theo ADR-09, các ADR này **không còn hiệu lực** đối với phạm vi kiểm thử hiện tại; chúng được giữ lại như lịch sử quyết định và áp dụng lại nếu nhóm quay về hướng cũ. Quyết định hiện hành cho đồ án nằm ở ADR-09 đến ADR-13.
 
 ---
 
@@ -103,3 +110,71 @@ Mỗi quyết định có: bối cảnh, quyết định, lý do, hệ quả, tr
 - **Hệ quả:** FR-M1-06, FR-M7-01, BR-01, BR-16; FR-M4-02 (slot trống không hiển thị ngày nghỉ của NV).
 - **Xác nhận:** người dùng chỉ định giữ mặc định khi chưa có quyết định khác; mục này chưa được nhóm xác nhận riêng.
 - **Trạng thái:** Đã chốt (chờ nhóm xác nhận ở họp kick-off).
+
+## ADR-09: Đổi hướng đồ án — kiểm thử 3 hệ thống web đang vận hành
+
+- **Bối cảnh:** kế hoạch gốc giả định nhóm tự xây một hệ thống đặt lịch dịch vụ chăm sóc thú cưng đầy đủ (server + client + CSDL). Người dùng thông báo giảng viên **không yêu cầu sinh viên tự xây dựng trang web**; hướng được chấp thuận là chọn 2–3 hệ thống có sẵn trong ngành và thực hiện kiểm thử chuyên sâu theo đúng lý thuyết môn học.
+- **Quyết định:** đồ án chuyển sang hình thức **kiểm thử hộp đen / hộp xám ba hệ thống web thực tế**. Toàn bộ tài liệu cốt lõi (SRS, Test Plan, RTM, test case, báo cáo) được viết lại theo hướng này. Nguồn mã của hệ thống đích không truy cập được nên nhóm **không tự viết mã ứng dụng**; sản phẩm của nhóm là bộ testware hoàn chỉnh (đặc tả test, test case, script tự động hóa, báo cáo lỗi, báo cáo kiểm thử).
+- **Lý do:** bám sát yêu cầu thực tế của giảng viên; tận dụng thế mạnh của đồ án là **kiểm thử** chứ không phải lập trình; tạo ra sản phẩm đo được (độ phủ yêu cầu, tỷ lệ lỗi, đánh giá phi chức năng) thay vì một sản phẩm web trùng lặp với nhiều hệ thống đã có sẵn trên thị trường.
+- **Hệ quả:**
+  - Bộ testware cũ trong `archive/2026-11-13-webapp-pivot/` không còn hiệu lực; SRS/TP/RTM v0.1 của hệ thống tự xây được archive.
+  - Yêu cầu trong SRS-01 trở thành **đặc tả yêu cầu đích** (As-Observed), không phải yêu cầu để xây dựng.
+  - Kiểm thử đơn vị (unit test) và phân tích tĩnh mã nguồn đích ra khỏi phạm vi; các kỹ thuật thiết kế test chuyển sang black-box: EP, BVA, DT, ST, UC, khám phá.
+  - Thời gian 14 ngày tính lại từ 2026-11-13, giữ nguyên 4 thành viên và vai trò.
+  - Trách nhiệm đạo đức: chỉ kiểm thử trên production, không phá hại, không tạo dữ liệu thật (xem ADR-11).
+- **Xác nhận:** người dùng xác nhận ngày 2026-11-13.
+- **Trạng thái:** Đã chốt.
+
+## ADR-10: Chọn ba hệ thống đích T1, T2, T3
+
+- **Bối cảnh:** cần 2–3 hệ thống thực tế đủ khác nhau về nghiệp vụ và công nghệ để có phạm vi kiểm thử phong phú, đồng thời phải truy cập được để kiểm thử E2E tự động.
+- **Quyết định:**
+  - **T1 — Pet NGON** (`petngon.vn/vi`): tiếng Việt, có wizard đặt lịch 4 bước, phân biệt dịch vụ tại spa / tại nhà, công thức phụ thu di chuyển `max(0, km − 5) × 8.000₫`, phụ thu cố định theo gói, FAQ chính sách hủy, chuyển ngôn ngữ.
+  - **T2 — Mật Pet Family** (`matpet.vn/spa`): calculator giá 3 bước loài → bậc cân nặng → dịch vụ, giá tính tức thì khớp bảng giá tĩnh, nhóm dịch vụ "báo giá riêng", form giữ chỗ, tìm kiếm, đa ngôn ngữ.
+  - **T3 — Pretty Paws** (`prettypawscatanddoggrooming.groomore.com`): bảng giá theo **lbs** (20–50, 51–60, 61–78, 79–90, 91–100+), phí lễ tân theo 30 phút, trạng thái Open/Closed theo giờ mở cửa, nút "Book Now" chạy 24/7, nền tảng Groomore.
+- **Lý do:** T1 và T2 là hệ thống Việt Nam có nghiệp vụ ngành đặc thù (phụ thu tại nhà, chính sách giữ chỗ) — đủ để dựng test case giá biên và bảng quyết định; T3 là hệ thống nước ngoài có đơn vị đo và mô hình khác, dùng để kiểm thử tính quốc tế hóa, đơn vị tiền và lịch mở cửa. Ba hệ thống dùng ba nền tảng web khác nhau nên lỗi giao diện không trùng lặp, tăng hiệu quả phát hiện lỗi.
+- **Hệ quả:** mỗi hệ thống có một bộ test case riêng trong `docs/testcases/t1.csv`, `t2.csv`, `t3.csv`; bảng giá và ngưỡng cân nặng trong SRS-01 và test case phải bám đúng đơn vị của từng site (kg cho T1/T2, lbs cho T3, quy đổi 1 kg ≈ 2,20462 lb).
+- **Xác nhận:** người dùng chọn ngày 2026-11-13 (phương án A trong bảng lựa chọn).
+- **Trạng thái:** Đã chốt.
+
+## ADR-11: Ranh giới kiểm thử an toàn — chỉ đọc và tương tác không phá hại
+
+- **Bối cảnh:** ba hệ thống đích là production của doanh nghiệp tư nhân; không có quyền truy cập mã nguồn hay môi trường test. Kiểm thử quá mức có thể gây thiệt hại cho người dùng thật (đặt lịch giả, gửi SMS/email hàng loạt) và vi phạm pháp luật.
+- **Quyết định:** phạm vi kiểm thử chỉ gồm hành vi **đọc** và **tương tác không phá hại**:
+  - Không hoàn thành form đặt lịch/giữ chỗ thật; dừng ở bước xác nhận, không bấm nút gửi cuối cùng. Nếu cần kiểm tra gửi form thì dùng payload rỗng hoặc dữ liệu không định danh và **không chạm vào nút gửi thật**.
+  - Không tạo tài khoản, không đăng nhập, không đăng ký nhận thông tin.
+  - Payload kiểm thử bảo mật chỉ dùng dạng vô hại: kiểm tra header, cookie, TLS; phản xạ XSS với payload không phá hại và phải xác nhận không có hộp thoại alert; không dùng payload SQLi tấn công, không quét cổng, không dò lỗ hổng tự động phá hại.
+  - Không gọi API ghi dữ liệu; chỉ GET. Tải đọc (k6) ở mức nhẹ, ≤ 10 VU, ngoài giờ cao điểm.
+  - Tần suất thấp, có delay giữa các request, không chạy song song 3 site.
+- **Lý do:** đồ án kiểm thử phần mềm của nhóm sinh viên không được phép gây ảnh hưởng hệ thống của bên thứ ba; đồng thời phát hiện lỗi bằng hộp đen không cần phá hại gì.
+- **Hệ quả:** một số hành vi không thể kiểm chứng đầy đủ (ví dụ: luồng xác nhận lịch thành công, gửi email xác nhận). Nhóm ghi nhận rõ giới hạn này trong Test Plan mục 2.3 và trong Final Test Report; các hạng mục đó được đánh dấu "Không kiểm thử được theo ADR-11" chứ không đánh dấu Pass.
+- **Xác nhận:** người dùng chọn mức "an toàn" ngày 2026-11-13.
+- **Trạng thái:** Đã chốt.
+
+## ADR-12: Bộ công cụ kiểm thử
+
+- **Bối cảnh:** cần bộ công cụ đáp ứng đồng thời kiểm thử chức năng, tích hợp, hiệu năng, khả năng tiếp cận, SEO và bảo mật, trong giới hạn 4 thành viên và 14 ngày, chạy được trên Windows.
+- **Quyết định:**
+  - **Playwright (TypeScript)** — kiểm thử E2E trình duyệt; một project cho mỗi site (`t1`, `t2`, `t3`) cộng project `cross-browser` cho NFR-04. Selector theo vai trò/nhãn (`getByRole`, `getByLabel`, `getByText`).
+  - **Postman + Newman** — kiểm thử API công khai của site đích, chỉ phương thức GET.
+  - **k6** — kiểm thử tải đọc mức nhẹ.
+  - **Lighthouse CLI** — hiệu năng, khả năng tiếp cận, SEO.
+  - **axe-core** — kiểm thử khả năng tiếp cận chi tiết.
+  - **OWASP ZAP** — quét bảo mật ở chế độ passive/active nhẹ, bổ trợ cho checklist NFR-02.
+  - **Quản lý test case:** CSV trong repo (`docs/testcases/*.csv`), đồng bộ Google Sheets cho nhóm.
+- **Lý do:** Playwright hỗ trợ đa trình duyệt và đa viewport trong một framework, phù hợp NFR-04; Lighthouse và axe-core cho NFR-01/06/07 với thang điểm định lượng; k6 nhẹ và chạy được bằng script; Newman đưa bộ Postman vào CI.
+- **Hệ quả:** thêm `playwright.config.ts` với project cho 3 site; thêm `package.json` với script `test:e2e`, `test:api`, `test:perf`, `test:a11y`; lint bằng ESLint cho mã test. Không dùng Jest/Prisma/PostgreSQL nữa.
+- **Xác nhận:** người dùng chọn ngày 2026-11-13.
+- **Trạng thái:** Đã chốt.
+
+## ADR-13: Mô hình V thích nghi cho kiểm thử hộp đen và loại bỏ kiểm thử đơn vị mã nguồn đích
+
+- **Bối cảnh:** mô hình V chuẩn (IEEE 829) ghép Unit test với Verification và System/UAT test với Validation. Với hệ thống đích không có mã nguồn, mức Unit test không thực hiện được; nếu giữ nguyên sẽ tạo khoảng trống trong báo cáo và làm giảm độ tin cậy.
+- **Quyết định:** mô hình V được thích nghi thành hai nhánh song song:
+  - **Verification** (kiểm chứng): Inspection và Technical Review trên SRS đích, Test Plan, thiết kế test và test case — thay cho Unit test và Static Analysis của mã nguồn. Đây là kiểm thử tĩnh theo đúng nghĩa của ISTQB.
+  - **Validation** (thẩm định): kiểm thử tích hợp, kiểm thử hệ thống, kiểm thử chấp nhận người dùng.
+  - Kiểm thử tích hợp thực hiện bằng **quan sát hợp đồng dữ liệu** giữa giao diện và API của site đích (giá API trả về khớp bảng giá tĩnh; payload form khớp yêu cầu server), không phải tích hợp mã nguồn.
+- **Lý do:** giữ được tính đầy đủ của mô hình V và nguyên tắc "kiểm thử sớm" (Inspection ở ngày 3, trước khi viết test case) trong điều kiện không có mã nguồn.
+- **Hệ quả:** Test Plan mô tả rõ các mức kiểm thử đã thích nghi (mục 4.1); Final Test Report giải thích điểm khác biệt so với mô hình V chuẩn và nêu rõ phần nào không thực hiện được cùng lý do.
+- **Xác nhận:** suy ra từ ADR-09; người dùng xác nhận hướng kiểm thử này ngày 2026-11-13.
+- **Trạng thái:** Đã chốt.

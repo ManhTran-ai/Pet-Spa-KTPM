@@ -1,0 +1,42 @@
+﻿
+Running 31 tests using 1 worker
+
+node.exe : (node:7612) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ((node:7612) War... env being set.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [t1] â€º tests\e2e\t1\m1-navigation.spec.ts:9:3 â€º T1 Pet NGON â€” M1 Truy cáº­p vĂ  Ä‘iá»u hÆ°á»›ng â€º TC-T1-M1-001: trang chá»§ tráº£ HTTP 200 vĂ  hiá»ƒn thá»‹ tiĂªu Ä‘á» (5.7s)
+  ok  2 [t1] â€º tests\e2e\t1\m1-navigation.spec.ts:15:3 â€º T1 Pet NGON â€” M1 Truy cáº­p vĂ  Ä‘iá»u hÆ°á»›ng â€º TC-T1-M1-002: má»i liĂªn káº¿t menu tráº£ HTTP 200 (21.2s)
+  ok  3 [t1] â€º tests\e2e\t1\m1-navigation.spec.ts:30:3 â€º T1 Pet NGON â€” M1 Truy cáº­p vĂ  Ä‘iá»u hÆ°á»›ng â€º TC-T1-M1-004: khĂ´ng cĂ³ liĂªn káº¿t cháº¿t 404 trong menu vĂ  footer (11.4s)
+(node:2244) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  4 [t2] â€º tests\e2e\t2\m3-pricing.spec.ts:41:5 â€º T2 Máº­t Pet â€” M3 Báº£ng giĂ¡ theo cĂ¢n náº·ng â€º TC-T2-M3-002: giĂ¡ tĂ­nh tá»©c thĂ¬ ChĂ³ >3â€“6kg Combo Táº¯m Vá»‡ Sinh khá»›p báº£ng giĂ¡ tÄ©nh (6.6s)
+  ok  5 [t2] â€º tests\e2e\t2\m3-pricing.spec.ts:41:5 â€º T2 Máº­t Pet â€” M3 Báº£ng giĂ¡ theo cĂ¢n náº·ng â€º TC-T2-M3-002: giĂ¡ tĂ­nh tá»©c thĂ¬ ChĂ³ >3â€“6kg Combo Táº¯m Cáº¡o khá»›p báº£ng giĂ¡ tÄ©nh (12.3s)
+  ok  6 [t2] â€º tests\e2e\t2\m3-pricing.spec.ts:41:5 â€º T2 Máº­t Pet â€” M3 Báº£ng giĂ¡ theo cĂ¢n náº·ng â€º TC-T2-M3-002: giĂ¡ tĂ­nh tá»©c thĂ¬ ChĂ³ >6â€“10kg Combo Táº¯m Vá»‡ Sinh khá»›p báº£ng giĂ¡ tÄ©nh (14.5s)
+  ok  7 [t2] â€º tests\e2e\t2\m3-pricing.spec.ts:53:3 â€º T2 Máº­t Pet â€” M3 Báº£ng giĂ¡ theo cĂ¢n náº·ng â€º TC-T2-M3-004: giĂ¡ cáº­p nháº­t tá»©c thĂ¬ khi Ä‘á»•i báº­c cĂ¢n náº·ng (22.7s)
+(node:2580) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  8 [t3] â€º tests\e2e\t3\m1-m5-info.spec.ts:17:3 â€º T3 Pretty Paws â€” M1/M5 Truy cáº­p, liĂªn há»‡ vĂ  tráº¡ng thĂ¡i tiá»‡m â€º TC-T3-M1-001: trang chá»§ tráº£ HTTP 200 vĂ  cĂ³ tiĂªu Ä‘á» (10.0s)
+  ok  9 [t3] â€º tests\e2e\t3\m1-m5-info.spec.ts:23:3 â€º T3 Pretty Paws â€” M1/M5 Truy cáº­p, liĂªn há»‡ vĂ  tráº¡ng thĂ¡i tiá»‡m â€º TC-T3-M1-003: trang hiá»ƒn thá»‹ Ä‘á»§ Ä‘iá»‡n thoáº¡i, email vĂ  Ä‘á»‹a chá»‰ (56.2s)
+  x  10 [t3] â€º tests\e2e\t3\m1-m5-info.spec.ts:32:3 â€º T3 Pretty Paws â€” M1/M5 Truy cáº­p, liĂªn há»‡ vĂ  tráº¡ng thĂ¡i tiá»‡m â€º TC-T3-M5-005: trang hiá»ƒn thá»‹ tráº¡ng thĂ¡i má»Ÿ/Ä‘Ă³ng kĂ¨m khung giá» má»Ÿ cá»­a Ä‘áº§y Ä‘á»§ (1.0m)
+(node:14224) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 11 [t3] â€º tests\e2e\t3\m1-m5-info.spec.ts:40:3 â€º T3 Pretty Paws â€” M1/M5 Truy cáº­p, liĂªn há»‡ vĂ  tráº¡ng thĂ¡i tiá»‡m â€º TC-T3-M4-009: cĂ³ nĂºt "Book Now" Ä‘á»ƒ Ä‘áº·t lá»‹ch 24/7 mĂ  khĂ´ng cáº§n Ä‘Äƒng nháº­p (23.9s)
+(node:2780) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  12 [security] â€º tests\security\accessibility.spec.ts:40:3 â€º NFR-06 â€” Kháº£ nÄƒng tiáº¿p cáº­n â€º TC-NFR-06-001: axe-core khĂ´ng cĂ³ vi pháº¡m má»©c critical trĂªn cáº£ 3 site (50.4s)
+(node:3412) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  13 [security] â€º tests\security\accessibility.spec.ts:72:3 â€º NFR-06 â€” Kháº£ nÄƒng tiáº¿p cáº­n â€º TC-NFR-06-002: má»i vĂ¹ng chá»¯ Ä‘áº¡t tÆ°Æ¡ng pháº£n â‰¥ 4,5:1 trĂªn cáº£ 3 site (1.0m)
+(node:5564) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  14 [security] â€º tests\security\accessibility.spec.ts:86:3 â€º NFR-06 â€” Kháº£ nÄƒng tiáº¿p cáº­n â€º TC-NFR-06-003: má»i trÆ°á»ng form cĂ³ nhĂ£n gáº¯n liá»n trĂªn cáº£ 3 site (1.0m)
+(node:11380) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  15 [security] â€º tests\security\accessibility.spec.ts:100:3 â€º NFR-06 â€” Kháº£ nÄƒng tiáº¿p cáº­n â€º TC-NFR-06-004: má»i áº£nh ná»™i dung cĂ³ thuá»™c tĂ­nh alt trĂªn cáº£ 3 site (1.0m)
+(node:12924) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)

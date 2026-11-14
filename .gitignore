@@ -2,6 +2,14 @@ node_modules/
 dist/
 coverage/
 reports/raw/coverage/
+# Artifact nặng sinh tự động: trace.zip (~150 MB) và báo cáo HTML.
+# Bằng chứng trọng yếu (ảnh chụp lỗi, error-context.md, ảnh Lighthouse) được giữ lại.
+reports/playwright/**/*.zip
+reports/playwright-html/
+# Báo cáo thô sinh mỗi lần chạy (newman ~9 MB, lighthouse ~9 MB): chỉ giữ bản tổng hợp
+# (reports/raw/*-summary.csv, reports/raw/playwright-report.json) để truy vết.
+reports/raw/newman-report.json
+reports/raw/lighthouse-*.json
 submission/
 .env
 .env.*
