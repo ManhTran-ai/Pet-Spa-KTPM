@@ -5,6 +5,7 @@
 | 0.1 | Ngày 1–2 | Cả nhóm | Khung SRS cho ứng dụng do nhóm tự xây (đã archive) |
 | 0.2 | Ngày 2 | Mạnh | Bổ sung tiêu chí chấp nhận đo được cho M1, M7 và toàn bộ NFR (đã archive) |
 | **1.0** | **Ngày 3** | **Mạnh** | **Baseline mới: đặc tả yêu cầu ĐÍCH (as-is) của 3 hệ thống pet spa có sẵn, theo hướng kiểm thử hệ thống có sẵn** |
+| 1.1 | Ngày 2 | Mạnh | Sửa mục 3.2, 3.3, 3.4, `BR-03`, `BR-12` và `FR-M3-02` theo khảo sát giá REF-01; bổ sung `BR-17`, `BR-18` |
 
 > **Hướng tài liệu (quan trọng).** Tài liệu này **không** đặc tả một hệ thống để nhóm xây. Nó đặc tả **ba hệ thống web đang vận hành thật** mà nhóm sẽ kiểm thử: T1 Pet NGON, T2 Mật Pet Family, T3 Pretty Paws. Mọi yêu cầu ở đây là **yêu cầu đích** — hệ thống thật *đang* làm vậy, và ta kiểm tra xem nó có làm đúng, đầy đủ và nhất quán không. Yêu cầu được trích xuất bằng quan sát hành vi thực tế (đọc trang, tương tác form, theo dõi lưu lượng mạng). Đây là **test basis** cho Test Plan, RTM và test case.
 
@@ -132,7 +133,7 @@ Không có vai trò nhân viên hay quản trị trên giao diện công khai c�
 | Bước 3 | Combo trọn gói (4 combo) hoặc Dịch vụ lẻ (7 dịch vụ), cộng thêm nhuộm (3 loại) và "báo giá riêng" (6 loại) |
 | "Báo giá riêng" | Gỡ rối, Tẩy ố, Tắm trắng, Xả dưỡng: 50.000–500.000₫; Nhuộm hình lớn, Nhuộm tạo hình cơ thể: tuỳ thiết kế |
 | Form giữ chỗ | Chỉ cần SĐT (bắt buộc) + tên bé (không bắt buộc) + ngày mong muốn (có sẵn 5 ngày + ô nhập ngày khác) |
-| Bảng giá tham khảo | Chó & mèo 7 bậc cân nặng × 10 dịch vụ grooming + 4 dịch vụ nhuộm |
+| Bảng giá tham khảo | Chó & mèo dùng **chung một bảng** 7 bậc cân nặng × 10 dịch vụ grooming (4 combo trọn gói + 6 dịch vụ lẻ) + 3 dịch vụ nhuộm; bảng **không tách giá theo loài** |
 | Cơ chế | "Chỉ cần số điện thoại — spa sẽ gọi xác nhận khung giờ"; giá cuối xác nhận tại spa sau khi cân |
 | Giờ mở cửa | 08:00–22:00 mỗi ngày |
 | Ngôn ngữ | Việt / English (chuyển qua link) |
@@ -144,8 +145,8 @@ Không có vai trò nhân viên hay quản trị trên giao diện công khai c�
 |---|---|
 | Công nghệ | Groomore — nền tảng đặt lịch SaaS cho tiệm grooming |
 | Kết nối chính | Danh mục dịch vụ theo nhóm cân nặng + nút "Book Now" 24/7 + giờ mở cửa |
-| Dịch vụ | Dog Bath 20–50lbs ($65, 30 phút), Dog Bath medium/long over 50lbs ($72, 1h), Dog Full groom 21–30 / 31–40 / 41–60 / 61–78 / 79–90 / 91–100+ lbs, Cat Bath and shave down or lion cut ($80, 30 phút), Nails/sanitary/eye trim ($27/$25, 0 phút) |
-| Phí lễ tân | $52 (30 phút) — kèm theo một số dịch vụ |
+| Dịch vụ | Dog Bath 0-20lbs ($52, 30 phút), Dog Bath 20-50lbs ($65, 30 phút), Dog Bath short hair over 50lbs ($72, 1h), Dog bath medium/long hair over 50lbs ($79, 1h), Dog Full groom theo 7 nhóm lbs ($69–$175), Cat Bath ($60, 30 phút), Cat Bath and trim ($80, 30 phút), Cat Bath and shave down / lion cut ($110, 1,5h), Cat bath and full body hair cut ($125, 1,5h), Nails/sanitary/eye trim ($10–$29) |
+| Phí lễ tân | Không có dịch vụ "phí lễ tân" riêng; 2 khoản phụ thu: `*HOLIDAY FEE*` ($27) và `Emergency appointment fee` ($25, chỉ khi kín lịch) |
 | Kết nối chính | "Book Now" 24/7; có địa chỉ, điện thoại, email, trạng thái mở cửa |
 | Giờ mở cửa | 08:00–20:00 |
 | Bổ sung | Trang blog (bài trên nền tảng Groomore), About us |
@@ -155,13 +156,14 @@ Không có vai trò nhân viên hay quản trị trên giao diện công khai c�
 | Tiêu chí | T1 | T2 | T3 |
 |---|---|---|---|
 | Đơn vị cân nặng | kg | kg | lbs |
-| Số bậc cân nặng | 7 | 7 | 6 (20–50 / 51–60 / 61–78 / 79–90 / 91–100+ lbs + nhóm dưới 20lbs) |
+| Số bậc cân nặng | 7 | 7 | 3–7 tùy dòng sản phẩm (xem BR-03) |
 | Nhập cân nặng chính xác | Không (chọn bậc) | Không (chọn bậc) | Không (chọn nhóm lbs) |
 | Tính giá tức thì | Không (chỉ "Từ ...₫") | Có (calculator 3 bước) | Có (nút Book Now dẫn tới lịch có giá) |
-| Dịch vụ lẻ | Không | Có (7 loại) | Có |
+| Phân biệt giá theo loài Chó/Mèo | Có (bảng tách 2 khối) | **Không** (một bảng dùng chung, giá bằng nhau) | Có (nhóm dịch vụ riêng cho Chó và Mèo) |
+| Dịch vụ lẻ | Không | Có (6 loại) | Có (12 dịch vụ quick service) |
 | Combo | Có (3 combo) | Có (4 combo) | Không |
 | Dịch vụ tận nhà | Có | Không | Không |
-| Phụ thu biến thiên | Phụ thu km | Không | Phí lễ tân |
+| Phụ thu biến thiên | Phụ thu km | Không | Phí ngày lễ ($27) và phí khẩn cấp ($25) |
 | Ngôn ngữ | Việt/Anh | Việt/Anh | Anh |
 
 ---
@@ -220,7 +222,7 @@ Không có vai trò nhân viên hay quản trị trên giao diện công khai c�
 | ID | Yêu cầu | HĐ | Ưu tiên | Tiêu chí chấp nhận |
 |---|---|---|---|---|
 | FR-M3-01 | Công bố bảng giá theo bậc cân nặng và loài | T1, T2, T3 | Must | Bảng có đủ cột cho mọi bậc cân nặng và mọi dịch vụ; giá ở mỗi ô là số xác định, không có "tùy" |
-| FR-M3-02 | Tra bảng giá đúng theo loài và bậc cân nặng được chọn | T1, T2, T3 | Must | Chọn (Chó, >3–6kg) + Combo Tắm Vệ Sinh → 200.000₫ đúng bảng; cùng bậc cân nặng nhưng Mèo → giá khác |
+| FR-M3-02 | Tra bảng giá đúng theo loài và bậc cân nặng được chọn | T1, T2, T3 | Must | T1: chọn (Chó, 5–10kg) + Combo Tắm+Vệ sinh → 375.000₫ đúng bảng; cùng bậc cân nặng nhưng Mèo → 405.000₫ (khác nhau). T2: chọn (Chó, >3–6kg) + Combo Tắm Vệ Sinh → 200.000₫ đúng bảng; T3: chọn *Dog Bath 20-50lbs* → $65 đúng bảng |
 | FR-M3-03 | Giá hiển thị được tính tức thì khi chọn đủ loài, cân nặng, dịch vụ | T2 | Must | Chọn xong bước 3 → hiển thị giá dự kiến cụ thể và tóm tắt lựa chọn; đổi bất kỳ lựa chọn nào → giá cập nhật |
 | FR-M3-04 | Tính giá riêng cho dịch vụ cần khảo giá | T2 | Must | Dịch vụ "báo giá riêng" hiển thị khoảng 50.000–500.000₫ hoặc "tuỳ thiết kế", tuyệt đối không hiện một con số đơn lẻ |
 | FR-M3-05 | Giá dự kiến được ghi rõ là dự kiến, không phải giá cuối | T1, T2, T3 | Must | Mỗi trang có bảng giá phải chứa ≥ 1 câu ghi rõ giá cuối xác nhận tại spa/cân thực tế |
@@ -292,7 +294,7 @@ Các quy tắc dưới đây là **quy tắc của hệ thống đích** (đọc
 |---|---|---|---|
 | BR-01 | Bậc cân nặng chó của T1: `<3`, `3–5`, `5–10`, `10–15`, `15–20`, `20–25`, `25–30` kg; mèo: `≤3`, `3–5`, `5–10`, `10–15`, `15–20`, `20–25`, `25–30` kg | T1 | FR-M3-01, FR-M3-02 |
 | BR-02 | Bậc cân nặng của T2: `<3`, `>3–6`, `>6–10`, `>10–20`, `>20–30`, `>30–40`, `>40` kg | T2 | FR-M3-01, FR-M3-02 |
-| BR-03 | Bậc cân nặng của T3 tính theo lbs: `20–50`, `31–40`, `41–60`, `61–78`, `79–90`, `91–100+` | T3 | FR-M3-01, FR-M3-02 |
+| BR-03 | Ngưỡng cân nặng của T3 tính theo lbs và **khác nhau theo từng dòng sản phẩm**: `Dog Bath` dùng `0–20`, `20–50`, `over 50` (chia theo độ dài lông: short hair / medium-long hair); `Dog Bath and tidy up` dùng `0–20`, `21–40`, `41–60`, `61–79`, `79+`; `Dog Full Groom` dùng `0–20`, `21–30`, `31–40`, `41–60`, `61–78`, `79–90`, `91–100+`; `Cat Bath` dùng `0–20`, `21–40`, `41–60`, `61–79`, `79+` | T3 | FR-M3-01, FR-M3-02 |
 | BR-04 | Phụ thu di chuyển T1 = `max(0, km − 5) × 8.000₫`; 5 km đầu miễn phí | T1 | FR-M6-02, FR-M6-05 |
 | BR-05 | Dải phụ thu di chuyển T1: 0–5 km miễn phí; 5–10 km: 40.000–80.000₫; 10–15 km: 80.000–120.000₫; trên 15 km: liên hệ báo giá riêng | T1 | FR-M6-05, FR-M6-06 |
 | BR-06 | Phụ thu tại nhà cố định của T1: Tắm +50.000₫; Cạo +80.000₫; Combo Tắm+Cạo +100.000₫; các gói khác không hỗ trợ tại nhà | T1 | FR-M6-03, FR-M6-04 |
@@ -301,7 +303,9 @@ Các quy tắc dưới đây là **quy tắc của hệ thống đích** (đọc
 | BR-09 | Quy trình T1 gồm 4 bước: chọn dịch vụ → đặt lịch (loài + cân nặng + ngày giờ) → tại spa hoặc tại nhà → xác nhận và thanh toán; xác nhận trong 5 phút qua Zalo | T1 | FR-M5-01, FR-M5-02 |
 | BR-10 | Quy trình T2 gồm 4 bước: tiếp nhận → kiểm tra (cân, kiểm tra da và lông, xác nhận giá cuối) → grooming → bàn giao | T2 | FR-M5-01 |
 | BR-11 | Dịch vụ lẻ của T2: cắt dũa+móng, vệ sinh tai, cạo bụng+bàn+hậu môn, tắm sấy, cạo lông, cắt lông; giá theo bậc cân nặng `<3` đến `>40` kg | T2 | FR-M2-04, FR-M3-01 |
-| BR-12 | Phí lễ tân của T3 là 52 USD cho 30 phút, gắn với một số dịch vụ cụ thể | T3 | FR-M2-01, FR-M3-01 |
+| BR-12 | T3 không có dịch vụ "phí lễ tân" riêng; dịch vụ rẻ nhất trong nhóm `Dog (bath included)` là *Dog Bath 0-20lbs* giá 52 USD / 30 phút | T3 | FR-M2-01, FR-M3-01 |
+| BR-17 | T3 có 2 khoản phụ thu riêng: `*HOLIDAY FEE*` 27 USD (áp dụng cho lịch trong ngày lễ) và `Emergency appointment fee *WAIT LIST ONLY*` 25 USD (chỉ dùng khi đã kín lịch) | T3 | FR-M2-01, FR-M3-01 |
+| BR-18 | Giá của T1 tăng đơn điệu theo bậc cân nặng trong cùng một cột dịch vụ: giá ở bậc cao hơn không bao giờ nhỏ hơn giá ở bậc thấp hơn ngay bên trên | T1 | FR-M3-01, FR-M3-02 |
 | BR-13 | T3 cho phép đặt lịch 24/7, giờ mở cửa 08:00–20:00 | T3 | FR-M4-11, FR-M5-07 |
 | BR-14 | T1 mở cửa 07:00–22:00; T2 mở cửa 08:00–22:00 | T1, T2 | FR-M1-03 |
 | BR-15 | Bảng giá T2 không bao gồm phí gỡ rối, tẩy ố và tắm trắng | T2 | FR-M3-06 |
@@ -320,7 +324,7 @@ Bảng này là đầu vào trực tiếp cho phân vùng tương đương và p
 | Ngày mong muốn | T1, T2 | Ngày | Có | Hôm nay | +30 ngày (T2) | Định dạng ngày/tháng; T2 có 5 nút ngày nhanh + ô "Ngày khác" |
 | Loài thú cưng | T1, T2 | Liệt kê | Có | | | Chó hoặc Mèo |
 | Bậc cân nặng | T1, T2, T3 | Liệt kê | Có | | | Xem BR-01..BR-03 |
-| Dịch vụ | T1, T2, T3 | Liệt kê | Có | | | T1: 6 gói; T2: 4 combo + 7 lẻ + 3 nhuộm + 6 báo giá riêng; T3: theo nhóm lbs |
+| Dịch vụ | T1, T2, T3 | Liệt kê | Có | | | T1: 6 gói; T2: 4 combo + 6 lẻ + 3 nhuộm + 6 báo giá riêng; T3: 41 dịch vụ trong 5 nhóm (`Dog bath included` 16, `Cat bath included` 4, `Quick service` 12, `Add on` 7, `Emergency` 2) |
 | Địa chỉ (tại nhà) | T1 | Chuỗi | Có khi chọn tại nhà | 5 ký tự | 200 ký tự | Dùng để tính phụ thu km |
 | Từ khoá tìm kiếm | T2 | Chuỗi | Không | 0 ký tự | 100 ký tự | Không phân biệt hoa thường |
 | Số tiền | T1, T2, T3 | Số nguyên | | | | VNĐ (T1, T2) hoặc USD (T3) |

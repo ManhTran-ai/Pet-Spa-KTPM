@@ -1,0 +1,42 @@
+﻿System,Category,Service,Price (USD),Duration (min),Has addon,Detail
+T3,EMERGENCY APPOINTMENT,*HOLIDAY FEE*,27.00,0,No,"This is a fee added to your groom or bath price. Our groomers will take you on some holidays, please add if you need an appointment the morning of a holiday!"
+T3,EMERGENCY APPOINTMENT,Emergency appointment fee *WAIT LIST ONLY*,25.00,0,No,"This is a fee added to your groom or bath price. Our groomers will take you on days we are completely booked up, we will either stay late or come in early. *ONLY SELECT IF YOU NEED AN APPOINTMENT WHEN"
+T3,Dog (bath included),Dog Bath 0-20lbs,52.00,30,Yes,"Bath, shampoo, conditioner, nail clip/file, brush out, teeth brush, and ear clean. * Your choice of shampoo and conditioner including deshed, oatmeal, hempz, all natural flea and tick, and fragrance f"
+T3,Dog (bath included),Dog Bath 20-50lbs,65.00,30,Yes,"Bath, shampoo, conditioner, nail clip/file, ears, teeth, brush out *Your choice of shampoo and conditioner *Your choice of shampoo and conditioner including deshed, oatmeal, hempz, all natural flea an"
+T3,Dog (bath included),Dog Bath short hair over 50lbs,72.00,60,Yes,"Bath, shampoo, conditioner, nail clip/file, teeth brush, ear clean, brush out *Your choice of shampoo and conditioner including deshed, oatmeal, hempz, all natural flea and tick, and fragrance free*"
+T3,Dog (bath included),Dog bath medium/long hair over 50lbs,79.00,60,No,"Bath, shampoo, conditioner, nail clip/file, teeth brush, ear clean, brush out *Your choice of shampoo and conditioner including deshed, oatmeal, hempz, all natural flea and tick, and fragrance free*"
+T3,Dog (bath included),Dog Bath and tidy up 0 - 20lbs,62.00,30,Yes,"Bath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Trim up face Trim feet Trim up tail Sanitary clean up (No hair off of body)"
+T3,Dog (bath included),Dog Bath and tidy up 21 - 40lbs,72.00,60,Yes,"Bath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Trim up face Trim feet Trim up tail Sanitary clean up (No hair off of body)"
+T3,Dog (bath included),Dog Bath and tidy up 41 - 60lbs,91.00,60,Yes,"Bath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Trim up face Trim feet Trim up tail Sanitary clean up (No hair off of body)"
+T3,Dog (bath included),Dog Bath and tidy up 61- 79lbs,99.00,60,No,"Bath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Trim up face Trim feet Trim up tail Sanitary clean up (No hair off of body)"
+T3,Dog (bath included),Dog Bath and tidy up 79+ lbs,118.00,60,No,"Bath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Trim up face Trim feet Trim up tail Sanitary clean up (No hair off of body)"
+T3,Dog (bath included),Dog Full Groom  0 - 20 lbs,69.00,60,Yes,"Bath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Hair cut any length"
+T3,Dog (bath included),Dog Full groom 21 - 30lbs,77.00,60,No,"Bath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Hair cut any length"
+T3,Dog (bath included),Dog Full Groom  31 - 40lbs,86.00,60,Yes,"Bath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Hair cut any length"
+T3,Dog (bath included),Dog Full Groom 41 - 60lbs,102.00,60,Yes,"Bath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Hair cut any length"
+T3,Dog (bath included),Dog Full groom 61 - 78lbs,121.00,90,Yes,"Bath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Hair cut any length"
+T3,Dog (bath included),Dog Full groom 79 - 90lbs,136.00,120,No,"Bath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Hair cut any length"
+T3,Dog (bath included),Dog Full Groom 91-100+ pounds,175.00,120,No,"Bath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Hair cut any length"
+T3,Cat (bath included),Cat Bath,60.00,30,Yes,"Bath, shampoo, conditioner, nail clip, teeth, ears, brush out Shampoo & conditioner choices are deshed, oatmeal, or all natural flea and tick"
+T3,Cat (bath included),Cat Bath and trim,80.00,30,Yes,"Bath, shampoo, conditioner, nail clip, teeth, ears, brush out *shave paw pads and sanitary clean up/sanitary shave* (No hair off of body) Shampoo & conditioner choices are deshed, oatmeal, or all natu"
+T3,Cat (bath included),"Cat Bath and shave down, or lion cut",110.00,90,Yes,"Bath, shampoo, conditioner, nail clip, teeth, ears, brush out, spot shave, shave down or lion cut Shampoo & conditioner choices are deshed, oatmeal, or all natural flea and tick"
+T3,Cat (bath included),Cat bath and full body hair cut,125.00,90,No,"Bath, shampoo, conditioner, nail clip, teeth, ears, brush out, and hair cut all over, about half off current length. Shampoo & conditioner choices are deshed, oatmeal, or all natural flea and tick"
+T3,QUICK SERVICE (no bath),Nail trim & file DOG,18.00,1,Yes,
+T3,QUICK SERVICE (no bath),Nail trim DOG,14.00,2,Yes,
+T3,QUICK SERVICE (no bath),PUP PACKAGE,22.00,1,Yes,"Nail clip/file, teeth brush, ear cleaning, spritz!"
+T3,QUICK SERVICE (no bath),Feet trim and nail clip/file,25.00,5,No,
+T3,QUICK SERVICE (no bath),Face and feet tidy up DOG,27.00,5,Yes,
+T3,QUICK SERVICE (no bath),Anal gland external expression,10.00,2,No,
+T3,QUICK SERVICE (no bath),Dog OR Cat touch up,25.00,25,Yes,"Nails, sanitary clean up, & eye trim Does not come with bath"
+T3,QUICK SERVICE (no bath),Nail trim CAT,18.00,5,Yes,
+T3,QUICK SERVICE (no bath),KITTY PACKAGE,22.00,5,Yes,"Nail clip, ear clean, teeth brush"
+T3,QUICK SERVICE (no bath),Nail caps front CAT,25.00,20,Yes,
+T3,QUICK SERVICE (no bath),Nail cap all four CAT,29.00,20,Yes,
+T3,QUICK SERVICE (no bath),"Nail trim/file GUINEA PIG, OR RABBIT",14.00,20,Yes,Nail trim and/or file
+T3,ADD ON TO GROOM,Aggressive behavior,10.00,30,No,Please add this to your service if your pet will need extra time due to behavior. This allows us to take our time and/or have a second hand to help with the groom.
+T3,ADD ON TO GROOM,Dematting extra time,15.00,30,No,If your pup is matted and needs extra time for dematting or impacted shave down. Please add this on to make sure we have enough time to demat.
+T3,ADD ON TO GROOM,Semi permanent color on mohawk,15.00,15,No,"Dye your pup blue, pink, yellow, or orange Works best on light color dogs with cottony hair (not wire coat)"
+T3,ADD ON TO GROOM,Semi permanent color shampoo ears feet tail!,20.00,20,No,"Dye your pup blue, pink, yellow, or orange Works best on light color dogs with cottony hair (not wire coat)"
+T3,ADD ON TO GROOM,Semi permanent color shampoo full body,25.00,30,No,"Dye your pup blue, pink, yellow, or orange Works best on light color dogs with cottony hair (not wire coat)"
+T3,ADD ON TO GROOM,ADD ON Beaded feather extension,8.00,15,No,Add a beaded feather extension to your groom!
+T3,ADD ON TO GROOM,ADD ON nail polish,12.00,15,No,"Non toxic nail polish all 4 feet! Pink, blue, black, green, yellow, purple, brown, white, red"

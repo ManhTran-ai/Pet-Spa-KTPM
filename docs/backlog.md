@@ -129,7 +129,7 @@ Bản máy đọc được: `docs/backlog.csv` (105 mục). Quy ước mã: `BL-
 | BL-086 | NFR-01 | ALL | High | Lighthouse | Auto | 6 | Ngân |
 | BL-087 | NFR-03 | ALL | High | Use case | Manual | 4 | Tài |
 | BL-088 | NFR-04 | ALL | High | UC | Auto | 6 | Tài |
-| BL-089 | NFR-05 | ALL | High | Use case | Auto | 4 | Ngân |
+| BL-089 | NFR-05 | ALL | High | Use case | Manual | 4 | Ngân |
 | BL-090 | NFR-06 | ALL | High | Accessibility | Auto | 6 | Lộc |
 | BL-091 | NFR-07 | ALL | High | SEO | Auto | 6 | Lộc |
 | BL-092 | FR-M2-04 | T2 | Medium | UC | Manual | 2 | Ngân |

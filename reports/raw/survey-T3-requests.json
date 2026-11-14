@@ -1,0 +1,18 @@
+[
+  {
+    "url": "https://prettypawscatanddoggrooming.groomore.com/booking-api/v1/book-online-setting",
+    "status": 200
+  },
+  {
+    "url": "https://prettypawscatanddoggrooming.groomore.com/booking-api/v1/service?booking_page=1",
+    "status": 200
+  },
+  {
+    "url": "https://www.google.com/measurement/conversion?random=1794674504153&cv=11&tid=G-C8K44JEMP0&fst=1794674504153&fmt=8&en=session_start&gtm=45je6bb1v874671911za208xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938465~115938469~118897920~118897930~120213116~120385423~120412528~120420414~120469145~120469153~121191155~121246026~121246034~123988486&u_w=1280&u_h=720&url=https%3A%2F%2Fprettypawscatanddoggrooming.groomore.com%2F&gacid=1898107086.1794674504&ibt=1&hn=www.googleadservices.com&frm=0&tiba=Pretty%20Paws%20Cat%20and%20Dog%20Grooming%2024%2F7%20Online%20Booking&npa=0&pscdl=noapi&auid=1495919565.1794674504&gtm_ee=1&uaa=x86&uab=64&uafvl=Not-A.Brand%3B99.0.0.0%7CGoogle%2520Chrome%3B157.0.8103.51%7CChromium%3B157.0.8103.51&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&rcb=0",
+    "status": 200
+  },
+  {
+    "url": "https://analytics.google.com/g/collect?v=2&tid=G-C8K44JEMP0&gtm=45je6bb1v874671911za208xf1&_p=1794674503781&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAACAC&_fid=dsNvBK5H6mcDLZyLEXMW__&_prs=ok&cid=1898107086.1794674504&frm=0&ibt=1&ngs=1&pscdl=noapi&rcb=0&sr=1280x720&uaa=x86&uab=64&uafvl=Not-A.Brand%3B99.0.0.0%7CGoogle%2520Chrome%3B157.0.8103.51%7CChromium%3B157.0.8103.51&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=vi-vn&_s=1&tag_exp=115616986~115938465~115938469~118897920~118897930~120213116~120385423~120412528~120420414~120469145~120469153~121191155~121246026~121246034~123988486&sid=1794674504&sct=1&seg=0&dl=https%3A%2F%2Fprettypawscatanddoggrooming.groomore.com%2F&dt=Pretty%20Paws%20Cat%20and%20Dog%20Grooming%2024%2F7%20Online%20Booking&en=page_view&_fv=1&_nsi=1&_ss=2&_ee=1&ep.origin=firebase&tfd=13792",
+    "status": 204
+  }
+]

@@ -1,0 +1,96 @@
+# Pet Spa KTPM — Kiểm thử hộp đen / hộp xám 3 hệ thống web
+
+Đồ án môn **Thiết kế và Kiểm thử Phần mềm**. Nhóm 4 thành viên: Mạnh (TV1), Tài (TV2), Ngân (TV3), Lộc (TV4).
+
+> **Đối tượng kiểm thử:** ba hệ thống web pet spa **đang vận hành thật** — không phải phần mềm do nhóm tự xây. Quyết định đổi hướng: `docs/decisions.md` ADR-09.
+
+---
+
+## Bắt đầu ở đâu
+
+| Bạn là | Đọc file này |
+|---|---|
+| **Thành viên mới** | [`docs/ASSIGNMENT.md`](docs/ASSIGNMENT.md) — hướng dẫn đọc tài liệu, phân công, quy tắc viết test case, cách ghi nhận lỗi |
+| **Test Lead (Mạnh)** | [`docs/source/Kế hoạch Kiểm thử (Test Plan).md`](docs/source/) |
+| **Cần tra nhanh trạng thái** | [`docs/PROGRESS.md`](docs/PROGRESS.md) |
+
+---
+
+## Ba hệ thống đích
+
+| Mã | Hệ thống | URL | Phân công |
+|---|---|---|---|
+| **T1** | Pet NGON | `https://petngon.vn/vi` | Tài, Lộc (Mạnh giám sát) |
+| **T2** | Mật Pet Family | `https://matpet.vn/spa` | Tài (chính), Lộc (đối chiếu) |
+| **T3** | Pretty Paws | `https://prettypawscatanddoggrooming.groomore.com/` | Mạnh (chính), Ngân |
+
+**Ranh giới an toàn (ADR-11):** chỉ đọc, không đặt lịch thật, không tạo tài khoản, tải ≤ 10 VU. Chi tiết ở [`docs/ASSIGNMENT.md`](docs/ASSIGNMENT.md) §2.
+
+---
+
+## Cấu trúc repo
+
+```
+docs/
+  ASSIGNMENT.md          Hướng dẫn cho 3 thành viên + phân công chi tiết theo ngày
+  PROGRESS.md            Trạng thái 14 ngày, nhật ký phiên
+  decisions.md           ADR-01..13 — mọi quyết định kiến trúc và hướng
+  change-requests.md     CR — thay đổi yêu cầu có kiểm soát
+  requirements.csv       58 yêu cầu (máy đọc được)
+  backlog.csv / .md      105 mục công việc MoSCoW, có cột Owner
+  rtm.csv / .md          Ma trận truy xuất yêu cầu – test case (sinh tự động)
+  srs.md                 Bản sao SRS-01
+  test-plan.md           Bản sao TP-01
+  source/                Bản gốc của 5 tài liệu nộp (SRS, TP, RTM, kế hoạch 14 ngày, cẩm nang môn học)
+  reference/             Bảng giá tham chiếu chốt ngày 2 (REF-01)
+  testcases/             226 test case: t1.csv, t2.csv, t3.csv, nfr.csv, uat.csv
+  defects/defects.csv    Defect log
+  reviews/               Biên bản review (tạo ở Ngày 3, 5, 8)
+
+reports/
+  gates/day-NN.md        Gate báo cáo từng ngày
+  execution-log.csv      Nhật ký thực thi (sinh tự động)
+  exit-criteria.md       Chấm 7 exit criteria
+  raw/                   Bằng chứng thô (ảnh Lighthouse, JSON, survey)
+
+tests/
+  e2e/t1|t2|t3/          Spec Playwright cho từng hệ thống
+  security/              NFR-02 (bảo mật), NFR-06 (a11y), NFR-07 (SEO), NFR-04 (responsive)
+  api/                   Collection Postman/Newman
+  perf/                  Script k6
+
+scripts/                 Script Gate: req-check, rtm-build, rtm-check, exec-sync, exit-check, survey-*
+
+archive/
+  2026-11-13-webapp-pivot/   Mã nguồn webapp nhóm từ xây trước đây — đã bỏ (ADR-09), giữ để lưu lịch sử
+```
+
+---
+
+## Lệnh thường dùng
+
+```powershell
+npm install
+npm run lint            # ESLint
+npm run typecheck       # tsc --noEmit
+npm run test:e2e        # Playwright toàn bộ
+npm run test:e2e:t2     # riêng T2
+npm run test:api        # Newman
+npm run lh:scan         # Lighthouse 3 site × 3 lần
+npm run exec:sync       # đồng bộ kết quả vào execution log + test case
+npm run gate            # req:check + rtm:check + exit:check
+```
+
+Tất cả script Gate phải **exit 0**.
+
+---
+
+## Tài liệu gốc (bắt buộc đọc)
+
+`docs/source/` chứa 5 tài liệu nền:
+
+1. **Cẩm nang Tổng hợp và Phân tích Chuyên sâu Môn học Thiết kế và Kiểm thử Phần mềm** — nền tảng lý thuyết của toàn bộ đồ án.
+2. **Hệ thống Đặt lịch Dịch vụ Chăm sóc Thú cưng Spa** — kế hoạch 14 ngày, phân công, ranh giới an toàn.
+3. **Đặc tả Yêu cầu Phần mềm (SRS)** — SRS-01 v1.0, test basis.
+4. **Kế hoạch Kiểm thử (Test Plan)** — TP-01 v1.0.
+5. **Ma trận Truy xuất Yêu cầu (RTM)** — RTM-01 v1.0.

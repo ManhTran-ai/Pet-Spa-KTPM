@@ -13,7 +13,7 @@ FR-M2-05,FR,M2,Should,T1,Nêu rõ gói phổ biến và phụ thu thêm của g�
 FR-M2-06,FR,M2,Should,T3,Phân biệt rõ dịch vụ dành cho chó và dịch vụ dành cho mèo,"Danh mục có đúng 2 nhóm dịch vụ cho chó và cho mèo, tách biệt",,Mạnh
 FR-M2-07,FR,M2,Should,"T1, T2, T3",Không niêm yết dịch vụ mà hệ thống không thực hiện được,Không dịch vụ nào có nhãn tại nhà nếu hệ thống không cung cấp dịch vụ tại nhà,,Lộc
 FR-M3-01,FR,M3,Must,"T1, T2, T3",Công bố bảng giá theo bậc cân nặng và loài,"Bảng có đủ cột cho mọi bậc cân nặng và mọi dịch vụ; giá ở mỗi ô là số xác định, không có ""tùy""",UC-01,Tài Ngân Mạnh
-FR-M3-02,FR,M3,Must,"T1, T2, T3",Tra bảng giá đúng theo loài và bậc cân nặng được chọn,"Chọn (Chó, >3–6kg) + Combo Tắm Vệ Sinh → 200.000₫ đúng bảng; cùng bậc cân nặng nhưng Mèo → giá khác",UC-02,Tài Ngân Mạnh
+FR-M3-02,FR,M3,Must,"T1, T2, T3",Tra bảng giá đúng theo loài và bậc cân nặng được chọn,"T1: chọn (Chó, 5–10kg) + Combo Tắm+Vệ sinh → 375.000₫ đúng bảng; cùng bậc cân nặng nhưng Mèo → 405.000₫ (khác nhau). T2: chọn (Chó, >3–6kg) + Combo Tắm Vệ Sinh → 200.000₫ đúng bảng; T3: chọn *Dog Bath 20-50lbs* → $65 đúng bảng",UC-02,Tài Ngân Mạnh
 FR-M3-03,FR,M3,Must,T2,"Giá hiển thị được tính tức thì khi chọn đủ loài, cân nặng, dịch vụ",Chọn xong bước 3 → hiển thị giá dự kiến cụ thể và tóm tắt lựa chọn; đổi bất kỳ lựa chọn nào → giá cập nhật,,Ngân
 FR-M3-04,FR,M3,Must,T2,Tính giá riêng cho dịch vụ cần khảo giá,"Dịch vụ ""báo giá riêng"" hiển thị khoảng 50.000–500.000₫ hoặc ""tuỳ thiết kế"", tuyệt đối không hiện một con số đơn lẻ",,Ngân
 FR-M3-05,FR,M3,Must,"T1, T2, T3","Giá dự kiến được ghi rõ là dự kiến, không phải giá cuối",Mỗi trang có bảng giá phải chứa ≥ 1 câu ghi rõ giá cuối xác nhận tại spa/cân thực tế,,Tài Ngân Mạnh

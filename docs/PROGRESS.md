@@ -50,7 +50,7 @@ Rủi ro: (a) site đích thay đổi giao diện giữa kỳ làm script hỏng
 | Ngày | Trạng thái | Gate | Việc còn dở | HUMAN đang chờ |
 |---|---|---|---|---|
 | 1 | DONE-HUMAN-PENDING | Đạt (3/7 EC đạt, 4/7 chưa tới hạn) | Hoàn thiện hạ tầng kiểm thử, script kiểm tra Gate | Nhóm xác nhận phạm vi và 3 hệ thống đích; nhóm cài k6 và cấp quyền trình duyệt |
-| 2 | TODO | | | |
+| 2 | IN-PROGRESS | | Đối chiếu ma trận giá T2 (Tài) và T3 (Ngân); sửa BR-03, BR-12, mục 3.2/3.3 SRS (Lộc) | Nhóm xác nhận phát hiện P1 (giá Chó/Mèo T2 không khác nhau) |
 | 3 | TODO | | | |
 | 4 | TODO | | | |
 | 5 | TODO | | | |
@@ -118,3 +118,27 @@ Trạng thái: `TODO` | `IN-PROGRESS` | `DONE` | `DONE-HUMAN-PENDING` | `BLOCKED
 - Phát hiện đáng chú ý: bảng giá tính tức thì của T2 **khớp bảng giá tĩnh** ở cả 3 ô đã đối chiếu (200.000₫ / 250.000₫ / 300.000₫) — ca kiểm thử tích hợp quan trọng nhất xanh.
 - Sai lệch đã xử lý: (1) `chrome-headless-shell` bị policy chặn → dùng Chrome hệ thống; (2) `nfr-scan.mjs` không khởi động được browser → chuyển quét vào runner Playwright; (3) false-pass ở `TC-NFR-06-001` do quét axe-core trước khi ảnh render xong → thêm chờ `load` + 3s; (4) đánh số test NFR không khớp `nfr.csv` (`System = ALL`) → viết lại spec để mỗi test quét cả 3 site; (5) đổi tên 2 test T3 cho khớp `t3.csv`; (6) đo Lighthouse bằng preset mobile đúng SRS §9.1; (7) lỗi mạng site đích làm Fail sai nguyên nhân → thêm `tests/support/http.ts` với `getWithRetry`; (8) không cài được Firefox/WebKit → chuyển `TC-NFR-04-002..004` sang Manual.
 - Còn dở / HUMAN: nhóm xác nhận phạm vi và mức kiểm thử an toàn; cài k6, Lighthouse CLI cho Firefox/Edge/Safari; OWASP ZAP; chạy 100+ test case Manual trong Ngày 11–12; UAT 5–8 người ở Ngày 13.
+
+### Phiên 5 · Ngày 2 (hướng mới) — khảo sát chi tiết, chốt bảng giá tham chiếu · 2026-11-14
+- Đã làm:
+  - Khảo sát giá 3 site và gom thành `docs/reference/pricing-baseline.csv` (213 dòng: T1 = 84, T2 = 88, T3 = 41) + `docs/reference/pricing-baseline.md` (REF-01).
+  - T1: đọc thẻ `<table>` trong HTML render sẵn → 6 gói × 14 dòng loài/cân nặng.
+  - T2: đọc 3 thẻ `<table>` sau khi trang hydrate → 4 combo + 6 dịch vụ lẻ × 7 bậc, 3 dịch vụ nhuộm × 4 bậc, 6 dịch vụ báo giá riêng.
+  - T3: tìm endpoint JSON công khai `GET /booking-api/v1/service?booking_page=1` qua việc theo dõi lưu lượng mạng → 41 dịch vụ / 5 nhóm, giá tính bằng cent, thời lượng tính bằng phút.
+  - Viết `docs/ASSIGNMENT.md` (ASG-01) — tài liệu giao việc cho 3 thành viên: thứ tự đọc tài liệu, ranh giới an toàn, phân công theo từng ngày, quy tắc 4C và kỹ thuật thiết kế test, cách ghi nhận kết quả và lỗi, định dạng commit, mốc bàn giao.
+  - Viết `README.md` gốc repo — điểm vào cho thành viên mới.
+  - Bổ sung `scripts/build-pricing-baseline.mjs` và 5 script khảo sát (`survey-pricing`, `survey-t2-tables`, `survey-t2-dog-cat`, `survey-t3-services`, `survey-t3-table`).
+- Phát hiện mới cần xử lý tại Inspection (Ngày 3):
+  - **P1** — Giá Chó và Mèo của T2 **giống hệt nhau** ở cùng bậc cân nặng (200.000đ ở `>3–6kg`, 300.000đ ở `>6–10kg`), trong khi tiêu chí chấp nhận của `FR-M3-02` yêu cầu "cùng bậc cân nặng nhưng Mèo → giá khác". Bằng chứng tĩnh cho thấy bảng giá T2 chỉ có một bảng dùng chung cho cả hai loài → nghiêng về lỗi đặc tả của SRS, chưa kết luận.
+  - **P2** — Mục 3.2 SRS ghi "10 dịch vụ grooming + 4 dịch vụ nhuộm"; thực tế là 6 dịch vụ lẻ (10 = tổng 4 combo + 6 lẻ) và 3 dịch vụ nhuộm.
+  - **P3** — Bảng giá tĩnh của T2 dùng ký hiệu rút gọn (`120k`, `1tr`, `1,2tr`), calculator hiển thị định dạng đầy đủ (`~200.000đ`) → test tích hợp phải chuẩn hoá trước khi so sánh.
+  - **P4** — `BR-03` mô tả T3 có 6 nhóm cân nặng cố định; thực tế mỗi dòng sản phẩm có bộ ngưỡng riêng (`Dog Bath`: 0-20/20-50/over 50; `tidy up`: 0-20/21-40/41-60/61-79/79+; `Full Groom`: 0-20/21-30/31-40/41-60/61-78/79-90/91-100+).
+  - **P5** — "Phí lễ tân $52 (30 phút)" trong mục 3.3 và `BR-12` không tồn tại trong danh mục API; $52 thực chất là giá *Dog Bath 0-20lbs*.
+  - **P6** — T3 có 2 dịch vụ phụ thu chưa nêu trong SRS: `*HOLIDAY FEE*` ($27) và `Emergency appointment fee *WAIT LIST ONLY*` ($25).
+  - Bất biến mới dùng làm oracle cho kiểm thử tích hợp: **giá của T1 luôn tăng đơn điệu theo bậc cân nặng** trong cùng một cột.
+- Lệnh đã chạy và kết quả thật:
+  - `node scripts/survey-pricing.mjs` → T1 1 bảng (17 dòng), T2 3 bảng (13/5/7 dòng), T3 0 bảng `<table>` (dữ liệu nằm trong API).
+  - `node scripts/survey-t3-services.mjs` → HTTP 200, 41 dịch vụ / 5 nhóm.
+  - `node scripts/survey-t2-dog-cat.mjs` → Chó `>3–6kg` = 200.000đ, Mèo `>3–6kg` = 200.000đ (trùng); Chó `>6–10kg` = 300.000đ, Mèo `>6–10kg` = 300.000đ (trùng).
+  - `node scripts/build-pricing-baseline.mjs` → `pricing-baseline.csv: 213 dòng { T1: 84, T2: 88, T3: 41 }`.
+- Còn dở / HUMAN: Tài đối chiếu ma trận giá T2 (`reports/raw/survey-T2-matrix.csv`); Ngân đối chiếu giá T3 API ↔ UI (`reports/raw/survey-T3-ui-prices.csv`); Lộc sửa SRS-01 v1.1 (P2, P4, P5) và đề xuất cách xử lý P1; Mạnh cập nhật `FR-M3-02` và bổ sung test case đối chiếu ma trận giá.

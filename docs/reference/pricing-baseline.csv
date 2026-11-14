@@ -1,0 +1,214 @@
+﻿System,Table,Service,Band,Price,Currency,Source
+T1,Bảng giá chính,Tắm,Chó mini < 3kg,88.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Cắt tỉa lông,Chó mini < 3kg,145.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Cạo lông,Chó mini < 3kg,88.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Combo Tắm+Vệ sinh,Chó mini < 3kg,130.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Combo Tắm+Cắt tỉa,Chó mini < 3kg,240.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Combo Tắm+Cạo,Chó mini < 3kg,185.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Tắm,Chó nhỏ 3–5kg,155.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Cắt tỉa lông,Chó nhỏ 3–5kg,165.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Cạo lông,Chó nhỏ 3–5kg,110.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Combo Tắm+Vệ sinh,Chó nhỏ 3–5kg,265.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Combo Tắm+Cắt tỉa,Chó nhỏ 3–5kg,405.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Combo Tắm+Cạo,Chó nhỏ 3–5kg,350.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Tắm,Chó vừa 5–10kg,240.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Cắt tỉa lông,Chó vừa 5–10kg,220.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Cạo lông,Chó vừa 5–10kg,165.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Combo Tắm+Vệ sinh,Chó vừa 5–10kg,375.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Combo Tắm+Cắt tỉa,Chó vừa 5–10kg,515.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Combo Tắm+Cạo,Chó vừa 5–10kg,460.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Tắm,Chó lớn 10–15kg,350.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Cắt tỉa lông,Chó lớn 10–15kg,275.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Cạo lông,Chó lớn 10–15kg,220.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Combo Tắm+Vệ sinh,Chó lớn 10–15kg,460.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Combo Tắm+Cắt tỉa,Chó lớn 10–15kg,605.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Combo Tắm+Cạo,Chó lớn 10–15kg,550.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Tắm,Chó rất lớn 15–20kg,460.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Cắt tỉa lông,Chó rất lớn 15–20kg,330.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Cạo lông,Chó rất lớn 15–20kg,275.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Combo Tắm+Vệ sinh,Chó rất lớn 15–20kg,550.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Combo Tắm+Cắt tỉa,Chó rất lớn 15–20kg,660.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Combo Tắm+Cạo,Chó rất lớn 15–20kg,605.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Tắm,Chó đại 20–25kg,570.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Cắt tỉa lông,Chó đại 20–25kg,385.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Cạo lông,Chó đại 20–25kg,330.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Combo Tắm+Vệ sinh,Chó đại 20–25kg,640.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Combo Tắm+Cắt tỉa,Chó đại 20–25kg,750.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Combo Tắm+Cạo,Chó đại 20–25kg,695.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Tắm,Chó siêu đại 25–30kg,660.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Cắt tỉa lông,Chó siêu đại 25–30kg,440.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Cạo lông,Chó siêu đại 25–30kg,385.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Combo Tắm+Vệ sinh,Chó siêu đại 25–30kg,725.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Combo Tắm+Cắt tỉa,Chó siêu đại 25–30kg,835.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Combo Tắm+Cạo,Chó siêu đại 25–30kg,780.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Tắm,Mèo mini ≤ 3kg,110.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Cắt tỉa lông,Mèo mini ≤ 3kg,160.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Cạo lông,Mèo mini ≤ 3kg,110.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Combo Tắm+Vệ sinh,Mèo mini ≤ 3kg,155.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Combo Tắm+Cắt tỉa,Mèo mini ≤ 3kg,240.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Combo Tắm+Cạo,Mèo mini ≤ 3kg,210.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Tắm,Mèo nhỏ 3–5kg,165.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Cắt tỉa lông,Mèo nhỏ 3–5kg,275.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Cạo lông,Mèo nhỏ 3–5kg,165.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Combo Tắm+Vệ sinh,Mèo nhỏ 3–5kg,275.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Combo Tắm+Cắt tỉa,Mèo nhỏ 3–5kg,415.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Combo Tắm+Cạo,Mèo nhỏ 3–5kg,365.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Tắm,Mèo vừa 5–10kg,275.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Cắt tỉa lông,Mèo vừa 5–10kg,370.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Cạo lông,Mèo vừa 5–10kg,220.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Combo Tắm+Vệ sinh,Mèo vừa 5–10kg,405.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Combo Tắm+Cắt tỉa,Mèo vừa 5–10kg,565.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Combo Tắm+Cạo,Mèo vừa 5–10kg,495.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Tắm,Mèo lớn 10–15kg,385.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Cắt tỉa lông,Mèo lớn 10–15kg,440.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Cạo lông,Mèo lớn 10–15kg,275.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Combo Tắm+Vệ sinh,Mèo lớn 10–15kg,495.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Combo Tắm+Cắt tỉa,Mèo lớn 10–15kg,665.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Combo Tắm+Cạo,Mèo lớn 10–15kg,585.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Tắm,Mèo rất lớn 15–20kg,460.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Cắt tỉa lông,Mèo rất lớn 15–20kg,455.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Cạo lông,Mèo rất lớn 15–20kg,330.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Combo Tắm+Vệ sinh,Mèo rất lớn 15–20kg,550.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Combo Tắm+Cắt tỉa,Mèo rất lớn 15–20kg,690.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Combo Tắm+Cạo,Mèo rất lớn 15–20kg,605.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Tắm,Mèo đại 20–25kg,570.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Cắt tỉa lông,Mèo đại 20–25kg,520.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Cạo lông,Mèo đại 20–25kg,385.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Combo Tắm+Vệ sinh,Mèo đại 20–25kg,640.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Combo Tắm+Cắt tỉa,Mèo đại 20–25kg,795.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Combo Tắm+Cạo,Mèo đại 20–25kg,695.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Tắm,Mèo siêu đại 25–30kg,660.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Cắt tỉa lông,Mèo siêu đại 25–30kg,585.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Cạo lông,Mèo siêu đại 25–30kg,440.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Combo Tắm+Vệ sinh,Mèo siêu đại 25–30kg,725.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Combo Tắm+Cắt tỉa,Mèo siêu đại 25–30kg,890.000,VND,reports/raw/survey-T1.html
+T1,Bảng giá chính,Combo Tắm+Cạo,Mèo siêu đại 25–30kg,780.000,VND,reports/raw/survey-T1.html
+T2,Grooming,Combo Tắm Vệ Sinh,<3kg,120k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Combo Tắm Vệ Sinh,>3–6kg,200k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Combo Tắm Vệ Sinh,>6–10kg,300k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Combo Tắm Vệ Sinh,>10–20kg,400k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Combo Tắm Vệ Sinh,>20–30kg,500k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Combo Tắm Vệ Sinh,>30–40kg,600k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Combo Tắm Vệ Sinh,>40kg,700k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Combo Tắm Cạo,<3kg,200k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Combo Tắm Cạo,>3–6kg,250k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Combo Tắm Cạo,>6–10kg,350k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Combo Tắm Cạo,>10–20kg,450k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Combo Tắm Cạo,>20–30kg,600k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Combo Tắm Cạo,>30–40kg,700k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Combo Tắm Cạo,>40kg,800k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Combo Tắm Cắt,<3kg,300k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Combo Tắm Cắt,>3–6kg,350k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Combo Tắm Cắt,>6–10kg,400k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Combo Tắm Cắt,>10–20kg,550k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Combo Tắm Cắt,>20–30kg,700k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Combo Tắm Cắt,>30–40kg,800k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Combo Tắm Cắt,>40kg,1tr,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Combo Tắm Cắt Tạo Hình,<3kg,350k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Combo Tắm Cắt Tạo Hình,>3–6kg,400k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Combo Tắm Cắt Tạo Hình,>6–10kg,500k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Combo Tắm Cắt Tạo Hình,>10–20kg,650k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Combo Tắm Cắt Tạo Hình,>20–30kg,800k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Combo Tắm Cắt Tạo Hình,>30–40kg,1tr,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Combo Tắm Cắt Tạo Hình,>40kg,"1,2tr",VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Cắt dũa + Móng,<3kg,30k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Cắt dũa + Móng,>3–6kg,30k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Cắt dũa + Móng,>6–10kg,50k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Cắt dũa + Móng,>10–20kg,50k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Cắt dũa + Móng,>20–30kg,70k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Cắt dũa + Móng,>30–40kg,70k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Cắt dũa + Móng,>40kg,70k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Vệ sinh tai,<3kg,30k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Vệ sinh tai,>3–6kg,30k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Vệ sinh tai,>6–10kg,50k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Vệ sinh tai,>10–20kg,50k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Vệ sinh tai,>20–30kg,70k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Vệ sinh tai,>30–40kg,70k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Vệ sinh tai,>40kg,70k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Cạo bụng + Bàn + Hậu môn,<3kg,30k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Cạo bụng + Bàn + Hậu môn,>3–6kg,30k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Cạo bụng + Bàn + Hậu môn,>6–10kg,50k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Cạo bụng + Bàn + Hậu môn,>10–20kg,50k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Cạo bụng + Bàn + Hậu môn,>20–30kg,70k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Cạo bụng + Bàn + Hậu môn,>30–40kg,70k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Cạo bụng + Bàn + Hậu môn,>40kg,70k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Tắm sấy,<3kg,100k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Tắm sấy,>3–6kg,150k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Tắm sấy,>6–10kg,250k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Tắm sấy,>10–20kg,350k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Tắm sấy,>20–30kg,450k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Tắm sấy,>30–40kg,550k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Tắm sấy,>40kg,650k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Cạo lông,<3kg,150k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Cạo lông,>3–6kg,200k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Cạo lông,>6–10kg,300k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Cạo lông,>10–20kg,400k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Cạo lông,>20–30kg,500k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Cạo lông,>30–40kg,600k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Cạo lông,>40kg,700k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Cắt lông,<3kg,200k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Cắt lông,>3–6kg,300k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Cắt lông,>6–10kg,400k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Cắt lông,>10–20kg,500k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Cắt lông,>20–30kg,650k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Cắt lông,>30–40kg,750k,VND,reports/raw/survey-T2-text.txt
+T2,Grooming,Cắt lông,>40kg,900k,VND,reports/raw/survey-T2-text.txt
+T2,Nhuộm,Nhuộm 2 tai + đuôi,<6kg,250k,VND,reports/raw/survey-T2-text.txt
+T2,Nhuộm,Nhuộm 2 tai + đuôi,>6–15kg,300k,VND,reports/raw/survey-T2-text.txt
+T2,Nhuộm,Nhuộm 2 tai + đuôi,>15–30kg,350k,VND,reports/raw/survey-T2-text.txt
+T2,Nhuộm,Nhuộm 2 tai + đuôi,>30kg,400k,VND,reports/raw/survey-T2-text.txt
+T2,Nhuộm,Nhuộm 4 chân,<6kg,250k,VND,reports/raw/survey-T2-text.txt
+T2,Nhuộm,Nhuộm 4 chân,>6–15kg,300k,VND,reports/raw/survey-T2-text.txt
+T2,Nhuộm,Nhuộm 4 chân,>15–30kg,350k,VND,reports/raw/survey-T2-text.txt
+T2,Nhuộm,Nhuộm 4 chân,>30kg,400k,VND,reports/raw/survey-T2-text.txt
+T2,Nhuộm,Nhuộm hình nhỏ,<6kg,300k,VND,reports/raw/survey-T2-text.txt
+T2,Nhuộm,Nhuộm hình nhỏ,>6–15kg,350k,VND,reports/raw/survey-T2-text.txt
+T2,Nhuộm,Nhuộm hình nhỏ,>15–30kg,400k,VND,reports/raw/survey-T2-text.txt
+T2,Nhuộm,Nhuộm hình nhỏ,>30kg,500k,VND,reports/raw/survey-T2-text.txt
+T2,Báo giá riêng,Gỡ rối,theo tình trạng lông,50.000–500.000,VND,reports/raw/survey-T2-text.txt
+T2,Báo giá riêng,Tẩy ố,theo tình trạng lông,50.000–500.000,VND,reports/raw/survey-T2-text.txt
+T2,Báo giá riêng,Tắm trắng,theo tình trạng lông,50.000–500.000,VND,reports/raw/survey-T2-text.txt
+T2,Báo giá riêng,Xả dưỡng,theo tình trạng lông,50.000–500.000,VND,reports/raw/survey-T2-text.txt
+T2,Báo giá riêng,Nhuộm hình lớn,theo thiết kế,tuỳ thiết kế,VND,reports/raw/survey-T2-text.txt
+T2,Báo giá riêng,Nhuộm tạo hình cơ thể,theo thiết kế,tuỳ thiết kế,VND,reports/raw/survey-T2-text.txt
+T3,EMERGENCY APPOINTMENT,*HOLIDAY FEE*,theo nhóm cân nặng trong tên dịch vụ,27.00,USD,reports/raw/survey-T3-services.json
+T3,EMERGENCY APPOINTMENT,Emergency appointment fee *WAIT LIST ONLY*,theo nhóm cân nặng trong tên dịch vụ,25.00,USD,reports/raw/survey-T3-services.json
+T3,Dog (bath included),Dog Bath 0-20lbs,theo nhóm cân nặng trong tên dịch vụ,52.00,USD,reports/raw/survey-T3-services.json
+T3,Dog (bath included),Dog Bath 20-50lbs,theo nhóm cân nặng trong tên dịch vụ,65.00,USD,reports/raw/survey-T3-services.json
+T3,Dog (bath included),Dog Bath short hair over 50lbs,theo nhóm cân nặng trong tên dịch vụ,72.00,USD,reports/raw/survey-T3-services.json
+T3,Dog (bath included),Dog bath medium/long hair over 50lbs,theo nhóm cân nặng trong tên dịch vụ,79.00,USD,reports/raw/survey-T3-services.json
+T3,Dog (bath included),Dog Bath and tidy up 0 - 20lbs,theo nhóm cân nặng trong tên dịch vụ,62.00,USD,reports/raw/survey-T3-services.json
+T3,Dog (bath included),Dog Bath and tidy up 21 - 40lbs,theo nhóm cân nặng trong tên dịch vụ,72.00,USD,reports/raw/survey-T3-services.json
+T3,Dog (bath included),Dog Bath and tidy up 41 - 60lbs,theo nhóm cân nặng trong tên dịch vụ,91.00,USD,reports/raw/survey-T3-services.json
+T3,Dog (bath included),Dog Bath and tidy up 61- 79lbs,theo nhóm cân nặng trong tên dịch vụ,99.00,USD,reports/raw/survey-T3-services.json
+T3,Dog (bath included),Dog Bath and tidy up 79+ lbs,theo nhóm cân nặng trong tên dịch vụ,118.00,USD,reports/raw/survey-T3-services.json
+T3,Dog (bath included),Dog Full Groom  0 - 20 lbs,theo nhóm cân nặng trong tên dịch vụ,69.00,USD,reports/raw/survey-T3-services.json
+T3,Dog (bath included),Dog Full groom 21 - 30lbs,theo nhóm cân nặng trong tên dịch vụ,77.00,USD,reports/raw/survey-T3-services.json
+T3,Dog (bath included),Dog Full Groom  31 - 40lbs,theo nhóm cân nặng trong tên dịch vụ,86.00,USD,reports/raw/survey-T3-services.json
+T3,Dog (bath included),Dog Full Groom 41 - 60lbs,theo nhóm cân nặng trong tên dịch vụ,102.00,USD,reports/raw/survey-T3-services.json
+T3,Dog (bath included),Dog Full groom 61 - 78lbs,theo nhóm cân nặng trong tên dịch vụ,121.00,USD,reports/raw/survey-T3-services.json
+T3,Dog (bath included),Dog Full groom 79 - 90lbs,theo nhóm cân nặng trong tên dịch vụ,136.00,USD,reports/raw/survey-T3-services.json
+T3,Dog (bath included),Dog Full Groom 91-100+ pounds,theo nhóm cân nặng trong tên dịch vụ,175.00,USD,reports/raw/survey-T3-services.json
+T3,Cat (bath included),Cat Bath,theo nhóm cân nặng trong tên dịch vụ,60.00,USD,reports/raw/survey-T3-services.json
+T3,Cat (bath included),Cat Bath and trim,theo nhóm cân nặng trong tên dịch vụ,80.00,USD,reports/raw/survey-T3-services.json
+T3,Cat (bath included),"Cat Bath and shave down, or lion cut",theo nhóm cân nặng trong tên dịch vụ,110.00,USD,reports/raw/survey-T3-services.json
+T3,Cat (bath included),Cat bath and full body hair cut,theo nhóm cân nặng trong tên dịch vụ,125.00,USD,reports/raw/survey-T3-services.json
+T3,QUICK SERVICE (no bath),Nail trim & file DOG,theo nhóm cân nặng trong tên dịch vụ,18.00,USD,reports/raw/survey-T3-services.json
+T3,QUICK SERVICE (no bath),Nail trim DOG,theo nhóm cân nặng trong tên dịch vụ,14.00,USD,reports/raw/survey-T3-services.json
+T3,QUICK SERVICE (no bath),PUP PACKAGE,theo nhóm cân nặng trong tên dịch vụ,22.00,USD,reports/raw/survey-T3-services.json
+T3,QUICK SERVICE (no bath),Feet trim and nail clip/file,theo nhóm cân nặng trong tên dịch vụ,25.00,USD,reports/raw/survey-T3-services.json
+T3,QUICK SERVICE (no bath),Face and feet tidy up DOG,theo nhóm cân nặng trong tên dịch vụ,27.00,USD,reports/raw/survey-T3-services.json
+T3,QUICK SERVICE (no bath),Anal gland external expression,theo nhóm cân nặng trong tên dịch vụ,10.00,USD,reports/raw/survey-T3-services.json
+T3,QUICK SERVICE (no bath),Dog OR Cat touch up,theo nhóm cân nặng trong tên dịch vụ,25.00,USD,reports/raw/survey-T3-services.json
+T3,QUICK SERVICE (no bath),Nail trim CAT,theo nhóm cân nặng trong tên dịch vụ,18.00,USD,reports/raw/survey-T3-services.json
+T3,QUICK SERVICE (no bath),KITTY PACKAGE,theo nhóm cân nặng trong tên dịch vụ,22.00,USD,reports/raw/survey-T3-services.json
+T3,QUICK SERVICE (no bath),Nail caps front CAT,theo nhóm cân nặng trong tên dịch vụ,25.00,USD,reports/raw/survey-T3-services.json
+T3,QUICK SERVICE (no bath),Nail cap all four CAT,theo nhóm cân nặng trong tên dịch vụ,29.00,USD,reports/raw/survey-T3-services.json
+T3,QUICK SERVICE (no bath),"Nail trim/file GUINEA PIG, OR RABBIT",theo nhóm cân nặng trong tên dịch vụ,14.00,USD,reports/raw/survey-T3-services.json
+T3,ADD ON TO GROOM,Aggressive behavior,theo nhóm cân nặng trong tên dịch vụ,10.00,USD,reports/raw/survey-T3-services.json
+T3,ADD ON TO GROOM,Dematting extra time,theo nhóm cân nặng trong tên dịch vụ,15.00,USD,reports/raw/survey-T3-services.json
+T3,ADD ON TO GROOM,Semi permanent color on mohawk,theo nhóm cân nặng trong tên dịch vụ,15.00,USD,reports/raw/survey-T3-services.json
+T3,ADD ON TO GROOM,Semi permanent color shampoo ears feet tail!,theo nhóm cân nặng trong tên dịch vụ,20.00,USD,reports/raw/survey-T3-services.json
+T3,ADD ON TO GROOM,Semi permanent color shampoo full body,theo nhóm cân nặng trong tên dịch vụ,25.00,USD,reports/raw/survey-T3-services.json
+T3,ADD ON TO GROOM,ADD ON Beaded feather extension,theo nhóm cân nặng trong tên dịch vụ,8.00,USD,reports/raw/survey-T3-services.json
+T3,ADD ON TO GROOM,ADD ON nail polish,theo nhóm cân nặng trong tên dịch vụ,12.00,USD,reports/raw/survey-T3-services.json
