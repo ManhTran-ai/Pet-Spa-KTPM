@@ -80,7 +80,7 @@ NFR: NFR-01 hiệu năng, NFR-02 bảo mật, NFR-03 khả năng dùng, NFR-04 t
 | | Hệ thống / phạm vi | Viết và chạy test cho | Mảng chuyên trách |
 |---|---|---|---|
 | **Mạnh** (Trưởng nhóm / Test Lead) | T1 Pet NGON (chính) | T3 Pretty Paws + NFR-02 | Test Plan, RTM, điều phối Inspection, Final Test Report, Exit criteria, kiểm thử bảo mật |
-| **Tài** | T2 Mật Pet Family (chính) | T1 Pet NGON + NFR-03, NFR-04 | Hạ tầng repo, Playwright + Postman/Newman + k6, phân tích tĩnh tài liệu, kiểm thử khả năng dùng và tương thích |
+| **Tài** | T2 Mật Pet Family (chính) | T1 Pet NGON + NFR-03, NFR-04 | Hạ tầng repo, Playwright + k6 + Lighthouse, phân tích tĩnh tài liệu, kiểm thử khả năng dùng và tương thích |
 | **Ngân** | T3 Pretty Paws (chính) | T2 Mật Pet + NFR-01, NFR-05 | Thiết kế bảng quyết định và chuyển đổi trạng thái, kiểm thử hiệu năng và độ tin cậy, tự động hóa regression |
 | **Lộc** | Đối chiếu chéo cả 3 site | T2 Mật Pet (đối chiếu) | Quản lý lỗi và triage, kiểm thử khả năng tiếp cận NFR-06 và SEO NFR-07, UAT, slide demo |
 
@@ -96,10 +96,10 @@ Vai trò trong Inspection (ngày 3) luân phiên: Moderator = Mạnh, Scribe xoa
 | **2** | Viết SRS M1, M2, M7 cho T1; NFR | Viết SRS M1..M7 cho T2 (bản nháp) | Viết SRS M1..M7 cho T3; bảng quyết định giá | Viết quy tắc nghiệp vụ chung, ràng buộc dữ liệu | SRS v0.2 |
 | **3** | Moderator Inspection SRS, ghép v1.0 | Reviewer SRS của Ngân | Reviewer SRS của Lộc | Reviewer SRS của Mạnh | Biên bản review, SRS v1.0 |
 | **4** | Thiết kế test: bảng quyết định phụ thu T1; sơ đồ trạng thái wizard T2; bảng ngưỡng cân nặng | Thiết kế test: ma trận loài × bậc × dịch vụ; bộ dữ liệu test; định nghĩa TC template + dải mã | Thiết kế test: EP/BVA cho form giữ chỗ; bộ kịch bản E2E; khung Playwright | Thiết kế test: checklist usability, a11y, SEO; kịch bản khám phá | Bộ thiết kế test, template TC, RTM khung |
-| **5** | Technical Review thiết kế test → SDD-test v1.0; Test Plan v1.0; dựng `docs/rtm.csv` | Dựng hạ tầng: repo Playwright + TypeScript, ESLint, config 3 site; collection Postman | Dựng bộ k6 script hiệu năng; kịch bản Lighthouse; checklist kiểm thử đối chiếu | Dựng bộ checklist phi chức năng (usability/a11y/SEO); bảng mốc định lịch khảo sát | Test Plan v1.0, template TC, RTM khung, hạ tầng |
+| **5** | Technical Review thiết kế test → SDD-test v1.0; Test Plan v1.0; dựng `docs/rtm.csv` | Dựng hạ tầng: repo Playwright + TypeScript, ESLint, config 3 site | Dựng bộ k6 script hiệu năng; kịch bản Lighthouse; checklist kiểm thử đối chiếu | Dựng bộ checklist phi chức năng (usability/a11y/SEO); bảng mốc định lịch khảo sát | Test Plan v1.0, template TC, RTM khung, hạ tầng |
 | **6** | Viết TC T1 (EP, BVA) — tự động hóa E2E phần đầu | Viết TC T2 (EP, BVA) | Viết TC T3 (EP, BVA) | Viết TC đối chiếu + checklist phi chức năng | Test case đợt 1 |
 | **7** | Viết TC T1 (DT, ST, UC) | Viết TC T2 (DT, ST, UC) | Viết TC T3 (DT, UC) | Bổ sung TC theo kết quả review | Test case đợt 2 |
-| **8** | Review chéo test case (4C); RTM 100%; tự động hóa E2E đầy đủ; collection Postman | Review chéo; hoàn thiện script Playwright theo TC; k6 script | Review chéo; kịch bản khám phá; Lighthouse theo site | Review chéo; tổng hợp checklist phi chức năng | TC v1.0, RTM đủ, bộ tự động hóa |
+| **8** | Review chéo test case (4C); RTM 100%; tự động hóa E2E đầy đủ | Review chéo; hoàn thiện script Playwright theo TC; k6 script | Review chéo; kịch bản khám phá; Lighthouse theo site | Review chéo; tổng hợp checklist phi chức năng | TC v1.0, RTM đủ, bộ tự động hóa |
 | **9** | Chuẩn bị môi trường và dữ liệu test; rà soát tính hợp lệ của dữ liệu giá; Walkthrough thiết kế test | Chạy thử bộ E2E lần 1; sửa script; xuất báo cáo tĩnh tài liệu | Chạy Lighthouse 3 site 3 lần; xuất số liệu thô hiệu năng | Chạy checklist usability/a11y/SEO lần 1 | Báo cáo tĩnh, dữ liệu thô hiệu năng |
 | **10** | Kiểm thử tích hợp T1: quan sát network, luồng front-end → API, hợp đồng dữ liệu | Kiểm thử tích hợp T2: API search/booking, kiểm tra validation biên | Kiểm thử tích hợp T3: API slot/dịch vụ | Đối chiếu mô hình giá 3 site: cùng dữ liệu → cùng kết luận? | Báo cáo kiểm thử tích hợp |
 | **11** | System test vòng 1: chạy TC T1, ghi lỗi | Chạy TC T2, ghi lỗi | Chạy TC T3, ghi lỗi | Triage lỗi cuối ngày; phiên khám phá 60 phút/site | Execution log, defect log |
@@ -111,7 +111,7 @@ Vai trò trong Inspection (ngày 3) luân phiên: Moderator = Mạnh, Scribe xoa
 
 ## 6. Sản phẩm nộp và tiêu chí kết thúc
 
-**Hồ sơ:** Đặc tả yêu cầu đích (SRS) · Thiết kế test (SDD-test) · Test Plan · Test Case Specification (≈150–160 ca) · RTM · Biên bản review · Báo cáo kiểm thử tích hợp · Execution log · Defect log · Báo cáo phi chức năng · Regression/UAT report · Final Test Report · Bộ test tự động chạy được (Playwright + Postman/Newman + k6) · Slide + demo.
+**Hồ sơ:** Đặc tả yêu cầu đích (SRS) · Thiết kế test (SDD-test) · Test Plan · Test Case Specification (≈150–160 ca) · RTM · Biên bản review · Báo cáo kiểm thử tích hợp · Execution log · Defect log · Báo cáo phi chức năng · Regression/UAT report · Final Test Report · Bộ test tự động chạy được (Playwright + k6 + Lighthouse) · Slide + demo.
 
 **Exit criteria (chốt trong Test Plan, kiểm tra ngày 13):**
 

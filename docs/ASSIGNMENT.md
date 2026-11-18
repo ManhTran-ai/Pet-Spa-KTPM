@@ -88,7 +88,7 @@ Lưu ý đường dẫn: `matpet.vn/dat-lich` trả **404**; luồng thật nằ
 | Viết và chạy test | **T2** (chính) | Toàn bộ test case `docs/testcases/t2.csv` (66 ca) |
 | Viết và chạy test | T1 | 72 ca của `docs/testcases/t1.csv` |
 | Chuyên trách | NFR-03, NFR-04 | Khả năng dùng (số thao tác, thông báo lỗi, bàn phím) và tương thích (trình duyệt, 360px) |
-| Hạ tầng | — | Repo, Playwright + TypeScript, Postman/Newman, k6, Lighthouse CLI, ESLint, CI |
+| Hạ tầng | — | Repo, Playwright + TypeScript, k6, Lighthouse CLI, ESLint |
 
 **Việc cụ thể theo ngày:**
 
@@ -97,7 +97,7 @@ Lưu ý đường dẫn: `matpet.vn/dat-lich` trả **404**; luồng thật nằ
 | 2 | **Đối chiếu ma trận giá T2**: 6 bậc cân nặng × 2 loài × 3 dịch vụ — ghi nhận mọi ô lệch | `reports/raw/survey-T2-matrix.csv` |
 | 3 | Reviewer SRS phần Tài (M1–M7 của T2) | Biên bản Inspection |
 | 4 | Thiết kế test: ma trận loài × bậc × dịch vụ; bộ dữ liệu test | Bộ thiết kế test |
-| 5 | Dựng `tests/e2e/t2/*.spec.ts`, collection Postman | Script mẫu chạy được |
+| 5 | Dựng `tests/e2e/t2/*.spec.ts` | Script mẫu chạy được |
 | 6–7 | Viết test case T2 theo EP, BVA, DT, ST, UC | `docs/testcases/t2.csv` |
 | 8 | Hoàn thiện script Playwright theo test case; k6 script | Bộ tự động hóa |
 | 9 | Chạy thử bộ E2E lần 1; sửa script | Smoke xanh |
@@ -210,6 +210,8 @@ npm run test:e2e:t1         # riêng T1
 npm run test:e2e:t2         # riêng T2
 npm run test:e2e:t3         # riêng T3
 npm run test:a11y           # axe-core NFR-06
+npm run test:cross-browser  # NFR-04: Chromium, Firefox, WebKit, Edge
+npm run test:perf           # k6 tải đọc (cần k6 ngoài npm)
 npm run exec:sync           # đồng bộ kết quả vào reports/execution-log.csv + docs/testcases/*.csv
 ```
 

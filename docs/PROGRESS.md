@@ -41,7 +41,7 @@ Rủi ro: (a) site đích thay đổi giao diện giữa kỳ làm script hỏng
 | Thành viên | Hệ thống | Viết và chạy test cho | Chuyên trách |
 |---|---|---|---|
 | Mạnh (TV1, Test Lead) | T1 Pet NGON | T3 + NFR-02 | Test Plan, RTM, điều phối Inspection, Final Test Report, test bảo mật |
-| Tài (TV2) | T2 Mật Pet | T1 + NFR-03, NFR-04 | Hạ tầng repo, Playwright, Postman/Newman, Lighthouse, test khả năng dùng và tương thích |
+| Tài (TV2) | T2 Mật Pet | T1 + NFR-03, NFR-04 | Hạ tầng repo, Playwright, k6, Lighthouse, test khả năng dùng và tương thích |
 | Ngân (TV3) | T3 Pretty Paws | T2 + NFR-01, NFR-05 | Thiết kế DT/ST, test hiệu năng và độ tin cậy, tự động hóa regression |
 | Lộc (TV4) | Đối chiếu cả 3 site | T2 (đối chiếu) | Quản lý lỗi và triage, test khả năng tiếp cận NFR-06, SEO NFR-07, UAT, slide demo |
 
@@ -50,8 +50,8 @@ Rủi ro: (a) site đích thay đổi giao diện giữa kỳ làm script hỏng
 | Ngày | Trạng thái | Gate | Việc còn dở | HUMAN đang chờ |
 |---|---|---|---|---|
 | 1 | DONE-HUMAN-PENDING | Đạt (3/7 EC đạt, 4/7 chưa tới hạn) | Hoàn thiện hạ tầng kiểm thử, script kiểm tra Gate | Nhóm xác nhận phạm vi và 3 hệ thống đích; nhóm cài k6 và cấp quyền trình duyệt |
-| 2 | IN-PROGRESS | | Đối chiếu ma trận giá T2 (Tài) và T3 (Ngân); sửa BR-03, BR-12, mục 3.2/3.3 SRS (Lộc) | Nhóm xác nhận phát hiện P1 (giá Chó/Mèo T2 không khác nhau) |
-| 3 | TODO | | | |
+| 2 | DONE-HUMAN-PENDING | Đạt (4/7 EC đạt, 3/7 chưa tới hạn) | Đối chiếu ma trận giá T2 (Tài) và T3 (Ngân); sửa BR-03, BR-12, mục 3.2/3.3 SRS (Lộc) | Nhóm xác nhận phát hiện P1 (giá Chó/Mèo T2 không khác nhau) |
+| 3 | IN-PROGRESS | | Moderator Inspection SRS; chờ biên bản họp nhóm | Biên bản họp Inspection; phán quyết CHG-2026-11-14-02 (P1) |
 | 4 | TODO | | | |
 | 5 | TODO | | | |
 | 6 | TODO | | | |
@@ -142,3 +142,22 @@ Trạng thái: `TODO` | `IN-PROGRESS` | `DONE` | `DONE-HUMAN-PENDING` | `BLOCKED
   - `node scripts/survey-t2-dog-cat.mjs` → Chó `>3–6kg` = 200.000đ, Mèo `>3–6kg` = 200.000đ (trùng); Chó `>6–10kg` = 300.000đ, Mèo `>6–10kg` = 300.000đ (trùng).
   - `node scripts/build-pricing-baseline.mjs` → `pricing-baseline.csv: 213 dòng { T1: 84, T2: 88, T3: 41 }`.
 - Còn dở / HUMAN: Tài đối chiếu ma trận giá T2 (`reports/raw/survey-T2-matrix.csv`); Ngân đối chiếu giá T3 API ↔ UI (`reports/raw/survey-T3-ui-prices.csv`); Lộc sửa SRS-01 v1.1 (P2, P4, P5) và đề xuất cách xử lý P1; Mạnh cập nhật `FR-M3-02` và bổ sung test case đối chiếu ma trận giá.
+
+### Phiên 6 · Ngày 3 (chuẩn bị) — hoàn thiện hạ tầng và rút gọn bộ công cụ · 2026-11-18
+- Đã làm:
+  - Cài đủ browser cho NFR-04: `npx playwright install chromium firefox webkit` + dùng Edge hệ thống (`channel: 'msedge'`).
+  - Dựng 4 project đa trình duyệt trong `playwright.config.ts` (`cross-browser-chromium`, `cross-browser-firefox`, `cross-browser-webkit`, `cross-browser-edge`) và file `tests/crossbrowser/nfr-04-browser.spec.ts`.
+  - Sửa 3 lỗi hạ tầng trong lần chạy E2E đầu tiên: (1) `trace: 'retain-on-failure'` bị antivirus xoá file giữa chừng → Playwright báo `ENOENT` khi đóng context → chuyển `trace: 'off'`; (2) quét axe-core 3 site vượt timeout 60 s → nới lên 300 s và quét một lần dùng lại cho cả 5 test case (giảm 15 lần tải trang); (3) `channel` đặt ở cấp `use` chung khiến Firefox/WebKit không khởi động được → chuyển `channel` xuống từng project.
+  - Cài `k6` 2.4.0 qua winget (`GrafanaLabs.k6`) và chạy thật `tests/perf/read-load.js`.
+  - **Rút gọn bộ công cụ theo ADR-14** (người dùng chọn phương án "tối giản" ngày 2026-11-18):
+    - Xoá: `tests/api/` (collection Postman), `.github/` (CI), `scripts/{tc-sync,static-analysis,infra-check,openapi-check,nfr-scan,zap-scan}.mjs`, `archive/2026-11-13-webapp-pivot/` (toàn bộ nội dung vẫn còn ở commit `3ef6451`).
+    - Gỡ devDependency `newman` và `tsx`; bỏ script `test:api`, `nfr:scan`.
+    - Sửa `scripts/exec-sync.mjs` bỏ nhánh đọc `newman-report.json`; sửa `scripts/export-docs.mjs` cho khớp danh sách tài liệu hướng hiện tại.
+    - Cập nhật `docs/decisions.md` (thêm ADR-14), `docs/test-plan.md` + bản gốc trong `docs/source/`, `docs/ASSIGNMENT.md`, `docs/PROGRESS.md`, `README.md`.
+- Lệnh đã chạy và kết quả thật:
+  - `npx playwright test` (baseline) → 32 test: **17 passed / 15 failed**; phân loại 15 Fail: 3 lỗi hạ tầng (file trace bị AV xoá), 1 timeout axe-core, **11 lỗi thật của site đích** (thiếu HSTS/nosniff/X-Frame-Options/Referrer-Policy, contrast, h1 T3 = 0, sitemap + robots T3 = 404, thiếu Open Graph, tràn ngang 19px ở T1 360px).
+  - `npx playwright test --project=cross-browser-*` → **4 passed** (Chromium, Firefox, WebKit, Edge) — giá tính tức thì T2 = 200.000đ trên cả 4 trình duyệt.
+  - `k6 run tests/perf/read-load.js` → 44 request, 0 fail, `http_req_failed` 0.00%, p95 = 1.13s, 5 VU / 30s.
+  - `npm run lint` → 0 lỗi; `npm run typecheck` → sạch; `npm run req:check` → 0 vi phạm; `npm run rtm:check` → độ phủ 100%; `npm run exit:check` → 4/7 tiêu chí đạt.
+- Phát hiện chưa xử lý: OWASP ZAP không chạy được (`Command failed to spawn: Aborted` khi gọi `java -autorun` — có vẻ do antivirus chặn tiến trình Java con). Vì đã loại ZAP khỏi bộ công cụ nên không còn ràng buộc; NFR-02 đo bằng kiểm tra header/cookie/TLS của Playwright.
+- Còn dở / HUMAN: chạy lại E2E đầy đủ sau khi sửa hạ tầng để xác nhận 15 Fail còn lại là lỗi thật của site đích; nhóm xác nhận phạm vi; phán quyết CHG-2026-11-14-02 (P1) tại Inspection Ngày 3.

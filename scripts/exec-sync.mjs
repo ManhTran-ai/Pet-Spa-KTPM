@@ -2,8 +2,8 @@ import path from 'node:path';
 import { DOCS_DIR, REPORTS_DIR, parseCsv, readText, toCsv, writeText, log } from './lib/common.mjs';
 
 /**
- * Đồng bộ kết quả chạy tự động (Playwright JSON + Newman JSON) vào
- * `reports/execution-log.csv` và cập nhật trạng thái trong `docs/testcases/*.csv`.
+ * Đồng bộ kết quả chạy tự động (Playwright JSON) vào `reports/execution-log.csv`
+ * và cập nhật trạng thái trong `docs/testcases/*.csv`.
  *
  * Nguyên tắc:
  * - Chỉ ghi kết quả có bằng chứng thật trong `reports/raw/`.
@@ -41,7 +41,6 @@ const TESTCASE_HEADERS = [
 
 const EXECUTION_LOG = path.join(REPORTS_DIR, 'execution-log.csv');
 const PLAYWRIGHT_JSON = path.join(REPORTS_DIR, 'raw', 'playwright-report.json');
-const NEWMAN_JSON = path.join(REPORTS_DIR, 'raw', 'newman-report.json');
 const TESTCASE_FILES = ['t1.csv', 't2.csv', 't3.csv', 'nfr.csv'];
 
 function collectSpecs(suites, out = []) {
@@ -126,30 +125,10 @@ async function main() {
     }
   }
 
-  // --- Newman (Postman) ---
-  let newmanCount = 0;
-  const nmRaw = await readText(NEWMAN_JSON).catch(() => '');
-  if (nmRaw) {
-    const report = JSON.parse(nmRaw);
-    for (const item of report.run?.executions ?? []) {
-      const tcId = tcIdFromTitle(item.item?.name ?? '');
-      if (!tcId) continue;
-      newmanCount += 1;
-      const assertions = item.assertions ?? [];
-      const failed = assertions.filter((a) => a.error).length;
-      record(
-        tcId,
-        failed === 0 && assertions.length > 0 ? 'Pass' : 'Fail',
-        `Newman — ${assertions.length} assertion, ${failed} fail`,
-        'Tài (Newman)',
-      );
-    }
-  }
-
   // Dòng thủ công do người ghi tay: giữ lại nếu chưa có kết quả máy cho TC đó.
   for (const row of previousLog) {
     if (results.has(row.TC_ID)) continue;
-    if (row.Executed_By && !row.Executed_By.includes('script') && !row.Executed_By.includes('Newman')) {
+    if (row.Executed_By && !row.Executed_By.includes('script')) {
       results.set(row.TC_ID, {
         status: row.Result,
         note: row.Note ?? '',
@@ -197,7 +176,7 @@ async function main() {
   const passCount = rows.filter((r) => r.Result === 'Pass').length;
   const failCount = rows.filter((r) => r.Result === 'Fail').length;
   log(`Đã ghi ${EXECUTION_LOG}: ${rows.length} dòng (Pass ${passCount}, Fail ${failCount})`);
-  log(`Nguồn: Playwright ${playwrightCount} test, Newman ${newmanCount} request`);
+  log(`Nguồn: Playwright ${playwrightCount} test`);
 }
 
 main().catch((error) => {

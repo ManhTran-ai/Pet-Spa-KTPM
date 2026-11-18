@@ -89,7 +89,7 @@ Test case mức rủi ro Rất cao và Cao được viết và chạy trước. 
 |---|---|---|---|---|---|
 | Tĩnh (Verification) | SRS đích, thiết kế test, test case | Moderator Mạnh; Reviewer theo vòng | Inspection, Technical Review | SRS-01, TP-01 | Ngày 3, 5, 8 |
 | Tích hợp | Luồng front-end → API của site đích; hợp đồng dữ liệu giữa bảng giá và API | Mạnh (T1), Tài (T2), Ngân (T3) | Playwright `page.on('request'/'response')`, HTTP client | Thiết kế test | Ngày 10 |
-| Hệ thống | Toàn bộ chức năng M1–M7 theo SRS đích | Người viết test case của hệ thống khác | Playwright, thủ công, Postman/Newman | SRS-01 | Ngày 11–12 |
+| Hệ thống | Toàn bộ chức năng M1–M7 theo SRS đích | Người viết test case của hệ thống khác | Playwright, thủ công | SRS-01 | Ngày 11–12 |
 | Chấp nhận | Nhu cầu người dùng thật | 5–8 người ngoài nhóm, Lộc điều phối | Kịch bản UC, phiếu phản hồi | UC-01…UC-08 | Ngày 13 |
 
 ### 4.2 Chiến lược kiểm thử tích hợp
@@ -136,8 +136,8 @@ Mỗi test case có đủ Test Case ID, Description, Pre-condition, Steps, Expec
 
 ### 4.7 Tự động hóa
 
-- **Playwright (TypeScript)** cho E2E: một project cho mỗi hệ thống (`t1`, `t2`, `t3`) + project `cross-browser` cho NFR-04. Selector theo vai trò/nhãn (`getByRole`, `getByLabel`, `getByText`) để chịu được thay đổi giao diện.
-- **Postman/Newman** cho kiểm thử API công khai mà site đích dùng (tra cứu danh mục, slot) — chỉ các endpoint GET, không ghi dữ liệu.
+- **Playwright (TypeScript)** cho E2E: một project cho mỗi hệ thống (`t1`, `t2`, `t3`) + 4 project `cross-browser-*` cho NFR-04 (Chromium, Firefox, WebKit/Safari, Edge). Selector theo vai trò/nhãn (`getByRole`, `getByLabel`, `getByText`) để chịu được thay đổi giao diện.
+- **HTTP client của Playwright** (`request` context) cho kiểm thử API công khai mà site đích dùng (tra cứu danh mục, slot) — chỉ các endpoint GET, không ghi dữ liệu.
 - **k6** cho kiểm thử tải đọc (GET) ở mức nhẹ, không gây ảnh hưởng dịch vụ.
 - **Lighthouse CLI** cho NFR-01, NFR-06, NFR-07.
 - **axe-core** cho kiểm thử khả năng tiếp cận.
@@ -189,7 +189,7 @@ Không có môi trường staging: mọi kiểm thử diễn ra trên production
 | Quản lý công việc và lỗi | GitHub Issues hoặc Trello | Lộc |
 | Quản lý test case, RTM | CSV trong repo (`docs/testcases/*.csv`) + Google Sheets | Mạnh |
 | E2E trình duyệt | Playwright (TypeScript) | Tài (hạ tầng), mỗi người viết script cho site mình |
-| API test | Postman + Newman | Ngân |
+| API test | Playwright `request` context (chỉ GET) | Ngân |
 | Hiệu năng, A11y, SEO | Lighthouse CLI | Ngân, Lộc |
 | Tải đọc | k6 hoặc autocannon | Ngân |
 | Khả năng tiếp cận | axe-core | Lộc |
@@ -214,7 +214,7 @@ Người viết và người chạy test case cho một hệ thống không ph�
 | Thành viên | Hệ thống phụ trách | Viết và chạy test cho | Chuyên trách | TC dự kiến |
 |---|---|---|---|---|
 | Mạnh (Test Lead) | T1 Pet NGON | T3 + NFR-02 | Test Plan, RTM, điều phối Inspection, Final Test Report, Exit criteria, test bảo mật | 57 |
-| Tài | T2 Mật Pet | T1 + NFR-03, NFR-04 | Hạ tầng repo, Playwright, Postman/Newman, Lighthouse, phân tích tĩnh tài liệu, test khả năng dùng và tương thích | 64 |
+| Tài | T2 Mật Pet | T1 + NFR-03, NFR-04 | Hạ tầng repo, Playwright, Lighthouse, k6, phân tích tĩnh tài liệu, test khả năng dùng và tương thích | 64 |
 | Ngân | T3 Pretty Paws | T2 + NFR-01, NFR-05 | Thiết kế DT/ST, test hiệu năng và độ tin cậy, tự động hóa regression | 62 |
 | Lộc | Đối chiếu cả 3 site | T2 (đối chiếu) + một phần T1 | Quản lý lỗi và triage, test khả năng tiếp cận NFR-06, SEO NFR-07, UAT, slide demo | 43 |
 

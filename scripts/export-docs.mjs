@@ -7,30 +7,25 @@ const reportsDir = path.join(submissionDir, 'reports');
 
 const DOC_LIST = [
   'srs.md',
-  'sdd.md',
   'test-plan.md',
   'rtm.md',
   'rtm.csv',
   'requirements.csv',
   'backlog.md',
   'backlog.csv',
-  'glossary.md',
   'PROGRESS.md',
   'decisions.md',
   'change-requests.md',
   'lessons-learned.md',
+  'ASSIGNMENT.md',
 ];
 
-const REVIEW_LIST = [
-  'inspection-srs.md',
-  'review-sdd.md',
-  'walkthrough-m4.md',
-  'review-testcases.md',
-];
+const REFERENCE_LIST = ['pricing-baseline.md', 'pricing-baseline.csv'];
+
+const REVIEW_LIST = ['inspection-srs.md', 'review-testdesign.md', 'review-testcases.md'];
 
 const REPORT_LIST = [
   'rtm-coverage.md',
-  'static-analysis.md',
   'integration-report.md',
   'nfr-report.md',
   'regression-report.md',
@@ -70,6 +65,16 @@ async function main() {
   for (const file of REPORT_LIST) {
     const ok = await copyIfExists(path.join(REPORTS_DIR, file), path.join(reportsDir, file));
     (ok ? copied : missing).push(`reports/${file}`);
+  }
+
+  for (const file of REFERENCE_LIST) {
+    const ok = await copyIfExists(path.join(DOCS_DIR, 'reference', file), path.join(docsDir, 'reference', file));
+    (ok ? copied : missing).push(`docs/reference/${file}`);
+  }
+
+  for (const file of ['defects.csv', 'README.md']) {
+    const ok = await copyIfExists(path.join(DOCS_DIR, 'defects', file), path.join(docsDir, 'defects', file));
+    (ok ? copied : missing).push(`docs/defects/${file}`);
   }
 
   const testcasesDir = path.join(DOCS_DIR, 'testcases');

@@ -18,10 +18,11 @@ Mỗi quyết định có: bối cảnh, quyết định, lý do, hệ quả, tr
 | ADR-09 | Đổi hướng đồ án: kiểm thử 3 hệ thống web đang vận hành thay vì tự xây hệ thống | 2026-11-13 | Đã chốt |
 | ADR-10 | Chọn ba hệ thống đích T1 Pet NGON, T2 Mật Pet Family, T3 Pretty Paws | 2026-11-13 | Đã chốt |
 | ADR-11 | Ranh giới kiểm thử an toàn: chỉ đọc và tương tác không phá hại | 2026-11-13 | Đã chốt |
-| ADR-12 | Bộ công cụ kiểm thử: Playwright, Postman/Newman, k6, Lighthouse, OWASP ZAP | 2026-11-13 | Đã chốt |
+| ADR-12 | Bộ công cụ kiểm thử: Playwright, Postman/Newman, k6, Lighthouse, OWASP ZAP | 2026-11-13 | Đã chốt (rút gọn theo ADR-14) |
 | ADR-13 | Mô hình V thích nghi cho kiểm thử hộp đen/hộp xám và loại bỏ kiểm thử đơn vị mã nguồn đích | 2026-11-13 | Đã chốt |
+| ADR-14 | Rút gọn bộ công cụ về mức tối giản: giữ Playwright, axe-core, Lighthouse, k6, TypeScript, ESLint, Git | 2026-11-18 | Đã chốt |
 
-> **Lưu ý:** ADR-01 đến ADR-08 mô tả kiến trúc của hệ thống do nhóm tự xây. Sau khi đổi hướng theo ADR-09, các ADR này **không còn hiệu lực** đối với phạm vi kiểm thử hiện tại; chúng được giữ lại như lịch sử quyết định và áp dụng lại nếu nhóm quay về hướng cũ. Quyết định hiện hành cho đồ án nằm ở ADR-09 đến ADR-13.
+> **Lưu ý:** ADR-01 đến ADR-08 mô tả kiến trúc của hệ thống do nhóm tự xây. Sau khi đổi hướng theo ADR-09, các ADR này **không còn hiệu lực** đối với phạm vi kiểm thử hiện tại; chúng được giữ lại như lịch sử quyết định và áp dụng lại nếu nhóm quay về hướng cũ. Quyết định hiện hành cho đồ án nằm ở ADR-09 đến ADR-14.
 
 ---
 
@@ -155,16 +156,40 @@ Mỗi quyết định có: bối cảnh, quyết định, lý do, hệ quả, tr
 
 - **Bối cảnh:** cần bộ công cụ đáp ứng đồng thời kiểm thử chức năng, tích hợp, hiệu năng, khả năng tiếp cận, SEO và bảo mật, trong giới hạn 4 thành viên và 14 ngày, chạy được trên Windows.
 - **Quyết định:**
-  - **Playwright (TypeScript)** — kiểm thử E2E trình duyệt; một project cho mỗi site (`t1`, `t2`, `t3`) cộng project `cross-browser` cho NFR-04. Selector theo vai trò/nhãn (`getByRole`, `getByLabel`, `getByText`).
-  - **Postman + Newman** — kiểm thử API công khai của site đích, chỉ phương thức GET.
-  - **k6** — kiểm thử tải đọc mức nhẹ.
-  - **Lighthouse CLI** — hiệu năng, khả năng tiếp cận, SEO.
-  - **axe-core** — kiểm thử khả năng tiếp cận chi tiết.
-  - **OWASP ZAP** — quét bảo mật ở chế độ passive/active nhẹ, bổ trợ cho checklist NFR-02.
+  - **Playwright (TypeScript)** — kiểm thử E2E trình duyệt; một project cho mỗi site (`t1`, `t2`, `t3`) cộng 4 project `cross-browser-*` cho NFR-04 (Chromium, Firefox, WebKit/Safari, Edge). Selector theo vai trò/nhãn (`getByRole`, `getByLabel`, `getByText`).
+  - **k6** — kiểm thử tải đọc mức nhẹ (5 VU, 30 giây, chỉ GET).
+  - **Lighthouse CLI** — hiệu năng, khả năng tiếp cận, SEO (3 lần mỗi site, lấy trung vị).
+  - **axe-core** (`@axe-core/playwright`) — kiểm thử khả năng tiếp cận chi tiết WCAG 2.1 AA.
   - **Quản lý test case:** CSV trong repo (`docs/testcases/*.csv`), đồng bộ Google Sheets cho nhóm.
-- **Lý do:** Playwright hỗ trợ đa trình duyệt và đa viewport trong một framework, phù hợp NFR-04; Lighthouse và axe-core cho NFR-01/06/07 với thang điểm định lượng; k6 nhẹ và chạy được bằng script; Newman đưa bộ Postman vào CI.
-- **Hệ quả:** thêm `playwright.config.ts` với project cho 3 site; thêm `package.json` với script `test:e2e`, `test:api`, `test:perf`, `test:a11y`; lint bằng ESLint cho mã test. Không dùng Jest/Prisma/PostgreSQL nữa.
+- **Lý do:** Playwright hỗ trợ đa trình duyệt và đa viewport trong một framework, phù hợp NFR-04; Lighthouse và axe-core cho NFR-01/06/07 với thang điểm định lượng; k6 nhẹ và chạy được bằng script.
+- **Hệ quả:** thêm `playwright.config.ts` với project cho 3 site; thêm `package.json` với script `test:e2e`, `test:perf`, `test:a11y`, `test:cross-browser`; lint bằng ESLint cho mã test. Không dùng Jest/Prisma/PostgreSQL nữa.
 - **Xác nhận:** người dùng chọn ngày 2026-11-13.
+- **Trạng thái:** Đã chốt (rút gọn theo ADR-14).
+
+## ADR-14: Rút gọn bộ công cụ về mức tối giản
+
+- **Bối cảnh:** sau khi dựng đủ hạ tầng, nhóm đánh giá lại chi phí cài đặt và giá trị đóng góp của từng công cụ so với yêu cầu của giảng viên. Ba công cụ tốn nhiều công cài đặt nhưng đóng góp ít cho các tiêu chí chấm điểm:
+  - **Postman + Newman** — bộ collection chỉ có 5 request GET, trùng phạm vi với những gì Playwright đã kiểm tra; thêm một ngôn ngữ cấu hình (collection JSON) mà không mở rộng độ phủ.
+  - **OWASP ZAP** — cần cài thêm Java 21 (256 MB) và ZAP 2.17 (287 MB); TP-01 vốn ghi đây là công cụ *tuỳ chọn* cho NFR-02. NFR-02 đã được đo đầy đủ bằng kiểm tra HTTP header, thuộc tính cookie, TLS và phản xạ vô hại trong Playwright.
+  - **GitHub Actions CI** — không nằm trong yêu cầu đồ án; nhóm đã có quy trình Gate cục bộ (`npm run gate`) và lịch bàn giao theo ngày.
+- **Quyết định:** giữ bộ công cụ tối giản sau đây, bỏ toàn bộ công cụ và script không còn dùng:
+
+  | Giữ | Bỏ |
+  |---|---|
+  | Playwright + axe-core | Postman/Newman (collection, `npm run test:api`) |
+  | Lighthouse CLI | OWASP ZAP + Java 21 (`scripts/zap-scan.mjs`) |
+  | k6 | GitHub Actions (`.github/workflows/ci.yml`) |
+  | TypeScript + ESLint | Jest/Prisma/PostgreSQL (đã bỏ từ ADR-12) |
+  | Git | `scripts/{tc-sync,static-analysis,infra-check,openapi-check,nfr-scan}.mjs` — script chết hoặc thuộc hướng cũ |
+
+  Ghi thêm: `archive/2026-11-13-webapp-pivot/` (mã nguồn hệ thống webapp tự xây) bị xoá khỏi repo — không còn là đối tượng kiểm thử theo ADR-09 và toàn bộ nội dung vẫn còn trong lịch sử Git (`git show 3ef6451:archive/...`).
+- **Lý do:** mỗi công cụ bị loại đều không tạo ra số liệu nào mà các tiêu chí chấm điểm (EC-1..EC-7) đang đo. Việc cài thêm Java 21 + ZAP còn làm chậm khả năng tái lập môi trường cho 3 thành viên khác trong khi giới hạn 14 ngày.
+- **Hệ quả:**
+  - `package.json` còn 7 devDependency: `@axe-core/playwright`, `@playwright/test`, `@types/node`, `@typescript-eslint/*`, `eslint`, `lighthouse`, `typescript`.
+  - Không còn kiểm thử API riêng bằng Newman; mọi endpoint GET công khai đều kiểm tra qua `request` context của Playwright (`tests/support/http.ts`).
+  - NFR-02 không có số liệu từ ZAP; báo cáo phi chức năng nêu rõ đây là hạng mục **không kiểm thử được theo ADR-11** (không quét chủ động) thay vì khẳng định không có lỗ hổng.
+  - Gate cục bộ (`npm run gate`) thay thế CI; mỗi ngày bàn giao chạy Gate và lưu kết quả vào `reports/gates/day-NN.md`.
+- **Xác nhận:** người dùng chọn phương án "tối giản" ngày 2026-11-18.
 - **Trạng thái:** Đã chốt.
 
 ## ADR-13: Mô hình V thích nghi cho kiểm thử hộp đen và loại bỏ kiểm thử đơn vị mã nguồn đích

@@ -22,7 +22,7 @@ TC-NFR-03-002,NFR-03,ALL,Thông báo lỗi nêu rõ tên trường bị lỗi,Hi
 TC-NFR-03-003,NFR-03,ALL,Nhãn các trường form nhất quán giữa các trang,Medium,Use case,Manual,Tài,Chưa thực thi
 TC-NFR-03-004,NFR-03,ALL,Điều hướng và thao tác form được bằng bàn phím,High,Use case,Manual,Tài,Chưa thực thi
 TC-NFR-04-001,NFR-04,ALL,Chức năng tính giá chạy đúng trên Chrome,High,UC,Auto,Tài,Pass
-TC-NFR-04-002,NFR-04,ALL,Chức năng tính giá chạy đúng trên Firefox,High,UC,Manual,Tài,Chưa thực thi
+TC-NFR-04-002,NFR-04,ALL,Chức năng tính giá chạy đúng trên Firefox,High,UC,Manual,Tài,Pass
 TC-NFR-04-003,NFR-04,ALL,Chức năng tính giá chạy đúng trên Edge,High,UC,Manual,Tài,Chưa thực thi
 TC-NFR-04-004,NFR-04,ALL,Chức năng tính giá chạy đúng trên Safari,High,UC,Manual,Tài,Chưa thực thi
 TC-NFR-04-005,NFR-04,ALL,Không có cuộn ngang ở màn hình 360px trên trang đặt lịch,High,Use case,Auto,Tài,Fail
@@ -40,6 +40,6 @@ TC-NFR-06-006,NFR-06,ALL,Điều hướng trang bằng bàn phím đến hết c
 TC-NFR-07-001,NFR-07,ALL,Mỗi trang có một thẻ title duy nhất và không rỗng,High,SEO,Auto,Lộc,Pass
 TC-NFR-07-002,NFR-07,ALL,Mỗi trang có thẻ meta description không rỗng,High,SEO,Auto,Lộc,Pass
 TC-NFR-07-003,NFR-07,ALL,Thẻ html có thuộc tính lang,Medium,SEO,Auto,Lộc,Pass
-TC-NFR-07-004,NFR-07,ALL,sitemap.xml tồn tại và không chặn trang quan trọng,Medium,SEO,Auto,Lộc,Fail
-TC-NFR-07-005,NFR-07,ALL,robots.txt tồn tại và không chặn toàn bộ site,Medium,SEO,Auto,Lộc,Fail
+TC-NFR-07-004,NFR-07,ALL,sitemap.xml tồn tại và không chặn trang quan trọng,Medium,SEO,Auto,Lộc,Pass
+TC-NFR-07-005,NFR-07,ALL,robots.txt tồn tại và không chặn toàn bộ site,Medium,SEO,Auto,Lộc,Pass
 TC-NFR-07-006,NFR-07,ALL,"Thẻ Open Graph có title, description và image",Low,SEO,Auto,Lộc,Fail
