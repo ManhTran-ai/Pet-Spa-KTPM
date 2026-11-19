@@ -1,0 +1,6 @@
+member,design_doc,technique,reviewer,review_status,review_date
+Mạnh,docs/design/mccabe-coverage.md,Phân tích tĩnh & Rà soát · McCabe V(G),Ngân,Đã review,2026-11-19
+Tài,docs/design/test-design-techniques.md,Phân vùng tương đương · Giá trị biên,Ngân,Đã review,2026-11-19
+Ngân,docs/design/decision-tables.md,Bảng quyết định,Mạnh,Đã review,2026-11-19
+Ngân,docs/design/state-transition.md,Chuyển đổi trạng thái,Lộc,Đã review,2026-11-19
+Lộc,docs/design/usecase-workflow.md,Use case · Workflow · Exploratory · Vòng đời lỗi,Tài,Đã review,2026-11-19
