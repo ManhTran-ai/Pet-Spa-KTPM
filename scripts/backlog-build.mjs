@@ -63,7 +63,7 @@ async function main() {
   const md = [];
   md.push('# Backlog công việc kiểm thử (MoSCoW)');
   md.push('');
-  md.push('Phiên bản 1.0 · Ngày 2026-11-13 · Người lập: Mạnh (TV1) · Nguồn: SRS-01 v1.0 và bộ test case `docs/testcases/*.csv`');
+  md.push('Phiên bản 1.1 · Ngày 2026-11-19 · Người lập: Mạnh (TV1) · Nguồn: SRS-01 v1.2 và bộ test case `docs/testcases/*.csv` (sau khi cân bằng phân công ASG-01 v3.0)');
   md.push('');
   md.push('Bản máy đọc được: `docs/backlog.csv` (' + records.length + ' mục). Quy ước mã: `BL-nnn`.');
   md.push('');
