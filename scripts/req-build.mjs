@@ -11,9 +11,10 @@ async function main() {
 
   const reqs = [];
   const reqRe = /^\|\s*((?:FR-M\d-\d+)|(?:NFR-\d+))\s*\|([^|]*)\|([^|]*)\|([^|]*)\|([^|]*)\|/gm;
+  const stripBold = (s) => s.replace(/\*\*/g, '').trim();
   let m;
   while ((m = reqRe.exec(srs)) !== null) {
-    reqs.push({ id: m[1].trim(), title: m[2].trim(), systems: m[3].trim(), priority: m[4].trim(), criteria: m[5].trim() });
+    reqs.push({ id: m[1].trim(), title: stripBold(m[2]), systems: m[3].trim(), priority: m[4].trim(), criteria: stripBold(m[5]) });
   }
 
   const ucRe = /^\|\s*(UC-\d+)\s*\|([^|]*)\|([^|]*)\|([^|]*)\|/gm;

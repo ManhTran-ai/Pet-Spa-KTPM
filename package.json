@@ -16,13 +16,16 @@
     "lint": "eslint tests scripts",
     "typecheck": "tsc --noEmit",
     "req:check": "node scripts/req-check.mjs",
+    "req:build": "node scripts/req-build.mjs",
+    "docs:sync": "node scripts/sync-docs.mjs",
     "rtm:build": "node scripts/rtm-build.mjs",
     "rtm:check": "node scripts/rtm-check.mjs",
     "backlog:build": "node scripts/backlog-build.mjs",
+    "assign:check": "node scripts/assign-check.mjs",
     "exit:check": "node scripts/exit-check.mjs",
     "lh:scan": "node scripts/lighthouse-scan.mjs",
     "exec:sync": "node scripts/exec-sync.mjs",
-    "gate": "npm run req:check && npm run rtm:check && npm run exit:check"
+    "gate": "npm run req:check && npm run rtm:check && npm run assign:check && npm run exit:check"
   },
   "devDependencies": {
     "@axe-core/playwright": "^4.10.1",

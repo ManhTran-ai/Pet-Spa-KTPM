@@ -1,5 +1,6 @@
 import path from 'node:path';
-import { DOCS_DIR, REPORTS_DIR, log, parseCsv, readText, writeText } from './lib/common.mjs';
+import { existsSync } from 'node:fs';
+import { DOCS_DIR, REPORTS_DIR, ROOT, log, parseCsv, readText, writeText } from './lib/common.mjs';
 
 const rtmPath = path.join(DOCS_DIR, 'rtm.csv');
 const requirementsPath = path.join(DOCS_DIR, 'requirements.csv');
@@ -8,6 +9,7 @@ const executionPath = path.join(REPORTS_DIR, 'execution-log.csv');
 const lighthousePath = path.join(REPORTS_DIR, 'raw', 'lighthouse-summary.csv');
 const axePath = path.join(REPORTS_DIR, 'raw', 'axe-summary.csv');
 const securityPath = path.join(REPORTS_DIR, 'raw', 'security-summary.csv');
+const designIndexPath = path.join(DOCS_DIR, 'design', 'design-index.csv');
 const outputPath = path.join(REPORTS_DIR, 'exit-criteria.md');
 
 const OPEN_STATUSES = ['New', 'Assigned', 'Open', 'Fixed', 'Pending Retest', 'Retest', 'Reopened'];
@@ -102,6 +104,38 @@ async function main() {
     passed: uatRaw.length > 0 && blockingUat.length === 0,
     source: 'reports/uat-report.md',
   });
+
+  const designRows = await readCsv(designIndexPath);
+  const MEMBERS = ['Mạnh', 'Tài', 'Ngân', 'Lộc'];
+  const designIssues = [];
+  for (const member of MEMBERS) {
+    const rows = designRows.filter((r) => r.member === member);
+    if (rows.length === 0) {
+      designIssues.push(`${member}: chưa khai báo tài liệu thiết kế trong docs/design/design-index.csv`);
+      continue;
+    }
+    for (const row of rows) {
+      const exists = existsSync(path.join(ROOT, row.design_doc));
+      if (!exists) designIssues.push(`${member}: thiếu file ${row.design_doc}`);
+      if (row.reviewer === member) designIssues.push(`${member}: tự review tài liệu của chính mình (${row.design_doc})`);
+      if (!['Đã review', 'Reviewed'].includes((row.review_status ?? '').trim())) {
+        designIssues.push(`${member}: ${row.design_doc} chưa được review chéo (reviewer: ${row.reviewer})`);
+      }
+    }
+  }
+  criteria.push({
+    id: 'EC-8',
+    name: 'Mỗi thành viên có ≥ 1 tài liệu thiết kế test đã được review chéo',
+    measured:
+      designRows.length === 0
+        ? 'chưa có docs/design/design-index.csv'
+        : `${designRows.length} tài liệu thiết kế, ${designIssues.length === 0 ? 'tất cả đã review chéo' : `${designIssues.length} vấn đề`}`,
+    passed: designRows.length > 0 && designIssues.length === 0,
+    source: 'docs/design/design-index.csv',
+  });
+  if (designIssues.length > 0) {
+    for (const issue of designIssues) log(`EC-8: ${issue}`);
+  }
 
   const lines = [];
   lines.push('# Chấm Exit criteria');
