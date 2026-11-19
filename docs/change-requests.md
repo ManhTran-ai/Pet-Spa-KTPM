@@ -11,7 +11,7 @@ Trạng thái CR: `Chờ nhóm` | `Đã chấp nhận` | `Từ chối` | `Đã �
 | CHG-2026-11-13-01 | 2026-11-13 | Mạnh | Chốt CSDL trong §2.4 là PostgreSQL + Prisma | Mục 2.4 (không có ID yêu cầu) | Đã áp dụng | Theo ADR-01; ghi chú ngay dưới §2.4 trong `docs/srs.md`; không ảnh hưởng FR/NFR nên không cần cập nhật RTM |
 | CHG-2026-11-13-03 | 2026-11-13 | Mạnh | Đổi hướng đồ án: kiểm thử 3 hệ thống web đang vận hành thay vì tự xây hệ thống | Toàn bộ FR/NFR (SRS-01 v1.0 mới) | Đã áp dụng | Theo ADR-09..ADR-13; mốc 14 ngày tính lại từ 2026-11-13; bộ testware cũ archive |
 | CHG-2026-11-14-01 | 2026-11-14 | Mạnh | Sửa SRS-01 theo khảo sát giá REF-01: `BR-03`, `BR-12`, `FR-M3-02`, mục 3.2/3.3/3.4; bổ sung `BR-17`, `BR-18` | FR-M3-02, BR-03, BR-12 | Đã áp dụng | SRS v1.0 → v1.1; căn cứ `docs/reference/pricing-baseline.md` §3.4, §4.1 |
-| CHG-2026-11-14-02 | 2026-11-14 | Mạnh | Sửa tiêu chí chấp nhận `FR-M3-02` cho T2: bỏ yêu cầu "cùng bậc cân nặng nhưng Mèo → giá khác" | FR-M3-02 | **Chờ nhóm** | T2 công bố **một** bảng giá dùng chung cho Chó và Mèo; đo được giá bằng nhau ở 2 bậc. Cần nhóm quyết định: coi là lỗi site T2, hay coi tiêu chí cũ là suy luận sai |
+| CHG-2026-11-14-02 | 2026-11-14 | Mạnh | Sửa tiêu chí chấp nhận `FR-M3-02` cho T2: bỏ yêu cầu "cùng bậc cân nặng nhưng Mèo → giá khác" | FR-M3-02 | **Đã áp dụng** | Quyết định Inspection 2026-11-18 (RV-01): coi bảng giá dùng chung Chó/Mèo của T2 là **hành vi thiết kế hợp lệ**, không phải lỗi site. Tiêu chí `FR-M3-02` tách theo từng hệ thống: T1 giữ yêu cầu Chó ≠ Mèo, **T2 bỏ**, T3 giữ. SRS v1.1 → v1.2 |
 
 ## Thay đổi đã áp dụng trên bản làm việc
 
@@ -38,6 +38,20 @@ Tác động: SRS mục nào · requirements.csv · RTM dòng nào · test case 
 Trạng thái: Chờ nhóm | Đã chấp nhận | Từ chối | Đã áp dụng
 Quyết định của nhóm: <nội dung họp, ngày>
 ```
+
+## Ứng viên đã kiểm chứng và đóng trong Inspection Ngày 3 (2026-11-18)
+
+Nguồn: quan sát trực tiếp trên site đích (chỉ đọc, ADR-11). Bằng chứng máy: `reports/raw/survey-day03-open-cr.json`. Biên bản đầy đủ: `docs/reviews/inspection-srs.md`.
+
+| Mã ứng viên | Vấn đề | Kiểm chứng | Quyết định |
+|---|---|---|---|
+| CR-10 | T1: công thức phụ thu di chuyển `max(0, km − 5) × 8.000₫` không nêu làm tròn và cách ước lượng km từ địa chỉ | Site hiển thị khoảng phụ thu theo dải km (0–5, 5–10, 10–15, >15 km) thay vì con số tính từ địa chỉ → công thức là mô hình lý thuyết trong SRS, không phải hành vi UI quan sát được | **Giữ nguyên SRS**; BR-04/BR-05 ghi rõ đây là quy tắc nghiệp vụ, tiêu chí chấp nhận kiểm tra theo dải km |
+| CR-11 | T2: giá tính tức thì có khớp bảng giá tĩnh ở mọi ô không | **Đã kiểm chứng** — khớp ở các ô đo được (Chó, >3–6kg, Combo Tắm Vệ Sinh = 200.000₫) | **Đóng**; còn lại là việc thực thi test case `TC-T2-M3-011` (Ngày 11) |
+| CR-16 | T2: giá Chó và Mèo cùng bậc cân nặng có khác nhau không | **Đã kiểm chứng** — bằng nhau (200.000₫ ở `>3–6kg`, 300.000₫ ở `>6–10kg`) | **Đóng** → `CHG-2026-11-14-02` đã áp dụng, xem RV-01 |
+| CR-12 | T2: nhóm "báo giá riêng" hiển thị khoảng giá cụ thể hay chỉ "tuỳ thiết kế" | **Đã kiểm chứng** — hiển thị **cả hai**: khoảng 50.000–500.000₫ cho 4 dịch vụ (Gỡ rối, Tẩy ố, Tắm trắng, Xả dưỡng), "tuỳ thiết kế" cho 2 dịch vụ nhuộm; khung giá khi chọn "Gỡ rối" hiện "Báo giá riêng" không có con số đơn lẻ | **Đóng** — khớp `BR-07`/`FR-M3-04`, không phải defect. Xem RV-10 |
+| CR-13 | T3: form đặt lịch nhập cân nặng theo lbs hay kg | **Đã kiểm chứng** — T3 **không có ô nhập cân nặng**; bậc cân nặng lbs mã hoá trong tên dịch vụ (16/16 dịch vụ nhóm "Dog (bath included)" có lbs trong tên); form chỉ có ô "Mobile number" + chọn quốc gia | **Đóng** — đơn vị **lbs**, BVA chọn *dịch vụ* theo bậc chứ không nhập cân nặng. Sửa §7 và `BR-03`. Xem RV-06 |
+| CR-14 | T3: phí lễ tân 52 USD/30 phút gắn với dịch vụ nào | **Đã kiểm chứng 14/11** → không tồn tại | **Đóng** — đã sửa `BR-12` trong CHG-2026-11-14-01 |
+| CR-15 | Ngưỡng "trong vòng 30 ngày" của FR-M4-05 có áp dụng đồng nhất cho T1/T3 không | **Đã kiểm chứng** — T1 và T3 không có ô ngày, không công bố ngưỡng 30 ngày; T2 có `min` = hôm nay nhưng `max` = null (nhập được ngày ở 60 ngày) | **Đóng** — giữ nguyên phạm vi T2 của `FR-M4-05`; điều chỉnh tiêu chí chấp nhận cho khớp thực tế. Xem RV-09 |
 
 ## Ứng viên chưa đề xuất (ghi để chuẩn bị Inspection Ngày 3)
 

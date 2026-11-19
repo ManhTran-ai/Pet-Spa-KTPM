@@ -1,0 +1,91 @@
+{
+  "CR12": {
+    "ketLuan": "Nhóm \"báo giá riêng\" của T2 hiển thị KHOẢNG giá cụ thể (50.000 – 500.000đ) cho 4 dịch vụ và \"tuỳ thiết kế\" cho 2 dịch vụ nhuộm. Khi chọn \"Gỡ rối\", khung giá KHÔNG hiển thị một con số đơn lẻ mà hiện dạng \"Báo giá riêng\". → ĐÚNG với BR-07 và FR-M3-04. KHÔNG phải defect; SRS giữ nguyên.",
+    "soDichVuBaoGia": [
+      "Gỡ rối Báo giá theo tình trạng lông: 50.000 – 500.000đ Báo giá riêng",
+      "Tẩy ố Báo giá theo tình trạng lông: 50.000 – 500.000đ Báo giá riêng",
+      "Tắm trắng Báo giá theo tình trạng lông: 50.000 – 500.000đ Báo giá riêng",
+      "Xả dưỡng Báo giá theo tình trạng lông: 50.000 – 500.000đ Báo giá riêng",
+      "Nhuộm hình lớn Báo giá tuỳ kích thước & màu Báo giá riêng",
+      "Nhuộm tạo hình cơ thể Báo giá theo thiết kế riêng Báo giá riêng"
+    ],
+    "soDichVuNhuom": [
+      "Nhuộm 2 tai + đuôi 250k",
+      "Nhuộm 4 chân 250k",
+      "Nhuộm hình nhỏ 300k",
+      "Nhuộm hình lớn Báo giá tuỳ kích thước & màu Báo giá riêng",
+      "Nhuộm tạo hình cơ thể Báo giá theo thiết kế riêng Báo giá riêng"
+    ],
+    "soCombo": 5,
+    "soDichVuLe": 0,
+    "giaKhiChonGosRoi": {
+      "railPrice": "",
+      "railLines": "Chó · >3–6kg — Gỡ rối Báo giá riêng"
+    }
+  },
+  "CR13": {
+    "ketLuan": "T3 KHÔNG có ô nhập cân nặng. Bậc cân nặng được MÃ HÓA TRONG TÊN DỊCH VỤ, đơn vị lbs (\"Dog Bath 0-20lbs\", \"Dog Full Groom 91-100+ pounds\"). Form đặt lịch chỉ có ô \"Mobile number\" và ô chọn quốc gia. → BVA cho T3 phải chọn DỊCH VỤ theo bậc lbs, không nhập cân nặng. Hệ quả: dòng \"Bậc cân nặng\" trong bảng ràng buộc dữ liệu SRS §7 ghi T1/T2/T3 là SAI với T3.",
+    "tongDichVu": 41,
+    "soDichVuCoBaiCangTrongTen": 16,
+    "soDichVuDungKg": 0,
+    "viDu": [
+      "Dog (bath included) / Dog Bath 0-20lbs",
+      "Dog (bath included) / Dog Bath 20-50lbs",
+      "Dog (bath included) / Dog Bath short hair over 50lbs",
+      "Dog (bath included) / Dog bath medium/long hair over 50lbs",
+      "Dog (bath included) / Dog Bath and tidy up 0 - 20lbs",
+      "Dog (bath included) / Dog Bath and tidy up 21 - 40lbs",
+      "Dog (bath included) / Dog Bath and tidy up 41 - 60lbs",
+      "Dog (bath included) / Dog Bath and tidy up 61- 79lbs"
+    ],
+    "truongNhapForm": [
+      {
+        "tag": "SELECT",
+        "type": null,
+        "placeholder": null,
+        "dienGiai": "Phone number country"
+      },
+      {
+        "tag": "INPUT",
+        "type": "tel",
+        "placeholder": "Mobile number",
+        "dienGiai": null
+      }
+    ]
+  },
+  "CR15": [
+    {
+      "id": "T2",
+      "coInputDate": true,
+      "min": "2026-11-19",
+      "max": null,
+      "ngayQua60Ngay": {
+        "nhap": "2027-01-18",
+        "giaTriSauKhiNhap": "2027-01-18",
+        "biChan": false
+      },
+      "ngayQuaKhu": {
+        "nhap": "2026-11-16",
+        "giaTriSauKhiNhap": "2026-11-16",
+        "biChan": false
+      },
+      "ketLuan": "T2 chặn ngày quá khứ ở tầng input (min = hôm nay) nhưng KHÔNG giới hạn ngày xa trong tương lai (max = null; nhập được ngày ở 60 ngày). FR-M4-05 là mức Should nên ghi nhận là hành vi quan sát được, KHÔNG coi là defect; đồng thời cần điều chỉnh tiêu chí chấp nhận cho khớp thực tế."
+    },
+    {
+      "id": "T1",
+      "inputDate": [],
+      "inputTatCa": 0,
+      "coNguong30": false,
+      "mauNguong": [],
+      "ketLuan": "Trang chủ T1 không có ô nhập ngày và không công bố ngưỡng 30 ngày. FR-M4-05 ghi rõ chỉ áp dụng cho T2 → giữ nguyên phạm vi, không mở rộng."
+    },
+    {
+      "id": "T3",
+      "inputDate": [],
+      "inputTatCa": 0,
+      "coNguong30": false,
+      "mauNguong": [],
+      "ketLuan": "Trang chủ T3 không có ô nhập ngày và không công bố ngưỡng 30 ngày. FR-M4-05 ghi rõ chỉ áp dụng cho T2 → giữ nguyên phạm vi, không mở rộng."
+    }
+  ]
+}

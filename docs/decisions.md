@@ -21,8 +21,11 @@ Mỗi quyết định có: bối cảnh, quyết định, lý do, hệ quả, tr
 | ADR-12 | Bộ công cụ kiểm thử: Playwright, Postman/Newman, k6, Lighthouse, OWASP ZAP | 2026-11-13 | Đã chốt (rút gọn theo ADR-14) |
 | ADR-13 | Mô hình V thích nghi cho kiểm thử hộp đen/hộp xám và loại bỏ kiểm thử đơn vị mã nguồn đích | 2026-11-13 | Đã chốt |
 | ADR-14 | Rút gọn bộ công cụ về mức tối giản: giữ Playwright, axe-core, Lighthouse, k6, TypeScript, ESLint, Git | 2026-11-18 | Đã chốt |
+| ADR-15 | Chốt hướng đồ án: **Hướng 2** — thiết kế và kiểm thử phần mềm đang hoạt động, mô tả chi tiết yêu cầu và tính năng cần kiểm thử | 2026-11-19 | Đã chốt |
+| ADR-16 | Phân công v3.0: cân bằng 226 test case (56/55/57/58), thêm EC-8 kiểm chứng tài liệu thiết kế đã review chéo, thêm script `assign-check` | 2026-11-19 | Đã chốt |
+| ADR-17 | Technical Review chéo 5 tài liệu thiết kế test — McCabe V(G) trên CFG rút gọn từ bảng quyết định SRS §8, phép đo coverage theo số nhánh | 2026-11-19 | Đã chốt |
 
-> **Lưu ý:** ADR-01 đến ADR-08 mô tả kiến trúc của hệ thống do nhóm tự xây. Sau khi đổi hướng theo ADR-09, các ADR này **không còn hiệu lực** đối với phạm vi kiểm thử hiện tại; chúng được giữ lại như lịch sử quyết định và áp dụng lại nếu nhóm quay về hướng cũ. Quyết định hiện hành cho đồ án nằm ở ADR-09 đến ADR-14.
+> **Lưu ý:** ADR-01 đến ADR-08 mô tả kiến trúc của hệ thống do nhóm tự xây. Sau khi đổi hướng theo ADR-09, các ADR này **không còn hiệu lực** đối với phạm vi kiểm thử hiện tại; chúng được giữ lại như lịch sử quyết định và áp dụng lại nếu nhóm quay về hướng cũ. Quyết định hiện hành cho đồ án nằm ở ADR-09 đến ADR-15.
 
 ---
 
@@ -192,8 +195,92 @@ Mỗi quyết định có: bối cảnh, quyết định, lý do, hệ quả, tr
 - **Xác nhận:** người dùng chọn phương án "tối giản" ngày 2026-11-18.
 - **Trạng thái:** Đã chốt.
 
-## ADR-13: Mô hình V thích nghi cho kiểm thử hộp đen và loại bỏ kiểm thử đơn vị mã nguồn đích
+## ADR-15: Chốt hướng đồ án — Hướng 2: thiết kế và kiểm thử phần mềm đang hoạt động, mô tả chi tiết yêu cầu và tính năng cần kiểm thử
 
+- **Bối cảnh:** giảng viên đưa ra ba hướng đồ án và yêu cầu nhóm **chọn một**:
+
+  | Hướng | Nội dung | Đánh giá với đồ án hiện tại |
+  |---|---|---|
+  | 1 | Thiết kế và kiểm thử phần mềm bắt đầu từ tài liệu dự án, tài liệu SRS | Nhóm đã thử ở Ngày 1–2 (SRS/TP/RTM v0.x cho webapp React + Express + PostgreSQL) rồi dừng: giảng viên nói rõ **không yêu cầu sinh viên tự xây ứng dụng web**. Quay lại hướng 1 = phải xây lại toàn bộ hệ thống trong 14 ngày, không mang lại điểm chấm |
+  | **2** | **Thiết kế và kiểm thử phần mềm đang hoạt động — phải mô tả chi tiết lại các yêu cầu và tính năng của phần mềm cần kiểm thử** | **Được chọn.** Trùng khớp 1:1 với ADR-09/10/11: nhóm kiểm thử 3 hệ thống web đang vận hành, SRS-01 là đặc tả **đích (as-observed)** trích từ hành vi quan sát được |
+  | 3 | Nghiên cứu các kỹ thuật kiểm thử phần mềm chuyên sâu | Không chọn làm hướng. Nội dung này **được hấp thụ vào Hướng 2** ở vai trò "thiết kế test" — xem phần "Định nghĩa hướng 2" bên dưới |
+
+- **Quyết định:** nhóm chọn **Hướng 2** làm hướng đồ án duy nhất.
+
+### Định nghĩa Hướng 2 cho đồ án này — 4 yêu cầu và cách nhóm đáp ứng
+
+Hướng 2 gồm hai vế: **(a) thiết kế test** và **(b) kiểm thử**, với điều kiện bắt buộc: **phải mô tả chi tiết lại yêu cầu và tính năng của phần mềm cần kiểm thử**. Nhóm ánh xạ thành 4 yêu cầu cụ thể và bộ sản phẩm tương ứng:
+
+| # | Yêu cầu của Hướng 2 | Sản phẩm nhóm cam kết nộp | Trạng thái |
+|---|---|---|---|
+| **H2-1** | **Mô tả chi tiết yêu cầu và tính năng** của phần mềm cần kiểm thử | `docs/source/Đặc tả Yêu cầu Phần mềm (SRS).md` (SRS-01 v1.2): 58 yêu cầu (51 FR + 7 NFR), 18 quy tắc nghiệp vụ, 8 use case, 4 bảng quyết định, mô tả chi tiết 3 hệ thống; **mọi tiêu chí chấp nhận đều định lượng** | ✅ Xong |
+| **H2-2** | **Thiết kế test** (kỹ thuật thiết kế ca kiểm thử hộp đen) | 226 test case theo EP / BVA / DT / ST / UC / Workflow / Exploratory (`docs/testcases/*.csv`) + 5 tài liệu thiết kế trong `docs/design/` | ✅ Xong (thiết kế), 🔄 bổ sung tài liệu ở Ngày 6 |
+| **H2-3** | **Kiểm thử** phần mềm đang hoạt động (không phá hại) | Bộ tự động Playwright (E2E + axe-core + Lighthouse + k6), execution log, defect log | 🔄 Ngày 9–13 |
+| **H2-4** | Truy vết & báo cáo để chứng minh đã mô tả đúng và kiểm thử đúng | RTM truy xuất 2 chiều 100%, biên bản Inspection SRS, Test Plan, Final Test Report, Exit criteria | ✅ RTM 100% · 🔄 báo cáo ở Ngày 14 |
+
+**Vì sao nội dung của Hướng 3 vẫn còn, nhưng không phải là hướng riêng:** "nghiên cứu kỹ thuật kiểm thử chuyên sâu" là **phương pháp** để làm vế "thiết kế test" của Hướng 2 cho đủ chuyên sâu. Giảng viên chỉ chấm **một** hướng, nhưng bài của Hướng 2 không cấm dùng kỹ thuật thiết kế test nghiêm túc — ngược lại, Hướng 2 đòi hỏi "thiết kế ... kiểm thử" nên thiếu kỹ thuật thiết kế sẽ là điểm trừ. Vì vậy mỗi thành viên được giao **một nhóm kỹ thuật** và **một tài liệu thiết kế có số liệu thật từ 3 site đích** — đây là **đầu ra của Hướng 2 (H2-2)**, không phải một hướng đồ án thứ ba.
+
+- **Hệ quả:**
+  - **Không** thay đổi phạm vi, SRS, hay bộ test case — ADR-09 đến ADR-14 giữ nguyên hiệu lực.
+  - Bộ test case 226 ca giữ nguyên; chỉ **phân bổ lại Owner** cho cân bằng (bảng phân công trong `docs/ASSIGNMENT.md` §3.1).
+  - 5 tài liệu thiết kế trong `docs/design/` là **bắt buộc** theo H2-2:
+    | Tài liệu | Người phụ trách | Nội dung |
+    |---|---|---|
+    | `docs/design/test-design-techniques.md` | Tài | Bảng EP + BVA cho 3 hệ thống, bộ dữ liệu biên |
+    | `docs/design/mccabe-coverage.md` | Mạnh | V(G) và mức bao phủ cho 4 bảng quyết định SRS §8 |
+    | `docs/design/decision-tables.md` | Ngân | Ma trận quyết định đã rút gọn, có cột kết quả mong đợi |
+    | `docs/design/state-transition.md` | Ngân | Đồ thị chuyển trạng thái có nhãn cho wizard T1/T2, bảng chuyển trạng thái hợp lệ |
+    | `docs/design/usecase-workflow.md` | Lộc | Sơ đồ luồng UC-01…08 + hiếu chương khám phá |
+  - Exit criteria giữ nguyên EC-1..EC-7; thêm EC-8: **mỗi thành viên có ≥ 1 tài liệu thiết kế trong `docs/design/` đã được review chéo**.
+
+- **Xác nhận:** người dùng chốt ngày 2026-11-19 — nhóm chọn **Hướng 2**, chỉ một hướng duy nhất.
+- **Trạng thái:** Đã chốt.
+
+## ADR-16: Phân công v3.0 — cân bằng 226 test case, EC-8 kiểm chứng tài liệu thiết kế, script `assign-check`
+
+- **Bối cảnh:** ADR-15 định hướng lại hướng đồ án nhưng phân công chi tiết trong `docs/ASSIGNMENT.md` v2.0 và `docs/source/Kế hoạch Kiểm thử (Test Plan).md` §7 còn **sai lệch số liệu** so với dữ liệu thật trong `docs/testcases/*.csv`:
+  - Test Plan §7 ghi 57/64/62/43 (chênh lệch 21) trong khi `docs/testcases/*.csv` đã được phân bổ lại theo ADR-15 thành 56/55/57/58 (chênh lệch 3).
+  - Ma trận trách nhiệm hệ thống ghi "T1 do Tài, T2 do Tài" — mâu thuẫn với chính ADR-15 (T1 do Tài, T2 do Ngân, T3 do Mạnh).
+  - §3.4 ghi "21 ca T3" và "25 ca T1" cho Mạnh, §3.7 ghi "42 ca đối chiếu" cho Lộc — số thật lần lượt là 17, 27 và 46.
+  - Nguyên tắc "≥ 2 người chạy mỗi module" và "NFR chuyên trách" được tuyên bố nhưng **không có script nào kiểm chứng** → rủi ro lệch phân công mà không ai phát hiện.
+  - EC-8 nêu trong ADR-15 chưa được hiện thực hoá trong `scripts/exit-check.mjs` → tiêu chí "mỗi thành viên có tài liệu thiết kế đã review chéo" không thể chấm tự động.
+- **Quyết định:**
+  1. Viết lại `docs/ASSIGNMENT.md` lên **v3.0** với số liệu lấy từ `docs/testcases/*.csv` (đã kiểm chứng), sửa cả ma trận Owner (§3.1), ma trận trách nhiệm hệ thống (§3.2) và ma trận vai trò (§3.4–§3.7).
+  2. Thêm **§3A.4 "Nghiệm thu cá nhân — Definition of Done"** gồm 9 mục kiểm chứng được cho từng thành viên, ánh xạ tới H2-1…H2-4.
+  3. Thêm script **`scripts/assign-check.mjs`** (`npm run assign:check`) kiểm chứng 4 nguyên tắc phân công: (i) cân bằng số ca, chênh lệch ≤ 3; (ii) mỗi module của mỗi hệ thống có ≥ 2 người chạy; (iii) NFR chuyên trách theo ADR-15; (iv) không người nào tự gánh toàn bộ hệ thống mình viết.
+  4. Hiện thực hoá **EC-8** trong `scripts/exit-check.mjs`: đọc `docs/design/design-index.csv` (mới), kiểm tra mỗi thành viên có ≥ 1 tài liệu thiết kế **tồn tại**, **không tự review**, và **đã được review chéo**.
+  5. Sửa `docs/source/Kế hoạch Kiểm thử (Test Plan).md` §7 và §5.2 cho khớp ADR-15/16, đồng bộ bản làm việc qua `npm run docs:sync`.
+- **Lý do:** yêu cầu của người dùng là phân công **chia đều** và **bảo đảm 100% đáp ứng hướng đồ án**. "Cân bằng" và "100%" chỉ đáng tin nếu có máy kiểm tra. Ba quyết định trên biến các cam kết bằng văn bản thành tiêu chí có thể kiểm tra tự động và phát hiện lệch phân công trước khi bàn giao.
+- **Hệ quả:**
+  - `npm run gate` nay gồm `assign:check`; lệnh exit 1 nếu vi phạm bất kỳ nguyên tắc phân công nào.
+  - `docs/design/design-index.csv` trở thành bảng khai báo bắt buộc: mỗi dòng là một tài liệu thiết kế + người phụ trách + người review. Tài liệu mới phải thêm dòng tương ứng.
+  - `docs/ASSIGNMENT.md` §3A.4 trở thành bảng nghiệm thu cá nhân dùng trong Final Test Report.
+  - Hai tài liệu thiết kế còn thiếu (`mccabe-coverage.md` của Mạnh, `usecase-workflow.md` của Lộc) khiến EC-8 chưa đạt — đây là việc còn dở đã ghi trong `docs/PROGRESS.md`.
+- **Xác nhận:** người dùng yêu cầu ngày 2026-11-19 — "chia đều cho nhóm 4 thành viên" và "100% đáp ứng yêu cầu của hướng đồ án".
+- **Trạng thái:** Đã chốt.
+
+## ADR-17: Technical Review chéo 5 tài liệu thiết kế test — McCabe V(G) trên CFG rút gọn, và phép đo coverage theo số nhánh
+
+- **Bối cảnh:**
+  - ADR-16 để lại EC-8 chưa đạt vì thiếu 2 tài liệu thiết kế (`mccabe-coverage.md`, `usecase-workflow.md`). H2-2 yêu cầu "thiết kế test chuyên sâu" — thiếu 2/5 tài liệu là không đáp ứng 100% hướng đồ án.
+  - **McCabe là kỹ thuật hộp trắng** (cần CFG của mã nguồn), nhưng ADR-13 đã loại bỏ mọi kiểm thử mã nguồn đích. Cần một cách hợp thức để vẫn dùng được V(G) và mức bao phủ.
+  - 5 tài liệu thiết kế được viết bởi 4 người khác nhau, chưa từng qua rà soát chéo → rủi ro sai lệch số liệu và trích dẫn sai.
+- **Quyết định:**
+  1. **Dựng CFG từ bảng quyết định trong SRS §8** (4 bảng: Wizard T2 §8.1, Wizard T1 §8.2, Chính sách hủy §8.3, Phụ thu di chuyển §8.4). Mỗi bảng quyết định là một CFG rút gọn: nút điều kiện = ô quy tắc có điều kiện, cạnh = nhánh T/F. Tính \(V(G) = E - N + 2p\) và đối chiếu \(V(G) = P + 1\); khi hai công thức lệch nhau (bảng §8.3) lấy **giá trị lớn hơn** làm chuẩn bảo thủ.
+  2. **Đo mức bao phủ trên CFG, không phải trên mã nguồn** — và tử số là **số nhánh/node trên CFG**, không phải số test case. Số test case chỉ là bằng chứng cho việc nhánh đã đi tới. Ghi rõ giới hạn này trong tài liệu và trong báo cáo.
+  3. **Khi hai công thức V(G) cho kết quả khác nhau** → không "chọn đẹp", mà chọn giá trị **bảo thủ** và **ghi rõ lý do** trong tài liệu.
+  4. **Technical Review chéo** cả 5 tài liệu theo Cẩm nang §3.3 (chuẩn bị cá nhân → họp rà soát → sửa đổi → theo dõi), lưu biên bản tại `docs/reviews/design-review.md`. Mọi lỗi phải **sửa ngay trong mã và tài liệu**, không chỉ ghi báo cáo.
+  5. **Kiểm chứng trích dẫn bằng script**: mọi mã `TC-...` và `FR-...`/`NFR-...` trích trong tài liệu thiết kế phải tồn tại trong `docs/testcases/*.csv` và `docs/requirements.csv`.
+- **Lý do:** Hướng 2 yêu cầu 100% — một tài liệu thiết kế thiếu hoặc sai số liệu là thiếu. Mặt khác, phép đo coverage sai phương pháp là tệ hơn không đo: nó tạo ảo giác đảm bảo. Với hệ thống không mã nguồn, CFG rút gọn từ bảng quyết định là cách **hợp thức duy nhất** để dùng McCabe, và phải nêu rõ giới hạn.
+- **Hệ quả:**
+  - EC-8 **đạt** — `docs/design/design-index.csv` 5/5 dòng "Đã review"; `npm run exit:check` → 5/8 tiêu chí.
+  - Review phát hiện và sửa **3 lỗi Major + 2 Minor + 1 Observation** (RV-D1…RV-D6), trong đó 2 lỗi Major là **kỳ vọng sai trong test case** — loại lỗi mà chạy test không bắt được vì ca vẫn Fail đúng logic của nó.
+  - Bộ test case 226 ca **chưa từng qua Inspection** (chỉ mới có review chéo + walkthrough) → ghi nhận RV-D6 là khoảng trống của dự án, đưa vào việc Ngày 5–8.
+  - `docs/ASSIGNMENT.md` §3.3 và §3A.2 cập nhật trạng thái 5/5 tài liệu.
+- **Xác nhận:** nhóm thống nhất trong phiên làm việc ngày 2026-11-19; người dùng yêu cầu "tiếp tục công việc đến khi hoàn thành".
+- **Trạng thái:** Đã chốt.
+
+## ADR-13: Mô hình V thích nghi cho kiểm thử hộp đen và loại bỏ kiểm thử đơn vị mã nguồn đích
 - **Bối cảnh:** mô hình V chuẩn (IEEE 829) ghép Unit test với Verification và System/UAT test với Validation. Với hệ thống đích không có mã nguồn, mức Unit test không thực hiện được; nếu giữ nguyên sẽ tạo khoảng trống trong báo cáo và làm giảm độ tin cậy.
 - **Quyết định:** mô hình V được thích nghi thành hai nhánh song song:
   - **Verification** (kiểm chứng): Inspection và Technical Review trên SRS đích, Test Plan, thiết kế test và test case — thay cho Unit test và Static Analysis của mã nguồn. Đây là kiểm thử tĩnh theo đúng nghĩa của ISTQB.

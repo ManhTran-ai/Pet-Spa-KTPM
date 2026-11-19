@@ -18,11 +18,13 @@
 
 ## Ba hệ thống đích
 
-| Mã | Hệ thống | URL | Phân công |
+| Mã | Hệ thống | URL | Phân công (theo ADR-15) |
 |---|---|---|---|
-| **T1** | Pet NGON | `https://petngon.vn/vi` | Tài, Lộc (Mạnh giám sát) |
-| **T2** | Mật Pet Family | `https://matpet.vn/spa` | Tài (chính), Lộc (đối chiếu) |
-| **T3** | Pretty Paws | `https://prettypawscatanddoggrooming.groomore.com/` | Mạnh (chính), Ngân |
+| **T1** | Pet NGON | `https://petngon.vn/vi` | Tài (viết), Mạnh + Lộc (đối chiếu) |
+| **T2** | Mật Pet Family | `https://matpet.vn/spa` | Ngân (viết), Tài + Lộc (đối chiếu) |
+| **T3** | Pretty Paws | `https://prettypawscatanddoggrooming.groomore.com/` | Mạnh (viết), Ngân + Lộc (đối chiếu) |
+
+Phân bổ 226 test case: Mạnh 56 · Tài 55 · Ngân 57 · Lộc 58. Kiểm chứng bằng `npm run assign:check`.
 
 **Ranh giới an toàn (ADR-11):** chỉ đọc, không đặt lịch thật, không tạo tài khoản, tải ≤ 10 VU. Chi tiết ở [`docs/ASSIGNMENT.md`](docs/ASSIGNMENT.md) §2.
 
@@ -34,7 +36,7 @@
 docs/
   ASSIGNMENT.md          Hướng dẫn cho 3 thành viên + phân công chi tiết theo ngày
   PROGRESS.md            Trạng thái 14 ngày, nhật ký phiên
-  decisions.md           ADR-01..14 — mọi quyết định kiến trúc và hướng
+  decisions.md           ADR-01..17 — mọi quyết định kiến trúc và hướng
   change-requests.md     CR — thay đổi yêu cầu có kiểm soát
   requirements.csv       58 yêu cầu (máy đọc được)
   backlog.csv / .md      105 mục công việc MoSCoW, có cột Owner
@@ -44,13 +46,14 @@ docs/
   source/                Bản gốc của 5 tài liệu nộp (SRS, TP, RTM, kế hoạch 14 ngày, cẩm nang môn học)
   reference/             Bảng giá tham chiếu chốt ngày 2 (REF-01)
   testcases/             226 test case: t1.csv, t2.csv, t3.csv, nfr.csv, uat.csv
-  defects/defects.csv    Defect log
-  reviews/               Biên bản review (tạo ở Ngày 3, 5, 8)
+  design/                 5 tài liệu thiết kế test (H2-2) + design-index.csv (khai báo review chéo)
+    defects/defects.csv    Defect log
+  reviews/               Biên bản review: inspection-srs.md (Ngày 3), design-review.md (Ngày 5)
 
 reports/
   gates/day-NN.md        Gate báo cáo từng ngày
   execution-log.csv      Nhật ký thực thi (sinh tự động)
-  exit-criteria.md       Chấm 7 exit criteria
+  exit-criteria.md       Chấm 8 exit criteria (EC-1..EC-8)
   raw/                   Bằng chứng thô (ảnh Lighthouse, JSON, survey)
 
 tests/
@@ -93,7 +96,9 @@ npm run test:cross-browser   # NFR-04: Chromium, Firefox, WebKit, Edge
 npm run test:perf            # k6 tải đọc (cần k6 ngoài npm)
 npm run lh:scan              # Lighthouse 3 site × 3 lần
 npm run exec:sync            # đồng bộ kết quả vào execution log + test case
-npm run gate                 # req:check + rtm:check + exit:check
+npm run assign:check         # 4 nguyên tắc phân công: cân bằng, ≥2 người/module, NFR chuyên trách
+npm run exit:check           # chấm EC-1..EC-8
+npm run gate                 # req:check + rtm:check + assign:check + exit:check
 ```
 
 Tất cả script Gate phải **exit 0**.

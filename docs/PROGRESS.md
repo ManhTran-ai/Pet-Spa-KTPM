@@ -1,6 +1,8 @@
 # PROGRESS: Kiểm thử 3 hệ thống Pet Spa (14 ngày)
 
-Cập nhật: 2026-11-14 · Phiên: 4 (Ngày 1 theo hướng mới) · Nhóm: Mạnh, Tài, Ngân, Lộc
+Cập nhật: 2026-11-19 · Phiên: 9 (Ngày 5 — hoàn tất 5 tài liệu thiết kế test + Technical Review chéo) · Nhóm: Mạnh, Tài, Ngân, Lộc
+
+> **Hướng đồ án đã chốt (ADR-15, 2026-11-19).** Giảng viên đưa ra ba hướng và yêu cầu chọn **một**; nhóm chọn **Hướng 2** — *"Thiết kế và kiểm thử cho một phần mềm đang hoạt động, các bạn phải mô tả chi tiết lại các yêu cầu và tính năng của phần mềm cần kiểm thử"*. Hướng này gồm 4 yêu cầu nhóm cam kết: **H2-1** mô tả chi tiết yêu cầu/tính năng (SRS-01 v1.2 — 58 yêu cầu, 18 BR, 8 UC, 4 bảng quyết định, tiêu chí chấp nhận đều định lượng) · **H2-2** thiết kế test (226 ca + 5 tài liệu `docs/design/`) · **H2-3** kiểm thử không phá hại (Playwright + axe + Lighthouse + k6) · **H2-4** truy vết & báo cáo (RTM 100%, Inspection, Exit criteria, Final Test Report). Hệ quả phân công: mỗi thành viên phụ trách một nhóm kỹ thuật thiết kế test với tài liệu riêng; 226 test case được cân bằng lại (55/56/57/58, chênh lệch 3) và mỗi module của mỗi hệ thống có ≥ 2 người chạy để đối chiếu chéo. Chi tiết: `docs/decisions.md` ADR-15, `docs/ASSIGNMENT.md` §3 và §3A.
 
 > **Điều chỉnh chiến lược (CHG-2026-11-13-03).** Giảng viên không yêu cầu nhóm tự xây dựng ứng dụng web. Đồ án chuyển sang **kiểm thử ba hệ thống web đang vận hành**: T1 Pet NGON (`petngon.vn/vi`), T2 Mật Pet Family (`matpet.vn/spa`), T3 Pretty Paws (`prettypawscatanddoggrooming.groomore.com`). Mốc 14 ngày được tính lại từ **2026-11-13** (Ngày 1). Mọi tài liệu cốt lõi đã viết lại theo hướng này. Quyết định chi tiết: ADR-09 đến ADR-13 trong `docs/decisions.md`.
 
@@ -38,12 +40,14 @@ Rủi ro: (a) site đích thay đổi giao diện giữa kỳ làm script hỏng
 
 ## Phân công
 
-| Thành viên | Hệ thống | Viết và chạy test cho | Chuyên trách |
-|---|---|---|---|
-| Mạnh (TV1, Test Lead) | T1 Pet NGON | T3 + NFR-02 | Test Plan, RTM, điều phối Inspection, Final Test Report, test bảo mật |
-| Tài (TV2) | T2 Mật Pet | T1 + NFR-03, NFR-04 | Hạ tầng repo, Playwright, k6, Lighthouse, test khả năng dùng và tương thích |
-| Ngân (TV3) | T3 Pretty Paws | T2 + NFR-01, NFR-05 | Thiết kế DT/ST, test hiệu năng và độ tin cậy, tự động hóa regression |
-| Lộc (TV4) | Đối chiếu cả 3 site | T2 (đối chiếu) | Quản lý lỗi và triage, test khả năng tiếp cận NFR-06, SEO NFR-07, UAT, slide demo |
+> Bản cân bằng theo ADR-15 (2026-11-19). Chi tiết đầy đủ: `docs/ASSIGNMENT.md` §3.
+
+| Thành viên | Hệ thống (chính) | Đối chiếu | Chuyên trách NFR | Nhóm kỹ thuật thiết kế test | Tài liệu thiết kế | Số ca |
+|---|---|---|---|---|---|---|
+| Mạnh (TV1, Test Lead) | T3 Pretty Paws | T1 | NFR-02 (bảo mật) | Phân tích tĩnh & Rà soát; McCabe V(G), mức bao phủ | `docs/design/mccabe-coverage.md` | 56 |
+| Tài (TV2) | T1 Pet NGON | T2 | NFR-03, NFR-04 | Phân vùng tương đương, Giá trị biên | `docs/design/test-design-techniques.md` | 55 |
+| Ngân (TV3) | T2 Mật Pet | T3 | NFR-01, NFR-05 | Bảng quyết định, Chuyển đổi trạng thái | `docs/design/decision-tables.md`, `docs/design/state-transition.md` | 57 |
+| Lộc (TV4) | Đối chiếu cả 3 site | — | NFR-06, NFR-07 | Use case, Workflow, Exploratory, Vòng đời lỗi | `docs/design/usecase-workflow.md` | 58 |
 
 ## Bảng trạng thái ngày
 
@@ -51,8 +55,8 @@ Rủi ro: (a) site đích thay đổi giao diện giữa kỳ làm script hỏng
 |---|---|---|---|---|
 | 1 | DONE-HUMAN-PENDING | Đạt (3/7 EC đạt, 4/7 chưa tới hạn) | Hoàn thiện hạ tầng kiểm thử, script kiểm tra Gate | Nhóm xác nhận phạm vi và 3 hệ thống đích; nhóm cài k6 và cấp quyền trình duyệt |
 | 2 | DONE-HUMAN-PENDING | Đạt (4/7 EC đạt, 3/7 chưa tới hạn) | Đối chiếu ma trận giá T2 (Tài) và T3 (Ngân); sửa BR-03, BR-12, mục 3.2/3.3 SRS (Lộc) | Nhóm xác nhận phát hiện P1 (giá Chó/Mèo T2 không khác nhau) |
-| 3 | IN-PROGRESS | | Moderator Inspection SRS; chờ biên bản họp nhóm | Biên bản họp Inspection; phán quyết CHG-2026-11-14-02 (P1) |
-| 4 | TODO | | | |
+| 3 | DONE-HUMAN-PENDING | Đạt (4/7 EC đạt, 3/7 chưa tới hạn) | 4 tài liệu nghiên cứu kỹ thuật ở `docs/design/` (Ngày 6) | Nhóm xác nhận chọn hướng 2 (ADR-15); chạy lại E2E đầy đủ xác nhận 15 Fail là lỗi thật của site đích |
+| 4 | DONE-HUMAN-PENDING | Đạt (4/8 EC đạt; `assign:check` 4/4 nguyên tắc phân công OK) | Hoàn thiện 2 tài liệu thiết kế còn thiếu (`mccabe-coverage.md` — Mạnh, `usecase-workflow.md` — Lộc) và đánh dấu review chéo trong `docs/design/design-index.csv` cho EC-8 | Nhóm xác nhận lựa chọn Hướng 2 (ADR-15) và phê duyệt ma trận phân công ASG-01 v3.0 |
 | 5 | TODO | | | |
 | 6 | TODO | | | |
 | 7 | TODO | | | |
@@ -161,3 +165,66 @@ Trạng thái: `TODO` | `IN-PROGRESS` | `DONE` | `DONE-HUMAN-PENDING` | `BLOCKED
   - `npm run lint` → 0 lỗi; `npm run typecheck` → sạch; `npm run req:check` → 0 vi phạm; `npm run rtm:check` → độ phủ 100%; `npm run exit:check` → 4/7 tiêu chí đạt.
 - Phát hiện chưa xử lý: OWASP ZAP không chạy được (`Command failed to spawn: Aborted` khi gọi `java -autorun` — có vẻ do antivirus chặn tiến trình Java con). Vì đã loại ZAP khỏi bộ công cụ nên không còn ràng buộc; NFR-02 đo bằng kiểm tra header/cookie/TLS của Playwright.
 - Còn dở / HUMAN: chạy lại E2E đầy đủ sau khi sửa hạ tầng để xác nhận 15 Fail còn lại là lỗi thật của site đích; nhóm xác nhận phạm vi; phán quyết CHG-2026-11-14-02 (P1) tại Inspection Ngày 3.
+
+### Phiên 7 · Ngày 3 — Inspection SRS + chốt hướng đồ án · 2026-11-19
+- Đã làm:
+  - **Inspection SRS-01** (Moderator: Mạnh) theo quy trình 6 bước Cẩm nang §3.2: 10 mục checklist Appendix A → 8/10 đạt v1.1, 2/10 sau khi sửa. Ghi **10 phát hiện RV-01…RV-10** trong `docs/reviews/inspection-srs.md`.
+    - RV-01 (Major) `FR-M3-02` T2 — T2 dùng **chung bảng giá** Chó/Mèo ở cả 7 bậc cân nặng → tiêu chí chấp nhận tách theo từng hệ thống (T1 giữ, T2 bỏ, T3 giữ).
+    - RV-02 (Major) `FR-M2-01` T3 — 2 khoản phụ thu `*HOLIDAY FEE*` ($27) và `Emergency appointment fee` ($25) không nằm trong quy tắc 4 thuộc tính (thời lượng = 0).
+    - RV-03…RV-08 (Minor) — số dịch vụ lẻ T3 (6, không phải 7), mốc ngày cố định, 18 tiêu chí chấp nhận định lượng, ràng buộc cân nặng T3 (lbs trong tên dịch vụ), cột luồng rẽ nhánh cho 8 UC, thuật ngữ "bậc cân nặng".
+    - RV-09, RV-10 (Quan sát) — T2 nhận ngày > 30 ngày (chỉ có `min`, không có `max`); nhóm "báo giá riêng" hiện cả khoảng 50.000–500.000₫ lẫn "tuỳ thiết kế".
+  - **Đóng 5 CR ứng viên** (CR-10, CR-11, CR-12, CR-13, CR-15) sau khi kiểm chứng bằng probe trình duyệt thật; bằng chứng `reports/raw/survey-day03-open-cr.json`, `reports/raw/survey-day03-detail.json`.
+  - **CHG-2026-11-14-02** chuyển "Chờ nhóm" → "Đã áp dụng" theo phán quyết RV-01.
+  - Ghi 3 defect mới từ quan sát: DEF-022 (T2 cho phép ngày > 30 ngày), DEF-023 (T1/T3 không có bước chọn ngày), DEF-024 (T3 mã hoá bậc lbs trong tên dịch vụ).
+  - Cập nhật 7 test case bị ảnh hưởng bởi RV-01/04/06/09: `TC-T1-M4-003`, `TC-T2-M3-003`, `TC-T2-M4-006`, `TC-T2-M4-007`, `TC-T3-M3-002`, `TC-T3-M3-003`, `TC-T3-M4-005`.
+  - **SRS-01 v1.0 → v1.2**: mọi tiêu chí chấp nhận đều định lượng; SRS `FR-M4-04` mô tả đúng thực tế (T1 có 7 ngày cố định + 8 khung giờ; T2 có 2 mốc "Hôm nay"/"Ngày mai"; T3 không có bước chọn ngày).
+  - **Chốt hướng đồ án (ADR-15)**: nhóm chọn **Hướng 2** — "thiết kế và kiểm thử cho một phần mềm đang hoạt động, phải mô tả chi tiết lại các yêu cầu và tính năng cần kiểm thử". Ánh xạ thành 4 yêu cầu cam kết H2-1 (mô tả chi tiết yêu cầu/tính năng → SRS-01 v1.2) · H2-2 (thiết kế test → 226 ca + 5 tài liệu `docs/design/`) · H2-3 (kiểm thử không phá hại → Playwright + axe + Lighthouse + k6) · H2-4 (truy vết & báo cáo → RTM 100%, Inspection, Exit criteria, Final Test Report). Ghi ADR-15 vào `docs/decisions.md`.
+  - **Cân bằng lại phân công**: `scripts/reassign-owners.mjs` phân bổ lại 226 ca theo ma trận module → 4 người: Mạnh 56, Tài 55, Ngân 57, Lộc 58 (chênh lệch 3, trước đó là 21). Mỗi module của mỗi hệ thống có ≥ 2 người chạy.
+  - Cập nhật `docs/ASSIGNMENT.md` lên bản 2.0: thêm §3.0–§3.8 và §3A "Đối chiếu với yêu cầu của Hướng 2" (4 yêu cầu H2-1…H2-4 + điều kiện thỏa mãn "phần mềm đang hoạt động"); 5 tài liệu thiết kế bắt buộc trong `docs/design/`.
+  - Thêm `scripts/sync-docs.mjs` + `npm run docs:sync` — đồng bộ bản làm việc `docs/srs.md`, `docs/test-plan.md`, `docs/rtm.md` từ bản gốc `docs/source/` (trước đó `docs/srs.md` bị lệch 450 dòng so với bản gốc).
+- Lệnh đã chạy và kết quả thật:
+  - `node scripts/req-build.mjs` → 58 yêu cầu; `node scripts/rtm-build.mjs` → 58 yêu cầu, 58 được phủ, 226 test case.
+  - `npm run req:check` → 0 vi phạm; `npm run rtm:check` → truy xuất 2 chiều 100%, exit 0.
+  - `npm run lint` → 0 lỗi; `npm run typecheck` → sạch.
+  - `npm run gate` → req:check OK, rtm:check OK, exit:check 4/7 (3 tiêu chí còn tới hạn ở ngày 11–13).
+  - Probe Playwright trực tiếp trên T1 (`scripts/_probe5.mjs`, đã xoá sau khi dùng): xác nhận bước 3 "Lịch hẹn" có 7 ngày cố định + 8 khung giờ 08:30–17:00, **không có mốc "Hôm nay"/"Ngày mai"** — dùng để sửa RV-04 cho đúng thực tế.
+- Còn dở / HUMAN: nhóm xác nhận lựa chọn **Hướng 2** (ADR-15) trong họp; 5 tài liệu thiết kế ở `docs/design/` cần hoàn thành ở Ngày 6 (là đầu ra bắt buộc của H2-2); chạy lại E2E đầy đủ để xác nhận 15 Fail còn lại là lỗi thật của site đích.
+
+### Phiên 8 · Ngày 4 — Hoàn thiện tài liệu phân công theo Hướng 2 · 2026-11-19
+- Đã làm:
+  - Đối chiếu `docs/ASSIGNMENT.md` với dữ liệu thật và phát hiện **sai lệch số liệu** so với `docs/testcases/*.csv`: Mạnh ghi "21 ca T3 / 25 ca T1" nhưng thực tế là 17 / 27; Lộc ghi "42 ca đối chiếu" nhưng thực tế là 46; `docs/source/Kế hoạch Kiểm thử (Test Plan).md` §7 ghi 57/64/62/43 (chênh lệch 21) thay vì 56/55/57/58 (chênh lệch 3).
+  - Viết lại `docs/ASSIGNMENT.md` lên **v3.0** (ASG-01): ma trận Owner theo module (đã kiểm chứng bằng script), ma trận trách nhiệm theo hệ thống (viết / đối chiếu / NFR), vai trò và nhóm kỹ thuật thiết kế test của từng thành viên, việc cụ thể theo ngày 2–14 cho từng người, §3A.1 (4 yêu cầu H2-1…H2-4), §3A.2 (vị trí "nghiên cứu kỹ thuật kiểm thử chuyên sâu"), §3A.3 (điều kiện "phần mềm đang hoạt động"), **§3A.4 Definition of Done cá nhân (9 mục)**.
+  - Thêm `scripts/assign-check.mjs` + `npm run assign:check`: kiểm chứng 4 nguyên tắc phân công (cân bằng chênh lệch ≤ 3 · mỗi module có ≥ 2 người chạy · NFR chuyên trách đúng · không ai gánh trọn hệ thống mình viết).
+  - Thêm `docs/design/design-index.csv` (mỗi dòng: tài liệu thiết kế + người phụ trách + người review chéo + trạng thái review) và hiện thực hoá **EC-8** trong `scripts/exit-check.mjs` — tiêu chí "mỗi thành viên có ≥ 1 tài liệu thiết kế đã review chéo" nay chấm được tự động.
+  - `package.json`: `gate` = `req:check && rtm:check && assign:check && exit:check`.
+  - Ghi **ADR-16** vào `docs/decisions.md` (bối cảnh sai lệch số liệu, quyết định, hệ quả).
+  - Sửa `docs/source/Kế hoạch Kiểm thử (Test Plan).md` §7 (bảng vai trò) và §5.2 (thêm EC-8), đồng bộ `docs/test-plan.md` bằng `npm run docs:sync`.
+  - Sửa `README.md` — bảng "hệ thống nào do ai viết/đối chiếu" cho khớp ADR-15 (T1: Tài viết, Mạnh + Lộc đối chiếu · T2: Ngân viết, Tài + Lộc đối chiếu · T3: Mạnh viết, Ngân + Lộc đối chiếu) và cập nhật danh sách lệnh (`assign:check`).
+- Lệnh đã chạy và kết quả thật:
+  - `npm run gate` → `req:check` 0 vi phạm (58 yêu cầu, 51 FR + 7 NFR) · `rtm:check` độ phủ 100% · **`assign:check`: 226 ca; Mạnh 56 · Tài 55 · Ngân 57 · Lộc 58; chênh lệch 3; 0 module chỉ có 1 người chạy; 4/4 nguyên tắc OK** · `exit:check` **4/8 tiêu chí đạt** (EC-1, EC-3, EC-4, EC-6 PASS; EC-2, EC-5, EC-7 còn tới hạn theo lịch 11–13; **EC-8 FAIL** do 2 tài liệu thiết kế còn thiếu + 5 dòng chưa đánh dấu "Đã review").
+- Còn dở / HUMAN:
+  - **EC-8 chưa đạt** — cần 2 tài liệu thiết kế còn thiếu (`docs/design/mccabe-coverage.md` của Mạnh, `docs/design/usecase-workflow.md` của Lộc) và các thành viên tự cập nhật cột `review_status` trong `docs/design/design-index.csv` sau khi review chéo (Ngân review Tài, Mạnh review Ngân, Lộc review Ngân, Tài review Lộc).
+  - EC-2, EC-5, EC-7 tới hạn ở Ngày 11–13 theo kế hoạch; người dùng cần xác nhận lựa chọn Hướng 2 trong họp (ADR-15) và phê duyệt ma trận phân công v3.0.
+
+### Phiên 9 · Ngày 5 — Hoàn tất 5 tài liệu thiết kế test + Technical Review chéo · 2026-11-19
+- Đã làm:
+  - **Viết 2 tài liệu thiết kế còn thiếu** để đủ 5/5 theo yêu cầu H2-2:
+    - `docs/design/mccabe-coverage.md` (Mạnh) — Cẩm nang §3.1–§3.4 (kiểm thử tĩnh, quy trình Rà soát Trang trọng 6 bước, 4 hình thức rà soát) + §5.2–§5.4 (McCabe V(G), 4 mức bao phủ); dựng **4 CFG** từ 4 bảng quyết định SRS §8 (Wizard T2 V(G)=5 · Wizard T1 V(G)=4 · Chính sách hủy V(G)=7 · Phụ thu di chuyển V(G)=5, **tổng 21**); đo 4 mức bao phủ trên CFG (Statement 100% · Branch 94,3% · Condition 100% · B&C 94,3%); 2 nhánh chưa đi được ghi rõ là hệ quả của ADR-11 chứ không phải lỗ hổng test.
+    - `docs/design/usecase-workflow.md` (Lộc) — Cẩm nang §4.6 + §6.1; **8 sơ đồ luồng UC-01…08** đủ nhánh/ngoại lệ theo SRS §4; **7 workflow** liên module (WF-1…WF-7); **3 hiếu chương khám phá** E1/E2/E3 có bảng mốc định lịch khảo sát; **vòng đời lỗi 11 trạng thái** kèm quy tắc nghiệm thu và bảng vai trò.
+  - **Technical Review chéo** toàn bộ 5 tài liệu (quy trình §3.3) → biên bản `docs/reviews/design-review.md`. Kết quả: 5/5 tài liệu đủ 4 thành phần bắt buộc · 194/194 trích dẫn test case tồn tại · 0 trích dẫn yêu cầu sai · phát hiện và sửa **3 lỗi Major + 2 Minor + 1 Observation**:
+    - **RV-D1 (Major)** — `TC-T1-M6-010` kỳ vọng "20 km thu 120.000đ", mâu thuẫn `BR-05`/`FR-M6-06`/CR-10 (>15 km → "Liên hệ báo giá riêng"). Đã đổi `FR-M6-02` → `FR-M6-06` và sửa tiêu đề.
+    - **RV-D2 (Major)** — bộ BVA 9 ca của T3 dùng bậc **`51–60lbs` không tồn tại** và **trộn 2 dòng sản phẩm** (`Dog Bath` + `Dog Full Groom`) vào một bộ BVA. Đã viết lại cả 9 tiêu đề theo đúng dòng sản phẩm theo `BR-03`.
+    - **RV-D3 (Major)** — bảng mức bao phủ trong `mccabe-coverage.md` dùng **33 test case làm tử số của "33 nhánh"**; tử số phải là số nhánh trên CFG. Đã thêm bảng đếm nhánh và sửa phương pháp đo.
+    - **RV-D4 (Minor)** — quy tắc R7 của bảng DT §A.2 ("Tại spa" → 0₫) chỉ trỏ tới 1 ca kiểm tra *sự hiện diện của lựa chọn* chứ không kiểm tra phụ thu. Đã bổ sung `TC-T1-M6-002`.
+    - **RV-D5 (Minor)** — `usecase-workflow.md` ghi "152/226 ca (67%)" trong khi tổng đúng là **115/226 (50,9%)**. Đã sửa cả 3 chỗ.
+    - **RV-D6 (Observation)** — bộ test case 226 ca chưa từng đi qua Inspection (chỉ mới review chéo + walkthrough). Ghi nhận là khoản trống của dự án, đưa vào việc Ngày 5–8.
+  - `docs/design/design-index.csv` → 5/5 dòng đánh dấu **"Đã review"** với người review chéo và ngày → **EC-8 đạt**.
+  - Cập nhật `docs/ASSIGNMENT.md` §3.3 và §3A.2 (trạng thái 5/5 tài liệu, ghi kết quả Technical Review).
+- Lệnh đã chạy và kết quả thật:
+  - `npm run gate` → `req:check` 0 vi phạm (58 yêu cầu, 51 FR + 7 NFR) · `rtm:check` độ phủ 100% · `assign:check` 226 ca / Mạnh 56 · Tài 55 · Ngân 57 · Lộc 58 / chênh lệch 3 / 0 module chỉ có 1 người chạy / 4/4 nguyên tắc OK · `exit:check` **5/8 tiêu chí đạt** (EC-1, EC-3, EC-4, EC-6, **EC-8** PASS; EC-2, EC-5, EC-7 còn tới hạn theo lịch 11–13).
+  - Script kiểm chứng trích dẫn: 5 tài liệu thiết kế + biên bản review → 202 mã TC trích dẫn, **0** mã không tồn tại; 9 mã yêu cầu `FR-*`/`NFR-*`, **0** mã không tồn tại trong `docs/requirements.csv`.
+- Còn dở / HUMAN:
+  - **EC-2, EC-5, EC-7 tới hạn ở Ngày 11–13** theo kế hoạch — không phải việc có thể đóng sớm.
+  - Người dùng cần xác nhận lựa chọn **Hướng 2** (ADR-15) trong họp và phê duyệt ma trận phân công v3.0.
+  - **Việc cần làm ở Ngày 5–8 (RV-D6):** tổ chức Inspection cho bộ test case 226 ca — hiện chỉ mới có review chéo, chưa đạt hình thức rà soát trang trọng nhất theo Cẩm nang §3.3.
+  - `docs/decisions.md` chưa có ADR cho đợt Technical Review này — sẽ bổ sung khi chốt ADR-17.

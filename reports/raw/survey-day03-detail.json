@@ -1,0 +1,148 @@
+{
+  "T1": {
+    "coNutDatLich": true,
+    "buoc": [
+      "event_available ĐẶT LỊCH GROOMING Hoàn tất 4 bước nhanh",
+      "event_available ĐẶT LỊCH GROOMING",
+      "event_available",
+      "Hoàn tất 4 bước nhanh",
+      "close",
+      "1 Dịch vụ 2 Bé cưng 3 Lịch hẹn 4 Địa điểm",
+      "1 Dịch vụ",
+      "1",
+      "Dịch vụ",
+      "2 Bé cưng",
+      "2",
+      "Bé cưng",
+      "3 Lịch hẹn",
+      "3",
+      "Lịch hẹn",
+      "4 Địa điểm",
+      "4",
+      "Địa điểm",
+      "Chọn dịch vụ",
+      "LOÀI & CÂN NẶNG",
+      "pets Chó pets Mèo",
+      "pets Chó",
+      "pets",
+      "pets Mèo",
+      "bathtub",
+      "Tắm 88.000₫ – 660.000₫ schedule 45' home_work Có tận nhà",
+      "Tắm 88.000₫ – 660.000₫",
+      "88.000₫ – 660.000₫",
+      "schedule 45' home_work Có tận nhà",
+      "schedule 45'",
+      "schedule",
+      "home_work Có tận nhà",
+      "home_work",
+      "check_circle",
+      "content_cut",
+      "Cắt tỉa lông 145.000₫ – 440.000₫",
+      "145.000₫ – 440.000₫",
+      "schedule 90' store Chỉ tại spa",
+      "schedule 90'",
+      "store Chỉ tại spa",
+      "store",
+      "cut",
+      "Cạo lông 88.000₫ – 385.000₫",
+      "88.000₫ – 385.000₫",
+      "schedule 60' home_work Có tận nhà",
+      "schedule 60'",
+      "shower",
+      "Combo Tắm + Vệ sinh 130.000₫ – 725.000₫",
+      "130.000₫ – 725.000₫",
+      "spa",
+      "Combo Tắm + Cắt tỉa 240.000₫ – 835.000₫",
+      "240.000₫ – 835.000₫",
+      "schedule 120' store Chỉ tại spa",
+      "schedule 120'",
+      "auto_awesome",
+      "Combo Tắm + Cạo 185.000₫ – 780.000₫",
+      "185.000₫ – 780.000₫",
+      "schedule 90' home_work Có tận nhà",
+      "Tắm · Chó nhỏ (3–5kg) 155.000₫ Tạm tính 155.000₫",
+      "Tắm · Chó nhỏ (3–5kg) 155.000₫",
+      "Tắm · Chó nhỏ (3–5kg)",
+      "Tạm tính 155.000₫",
+      "Tạm tính",
+      "Tiếp tục chevron_right",
+      "chevron_right"
+    ],
+    "mocNgay": []
+  },
+  "T2": {
+    "coQuick": {
+      "coHomNay": true,
+      "coNgayMai": true,
+      "inputDate": [
+        {
+          "min": "2026-11-19",
+          "max": null
+        }
+      ]
+    },
+    "form": {
+      "inputs": [
+        {
+          "tag": "INPUT",
+          "type": "tel",
+          "name": null,
+          "placeholder": "0xxx xxx xxx",
+          "min": null,
+          "max": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "name": null,
+          "placeholder": "Vd: Mochi",
+          "min": null,
+          "max": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "date",
+          "name": null,
+          "placeholder": null,
+          "min": "2026-11-19",
+          "max": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "name": null,
+          "placeholder": null,
+          "min": null,
+          "max": null
+        }
+      ],
+      "text": "Trang chủ\nChó\nMèo\nTìm Bé Thương\nSpa\nBảo hành\nVề Mật Pet\nVI\n|\nEN\n0939.86.36.96\nSPA & GROOMING · TỪ 2011\nBiết giá trước\nkhi đưa bé đến spa.\n\nChọn loại bé, cân nặng và dịch vụ — bạn thấy ngay mức giá dự kiến minh bạch, rồi giữ chỗ chỉ với số điện thoại. Không còn phải nhắn tin hỏi giá.\n\nTính giá dự kiến →\nXem bảng giá\n✓\nAn toàn cho bé\n✓\nHơn 15 năm kinh nghiệm\n✓\nNhân viên có nghề\n🐾\nĐÃ CHĂM SÓC\n10.000+\nCALCULATOR\nTính giá dự kiến cho bé\n\nBa bước nhanh. Giá hiện ngay khi bạn chọn — chưa phải để lại thông tin gì.\n\n✓\nLoại bé\nChó / Mèo\n✓\nCân nặng\nBậc định sẵn\n3\nDịch vụ\nCombo hoặc lẻ\nChọn combo hoặc dịch vụ lẻ\n\nChọn 1 combo trọn gói, hoặc tự ghép dịch vụ lẻ. Nhuộm & dịch vụ \"báo giá riêng\" có thể thêm kèm.\n\nCombo trọn gói\nDịch vụ lẻ\nCombo Tắm Vệ Sinh\n200k\nCombo Tắm Cạo\n250k\nCombo Tắm Cắt\n350k\nCombo Tắm Cắt Tạo Hình\n400k\nNHUỘM TẠO KIỂU\nNhuộm 2 tai + đuôi\n250k\nNhuộm 4 chân\n250k\nNhuộm hình nhỏ\n300k\nDỊCH VỤ BÁO GIÁ RIÊNG\nGỡ rối\nBáo giá theo tình trạng lông: 50.000 – 500.000đ\nBáo giá riêng\nTẩy ố\nBáo giá theo tình trạng lông: 50.000 – 500.000đ\nBáo giá riêng\nTắm trắng\nBáo giá theo tình trạng lông: 50.000 – 500.000đ\nBáo giá riêng\nXả dưỡng\nBáo giá theo tình trạng lông: 50.000 – 500.000đ\nBáo giá riêng\nNhuộm hình lớn\nBáo giá tuỳ kích thước & màu\nBáo giá riêng\nNhuộm tạo hình cơ thể\nBáo giá theo thiết kế riêng\nBáo giá riêng\n← Quay lại\nGiữ chỗ ngay →\nGIÁ DỰ KIẾN\nChọn dịch vụ để xem giá dự kiến cho bé của bạn 🐾\nGiữ chỗ với mức giá này →\nTÓM TẮT LỰA CHỌN\nLoại bé\nChó\nCân nặng\n>3–6kg\n\nGiá cuối được xác nhận tại spa sau khi cân & kiểm tra tình trạng lông. Dịch vụ \"báo giá riêng\" sẽ được tư vấn khi spa gọi lại.\n\nSố điện thoại / Zalo *\nTên bé\nNgày mong muốn\nHôm nay\n19/11\nNgày mai\n20/11\nT7\n21/11\nCN\n22/11\nT2\n23/11\nNgày khác\n\nBằng việc gửi, bạn đồng ý để Mật Pet Family liên hệ lại qua điện thoại / Zalo để xác nhận lịch.\n\nGiữ chỗ cho bé →\n* Giá trên chưa bao gồm phí gỡ rối, tẩy ố và tắm trắng.\n\nPremium pet shop đồng hành tìm người bạn bốn chân phù hợp nhất cho từng gia đình Việt.\n\nYouTube\nFacebook\nTikTok\n\nPET SHOP\n\nTrang chủ\nChó\nMèo\nTìm Bé Thương\nBảng giá\nBảo hành\nVề Mật Pet\nTuyển dụng\n\nNỘI DUNG & CỘNG ĐỒNG\n\nBlog\nHướng dẫn chăm sóc\nSo sánh giống\nHỏi đáp\nĐánh giá khách hàng\nShowroom\n\nLIÊN HỆ\n\n239 Nguyễn Hồng Đào, Q. Tân Bình, TP.HCM\n0939863696\nmatpetfamily2011@gmail.com\n08:00 - 22:00 mỗi ngày\n© 2011–2026 Mật Pet Family. All rights reserved.\n×\nMật đây! 🐾\nCần chọn bé cưng? Để Mật giúp nha."
+    }
+  },
+  "T3": {
+    "buoc": [
+      {
+        "step": 0,
+        "inputs": [
+          {
+            "tag": "SELECT",
+            "type": null,
+            "name": null,
+            "placeholder": null
+          },
+          {
+            "tag": "INPUT",
+            "type": "tel",
+            "name": null,
+            "placeholder": "Mobile number"
+          }
+        ],
+        "buttons": [
+          "more ˅",
+          "Login"
+        ],
+        "coDate": false
+      }
+    ]
+  }
+}
