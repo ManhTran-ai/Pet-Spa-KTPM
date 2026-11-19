@@ -2,9 +2,11 @@
 
 ## Hệ thống Đặt lịch Dịch vụ Chăm sóc Thú cưng / Spa — Kiểm thử 3 hệ thống đích
 
-Mã tài liệu: TP-01 · Phiên bản 1.0 (Ngày 5, sau Technical Review thiết kế test) · Người phụ trách: Mạnh (Test Lead)
+Mã tài liệu: TP-01 · Phiên bản 1.1 (Ngày 3, cập nhật theo ADR-15) · Người phụ trách: Mạnh (Test Lead)
 
 Đầu vào: SRS-01 (test basis), RTM-01 · Căn cứ lý thuyết: Cẩm nang môn Thiết kế và Kiểm thử Phần mềm, ISTQB CTFL, IEEE 829 · Nhóm: Mạnh, Tài, Ngân, Lộc
+
+> **Hướng đồ án: Hướng 2** — *"Thiết kế và kiểm thử cho một phần mềm đang hoạt động, các bạn phải mô tả chi tiết lại các yêu cầu và tính năng của phần mềm cần kiểm thử"* (ADR-15). Kế hoạch này là **H2-3** (kiểm thử) và phần **H2-2** (thiết kế test) của Hướng 2; **H2-1** (mô tả chi tiết yêu cầu/tính năng) do SRS-01 đảm nhiệm.
 
 > **Hướng tài liệu.** Bản này thay thế bản TP-01 v0.1 của hệ thống do nhóm tự xây (đã archive). Vì không có mã nguồn của hệ thống đích, chiến lược chuyển sang **kiểm thử hộp đen / hộp xám**: kiểm thử hệ thống (E2E trình duyệt), kiểm thử tích hợp (quan sát luồng front-end → API của site đích), và kiểm thử phi chức năng. **Không có kiểm thử đơn vị hay phân tích tĩnh mã nguồn của hệ thống đích.**
 
@@ -106,6 +108,7 @@ Không tích hợp mã nguồn (không có). Thay vào đó kiểm tra **hợp �
 | Chuyển đới trạng thái | Wizard T2 (§8.1) và wizard T1 (§8.2) | Phủ mọi chuyển hợp lệ và mọi ô ✗ |
 | Use case, workflow | UC-01…UC-08 | Luồng chính thành công và mọi luồng rẽ nhánh |
 | Khám phá | Cả 3 site, 1 phiên 60 phút/site sau vòng 1 | Theo hiến chương: mục tiêu, phạm vi, ghi chú, lỗi tìm được |
+| **McCabe V(G) & độ bao phủ** (ADR-17) | 4 bảng quyết định SRS §8.1–§8.4 | Vì không có mã nguồn đích (ADR-13), CFG được dựng từ **chính bảng quyết định**; tính V(G) = E − N + 2p, đối chiếu V(G) = P + 1, lấy giá trị lớn hơn khi lệch; đo 4 mức bao phủ (Statement / Branch / Condition / B&C) trên CFG — tử số là **số nhánh trên CFG**, không phải số test case |
 
 Mỗi test case có đủ Test Case ID, Description, Pre-condition, Steps, Expected Output và đạt 4C (đúng đắn, rõ ràng, đầy đủ, nhất quán).
 
@@ -114,7 +117,7 @@ Mỗi test case có đủ Test Case ID, Description, Pre-condition, Steps, Expec
 | Hoạt động | Hình thức | Ngày | Vai trò | Sản phẩm |
 |---|---|---|---|---|
 | Rà soát SRS đích | Inspection (6 bước, checklist SRS phụ lục A) | 3 | Moderator Mạnh; Reviewer theo vòng Mạnh → Tài → Ngân → Lộc → Mạnh; Scribe xoay vòng | Biên bản, SRS v1.0 |
-| Rà soát thiết kế test | Walkthrough rồi Technical Review | 5 | Từng tác giả trình bày; checklist thiết kế | Biên bản, SDD-test v1.0 |
+| Rà soát thiết kế test | Walkthrough rồi Technical Review | 5 | Từng tác giả trình bày; checklist thiết kế · Moderator Mạnh; Reviewer theo vòng Ngân → Tài → Lộc → Mạnh | `docs/reviews/design-review.md`, 5 tài liệu `docs/design/` v1.0 |
 | Rà soát test case | Review chéo theo checklist 4C | 8 | Người review ≠ người viết | Biên bản review test case |
 
 ### 4.5 Kiểm thử phi chức năng
@@ -164,6 +167,7 @@ Mỗi test case có đủ Test Case ID, Description, Pre-condition, Steps, Expec
 - Mỗi trong 3 hệ thống có ít nhất 1 bộ E2E tự động chạy được và xanh.
 - NFR-02 đạt trên cả 3 site; không có phát hiện bảo mật mức Critical/High.
 - UAT không có phản hồi chặn.
+- **EC-8 (ADR-15):** mỗi thành viên có ≥ 1 tài liệu thiết kế test trong `docs/design/` đã được review chéo — bảo đảm vế "thiết kế test" của Hướng 2 đủ chuyên sâu. Kiểm tra tự động bằng `npm run exit:check` với `docs/design/design-index.csv`.
 
 ### 5.3 Tạm dừng và tiếp tục
 
@@ -211,14 +215,16 @@ Không có môi trường staging: mọi kiểm thử diễn ra trên production
 
 Người viết và người chạy test case cho một hệ thống không phải người phụ trách chính hệ thống đó (tính độc lập).
 
-| Thành viên | Hệ thống phụ trách | Viết và chạy test cho | Chuyên trách | TC dự kiến |
-|---|---|---|---|---|
-| Mạnh (Test Lead) | T1 Pet NGON | T3 + NFR-02 | Test Plan, RTM, điều phối Inspection, Final Test Report, Exit criteria, test bảo mật | 57 |
-| Tài | T2 Mật Pet | T1 + NFR-03, NFR-04 | Hạ tầng repo, Playwright, Lighthouse, k6, phân tích tĩnh tài liệu, test khả năng dùng và tương thích | 64 |
-| Ngân | T3 Pretty Paws | T2 + NFR-01, NFR-05 | Thiết kế DT/ST, test hiệu năng và độ tin cậy, tự động hóa regression | 62 |
-| Lộc | Đối chiếu cả 3 site | T2 (đối chiếu) + một phần T1 | Quản lý lỗi và triage, test khả năng tiếp cận NFR-06, SEO NFR-07, UAT, slide demo | 43 |
+Phân bổ dưới đây là bản cân bằng theo **ADR-15** (2026-11-19), kiểm chứng bằng `npm run assign:check`. Chi tiết đầy đủ: `docs/ASSIGNMENT.md` §3.
 
-Tổng 226 test case dự kiến (72 ca T1, 66 ca T2, 44 ca T3, 44 ca NFR áp dụng cho cả 3 site) cộng 8 kịch bản UAT. Phân bổ đã cân bằng lại ở Ngày 1 sau khi thiết kế test case; rà lại vào cuối ngày 8 khi bộ test case v1.0 chốt.
+| Thành viên | Hệ thống chính | Viết và chạy test cho | Chuyên trách | TC |
+|---|---|---|---|---|
+| Mạnh (Test Lead) | T3 Pretty Paws | 17 ca T3 (viết) + 27 ca T1 (đối chiếu) + NFR-02 | Test Plan, RTM, điều phối Inspection, Final Test Report, Exit criteria, test bảo mật, McCabe V(G) & độ bao phủ | 56 |
+| Tài | T1 Pet NGON | 28 ca T1 (viết) + 17 ca T2 (đối chiếu) + NFR-03, NFR-04 | Hạ tầng repo, Playwright, Lighthouse, k6, EP/BVA, test khả năng dùng và tương thích | 55 |
+| Ngân | T2 Mật Pet | 32 ca T2 (viết) + 15 ca T3 (đối chiếu) + NFR-01, NFR-05 | Thiết kế DT/ST, test hiệu năng và độ tin cậy, tự động hóa regression | 57 |
+| Lộc | Đối chiếu cả 3 site | 46 ca đối chiếu (T1 17 · T2 17 · T3 12) + NFR-06, NFR-07 | Quản lý lỗi và triage, test khả năng tiếp cận NFR-06, SEO NFR-07, UC/Workflow/Exploratory, UAT, slide demo | 58 |
+
+Tổng 226 test case (72 ca T1, 66 ca T2, 44 ca T3, 44 ca NFR áp dụng cho cả 3 site) cộng 8 kịch bản UAT. Phân bổ Owner đã cân bằng lại theo ADR-15: Mạnh 56 · Tài 55 · Ngân 57 · Lộc 58 (chênh lệch 3) — trước đó là 57/64/62/43 (chênh lệch 21). Mỗi module của mỗi hệ thống có ≥ 2 người chạy để đối chiếu chéo. Rà lại vào cuối ngày 8 khi bộ test case v1.0 chốt; kiểm chứng tự động bằng `npm run assign:check`.
 
 ---
 
