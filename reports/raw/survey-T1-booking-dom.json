@@ -1,0 +1,387 @@
+{
+  "bang": [
+    [
+      "Loài & cân nặng",
+      "Tắm",
+      "Cắt tỉa lông",
+      "Cạo lông",
+      "Combo Tắm + Vệ sinh",
+      "Combo Tắm + Cắt tỉa",
+      "Combo Tắm + Cạo"
+    ],
+    [
+      "Chó"
+    ],
+    [
+      "Chó mini< 3kg",
+      "88.000₫",
+      "145.000₫",
+      "88.000₫",
+      "130.000₫",
+      "240.000₫",
+      "185.000₫"
+    ],
+    [
+      "Chó nhỏ3–5kg",
+      "155.000₫",
+      "165.000₫",
+      "110.000₫",
+      "265.000₫",
+      "405.000₫",
+      "350.000₫"
+    ],
+    [
+      "Chó vừa5–10kg",
+      "240.000₫",
+      "220.000₫",
+      "165.000₫",
+      "375.000₫",
+      "515.000₫",
+      "460.000₫"
+    ],
+    [
+      "Chó lớn10–15kg",
+      "350.000₫",
+      "275.000₫",
+      "220.000₫",
+      "460.000₫",
+      "605.000₫",
+      "550.000₫"
+    ],
+    [
+      "Chó rất lớn15–20kg",
+      "460.000₫",
+      "330.000₫",
+      "275.000₫",
+      "550.000₫",
+      "660.000₫",
+      "605.000₫"
+    ],
+    [
+      "Chó đại20–25kg",
+      "570.000₫",
+      "385.000₫",
+      "330.000₫",
+      "640.000₫",
+      "750.000₫",
+      "695.000₫"
+    ],
+    [
+      "Chó siêu đại25–30kg",
+      "660.000₫",
+      "440.000₫",
+      "385.000₫",
+      "725.000₫",
+      "835.000₫",
+      "780.000₫"
+    ],
+    [
+      "Mèo"
+    ],
+    [
+      "Mèo mini≤ 3kg",
+      "110.000₫",
+      "160.000₫",
+      "110.000₫",
+      "155.000₫",
+      "240.000₫",
+      "210.000₫"
+    ],
+    [
+      "Mèo nhỏ3–5kg",
+      "165.000₫",
+      "275.000₫",
+      "165.000₫",
+      "275.000₫",
+      "415.000₫",
+      "365.000₫"
+    ],
+    [
+      "Mèo vừa5–10kg",
+      "275.000₫",
+      "370.000₫",
+      "220.000₫",
+      "405.000₫",
+      "565.000₫",
+      "495.000₫"
+    ],
+    [
+      "Mèo lớn10–15kg",
+      "385.000₫",
+      "440.000₫",
+      "275.000₫",
+      "495.000₫",
+      "665.000₫",
+      "585.000₫"
+    ],
+    [
+      "Mèo rất lớn15–20kg",
+      "460.000₫",
+      "455.000₫",
+      "330.000₫",
+      "550.000₫",
+      "690.000₫",
+      "605.000₫"
+    ],
+    [
+      "Mèo đại20–25kg",
+      "570.000₫",
+      "520.000₫",
+      "385.000₫",
+      "640.000₫",
+      "795.000₫",
+      "695.000₫"
+    ],
+    [
+      "Mèo siêu đại25–30kg",
+      "660.000₫",
+      "585.000₫",
+      "440.000₫",
+      "725.000₫",
+      "890.000₫",
+      "780.000₫"
+    ]
+  ],
+  "modal": [
+    {
+      "cls": "bk-modal",
+      "text": "event_available Đặt lịch groomingHoàn tất 4 bước nhanhclose1Dịch vụ2Bé cưng3Lịch hẹn4Địa điểmChọn dịch vụLoài & cân nặngpetsChópetsMèoGiá hiển thị là khoảng giá theo cân. Giá cuối cùng sẽ tính theo loài + cân nặng bạn chọn ở bước sau.bathtubTắm88.000₫ – 660.000₫schedule45'home_workCó tận nhàcheck_circlecontent_cutCắt tỉa lông145.000₫ – 440.000₫schedule90'storeChỉ tại spacutCạo lông88.000₫ – 385.00"
+    }
+  ],
+  "fields": [
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "name": "",
+      "ph": "",
+      "text": "languageVI / EN",
+      "cls": "bn-locale",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "name": "",
+      "ph": "",
+      "text": "calendar_monthĐặt lịch",
+      "cls": "bn-btn bn-btn--primary bn-bar__book ga-booking-btn",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "name": "",
+      "ph": "",
+      "text": "calendar_monthĐặt lịch ngay",
+      "cls": "bn-btn bn-btn--primary bn-btn--lg ga-booking-btn",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "name": "",
+      "ph": "",
+      "text": "calendar_monthĐặt lịch",
+      "cls": "bn-btn bn-btn--primary ga-booking-btn",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "name": "",
+      "ph": "",
+      "text": "calendar_monthĐặt lịch",
+      "cls": "bn-btn bn-btn--primary ga-booking-btn",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "name": "",
+      "ph": "",
+      "text": "calendar_monthĐặt lịch",
+      "cls": "bn-btn bn-btn--primary ga-booking-btn",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "name": "",
+      "ph": "",
+      "text": "calendar_monthĐặt lịch",
+      "cls": "bn-btn bn-btn--primary ga-booking-btn",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "name": "",
+      "ph": "",
+      "text": "calendar_monthĐặt lịch",
+      "cls": "bn-btn bn-btn--primary ga-booking-btn",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "name": "",
+      "ph": "",
+      "text": "calendar_monthĐặt lịch",
+      "cls": "bn-btn bn-btn--primary ga-booking-btn",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "name": "",
+      "ph": "",
+      "text": "Vì sao giá khác nhau giữa chó và mèo?remove",
+      "cls": "hm-faq__q",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "name": "",
+      "ph": "",
+      "text": "Cân nặng được xác định thế nào?add",
+      "cls": "hm-faq__q",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "name": "",
+      "ph": "",
+      "text": "Dịch vụ nào có thể làm tại nhà?add",
+      "cls": "hm-faq__q",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "name": "",
+      "ph": "",
+      "text": "Phụ thu tại nhà tính như thế nào?add",
+      "cls": "hm-faq__q",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "name": "",
+      "ph": "",
+      "text": "Tôi cần chuẩn bị gì khi thợ đến nhà?add",
+      "cls": "hm-faq__q",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "name": "",
+      "ph": "",
+      "text": "Có thể đổi/huỷ lịch không?add",
+      "cls": "hm-faq__q",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "name": "",
+      "ph": "",
+      "text": "calendar_monthĐặt lịch ngay",
+      "cls": "bn-btn bn-btn--light bn-btn--lg ga-booking-btn",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "name": "",
+      "ph": "",
+      "text": "close",
+      "cls": "bk-close",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "name": "",
+      "ph": "",
+      "text": "petsChó",
+      "cls": "bk-pet is-on",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "name": "",
+      "ph": "",
+      "text": "petsMèo",
+      "cls": "bk-pet ",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "name": "",
+      "ph": "",
+      "text": "bathtubTắm88.000₫ – 660.000₫schedule45'home_workCó",
+      "cls": "bk-svc is-on",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "name": "",
+      "ph": "",
+      "text": "content_cutCắt tỉa lông145.000₫ – 440.000₫schedule",
+      "cls": "bk-svc ",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "name": "",
+      "ph": "",
+      "text": "cutCạo lông88.000₫ – 385.000₫schedule60'home_workC",
+      "cls": "bk-svc ",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "name": "",
+      "ph": "",
+      "text": "showerCombo Tắm + Vệ sinh130.000₫ – 725.000₫schedu",
+      "cls": "bk-svc ",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "name": "",
+      "ph": "",
+      "text": "spaCombo Tắm + Cắt tỉa240.000₫ – 835.000₫schedule1",
+      "cls": "bk-svc ",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "name": "",
+      "ph": "",
+      "text": "auto_awesomeCombo Tắm + Cạo185.000₫ – 780.000₫sche",
+      "cls": "bk-svc ",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "name": "",
+      "ph": "",
+      "text": "Tiếp tục chevron_right",
+      "cls": "bn-btn bn-btn--primary",
+      "visible": true
+    }
+  ]
+}
