@@ -69,35 +69,35 @@ BL-067,FR-M4-08,T1,Pet NGON (petngon.vn),High,ST,Manual,3,TC-T1-M4-007; TC-T1-M4
 BL-068,FR-M4-08,T2,Mật Pet Family (matpet.vn),High,ST,Auto,3,TC-T2-M4-009; TC-T2-M4-016; TC-T2-M4-017,Tài,TODO
 BL-069,FR-M4-09,T2,Mật Pet Family (matpet.vn),High,UC,Auto,1,TC-T2-M4-010,Tài,TODO
 BL-070,FR-M4-11,T3,Pretty Paws (groomore.com),High,EP,Manual,2,TC-T3-M4-005; TC-T3-M4-008,Ngân,TODO
-BL-071,FR-M4-13,T3,Pretty Paws (groomore.com),High,EP,Manual,2,TC-T3-M4-006; TC-T3-M4-007,Ngân,TODO
-BL-072,FR-M5-01,T3,Pretty Paws (groomore.com),High,UC,Manual,1,TC-T3-M5-001,Mạnh,TODO
-BL-073,FR-M5-03,T1,Pet NGON (petngon.vn),High,UC,Manual,4,TC-T1-M5-003; TC-T1-M5-004; TC-T1-M5-005; TC-T1-M5-006,Mạnh,TODO
-BL-074,FR-M5-04,T2,Mật Pet Family (matpet.vn),High,UC,Manual,3,TC-T2-M5-003; TC-T2-M5-004; TC-T2-M5-005,Ngân,TODO
-BL-075,FR-M5-04,T3,Pretty Paws (groomore.com),High,UC,Manual,1,TC-T3-M5-002,Mạnh,TODO
-BL-076,FR-M6-02,T1,Pet NGON (petngon.vn),High,DT,Manual,8,TC-T1-M6-003; TC-T1-M6-004; TC-T1-M6-005; TC-T1-M6-006; TC-T1-M6-007; TC-T1-M6-008; TC-T1-M6-009; TC-T1-M6-020,Tài,TODO
-BL-077,FR-M6-04,T1,Pet NGON (petngon.vn),High,UC,Manual,2,TC-T1-M6-015; TC-T1-M6-016,Mạnh,TODO
-BL-078,FR-M6-05,T1,Pet NGON (petngon.vn),High,UC,Manual,1,TC-T1-M6-017,Lộc,TODO
-BL-079,FR-M6-06,T1,Pet NGON (petngon.vn),High,DT,Manual,3,TC-T1-M6-010; TC-T1-M6-018; TC-T1-M6-019,Mạnh,TODO
-BL-080,FR-M7-02,T2,Mật Pet Family (matpet.vn),High,EP,Auto,3,TC-T2-M7-002; TC-T2-M7-003; TC-T2-M7-004,Ngân,TODO
-BL-081,FR-M7-03,T1,Pet NGON (petngon.vn),High,UC,Manual,1,TC-T1-M7-001,Tài,TODO
-BL-082,FR-M7-03,T2,Mật Pet Family (matpet.vn),High,UC,Manual,1,TC-T2-M7-005,Lộc,TODO
-BL-083,NFR-01,ALL,Cả 3 hệ thống,High,Lighthouse,Auto,6,TC-NFR-01-001; TC-NFR-01-002; TC-NFR-01-003; TC-NFR-01-004; TC-NFR-01-005; TC-NFR-01-006,Ngân,TODO
-BL-084,NFR-03,ALL,Cả 3 hệ thống,High,Use case,Manual,4,TC-NFR-03-001; TC-NFR-03-002; TC-NFR-03-003; TC-NFR-03-004,Tài,TODO
-BL-085,NFR-04,ALL,Cả 3 hệ thống,High,UC,Auto,6,TC-NFR-04-001; TC-NFR-04-002; TC-NFR-04-003; TC-NFR-04-004; TC-NFR-04-005; TC-NFR-04-006,Tài,TODO
-BL-086,NFR-05,ALL,Cả 3 hệ thống,High,Use case,Manual,4,TC-NFR-05-001; TC-NFR-05-002; TC-NFR-05-003; TC-NFR-05-004,Ngân,TODO
-BL-087,NFR-06,ALL,Cả 3 hệ thống,High,Accessibility,Auto,6,TC-NFR-06-001; TC-NFR-06-002; TC-NFR-06-003; TC-NFR-06-004; TC-NFR-06-005; TC-NFR-06-006,Lộc,TODO
-BL-088,NFR-07,ALL,Cả 3 hệ thống,High,SEO,Auto,6,TC-NFR-07-001; TC-NFR-07-002; TC-NFR-07-003; TC-NFR-07-004; TC-NFR-07-005; TC-NFR-07-006,Lộc,TODO
-BL-089,FR-M2-04,T2,Mật Pet Family (matpet.vn),Medium,UC,Manual,2,TC-T2-M2-004; TC-T2-M2-005,Ngân,TODO
-BL-090,FR-M2-06,T3,Pretty Paws (groomore.com),Medium,UC,Manual,1,TC-T3-M2-008,Ngân,TODO
-BL-091,FR-M2-07,T2,Mật Pet Family (matpet.vn),Medium,UC,Manual,1,TC-T2-M2-003,Lộc,TODO
-BL-092,FR-M2-07,T3,Pretty Paws (groomore.com),Medium,UC,Manual,1,TC-T3-M2-009,Lộc,TODO
-BL-093,FR-M3-06,T2,Mật Pet Family (matpet.vn),Medium,UC,Manual,1,TC-T2-M3-010,Ngân,TODO
-BL-094,FR-M3-07,T1,Pet NGON (petngon.vn),Medium,UC,Manual,2,TC-T1-M3-005; TC-T1-M3-006,Tài,TODO
-BL-095,FR-M4-05,T2,Mật Pet Family (matpet.vn),Medium,EP,Manual,1,TC-T2-M4-007,Ngân,TODO
-BL-096,FR-M5-05,T2,Mật Pet Family (matpet.vn),Medium,UC,Manual,1,TC-T2-M5-006,Lộc,TODO
-BL-097,FR-M7-05,T2,Mật Pet Family (matpet.vn),Medium,UC,Auto,1,TC-T2-M7-007,Lộc,TODO
-BL-098,FR-M7-06,T1,Pet NGON (petngon.vn),Medium,ST,Manual,1,TC-T1-M7-003,Lộc,TODO
-BL-099,FR-M1-04,T3,Pretty Paws (groomore.com),Low,Use case,Auto,2,TC-T3-M1-004; TC-T3-M1-007,Ngân,TODO
-BL-100,FR-M7-07,T3,Pretty Paws (groomore.com),Low,UC,Manual,1,TC-T3-M7-002,Lộc,TODO
-BL-101,FR-M3-06,T3,Pretty Paws (groomore.com),Emergency fee),Medium,UC,1,TC-T3-M3-005,Manual,TODO
-BL-102,FR-M4-12,T3,Pretty Paws (groomore.com),chỉ tra cứu khách hiện có,Critical,UC,2,TC-T3-M4-009; TC-T3-M4-011,Manual,TODO
+BL-071,FR-M4-12,T3,Pretty Paws (groomore.com),High,UC,Manual,2,TC-T3-M4-009; TC-T3-M4-011,Lộc,TODO
+BL-072,FR-M4-13,T3,Pretty Paws (groomore.com),High,EP,Manual,2,TC-T3-M4-006; TC-T3-M4-007,Ngân,TODO
+BL-073,FR-M5-01,T3,Pretty Paws (groomore.com),High,UC,Manual,1,TC-T3-M5-001,Mạnh,TODO
+BL-074,FR-M5-03,T1,Pet NGON (petngon.vn),High,UC,Manual,4,TC-T1-M5-003; TC-T1-M5-004; TC-T1-M5-005; TC-T1-M5-006,Mạnh,TODO
+BL-075,FR-M5-04,T2,Mật Pet Family (matpet.vn),High,UC,Manual,3,TC-T2-M5-003; TC-T2-M5-004; TC-T2-M5-005,Ngân,TODO
+BL-076,FR-M5-04,T3,Pretty Paws (groomore.com),High,UC,Manual,1,TC-T3-M5-002,Mạnh,TODO
+BL-077,FR-M6-02,T1,Pet NGON (petngon.vn),High,DT,Manual,8,TC-T1-M6-003; TC-T1-M6-004; TC-T1-M6-005; TC-T1-M6-006; TC-T1-M6-007; TC-T1-M6-008; TC-T1-M6-009; TC-T1-M6-020,Tài,TODO
+BL-078,FR-M6-04,T1,Pet NGON (petngon.vn),High,UC,Manual,2,TC-T1-M6-015; TC-T1-M6-016,Mạnh,TODO
+BL-079,FR-M6-05,T1,Pet NGON (petngon.vn),High,UC,Manual,1,TC-T1-M6-017,Lộc,TODO
+BL-080,FR-M6-06,T1,Pet NGON (petngon.vn),High,DT,Manual,3,TC-T1-M6-010; TC-T1-M6-018; TC-T1-M6-019,Mạnh,TODO
+BL-081,FR-M7-02,T2,Mật Pet Family (matpet.vn),High,EP,Auto,3,TC-T2-M7-002; TC-T2-M7-003; TC-T2-M7-004,Ngân,TODO
+BL-082,FR-M7-03,T1,Pet NGON (petngon.vn),High,UC,Manual,1,TC-T1-M7-001,Tài,TODO
+BL-083,FR-M7-03,T2,Mật Pet Family (matpet.vn),High,UC,Manual,1,TC-T2-M7-005,Lộc,TODO
+BL-084,NFR-01,ALL,Cả 3 hệ thống,High,Lighthouse,Auto,6,TC-NFR-01-001; TC-NFR-01-002; TC-NFR-01-003; TC-NFR-01-004; TC-NFR-01-005; TC-NFR-01-006,Ngân,TODO
+BL-085,NFR-03,ALL,Cả 3 hệ thống,High,Use case,Manual,4,TC-NFR-03-001; TC-NFR-03-002; TC-NFR-03-003; TC-NFR-03-004,Tài,TODO
+BL-086,NFR-04,ALL,Cả 3 hệ thống,High,UC,Auto,6,TC-NFR-04-001; TC-NFR-04-002; TC-NFR-04-003; TC-NFR-04-004; TC-NFR-04-005; TC-NFR-04-006,Tài,TODO
+BL-087,NFR-05,ALL,Cả 3 hệ thống,High,Use case,Manual,4,TC-NFR-05-001; TC-NFR-05-002; TC-NFR-05-003; TC-NFR-05-004,Ngân,TODO
+BL-088,NFR-06,ALL,Cả 3 hệ thống,High,Accessibility,Auto,6,TC-NFR-06-001; TC-NFR-06-002; TC-NFR-06-003; TC-NFR-06-004; TC-NFR-06-005; TC-NFR-06-006,Lộc,TODO
+BL-089,NFR-07,ALL,Cả 3 hệ thống,High,SEO,Auto,6,TC-NFR-07-001; TC-NFR-07-002; TC-NFR-07-003; TC-NFR-07-004; TC-NFR-07-005; TC-NFR-07-006,Lộc,TODO
+BL-090,FR-M2-04,T2,Mật Pet Family (matpet.vn),Medium,UC,Manual,2,TC-T2-M2-004; TC-T2-M2-005,Ngân,TODO
+BL-091,FR-M2-06,T3,Pretty Paws (groomore.com),Medium,UC,Manual,1,TC-T3-M2-008,Ngân,TODO
+BL-092,FR-M2-07,T2,Mật Pet Family (matpet.vn),Medium,UC,Manual,1,TC-T2-M2-003,Lộc,TODO
+BL-093,FR-M2-07,T3,Pretty Paws (groomore.com),Medium,UC,Manual,1,TC-T3-M2-009,Lộc,TODO
+BL-094,FR-M3-06,T2,Mật Pet Family (matpet.vn),Medium,UC,Manual,1,TC-T2-M3-010,Ngân,TODO
+BL-095,FR-M3-06,T3,Pretty Paws (groomore.com),Medium,UC,Manual,1,TC-T3-M3-005,Mạnh,TODO
+BL-096,FR-M3-07,T1,Pet NGON (petngon.vn),Medium,UC,Manual,2,TC-T1-M3-005; TC-T1-M3-006,Tài,TODO
+BL-097,FR-M4-05,T2,Mật Pet Family (matpet.vn),Medium,EP,Manual,1,TC-T2-M4-007,Ngân,TODO
+BL-098,FR-M5-05,T2,Mật Pet Family (matpet.vn),Medium,UC,Manual,1,TC-T2-M5-006,Lộc,TODO
+BL-099,FR-M7-05,T2,Mật Pet Family (matpet.vn),Medium,UC,Auto,1,TC-T2-M7-007,Lộc,TODO
+BL-100,FR-M7-06,T1,Pet NGON (petngon.vn),Medium,ST,Manual,1,TC-T1-M7-003,Lộc,TODO
+BL-101,FR-M1-04,T3,Pretty Paws (groomore.com),Low,Use case,Auto,2,TC-T3-M1-004; TC-T3-M1-007,Ngân,TODO
+BL-102,FR-M7-07,T3,Pretty Paws (groomore.com),Low,UC,Manual,1,TC-T3-M7-002,Lộc,TODO

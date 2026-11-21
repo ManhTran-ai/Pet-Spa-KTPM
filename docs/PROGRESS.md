@@ -1,6 +1,6 @@
 # PROGRESS: Kiểm thử 3 hệ thống Pet Spa (14 ngày)
 
-Cập nhật: 2026-11-19 · Phiên: 10 (Ngày 8 — **Phase 1 xong**: Inspection bộ 226 test case theo checklist 4C, 0 Major; SRS-01 → v1.3) · Nhóm: Mạnh, Tài, Ngân, Lộc
+Cập nhật: 2026-11-19 · Phiên: 11 (Ngày 8–9 — **Phase 1 + Phase 2 xong**: Inspection bộ 226 test case (0 Major) · Hội trường thiết kế test + Walkthrough 4 CFG · SRS-01 → v1.4) · Nhóm: Mạnh, Tài, Ngân, Lộc
 
 > **Hướng đồ án đã chốt (ADR-15, 2026-11-19).** Giảng viên đưa ra ba hướng và yêu cầu chọn **một**; nhóm chọn **Hướng 2** — *"Thiết kế và kiểm thử cho một phần mềm đang hoạt động, các bạn phải mô tả chi tiết lại các yêu cầu và tính năng của phần mềm cần kiểm thử"*. Hướng này gồm 4 yêu cầu nhóm cam kết: **H2-1** mô tả chi tiết yêu cầu/tính năng (SRS-01 v1.2 — 58 yêu cầu, 18 BR, 8 UC, 4 bảng quyết định, tiêu chí chấp nhận đều định lượng) · **H2-2** thiết kế test (226 ca + 5 tài liệu `docs/design/`) · **H2-3** kiểm thử không phá hại (Playwright + axe + Lighthouse + k6) · **H2-4** truy vết & báo cáo (RTM 100%, Inspection, Exit criteria, Final Test Report). Hệ quả phân công: mỗi thành viên phụ trách một nhóm kỹ thuật thiết kế test với tài liệu riêng; 226 test case được cân bằng lại (55/56/57/58, chênh lệch 3) và mỗi module của mỗi hệ thống có ≥ 2 người chạy để đối chiếu chéo. Chi tiết: `docs/decisions.md` ADR-15, `docs/ASSIGNMENT.md` §3 và §3A.
 
@@ -58,6 +58,8 @@ Rủi ro: (a) site đích thay đổi giao diện giữa kỳ làm script hỏng
 | 3 | DONE-HUMAN-PENDING | Đạt (4/7 EC đạt, 3/7 chưa tới hạn) | 4 tài liệu nghiên cứu kỹ thuật ở `docs/design/` (Ngày 6) | Nhóm xác nhận chọn hướng 2 (ADR-15); chạy lại E2E đầy đủ xác nhận 15 Fail là lỗi thật của site đích |
 | 4 | DONE-HUMAN-PENDING | Đạt (4/8 EC đạt; `assign:check` 4/4 nguyên tắc phân công OK) | Hoàn thiện 2 tài liệu thiết kế còn thiếu (`mccabe-coverage.md` — Mạnh, `usecase-workflow.md` — Lộc) và đánh dấu review chéo trong `docs/design/design-index.csv` cho EC-8 | Nhóm xác nhận lựa chọn Hướng 2 (ADR-15) và phê duyệt ma trận phân công ASG-01 v3.0 |
 | 5 | DONE-HUMAN-PENDING | Đạt (4/8 EC đạt; `tc-review-check` **0 Major · 0 Minor** trên 226 ca) | **Phase 1 xong** — Inspection bộ test case theo checklist 4C: mở CR `CHG-2026-11-19-01`, SRS v1.2 → **v1.3** (9 yêu cầu đổi phạm vi HĐ, thêm `FR-M4-13` + `FR-M7-07`), viết lại 11 ca T3 theo hành vi thật, `requirements.csv` 58 → 60 yêu cầu, RTM 60/60 = 100% | Nhóm xác nhận phạm vi HĐ mới của 9 yêu cầu trong CR `CHG-2026-11-19-01` |
+| 8 | DONE-HUMAN-PENDING | Đạt (4/8 EC đạt; `tc-review-check` **0 Major · 0 Minor** trên 226 ca) | **Phase 1 xong** — Inspection bộ test case theo checklist 4C: mở CR `CHG-2026-11-19-01`, SRS v1.2 → **v1.3** (9 yêu cầu đổi phạm vi HĐ, thêm `FR-M4-13` + `FR-M7-07`), viết lại 11 ca T3 theo hành vi thật, `requirements.csv` 58 → 60 yêu cầu, RTM 60/60 = 100%. Biên bản: `docs/reviews/testcase-inspection.md` · Gate: `reports/gates/day-08.md` | Nhóm xác nhận phạm vi HĐ mới của 9 yêu cầu trong CR `CHG-2026-11-19-01` |
+| 9 | DONE-HUMAN-PENDING | Đạt (5/8 EC đạt; `tc-review-check` 0 Major; `npm run gate` exit 0) | **Phase 2 xong** — Hội trường thiết kế test (4 thành viên × 4 mục) → 5 quyết định WF-01…WF-05 · Walkthrough 4 CFG (Statement 100% · Branch 94,3% · Condition 100%) · CR `CHG-2026-11-19-02`, SRS v1.3 → **v1.4** · Bộ dữ liệu test dùng chung `docs/reference/test-data-baseline.csv` (16 dòng) + cột `Input_Guide` trong `pricing-baseline.csv` | Nhóm xác nhận điều kiện tiên quyết mới của `FR-M5-06` trong CR `CHG-2026-11-19-02` (2 ca T3 chuyển `Blocked`) |
 | 6 | TODO | | | |
 | 7 | TODO | | | |
 | 8 | TODO | | | |
@@ -228,3 +230,41 @@ Trạng thái: `TODO` | `IN-PROGRESS` | `DONE` | `DONE-HUMAN-PENDING` | `BLOCKED
   - Người dùng cần xác nhận lựa chọn **Hướng 2** (ADR-15) trong họp và phê duyệt ma trận phân công v3.0.
   - **Việc cần làm ở Ngày 5–8 (RV-D6):** tổ chức Inspection cho bộ test case 226 ca — hiện chỉ mới có review chéo, chưa đạt hình thức rà soát trang trọng nhất theo Cẩm nang §3.3.
   - `docs/decisions.md` chưa có ADR cho đợt Technical Review này — sẽ bổ sung khi chốt ADR-17.
+
+### Phiên 10 · Ngày 8 — Phase 1: Inspection bộ 226 test case theo checklist 4C · 2026-11-19
+- Đã làm:
+  - **Inspection bộ test case** (Moderator: Mạnh) theo quy trình 6 bước Cẩm nang §3.2 → biên bản `docs/reviews/testcase-inspection.md` với **10 phát hiện TV-01…TV-10**. Trước sửa: **14 Major + 5 Minor**; sau sửa: **0 Major · 0 Minor · 0 Observation**.
+  - Viết **linter 4C tự động** `scripts/tc-review-check.mjs` — kiểm tra Correctness (`Requirement_ID` tồn tại trong `requirements.csv`; `System`/module khớp phạm vi yêu cầu) · Clarity (tiêu đề ≥ 25 ký tự, hoa đầu câu, không placeholder) · Completeness (enumeration hợp lệ; mọi yêu cầu SRS có ≥ 1 ca) · Consistency (9 cột, `TC_ID` không trùng, tiêu đề không trùng trong cùng nhóm). Exit code ≠ 0 nếu còn Major.
+  - **CR `CHG-2026-11-19-01`** (SRS v1.2 → **v1.3**): đối chiếu phạm vi 9 yêu cầu (`FR-M5-04` +T1, `FR-M4-06` +T2, `FR-M4-01/02/03/07/08` +T3, `FR-M3-06` +T3), thêm **2 yêu cầu mới** (`FR-M4-13` — T3 chỉ nhận khách đã có hồ sơ; `FR-M7-07` — hiển thị một ngôn ngữ duy nhất khi không hỗ trợ đa ngôn ngữ), thêm §8.2b (luồng T3 — **không phải wizard**), sửa §3.3/§4/§7.
+  - **Viết lại 11 ca T3 theo hành vi thật** (bỏ toàn bộ bước wizard không tồn tại ở T3): `TC-T3-M3-005`, `TC-T3-M4-001`…`-011`, `TC-T3-M7-002`. Sửa thêm `TC-T1-M5-006` (đổi `Requirement_ID` `FR-M5-04` → `FR-M5-03`), `TC-T2-M6-001` → `TC-T2-M2-003` (khớp module `FR-M2-07`), và 5 tiêu đề trong `nfr.csv`.
+  - Số lượng test case **giữ nguyên 226** (không thêm, không bỏ). `requirements.csv` 58 → **60** yêu cầu; RTM 60/60 = 100%.
+- Lệnh đã chạy và kết quả thật:
+  - `node scripts/tc-review-check.mjs` (lần 1) → 14 Major + 5 Minor, exit 1; (lần 2) → **0 phát hiện, exit 0**.
+  - `npm run docs:sync` → SRS/Test Plan/RTM đồng bộ từ bản gốc.
+  - `npm run req:build` → 60 yêu cầu; `npm run req:check` → **0 vi phạm**; `npm run rtm:build` → 60/60 được phủ.
+  - `npm run gate` → `req:check` OK · `rtm:check` 100% · `assign:check` Mạnh 56 / Tài 55 / Ngân 57 / Lộc 58 (chênh lệch 3, 0 module chỉ 1 người chạy) · `exit:check` 5/8. **exit 0**.
+  - Gate: `reports/gates/day-08.md`.
+- Còn dở / HUMAN:
+  - `exit:check` 5/8 — EC-2 siết ở Ngày 13; EC-6 giữ FAIL theo ADR-11; EC-5/EC-7 tới hạn theo lịch.
+  - **Phase 2** — Hội trường thiết kế test + Walkthrough (Ngày 8–9).
+
+### Phiên 11 · Ngày 9 — Phase 2: Hội trường thiết kế test + Walkthrough 4 CFG · 2026-11-19
+- Đã làm:
+  - **Hội trường thiết kế test** (Moderator: Mạnh, 4/4 thành viên tham dự) → thêm **§6** vào `docs/reviews/design-review.md`:
+    - §6.1 — bảng **4 mục bắt buộc × 4 thành viên** (Mạnh: phân tích tĩnh/McCabe; Tài: EP-BVA; Ngân: DT-ST; Lộc: UC-Workflow-Exploratory).
+    - §6.2 — **5 quyết định WF-01…WF-05** kèm ý kiến từng người.
+    - §6.3 — điều kiện đóng của hội trường.
+  - **Slide trình bày của Mạnh**: `docs/slides/slide-08-mccabe.md` + **§6** trong `docs/design/mccabe-coverage.md` (kịch bản 10 phút: lý thuyết §3.1–§3.4 + §5.2–§5.4, 4 CFG, ví dụ thật `TC-T1-M6-014`/`TC-T1-M6-010`/`TC-T2-M4-013`/`TC-T2-M4-014`, giới hạn).
+  - **Walkthrough 4 CFG** (`reports/gates/day-09.md` §2): CFG-1 Wizard T2 (V(G)=5, 8/9 nhánh) · CFG-2 Wizard T1 (V(G)=4, 6/7) · CFG-3 Chính sách hủy (V(G)=7, 11/11) · CFG-4 Phụ thu di chuyển (V(G)=5, 8/8). Tổng **V(G)=21**, **Branch 94,3% (33/35)**, Statement 100%, Condition 100%. **2 nhánh không thể thực thi** dưới ADR-11 (`S3 → ✗ gửi form thiếu SĐT` · `W7 → ✗ mọi chuyển từ trạng thái terminal`) — ghi rõ là hạn chế của ranh giới kiểm thử, **không** đánh dấu đã phủ.
+  - **WF-01 → CR `CHG-2026-11-19-02`** (SRS v1.3 → **v1.4**): kiểm chứng sống cho thấy drawer "Book Now" của T3 **chỉ có** 1 ô SĐT + 1 ô chọn quốc gia + 1 nút `Login`, **không có màn chọn khung giờ** trong luồng công khai. → `FR-M5-06` bổ sung điều kiện tiên quyết (chọn khung giờ ở T3 nằm **sau** cổng `FR-M4-13`); `docs/design/state-transition.md` §4 sửa `B3`/`B4`; `TC-T3-M5-003`/`-004` → **`Blocked`**.
+  - **Bộ dữ liệu test dùng chung** (WF-03): `scripts/build-pricing-baseline.mjs` bổ sung cột **`Input_Guide`** cho `pricing-baseline.csv` (213 dòng: T1 84 · T2 88 · T3 41) và sinh mới **`docs/reference/test-data-baseline.csv`** (16 dòng: giờ mở cửa, bậc cân nặng, công thức phụ thu, quy trình đặt lịch của 3 hệ thống). **Không ai tự chế số liệu.**
+- Lệnh đã chạy và kết quả thật:
+  - `node scripts/build-pricing-baseline.mjs` → `pricing-baseline.csv: 213 dòng { T1: 84, T2: 88, T3: 41 }` + `test-data-baseline.csv: 16 dòng`, exit 0.
+  - `node scripts/tc-review-check.mjs` → **0 Major · 0 Minor · 0 Observation** trên 226 ca, exit 0.
+  - `npm run gate` → `req:check` 0 vi phạm (60 yêu cầu) · `rtm:check` 100% · `assign:check` 4/4 nguyên tắc (chênh lệch 3) · `exit:check` 5/8. **exit 0**.
+  - Gate: `reports/gates/day-09.md`.
+- Còn dở / HUMAN:
+  - **Phase 3** — Dựng hạ tầng tự động hoá cho 56 ca của Mạnh (Playwright E2E cho T3 M2/M3/M4/M7, script BVA/DT, kiểm tra bảo mật NFR-02) — Ngày 9.
+  - **Phase 4–8** — System Test vòng 1 (T3 rồi T1), kiểm thử NFR-02, tích hợp + hồi quy + siết EC-2, báo cáo cuối.
+  - Nhóm xác nhận điều kiện tiên quyết mới của `FR-M5-06` trong CR `CHG-2026-11-19-02` (2 ca T3 chuyển `Blocked`).
+

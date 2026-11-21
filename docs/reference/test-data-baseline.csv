@@ -1,0 +1,17 @@
+﻿System,Kind,Key,Value,Note,Source
+T1,Giờ mở cửa,Tất cả các ngày,07:00–22:00,"Trang liên hệ; blog ghi ""đến trong 60' nội thành""",docs/srs.md §3.1
+T1,Giờ mở cửa,Ngoài khung,vẫn cho đặt lịch,Đặt lịch online 24/7; xác nhận trong 5 phút qua Zalo,docs/srs.md §3.1
+T1,Bậc cân nặng (chó),7 bậc,<3 / 3–5 / 5–10 / 10–15 / 15–20 / 20–25 / 25–30,Đơn vị kg,"docs/srs.md §3.1, §7"
+T1,Bậc cân nặng (mèo),7 bậc,≤3 / 3–5 / 5–10 / 10–15 / 15–20 / 20–25 / 25–30,Đơn vị kg,"docs/srs.md §3.1, §7"
+T1,Phụ thu di chuyển,Công thức,"max(0, km − 5) × 8.000₫","Trên 15 km: ""liên hệ báo giá riêng""","docs/srs.md §8.4, BR-05"
+T1,Phụ thu gói tại nhà,Tắm / Cạo / Combo Tắm+Cạo,+50.000₫ / +80.000₫ / +100.000₫,Cắt tỉa và Combo Tắm+Cắt tỉa chỉ tại spa,"docs/srs.md §3.1, BR-06"
+T2,Giờ mở cửa,Tất cả các ngày,08:00–22:00,Footer trang chủ,docs/srs.md §3.2
+T2,Bậc cân nặng,7 bậc,<3 / >3–6 / >6–10 / >10–20 / >20–30 / >30–40 / >40,Đơn vị kg; dùng chung bảng giá Chó và Mèo,"docs/srs.md §3.2, §7"
+T2,Bậc cân nặng (nhuộm),4 bậc,<6 / >6–15 / >15–30 / >30,Đơn vị kg,"docs/srs.md §3.2, §7"
+T2,Ngày mong muốn,Giới hạn,Hôm nay … +30 ngày,"min = hôm nay; max = null (nhận được ngày xa, phải giải thích theo lịch mở cửa)","docs/srs.md §7, FR-M4-05"
+T2,Quy trình đặt lịch,3 bước,Loại bé → Cân nặng → Dịch vụ,"Nút ""Tiếp tục →"" bị khoá khi chưa đủ dữ liệu",docs/srs.md §8.1
+T3,Giờ mở cửa,7 ngày (SUN–SAT),08:00–20:00,"Khối ""Business Hours""; trạng thái ""Open"" hiển thị trên trang","docs/srs.md §3.3, FR-M5-07"
+T3,Đặt lịch ngoài giờ,24/7,"Nút ""Book Now"" không bị khoá",Ngoài khung 08:00–20:00 vẫn mở được drawer,"docs/srs.md §3.3, FR-M4-11"
+T3,Bậc cân nặng,Mã hoá trong tên dịch vụ,lbs (0-20 / 20-50 / over 50 / …),KHÔNG có ô nhập cân nặng — mỗi dòng dịch vụ có bậc riêng,"docs/srs.md §3.3, §7, BR-03"
+T3,Quy trình đặt lịch,1 màn hình,Book Now → SĐT → Login,KHÔNG có bước chọn loài / cân nặng / dịch vụ / ngày / khung giờ; chỉ nhận khách đã có hồ sơ,"docs/srs.md §3.3, §8.2b"
+T3,Số điện thoại,Định dạng,Chỉ chữ số,"Placeholder ""Mobile number""; không kiểm tra độ dài tối thiểu; tự mask theo (609) 123-4567","docs/srs.md §7, FR-M4-03"

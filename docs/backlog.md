@@ -18,8 +18,8 @@ Bản máy đọc được: `docs/backlog.csv` (102 mục). Quy ước mã: `BL-
 | Mức | Số mục |
 |---|---|
 | Critical | 48 |
-| High | 40 |
-| Medium | 10 |
+| High | 41 |
+| Medium | 11 |
 | Low | 2 |
 | **Tổng** | **102** |
 
@@ -32,9 +32,8 @@ Bản máy đọc được: `docs/backlog.csv` (102 mục). Quy ước mã: `BL-
 
 | Người phụ trách | Số mục |
 |---|---|
-| Lộc | 16 |
-| Manual | 2 |
-| Mạnh | 26 |
+| Lộc | 17 |
+| Mạnh | 27 |
 | Ngân | 31 |
 | Tài | 27 |
 
@@ -112,38 +111,38 @@ Bản máy đọc được: `docs/backlog.csv` (102 mục). Quy ước mã: `BL-
 | BL-068 | FR-M4-08 | T2 | High | ST | Auto | 3 | Tài |
 | BL-069 | FR-M4-09 | T2 | High | UC | Auto | 1 | Tài |
 | BL-070 | FR-M4-11 | T3 | High | EP | Manual | 2 | Ngân |
-| BL-071 | FR-M4-13 | T3 | High | EP | Manual | 2 | Ngân |
-| BL-072 | FR-M5-01 | T3 | High | UC | Manual | 1 | Mạnh |
-| BL-073 | FR-M5-03 | T1 | High | UC | Manual | 4 | Mạnh |
-| BL-074 | FR-M5-04 | T2 | High | UC | Manual | 3 | Ngân |
-| BL-075 | FR-M5-04 | T3 | High | UC | Manual | 1 | Mạnh |
-| BL-076 | FR-M6-02 | T1 | High | DT | Manual | 8 | Tài |
-| BL-077 | FR-M6-04 | T1 | High | UC | Manual | 2 | Mạnh |
-| BL-078 | FR-M6-05 | T1 | High | UC | Manual | 1 | Lộc |
-| BL-079 | FR-M6-06 | T1 | High | DT | Manual | 3 | Mạnh |
-| BL-080 | FR-M7-02 | T2 | High | EP | Auto | 3 | Ngân |
-| BL-081 | FR-M7-03 | T1 | High | UC | Manual | 1 | Tài |
-| BL-082 | FR-M7-03 | T2 | High | UC | Manual | 1 | Lộc |
-| BL-083 | NFR-01 | ALL | High | Lighthouse | Auto | 6 | Ngân |
-| BL-084 | NFR-03 | ALL | High | Use case | Manual | 4 | Tài |
-| BL-085 | NFR-04 | ALL | High | UC | Auto | 6 | Tài |
-| BL-086 | NFR-05 | ALL | High | Use case | Manual | 4 | Ngân |
-| BL-087 | NFR-06 | ALL | High | Accessibility | Auto | 6 | Lộc |
-| BL-088 | NFR-07 | ALL | High | SEO | Auto | 6 | Lộc |
-| BL-089 | FR-M2-04 | T2 | Medium | UC | Manual | 2 | Ngân |
-| BL-090 | FR-M2-06 | T3 | Medium | UC | Manual | 1 | Ngân |
-| BL-091 | FR-M2-07 | T2 | Medium | UC | Manual | 1 | Lộc |
-| BL-092 | FR-M2-07 | T3 | Medium | UC | Manual | 1 | Lộc |
-| BL-093 | FR-M3-06 | T2 | Medium | UC | Manual | 1 | Ngân |
-| BL-094 | FR-M3-07 | T1 | Medium | UC | Manual | 2 | Tài |
-| BL-095 | FR-M4-05 | T2 | Medium | EP | Manual | 1 | Ngân |
-| BL-096 | FR-M5-05 | T2 | Medium | UC | Manual | 1 | Lộc |
-| BL-097 | FR-M7-05 | T2 | Medium | UC | Auto | 1 | Lộc |
-| BL-098 | FR-M7-06 | T1 | Medium | ST | Manual | 1 | Lộc |
-| BL-099 | FR-M1-04 | T3 | Low | Use case | Auto | 2 | Ngân |
-| BL-100 | FR-M7-07 | T3 | Low | UC | Manual | 1 | Lộc |
-| BL-101 | FR-M3-06 | T3 | Emergency fee) | Medium | UC | 1 | Manual |
-| BL-102 | FR-M4-12 | T3 | chỉ tra cứu khách hiện có | Critical | UC | 2 | Manual |
+| BL-071 | FR-M4-12 | T3 | High | UC | Manual | 2 | Lộc |
+| BL-072 | FR-M4-13 | T3 | High | EP | Manual | 2 | Ngân |
+| BL-073 | FR-M5-01 | T3 | High | UC | Manual | 1 | Mạnh |
+| BL-074 | FR-M5-03 | T1 | High | UC | Manual | 4 | Mạnh |
+| BL-075 | FR-M5-04 | T2 | High | UC | Manual | 3 | Ngân |
+| BL-076 | FR-M5-04 | T3 | High | UC | Manual | 1 | Mạnh |
+| BL-077 | FR-M6-02 | T1 | High | DT | Manual | 8 | Tài |
+| BL-078 | FR-M6-04 | T1 | High | UC | Manual | 2 | Mạnh |
+| BL-079 | FR-M6-05 | T1 | High | UC | Manual | 1 | Lộc |
+| BL-080 | FR-M6-06 | T1 | High | DT | Manual | 3 | Mạnh |
+| BL-081 | FR-M7-02 | T2 | High | EP | Auto | 3 | Ngân |
+| BL-082 | FR-M7-03 | T1 | High | UC | Manual | 1 | Tài |
+| BL-083 | FR-M7-03 | T2 | High | UC | Manual | 1 | Lộc |
+| BL-084 | NFR-01 | ALL | High | Lighthouse | Auto | 6 | Ngân |
+| BL-085 | NFR-03 | ALL | High | Use case | Manual | 4 | Tài |
+| BL-086 | NFR-04 | ALL | High | UC | Auto | 6 | Tài |
+| BL-087 | NFR-05 | ALL | High | Use case | Manual | 4 | Ngân |
+| BL-088 | NFR-06 | ALL | High | Accessibility | Auto | 6 | Lộc |
+| BL-089 | NFR-07 | ALL | High | SEO | Auto | 6 | Lộc |
+| BL-090 | FR-M2-04 | T2 | Medium | UC | Manual | 2 | Ngân |
+| BL-091 | FR-M2-06 | T3 | Medium | UC | Manual | 1 | Ngân |
+| BL-092 | FR-M2-07 | T2 | Medium | UC | Manual | 1 | Lộc |
+| BL-093 | FR-M2-07 | T3 | Medium | UC | Manual | 1 | Lộc |
+| BL-094 | FR-M3-06 | T2 | Medium | UC | Manual | 1 | Ngân |
+| BL-095 | FR-M3-06 | T3 | Medium | UC | Manual | 1 | Mạnh |
+| BL-096 | FR-M3-07 | T1 | Medium | UC | Manual | 2 | Tài |
+| BL-097 | FR-M4-05 | T2 | Medium | EP | Manual | 1 | Ngân |
+| BL-098 | FR-M5-05 | T2 | Medium | UC | Manual | 1 | Lộc |
+| BL-099 | FR-M7-05 | T2 | Medium | UC | Auto | 1 | Lộc |
+| BL-100 | FR-M7-06 | T1 | Medium | ST | Manual | 1 | Lộc |
+| BL-101 | FR-M1-04 | T3 | Low | Use case | Auto | 2 | Ngân |
+| BL-102 | FR-M7-07 | T3 | Low | UC | Manual | 1 | Lộc |
 
 ## 4. Thứ tự thực hiện
 

@@ -38,8 +38,8 @@ TC-T3-M4-010,FR-M4-03,T3,ST xóa ký tự cuối của SĐT đã nhập thì nú
 TC-T3-M4-011,FR-M4-12,T3,ST sau khi nhập SĐT hợp lệ nút Login được bật và dẫn tới màn tra cứu khách hiện có,High,ST,Manual,Lộc,Pass
 TC-T3-M5-001,FR-M5-01,T3,Trang mô tả quy trình đặt lịch đến nhận thú cưng,High,UC,Manual,Mạnh,Chưa thực thi
 TC-T3-M5-002,FR-M5-04,T3,Nội dung hủy/đổi lịch và hoàn cọc tồn tại,High,UC,Manual,Mạnh,Chưa thực thi
-TC-T3-M5-003,FR-M5-06,T3,Chọn khung giờ ngoài giờ mở cửa bị từ chối kèm lý do,Critical,EP,Manual,Ngân,Chưa thực thi
-TC-T3-M5-004,FR-M5-06,T3,Chọn khung giờ nằm trong giờ mở cửa được chấp nhận,Critical,EP,Manual,Ngân,Chưa thực thi
+TC-T3-M5-003,FR-M5-06,T3,Chọn khung giờ ngoài giờ mở cửa bị từ chối kèm lý do,Critical,EP,Manual,Ngân,Blocked
+TC-T3-M5-004,FR-M5-06,T3,Chọn khung giờ nằm trong giờ mở cửa được chấp nhận,Critical,EP,Manual,Ngân,Blocked
 TC-T3-M5-005,FR-M5-07,T3,Trang hiển thị trạng thái Open/Closed và giờ mở cửa,Critical,UC,Manual,Lộc,Pass
 TC-T3-M7-001,FR-M7-04,T3,"Có ít nhất 2 kênh liên hệ hoạt động, liên kết mở đúng ứng dụng",Critical,UC,Manual,Mạnh,Chưa thực thi
 TC-T3-M7-002,FR-M7-07,T3,Trang T3 không có điều khiển chuyển ngôn ngữ và nội dung hiển thị bằng tiếng Anh,Low,UC,Manual,Lộc,Chưa thực thi

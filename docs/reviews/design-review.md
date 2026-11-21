@@ -83,7 +83,51 @@ Tổng: **6 lỗi/phát hiện** — 3 Major, 2 Minor, 1 Observation. Không cò
 
 ---
 
-## 6. Điều kiện đóng
+## 6. Hội trường thiết kế test (Ngày 8 — Phase 2, `docs/ASSIGNMENT.md` §3.8)
+
+| Mục | Nội dung |
+|---|---|
+| **Loại** | Hội trường thiết kế test (Test Design Workshop) — mỗi thành viên trình bày 10 phút kỹ thuật mình phụ trách |
+| **Quy trình** | Chuẩn bị → Trình bày → ý kiến & quyết định → Đóng |
+| **Tham dự** | Mạnh (TV1, Moderator), Tài (TV2), Ngân (TV3), Lộc (TV4) — 4/4 |
+| **Điều kiện vào** | ✅ Test case v1.0 đã qua Inspection Phase 1 (0 Major, 0 Minor — `docs/reviews/testcase-inspection.md`) · ✅ 5/5 tài liệu thiết kế đã review chéo · ✅ SRS-01 v1.3 là baseline |
+| **Kết quả** | **ĐẠT** — 4/4 thành viên trình bày đủ 4 mục bắt buộc · 5 quyết định được chốt · 1 phát hiện mới (WF-01) đã mở CR |
+
+### 6.1 Nội dung trình bày của 4 thành viên (4 mục bắt buộc × 4 thành viên)
+
+| Thành viên | Kỹ thuật | Mục 1 — Cơ sở lý thuyết | Mục 2 — Áp dụng cho đồ án | Mục 3 — Ví dụ thật (`TC-...`) | Mục 4 — Hạn chế |
+|---|---|---|---|---|---|
+| **Mạnh (TV1)** | Phân tích tĩnh · Rà soát Trang trọng · McCabe V(G) · độ bao phủ | Cẩm nang §3.1 (kiểm thử tĩnh), §3.2 (quy trình 6 bước), §4 (checklist 4C), §5.2 (McCabe), §5.4 (mức bao phủ) | 4 CFG dựng từ SRS §8 → \(V(G)\) tổng **21**; đo Statement **100%** · Branch **94,3%** · Condition **100%** | `TC-T1-M6-014` (V(G) bắt được ca DT thuần không sinh ra) · `TC-T1-M6-010` (phát hiện mâu thuẫn SRS ↔ ca) | McCabe là kỹ thuật **hộp trắng** — CFG ở đây là *rút gọn*; đo trên giấy ≠ đi thật; gộp node làm giảm V(G); 2 công thức cho kết quả khác nhau; V(G) không nói được ca nào FAIL; chỉ 4 bảng → **không** nói "100% toàn hệ thống" |
+| **Tài (TV2)** | Phân vùng tương đương · Giá trị biên | Cẩm nang §3.4 (phân vùng tương đương), §4 (EP/BVA) | 7 miền tương đương theo ràng buộc SRS §7 (SĐT · tên bé · ngày · loài · cân nặng · dịch vụ · địa chỉ · từ khoá); BVA tách đúng theo dòng sản phẩm của T3 | `TC-T3-M3-006` (BVA ngưỡng 20 lbs của `Dog Bath`) · `TC-T3-M3-009` (BVA ngưỡng 61 lbs của `Dog Full Groom`) | BVA chỉ hiệu quả khi miền **liên tục và đơn điệu**; với danh mục rời rạc (T3 41 dịch vụ) phải chọn dịch vụ trước rồi mới BVA theo bậc trong tên; sai ngưỡng → ca kiểm thử vô nghĩa (sai lệch RV-D2) |
+| **Ngân (TV3)** | Bảng quyết định · Chuyển trạng thái | Cẩm nang §3.4 (quyết định), §4 (DT/ST) | 5 bảng quyết định (phụ thu di chuyển · phụ thu gói tại nhà · giá theo loài/bậc · báo giá riêng · chính sách hủy) + 4 nhóm trạng thái (wizard T1, wizard T2, drawer T3, accordion FAQ) | `TC-T1-M6-014` (DT kiểm tra tổng, không chỉ từng thành phần) · `TC-T2-M4-013` (ST chuyển không hợp lệ bị chặn) | DT chỉ đúng khi quy tắc **không chồng lấn** — 5 điều kiện nhị phân đầy đủ sẽ là 32 cột nên phải rút gọn có giải thích; ST cần bảng chuyển trạng thái **quan sát được**, nếu không sẽ sinh ca cho bước không tồn tại (bài học từ T3) |
+| **Lộc (TV4)** | Use case · Workflow · Exploratory · Vòng đời lỗi | Cẩm nang §4.6 (kiểm thử dựa trên UC & luồng công việc), §6.1 (vòng đời lỗi) | 8 sơ đồ luồng UC-01…08 · 7 workflow · 3 hiếu chương khám phá (E1 "Tìm đường đi tốt của người dùng thật" T2 · E2 "Rào cản của form" T1+T3 · E3 "Bản vị nội dung quan trọng" cả 3 site) · vòng đời lỗi 11 trạng thái | `TC-T3-M4-009` (UC bắt được lỗi thiết kế không thấy) · `TC-T1-M7-003` (Exploratory khám phá hiệu suất nào ca thiết kế không thể) | Exploratory **không** thay thế bộ ca có kỳ vọng định lượng — nó bổ sung phần "chưa ai nghĩ tới"; UC/Workflow chiếm 51% bộ test nên phải bù bằng EP/BVA/DT/ST cho phần rõ ràng; vòng đời lỗi cần quy tắc nghiệm thu rõ ràng để không bị "đóng sớm" |
+
+**Bản tổng hợp 4 bản trình bày:** `docs/design/test-design-techniques.md` (do Tài tổng hợp) — nằm trong hồ sơ nộp.
+**Slide trình bày của Mạnh:** `docs/slides/slide-08-mccabe.md`.
+
+### 6.2 Ý kiến và quyết định
+
+| Mã | Nội dung | Ý kiến | Quyết định |
+|---|---|---|---|
+| **WF-01** | `docs/design/state-transition.md` §4 mô tả trạng thái `B3`/`B4` của T3 là *"chọn khung giờ trong/ngoài giờ mở cửa"*. Kiểm chứng sống ngày 19 cho thấy drawer "Book Now" của T3 **chỉ có** 1 ô SĐT + 1 ô chọn quốc gia + 1 nút `Login` — **không có màn chọn khung giờ** trong luồng công khai. | Tài + Lộc: đúng là ca viết theo khuôn mẫu wizard T1/T2 sẽ sinh ra ca cho bước **không tồn tại**. Ngân: `FR-M5-06` vẫn giữ được vì bước chọn khung giờ nằm **sau** cổng khách hàng. Mạnh: cần xác minh lại bằng DOM + API trước khi sửa. | **Chấp nhận** → mở CR `CHG-2026-11-19-02`, SRS v1.3 → **v1.4**: `FR-M5-06` bổ sung điều kiện tiên quyết; `state-transition.md` §4 sửa `B3`/`B4` thành trạng thái *sau cổng khách hàng*; `TC-T3-M5-003`/`-004` → `Blocked`. Xem §2.1 của `reports/gates/day-09.md`. |
+| **WF-02** | Độ bao phủ Branch 94,3% — 2 nhánh chưa đi (T2 `S3 → ✗ gửi form khi còn thiếu SĐT`, T1 `W7 → ✗ mọi chuyển từ trạng thái terminal`) | Ngân: 2 nhánh này **không** phải lỗ hổng của bộ test mà là hệ quả của kiểm thử không phá hại. Tài + Lộc: đồng ý, nhưng phải ghi rõ trong báo cáo chứ không giấu đi. | **Chấp nhận** — giữ nguyên; ghi rõ giới hạn trong `mccabe-coverage.md` §2.6 và trong Final Test Report. |
+| **WF-03** | Bộ dữ liệu test dùng chung: ai chịu trách nhiệm số liệu? | Lộc + Tài: mỗi người tự chế số liệu sẽ ra kết luận khác nhau khi đối chiếu chéo. Ngân: phải dùng **chung một file**. Mạnh: `pricing-baseline.csv` đã có nhưng chưa có cột "cách nhập". | **Chấp nhận** → `scripts/build-pricing-baseline.mjs` bổ sung cột `Input_Guide` và sinh thêm `docs/reference/test-data-baseline.csv` (giờ mở cửa + bậc cân nặng + quy trình đặt lịch của 3 hệ thống). **Không ai tự chế số liệu.** |
+| **WF-04** | Số test case có giữ nguyên 226 sau Inspection? | Cả 4: giữ nguyên — số lượng đã giao; ca sai thì **viết lại**, không xoá. | **Chốt** — 226 ca giữ nguyên. Mọi sửa đổi đều đi qua CR. |
+| **WF-05** | `exit:check` hiện 5/8 — siết EC-2 ở đâu? | Mạnh: EC-2 phải tính cả ca `Blocked` và ca chưa chạy; hiện tại công thức chỉ nhìn dòng đã có trong execution log nên **đang đếm thiên lệch**. Ngân: cần một cách tính minh bạch. | **Hoãn** — siết EC-2 ở **Phase 7 / Ngày 13**, đúng như kế hoạch đã chốt. Ghi nhận vào `reports/gates/day-09.md` §5. |
+
+### 6.3 Điều kiện đóng của hội trường
+
+| Điều kiện ra | Trạng thái |
+|---|---|
+| Biên bản có đủ 4 mục × 4 thành viên | ✅ §6.1 |
+| Mỗi thành viên xác nhận 2 cạnh CFG chưa phủ có lý do ADR-11 | ✅ Mạnh (2 nhánh T1/T2 — WF-02) · Tài (bộ BVA tách theo dòng sản phẩm, 9 ca T3) · Ngân (6 trạng thái chưa kiểm thử được trong `state-transition.md`) · Lộc (luồng "xác nhận thành công" của cả 3 site) |
+| Bộ dữ liệu test dùng chung, không ai tự chế số liệu | ✅ WF-03 → `docs/reference/test-data-baseline.csv` + cột `Input_Guide` |
+| Mọi phát hiện mới đã mở CR | ✅ WF-01 → `CHG-2026-11-19-02` |
+
+---
+
+
+## 8. Điều kiện đóng
 
 | Điều kiện ra | Trạng thái |
 |---|---|

@@ -8,6 +8,7 @@
 | 1.1 | Ngày 2 | Mạnh | Sửa mục 3.2, 3.3, 3.4, `BR-03`, `BR-12` và `FR-M3-02` theo khảo sát giá REF-01; bổ sung `BR-17`, `BR-18` |
 | **1.2** | **Ngày 3** | **Mạnh** | **Baseline sau Inspection (biên bản `docs/reviews/inspection-srs.md`): sửa theo RV-01…RV-08 — `FR-M3-02` (T2), `FR-M2-01` (T3), `FR-M4-04`, §3.2, §3.4, §4 (cột luồng rẽ nhánh), §7 (bậc cân nặng T3); bổ sung tiêu chí chấp nhận định lượng cho 18 yêu cầu** |
 | **1.3** | **Ngày 8** | **Mạnh** | **Baseline sau Inspection bộ test case (`docs/reviews/testcase-inspection.md`, CR `CHG-2026-11-19-01`): reconcile phạm vi hệ thống (HĐ) của 9 yêu cầu giữa §4 và §5 — `FR-M5-04` +T1, `FR-M4-06` +T2, `FR-M4-01/02/03/07/08` +T3, `FR-M3-06` +T3; `FR-M7-03` ghi rõ loại trừ T3 (chỉ tiếng Anh)** |
+| **1.4** | **Ngày 8** | **Mạnh** | **Baseline sau Walkthrough thiết kế test (CR `CHG-2026-11-19-02`): làm rõ điều kiện tiên quyết của `FR-M5-06` (T3) — bước chọn khung giờ nằm sau cổng khách hàng `FR-M4-13`, không quan sát được trên luồng công khai** |
 
 > **Hướng tài liệu (quan trọng).** Tài liệu này **không** đặc tả một hệ thống để nhóm xây. Nó đặc tả **ba hệ thống web đang vận hành thật** mà nhóm sẽ kiểm thử: T1 Pet NGON, T2 Mật Pet Family, T3 Pretty Paws. Mọi yêu cầu ở đây là **yêu cầu đích** — hệ thống thật *đang* làm vậy, và ta kiểm tra xem nó có làm đúng, đầy đủ và nhất quán không. Yêu cầu được trích xuất bằng quan sát hành vi thực tế (đọc trang, tương tác form, theo dõi lưu lượng mạng). Đây là **test basis** cho Test Plan, RTM và test case.
 
@@ -264,7 +265,7 @@ Không có vai trò nhân viên hay quản trị trên giao diện công khai c�
 | FR-M5-03 | Nêu rõ có thể đổi hoặc hủy lịch và điều kiện | T1 | Must | Mục FAQ "Có thể đổi/huỷ lịch không?" trả lời có ≥ 2 điều kiện cụ thể về thời gian và phí |
 | FR-M5-04 | Nêu rõ chính sách hủy và hoàn tiền | T1, T2, T3 | Must | T2, T3: có nội dung cho cả 3 mục: hủy, đổi, hoàn cọc; không chỉ nêu "liên hệ tiệm". T1: mục "Đổi/huỷ lịch" nêu điều kiện thời gian cụ thể (báo trước 4 giờ) và hệ quả tài chính (phụ thu 50% cho lịch tại nhà nếu hủy trong 4 giờ cuối) |
 | FR-M5-05 | Nêu rõ thời gian nên đặt trước cho từng loại dịch vụ | T2 | Should | Có câu "nên đặt lịch trước ít nhất 2–4 giờ" theo dịch vụ |
-| FR-M5-06 | Thông báo khi bị từ chối lịch do ngoài giờ làm việc | T3 | Must | Chọn khung giờ ngoài giờ mở cửa bị từ chối kèm ≥ 1 câu giải thích lý do |
+| FR-M5-06 | Thông báo khi bị từ chối lịch do ngoài giờ làm việc | T3 | Must | Chọn khung giờ ngoài giờ mở cửa bị từ chối kèm ≥ 1 câu giải thích lý do. **Điều kiện tiên quyết**: bước chọn khung giờ nằm **sau** cổng tra cứu khách đã có hồ sơ (`FR-M4-13`), nên chỉ kiểm chứng được khi đã đăng nhập bằng SĐT thuộc hồ sơ khách đã có. Trên luồng công khai (trước bước `Login`) T3 **không có** màn chọn khung giờ (xem §3.3 và §8.2b) |
 | FR-M5-07 | Hiển thị trạng thái hiện tại của tiệm (đang mở/đã đóng) | T3 | Must | Trang hiển thị 1 trạng thái "Open"/"Closed" kèm khung giờ mở cửa đầy đủ |
 
 ### 5.6 M6 – Dịch vụ tận nhà và phụ thu di chuyển

@@ -40,7 +40,7 @@ Mã tài liệu: RTM-01 · Phiên bản 1.0 · Ngày 8, sau Technical Review thi
 | FR-M3-03 | Giá hiển thị được tính tức thì khi chọn đủ loài, cân nặng, dịch vụ | T2 | Must | M3 | TC-T2-M3-004; TC-T2-M3-005; TC-T2-M3-006 | 3 | UC | Ngân |
 | FR-M3-04 | Tính giá riêng cho dịch vụ cần khảo giá | T2 | Must | M3 | TC-T2-M3-007; TC-T2-M3-008 | 2 | EP, DT | Ngân |
 | FR-M3-05 | Giá dự kiến được ghi rõ là dự kiến, không phải giá cuối | T1, T2, T3 | Must | M3 | TC-T1-M3-004; TC-T2-M3-009; TC-T3-M3-004 | 3 | UC | Tài, Ngân, Mạnh |
-| FR-M3-06 | Bảng giá nêu rõ điều kiện bảo hành hoặc ngoại lệ phát sinh phí | T2, T3 | Should | M3 | TC-T2-M3-010; TC-T3-M3-005 | 2 | UC, Medium | Ngân, Manual |
+| FR-M3-06 | Bảng giá nêu rõ điều kiện bảo hành hoặc ngoại lệ phát sinh phí | T2, T3 | Should | M3 | TC-T2-M3-010; TC-T3-M3-005 | 2 | UC | Ngân, Mạnh |
 | FR-M3-07 | Nêu giá "từ ...₫" và khoảng min–max cho gói | T1 | Should | M3 | TC-T1-M3-005; TC-T1-M3-006 | 2 | UC, EP | Tài |
 | FR-M4-01 | Cung cấp form giữ chỗ với trường liên hệ bắt buộc và tuỳ chọn | T1, T2, T3 | Must | M4 | TC-T1-M4-001; TC-T2-M4-001; TC-T3-M4-001 | 3 | UC | Tài, Ngân, Mạnh |
 | FR-M4-02 | Từ chối gửi form khi thiếu trường bắt buộc | T1, T2, T3 | Must | M4 | TC-T1-M4-002; TC-T2-M4-002; TC-T3-M4-002 | 3 | EP | Tài, Ngân, Mạnh |
@@ -53,7 +53,7 @@ Mã tài liệu: RTM-01 · Phiên bản 1.0 · Ngày 8, sau Technical Review thi
 | FR-M4-09 | Hiển thị tóm tắt lựa chọn trước khi gửi | T2 | Should | M4 | TC-T2-M4-010 | 1 | UC | Tài |
 | FR-M4-10 | Yêu cầu sự đồng ý về việc liên hệ lại trước khi gửi | T2 | Must | M4 | TC-T2-M4-011 | 1 | UC | Tài |
 | FR-M4-11 | Cho phép đặt lịch ngoài giờ mở cửa | T3 | Should | M4 | TC-T3-M4-005; TC-T3-M4-008 | 2 | EP, UC | Ngân |
-| FR-M4-12 | Không yêu cầu tạo tài khoản để đặt lịch | T1, T2, T3 | Must | M4 | TC-T1-M4-008; TC-T2-M4-012; TC-T3-M4-009; TC-T3-M4-011 | 4 | UC, Critical, ST | Mạnh, Tài, Manual, Lộc |
+| FR-M4-12 | Không yêu cầu tạo tài khoản để đặt lịch | T1, T2, T3 | Must | M4 | TC-T1-M4-008; TC-T2-M4-012; TC-T3-M4-009; TC-T3-M4-011 | 4 | UC, ST | Mạnh, Tài, Lộc |
 | FR-M4-13 | Chỉ cho khách đã có hồ sơ đặt lịch trực tuyến, khách mới được hướng dẫn tiếp nhận | T3 | Must | M4 | TC-T3-M4-006; TC-T3-M4-007 | 2 | EP, UC | Ngân |
 | FR-M5-01 | Nêu rõ quy trình từ đặt lịch đến nhận thú cưng | T1, T2, T3 | Must | M5 | TC-T1-M5-001; TC-T2-M5-001; TC-T3-M5-001 | 3 | UC | Tài, Ngân, Mạnh |
 | FR-M5-02 | Công bố thời gian xác nhận lịch | T1, T2 | Must | M5 | TC-T1-M5-002; TC-T2-M5-002 | 2 | UC | Tài, Ngân |
@@ -95,7 +95,7 @@ Mã tài liệu: RTM-01 · Phiên bản 1.0 · Ngày 8, sau Technical Review thi
 
 | Kỹ thuật | Số test case |
 |---|---|
-| UC | 76 |
+| UC | 78 |
 | Use case | 37 |
 | BVA | 34 |
 | EP | 25 |
@@ -104,16 +104,14 @@ Mã tài liệu: RTM-01 · Phiên bản 1.0 · Ngày 8, sau Technical Review thi
 | Accessibility | 6 |
 | SEO | 6 |
 | Lighthouse | 2 |
-| Medium | 1 |
-| Critical | 1 |
 
 ## 5. Độ phủ theo mức ưu tiên
 
 | Ưu tiên | Số test case |
 |---|---|
-| Critical | 128 |
+| Critical | 129 |
 | High | 74 |
-| Medium | 19 |
+| Medium | 20 |
 | Low | 3 |
 
 ## 6. Use case kiểm thử chấp nhận (UAT)
