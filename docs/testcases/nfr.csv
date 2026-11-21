@@ -4,11 +4,11 @@ TC-NFR-01-002,NFR-01,ALL,Lighthouse Performance mobile trên trang đặt lịch
 TC-NFR-01-003,NFR-01,ALL,DOMContentLoaded trong ≤ 3 giây trên mạng 4G mô phỏng,High,Use case,Auto,Ngân,Chưa thực thi
 TC-NFR-01-004,NFR-01,ALL,"LCP ≤ 2,5 giây trên mạng 4G mô phỏng",High,Use case,Auto,Ngân,Chưa thực thi
 TC-NFR-01-005,NFR-01,ALL,"LCP ≤ 2,5 giây trên trang đặt lịch T1 và T2",High,Use case,Auto,Ngân,Chưa thực thi
-TC-NFR-01-006,NFR-01,ALL,k6 tải đọc 10 VU trong 1 phút không gây lỗi 5xx,Medium,Use case,Auto,Ngân,Chưa thực thi
+TC-NFR-01-006,NFR-01,ALL,K6 tải đọc 10 VU trong 1 phút không gây lỗi 5xx,Medium,Use case,Auto,Ngân,Chưa thực thi
 TC-NFR-02-001,NFR-02,ALL,Site bật HTTPS và có HSTS,Critical,Use case,Auto,Mạnh,Fail
 TC-NFR-02-002,NFR-02,ALL,Trang trả về X-Content-Type-Options: nosniff,Critical,Use case,Auto,Mạnh,Fail
 TC-NFR-02-003,NFR-02,ALL,Trang có X-Frame-Options hoặc CSP frame-ancestors,Critical,Use case,Auto,Mạnh,Fail
-TC-NFR-02-004,NFR-02,ALL,Trang có Referrer-Policy,High,Use case,Auto,Mạnh,Fail
+TC-NFR-02-004,NFR-02,ALL,Trang chủ có response header Referrer-Policy được cấu hình,High,Use case,Auto,Mạnh,Fail
 TC-NFR-02-005,NFR-02,ALL,Cookie phiên có cờ Secure và HttpOnly,Critical,Use case,Auto,Mạnh,Pass
 TC-NFR-02-006,NFR-02,ALL,Không có cookie phiên không mã hoá dạng sessionid,Critical,Use case,Manual,Mạnh,Chưa thực thi
 TC-NFR-02-007,NFR-02,ALL,"Payload script trong tên bé hiển thị dạng văn bản, không có hộp thoại alert",Critical,Use case,Manual,Mạnh,Chưa thực thi
@@ -31,7 +31,7 @@ TC-NFR-05-001,NFR-05,ALL,Gửi form 3 lần liên tiếp không tạo bản ghi 
 TC-NFR-05-002,NFR-05,ALL,"Lỗi mạng hiển thị thông báo, không treo trang",High,Use case,Manual,Ngân,Chưa thực thi
 TC-NFR-05-003,NFR-05,ALL,Tải lại trang giữ nguyên trạng thái đã chọn,High,Use case,Manual,Ngân,Chưa thực thi
 TC-NFR-05-004,NFR-05,ALL,Tải lại trang trong luồng wizard không làm mất lựa chọn,High,Use case,Manual,Ngân,Chưa thực thi
-TC-NFR-06-001,NFR-06,ALL,axe-core không có vi phạm mức critical,Critical,Accessibility,Auto,Lộc,Fail
+TC-NFR-06-001,NFR-06,ALL,Axe-core không phát hiện vi phạm mức critical trên 3 site,Critical,Accessibility,Auto,Lộc,Fail
 TC-NFR-06-002,NFR-06,ALL,"Mọi vùng chữ đạt tương phản ≥ 4,5:1",High,Accessibility,Auto,Lộc,Fail
 TC-NFR-06-003,NFR-06,ALL,Mọi trường form có nhãn gắn liền,High,Accessibility,Auto,Lộc,Pass
 TC-NFR-06-004,NFR-06,ALL,Mọi ảnh nội dung có thuộc tính alt,Medium,Accessibility,Auto,Lộc,Fail
@@ -40,6 +40,6 @@ TC-NFR-06-006,NFR-06,ALL,Điều hướng trang bằng bàn phím đến hết c
 TC-NFR-07-001,NFR-07,ALL,Mỗi trang có một thẻ title duy nhất và không rỗng,High,SEO,Auto,Lộc,Pass
 TC-NFR-07-002,NFR-07,ALL,Mỗi trang có thẻ meta description không rỗng,High,SEO,Auto,Lộc,Pass
 TC-NFR-07-003,NFR-07,ALL,Thẻ html có thuộc tính lang,Medium,SEO,Auto,Lộc,Pass
-TC-NFR-07-004,NFR-07,ALL,sitemap.xml tồn tại và không chặn trang quan trọng,Medium,SEO,Auto,Lộc,Pass
-TC-NFR-07-005,NFR-07,ALL,robots.txt tồn tại và không chặn toàn bộ site,Medium,SEO,Auto,Lộc,Pass
+TC-NFR-07-004,NFR-07,ALL,Sitemap.xml tồn tại và không chặn trang quan trọng,Medium,SEO,Auto,Lộc,Pass
+TC-NFR-07-005,NFR-07,ALL,Robots.txt tồn tại và không chặn toàn bộ site,Medium,SEO,Auto,Lộc,Pass
 TC-NFR-07-006,NFR-07,ALL,"Thẻ Open Graph có title, description và image",Low,SEO,Auto,Lộc,Fail

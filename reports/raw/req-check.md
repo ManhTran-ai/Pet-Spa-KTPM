@@ -2,8 +2,8 @@
 
 | Chỉ số | Giá trị |
 | --- | --- |
-| Số dòng requirements.csv (không tính header) | 58 |
-| Số FR | 51 |
+| Số dòng requirements.csv (không tính header) | 60 |
+| Số FR | 53 |
 | Số NFR | 7 |
 | ID trùng | 0 |
 | ID trong CSV không có trong SRS | 0 |

@@ -47,7 +47,7 @@ TC-T1-M5-002,FR-M5-02,T1,Có nêu xác nhận lịch trong 5 phút qua Zalo,Crit
 TC-T1-M5-003,FR-M5-03,T1,FAQ Có thể đổi/hủy lịch không trả lời có điều kiện cụ thể,High,UC,Manual,Mạnh,Chưa thực thi
 TC-T1-M5-004,FR-M5-03,T1,Điều kiện đổi lịch nêu rõ thời gian và phí,High,DT,Manual,Mạnh,Chưa thực thi
 TC-T1-M5-005,FR-M5-03,T1,DT chính sách hủy: hủy trước khi cân nặng đạt mức miễn phí,High,DT,Manual,Lộc,Chưa thực thi
-TC-T1-M5-006,FR-M5-04,T1,Nội dung hoàn tiền hoặc điều khoản tương ứng tồn tại,Medium,UC,Manual,Lộc,Chưa thực thi
+TC-T1-M5-006,FR-M5-03,T1,FAQ T1 nêu điều kiện hoàn tiền hoặc điều khoản hoàn cọc tương ứng,Medium,UC,Manual,Lộc,Chưa thực thi
 TC-T1-M6-001,FR-M6-01,T1,Bước 3 wizard cho lựa chọn đến spa,Critical,ST,Manual,Tài,Chưa thực thi
 TC-T1-M6-002,FR-M6-01,T1,Bước 3 wizard cho lựa chọn tại nhà,Critical,ST,Manual,Tài,Chưa thực thi
 TC-T1-M6-003,FR-M6-02,T1,DT phụ thu di chuyển: 0 km không phát sinh phụ thu,Critical,DT,Manual,Tài,Chưa thực thi

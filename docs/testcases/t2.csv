@@ -10,7 +10,7 @@ TC-T2-M2-002,FR-M2-02,T2,Mỗi dịch vụ nêu rõ thành phần bao gồm,High
 TC-T2-M2-004,FR-M2-04,T2,Danh mục tách nhóm Combo trọn gói và Dịch vụ lẻ,Medium,UC,Manual,Ngân,Chưa thực thi
 TC-T2-M2-005,FR-M2-04,T2,Dịch vụ báo giá riêng được đánh dấu rõ ràng trong danh mục,High,UC,Manual,Tài,Chưa thực thi
 TC-T2-M2-006,FR-M2-01,T2,Số dịch vụ niêm yết khớp bảng giá mục 3 của SRS,High,UC,Manual,Tài,Chưa thực thi
-TC-T2-M6-001,FR-M2-07,T2,Không dịch vụ nào có nhãn tại nhà khi hệ thống không cung cấp dịch vụ tại nhà,Medium,UC,Manual,Lộc,Chưa thực thi
+TC-T2-M2-003,FR-M2-07,T2,Không dịch vụ nào có nhãn tại nhà khi hệ thống không cung cấp dịch vụ tại nhà,Medium,UC,Manual,Lộc,Chưa thực thi
 TC-T2-M3-001,FR-M3-01,T2,Bảng giá có đủ cột cho mọi bậc cân nặng và mọi dịch vụ,Critical,UC,Manual,Ngân,Chưa thực thi
 TC-T2-M3-002,FR-M3-02,T2,"Tra bảng giá đúng cho (Chó, bậc >3-6kg) + Combo Tắm Vệ Sinh = 200.000đ",Critical,EP,Auto,Ngân,Pass
 TC-T2-M3-003,FR-M3-02,T2,T2 dùng chung bảng giá: Mèo cùng bậc cân nặng cho giá BẰNG Chó,Critical,DT,Auto,Ngân,Chưa thực thi

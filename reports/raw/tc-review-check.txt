@@ -1,0 +1,17 @@
+# Báo cáo Inspection bộ test case — checklist 4C
+
+Nguồn: `docs/testcases/{t1,t2,t3,nfr}.csv` · SRS-01 · `docs/requirements.csv`
+Tổng test case: 226
+Tổng phát hiện: 0 (Major 0 · Minor 0 · Observation 0)
+
+## Major (0)
+
+Không có.
+
+## Minor (0)
+
+Không có.
+
+## Observation (0)
+
+Không có.

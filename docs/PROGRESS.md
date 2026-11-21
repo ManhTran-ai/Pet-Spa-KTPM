@@ -1,6 +1,6 @@
 # PROGRESS: Kiểm thử 3 hệ thống Pet Spa (14 ngày)
 
-Cập nhật: 2026-11-19 · Phiên: 9 (Ngày 5 — hoàn tất 5 tài liệu thiết kế test + Technical Review chéo) · Nhóm: Mạnh, Tài, Ngân, Lộc
+Cập nhật: 2026-11-19 · Phiên: 10 (Ngày 8 — **Phase 1 xong**: Inspection bộ 226 test case theo checklist 4C, 0 Major; SRS-01 → v1.3) · Nhóm: Mạnh, Tài, Ngân, Lộc
 
 > **Hướng đồ án đã chốt (ADR-15, 2026-11-19).** Giảng viên đưa ra ba hướng và yêu cầu chọn **một**; nhóm chọn **Hướng 2** — *"Thiết kế và kiểm thử cho một phần mềm đang hoạt động, các bạn phải mô tả chi tiết lại các yêu cầu và tính năng của phần mềm cần kiểm thử"*. Hướng này gồm 4 yêu cầu nhóm cam kết: **H2-1** mô tả chi tiết yêu cầu/tính năng (SRS-01 v1.2 — 58 yêu cầu, 18 BR, 8 UC, 4 bảng quyết định, tiêu chí chấp nhận đều định lượng) · **H2-2** thiết kế test (226 ca + 5 tài liệu `docs/design/`) · **H2-3** kiểm thử không phá hại (Playwright + axe + Lighthouse + k6) · **H2-4** truy vết & báo cáo (RTM 100%, Inspection, Exit criteria, Final Test Report). Hệ quả phân công: mỗi thành viên phụ trách một nhóm kỹ thuật thiết kế test với tài liệu riêng; 226 test case được cân bằng lại (55/56/57/58, chênh lệch 3) và mỗi module của mỗi hệ thống có ≥ 2 người chạy để đối chiếu chéo. Chi tiết: `docs/decisions.md` ADR-15, `docs/ASSIGNMENT.md` §3 và §3A.
 
@@ -30,7 +30,7 @@ Rủi ro: (a) site đích thay đổi giao diện giữa kỳ làm script hỏng
 | 5 | 17/11 | Thiết kế | Technical Review thiết kế test, Test Plan v1.0 chốt, chuẩn bị script mẫu | Biên bản TR |
 | 6 | 18/11 | Thiết kế | Viết test case M1–M2, M7 | Test case v0.5 |
 | 7 | 19/11 | Thiết kế | Viết test case M3 (giá biên) | Test case v0.7 |
-| 8 | 20/11 | Thiết kế | Viết test case M4–M6, NFR; review chéo theo checklist 4C | Test case v1.0 |
+| 8 | 20/11 | Thiết kế | **Inspection bộ test case theo checklist 4C** (Phase 1 của Mạnh): rà 226 ca, mở CR `CHG-2026-11-19-01`, SRS → v1.3, viết lại 11 ca T3 theo hành vi thật | Test case v1.0 · `tc-review-check` 0 Major |
 | 9 | 21/11 | Thực hiện | Chuẩn bị môi trường, script Playwright smoke cho 3 site, bộ dữ liệu test | Smoke xanh |
 | 10 | 22/11 | Thực hiện | Kiểm thử tích hợp (quan sát hợp đồng dữ liệu giao diện ↔ API) | Báo cáo tích hợp |
 | 11 | 23/11 | Thực hiện | System test vòng 1, ghi defect log | Vòng 1 xong |
@@ -57,7 +57,7 @@ Rủi ro: (a) site đích thay đổi giao diện giữa kỳ làm script hỏng
 | 2 | DONE-HUMAN-PENDING | Đạt (4/7 EC đạt, 3/7 chưa tới hạn) | Đối chiếu ma trận giá T2 (Tài) và T3 (Ngân); sửa BR-03, BR-12, mục 3.2/3.3 SRS (Lộc) | Nhóm xác nhận phát hiện P1 (giá Chó/Mèo T2 không khác nhau) |
 | 3 | DONE-HUMAN-PENDING | Đạt (4/7 EC đạt, 3/7 chưa tới hạn) | 4 tài liệu nghiên cứu kỹ thuật ở `docs/design/` (Ngày 6) | Nhóm xác nhận chọn hướng 2 (ADR-15); chạy lại E2E đầy đủ xác nhận 15 Fail là lỗi thật của site đích |
 | 4 | DONE-HUMAN-PENDING | Đạt (4/8 EC đạt; `assign:check` 4/4 nguyên tắc phân công OK) | Hoàn thiện 2 tài liệu thiết kế còn thiếu (`mccabe-coverage.md` — Mạnh, `usecase-workflow.md` — Lộc) và đánh dấu review chéo trong `docs/design/design-index.csv` cho EC-8 | Nhóm xác nhận lựa chọn Hướng 2 (ADR-15) và phê duyệt ma trận phân công ASG-01 v3.0 |
-| 5 | TODO | | | |
+| 5 | DONE-HUMAN-PENDING | Đạt (4/8 EC đạt; `tc-review-check` **0 Major · 0 Minor** trên 226 ca) | **Phase 1 xong** — Inspection bộ test case theo checklist 4C: mở CR `CHG-2026-11-19-01`, SRS v1.2 → **v1.3** (9 yêu cầu đổi phạm vi HĐ, thêm `FR-M4-13` + `FR-M7-07`), viết lại 11 ca T3 theo hành vi thật, `requirements.csv` 58 → 60 yêu cầu, RTM 60/60 = 100% | Nhóm xác nhận phạm vi HĐ mới của 9 yêu cầu trong CR `CHG-2026-11-19-01` |
 | 6 | TODO | | | |
 | 7 | TODO | | | |
 | 8 | TODO | | | |

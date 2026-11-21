@@ -4,7 +4,7 @@ Căn cứ: TP-01 §5.2 · Nguồn số liệu: `docs/`, `reports/`
 
 | Mã | Tiêu chí | Kết quả | Trạng thái | Nguồn |
 | --- | --- | --- | --- | --- |
-| EC-1 | 100% yêu cầu Must có ít nhất 1 test case | 40/40 yêu cầu Must đã phủ | PASS | docs/rtm.csv, docs/requirements.csv |
+| EC-1 | 100% yêu cầu Must có ít nhất 1 test case | 41/41 yêu cầu Must đã phủ | PASS | docs/rtm.csv, docs/requirements.csv |
 | EC-2 | 100% test case Critical/High đã thực thi, tỷ lệ Pass ≥ 95% | 6 ca đã chạy, Pass 100.0% | PASS | reports/execution-log.csv |
 | EC-3 | 0 lỗi Critical/High còn mở, mọi lỗi đi qua đủ vòng đời | 0 lỗi Critical/High đang mở trong tổng 24 lỗi | PASS | docs/defects/defects.csv |
 | EC-4 | Mỗi hệ thống có ít nhất 1 bộ E2E tự động chạy được và xanh | 5 test case tự động Pass | PASS | reports/execution-log.csv, tests/e2e/ |
