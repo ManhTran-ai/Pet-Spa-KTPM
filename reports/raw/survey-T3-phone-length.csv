@@ -1,0 +1,13 @@
+﻿Input_Digits,Rendered_Value,Login_Disabled,Warning_Shown,Note
+0,,true,,Ô trống — nút bị khoá
+1,6,false,,"Chỉ 1 ký tự — nút đã bật, không có cảnh báo độ dài tối thiểu"
+2,60,false,,
+3,(609),false,,
+4,(609) 5,false,,
+5,(609) 55,false,,
+6,(609) 555,false,,
+7,(609) 555-0,false,,
+8,(609) 555-01,false,,
+9,(609) 555-019,false,,
+10,(609) 555-0199,false,,
+11,(609) 555-0199,false,,
