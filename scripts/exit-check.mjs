@@ -52,8 +52,12 @@ async function main() {
     source: 'reports/execution-log.csv',
   });
 
+  // `docs/defects/defects.csv` dùng tên cột `Severity`/`Status` (viết hoa) — đọc
+  // cả hai biến thể để không phụ thuộc vào cách viết của từng phiên cập nhật.
   const openCriticalHigh = defects.filter(
-    (d) => ['Critical', 'High'].includes((d.severity ?? '').trim()) && OPEN_STATUSES.includes((d.status ?? '').trim()),
+    (d) =>
+      ['Critical', 'High'].includes((d.Severity ?? d.severity ?? '').trim()) &&
+      OPEN_STATUSES.includes((d.Status ?? d.status ?? '').trim()),
   );
   criteria.push({
     id: 'EC-3',

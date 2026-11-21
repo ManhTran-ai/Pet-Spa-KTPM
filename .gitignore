@@ -2,6 +2,8 @@ node_modules/
 dist/
 coverage/
 reports/raw/coverage/
+# Browser Playwright tải về cục bộ (1,2 GB) — không đưa lên GitHub.
+.browsers/
 # Artifact nặng sinh tự động: trace.zip (~150 MB) và báo cáo HTML.
 # Bằng chứng trọng yếu (ảnh chụp lỗi, error-context.md, ảnh Lighthouse) được giữ lại.
 reports/playwright/**/*.zip

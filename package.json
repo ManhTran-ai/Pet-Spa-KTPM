@@ -25,6 +25,7 @@
     "exit:check": "node scripts/exit-check.mjs",
     "lh:scan": "node scripts/lighthouse-scan.mjs",
     "exec:sync": "node scripts/exec-sync.mjs",
+    "tc:record": "node scripts/tc-record.mjs",
     "gate": "npm run req:check && npm run rtm:check && npm run assign:check && npm run exit:check"
   },
   "devDependencies": {
