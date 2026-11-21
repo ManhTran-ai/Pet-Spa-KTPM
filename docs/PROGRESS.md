@@ -292,7 +292,7 @@ Trạng thái: `TODO` | `IN-PROGRESS` | `DONE` | `DONE-HUMAN-PENDING` | `BLOCKED
   - `npm run gate` → `req:check` 0 vi phạm · `rtm:check` phủ 100% · `assign:check` 4/4 nguyên tắc OK · `exit:check` 4/8 (EC-2, EC-5, EC-6, EC-7 còn tới hạn ở Ngày 13).
 - **Kết quả cuối của Ngân: 57/57 ca đã có kết luận — 43 Pass · 13 Fail · 1 Blocked**; 52/57 ca có script Playwright tự động.
 - Sai lệch đã xử lý:
-  - `git checkout docs/defects/defects.csv` khi sửa DEF-019 đã xoá nhầm DEF-029…032 → khôi phục bằng script `scripts/add-defects-29-32.mjs`; từ đây mọi thao tác sửa `defects.csv` đi qua parser CSV của `scripts/lib/common.mjs` (không tách chuỗi thủ công, vì field có dấu phẩy sẽ vỡ).
+  - `git checkout docs/defects/defects.csv` khi sửa DEF-019 đã xoá nhầm DEF-029…032 → khôi phục lại bằng script tạm (đã xoá sau khi dùng); từ đây mọi thao tác sửa `defects.csv` đi qua parser CSV của `scripts/lib/common.mjs` (không tách chuỗi thủ công, vì field có dấu phẩy sẽ vỡ).
   - `npx playwright test --reporter=list` **ghi đè** `reports/raw/playwright-report.json` bằng kết quả của lần chạy con (chỉ 5 test) → phải chạy full suite với reporter mặc định để JSON đầy đủ.
   - 2 test T2 (`TC-T2-M4-001`, `TC-T2-M7-002`) fail lúc chạy song song do `page.goto` timeout 60 s (site chậm) → chạy lại riêng **9/9 Pass**; không sửa tiêu chí.
 - Còn dở / HUMAN:

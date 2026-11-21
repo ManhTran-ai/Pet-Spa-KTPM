@@ -2,4 +2,4 @@ TC_ID,Result,Executed_By,Note
 TC-NFR-01-001,Fail,Ngân (Lighthouse),"Lighthouse 3 lan/site, lay trung viet - reports/raw/lighthouse-summary.csv: T1 = 67, T2 = 59, T3 = 3, deu < 70"
 TC-NFR-01-002,Fail,Ngân (Lighthouse),"Lighthouse trang dat lich 3 lan/site - reports/raw/lighthouse-booking-summary.csv: T1 = 55, T2 = 51, T3 = 5, deu < 70"
 TC-NFR-01-006,Pass,Ngân (k6),"k6 10 VU / 1m - reports/raw/k6-summary.json: 183 request, 0 loi 5xx, http_req_failed = 0.00%, p95 = 907.74 ms"
-TC-T3-M4-007,Blocked,Ngân (thu cong),"Bi chan boi luong dang nhap cua T3 (chi danh cho khach hang da co tai khoan) - ADR-11 khong tao tai khoan tren site that. Xem reports/raw/survey-T3-select-state.csv"
+TC-T3-M4-007,Blocked,Ngân (thu cong),"Bi chan boi luong dang nhap cua T3 (chi danh cho khach hang da co tai khoan) - ADR-11 khong tao tai khoan tren site that. Xem reports/playwright/e2e-t3-m4-m5-booking-T3-Pr-56efc-a-phải-bị-từ-chối-kèm-lý-do-t3/error-context.md"
