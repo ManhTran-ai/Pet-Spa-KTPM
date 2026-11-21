@@ -1,0 +1,2396 @@
+[
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": "<3kg",
+    "Service": "Combo Tắm Vệ Sinh",
+    "Price": "120k",
+    "Combo": "Yes",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": "<3kg",
+    "Service": "Combo Tắm Cạo",
+    "Price": "200k",
+    "Combo": "Yes",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": "<3kg",
+    "Service": "Combo Tắm Cắt",
+    "Price": "300k",
+    "Combo": "Yes",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": "<3kg",
+    "Service": "Combo Tắm Cắt Tạo Hình",
+    "Price": "350k",
+    "Combo": "Yes",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": "<3kg",
+    "Service": "Nhuộm 2 tai + đuôi",
+    "Price": "250k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": "<3kg",
+    "Service": "Nhuộm 4 chân",
+    "Price": "250k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": "<3kg",
+    "Service": "Nhuộm hình nhỏ",
+    "Price": "300k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": "<3kg",
+    "Service": "Gỡ rốiBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": "<3kg",
+    "Service": "Tẩy ốBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": "<3kg",
+    "Service": "Tắm trắngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": "<3kg",
+    "Service": "Xả dưỡngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": "<3kg",
+    "Service": "Nhuộm hình lớnBáo giá tuỳ kích thước & màuBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": "<3kg",
+    "Service": "Nhuộm tạo hình cơ thểBáo giá theo thiết kế riêngBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": "<3kg",
+    "Service": "Cắt dũa + Móng",
+    "Price": "30k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": "<3kg",
+    "Service": "Vệ sinh tai",
+    "Price": "30k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": "<3kg",
+    "Service": "Cạo bụng + Bàn + Hậu môn",
+    "Price": "30k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": "<3kg",
+    "Service": "Tắm sấy",
+    "Price": "100k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": "<3kg",
+    "Service": "Cạo lông",
+    "Price": "150k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": "<3kg",
+    "Service": "Cắt lông",
+    "Price": "200k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">3–6kg",
+    "Service": "Combo Tắm Vệ Sinh",
+    "Price": "200k",
+    "Combo": "Yes",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">3–6kg",
+    "Service": "Combo Tắm Cạo",
+    "Price": "250k",
+    "Combo": "Yes",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">3–6kg",
+    "Service": "Combo Tắm Cắt",
+    "Price": "350k",
+    "Combo": "Yes",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">3–6kg",
+    "Service": "Combo Tắm Cắt Tạo Hình",
+    "Price": "400k",
+    "Combo": "Yes",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">3–6kg",
+    "Service": "Nhuộm 2 tai + đuôi",
+    "Price": "250k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">3–6kg",
+    "Service": "Nhuộm 4 chân",
+    "Price": "250k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">3–6kg",
+    "Service": "Nhuộm hình nhỏ",
+    "Price": "300k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">3–6kg",
+    "Service": "Gỡ rốiBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">3–6kg",
+    "Service": "Tẩy ốBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">3–6kg",
+    "Service": "Tắm trắngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">3–6kg",
+    "Service": "Xả dưỡngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">3–6kg",
+    "Service": "Nhuộm hình lớnBáo giá tuỳ kích thước & màuBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">3–6kg",
+    "Service": "Nhuộm tạo hình cơ thểBáo giá theo thiết kế riêngBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">3–6kg",
+    "Service": "Cắt dũa + Móng",
+    "Price": "30k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">3–6kg",
+    "Service": "Vệ sinh tai",
+    "Price": "30k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">3–6kg",
+    "Service": "Cạo bụng + Bàn + Hậu môn",
+    "Price": "30k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">3–6kg",
+    "Service": "Tắm sấy",
+    "Price": "150k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">3–6kg",
+    "Service": "Cạo lông",
+    "Price": "200k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">3–6kg",
+    "Service": "Cắt lông",
+    "Price": "300k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">6–10kg",
+    "Service": "Combo Tắm Vệ Sinh",
+    "Price": "300k",
+    "Combo": "Yes",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">6–10kg",
+    "Service": "Combo Tắm Cạo",
+    "Price": "350k",
+    "Combo": "Yes",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">6–10kg",
+    "Service": "Combo Tắm Cắt",
+    "Price": "400k",
+    "Combo": "Yes",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">6–10kg",
+    "Service": "Combo Tắm Cắt Tạo Hình",
+    "Price": "500k",
+    "Combo": "Yes",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">6–10kg",
+    "Service": "Nhuộm 2 tai + đuôi",
+    "Price": "300k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">6–10kg",
+    "Service": "Nhuộm 4 chân",
+    "Price": "300k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">6–10kg",
+    "Service": "Nhuộm hình nhỏ",
+    "Price": "350k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">6–10kg",
+    "Service": "Gỡ rốiBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">6–10kg",
+    "Service": "Tẩy ốBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">6–10kg",
+    "Service": "Tắm trắngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">6–10kg",
+    "Service": "Xả dưỡngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">6–10kg",
+    "Service": "Nhuộm hình lớnBáo giá tuỳ kích thước & màuBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">6–10kg",
+    "Service": "Nhuộm tạo hình cơ thểBáo giá theo thiết kế riêngBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">6–10kg",
+    "Service": "Cắt dũa + Móng",
+    "Price": "50k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">6–10kg",
+    "Service": "Vệ sinh tai",
+    "Price": "50k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">6–10kg",
+    "Service": "Cạo bụng + Bàn + Hậu môn",
+    "Price": "50k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">6–10kg",
+    "Service": "Tắm sấy",
+    "Price": "250k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">6–10kg",
+    "Service": "Cạo lông",
+    "Price": "300k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">6–10kg",
+    "Service": "Cắt lông",
+    "Price": "400k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">10–20kg",
+    "Service": "Combo Tắm Vệ Sinh",
+    "Price": "400k",
+    "Combo": "Yes",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">10–20kg",
+    "Service": "Combo Tắm Cạo",
+    "Price": "450k",
+    "Combo": "Yes",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">10–20kg",
+    "Service": "Combo Tắm Cắt",
+    "Price": "550k",
+    "Combo": "Yes",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">10–20kg",
+    "Service": "Combo Tắm Cắt Tạo Hình",
+    "Price": "650k",
+    "Combo": "Yes",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">10–20kg",
+    "Service": "Nhuộm 2 tai + đuôi",
+    "Price": "300k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">10–20kg",
+    "Service": "Nhuộm 4 chân",
+    "Price": "300k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">10–20kg",
+    "Service": "Nhuộm hình nhỏ",
+    "Price": "350k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">10–20kg",
+    "Service": "Gỡ rốiBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">10–20kg",
+    "Service": "Tẩy ốBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">10–20kg",
+    "Service": "Tắm trắngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">10–20kg",
+    "Service": "Xả dưỡngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">10–20kg",
+    "Service": "Nhuộm hình lớnBáo giá tuỳ kích thước & màuBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">10–20kg",
+    "Service": "Nhuộm tạo hình cơ thểBáo giá theo thiết kế riêngBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">10–20kg",
+    "Service": "Cắt dũa + Móng",
+    "Price": "50k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">10–20kg",
+    "Service": "Vệ sinh tai",
+    "Price": "50k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">10–20kg",
+    "Service": "Cạo bụng + Bàn + Hậu môn",
+    "Price": "50k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">10–20kg",
+    "Service": "Tắm sấy",
+    "Price": "350k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">10–20kg",
+    "Service": "Cạo lông",
+    "Price": "400k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">10–20kg",
+    "Service": "Cắt lông",
+    "Price": "500k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">20–30kg",
+    "Service": "Combo Tắm Vệ Sinh",
+    "Price": "500k",
+    "Combo": "Yes",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">20–30kg",
+    "Service": "Combo Tắm Cạo",
+    "Price": "600k",
+    "Combo": "Yes",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">20–30kg",
+    "Service": "Combo Tắm Cắt",
+    "Price": "700k",
+    "Combo": "Yes",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">20–30kg",
+    "Service": "Combo Tắm Cắt Tạo Hình",
+    "Price": "800k",
+    "Combo": "Yes",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">20–30kg",
+    "Service": "Nhuộm 2 tai + đuôi",
+    "Price": "350k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">20–30kg",
+    "Service": "Nhuộm 4 chân",
+    "Price": "350k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">20–30kg",
+    "Service": "Nhuộm hình nhỏ",
+    "Price": "400k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">20–30kg",
+    "Service": "Gỡ rốiBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">20–30kg",
+    "Service": "Tẩy ốBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">20–30kg",
+    "Service": "Tắm trắngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">20–30kg",
+    "Service": "Xả dưỡngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">20–30kg",
+    "Service": "Nhuộm hình lớnBáo giá tuỳ kích thước & màuBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">20–30kg",
+    "Service": "Nhuộm tạo hình cơ thểBáo giá theo thiết kế riêngBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">20–30kg",
+    "Service": "Cắt dũa + Móng",
+    "Price": "70k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">20–30kg",
+    "Service": "Vệ sinh tai",
+    "Price": "70k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">20–30kg",
+    "Service": "Cạo bụng + Bàn + Hậu môn",
+    "Price": "70k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">20–30kg",
+    "Service": "Tắm sấy",
+    "Price": "450k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">20–30kg",
+    "Service": "Cạo lông",
+    "Price": "500k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">20–30kg",
+    "Service": "Cắt lông",
+    "Price": "650k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">30–40kg",
+    "Service": "Combo Tắm Vệ Sinh",
+    "Price": "600k",
+    "Combo": "Yes",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">30–40kg",
+    "Service": "Combo Tắm Cạo",
+    "Price": "700k",
+    "Combo": "Yes",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">30–40kg",
+    "Service": "Combo Tắm Cắt",
+    "Price": "800k",
+    "Combo": "Yes",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">30–40kg",
+    "Service": "Combo Tắm Cắt Tạo Hình",
+    "Price": "1tr",
+    "Combo": "Yes",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">30–40kg",
+    "Service": "Nhuộm 2 tai + đuôi",
+    "Price": "400k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">30–40kg",
+    "Service": "Nhuộm 4 chân",
+    "Price": "400k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">30–40kg",
+    "Service": "Nhuộm hình nhỏ",
+    "Price": "500k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">30–40kg",
+    "Service": "Gỡ rốiBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">30–40kg",
+    "Service": "Tẩy ốBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">30–40kg",
+    "Service": "Tắm trắngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">30–40kg",
+    "Service": "Xả dưỡngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">30–40kg",
+    "Service": "Nhuộm hình lớnBáo giá tuỳ kích thước & màuBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">30–40kg",
+    "Service": "Nhuộm tạo hình cơ thểBáo giá theo thiết kế riêngBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">30–40kg",
+    "Service": "Cắt dũa + Móng",
+    "Price": "70k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">30–40kg",
+    "Service": "Vệ sinh tai",
+    "Price": "70k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">30–40kg",
+    "Service": "Cạo bụng + Bàn + Hậu môn",
+    "Price": "70k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">30–40kg",
+    "Service": "Tắm sấy",
+    "Price": "550k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">30–40kg",
+    "Service": "Cạo lông",
+    "Price": "600k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">30–40kg",
+    "Service": "Cắt lông",
+    "Price": "750k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">40kg",
+    "Service": "Combo Tắm Vệ Sinh",
+    "Price": "700k",
+    "Combo": "Yes",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">40kg",
+    "Service": "Combo Tắm Cạo",
+    "Price": "800k",
+    "Combo": "Yes",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">40kg",
+    "Service": "Combo Tắm Cắt",
+    "Price": "1tr",
+    "Combo": "Yes",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">40kg",
+    "Service": "Combo Tắm Cắt Tạo Hình",
+    "Price": "1,2tr",
+    "Combo": "Yes",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">40kg",
+    "Service": "Nhuộm 2 tai + đuôi",
+    "Price": "400k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">40kg",
+    "Service": "Nhuộm 4 chân",
+    "Price": "400k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">40kg",
+    "Service": "Nhuộm hình nhỏ",
+    "Price": "500k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">40kg",
+    "Service": "Gỡ rốiBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">40kg",
+    "Service": "Tẩy ốBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">40kg",
+    "Service": "Tắm trắngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">40kg",
+    "Service": "Xả dưỡngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">40kg",
+    "Service": "Nhuộm hình lớnBáo giá tuỳ kích thước & màuBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">40kg",
+    "Service": "Nhuộm tạo hình cơ thểBáo giá theo thiết kế riêngBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">40kg",
+    "Service": "Cắt dũa + Móng",
+    "Price": "70k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">40kg",
+    "Service": "Vệ sinh tai",
+    "Price": "70k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">40kg",
+    "Service": "Cạo bụng + Bàn + Hậu môn",
+    "Price": "70k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">40kg",
+    "Service": "Tắm sấy",
+    "Price": "650k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">40kg",
+    "Service": "Cạo lông",
+    "Price": "700k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Cho",
+    "Band": ">40kg",
+    "Service": "Cắt lông",
+    "Price": "900k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": "<3kg",
+    "Service": "Combo Tắm Vệ Sinh",
+    "Price": "120k",
+    "Combo": "Yes",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": "<3kg",
+    "Service": "Combo Tắm Cạo",
+    "Price": "200k",
+    "Combo": "Yes",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": "<3kg",
+    "Service": "Combo Tắm Cắt",
+    "Price": "300k",
+    "Combo": "Yes",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": "<3kg",
+    "Service": "Combo Tắm Cắt Tạo Hình",
+    "Price": "350k",
+    "Combo": "Yes",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": "<3kg",
+    "Service": "Nhuộm 2 tai + đuôi",
+    "Price": "250k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": "<3kg",
+    "Service": "Nhuộm 4 chân",
+    "Price": "250k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": "<3kg",
+    "Service": "Nhuộm hình nhỏ",
+    "Price": "300k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": "<3kg",
+    "Service": "Gỡ rốiBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": "<3kg",
+    "Service": "Tẩy ốBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": "<3kg",
+    "Service": "Tắm trắngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": "<3kg",
+    "Service": "Xả dưỡngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": "<3kg",
+    "Service": "Nhuộm hình lớnBáo giá tuỳ kích thước & màuBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": "<3kg",
+    "Service": "Nhuộm tạo hình cơ thểBáo giá theo thiết kế riêngBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": "<3kg",
+    "Service": "Cắt dũa + Móng",
+    "Price": "30k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": "<3kg",
+    "Service": "Vệ sinh tai",
+    "Price": "30k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": "<3kg",
+    "Service": "Cạo bụng + Bàn + Hậu môn",
+    "Price": "30k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": "<3kg",
+    "Service": "Tắm sấy",
+    "Price": "100k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": "<3kg",
+    "Service": "Cạo lông",
+    "Price": "150k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": "<3kg",
+    "Service": "Cắt lông",
+    "Price": "200k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">3–6kg",
+    "Service": "Combo Tắm Vệ Sinh",
+    "Price": "200k",
+    "Combo": "Yes",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">3–6kg",
+    "Service": "Combo Tắm Cạo",
+    "Price": "250k",
+    "Combo": "Yes",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">3–6kg",
+    "Service": "Combo Tắm Cắt",
+    "Price": "350k",
+    "Combo": "Yes",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">3–6kg",
+    "Service": "Combo Tắm Cắt Tạo Hình",
+    "Price": "400k",
+    "Combo": "Yes",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">3–6kg",
+    "Service": "Nhuộm 2 tai + đuôi",
+    "Price": "250k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">3–6kg",
+    "Service": "Nhuộm 4 chân",
+    "Price": "250k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">3–6kg",
+    "Service": "Nhuộm hình nhỏ",
+    "Price": "300k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">3–6kg",
+    "Service": "Gỡ rốiBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">3–6kg",
+    "Service": "Tẩy ốBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">3–6kg",
+    "Service": "Tắm trắngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">3–6kg",
+    "Service": "Xả dưỡngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">3–6kg",
+    "Service": "Nhuộm hình lớnBáo giá tuỳ kích thước & màuBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">3–6kg",
+    "Service": "Nhuộm tạo hình cơ thểBáo giá theo thiết kế riêngBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">3–6kg",
+    "Service": "Cắt dũa + Móng",
+    "Price": "30k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">3–6kg",
+    "Service": "Vệ sinh tai",
+    "Price": "30k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">3–6kg",
+    "Service": "Cạo bụng + Bàn + Hậu môn",
+    "Price": "30k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">3–6kg",
+    "Service": "Tắm sấy",
+    "Price": "150k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">3–6kg",
+    "Service": "Cạo lông",
+    "Price": "200k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">3–6kg",
+    "Service": "Cắt lông",
+    "Price": "300k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">6–10kg",
+    "Service": "Combo Tắm Vệ Sinh",
+    "Price": "300k",
+    "Combo": "Yes",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">6–10kg",
+    "Service": "Combo Tắm Cạo",
+    "Price": "350k",
+    "Combo": "Yes",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">6–10kg",
+    "Service": "Combo Tắm Cắt",
+    "Price": "400k",
+    "Combo": "Yes",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">6–10kg",
+    "Service": "Combo Tắm Cắt Tạo Hình",
+    "Price": "500k",
+    "Combo": "Yes",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">6–10kg",
+    "Service": "Nhuộm 2 tai + đuôi",
+    "Price": "300k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">6–10kg",
+    "Service": "Nhuộm 4 chân",
+    "Price": "300k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">6–10kg",
+    "Service": "Nhuộm hình nhỏ",
+    "Price": "350k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">6–10kg",
+    "Service": "Gỡ rốiBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">6–10kg",
+    "Service": "Tẩy ốBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">6–10kg",
+    "Service": "Tắm trắngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">6–10kg",
+    "Service": "Xả dưỡngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">6–10kg",
+    "Service": "Nhuộm hình lớnBáo giá tuỳ kích thước & màuBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">6–10kg",
+    "Service": "Nhuộm tạo hình cơ thểBáo giá theo thiết kế riêngBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">6–10kg",
+    "Service": "Cắt dũa + Móng",
+    "Price": "50k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">6–10kg",
+    "Service": "Vệ sinh tai",
+    "Price": "50k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">6–10kg",
+    "Service": "Cạo bụng + Bàn + Hậu môn",
+    "Price": "50k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">6–10kg",
+    "Service": "Tắm sấy",
+    "Price": "250k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">6–10kg",
+    "Service": "Cạo lông",
+    "Price": "300k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">6–10kg",
+    "Service": "Cắt lông",
+    "Price": "400k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">10–20kg",
+    "Service": "Combo Tắm Vệ Sinh",
+    "Price": "400k",
+    "Combo": "Yes",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">10–20kg",
+    "Service": "Combo Tắm Cạo",
+    "Price": "450k",
+    "Combo": "Yes",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">10–20kg",
+    "Service": "Combo Tắm Cắt",
+    "Price": "550k",
+    "Combo": "Yes",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">10–20kg",
+    "Service": "Combo Tắm Cắt Tạo Hình",
+    "Price": "650k",
+    "Combo": "Yes",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">10–20kg",
+    "Service": "Nhuộm 2 tai + đuôi",
+    "Price": "300k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">10–20kg",
+    "Service": "Nhuộm 4 chân",
+    "Price": "300k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">10–20kg",
+    "Service": "Nhuộm hình nhỏ",
+    "Price": "350k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">10–20kg",
+    "Service": "Gỡ rốiBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">10–20kg",
+    "Service": "Tẩy ốBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">10–20kg",
+    "Service": "Tắm trắngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">10–20kg",
+    "Service": "Xả dưỡngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">10–20kg",
+    "Service": "Nhuộm hình lớnBáo giá tuỳ kích thước & màuBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">10–20kg",
+    "Service": "Nhuộm tạo hình cơ thểBáo giá theo thiết kế riêngBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">10–20kg",
+    "Service": "Cắt dũa + Móng",
+    "Price": "50k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">10–20kg",
+    "Service": "Vệ sinh tai",
+    "Price": "50k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">10–20kg",
+    "Service": "Cạo bụng + Bàn + Hậu môn",
+    "Price": "50k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">10–20kg",
+    "Service": "Tắm sấy",
+    "Price": "350k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">10–20kg",
+    "Service": "Cạo lông",
+    "Price": "400k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">10–20kg",
+    "Service": "Cắt lông",
+    "Price": "500k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">20–30kg",
+    "Service": "Combo Tắm Vệ Sinh",
+    "Price": "500k",
+    "Combo": "Yes",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">20–30kg",
+    "Service": "Combo Tắm Cạo",
+    "Price": "600k",
+    "Combo": "Yes",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">20–30kg",
+    "Service": "Combo Tắm Cắt",
+    "Price": "700k",
+    "Combo": "Yes",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">20–30kg",
+    "Service": "Combo Tắm Cắt Tạo Hình",
+    "Price": "800k",
+    "Combo": "Yes",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">20–30kg",
+    "Service": "Nhuộm 2 tai + đuôi",
+    "Price": "350k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">20–30kg",
+    "Service": "Nhuộm 4 chân",
+    "Price": "350k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">20–30kg",
+    "Service": "Nhuộm hình nhỏ",
+    "Price": "400k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">20–30kg",
+    "Service": "Gỡ rốiBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">20–30kg",
+    "Service": "Tẩy ốBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">20–30kg",
+    "Service": "Tắm trắngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">20–30kg",
+    "Service": "Xả dưỡngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">20–30kg",
+    "Service": "Nhuộm hình lớnBáo giá tuỳ kích thước & màuBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">20–30kg",
+    "Service": "Nhuộm tạo hình cơ thểBáo giá theo thiết kế riêngBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">20–30kg",
+    "Service": "Cắt dũa + Móng",
+    "Price": "70k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">20–30kg",
+    "Service": "Vệ sinh tai",
+    "Price": "70k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">20–30kg",
+    "Service": "Cạo bụng + Bàn + Hậu môn",
+    "Price": "70k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">20–30kg",
+    "Service": "Tắm sấy",
+    "Price": "450k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">20–30kg",
+    "Service": "Cạo lông",
+    "Price": "500k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">20–30kg",
+    "Service": "Cắt lông",
+    "Price": "650k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">30–40kg",
+    "Service": "Combo Tắm Vệ Sinh",
+    "Price": "600k",
+    "Combo": "Yes",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">30–40kg",
+    "Service": "Combo Tắm Cạo",
+    "Price": "700k",
+    "Combo": "Yes",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">30–40kg",
+    "Service": "Combo Tắm Cắt",
+    "Price": "800k",
+    "Combo": "Yes",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">30–40kg",
+    "Service": "Combo Tắm Cắt Tạo Hình",
+    "Price": "1tr",
+    "Combo": "Yes",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">30–40kg",
+    "Service": "Nhuộm 2 tai + đuôi",
+    "Price": "400k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">30–40kg",
+    "Service": "Nhuộm 4 chân",
+    "Price": "400k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">30–40kg",
+    "Service": "Nhuộm hình nhỏ",
+    "Price": "500k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">30–40kg",
+    "Service": "Gỡ rốiBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">30–40kg",
+    "Service": "Tẩy ốBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">30–40kg",
+    "Service": "Tắm trắngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">30–40kg",
+    "Service": "Xả dưỡngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">30–40kg",
+    "Service": "Nhuộm hình lớnBáo giá tuỳ kích thước & màuBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">30–40kg",
+    "Service": "Nhuộm tạo hình cơ thểBáo giá theo thiết kế riêngBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">30–40kg",
+    "Service": "Cắt dũa + Móng",
+    "Price": "70k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">30–40kg",
+    "Service": "Vệ sinh tai",
+    "Price": "70k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">30–40kg",
+    "Service": "Cạo bụng + Bàn + Hậu môn",
+    "Price": "70k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">30–40kg",
+    "Service": "Tắm sấy",
+    "Price": "550k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">30–40kg",
+    "Service": "Cạo lông",
+    "Price": "600k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">30–40kg",
+    "Service": "Cắt lông",
+    "Price": "750k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">40kg",
+    "Service": "Combo Tắm Vệ Sinh",
+    "Price": "700k",
+    "Combo": "Yes",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">40kg",
+    "Service": "Combo Tắm Cạo",
+    "Price": "800k",
+    "Combo": "Yes",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">40kg",
+    "Service": "Combo Tắm Cắt",
+    "Price": "1tr",
+    "Combo": "Yes",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">40kg",
+    "Service": "Combo Tắm Cắt Tạo Hình",
+    "Price": "1,2tr",
+    "Combo": "Yes",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">40kg",
+    "Service": "Nhuộm 2 tai + đuôi",
+    "Price": "400k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">40kg",
+    "Service": "Nhuộm 4 chân",
+    "Price": "400k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">40kg",
+    "Service": "Nhuộm hình nhỏ",
+    "Price": "500k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">40kg",
+    "Service": "Gỡ rốiBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">40kg",
+    "Service": "Tẩy ốBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">40kg",
+    "Service": "Tắm trắngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">40kg",
+    "Service": "Xả dưỡngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">40kg",
+    "Service": "Nhuộm hình lớnBáo giá tuỳ kích thước & màuBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">40kg",
+    "Service": "Nhuộm tạo hình cơ thểBáo giá theo thiết kế riêngBáo giá riêng",
+    "Price": "",
+    "Combo": "No",
+    "BaoGiaRieng": "Yes"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">40kg",
+    "Service": "Cắt dũa + Móng",
+    "Price": "70k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">40kg",
+    "Service": "Vệ sinh tai",
+    "Price": "70k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">40kg",
+    "Service": "Cạo bụng + Bàn + Hậu môn",
+    "Price": "70k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">40kg",
+    "Service": "Tắm sấy",
+    "Price": "650k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">40kg",
+    "Service": "Cạo lông",
+    "Price": "700k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  },
+  {
+    "System": "T2",
+    "Pet": "Meo",
+    "Band": ">40kg",
+    "Service": "Cắt lông",
+    "Price": "900k",
+    "Combo": "No",
+    "BaoGiaRieng": "No"
+  }
+]

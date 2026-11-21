@@ -1,0 +1,252 @@
+{
+  "buttons3": [
+    {
+      "text": "",
+      "disabled": false,
+      "cls": "hidden items-center justify-center rounded-full p-2 text-brand-deep transition-colors duration-300 ease-in-out hover:text-brand-gold md:flex"
+    },
+    {
+      "text": "",
+      "disabled": false,
+      "cls": "rounded-2xl border border-brand-deep/20 p-2.5 transition-colors duration-300 ease-in-out hover:bg-brand-deep/5 md:hidden"
+    },
+    {
+      "text": "",
+      "disabled": false,
+      "cls": "rounded-2xl border border-brand-deep/20 p-2.5 transition-colors duration-300 ease-in-out hover:bg-brand-deep/5 md:hidden"
+    },
+    {
+      "text": "✓Loại béChó / Mèo",
+      "disabled": false,
+      "cls": "st done"
+    },
+    {
+      "text": "✓Cân nặngBậc định sẵn",
+      "disabled": false,
+      "cls": "st done"
+    },
+    {
+      "text": "3Dịch vụCombo hoặc lẻ",
+      "disabled": false,
+      "cls": "st active"
+    },
+    {
+      "text": "Combo trọn gói",
+      "disabled": false,
+      "cls": "active"
+    },
+    {
+      "text": "Dịch vụ lẻ",
+      "disabled": false,
+      "cls": ""
+    },
+    {
+      "text": "Combo Tắm Vệ Sinh200k",
+      "disabled": false,
+      "cls": "svc combo"
+    },
+    {
+      "text": "Combo Tắm Cạo250k",
+      "disabled": false,
+      "cls": "svc combo"
+    },
+    {
+      "text": "Combo Tắm Cắt350k",
+      "disabled": false,
+      "cls": "svc combo"
+    },
+    {
+      "text": "Combo Tắm Cắt Tạo Hình400k",
+      "disabled": false,
+      "cls": "svc combo"
+    },
+    {
+      "text": "Nhuộm 2 tai + đuôi250k",
+      "disabled": false,
+      "cls": "svc"
+    },
+    {
+      "text": "Nhuộm 4 chân250k",
+      "disabled": false,
+      "cls": "svc"
+    },
+    {
+      "text": "Nhuộm hình nhỏ300k",
+      "disabled": false,
+      "cls": "svc"
+    },
+    {
+      "text": "Gỡ rốiBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+      "disabled": false,
+      "cls": "svc"
+    },
+    {
+      "text": "Tẩy ốBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+      "disabled": false,
+      "cls": "svc"
+    },
+    {
+      "text": "Tắm trắngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+      "disabled": false,
+      "cls": "svc"
+    },
+    {
+      "text": "Xả dưỡngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+      "disabled": false,
+      "cls": "svc"
+    },
+    {
+      "text": "Nhuộm hình lớnBáo giá tuỳ kích thước & màuBáo giá riêng",
+      "disabled": false,
+      "cls": "svc"
+    },
+    {
+      "text": "Nhuộm tạo hình cơ thểBáo giá theo thiết kế riêngBáo giá riêng",
+      "disabled": false,
+      "cls": "svc"
+    },
+    {
+      "text": "← Quay lại",
+      "disabled": false,
+      "cls": "btn back"
+    },
+    {
+      "text": "Giữ chỗ ngay →",
+      "disabled": false,
+      "cls": "btn btn-gold"
+    },
+    {
+      "text": "Giữ chỗ với mức giá này →",
+      "disabled": true,
+      "cls": "rail-cta"
+    },
+    {
+      "text": "Hôm nay21/11",
+      "disabled": false,
+      "cls": "date-pill"
+    },
+    {
+      "text": "Ngày mai22/11",
+      "disabled": false,
+      "cls": "date-pill"
+    },
+    {
+      "text": "T223/11",
+      "disabled": false,
+      "cls": "date-pill"
+    },
+    {
+      "text": "T324/11",
+      "disabled": false,
+      "cls": "date-pill"
+    },
+    {
+      "text": "T425/11",
+      "disabled": false,
+      "cls": "date-pill"
+    },
+    {
+      "text": "Giữ chỗ cho bé →",
+      "disabled": false,
+      "cls": "btn btn-primary book-submit"
+    },
+    {
+      "text": "Giữ chỗ →",
+      "disabled": false,
+      "cls": "btn btn-gold"
+    },
+    {
+      "text": "",
+      "disabled": false,
+      "cls": "mat-fab relative block h-[92px] w-[84px] rounded-3xl focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-4 focus-visible:outline-brand-deep md:h-[108px] md:w-[100px]"
+    }
+  ],
+  "chips": [
+    {
+      "tag": "DIV",
+      "cls": "svc-toggle",
+      "text": "Combo trọn góiDịch vụ lẻ"
+    },
+    {
+      "tag": "DIV",
+      "cls": "svc-list",
+      "text": "Combo Tắm Vệ Sinh200kCombo Tắm Cạo250kCombo Tắm Cắt350kCombo Tắm Cắt Tạo Hình400kNhuộm tạo kiểuNhuộm 2 tai + đuôi250kNhu"
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "svc combo",
+      "text": "Combo Tắm Vệ Sinh200k"
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "svc combo",
+      "text": "Combo Tắm Cạo250k"
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "svc combo",
+      "text": "Combo Tắm Cắt350k"
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "svc combo",
+      "text": "Combo Tắm Cắt Tạo Hình400k"
+    },
+    {
+      "tag": "DIV",
+      "cls": "svc-group-label",
+      "text": "Nhuộm tạo kiểu"
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "svc",
+      "text": "Nhuộm 2 tai + đuôi250k"
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "svc",
+      "text": "Nhuộm 4 chân250k"
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "svc",
+      "text": "Nhuộm hình nhỏ300k"
+    },
+    {
+      "tag": "DIV",
+      "cls": "svc-group-label",
+      "text": "Dịch vụ báo giá riêng"
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "svc",
+      "text": "Gỡ rốiBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng"
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "svc",
+      "text": "Tẩy ốBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng"
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "svc",
+      "text": "Tắm trắngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng"
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "svc",
+      "text": "Xả dưỡngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng"
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "svc",
+      "text": "Nhuộm hình lớnBáo giá tuỳ kích thước & màuBáo giá riêng"
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "svc",
+      "text": "Nhuộm tạo hình cơ thểBáo giá theo thiết kế riêngBáo giá riêng"
+    }
+  ],
+  "rail": []
+}
