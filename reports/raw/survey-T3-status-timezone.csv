@@ -1,0 +1,9 @@
+﻿Browser_Timezone,Browser_Local_Time,Salon_Local_Time_NewYork,Salon_Open_Hours,UI_Status,Correct,Note
+America/New_York,"11/18/2026, 03:27:28","11/18/2026, 03:27:28",08:00-20:00,Closed,YES,Trạng thái khớp với giờ mở cửa của tiệm
+America/Los_Angeles,"11/18/2026, 00:27:41","11/18/2026, 03:27:41",08:00-20:00,Closed,YES,Trạng thái khớp với giờ mở cửa của tiệm
+Europe/London,"11/18/2026, 08:27:53","11/18/2026, 03:27:53",08:00-20:00,Open,NO,"Tiệm đang đóng theo giờ America/New_York nhưng UI hiển thị ""Open"""
+Asia/Ho_Chi_Minh,"11/18/2026, 15:28:07","11/18/2026, 03:28:07",08:00-20:00,Open,NO,"Tiệm đang đóng theo giờ America/New_York nhưng UI hiển thị ""Open"""
+Asia/Singapore,"11/18/2026, 16:28:23","11/18/2026, 03:28:23",08:00-20:00,Open,NO,"Tiệm đang đóng theo giờ America/New_York nhưng UI hiển thị ""Open"""
+Asia/Tokyo,"11/18/2026, 17:28:39","11/18/2026, 03:28:39",08:00-20:00,Open,NO,"Tiệm đang đóng theo giờ America/New_York nhưng UI hiển thị ""Open"""
+Australia/Sydney,"11/18/2026, 19:28:52","11/18/2026, 03:28:52",08:00-20:00,Open,NO,"Tiệm đang đóng theo giờ America/New_York nhưng UI hiển thị ""Open"""
+UTC,"11/18/2026, 08:29:05","11/18/2026, 03:29:05",08:00-20:00,Open,NO,"Tiệm đang đóng theo giờ America/New_York nhưng UI hiển thị ""Open"""

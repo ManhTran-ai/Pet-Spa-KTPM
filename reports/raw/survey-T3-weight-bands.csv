@@ -1,0 +1,18 @@
+﻿Product_Line,Service_Name,API_Price_USD,API_Duration_min,Weight_Band,BR03_Declared_Bands,Match,Note
+Dog Bath,Dog Bath 0-20lbs,52.00,30,0-20,0-20 / 20-50 / over 50,YES,Khớp: các ngưỡng BR-03 khai đều có dịch vụ tương ứng trong danh mục
+Dog Bath,Dog Bath 20-50lbs,65.00,30,20-50,0-20 / 20-50 / over 50,YES,Khớp: các ngưỡng BR-03 khai đều có dịch vụ tương ứng trong danh mục
+Dog Bath,Dog Bath short hair over 50lbs,72.00,60,over 50,0-20 / 20-50 / over 50,YES,Khớp: các ngưỡng BR-03 khai đều có dịch vụ tương ứng trong danh mục
+Dog Bath,Dog bath medium/long hair over 50lbs,79.00,60,over 50,0-20 / 20-50 / over 50,YES,Khớp: các ngưỡng BR-03 khai đều có dịch vụ tương ứng trong danh mục
+Dog Bath and tidy up,Dog Bath and tidy up 0 - 20lbs,62.00,30,0-20,0-20 / 21-40 / 41-60 / 61-79 / 79+,YES,Khớp: các ngưỡng BR-03 khai đều có dịch vụ tương ứng trong danh mục
+Dog Bath and tidy up,Dog Bath and tidy up 21 - 40lbs,72.00,60,21-40,0-20 / 21-40 / 41-60 / 61-79 / 79+,YES,Khớp: các ngưỡng BR-03 khai đều có dịch vụ tương ứng trong danh mục
+Dog Bath and tidy up,Dog Bath and tidy up 41 - 60lbs,91.00,60,41-60,0-20 / 21-40 / 41-60 / 61-79 / 79+,YES,Khớp: các ngưỡng BR-03 khai đều có dịch vụ tương ứng trong danh mục
+Dog Bath and tidy up,Dog Bath and tidy up 61- 79lbs,99.00,60,61-79,0-20 / 21-40 / 41-60 / 61-79 / 79+,YES,Khớp: các ngưỡng BR-03 khai đều có dịch vụ tương ứng trong danh mục
+Dog Bath and tidy up,Dog Bath and tidy up 79+ lbs,118.00,60,79+,0-20 / 21-40 / 41-60 / 61-79 / 79+,YES,Khớp: các ngưỡng BR-03 khai đều có dịch vụ tương ứng trong danh mục
+Dog Full Groom,Dog Full Groom  0 - 20 lbs,69.00,60,0-20,0-20 / 21-30 / 31-40 / 41-60 / 61-78 / 79-90 / 91-100+,YES,Khớp: các ngưỡng BR-03 khai đều có dịch vụ tương ứng trong danh mục
+Dog Full Groom,Dog Full groom 21 - 30lbs,77.00,60,21-30,0-20 / 21-30 / 31-40 / 41-60 / 61-78 / 79-90 / 91-100+,YES,Khớp: các ngưỡng BR-03 khai đều có dịch vụ tương ứng trong danh mục
+Dog Full Groom,Dog Full Groom  31 - 40lbs,86.00,60,31-40,0-20 / 21-30 / 31-40 / 41-60 / 61-78 / 79-90 / 91-100+,YES,Khớp: các ngưỡng BR-03 khai đều có dịch vụ tương ứng trong danh mục
+Dog Full Groom,Dog Full Groom 41 - 60lbs,102.00,60,41-60,0-20 / 21-30 / 31-40 / 41-60 / 61-78 / 79-90 / 91-100+,YES,Khớp: các ngưỡng BR-03 khai đều có dịch vụ tương ứng trong danh mục
+Dog Full Groom,Dog Full groom 61 - 78lbs,121.00,90,61-78,0-20 / 21-30 / 31-40 / 41-60 / 61-78 / 79-90 / 91-100+,YES,Khớp: các ngưỡng BR-03 khai đều có dịch vụ tương ứng trong danh mục
+Dog Full Groom,Dog Full groom 79 - 90lbs,136.00,120,79-90,0-20 / 21-30 / 31-40 / 41-60 / 61-78 / 79-90 / 91-100+,YES,Khớp: các ngưỡng BR-03 khai đều có dịch vụ tương ứng trong danh mục
+Dog Full Groom,Dog Full Groom 91-100+ pounds,175.00,120,91-100+,0-20 / 21-30 / 31-40 / 41-60 / 61-78 / 79-90 / 91-100+,YES,Khớp: các ngưỡng BR-03 khai đều có dịch vụ tương ứng trong danh mục
+Cat Bath,Cat Bath,60.00,30,(không mã hoá ngưỡng trong tên),0-20 / 21-40 / 41-60 / 61-79 / 79+,NO,Số ngưỡng trong BR-03 không khớp số ngưỡng thực tế của dòng sản phẩm
