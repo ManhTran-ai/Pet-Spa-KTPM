@@ -5,7 +5,7 @@ Căn cứ: TP-01 §5.2 · Nguồn số liệu: `docs/`, `reports/`
 | Mã | Tiêu chí | Kết quả | Trạng thái | Nguồn |
 | --- | --- | --- | --- | --- |
 | EC-1 | 100% yêu cầu Must có ít nhất 1 test case | 41/41 yêu cầu Must đã phủ | PASS | docs/rtm.csv, docs/requirements.csv |
-| EC-2 | 100% test case Critical/High đã thực thi, tỷ lệ Pass ≥ 95% | Critical/High: 64/64 đã thực thi (100.0%), Pass 82.8% · toàn bộ ca đã chạy: 71 | FAIL | reports/execution-log.csv |
+| EC-2 | 100% test case Critical/High đã thực thi, tỷ lệ Pass ≥ 95% | Critical/High: 73/73 đã thực thi (100.0%), Pass 84.9% · toàn bộ ca đã chạy: 81 | FAIL | reports/execution-log.csv |
 | EC-3 | 0 lỗi Critical/High còn mở, mọi lỗi đi qua đủ vòng đời | 0 lỗi Critical/High đang mở trong tổng 28 lỗi | PASS | docs/defects/defects.csv |
 | EC-4 | Mỗi hệ thống có ít nhất 1 bộ E2E tự động chạy được và xanh | 23 test case tự động Pass | PASS | reports/execution-log.csv, tests/e2e/ |
 | EC-5 | NFR-01 đạt: điểm Lighthouse Performance (mobile) ≥ 70 trên cả 3 site | điểm thấp nhất 3 | FAIL | reports/raw/lighthouse-summary.csv |

@@ -8,9 +8,9 @@ TC-T1-M1-006,FR-M1-06,T1,"URL sai hiển thị trang lỗi thân thiện, không
 TC-T1-M2-001,FR-M2-01,T1,"Mỗi dịch vụ trong danh mục có đủ tên, mô tả, giá và thời lượng",Critical,UC,Manual,Tài,Chưa thực thi
 TC-T1-M2-002,FR-M2-02,T1,Mỗi dịch vụ nêu rõ thành phần bao gồm,High,UC,Manual,Tài,Chưa thực thi
 TC-T1-M2-003,FR-M2-03,T1,Dịch vụ không hỗ trợ tại nhà có nhãn Chỉ tại spa,High,UC,Manual,Tài,Chưa thực thi
-TC-T1-M2-004,FR-M2-03,T1,Dịch vụ hỗ trợ tại nhà có nhãn Có tận nhà,High,UC,Manual,Mạnh,Chưa thực thi
-TC-T1-M2-005,FR-M2-05,T1,Gói phổ biện được đánh dấu rõ ràng,Medium,UC,Manual,Mạnh,Chưa thực thi
-TC-T1-M2-006,FR-M2-05,T1,Mỗi gói tại nhà ghi rõ mức phụ thu cộng thêm,Critical,UC,Manual,Mạnh,Chưa thực thi
+TC-T1-M2-004,FR-M2-03,T1,Dịch vụ hỗ trợ tại nhà có nhãn Có tận nhà,High,UC,Manual,Mạnh,Pass
+TC-T1-M2-005,FR-M2-05,T1,Gói phổ biện được đánh dấu rõ ràng,Medium,UC,Manual,Mạnh,Pass
+TC-T1-M2-006,FR-M2-05,T1,Mỗi gói tại nhà ghi rõ mức phụ thu cộng thêm,Critical,UC,Manual,Mạnh,Pass
 TC-T1-M2-007,FR-M2-01,T1,Số dịch vụ niêm yết khớp bảng giá mục 3 của SRS,High,UC,Manual,Lộc,Chưa thực thi
 TC-T1-M3-001,FR-M3-01,T1,Bảng giá có đủ cột cho mọi bậc cân nặng và mọi dịch vụ,Critical,UC,Manual,Tài,Chưa thực thi
 TC-T1-M3-002,FR-M3-02,T1,"Tra bảng giá đúng cho (Chó, bậc 3-5kg) + dịch vụ đã chọn",Critical,EP,Manual,Tài,Chưa thực thi
@@ -35,17 +35,17 @@ TC-T1-M4-002,FR-M4-02,T1,Bỏ trống trường bắt buộc thì form không g�
 TC-T1-M4-003,FR-M4-04,T1,Bước Lịch hẹn của T1 hiển thị 7 ngày cố định và 8 khung giờ 08:30-17:00,High,EP,Manual,Tài,Chưa thực thi
 TC-T1-M4-004,FR-M4-06,T1,"Wizard bắt buộc qua bước chọn loài, không bỏ qua được",Critical,ST,Manual,Tài,Chưa thực thi
 TC-T1-M4-005,FR-M4-06,T1,"Wizard bắt buộc qua bước chọn cân nặng, không bỏ qua được",Critical,ST,Manual,Tài,Chưa thực thi
-TC-T1-M4-006,FR-M4-07,T1,"Bước chọn dịch vụ hiển thị đầy đủ, không dịch vụ nào vô hình",Critical,UC,Manual,Mạnh,Chưa thực thi
-TC-T1-M4-007,FR-M4-08,T1,Quay lại từ bước 3 giữ nguyên loài và cân nặng đã chọn,Critical,ST,Manual,Mạnh,Chưa thực thi
-TC-T1-M4-008,FR-M4-12,T1,Luồng đặt lịch không yêu cầu đăng nhập hoặc tạo tài khoản,Critical,UC,Manual,Mạnh,Chưa thực thi
-TC-T1-M4-009,FR-M4-06,T1,ST: bỏ qua bước 1 và đi thẳng bước 2 bị chặn,Critical,ST,Manual,Mạnh,Chưa thực thi
+TC-T1-M4-006,FR-M4-07,T1,"Bước chọn dịch vụ hiển thị đầy đủ, không dịch vụ nào vô hình",Critical,UC,Manual,Mạnh,Pass
+TC-T1-M4-007,FR-M4-08,T1,Quay lại từ bước 3 giữ nguyên loài và cân nặng đã chọn,Critical,ST,Manual,Mạnh,Pass
+TC-T1-M4-008,FR-M4-12,T1,Luồng đặt lịch không yêu cầu đăng nhập hoặc tạo tài khoản,Critical,UC,Manual,Mạnh,Pass
+TC-T1-M4-009,FR-M4-06,T1,ST: bỏ qua bước 1 và đi thẳng bước 2 bị chặn,Critical,ST,Manual,Mạnh,Pass
 TC-T1-M4-010,FR-M4-07,T1,ST: nhảy thẳng từ bước 2 sang bước xác nhận bị chặn,Critical,ST,Manual,Lộc,Chưa thực thi
 TC-T1-M4-011,FR-M4-08,T1,ST: quay lại rồi tiến tục vẫn hợp lệ,High,ST,Manual,Lộc,Chưa thực thi
 TC-T1-M4-012,FR-M4-08,T1,ST: quay lại bước đầu được và có thể đổi lựa chọn,High,ST,Manual,Lộc,Chưa thực thi
 TC-T1-M5-001,FR-M5-01,T1,Trang mô tả quy trình 4 bước từ đặt lịch đến nhận thú cưng,Critical,UC,Manual,Tài,Chưa thực thi
 TC-T1-M5-002,FR-M5-02,T1,Có nêu xác nhận lịch trong 5 phút qua Zalo,Critical,UC,Manual,Tài,Chưa thực thi
-TC-T1-M5-003,FR-M5-03,T1,FAQ Có thể đổi/hủy lịch không trả lời có điều kiện cụ thể,High,UC,Manual,Mạnh,Chưa thực thi
-TC-T1-M5-004,FR-M5-03,T1,Điều kiện đổi lịch nêu rõ thời gian và phí,High,DT,Manual,Mạnh,Chưa thực thi
+TC-T1-M5-003,FR-M5-03,T1,FAQ Có thể đổi/hủy lịch không trả lời có điều kiện cụ thể,High,UC,Manual,Mạnh,Pass
+TC-T1-M5-004,FR-M5-03,T1,Điều kiện đổi lịch nêu rõ thời gian và phí,High,DT,Manual,Mạnh,Pass
 TC-T1-M5-005,FR-M5-03,T1,DT chính sách hủy: hủy trước khi cân nặng đạt mức miễn phí,High,DT,Manual,Lộc,Chưa thực thi
 TC-T1-M5-006,FR-M5-03,T1,FAQ T1 nêu điều kiện hoàn tiền hoặc điều khoản hoàn cọc tương ứng,Medium,UC,Manual,Lộc,Chưa thực thi
 TC-T1-M6-001,FR-M6-01,T1,Bước 3 wizard cho lựa chọn đến spa,Critical,ST,Manual,Tài,Chưa thực thi
@@ -69,5 +69,5 @@ TC-T1-M6-018,FR-M6-06,T1,Trên 15 km hiển thị Liên hệ báo giá riêng th
 TC-T1-M6-019,FR-M6-06,T1,Nhập địa chỉ xa khoảng 20 km không hiển thị con số phụ thu cố định,High,EP,Manual,Lộc,Chưa thực thi
 TC-T1-M6-020,FR-M6-02,T1,Phụ thu di chuyển hiển thị ngay khi nhập địa chỉ,High,UC,Manual,Lộc,Chưa thực thi
 TC-T1-M7-001,FR-M7-03,T1,Chuyển sang tiếng Anh vẫn ở trang hiện tại và dịch đủ,High,UC,Manual,Tài,Chưa thực thi
-TC-T1-M7-002,FR-M7-04,T1,"Có ít nhất 2 kênh liên hệ hoạt động, liên kết Zalo mở đúng ứng dụng",Critical,UC,Manual,Mạnh,Chưa thực thi
+TC-T1-M7-002,FR-M7-04,T1,"Có ít nhất 2 kênh liên hệ hoạt động, liên kết Zalo mở đúng ứng dụng",Critical,UC,Manual,Mạnh,Pass
 TC-T1-M7-003,FR-M7-06,T1,"Mục FAQ accordion mở độc lập, đóng lại được, biểu tượng đổi theo trạng thái",Medium,ST,Manual,Lộc,Chưa thực thi

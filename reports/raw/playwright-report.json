@@ -339,12 +339,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2242,
+                      "duration": 1996,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:37:05.537Z",
+                      "startTime": "2026-11-22T13:59:00.072Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -373,12 +373,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 5336,
+                      "duration": 5382,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:37:08.028Z",
+                      "startTime": "2026-11-22T13:59:02.297Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -407,12 +407,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 5782,
+                      "duration": 5847,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:37:13.380Z",
+                      "startTime": "2026-11-22T13:59:07.692Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -423,6 +423,387 @@
               "id": "bf2eb4103083a654a8b6-711e875da4b39bc0c6bb",
               "file": "e2e/t1/m1-navigation.spec.ts",
               "line": 30,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "e2e\\t1\\m2-m4-m5-m7.spec.ts",
+      "file": "e2e/t1/m2-m4-m5-m7.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "T1 Pet NGON — M2 Phân biệt dịch vụ tại spa và tại nhà",
+          "file": "e2e/t1/m2-m4-m5-m7.spec.ts",
+          "line": 44,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-T1-M2-004: dịch vụ hỗ trợ tại nhà được đánh dấu rõ ràng",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "t1",
+                  "projectName": "t1",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3843,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-22T13:59:13.586Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ab9c569ba85bee051f68-bc5df1e4bec80ba67e63",
+              "file": "e2e/t1/m2-m4-m5-m7.spec.ts",
+              "line": 45,
+              "column": 3
+            },
+            {
+              "title": "TC-T1-M2-005: gói phí biến đổi được đánh dấu rõ ràng",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "t1",
+                  "projectName": "t1",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3605,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-22T13:59:17.441Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ab9c569ba85bee051f68-0e2e9c3a310da2d62386",
+              "file": "e2e/t1/m2-m4-m5-m7.spec.ts",
+              "line": 65,
+              "column": 3
+            },
+            {
+              "title": "TC-T1-M2-006: mọi gói tại nhà ghi rõ mức phụ thu cố định thêm",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "t1",
+                  "projectName": "t1",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3500,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-22T13:59:21.059Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ab9c569ba85bee051f68-7d23da57bf4ecbaea0e3",
+              "file": "e2e/t1/m2-m4-m5-m7.spec.ts",
+              "line": 86,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "T1 Pet NGON — M4 Luồng đặt lịch",
+          "file": "e2e/t1/m2-m4-m5-m7.spec.ts",
+          "line": 103,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-T1-M4-006: bước chọn dịch vụ hiển thị đủ ý, không dịch vụ nào vô hình",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "t1",
+                  "projectName": "t1",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3823,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-22T13:59:24.573Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ab9c569ba85bee051f68-6f8ca2f6a1ba1304a61f",
+              "file": "e2e/t1/m2-m4-m5-m7.spec.ts",
+              "line": 104,
+              "column": 3
+            },
+            {
+              "title": "TC-T1-M4-007: quay lại từ bước 3 giữ nguyên loài đã chọn",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "t1",
+                  "projectName": "t1",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 10607,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-22T13:59:28.408Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ab9c569ba85bee051f68-4cea0240047c65d75130",
+              "file": "e2e/t1/m2-m4-m5-m7.spec.ts",
+              "line": 126,
+              "column": 3
+            },
+            {
+              "title": "TC-T1-M4-008: luồng đặt lịch không yêu cầu đăng nhập hoặc tạo tài khoản",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "t1",
+                  "projectName": "t1",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 13097,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-22T13:59:39.027Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ab9c569ba85bee051f68-76c75e84e09f6a6c0363",
+              "file": "e2e/t1/m2-m4-m5-m7.spec.ts",
+              "line": 138,
+              "column": 3
+            },
+            {
+              "title": "TC-T1-M4-009: ST bỏ qua bước 1 và đi thẳng bước 2 bằng cách chọn",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "t1",
+                  "projectName": "t1",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 8519,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-22T13:59:52.141Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ab9c569ba85bee051f68-abc0e11ed82a880128b6",
+              "file": "e2e/t1/m2-m4-m5-m7.spec.ts",
+              "line": 177,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "T1 Pet NGON — M5 Điều kiện đổi/hủy lịch",
+          "file": "e2e/t1/m2-m4-m5-m7.spec.ts",
+          "line": 210,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-T1-M5-003: FAQ điều kiện đổi/hủy lịch nêu rõ điều kiện cụ thể",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "t1",
+                  "projectName": "t1",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4364,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-22T14:00:00.671Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ab9c569ba85bee051f68-1a36cf16719ae6f3e7ca",
+              "file": "e2e/t1/m2-m4-m5-m7.spec.ts",
+              "line": 211,
+              "column": 3
+            },
+            {
+              "title": "TC-T1-M5-004: điều kiện đổi lịch nêu rõ thời gian và mức phụ thu",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "t1",
+                  "projectName": "t1",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4420,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-22T14:00:05.047Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ab9c569ba85bee051f68-30901c51d96dcd312fa9",
+              "file": "e2e/t1/m2-m4-m5-m7.spec.ts",
+              "line": 228,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "T1 Pet NGON — M7 Kênh liên hệ",
+          "file": "e2e/t1/m2-m4-m5-m7.spec.ts",
+          "line": 243,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-T1-M7-002: có ít nhất 2 kênh liên hệ hoạt động, có liên kết Zalo",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "t1",
+                  "projectName": "t1",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3436,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-22T14:00:09.481Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ab9c569ba85bee051f68-4aada7e58b8d5392a41f",
+              "file": "e2e/t1/m2-m4-m5-m7.spec.ts",
+              "line": 244,
               "column": 3
             }
           ]
@@ -458,7 +839,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 4275,
+                      "duration": 4030,
                       "error": {
                         "message": "Error: scrollWidth=379 > clientWidth=360\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m361\u001b[39m\nReceived:    \u001b[31m379\u001b[39m",
                         "stack": "Error: scrollWidth=379 > clientWidth=360\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m361\u001b[39m\nReceived:    \u001b[31m379\u001b[39m\n    at D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\e2e\\t1\\m3-bva-m6-dt.spec.ts:69:7",
@@ -482,7 +863,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:37:19.203Z",
+                      "startTime": "2026-11-22T14:00:12.963Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -535,12 +916,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3829,
+                      "duration": 3634,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:37:24.110Z",
+                      "startTime": "2026-11-22T14:00:17.529Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -569,12 +950,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 4055,
+                      "duration": 3744,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:37:28.207Z",
+                      "startTime": "2026-11-22T14:00:21.400Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -603,12 +984,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 4001,
+                      "duration": 3949,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:37:32.277Z",
+                      "startTime": "2026-11-22T14:00:25.165Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -637,12 +1018,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3834,
+                      "duration": 3540,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:37:36.292Z",
+                      "startTime": "2026-11-22T14:00:29.127Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -671,12 +1052,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3862,
+                      "duration": 3820,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:37:40.139Z",
+                      "startTime": "2026-11-22T14:00:32.680Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -705,12 +1086,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3810,
+                      "duration": 3569,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:37:44.015Z",
+                      "startTime": "2026-11-22T14:00:36.510Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -739,12 +1120,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3717,
+                      "duration": 3649,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:37:47.841Z",
+                      "startTime": "2026-11-22T14:00:40.090Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -781,12 +1162,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3463,
+                      "duration": 3509,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:37:51.568Z",
+                      "startTime": "2026-11-22T14:00:43.750Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -815,12 +1196,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3700,
+                      "duration": 3865,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:37:55.046Z",
+                      "startTime": "2026-11-22T14:00:47.271Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -849,12 +1230,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3678,
+                      "duration": 4025,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:37:58.760Z",
+                      "startTime": "2026-11-22T14:00:51.160Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -883,12 +1264,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3685,
+                      "duration": 5190,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:38:02.451Z",
+                      "startTime": "2026-11-22T14:00:55.201Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -917,12 +1298,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3609,
+                      "duration": 3673,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:38:06.153Z",
+                      "startTime": "2026-11-22T14:01:00.410Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -951,12 +1332,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3578,
+                      "duration": 4544,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:38:09.772Z",
+                      "startTime": "2026-11-22T14:01:04.096Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -985,12 +1366,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 14244,
+                      "duration": 14769,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:38:13.362Z",
+                      "startTime": "2026-11-22T14:01:08.654Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1019,12 +1400,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3610,
+                      "duration": 3627,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:38:27.616Z",
+                      "startTime": "2026-11-22T14:01:23.443Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1070,12 +1451,12 @@
                       "workerIndex": 2,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3399,
+                      "duration": 3530,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:38:31.802Z",
+                      "startTime": "2026-11-22T14:01:27.633Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1104,12 +1485,12 @@
                       "workerIndex": 2,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 6397,
+                      "duration": 5155,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:38:35.435Z",
+                      "startTime": "2026-11-22T14:01:31.383Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1138,12 +1519,12 @@
                       "workerIndex": 2,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2785,
+                      "duration": 2692,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:38:41.847Z",
+                      "startTime": "2026-11-22T14:01:36.552Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1172,12 +1553,12 @@
                       "workerIndex": 2,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 4166,
+                      "duration": 4126,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:38:44.646Z",
+                      "startTime": "2026-11-22T14:01:39.258Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1206,12 +1587,12 @@
                       "workerIndex": 2,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2811,
+                      "duration": 2786,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:38:48.826Z",
+                      "startTime": "2026-11-22T14:01:43.397Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1257,12 +1638,12 @@
                       "workerIndex": 2,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 6492,
+                      "duration": 6749,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:38:51.672Z",
+                      "startTime": "2026-11-22T14:01:46.228Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1291,12 +1672,12 @@
                       "workerIndex": 2,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 6470,
+                      "duration": 6488,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:38:58.175Z",
+                      "startTime": "2026-11-22T14:01:52.987Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1325,12 +1706,12 @@
                       "workerIndex": 2,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 6904,
+                      "duration": 6651,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:39:04.658Z",
+                      "startTime": "2026-11-22T14:01:59.488Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1359,12 +1740,12 @@
                       "workerIndex": 2,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 14839,
+                      "duration": 6883,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:39:11.578Z",
+                      "startTime": "2026-11-22T14:02:06.156Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1393,12 +1774,12 @@
                       "workerIndex": 2,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 8246,
+                      "duration": 8115,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:39:26.434Z",
+                      "startTime": "2026-11-22T14:02:13.052Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1427,7 +1808,7 @@
                       "workerIndex": 2,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 6579,
+                      "duration": 6780,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatch\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/final price|confirmed at|at the shop|actual weight|final/i\u001b[39m\nReceived string:  \u001b[31m\"Pretty Paws Cat and Dog Grooming\u001b[39m\n\u001b[31mPretty Paws Cat and Dog Grooming\u001b[39m\n\u001b[31m(609) 816-7755\u001b[39m\n\u001b[31mnycoleco@yahoo.com\u001b[39m\n\u001b[31mHamilton, NJ, US\u001b[39m\n\u001b[31mDirection\u001b[39m\n\u001b[31mClosed\u001b[39m\n\u001b[31m8:00 AM - 8:00 PM\u001b[39m\n\u001b[31mBook Now\u001b[39m\n\u001b[31mBusiness Hours\u001b[39m\n\u001b[31mSUN\u001b[39m\n\u001b[31m8:00 AM\u001b[39m\n\u001b[31m-\u001b[39m\n\u001b[31m8:00 PM\u001b[39m\n\u001b[31mMON\u001b[39m\n\u001b[31m8:00 AM\u001b[39m\n\u001b[31m-\u001b[39m\n\u001b[31m8:00 PM\u001b[39m\n\u001b[31mTUE\u001b[39m\n\u001b[31m8:00 AM\u001b[39m\n\u001b[31m-\u001b[39m\n\u001b[31m8:00 PM\u001b[39m\n\u001b[31mWED\u001b[39m\n\u001b[31m8:00 AM\u001b[39m\n\u001b[31m-\u001b[39m\n\u001b[31m8:00 PM\u001b[39m\n\u001b[31mTHU\u001b[39m\n\u001b[31m8:00 AM\u001b[39m\n\u001b[31m-\u001b[39m\n\u001b[31m8:00 PM\u001b[39m\n\u001b[31mFRI\u001b[39m\n\u001b[31m8:00 AM\u001b[39m\n\u001b[31m-\u001b[39m\n\u001b[31m8:00 PM\u001b[39m\n\u001b[31mSAT\u001b[39m\n\u001b[31m8:00 AM\u001b[39m\n\u001b[31m-\u001b[39m\n\u001b[31m8:00 PM\u001b[39m\n\u001b[31mAbout us\u001b[39m\n\u001b[31mMy name is Nycole, and I’m the owner and groomer behind Pretty Paws Cat and Dog Grooming! 🩷🐾\u001b[39m\n\u001b[31mI’ve been grooming for over 10 years and have had the pleasure of working with cats and dogs of all sizes and breeds. Animals have always been a huge part of my life, and I’m a true animal lover with pets of my own, ranging from cats to horses! 🐱🐶🐴\u001b[39m\n\u001b[31mAt Pretty Paws, I believe every pet deserves patience, love, and individualized care. That’s why I offer a kennel-free grooming experience, where each pet is groomed straight through with one-on-one attention in a calm, relaxed environment.\u001b[39m\n\u001b[31mMy goal is to make every visit feel like a little spa day for your babies, treating each one with the same love and care I give my own. Thank you for trusting me with your furry family members. It truly means so much to me! 🩷🐾\u001b[39m\n\u001b[31mServices\u001b[39m\n\u001b[31mEMERGENCY APPOINTMENT (2)\u001b[39m\n\u001b[31mDog (bath included) (16)\u001b[39m\n\u001b[31mDog Bath 0-20lbs\u001b[39m\n\u001b[31mBath, shampoo, conditioner, nail clip/file, brush out, teeth brush, and ear clean. * Your choice of shampoo and conditioner including deshed, oatmeal, hempz, all natural flea and tick, and fragrance free*\u001b[39m\n\u001b[31m$52.00\u001b[39m\n\u001b[31m30mins\u001b[39m\n\u001b[31mDog Bath 20-50lbs\u001b[39m\n\u001b[31mBath, shampoo, conditioner, nail clip/file, ears, teeth, brush out *Your choice of shampoo and conditioner *Your choice of shampoo and conditioner including deshed, oatmeal, hempz, all natural flea and tick, and fragrance free*\u001b[39m\n\u001b[31m$65.00\u001b[39m\n\u001b[31m30mins\u001b[39m\n\u001b[31mDog Bath short hair over 50lbs\u001b[39m\n\u001b[31mBath, shampoo, conditioner, nail clip/file, teeth brush, ear clean, brush out *Your choice of shampoo and conditioner including deshed, oatmeal, hempz, all natural flea and tick, and fragrance free*\u001b[39m\n\u001b[31m$72.00\u001b[39m\n\u001b[31m1h\u001b[39m\n\u001b[31mDog bath medium/long hair over 50lbs\u001b[39m\n\u001b[31mBath, shampoo, conditioner, nail clip/file, teeth brush, ear clean, brush out *Your choice of shampoo and conditioner including deshed, oatmeal, hempz, all natural flea and tick, and fragrance free*\u001b[39m\n\u001b[31m$79.00\u001b[39m\n\u001b[31m1h\u001b[39m\n\u001b[31mDog Bath and tidy up 0 - 20lbs\u001b[39m\n\u001b[31mBath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Trim up face Trim feet Trim up tail Sanitary clean up (No hair off of body)\u001b[39m\n\u001b[31m$62.00\u001b[39m\n\u001b[31m30mins\u001b[39m\n\u001b[31mDog Bath and tidy up 21 - 40lbs\u001b[39m\n\u001b[31mBath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Trim up face Trim feet Trim up tail Sanitary clean up (No hair off of body)\u001b[39m\n\u001b[31m$72.00\u001b[39m\n\u001b[31m1h\u001b[39m\n\u001b[31mDog Bath and tidy up 41 - 60lbs\u001b[39m\n\u001b[31mBath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Trim up face Trim feet Trim up tail Sanitary clean up (No hair off of body)\u001b[39m\n\u001b[31m$91.00\u001b[39m\n\u001b[31m1h\u001b[39m\n\u001b[31mDog Bath and tidy up 61- 79lbs\u001b[39m\n\u001b[31mBath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Trim up face Trim feet Trim up tail Sanitary clean up (No hair off of body)\u001b[39m\n\u001b[31m$99.00\u001b[39m\n\u001b[31m1h\u001b[39m\n\u001b[31mDog Bath and tidy up 79+ lbs\u001b[39m\n\u001b[31mBath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Trim up face Trim feet Trim up tail Sanitary clean up (No hair off of body)\u001b[39m\n\u001b[31m$118.00\u001b[39m\n\u001b[31m1h\u001b[39m\n\u001b[31mDog Full Groom 0 - 20 lbs\u001b[39m\n\u001b[31mBath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Hair cut any length\u001b[39m\n\u001b[31m$69.00\u001b[39m\n\u001b[31m1h\u001b[39m\n\u001b[31mDog Full groom 21 - 30lbs\u001b[39m\n\u001b[31mBath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Hair cut any length\u001b[39m\n\u001b[31m$77.00\u001b[39m\n\u001b[31m1h\u001b[39m\n\u001b[31mDog Full Groom 31 - 40lbs\u001b[39m\n\u001b[31mBath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Hair cut any length\u001b[39m\n\u001b[31m$86.00\u001b[39m\n\u001b[31m1h\u001b[39m\n\u001b[31mDog Full Groom 41 - 60lbs\u001b[39m\n\u001b[31mBath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Hair cut any length\u001b[39m\n\u001b[31m$102.00\u001b[39m\n\u001b[31m1h\u001b[39m\n\u001b[31mDog Full groom 61 - 78lbs\u001b[39m\n\u001b[31mBath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Hair cut any length\u001b[39m\n\u001b[31m$121.00\u001b[39m\n\u001b[31m1h 30mins\u001b[39m\n\u001b[31mDog Full groom 79 - 90lbs\u001b[39m\n\u001b[31mBath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Hair cut any length\u001b[39m\n\u001b[31m$136.00\u001b[39m\n\u001b[31m2h\u001b[39m\n\u001b[31mDog Full Groom 91-100+ pounds\u001b[39m\n\u001b[31mBath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Hair cut any length\u001b[39m\n\u001b[31m$175.00\u001b[39m\n\u001b[31m2h\u001b[39m\n\u001b[31mCat (bath included) (4)\u001b[39m\n\u001b[31mQUICK SERVICE (no bath) (12)\u001b[39m\n\u001b[31mADD ON TO GROOM (7)\u001b[39m\n\u001b[31mKeyboard shortcuts\u001b[39m\n\u001b[31mMap data ©2026 Google\u001b[39m\n\u001b[31mTerms\u001b[39m\n\u001b[31mPowered by GrooMore, Inc.\u001b[39m\n\u001b[31mBook Now\"\u001b[39m",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatch\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/final price|confirmed at|at the shop|actual weight|final/i\u001b[39m\nReceived string:  \u001b[31m\"Pretty Paws Cat and Dog Grooming\u001b[39m\n\u001b[31mPretty Paws Cat and Dog Grooming\u001b[39m\n\u001b[31m(609) 816-7755\u001b[39m\n\u001b[31mnycoleco@yahoo.com\u001b[39m\n\u001b[31mHamilton, NJ, US\u001b[39m\n\u001b[31mDirection\u001b[39m\n\u001b[31mClosed\u001b[39m\n\u001b[31m8:00 AM - 8:00 PM\u001b[39m\n\u001b[31mBook Now\u001b[39m\n\u001b[31mBusiness Hours\u001b[39m\n\u001b[31mSUN\u001b[39m\n\u001b[31m8:00 AM\u001b[39m\n\u001b[31m-\u001b[39m\n\u001b[31m8:00 PM\u001b[39m\n\u001b[31mMON\u001b[39m\n\u001b[31m8:00 AM\u001b[39m\n\u001b[31m-\u001b[39m\n\u001b[31m8:00 PM\u001b[39m\n\u001b[31mTUE\u001b[39m\n\u001b[31m8:00 AM\u001b[39m\n\u001b[31m-\u001b[39m\n\u001b[31m8:00 PM\u001b[39m\n\u001b[31mWED\u001b[39m\n\u001b[31m8:00 AM\u001b[39m\n\u001b[31m-\u001b[39m\n\u001b[31m8:00 PM\u001b[39m\n\u001b[31mTHU\u001b[39m\n\u001b[31m8:00 AM\u001b[39m\n\u001b[31m-\u001b[39m\n\u001b[31m8:00 PM\u001b[39m\n\u001b[31mFRI\u001b[39m\n\u001b[31m8:00 AM\u001b[39m\n\u001b[31m-\u001b[39m\n\u001b[31m8:00 PM\u001b[39m\n\u001b[31mSAT\u001b[39m\n\u001b[31m8:00 AM\u001b[39m\n\u001b[31m-\u001b[39m\n\u001b[31m8:00 PM\u001b[39m\n\u001b[31mAbout us\u001b[39m\n\u001b[31mMy name is Nycole, and I’m the owner and groomer behind Pretty Paws Cat and Dog Grooming! 🩷🐾\u001b[39m\n\u001b[31mI’ve been grooming for over 10 years and have had the pleasure of working with cats and dogs of all sizes and breeds. Animals have always been a huge part of my life, and I’m a true animal lover with pets of my own, ranging from cats to horses! 🐱🐶🐴\u001b[39m\n\u001b[31mAt Pretty Paws, I believe every pet deserves patience, love, and individualized care. That’s why I offer a kennel-free grooming experience, where each pet is groomed straight through with one-on-one attention in a calm, relaxed environment.\u001b[39m\n\u001b[31mMy goal is to make every visit feel like a little spa day for your babies, treating each one with the same love and care I give my own. Thank you for trusting me with your furry family members. It truly means so much to me! 🩷🐾\u001b[39m\n\u001b[31mServices\u001b[39m\n\u001b[31mEMERGENCY APPOINTMENT (2)\u001b[39m\n\u001b[31mDog (bath included) (16)\u001b[39m\n\u001b[31mDog Bath 0-20lbs\u001b[39m\n\u001b[31mBath, shampoo, conditioner, nail clip/file, brush out, teeth brush, and ear clean. * Your choice of shampoo and conditioner including deshed, oatmeal, hempz, all natural flea and tick, and fragrance free*\u001b[39m\n\u001b[31m$52.00\u001b[39m\n\u001b[31m30mins\u001b[39m\n\u001b[31mDog Bath 20-50lbs\u001b[39m\n\u001b[31mBath, shampoo, conditioner, nail clip/file, ears, teeth, brush out *Your choice of shampoo and conditioner *Your choice of shampoo and conditioner including deshed, oatmeal, hempz, all natural flea and tick, and fragrance free*\u001b[39m\n\u001b[31m$65.00\u001b[39m\n\u001b[31m30mins\u001b[39m\n\u001b[31mDog Bath short hair over 50lbs\u001b[39m\n\u001b[31mBath, shampoo, conditioner, nail clip/file, teeth brush, ear clean, brush out *Your choice of shampoo and conditioner including deshed, oatmeal, hempz, all natural flea and tick, and fragrance free*\u001b[39m\n\u001b[31m$72.00\u001b[39m\n\u001b[31m1h\u001b[39m\n\u001b[31mDog bath medium/long hair over 50lbs\u001b[39m\n\u001b[31mBath, shampoo, conditioner, nail clip/file, teeth brush, ear clean, brush out *Your choice of shampoo and conditioner including deshed, oatmeal, hempz, all natural flea and tick, and fragrance free*\u001b[39m\n\u001b[31m$79.00\u001b[39m\n\u001b[31m1h\u001b[39m\n\u001b[31mDog Bath and tidy up 0 - 20lbs\u001b[39m\n\u001b[31mBath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Trim up face Trim feet Trim up tail Sanitary clean up (No hair off of body)\u001b[39m\n\u001b[31m$62.00\u001b[39m\n\u001b[31m30mins\u001b[39m\n\u001b[31mDog Bath and tidy up 21 - 40lbs\u001b[39m\n\u001b[31mBath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Trim up face Trim feet Trim up tail Sanitary clean up (No hair off of body)\u001b[39m\n\u001b[31m$72.00\u001b[39m\n\u001b[31m1h\u001b[39m\n\u001b[31mDog Bath and tidy up 41 - 60lbs\u001b[39m\n\u001b[31mBath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Trim up face Trim feet Trim up tail Sanitary clean up (No hair off of body)\u001b[39m\n\u001b[31m$91.00\u001b[39m\n\u001b[31m1h\u001b[39m\n\u001b[31mDog Bath and tidy up 61- 79lbs\u001b[39m\n\u001b[31mBath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Trim up face Trim feet Trim up tail Sanitary clean up (No hair off of body)\u001b[39m\n\u001b[31m$99.00\u001b[39m\n\u001b[31m1h\u001b[39m\n\u001b[31mDog Bath and tidy up 79+ lbs\u001b[39m\n\u001b[31mBath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Trim up face Trim feet Trim up tail Sanitary clean up (No hair off of body)\u001b[39m\n\u001b[31m$118.00\u001b[39m\n\u001b[31m1h\u001b[39m\n\u001b[31mDog Full Groom 0 - 20 lbs\u001b[39m\n\u001b[31mBath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Hair cut any length\u001b[39m\n\u001b[31m$69.00\u001b[39m\n\u001b[31m1h\u001b[39m\n\u001b[31mDog Full groom 21 - 30lbs\u001b[39m\n\u001b[31mBath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Hair cut any length\u001b[39m\n\u001b[31m$77.00\u001b[39m\n\u001b[31m1h\u001b[39m\n\u001b[31mDog Full Groom 31 - 40lbs\u001b[39m\n\u001b[31mBath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Hair cut any length\u001b[39m\n\u001b[31m$86.00\u001b[39m\n\u001b[31m1h\u001b[39m\n\u001b[31mDog Full Groom 41 - 60lbs\u001b[39m\n\u001b[31mBath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Hair cut any length\u001b[39m\n\u001b[31m$102.00\u001b[39m\n\u001b[31m1h\u001b[39m\n\u001b[31mDog Full groom 61 - 78lbs\u001b[39m\n\u001b[31mBath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Hair cut any length\u001b[39m\n\u001b[31m$121.00\u001b[39m\n\u001b[31m1h 30mins\u001b[39m\n\u001b[31mDog Full groom 79 - 90lbs\u001b[39m\n\u001b[31mBath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Hair cut any length\u001b[39m\n\u001b[31m$136.00\u001b[39m\n\u001b[31m2h\u001b[39m\n\u001b[31mDog Full Groom 91-100+ pounds\u001b[39m\n\u001b[31mBath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Hair cut any length\u001b[39m\n\u001b[31m$175.00\u001b[39m\n\u001b[31m2h\u001b[39m\n\u001b[31mCat (bath included) (4)\u001b[39m\n\u001b[31mQUICK SERVICE (no bath) (12)\u001b[39m\n\u001b[31mADD ON TO GROOM (7)\u001b[39m\n\u001b[31mKeyboard shortcuts\u001b[39m\n\u001b[31mMap data ©2026 Google\u001b[39m\n\u001b[31mTerms\u001b[39m\n\u001b[31mPowered by GrooMore, Inc.\u001b[39m\n\u001b[31mBook Now\"\u001b[39m\n    at D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\e2e\\t3\\m2-m3-m4-m7.spec.ts:111:18",
@@ -1451,7 +1832,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:39:34.695Z",
+                      "startTime": "2026-11-22T14:02:21.187Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -1496,12 +1877,12 @@
                       "workerIndex": 3,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 6540,
+                      "duration": 6843,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:39:41.856Z",
+                      "startTime": "2026-11-22T14:02:28.576Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1530,12 +1911,12 @@
                       "workerIndex": 3,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 5136,
+                      "duration": 5041,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:39:48.637Z",
+                      "startTime": "2026-11-22T14:02:35.685Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1564,12 +1945,12 @@
                       "workerIndex": 3,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 6088,
+                      "duration": 6321,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:39:53.787Z",
+                      "startTime": "2026-11-22T14:02:40.745Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1598,12 +1979,12 @@
                       "workerIndex": 3,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 5834,
+                      "duration": 5910,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:39:59.890Z",
+                      "startTime": "2026-11-22T14:02:47.080Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1632,12 +2013,12 @@
                       "workerIndex": 3,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 6083,
+                      "duration": 5909,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:40:05.736Z",
+                      "startTime": "2026-11-22T14:02:53.003Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1666,12 +2047,12 @@
                       "workerIndex": 3,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 5004,
+                      "duration": 5037,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:40:11.833Z",
+                      "startTime": "2026-11-22T14:02:58.927Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1700,7 +2081,7 @@
                       "workerIndex": 3,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 6104,
+                      "duration": 6129,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatch\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/only available for existing client|phone number invalid|not available/i\u001b[39m\nReceived string:  \u001b[31m\"Pretty Paws Cat and Dog Grooming·\u001b[39m\n\u001b[31mNEW CLIENTS please fill out our intake form on our Facebook page or text 609-816-7755 for the form before booking an appointment. Thank you!·\u001b[39m\n\u001b[31mmore ˅\u001b[39m\n\u001b[31mInternational\u001b[39m\n\u001b[31mAfghanistan\u001b[39m\n\u001b[31mÅland Islands\u001b[39m\n\u001b[31mAlbania\u001b[39m\n\u001b[31mAlgeria\u001b[39m\n\u001b[31mAmerican Samoa\u001b[39m\n\u001b[31mAndorra\u001b[39m\n\u001b[31mAngola\u001b[39m\n\u001b[31mAnguilla\u001b[39m\n\u001b[31mAntigua and Barbuda\u001b[39m\n\u001b[31mArgentina\u001b[39m\n\u001b[31mArmenia\u001b[39m\n\u001b[31mAruba\u001b[39m\n\u001b[31mAscension Island\u001b[39m\n\u001b[31mAustralia\u001b[39m\n\u001b[31mAustria\u001b[39m\n\u001b[31mAzerbaijan\u001b[39m\n\u001b[31mBahamas\u001b[39m\n\u001b[31mBahrain\u001b[39m\n\u001b[31mBangladesh\u001b[39m\n\u001b[31mBarbados\u001b[39m\n\u001b[31mBelarus\u001b[39m\n\u001b[31mBelgium\u001b[39m\n\u001b[31mBelize\u001b[39m\n\u001b[31mBenin\u001b[39m\n\u001b[31mBermuda\u001b[39m\n\u001b[31mBhutan\u001b[39m\n\u001b[31mBolivia\u001b[39m\n\u001b[31mBonaire, Sint Eustatius and Saba\u001b[39m\n\u001b[31mBosnia and Herzegovina\u001b[39m\n\u001b[31mBotswana\u001b[39m\n\u001b[31mBrazil\u001b[39m\n\u001b[31mBritish Indian Ocean Territory\u001b[39m\n\u001b[31mBrunei Darussalam\u001b[39m\n\u001b[31mBulgaria\u001b[39m\n\u001b[31mBurkina Faso\u001b[39m\n\u001b[31mBurundi\u001b[39m\n\u001b[31mCambodia\u001b[39m\n\u001b[31mCameroon\u001b[39m\n\u001b[31mCanada\u001b[39m\n\u001b[31mCape Verde\u001b[39m\n\u001b[31mCayman Islands\u001b[39m\n\u001b[31mCentral African Republic\u001b[39m\n\u001b[31mChad\u001b[39m\n\u001b[31mChile\u001b[39m\n\u001b[31mChina\u001b[39m\n\u001b[31mChristmas Island\u001b[39m\n\u001b[31mCocos (Keeling) Islands\u001b[39m\n\u001b[31mColombia\u001b[39m\n\u001b[31mComoros\u001b[39m\n\u001b[31mCongo\u001b[39m\n\u001b[31mCongo, Democratic Republic of the\u001b[39m\n\u001b[31mCook Islands\u001b[39m\n\u001b[31mCosta Rica\u001b[39m\n\u001b[31mCote d'Ivoire\u001b[39m\n\u001b[31mCroatia\u001b[39m\n\u001b[31mCuba\u001b[39m\n\u001b[31mCuraçao\u001b[39m\n\u001b[31mCyprus\u001b[39m\n\u001b[31mCzech Republic\u001b[39m\n\u001b[31mDenmark\u001b[39m\n\u001b[31mDjibouti\u001b[39m\n\u001b[31mDominica\u001b[39m\n\u001b[31mDominican Republic\u001b[39m\n\u001b[31mEcuador\u001b[39m\n\u001b[31mEgypt\u001b[39m\n\u001b[31mEl Salvador\u001b[39m\n\u001b[31mEquatorial Guinea\u001b[39m\n\u001b[31mEritrea\u001b[39m\n\u001b[31mEstonia\u001b[39m\n\u001b[31mEthiopia\u001b[39m\n\u001b[31mFalkland Islands\u001b[39m\n\u001b[31mFaroe Islands\u001b[39m\n\u001b[31mFederated States of Micronesia\u001b[39m\n\u001b[31mFiji\u001b[39m\n\u001b[31mFinland\u001b[39m\n\u001b[31mFrance\u001b[39m\n\u001b[31mFrench Guiana\u001b[39m\n\u001b[31mFrench Polynesia\u001b[39m\n\u001b[31mGabon\u001b[39m\n\u001b[31mGambia\u001b[39m\n\u001b[31mGeorgia\u001b[39m\n\u001b[31mGermany\u001b[39m\n\u001b[31mGhana\u001b[39m\n\u001b[31mGibraltar\u001b[39m\n\u001b[31mGreece\u001b[39m\n\u001b[31mGreenland\u001b[39m\n\u001b[31mGrenada\u001b[39m\n\u001b[31mGuadeloupe\u001b[39m\n\u001b[31mGuam\u001b[39m\n\u001b[31mGuatemala\u001b[39m\n\u001b[31mGuernsey\u001b[39m\n\u001b[31mGuinea\u001b[39m\n\u001b[31mGuinea-Bissau\u001b[39m\n\u001b[31mGuyana\u001b[39m\n\u001b[31mHaiti\u001b[39m\n\u001b[31mHoly See (Vatican City State)\u001b[39m\n\u001b[31mHonduras\u001b[39m\n\u001b[31mHong Kong\u001b[39m\n\u001b[31mHungary\u001b[39m\n\u001b[31mIceland\u001b[39m\n\u001b[31mIndia\u001b[39m\n\u001b[31mIndonesia\u001b[39m\n\u001b[31mIran\u001b[39m\n\u001b[31mIraq\u001b[39m\n\u001b[31mIreland\u001b[39m\n\u001b[31mIsle of Man\u001b[39m\n\u001b[31mIsrael\u001b[39m\n\u001b[31mItaly\u001b[39m\n\u001b[31mJamaica\u001b[39m\n\u001b[31mJapan\u001b[39m\n\u001b[31mJersey\u001b[39m\n\u001b[31mJordan\u001b[39m\n\u001b[31mKazakhstan\u001b[39m\n\u001b[31mKenya\u001b[39m\n\u001b[31mKiribati\u001b[39m\n\u001b[31mKosovo\u001b[39m\n\u001b[31mKuwait\u001b[39m\n\u001b[31mKyrgyzstan\u001b[39m\n\u001b[31mLaos\u001b[39m\n\u001b[31mLatvia\u001b[39m\n\u001b[31mLebanon\u001b[39m\n\u001b[31mLesotho\u001b[39m\n\u001b[31mLiberia\u001b[39m\n\u001b[31mLibya\u001b[39m\n\u001b[31mLiechtenstein\u001b[39m\n\u001b[31mLithuania\u001b[39m\n\u001b[31mLuxembourg\u001b[39m\n\u001b[31mMacao\u001b[39m\n\u001b[31mMadagascar\u001b[39m\n\u001b[31mMalawi\u001b[39m\n\u001b[31mMalaysia\u001b[39m\n\u001b[31mMaldives\u001b[39m\n\u001b[31mMali\u001b[39m\n\u001b[31mMalta\u001b[39m\n\u001b[31mMarshall Islands\u001b[39m\n\u001b[31mMartinique\u001b[39m\n\u001b[31mMauritania\u001b[39m\n\u001b[31mMauritius\u001b[39m\n\u001b[31mMayotte\u001b[39m\n\u001b[31mMexico\u001b[39m\n\u001b[31mMoldova\u001b[39m\n\u001b[31mMonaco\u001b[39m\n\u001b[31mMongolia\u001b[39m\n\u001b[31mMontenegro\u001b[39m\n\u001b[31mMontserrat\u001b[39m\n\u001b[31mMorocco\u001b[39m\n\u001b[31mMozambique\u001b[39m\n\u001b[31mMyanmar\u001b[39m\n\u001b[31mNamibia\u001b[39m\n\u001b[31mNauru\u001b[39m\n\u001b[31mNepal\u001b[39m\n\u001b[31mNetherlands\u001b[39m\n\u001b[31mNew Caledonia\u001b[39m\n\u001b[31mNew Zealand\u001b[39m\n\u001b[31mNicaragua\u001b[39m\n\u001b[31mNiger\u001b[39m\n\u001b[31mNigeria\u001b[39m\n\u001b[31mNiue\u001b[39m\n\u001b[31mNorfolk Island\u001b[39m\n\u001b[31mNorth Korea\u001b[39m\n\u001b[31mNorth Macedonia\u001b[39m\n\u001b[31mNorthern Mariana Islands\u001b[39m\n\u001b[31mNorway\u001b[39m\n\u001b[31mOman\u001b[39m\n\u001b[31mPakistan\u001b[39m\n\u001b[31mPalau\u001b[39m\n\u001b[31mPalestine\u001b[39m\n\u001b[31mPanama\u001b[39m\n\u001b[31mPapua New Guinea\u001b[39m\n\u001b[31mParaguay\u001b[39m\n\u001b[31mPeru\u001b[39m\n\u001b[31mPhilippines\u001b[39m\n\u001b[31mPoland\u001b[39m\n\u001b[31mPortugal\u001b[39m\n\u001b[31mPuerto Rico\u001b[39m\n\u001b[31mQatar\u001b[39m\n\u001b[31mReunion\u001b[39m\n\u001b[31mRomania\u001b[39m\n\u001b[31mRussia\u001b[39m\n\u001b[31mRwanda\u001b[39m\n\u001b[31mSaint Barthélemy\u001b[39m\n\u001b[31mSaint Helena\u001b[39m\n\u001b[31mSaint Kitts and Nevis\u001b[39m\n\u001b[31mSaint Lucia\u001b[39m\n\u001b[31mSaint Martin (French Part)\u001b[39m\n\u001b[31mSaint Pierre and Miquelon\u001b[39m\n\u001b[31mSaint Vincent and the Grenadines\u001b[39m\n\u001b[31mSamoa\u001b[39m\n\u001b[31mSan Marino\u001b[39m\n\u001b[31mSao Tome and Principe\u001b[39m\n\u001b[31mSaudi Arabia\u001b[39m\n\u001b[31mSenegal\u001b[39m\n\u001b[31mSerbia\u001b[39m\n\u001b[31mSeychelles\u001b[39m\n\u001b[31mSierra Leone\u001b[39m\n\u001b[31mSingapore\u001b[39m\n\u001b[31mSint Maarten\u001b[39m\n\u001b[31mSlovakia\u001b[39m\n\u001b[31mSlovenia\u001b[39m\n\u001b[31mSolomon Islands\u001b[39m\n\u001b[31mSomalia\u001b[39m\n\u001b[31mSouth Africa\u001b[39m\n\u001b[31mSouth Korea\u001b[39m\n\u001b[31mSouth Sudan\u001b[39m\n\u001b[31mSpain\u001b[39m\n\u001b[31mSri Lanka\u001b[39m\n\u001b[31mSudan\u001b[39m\n\u001b[31mSuriname\u001b[39m\n\u001b[31mSvalbard and Jan Mayen\u001b[39m\n\u001b[31mSwaziland\u001b[39m\n\u001b[31mSweden\u001b[39m\n\u001b[31mSwitzerland\u001b[39m\n\u001b[31mSyria\u001b[39m\n\u001b[31mTaiwan\u001b[39m\n\u001b[31mTajikistan\u001b[39m\n\u001b[31mTanzania\u001b[39m\n\u001b[31mThailand\u001b[39m\n\u001b[31mTimor-Leste\u001b[39m\n\u001b[31mTogo\u001b[39m\n\u001b[31mTokelau\u001b[39m\n\u001b[31mTonga\u001b[39m\n\u001b[31mTrinidad and Tobago\u001b[39m\n\u001b[31mTristan da Cunha\u001b[39m\n\u001b[31mTunisia\u001b[39m\n\u001b[31mTurkey\u001b[39m\n\u001b[31mTurkmenistan\u001b[39m\n\u001b[31mTurks and Caicos Islands\u001b[39m\n\u001b[31mTuvalu\u001b[39m\n\u001b[31mUganda\u001b[39m\n\u001b[31mUkraine\u001b[39m\n\u001b[31mUnited Arab Emirates\u001b[39m\n\u001b[31mUnited Kingdom\u001b[39m\n\u001b[31mUnited States\u001b[39m\n\u001b[31mUruguay\u001b[39m\n\u001b[31mUzbekistan\u001b[39m\n\u001b[31mVanuatu\u001b[39m\n\u001b[31mVenezuela\u001b[39m\n\u001b[31mVietnam\u001b[39m\n\u001b[31mVirgin Islands, British\u001b[39m\n\u001b[31mVirgin Islands, U.S.\u001b[39m\n\u001b[31mWallis and Futuna\u001b[39m\n\u001b[31mWestern Sahara\u001b[39m\n\u001b[31mYemen\u001b[39m\n\u001b[31mZambia\u001b[39m\n\u001b[31mZimbabwe·\u001b[39m\n\u001b[31mThis link is for existing clients only.·\u001b[39m\n\u001b[31mLogin\"\u001b[39m",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatch\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/only available for existing client|phone number invalid|not available/i\u001b[39m\nReceived string:  \u001b[31m\"Pretty Paws Cat and Dog Grooming·\u001b[39m\n\u001b[31mNEW CLIENTS please fill out our intake form on our Facebook page or text 609-816-7755 for the form before booking an appointment. Thank you!·\u001b[39m\n\u001b[31mmore ˅\u001b[39m\n\u001b[31mInternational\u001b[39m\n\u001b[31mAfghanistan\u001b[39m\n\u001b[31mÅland Islands\u001b[39m\n\u001b[31mAlbania\u001b[39m\n\u001b[31mAlgeria\u001b[39m\n\u001b[31mAmerican Samoa\u001b[39m\n\u001b[31mAndorra\u001b[39m\n\u001b[31mAngola\u001b[39m\n\u001b[31mAnguilla\u001b[39m\n\u001b[31mAntigua and Barbuda\u001b[39m\n\u001b[31mArgentina\u001b[39m\n\u001b[31mArmenia\u001b[39m\n\u001b[31mAruba\u001b[39m\n\u001b[31mAscension Island\u001b[39m\n\u001b[31mAustralia\u001b[39m\n\u001b[31mAustria\u001b[39m\n\u001b[31mAzerbaijan\u001b[39m\n\u001b[31mBahamas\u001b[39m\n\u001b[31mBahrain\u001b[39m\n\u001b[31mBangladesh\u001b[39m\n\u001b[31mBarbados\u001b[39m\n\u001b[31mBelarus\u001b[39m\n\u001b[31mBelgium\u001b[39m\n\u001b[31mBelize\u001b[39m\n\u001b[31mBenin\u001b[39m\n\u001b[31mBermuda\u001b[39m\n\u001b[31mBhutan\u001b[39m\n\u001b[31mBolivia\u001b[39m\n\u001b[31mBonaire, Sint Eustatius and Saba\u001b[39m\n\u001b[31mBosnia and Herzegovina\u001b[39m\n\u001b[31mBotswana\u001b[39m\n\u001b[31mBrazil\u001b[39m\n\u001b[31mBritish Indian Ocean Territory\u001b[39m\n\u001b[31mBrunei Darussalam\u001b[39m\n\u001b[31mBulgaria\u001b[39m\n\u001b[31mBurkina Faso\u001b[39m\n\u001b[31mBurundi\u001b[39m\n\u001b[31mCambodia\u001b[39m\n\u001b[31mCameroon\u001b[39m\n\u001b[31mCanada\u001b[39m\n\u001b[31mCape Verde\u001b[39m\n\u001b[31mCayman Islands\u001b[39m\n\u001b[31mCentral African Republic\u001b[39m\n\u001b[31mChad\u001b[39m\n\u001b[31mChile\u001b[39m\n\u001b[31mChina\u001b[39m\n\u001b[31mChristmas Island\u001b[39m\n\u001b[31mCocos (Keeling) Islands\u001b[39m\n\u001b[31mColombia\u001b[39m\n\u001b[31mComoros\u001b[39m\n\u001b[31mCongo\u001b[39m\n\u001b[31mCongo, Democratic Republic of the\u001b[39m\n\u001b[31mCook Islands\u001b[39m\n\u001b[31mCosta Rica\u001b[39m\n\u001b[31mCote d'Ivoire\u001b[39m\n\u001b[31mCroatia\u001b[39m\n\u001b[31mCuba\u001b[39m\n\u001b[31mCuraçao\u001b[39m\n\u001b[31mCyprus\u001b[39m\n\u001b[31mCzech Republic\u001b[39m\n\u001b[31mDenmark\u001b[39m\n\u001b[31mDjibouti\u001b[39m\n\u001b[31mDominica\u001b[39m\n\u001b[31mDominican Republic\u001b[39m\n\u001b[31mEcuador\u001b[39m\n\u001b[31mEgypt\u001b[39m\n\u001b[31mEl Salvador\u001b[39m\n\u001b[31mEquatorial Guinea\u001b[39m\n\u001b[31mEritrea\u001b[39m\n\u001b[31mEstonia\u001b[39m\n\u001b[31mEthiopia\u001b[39m\n\u001b[31mFalkland Islands\u001b[39m\n\u001b[31mFaroe Islands\u001b[39m\n\u001b[31mFederated States of Micronesia\u001b[39m\n\u001b[31mFiji\u001b[39m\n\u001b[31mFinland\u001b[39m\n\u001b[31mFrance\u001b[39m\n\u001b[31mFrench Guiana\u001b[39m\n\u001b[31mFrench Polynesia\u001b[39m\n\u001b[31mGabon\u001b[39m\n\u001b[31mGambia\u001b[39m\n\u001b[31mGeorgia\u001b[39m\n\u001b[31mGermany\u001b[39m\n\u001b[31mGhana\u001b[39m\n\u001b[31mGibraltar\u001b[39m\n\u001b[31mGreece\u001b[39m\n\u001b[31mGreenland\u001b[39m\n\u001b[31mGrenada\u001b[39m\n\u001b[31mGuadeloupe\u001b[39m\n\u001b[31mGuam\u001b[39m\n\u001b[31mGuatemala\u001b[39m\n\u001b[31mGuernsey\u001b[39m\n\u001b[31mGuinea\u001b[39m\n\u001b[31mGuinea-Bissau\u001b[39m\n\u001b[31mGuyana\u001b[39m\n\u001b[31mHaiti\u001b[39m\n\u001b[31mHoly See (Vatican City State)\u001b[39m\n\u001b[31mHonduras\u001b[39m\n\u001b[31mHong Kong\u001b[39m\n\u001b[31mHungary\u001b[39m\n\u001b[31mIceland\u001b[39m\n\u001b[31mIndia\u001b[39m\n\u001b[31mIndonesia\u001b[39m\n\u001b[31mIran\u001b[39m\n\u001b[31mIraq\u001b[39m\n\u001b[31mIreland\u001b[39m\n\u001b[31mIsle of Man\u001b[39m\n\u001b[31mIsrael\u001b[39m\n\u001b[31mItaly\u001b[39m\n\u001b[31mJamaica\u001b[39m\n\u001b[31mJapan\u001b[39m\n\u001b[31mJersey\u001b[39m\n\u001b[31mJordan\u001b[39m\n\u001b[31mKazakhstan\u001b[39m\n\u001b[31mKenya\u001b[39m\n\u001b[31mKiribati\u001b[39m\n\u001b[31mKosovo\u001b[39m\n\u001b[31mKuwait\u001b[39m\n\u001b[31mKyrgyzstan\u001b[39m\n\u001b[31mLaos\u001b[39m\n\u001b[31mLatvia\u001b[39m\n\u001b[31mLebanon\u001b[39m\n\u001b[31mLesotho\u001b[39m\n\u001b[31mLiberia\u001b[39m\n\u001b[31mLibya\u001b[39m\n\u001b[31mLiechtenstein\u001b[39m\n\u001b[31mLithuania\u001b[39m\n\u001b[31mLuxembourg\u001b[39m\n\u001b[31mMacao\u001b[39m\n\u001b[31mMadagascar\u001b[39m\n\u001b[31mMalawi\u001b[39m\n\u001b[31mMalaysia\u001b[39m\n\u001b[31mMaldives\u001b[39m\n\u001b[31mMali\u001b[39m\n\u001b[31mMalta\u001b[39m\n\u001b[31mMarshall Islands\u001b[39m\n\u001b[31mMartinique\u001b[39m\n\u001b[31mMauritania\u001b[39m\n\u001b[31mMauritius\u001b[39m\n\u001b[31mMayotte\u001b[39m\n\u001b[31mMexico\u001b[39m\n\u001b[31mMoldova\u001b[39m\n\u001b[31mMonaco\u001b[39m\n\u001b[31mMongolia\u001b[39m\n\u001b[31mMontenegro\u001b[39m\n\u001b[31mMontserrat\u001b[39m\n\u001b[31mMorocco\u001b[39m\n\u001b[31mMozambique\u001b[39m\n\u001b[31mMyanmar\u001b[39m\n\u001b[31mNamibia\u001b[39m\n\u001b[31mNauru\u001b[39m\n\u001b[31mNepal\u001b[39m\n\u001b[31mNetherlands\u001b[39m\n\u001b[31mNew Caledonia\u001b[39m\n\u001b[31mNew Zealand\u001b[39m\n\u001b[31mNicaragua\u001b[39m\n\u001b[31mNiger\u001b[39m\n\u001b[31mNigeria\u001b[39m\n\u001b[31mNiue\u001b[39m\n\u001b[31mNorfolk Island\u001b[39m\n\u001b[31mNorth Korea\u001b[39m\n\u001b[31mNorth Macedonia\u001b[39m\n\u001b[31mNorthern Mariana Islands\u001b[39m\n\u001b[31mNorway\u001b[39m\n\u001b[31mOman\u001b[39m\n\u001b[31mPakistan\u001b[39m\n\u001b[31mPalau\u001b[39m\n\u001b[31mPalestine\u001b[39m\n\u001b[31mPanama\u001b[39m\n\u001b[31mPapua New Guinea\u001b[39m\n\u001b[31mParaguay\u001b[39m\n\u001b[31mPeru\u001b[39m\n\u001b[31mPhilippines\u001b[39m\n\u001b[31mPoland\u001b[39m\n\u001b[31mPortugal\u001b[39m\n\u001b[31mPuerto Rico\u001b[39m\n\u001b[31mQatar\u001b[39m\n\u001b[31mReunion\u001b[39m\n\u001b[31mRomania\u001b[39m\n\u001b[31mRussia\u001b[39m\n\u001b[31mRwanda\u001b[39m\n\u001b[31mSaint Barthélemy\u001b[39m\n\u001b[31mSaint Helena\u001b[39m\n\u001b[31mSaint Kitts and Nevis\u001b[39m\n\u001b[31mSaint Lucia\u001b[39m\n\u001b[31mSaint Martin (French Part)\u001b[39m\n\u001b[31mSaint Pierre and Miquelon\u001b[39m\n\u001b[31mSaint Vincent and the Grenadines\u001b[39m\n\u001b[31mSamoa\u001b[39m\n\u001b[31mSan Marino\u001b[39m\n\u001b[31mSao Tome and Principe\u001b[39m\n\u001b[31mSaudi Arabia\u001b[39m\n\u001b[31mSenegal\u001b[39m\n\u001b[31mSerbia\u001b[39m\n\u001b[31mSeychelles\u001b[39m\n\u001b[31mSierra Leone\u001b[39m\n\u001b[31mSingapore\u001b[39m\n\u001b[31mSint Maarten\u001b[39m\n\u001b[31mSlovakia\u001b[39m\n\u001b[31mSlovenia\u001b[39m\n\u001b[31mSolomon Islands\u001b[39m\n\u001b[31mSomalia\u001b[39m\n\u001b[31mSouth Africa\u001b[39m\n\u001b[31mSouth Korea\u001b[39m\n\u001b[31mSouth Sudan\u001b[39m\n\u001b[31mSpain\u001b[39m\n\u001b[31mSri Lanka\u001b[39m\n\u001b[31mSudan\u001b[39m\n\u001b[31mSuriname\u001b[39m\n\u001b[31mSvalbard and Jan Mayen\u001b[39m\n\u001b[31mSwaziland\u001b[39m\n\u001b[31mSweden\u001b[39m\n\u001b[31mSwitzerland\u001b[39m\n\u001b[31mSyria\u001b[39m\n\u001b[31mTaiwan\u001b[39m\n\u001b[31mTajikistan\u001b[39m\n\u001b[31mTanzania\u001b[39m\n\u001b[31mThailand\u001b[39m\n\u001b[31mTimor-Leste\u001b[39m\n\u001b[31mTogo\u001b[39m\n\u001b[31mTokelau\u001b[39m\n\u001b[31mTonga\u001b[39m\n\u001b[31mTrinidad and Tobago\u001b[39m\n\u001b[31mTristan da Cunha\u001b[39m\n\u001b[31mTunisia\u001b[39m\n\u001b[31mTurkey\u001b[39m\n\u001b[31mTurkmenistan\u001b[39m\n\u001b[31mTurks and Caicos Islands\u001b[39m\n\u001b[31mTuvalu\u001b[39m\n\u001b[31mUganda\u001b[39m\n\u001b[31mUkraine\u001b[39m\n\u001b[31mUnited Arab Emirates\u001b[39m\n\u001b[31mUnited Kingdom\u001b[39m\n\u001b[31mUnited States\u001b[39m\n\u001b[31mUruguay\u001b[39m\n\u001b[31mUzbekistan\u001b[39m\n\u001b[31mVanuatu\u001b[39m\n\u001b[31mVenezuela\u001b[39m\n\u001b[31mVietnam\u001b[39m\n\u001b[31mVirgin Islands, British\u001b[39m\n\u001b[31mVirgin Islands, U.S.\u001b[39m\n\u001b[31mWallis and Futuna\u001b[39m\n\u001b[31mWestern Sahara\u001b[39m\n\u001b[31mYemen\u001b[39m\n\u001b[31mZambia\u001b[39m\n\u001b[31mZimbabwe·\u001b[39m\n\u001b[31mThis link is for existing clients only.·\u001b[39m\n\u001b[31mLogin\"\u001b[39m\n    at D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\e2e\\t3\\m2-m3-m4-m7.spec.ts:228:24",
@@ -1724,7 +2105,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:40:16.854Z",
+                      "startTime": "2026-11-22T14:03:03.984Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -1769,12 +2150,12 @@
                       "workerIndex": 4,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 5267,
+                      "duration": 5078,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:40:23.539Z",
+                      "startTime": "2026-11-22T14:03:10.730Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1803,12 +2184,12 @@
                       "workerIndex": 4,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 4964,
+                      "duration": 4952,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:40:29.026Z",
+                      "startTime": "2026-11-22T14:03:16.055Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1837,12 +2218,12 @@
                       "workerIndex": 4,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 4942,
+                      "duration": 4991,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:40:34.004Z",
+                      "startTime": "2026-11-22T14:03:21.027Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1871,12 +2252,12 @@
                       "workerIndex": 4,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 6885,
+                      "duration": 6737,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:40:38.959Z",
+                      "startTime": "2026-11-22T14:03:26.034Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1905,12 +2286,12 @@
                       "workerIndex": 4,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 5743,
+                      "duration": 5787,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:40:45.856Z",
+                      "startTime": "2026-11-22T14:03:32.784Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1939,12 +2320,12 @@
                       "workerIndex": 4,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 5189,
+                      "duration": 5022,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:40:51.613Z",
+                      "startTime": "2026-11-22T14:03:38.584Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1973,12 +2354,12 @@
                       "workerIndex": 4,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 5062,
+                      "duration": 4892,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:40:56.820Z",
+                      "startTime": "2026-11-22T14:03:43.623Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2007,12 +2388,12 @@
                       "workerIndex": 4,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 5023,
+                      "duration": 4978,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:41:01.901Z",
+                      "startTime": "2026-11-22T14:03:48.532Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2058,7 +2439,7 @@
                       "workerIndex": 5,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 13,
+                      "duration": 14,
                       "error": {
                         "message": "Error: vi phạm axe-core mức critical: T3 image-alt (49 node)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T3 image-alt (49 node)\",\u001b[39m\n\u001b[31m+ ]\u001b[39m",
                         "stack": "Error: vi phạm axe-core mức critical: T3 image-alt (49 node)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T3 image-alt (49 node)\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\accessibility.spec.ts:82:79",
@@ -2082,7 +2463,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:41:07.615Z",
+                      "startTime": "2026-11-22T14:03:54.134Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -2122,7 +2503,7 @@
                       "workerIndex": 6,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 11,
+                      "duration": 14,
                       "error": {
                         "message": "Error: vi phạm tương phản màu: T1 color-contrast (40 node); T2 color-contrast (3 node)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 4\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T1 color-contrast (40 node)\",\u001b[39m\n\u001b[31m+   \"T2 color-contrast (3 node)\",\u001b[39m\n\u001b[31m+ ]\u001b[39m",
                         "stack": "Error: vi phạm tương phản màu: T1 color-contrast (40 node); T2 color-contrast (3 node)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 4\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T1 color-contrast (40 node)\",\u001b[39m\n\u001b[31m+   \"T2 color-contrast (3 node)\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\accessibility.spec.ts:91:76",
@@ -2146,7 +2527,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:41:26.864Z",
+                      "startTime": "2026-11-22T14:04:13.317Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -2191,7 +2572,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:41:44.362Z",
+                      "startTime": "2026-11-22T14:04:31.571Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2244,7 +2625,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:42:00.968Z",
+                      "startTime": "2026-11-22T14:04:48.590Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -2308,7 +2689,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:42:01.570Z",
+                      "startTime": "2026-11-22T14:04:49.249Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -2365,12 +2746,12 @@
                       "workerIndex": 9,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2181,
+                      "duration": 2168,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:42:19.166Z",
+                      "startTime": "2026-11-22T14:05:07.058Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2399,7 +2780,7 @@
                       "workerIndex": 9,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 2773,
+                      "duration": 1740,
                       "error": {
                         "message": "Error: T1 thiếu HSTS; T3 thiếu HSTS\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 4\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T1 thiếu HSTS\",\u001b[39m\n\u001b[31m+   \"T3 thiếu HSTS\",\u001b[39m\n\u001b[31m+ ]\u001b[39m",
                         "stack": "Error: T1 thiếu HSTS; T3 thiếu HSTS\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 4\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T1 thiếu HSTS\",\u001b[39m\n\u001b[31m+   \"T3 thiếu HSTS\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\headers.spec.ts:63:41",
@@ -2423,7 +2804,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:42:21.387Z",
+                      "startTime": "2026-11-22T14:05:09.270Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -2463,7 +2844,7 @@
                       "workerIndex": 10,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 1918,
+                      "duration": 3119,
                       "error": {
                         "message": "Error: T1 thiếu X-Content-Type-Options: nosniff; T2 thiếu X-Content-Type-Options: nosniff; T3 thiếu X-Content-Type-Options: nosniff\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 5\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T1 thiếu X-Content-Type-Options: nosniff\",\u001b[39m\n\u001b[31m+   \"T2 thiếu X-Content-Type-Options: nosniff\",\u001b[39m\n\u001b[31m+   \"T3 thiếu X-Content-Type-Options: nosniff\",\u001b[39m\n\u001b[31m+ ]\u001b[39m",
                         "stack": "Error: T1 thiếu X-Content-Type-Options: nosniff; T2 thiếu X-Content-Type-Options: nosniff; T3 thiếu X-Content-Type-Options: nosniff\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 5\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T1 thiếu X-Content-Type-Options: nosniff\",\u001b[39m\n\u001b[31m+   \"T2 thiếu X-Content-Type-Options: nosniff\",\u001b[39m\n\u001b[31m+   \"T3 thiếu X-Content-Type-Options: nosniff\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\headers.spec.ts:75:41",
@@ -2487,7 +2868,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:42:24.572Z",
+                      "startTime": "2026-11-22T14:05:11.400Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -2527,7 +2908,7 @@
                       "workerIndex": 11,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 1848,
+                      "duration": 1922,
                       "error": {
                         "message": "Error: T1 thiếu X-Frame-Options hoặc CSP frame-ancestors; T2 thiếu X-Frame-Options hoặc CSP frame-ancestors; T3 thiếu X-Frame-Options hoặc CSP frame-ancestors\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 5\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T1 thiếu X-Frame-Options hoặc CSP frame-ancestors\",\u001b[39m\n\u001b[31m+   \"T2 thiếu X-Frame-Options hoặc CSP frame-ancestors\",\u001b[39m\n\u001b[31m+   \"T3 thiếu X-Frame-Options hoặc CSP frame-ancestors\",\u001b[39m\n\u001b[31m+ ]\u001b[39m",
                         "stack": "Error: T1 thiếu X-Frame-Options hoặc CSP frame-ancestors; T2 thiếu X-Frame-Options hoặc CSP frame-ancestors; T3 thiếu X-Frame-Options hoặc CSP frame-ancestors\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 5\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T1 thiếu X-Frame-Options hoặc CSP frame-ancestors\",\u001b[39m\n\u001b[31m+   \"T2 thiếu X-Frame-Options hoặc CSP frame-ancestors\",\u001b[39m\n\u001b[31m+   \"T3 thiếu X-Frame-Options hoặc CSP frame-ancestors\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\headers.spec.ts:87:41",
@@ -2551,7 +2932,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:42:26.904Z",
+                      "startTime": "2026-11-22T14:05:14.975Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -2591,7 +2972,7 @@
                       "workerIndex": 12,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 1925,
+                      "duration": 1939,
                       "error": {
                         "message": "Error: T1 thiếu Referrer-Policy; T2 thiếu Referrer-Policy; T3 thiếu Referrer-Policy\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 5\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T1 thiếu Referrer-Policy\",\u001b[39m\n\u001b[31m+   \"T2 thiếu Referrer-Policy\",\u001b[39m\n\u001b[31m+   \"T3 thiếu Referrer-Policy\",\u001b[39m\n\u001b[31m+ ]\u001b[39m",
                         "stack": "Error: T1 thiếu Referrer-Policy; T2 thiếu Referrer-Policy; T3 thiếu Referrer-Policy\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 5\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T1 thiếu Referrer-Policy\",\u001b[39m\n\u001b[31m+   \"T2 thiếu Referrer-Policy\",\u001b[39m\n\u001b[31m+   \"T3 thiếu Referrer-Policy\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\headers.spec.ts:96:41",
@@ -2615,7 +2996,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:42:29.185Z",
+                      "startTime": "2026-11-22T14:05:17.342Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -2655,12 +3036,12 @@
                       "workerIndex": 13,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1995,
+                      "duration": 1971,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:42:31.558Z",
+                      "startTime": "2026-11-22T14:05:19.794Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2689,12 +3070,12 @@
                       "workerIndex": 13,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1699,
+                      "duration": 1738,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:42:33.601Z",
+                      "startTime": "2026-11-22T14:05:21.811Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2740,12 +3121,12 @@
                       "workerIndex": 13,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 4019,
+                      "duration": 4546,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:42:35.316Z",
+                      "startTime": "2026-11-22T14:05:23.566Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2774,7 +3155,7 @@
                       "workerIndex": 13,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 11538,
+                      "duration": 11115,
                       "error": {
                         "message": "Error: T1 tràn ngang 19px ở 360px\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T1 tràn ngang 19px ở 360px\",\u001b[39m\n\u001b[31m+ ]\u001b[39m",
                         "stack": "Error: T1 tràn ngang 19px ở 360px\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T1 tràn ngang 19px ở 360px\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\responsive.spec.ts:47:43",
@@ -2798,7 +3179,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:42:39.538Z",
+                      "startTime": "2026-11-22T14:05:28.322Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -2809,12 +3190,12 @@
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\reports\\playwright\\security-responsive-NFR-04-a0852-n-hình-360px-trên-cả-3-site-security\\test-failed-3.png"
+                          "path": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\reports\\playwright\\security-responsive-NFR-04-a0852-n-hình-360px-trên-cả-3-site-security\\test-failed-2.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\reports\\playwright\\security-responsive-NFR-04-a0852-n-hình-360px-trên-cả-3-site-security\\test-failed-2.png"
+                          "path": "D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\reports\\playwright\\security-responsive-NFR-04-a0852-n-hình-360px-trên-cả-3-site-security\\test-failed-3.png"
                         },
                         {
                           "name": "error-context",
@@ -2853,12 +3234,12 @@
                       "workerIndex": 14,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 4341,
+                      "duration": 4182,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:42:51.654Z",
+                      "startTime": "2026-11-22T14:05:40.154Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2904,12 +3285,12 @@
                       "workerIndex": 14,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 9867,
+                      "duration": 9086,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:42:56.248Z",
+                      "startTime": "2026-11-22T14:05:44.591Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2938,12 +3319,12 @@
                       "workerIndex": 14,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 10570,
+                      "duration": 10480,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:43:06.125Z",
+                      "startTime": "2026-11-22T14:05:53.691Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2972,12 +3353,12 @@
                       "workerIndex": 14,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1981,
+                      "duration": 1870,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:43:16.708Z",
+                      "startTime": "2026-11-22T14:06:04.185Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3006,7 +3387,7 @@
                       "workerIndex": 14,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 9803,
+                      "duration": 9221,
                       "error": {
                         "message": "Error: T3 lộ Google API key trong HTML nguồn\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T3 lộ Google API key trong HTML nguồn\",\u001b[39m\n\u001b[31m+ ]\u001b[39m",
                         "stack": "Error: T3 lộ Google API key trong HTML nguồn\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T3 lộ Google API key trong HTML nguồn\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\security-checks.spec.ts:135:37",
@@ -3030,7 +3411,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:43:18.699Z",
+                      "startTime": "2026-11-22T14:06:06.065Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -3075,12 +3456,12 @@
                       "workerIndex": 15,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 9557,
+                      "duration": 9533,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:43:29.093Z",
+                      "startTime": "2026-11-22T14:06:15.866Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3109,12 +3490,12 @@
                       "workerIndex": 15,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 9371,
+                      "duration": 9521,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:43:38.913Z",
+                      "startTime": "2026-11-22T14:06:25.647Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3160,12 +3541,12 @@
                       "workerIndex": 15,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 7202,
+                      "duration": 5580,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:43:48.319Z",
+                      "startTime": "2026-11-22T14:06:35.209Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3194,12 +3575,12 @@
                       "workerIndex": 15,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 5267,
+                      "duration": 5003,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:43:55.531Z",
+                      "startTime": "2026-11-22T14:06:40.803Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3228,12 +3609,12 @@
                       "workerIndex": 15,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 5390,
+                      "duration": 6286,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:44:00.809Z",
+                      "startTime": "2026-11-22T14:06:45.816Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3262,7 +3643,7 @@
                       "workerIndex": 15,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 1549,
+                      "duration": 1847,
                       "error": {
                         "message": "Error: T3 sitemap.xml trả 404\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T3 sitemap.xml trả 404\",\u001b[39m\n\u001b[31m+ ]\u001b[39m",
                         "stack": "Error: T3 sitemap.xml trả 404\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T3 sitemap.xml trả 404\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\seo.spec.ts:73:43",
@@ -3286,7 +3667,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:44:06.211Z",
+                      "startTime": "2026-11-22T14:06:52.114Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -3326,7 +3707,7 @@
                       "workerIndex": 16,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 1469,
+                      "duration": 1554,
                       "error": {
                         "message": "Error: T3 robots.txt trả 404\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T3 robots.txt trả 404\",\u001b[39m\n\u001b[31m+ ]\u001b[39m",
                         "stack": "Error: T3 robots.txt trả 404\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T3 robots.txt trả 404\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\seo.spec.ts:91:43",
@@ -3350,7 +3731,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:44:08.290Z",
+                      "startTime": "2026-11-22T14:06:54.495Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -3390,7 +3771,7 @@
                       "workerIndex": 17,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 9146,
+                      "duration": 6575,
                       "error": {
                         "message": "Error: T1 thiếu og:image; T2 thiếu og:image\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 4\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T1 thiếu og:image\",\u001b[39m\n\u001b[31m+   \"T2 thiếu og:image\",\u001b[39m\n\u001b[31m+ ]\u001b[39m",
                         "stack": "Error: T1 thiếu og:image; T2 thiếu og:image\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 4\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T1 thiếu og:image\",\u001b[39m\n\u001b[31m+   \"T2 thiếu og:image\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at D:\\Thiết Kế và Kiểm Thử Phần Mềm\\Pet-Spa-KTPM\\tests\\security\\seo.spec.ts:113:43",
@@ -3414,7 +3795,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T13:44:10.172Z",
+                      "startTime": "2026-11-22T14:06:56.583Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -3460,9 +3841,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-11-22T13:37:04.894Z",
-    "duration": 434825.971,
-    "expected": 56,
+    "startTime": "2026-11-22T13:58:59.490Z",
+    "duration": 484078.478,
+    "expected": 66,
     "skipped": 0,
     "unexpected": 16,
     "flaky": 0

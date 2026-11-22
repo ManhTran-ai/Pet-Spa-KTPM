@@ -143,233 +143,233 @@ Book Now"
     - generic [ref=e5]:
       - img "business logo" [ref=e6]
       - generic [ref=e7]: Pretty Paws Cat and Dog Grooming
-    - generic [ref=e52]:
-      - generic [ref=e53]:
-        - generic [ref=e55]:
-          - heading "Pretty Paws Cat and Dog Grooming" [level=5] [ref=e56]
-          - generic [ref=e57]:
-            - link "(609) 816-7755" [ref=e61] [cursor=pointer]:
+    - generic [ref=e56]:
+      - generic [ref=e57]:
+        - generic [ref=e59]:
+          - heading "Pretty Paws Cat and Dog Grooming" [level=5] [ref=e60]
+          - generic [ref=e61]:
+            - link "(609) 816-7755" [ref=e65] [cursor=pointer]:
               - /url: sms:+16098167755
-            - link "nycoleco@yahoo.com" [ref=e65] [cursor=pointer]:
+            - link "nycoleco@yahoo.com" [ref=e69] [cursor=pointer]:
               - /url: mailto:nycoleco@yahoo.com
-            - link "Hamilton, NJ, US" [ref=e69] [cursor=pointer]:
+            - link "Hamilton, NJ, US" [ref=e73] [cursor=pointer]:
               - /url: https://www.google.com/maps/search/?api=1&query=Hamilton,+NJ,+US
-            - link "Direction" [ref=e73] [cursor=pointer]:
+            - link "Direction" [ref=e77] [cursor=pointer]:
               - /url: https://www.google.com/maps/dir/?api=1&destination=Hamilton,+NJ,+US
-            - generic [ref=e74]:
-              - generic [ref=e78]: Closed
-              - generic [ref=e79]: 8:00 AM - 8:00 PM
-            - button "Book Now" [ref=e81] [cursor=pointer]
-        - generic [ref=e84]:
-          - heading "Business Hours" [level=5] [ref=e85]
-          - list [ref=e86]:
-            - generic [ref=e87]:
-              - generic [ref=e88]: SUN
-              - generic [ref=e89]: 8:00 AM
-              - generic [ref=e90]: "-"
-              - generic [ref=e91]: 8:00 PM
-            - generic [ref=e92]:
-              - generic [ref=e93]: MON
-              - generic [ref=e94]: 8:00 AM
-              - generic [ref=e95]: "-"
-              - generic [ref=e96]: 8:00 PM
-            - generic [ref=e97]:
-              - generic [ref=e98]: TUE
-              - generic [ref=e99]: 8:00 AM
-              - generic [ref=e100]: "-"
-              - generic [ref=e101]: 8:00 PM
-            - generic [ref=e102]:
-              - generic [ref=e103]: WED
-              - generic [ref=e104]: 8:00 AM
-              - generic [ref=e105]: "-"
-              - generic [ref=e106]: 8:00 PM
-            - generic [ref=e107]:
-              - generic [ref=e108]: THU
-              - generic [ref=e109]: 8:00 AM
-              - generic [ref=e110]: "-"
-              - generic [ref=e111]: 8:00 PM
-            - generic [ref=e112]:
-              - generic [ref=e113]: FRI
-              - generic [ref=e114]: 8:00 AM
-              - generic [ref=e115]: "-"
-              - generic [ref=e116]: 8:00 PM
-            - generic [ref=e117]:
-              - generic [ref=e118]: SAT
-              - generic [ref=e119]: 8:00 AM
-              - generic [ref=e120]: "-"
-              - generic [ref=e121]: 8:00 PM
-      - generic [ref=e122]:
-        - heading "About us" [level=5] [ref=e123]
-        - generic [ref=e125]:
-          - generic [ref=e126]: My name is Nycole, and I’m the owner and groomer behind Pretty Paws Cat and Dog Grooming! 🩷🐾
-          - generic [ref=e127]: I’ve been grooming for over 10 years and have had the pleasure of working with cats and dogs of all sizes and breeds. Animals have always been a huge part of my life, and I’m a true animal lover with pets of my own, ranging from cats to horses! 🐱🐶🐴
-          - generic [ref=e128]: At Pretty Paws, I believe every pet deserves patience, love, and individualized care. That’s why I offer a kennel-free grooming experience, where each pet is groomed straight through with one-on-one attention in a calm, relaxed environment.
-          - generic [ref=e129]: My goal is to make every visit feel like a little spa day for your babies, treating each one with the same love and care I give my own. Thank you for trusting me with your furry family members. It truly means so much to me! 🩷🐾
-      - generic [ref=e131]:
-        - heading "Services" [level=5] [ref=e132]
-        - list [ref=e133]:
-          - listitem [ref=e134]:
-            - generic [ref=e135]: EMERGENCY APPOINTMENT (2)
-          - listitem [ref=e139]:
-            - generic [ref=e140]: Dog (bath included) (16)
-          - generic [ref=e146]:
-            - listitem [ref=e147]:
-              - generic [ref=e148]:
-                - generic [ref=e149]:
-                  - generic [ref=e150]: Dog Bath 0-20lbs
-                  - generic [ref=e151]: Bath, shampoo, conditioner, nail clip/file, brush out, teeth brush, and ear clean. * Your choice of shampoo and conditioner including deshed, oatmeal, hempz, all natural flea and tick, and fragrance free*
-                - generic [ref=e152]:
-                  - generic [ref=e153]: $52.00
-                  - generic [ref=e154]: 30mins
-            - listitem [ref=e155]:
-              - generic [ref=e156]:
-                - generic [ref=e157]:
-                  - generic [ref=e158]: Dog Bath 20-50lbs
-                  - generic [ref=e159]: Bath, shampoo, conditioner, nail clip/file, ears, teeth, brush out *Your choice of shampoo and conditioner *Your choice of shampoo and conditioner including deshed, oatmeal, hempz, all natural flea and tick, and fragrance free*
-                - generic [ref=e160]:
-                  - generic [ref=e161]: $65.00
-                  - generic [ref=e162]: 30mins
-            - listitem [ref=e163]:
-              - generic [ref=e164]:
-                - generic [ref=e165]:
-                  - generic [ref=e166]: Dog Bath short hair over 50lbs
-                  - generic [ref=e167]: Bath, shampoo, conditioner, nail clip/file, teeth brush, ear clean, brush out *Your choice of shampoo and conditioner including deshed, oatmeal, hempz, all natural flea and tick, and fragrance free*
-                - generic [ref=e168]:
-                  - generic [ref=e169]: $72.00
-                  - generic [ref=e170]: 1h
-            - listitem [ref=e171]:
-              - generic [ref=e172]:
-                - generic [ref=e173]:
-                  - generic [ref=e174]: Dog bath medium/long hair over 50lbs
-                  - generic [ref=e175]: Bath, shampoo, conditioner, nail clip/file, teeth brush, ear clean, brush out *Your choice of shampoo and conditioner including deshed, oatmeal, hempz, all natural flea and tick, and fragrance free*
-                - generic [ref=e176]:
-                  - generic [ref=e177]: $79.00
-                  - generic [ref=e178]: 1h
-            - listitem [ref=e179]:
-              - generic [ref=e180]:
-                - generic [ref=e181]:
-                  - generic [ref=e182]: Dog Bath and tidy up 0 - 20lbs
-                  - generic [ref=e183]: Bath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Trim up face Trim feet Trim up tail Sanitary clean up (No hair off of body)
-                - generic [ref=e184]:
-                  - generic [ref=e185]: $62.00
-                  - generic [ref=e186]: 30mins
-            - listitem [ref=e187]:
-              - generic [ref=e188]:
-                - generic [ref=e189]:
-                  - generic [ref=e190]: Dog Bath and tidy up 21 - 40lbs
-                  - generic [ref=e191]: Bath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Trim up face Trim feet Trim up tail Sanitary clean up (No hair off of body)
-                - generic [ref=e192]:
-                  - generic [ref=e193]: $72.00
-                  - generic [ref=e194]: 1h
-            - listitem [ref=e195]:
-              - generic [ref=e196]:
-                - generic [ref=e197]:
-                  - generic [ref=e198]: Dog Bath and tidy up 41 - 60lbs
-                  - generic [ref=e199]: Bath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Trim up face Trim feet Trim up tail Sanitary clean up (No hair off of body)
-                - generic [ref=e200]:
-                  - generic [ref=e201]: $91.00
-                  - generic [ref=e202]: 1h
-            - listitem [ref=e203]:
-              - generic [ref=e204]:
-                - generic [ref=e205]:
-                  - generic [ref=e206]: Dog Bath and tidy up 61- 79lbs
-                  - generic [ref=e207]: Bath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Trim up face Trim feet Trim up tail Sanitary clean up (No hair off of body)
-                - generic [ref=e208]:
-                  - generic [ref=e209]: $99.00
-                  - generic [ref=e210]: 1h
-            - listitem [ref=e211]:
-              - generic [ref=e212]:
-                - generic [ref=e213]:
-                  - generic [ref=e214]: Dog Bath and tidy up 79+ lbs
-                  - generic [ref=e215]: Bath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Trim up face Trim feet Trim up tail Sanitary clean up (No hair off of body)
-                - generic [ref=e216]:
-                  - generic [ref=e217]: $118.00
-                  - generic [ref=e218]: 1h
-            - listitem [ref=e219]:
-              - generic [ref=e220]:
-                - generic [ref=e221]:
-                  - generic [ref=e222]: Dog Full Groom 0 - 20 lbs
-                  - generic [ref=e223]: Bath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Hair cut any length
-                - generic [ref=e224]:
-                  - generic [ref=e225]: $69.00
-                  - generic [ref=e226]: 1h
-            - listitem [ref=e227]:
-              - generic [ref=e228]:
-                - generic [ref=e229]:
-                  - generic [ref=e230]: Dog Full groom 21 - 30lbs
-                  - generic [ref=e231]: Bath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Hair cut any length
-                - generic [ref=e232]:
-                  - generic [ref=e233]: $77.00
-                  - generic [ref=e234]: 1h
-            - listitem [ref=e235]:
-              - generic [ref=e236]:
-                - generic [ref=e237]:
-                  - generic [ref=e238]: Dog Full Groom 31 - 40lbs
-                  - generic [ref=e239]: Bath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Hair cut any length
-                - generic [ref=e240]:
-                  - generic [ref=e241]: $86.00
-                  - generic [ref=e242]: 1h
-            - listitem [ref=e243]:
-              - generic [ref=e244]:
-                - generic [ref=e245]:
-                  - generic [ref=e246]: Dog Full Groom 41 - 60lbs
-                  - generic [ref=e247]: Bath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Hair cut any length
-                - generic [ref=e248]:
-                  - generic [ref=e249]: $102.00
-                  - generic [ref=e250]: 1h
-            - listitem [ref=e251]:
-              - generic [ref=e252]:
-                - generic [ref=e253]:
-                  - generic [ref=e254]: Dog Full groom 61 - 78lbs
-                  - generic [ref=e255]: Bath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Hair cut any length
-                - generic [ref=e256]:
-                  - generic [ref=e257]: $121.00
-                  - generic [ref=e258]: 1h 30mins
-            - listitem [ref=e259]:
-              - generic [ref=e260]:
-                - generic [ref=e261]:
-                  - generic [ref=e262]: Dog Full groom 79 - 90lbs
-                  - generic [ref=e263]: Bath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Hair cut any length
-                - generic [ref=e264]:
-                  - generic [ref=e265]: $136.00
-                  - generic [ref=e266]: 2h
-            - listitem [ref=e267]:
-              - generic [ref=e268]:
-                - generic [ref=e269]:
-                  - generic [ref=e270]: Dog Full Groom 91-100+ pounds
-                  - generic [ref=e271]: Bath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Hair cut any length
-                - generic [ref=e272]:
-                  - generic [ref=e273]: $175.00
-                  - generic [ref=e274]: 2h
-          - listitem [ref=e275]:
-            - generic [ref=e276]: Cat (bath included) (4)
-          - listitem [ref=e280]:
-            - generic [ref=e281]: QUICK SERVICE (no bath) (12)
-          - listitem [ref=e285]:
-            - generic [ref=e286]: ADD ON TO GROOM (7)
-      - generic [ref=e296]:
+            - generic [ref=e78]:
+              - generic [ref=e82]: Closed
+              - generic [ref=e83]: 8:00 AM - 8:00 PM
+            - button "Book Now" [ref=e85] [cursor=pointer]
+        - generic [ref=e88]:
+          - heading "Business Hours" [level=5] [ref=e89]
+          - list [ref=e90]:
+            - generic [ref=e91]:
+              - generic [ref=e92]: SUN
+              - generic [ref=e93]: 8:00 AM
+              - generic [ref=e94]: "-"
+              - generic [ref=e95]: 8:00 PM
+            - generic [ref=e96]:
+              - generic [ref=e97]: MON
+              - generic [ref=e98]: 8:00 AM
+              - generic [ref=e99]: "-"
+              - generic [ref=e100]: 8:00 PM
+            - generic [ref=e101]:
+              - generic [ref=e102]: TUE
+              - generic [ref=e103]: 8:00 AM
+              - generic [ref=e104]: "-"
+              - generic [ref=e105]: 8:00 PM
+            - generic [ref=e106]:
+              - generic [ref=e107]: WED
+              - generic [ref=e108]: 8:00 AM
+              - generic [ref=e109]: "-"
+              - generic [ref=e110]: 8:00 PM
+            - generic [ref=e111]:
+              - generic [ref=e112]: THU
+              - generic [ref=e113]: 8:00 AM
+              - generic [ref=e114]: "-"
+              - generic [ref=e115]: 8:00 PM
+            - generic [ref=e116]:
+              - generic [ref=e117]: FRI
+              - generic [ref=e118]: 8:00 AM
+              - generic [ref=e119]: "-"
+              - generic [ref=e120]: 8:00 PM
+            - generic [ref=e121]:
+              - generic [ref=e122]: SAT
+              - generic [ref=e123]: 8:00 AM
+              - generic [ref=e124]: "-"
+              - generic [ref=e125]: 8:00 PM
+      - generic [ref=e126]:
+        - heading "About us" [level=5] [ref=e127]
+        - generic [ref=e129]:
+          - generic [ref=e130]: My name is Nycole, and I’m the owner and groomer behind Pretty Paws Cat and Dog Grooming! 🩷🐾
+          - generic [ref=e131]: I’ve been grooming for over 10 years and have had the pleasure of working with cats and dogs of all sizes and breeds. Animals have always been a huge part of my life, and I’m a true animal lover with pets of my own, ranging from cats to horses! 🐱🐶🐴
+          - generic [ref=e132]: At Pretty Paws, I believe every pet deserves patience, love, and individualized care. That’s why I offer a kennel-free grooming experience, where each pet is groomed straight through with one-on-one attention in a calm, relaxed environment.
+          - generic [ref=e133]: My goal is to make every visit feel like a little spa day for your babies, treating each one with the same love and care I give my own. Thank you for trusting me with your furry family members. It truly means so much to me! 🩷🐾
+      - generic [ref=e135]:
+        - heading "Services" [level=5] [ref=e136]
+        - list [ref=e137]:
+          - listitem [ref=e138]:
+            - generic [ref=e139]: EMERGENCY APPOINTMENT (2)
+          - listitem [ref=e143]:
+            - generic [ref=e144]: Dog (bath included) (16)
+          - generic [ref=e150]:
+            - listitem [ref=e151]:
+              - generic [ref=e152]:
+                - generic [ref=e153]:
+                  - generic [ref=e154]: Dog Bath 0-20lbs
+                  - generic [ref=e155]: Bath, shampoo, conditioner, nail clip/file, brush out, teeth brush, and ear clean. * Your choice of shampoo and conditioner including deshed, oatmeal, hempz, all natural flea and tick, and fragrance free*
+                - generic [ref=e156]:
+                  - generic [ref=e157]: $52.00
+                  - generic [ref=e158]: 30mins
+            - listitem [ref=e159]:
+              - generic [ref=e160]:
+                - generic [ref=e161]:
+                  - generic [ref=e162]: Dog Bath 20-50lbs
+                  - generic [ref=e163]: Bath, shampoo, conditioner, nail clip/file, ears, teeth, brush out *Your choice of shampoo and conditioner *Your choice of shampoo and conditioner including deshed, oatmeal, hempz, all natural flea and tick, and fragrance free*
+                - generic [ref=e164]:
+                  - generic [ref=e165]: $65.00
+                  - generic [ref=e166]: 30mins
+            - listitem [ref=e167]:
+              - generic [ref=e168]:
+                - generic [ref=e169]:
+                  - generic [ref=e170]: Dog Bath short hair over 50lbs
+                  - generic [ref=e171]: Bath, shampoo, conditioner, nail clip/file, teeth brush, ear clean, brush out *Your choice of shampoo and conditioner including deshed, oatmeal, hempz, all natural flea and tick, and fragrance free*
+                - generic [ref=e172]:
+                  - generic [ref=e173]: $72.00
+                  - generic [ref=e174]: 1h
+            - listitem [ref=e175]:
+              - generic [ref=e176]:
+                - generic [ref=e177]:
+                  - generic [ref=e178]: Dog bath medium/long hair over 50lbs
+                  - generic [ref=e179]: Bath, shampoo, conditioner, nail clip/file, teeth brush, ear clean, brush out *Your choice of shampoo and conditioner including deshed, oatmeal, hempz, all natural flea and tick, and fragrance free*
+                - generic [ref=e180]:
+                  - generic [ref=e181]: $79.00
+                  - generic [ref=e182]: 1h
+            - listitem [ref=e183]:
+              - generic [ref=e184]:
+                - generic [ref=e185]:
+                  - generic [ref=e186]: Dog Bath and tidy up 0 - 20lbs
+                  - generic [ref=e187]: Bath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Trim up face Trim feet Trim up tail Sanitary clean up (No hair off of body)
+                - generic [ref=e188]:
+                  - generic [ref=e189]: $62.00
+                  - generic [ref=e190]: 30mins
+            - listitem [ref=e191]:
+              - generic [ref=e192]:
+                - generic [ref=e193]:
+                  - generic [ref=e194]: Dog Bath and tidy up 21 - 40lbs
+                  - generic [ref=e195]: Bath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Trim up face Trim feet Trim up tail Sanitary clean up (No hair off of body)
+                - generic [ref=e196]:
+                  - generic [ref=e197]: $72.00
+                  - generic [ref=e198]: 1h
+            - listitem [ref=e199]:
+              - generic [ref=e200]:
+                - generic [ref=e201]:
+                  - generic [ref=e202]: Dog Bath and tidy up 41 - 60lbs
+                  - generic [ref=e203]: Bath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Trim up face Trim feet Trim up tail Sanitary clean up (No hair off of body)
+                - generic [ref=e204]:
+                  - generic [ref=e205]: $91.00
+                  - generic [ref=e206]: 1h
+            - listitem [ref=e207]:
+              - generic [ref=e208]:
+                - generic [ref=e209]:
+                  - generic [ref=e210]: Dog Bath and tidy up 61- 79lbs
+                  - generic [ref=e211]: Bath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Trim up face Trim feet Trim up tail Sanitary clean up (No hair off of body)
+                - generic [ref=e212]:
+                  - generic [ref=e213]: $99.00
+                  - generic [ref=e214]: 1h
+            - listitem [ref=e215]:
+              - generic [ref=e216]:
+                - generic [ref=e217]:
+                  - generic [ref=e218]: Dog Bath and tidy up 79+ lbs
+                  - generic [ref=e219]: Bath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Trim up face Trim feet Trim up tail Sanitary clean up (No hair off of body)
+                - generic [ref=e220]:
+                  - generic [ref=e221]: $118.00
+                  - generic [ref=e222]: 1h
+            - listitem [ref=e223]:
+              - generic [ref=e224]:
+                - generic [ref=e225]:
+                  - generic [ref=e226]: Dog Full Groom 0 - 20 lbs
+                  - generic [ref=e227]: Bath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Hair cut any length
+                - generic [ref=e228]:
+                  - generic [ref=e229]: $69.00
+                  - generic [ref=e230]: 1h
+            - listitem [ref=e231]:
+              - generic [ref=e232]:
+                - generic [ref=e233]:
+                  - generic [ref=e234]: Dog Full groom 21 - 30lbs
+                  - generic [ref=e235]: Bath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Hair cut any length
+                - generic [ref=e236]:
+                  - generic [ref=e237]: $77.00
+                  - generic [ref=e238]: 1h
+            - listitem [ref=e239]:
+              - generic [ref=e240]:
+                - generic [ref=e241]:
+                  - generic [ref=e242]: Dog Full Groom 31 - 40lbs
+                  - generic [ref=e243]: Bath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Hair cut any length
+                - generic [ref=e244]:
+                  - generic [ref=e245]: $86.00
+                  - generic [ref=e246]: 1h
+            - listitem [ref=e247]:
+              - generic [ref=e248]:
+                - generic [ref=e249]:
+                  - generic [ref=e250]: Dog Full Groom 41 - 60lbs
+                  - generic [ref=e251]: Bath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Hair cut any length
+                - generic [ref=e252]:
+                  - generic [ref=e253]: $102.00
+                  - generic [ref=e254]: 1h
+            - listitem [ref=e255]:
+              - generic [ref=e256]:
+                - generic [ref=e257]:
+                  - generic [ref=e258]: Dog Full groom 61 - 78lbs
+                  - generic [ref=e259]: Bath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Hair cut any length
+                - generic [ref=e260]:
+                  - generic [ref=e261]: $121.00
+                  - generic [ref=e262]: 1h 30mins
+            - listitem [ref=e263]:
+              - generic [ref=e264]:
+                - generic [ref=e265]:
+                  - generic [ref=e266]: Dog Full groom 79 - 90lbs
+                  - generic [ref=e267]: Bath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Hair cut any length
+                - generic [ref=e268]:
+                  - generic [ref=e269]: $136.00
+                  - generic [ref=e270]: 2h
+            - listitem [ref=e271]:
+              - generic [ref=e272]:
+                - generic [ref=e273]:
+                  - generic [ref=e274]: Dog Full Groom 91-100+ pounds
+                  - generic [ref=e275]: Bath, shampoo & conditioner(of your choice), nail clip/file, teeth, ears, brush out Hair cut any length
+                - generic [ref=e276]:
+                  - generic [ref=e277]: $175.00
+                  - generic [ref=e278]: 2h
+          - listitem [ref=e279]:
+            - generic [ref=e280]: Cat (bath included) (4)
+          - listitem [ref=e284]:
+            - generic [ref=e285]: QUICK SERVICE (no bath) (12)
+          - listitem [ref=e289]:
+            - generic [ref=e290]: ADD ON TO GROOM (7)
+      - generic [ref=e300]:
         - generic:
           - button "Keyboard shortcuts"
-        - region "Map" [ref=e297]
-        - generic [ref=e298]:
-          - iframe [aria-hidden] [ref=e350]
-          - button "Toggle fullscreen view" [ref=e351] [cursor=pointer]
-          - button "Map camera controls" [ref=e353] [cursor=pointer]
-          - link "Open this area in Google Maps (opens a new window)" [ref=e355] [cursor=pointer]:
+        - region "Map" [ref=e301]
+        - generic [ref=e302]:
+          - iframe [aria-hidden] [ref=e354]
+          - button "Toggle fullscreen view" [ref=e355] [cursor=pointer]
+          - button "Map camera controls" [ref=e357] [cursor=pointer]
+          - link "Open this area in Google Maps (opens a new window)" [ref=e359] [cursor=pointer]:
             - /url: https://maps.google.com/maps?ll=39.450958,-74.642714&z=11&t=m&hl=en-US&gl=US&mapclient=apiv3
-            - img "Google" [ref=e357]
-          - generic [ref=e358]:
-            - button "Keyboard shortcuts" [ref=e364] [cursor=pointer]
-            - generic [ref=e365]: Map data ©2026 Google
-            - link "Terms (opens in new tab)" [ref=e374] [cursor=pointer]:
+            - img "Google" [ref=e361]
+          - generic [ref=e362]:
+            - button "Keyboard shortcuts" [ref=e368] [cursor=pointer]
+            - generic [ref=e369]: Map data ©2026 Google
+            - link "Terms (opens in new tab)" [ref=e378] [cursor=pointer]:
               - /url: https://www.google.com/intl/en-US_US/help/terms_maps.html
               - text: Terms
-    - generic [ref=e376]:
-      - heading [level=6] [ref=e377]:
+    - generic [ref=e380]:
+      - heading [level=6] [ref=e381]:
         - text: Powered by
-        - link "GrooMore, Inc." [ref=e378] [cursor=pointer]:
+        - link "GrooMore, Inc." [ref=e382] [cursor=pointer]:
           - /url: https://www.groomore.com
-      - button "Book Now" [ref=e379] [cursor=pointer]
+      - button "Book Now" [ref=e383] [cursor=pointer]
 ```
 
 # Test source
