@@ -41,14 +41,22 @@ async function main() {
     source: 'docs/rtm.csv, docs/requirements.csv',
   });
 
+  // Test Plan §5.2: "100% test case ưu tiên Critical và High đã thực thi; tỷ lệ Pass ≥ 95%".
+  // Tỷ lệ Pass chỉ tính trên tập Critical/High, không tính trên toàn bộ ca đã chạy.
   const executed = execution.filter((e) => e.Result && e.Result !== 'Chưa thực thi');
-  const passCount = executed.filter((e) => e.Result === 'Pass').length;
-  const passRate = executed.length === 0 ? 0 : (passCount / executed.length) * 100;
+  const criticalHigh = execution.filter((e) => ['Critical', 'High'].includes((e.Priority ?? '').trim()));
+  const chExecuted = criticalHigh.filter((e) => e.Result && e.Result !== 'Chưa thực thi');
+  const chPass = chExecuted.filter((e) => e.Result === 'Pass').length;
+  const chPassRate = chExecuted.length === 0 ? 0 : (chPass / chExecuted.length) * 100;
+  const chCoverage = criticalHigh.length === 0 ? 0 : (chExecuted.length / criticalHigh.length) * 100;
   criteria.push({
     id: 'EC-2',
     name: '100% test case Critical/High đã thực thi, tỷ lệ Pass ≥ 95%',
-    measured: execution.length === 0 ? 'chưa có nhật ký thực thi' : `${executed.length} ca đã chạy, Pass ${passRate.toFixed(1)}%`,
-    passed: executed.length > 0 && passRate >= 95,
+    measured:
+      criticalHigh.length === 0
+        ? 'chưa có nhật ký thực thi'
+        : `Critical/High: ${chExecuted.length}/${criticalHigh.length} đã thực thi (${chCoverage.toFixed(1)}%), Pass ${chPassRate.toFixed(1)}% · toàn bộ ca đã chạy: ${executed.length}`,
+    passed: criticalHigh.length > 0 && chExecuted.length === criticalHigh.length && chPassRate >= 95,
     source: 'reports/execution-log.csv',
   });
 
