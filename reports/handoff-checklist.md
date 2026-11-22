@@ -6,7 +6,7 @@
 | **Nhóm** | Mạnh (TV1, Test Lead) · Tài (TV2) · Ngân (TV3) · Lộc (TV4) |
 | **Ngày** | 2026-11-22 (Ngày 14 / 14) |
 | **Nguồn** | Kế hoạch `docs/PLN-01-ke-hoach-cong-viec-Manh.md` §6.1 · `scripts/export-docs.mjs` |
-| **Thư mục nộp** | `submission/` — **56 tệp**, 0 thiếu (`node scripts/export-docs.mjs`) |
+| **Thư mục nộp** | `submission/` — **57 tệp** (56 tài liệu + `README.md` index), 0 thiếu (`node scripts/export-docs.mjs`) |
 
 > **Cách kiểm chứng.** Mỗi dòng dưới đây có **đường dẫn cụ thể** trong repo. Chạy `npm run gate` để xác nhận các kiểm chứng máy; các mục đánh dấu ✔ đã được kiểm tra bằng script, các mục đánh dấu ⚠ là nội dung **có thật nhưng chưa đạt** — đã ghi rõ lý do và người chịu trách nhiệm.
 
@@ -168,7 +168,7 @@
 | Truy xuất 2 chiều | **100%** |
 | Module chỉ 1 người chạy | **0** |
 | Phân công | Tài 56 · Mạnh 56 · Lộc 57 · Ngân 61 (chênh lệch 5 ≤ 7) |
-| Hồ sơ nộp | **56 tệp** — 0 thiếu |
+| Hồ sơ nộp | **57 tệp** (56 tài liệu + index) — 0 thiếu |
 
 ---
 

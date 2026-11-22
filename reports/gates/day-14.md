@@ -19,7 +19,7 @@
 | 8.3 — Hồ sơ nộp 14 nhóm | ✔ Đạt — **14/14 nhóm, 0 mục trống** | `reports/handoff-checklist.md` |
 | 8.3b — Báo cáo NFR | ✔ Đạt (bổ sung) — 44 ca NFR, 3 nhóm công cụ | `reports/nfr-report.md` |
 | 8.3c — Báo cáo UAT | ✔ Đạt (bổ sung) — 8 kịch bản + phương pháp + tiêu chí nghiệm thu | `reports/uat-report.md` |
-| 8.3d — Đóng gói `submission/` | ✔ Đạt — **56 tệp, 0 thiếu** | `submission/` |
+| 8.3d — Đóng gói `submission/` | ✔ Đạt — **57 tệp** (56 tài liệu + index), 0 thiếu | `submission/` |
 | 8.4 — Tag `v1.0` + commit + push | ✔ Đạt | Git |
 
 ---
@@ -31,7 +31,7 @@
 | `npm run gate` | **exit 0** — `req:check` 0 vi phạm · `rtm:check` truy xuất 2 chiều 100% · `assign:check` 4/4 nguyên tắc (Tài 56 · Mạnh 56 · Lộc 57 · Ngân 61, chênh lệch 5 ≤ 7) · `exit:check` **4/8 đạt** |
 | `npm run lint` | **exit 0** — 0 lỗi ESLint |
 | `npm run typecheck` | **exit 0** — `tsc --noEmit` sạch |
-| `node scripts/export-docs.mjs` | Đã gom **56 tệp** vào `submission/` — 0 thiếu |
+| `node scripts/export-docs.mjs` | Đã gom **56 tài liệu** vào `submission/` (57 tệp gồm index) — 0 thiếu |
 | `node scripts/tc-review-check.mjs` | 0 Major · 0 Minor |
 
 ---
@@ -76,7 +76,7 @@
 | Báo cáo re-test lỗi | Bổ sung `reports/defect-retest-report.md` |
 | Danh sách biên bản review | Sửa tên cho đúng thực tế: `inspection-srs.md` · `design-review.md` · `testcase-inspection.md` (trước dùng tên không tồn tại) |
 
-**Kết quả:** `submission/` gồm **56 tệp**, mục "Chưa có" trong `submission/README.md` là **"(không)"**.
+**Kết quả:** `submission/` gồm **57 tệp** (56 tài liệu + `README.md` index), mục "Chưa có" trong `submission/README.md` là **"(không)"**.
 
 ---
 
