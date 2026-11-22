@@ -41,7 +41,7 @@ Rủi ro: (a) site đích thay đổi giao diện giữa kỳ làm script hỏng
 | 10 | 22/11 | Thực hiện | Kiểm thử tích hợp (quan sát hợp đồng dữ liệu giao diện ↔ API) | Báo cáo tích hợp |
 | 11 | 23/11 | Thực hiện | System test vòng 1, ghi defect log | Vòng 1 xong |
 | 12 | 22/11 | Thực hiện | **Phase 6 của Mạnh — kiểm thử bảo mật NFR-02**: 12/12 ca NFR-02 có kết quả · viết `scripts/security-scan.mjs` tự động hoá bằng chứng bảo mật (`npm run security:scan`) → `security-summary.csv` mở rộng 15 → 24 dòng · sửa công thức EC-6 đo đủ 4 nhóm kiểm tra · giữ trạng thái `Open` cho 8 defect theo quy tắc vòng đời lỗi | Gate `reports/gates/day-12.md` · `npm run gate` exit 0 |
-| 13 | 25/11 | Thực hiện | Regression, UAT với 5–8 người, chấm Exit criteria | Exit criteria |
+| 13 | 22/11 | Thực hiện | **Phase 7 của Mạnh — kiểm thử tích hợp + re-test lỗi + hồi quy + chấm Exit criteria**: HĐ-1 14/14 khớp · HĐ-2 4/4 gói tính đúng · HĐ-3 công thức khớp · 22/28 defect re-test (0 đóng) · hồi quy vòng 1: **82 ca · 66 Pass · 16 Fail · 0 hồi quy** · Exit criteria **4/8 đạt** | Gate `reports/gates/day-13.md` · `npm run gate` exit 0 |
 | 14 | 26/11 | Báo cáo | Final Test Report, Lessons learned, đóng gói hồ sơ nộp | Báo cáo tổng hợp |
 
 ## Phân công
@@ -70,7 +70,7 @@ Rủi ro: (a) site đích thay đổi giao diện giữa kỳ làm script hỏng
 | 10 | TODO | | | |
 | 11 | DONE-HUMAN-PENDING | Đạt (4/8 EC đạt; `npm run lint` + `npm run typecheck` exit 0; `npm run gate` exit 0) | **Phase 4 + Phase 5 xong** — System test vòng 1: **17/17 ca T3** của Mạnh (16 Pass · 1 Fail → `DEF-026`) và **27/27 ca T1** của Mạnh (26 Pass · 1 Fail → `DEF-016`) · Viết spec mới `tests/e2e/t1/m2-m4-m5-m7.spec.ts` cho **10 ca T1 còn lại** (5 ca Critical) → 10/10 Pass · Sửa 2 ca **trước lần chạy có kết quả** vì giả định sai về hành vi thật (M2-005: nhãn "Từ"; M4-009: nút khoá ở bước 2 chứ không phải bước 1) — **không sửa ca nào đã Fail** · Chạy lại full suite 3 project: **82 ca · 66 Pass · 16 Fail** · Đồng bộ `execution-log.csv` (81 dòng) → 226 ca: Pass 68 · Fail 16 · Chưa thực thi 140 · Blocked 2 · EC-2: **Critical/High 73/73 đã thực thi (100%)**, Pass 84.9% → FAIL (trung thực — 11 lỗi Critical/High của site đích) · Gate: `reports/gates/day-11.md` | **Biên bản đối chiếu chéo với Tài (hạng mục 5.5) chưa đóng** — 45 ca T1 của Tài còn "Chưa thực thi" → chuyển sang Phase 8; Test Lead cần chốt 2 quan sát tại `day-11.md` §7 (FAQ T1 ghi 70k cho Tắm vs `BR-06` ghi 50.000₫; FAQ thiếu "Combo Tắm + Vệ sinh") |
 | 12 | DONE-HUMAN-PENDING | Đạt (4/8 EC đạt; `npm run lint` + `npm run typecheck` exit 0; `npm run gate` exit 0) | **Phase 6 xong** — Kiểm thử bảo mật NFR-02: **12/12 ca NFR-02 có kết quả** (5 Pass · 5 Fail, đều là defect site đích) · Viết `scripts/security-scan.mjs` (`npm run security:scan`) tự động hoá bằng chứng bảo mật → `reports/raw/security-summary.csv` mở rộng **15 → 24 dòng** (15 header + 3 TLS + 3 cookie + 3 rò rỉ) cho **cả 3 site** · Kết quả: **thiếu 14/15 header bảo mật** (chỉ T2 có HSTS) · TLS đạt 3/3 (T1 QUIC · T2 TLS 1.3 · T3 TLS 1.2) · 0 site có cookie phiên · **T3 lộ 2 API key** (Google Maps + Firebase) → cập nhật `DEF-027` · Sửa công thức **EC-6** đo đủ 4 nhóm (trước đếm nhầm cả dòng TLS/cookie là "thiếu header") → EC-6 = FAIL với số liệu đầy đủ · Giữ trạng thái `Open` cho 8 defect `DEF-002..005`/`DEF-009..012` theo quy tắc vòng đời lỗi (`usecase-workflow.md` §5.2) · Gate: `reports/gates/day-12.md` | **Cần anh chốt cách báo cáo EC-6** — em khuyến nghị phương án A (ghi EC-6 = FAIL, phân loại "hệ thống đích không thoả NFR-02 — kết quả kiểm thử hợp lệ"); bảng số liệu đã chuẩn bị sẵn ở `day-12.md` §2 và §4 |
-| 13 | TODO | | | |
+| 13 | DONE-HUMAN-PENDING | Đạt (4/8 EC đạt; `npm run gate` exit 0) | **Phase 7 xong** — Kiểm thử tích hợp T1: **3/3 hợp đồng dữ liệu đạt** (HĐ-1 bảng giá ↔ wizard **14/14 khớp** · HĐ-2 phụ thu tại nhà ↔ tổng tiền bước 4 **4/4 gói tính đúng** · HĐ-3 công thức `max(0, km−5)×8.000₫` + 4 dải km khớp) · telemetry **780 request, 107 XHR, 0 request ghi dữ liệu** → ranh giới ADR-11 giữ vững · Re-test lỗi: **22/28 defect đã re-test, 0 được khắc phục, 0 đóng, 0 sửa test cho xanh** · Hồi quy vòng 1: **82 ca · 66 Pass · 16 Fail · 0 hồi quy · 0 flaky** (ổn định 100% so với baseline) · Exit criteria **4/8 đạt** (EC-1/3/4/8 PASS; EC-2/5/6 FAIL do lỗi site đích; EC-7 HUMAN-PENDING) · Sửa câu chữ EC-6 + thêm nhóm đo cookie phiên (4 nhóm đo đủ) · Phát hiện `BR-06` thiếu gói "Combo Tắm + Vệ sinh" (+70.000₫) → chờ CR · Gate: `reports/gates/day-13.md` | **Tài + Ngân chạy 45 ca T1 + 63 ca T2 còn "Chưa thực thi"**; **Lộc + 5–8 người ngoài nhóm chạy UAT** (EC-7); Mạnh chạy `npm run lh:scan` lần cuối (re-test `DEF-019`/`DEF-020`); Test Lead chốt `BR-06` + FAQ T1 |
 | 14 | TODO | | | |
 
 Trạng thái: `TODO` | `IN-PROGRESS` | `DONE` | `DONE-HUMAN-PENDING` | `BLOCKED`.
@@ -270,4 +270,42 @@ Trạng thái: `TODO` | `IN-PROGRESS` | `DONE` | `DONE-HUMAN-PENDING` | `BLOCKED
   - **Phase 3** — Dựng hạ tầng tự động hoá cho 56 ca của Mạnh (Playwright E2E cho T3 M2/M3/M4/M7, script BVA/DT, kiểm tra bảo mật NFR-02) — Ngày 9.
   - **Phase 4–8** — System Test vòng 1 (T3 rồi T1), kiểm thử NFR-02, tích hợp + hồi quy + siết EC-2, báo cáo cuối.
   - Nhóm xác nhận điều kiện tiên quyết mới của `FR-M5-06` trong CR `CHG-2026-11-19-02` (2 ca T3 chuyển `Blocked`).
+
+### Phiên 12 · Ngày 11–12 — Phase 4 + 5 + 6: System test T3/T1 · kiểm thử bảo mật · 2026-11-22
+- Đã làm:
+  - **Phase 4 (System test T3)** — 17/17 ca T3 của Mạnh có kết quả: 16 Pass · 1 Fail (`TC-T3-M3-004` → `DEF-026`).
+  - **Phase 5 (System test T1 đối chiếu)** — 27/27 ca T1 của Mạnh: 26 Pass · 1 Fail (`TC-T1-M1-005` → `DEF-016`). Viết spec mới `tests/e2e/t1/m2-m4-m5-m7.spec.ts` cho **10 ca T1 còn lại** (5 Critical) → **10/10 Pass**. Sửa 2 ca **trước lần chạy có kết quả** vì giả định sai về hành vi thật (`TC-T1-M2-005` nhãn "Từ"; `TC-T1-M4-009` nút khoá ở bước 2 chứ không phải bước 1) — **không sửa ca nào đã Fail**.
+  - **Phase 6 (kiểm thử bảo mật NFR-02)** — 12/12 ca NFR-02 có kết quả. Viết `scripts/security-scan.mjs` (`npm run security:scan`) tự động hoá bằng chứng bảo mật → `reports/raw/security-summary.csv` mở rộng **15 → 24 dòng** cho **cả 3 site**. Kết quả: thiếu **14/15** header bảo mật (chỉ T2 có HSTS) · TLS đạt **3/3** (T1 QUIC · T2 TLS 1.3 · T3 TLS 1.2) · **0/3** site lộ cookie phiên · **T3 lộ 2 API key** (Google Maps + Firebase) → cập nhật `DEF-027` thành High. Giữ trạng thái `Open` cho 8 defect theo `usecase-workflow.md` §5.2.
+- Lệnh đã chạy và kết quả thật:
+  - `npx playwright test --project=t1 --project=t3 --project=security` → **82 ca · 66 Pass · 16 Fail** · 8,1 phút → `reports/raw/day-11-full-suite.txt`.
+  - `npm run security:scan` → `security-summary.csv` 24 dòng (15 header + 3 TLS + 3 cookie + 3 rò rỉ).
+  - `npm run gate` → `req:check` 0 vi phạm · `rtm:check` 100% · `assign:check` 4/4 nguyên tắc · `exit:check` 4/8 — **exit 0**.
+  - Gate: `reports/gates/day-11.md` · `reports/gates/day-12.md`.
+- Còn dở / HUMAN: 45 ca T1 của Tài + 63 ca T2 của Ngân còn "Chưa thực thi" → **Phase 8**; Test Lead chốt 2 quan sát tại `day-11.md` §7.
+
+### Phiên 13 · Ngày 13 — Phase 7: kiểm thử tích hợp + re-test + hồi quy + Exit criteria · 2026-11-22
+- Đã làm:
+  - **Kiểm thử tích hợp T1** bằng script `scripts/integration-scan-t1.mjs` → `reports/integration-report.md`:
+    - **HĐ-1** (bảng giá tĩnh ↔ wizard bước 2): **14/14 cặp khớp** tuyệt đối, 0 lệch — khớp cả khoảng kg lẫn giá.
+    - **HĐ-2** (phụ thu tại nhà ↔ tổng tiền bước 4): **4/4 gói tính đúng** — Tắm 155k+50k=205k · Cạo 110k+80k=190k · Combo Tắm+Vệ sinh 265k+70k=335k · Combo Tắm+Cạo 350k+100k=450k.
+    - **HĐ-3** (phụ thu di chuyển ↔ `BR-04`/`BR-05`): công thức `max(0, km − 5) × 8.000₫` + 4 dải km khớp.
+    - **Phát hiện kiến trúc:** giá trong wizard **không tính động** — mỗi thẻ bậc cân nặng mang sẵn giá trong `<em>`, cả 2 màn hình dùng chung 1 bảng giá ở tầng dữ liệu → hợp đồng dữ liệu **bất biến theo cấu trúc**.
+    - **Telemetry:** 779 request / 107 XHR — **0 request ghi dữ liệu** tới domain site đích → xác nhận ranh giới ADR-11.
+  - **Re-test lỗi** → `reports/defect-retest-report.md`: **22/28 defect đã re-test** · 0 được khắc phục · 0 đóng · **0 test sửa để ép xanh**. Cột `Resolution` của 22 defect ghi chú *"Đã re-test 22/11/2026 (hồi quy vòng 1) — lỗi vẫn còn, site đích chưa sửa"*. 6 defect còn lại có lý do cụ thể: `DEF-019`/`DEF-020` (cần `lh:scan`, Ngày 14) · `DEF-022`/`DEF-023`/`DEF-024` (ca của Tài/Ngân) · `DEF-028` (cần SĐT đã có hồ sơ thật → `HUMAN-PENDING`, em **không** dùng SĐT người thật để truy cập PII).
+  - **Hồi quy vòng 1** → `reports/regression-report.md`: **82 ca · 66 Pass · 16 Fail · 0 hồi quy · 0 flaky** — ổn định **100%** so với baseline (cùng số ca, cùng số Pass, cùng số Fail, cùng tập defect ID). Phân bổ project: `t1` 29 (28P/1F) · `t3` 26 (24P/2F) · `security` 27 (14P/13F). **16 Fail ← 14 root cause**.
+  - **Chấm Exit criteria**: `npm run exit:check` → **4/8 đạt** (EC-1, EC-3, EC-4, EC-8 PASS; EC-2 Pass 84,9% · EC-5 điểm thấp nhất 3 · EC-6 thiếu 14/15 header → FAIL; EC-7 HUMAN-PENDING).
+  - **Sửa `scripts/exit-check.mjs`**: câu chữ EC-6 cũ *"TLS không lấy được chi tiết: 0/3"* dễ hiểu nhầm là TLS hỏng → đổi thành **"TLS hợp lệ 3/3 site"**, thêm nhóm đo thứ 4 (**lộ cookie phiên 0/3 site**), điều kiện `passed` nay yêu cầu cả 4 nhóm sạch.
+  - Dọn file tạm: xoá `scripts/_probe-t1-price.mjs` (không còn tham chiếu) + các script tạm của phiên.
+- Lệnh đã chạy và kết quả thật:
+  - `node scripts/integration-scan-t1.mjs` → HĐ-1 14/14 · HĐ-2 4/4 · HĐ-3 khớp · 779 request → `reports/raw/day-13-integration-t1.txt`. Thêm `gotoWithRetry` (3 lần) vì site đích đôi lúc timeout 30s — tránh báo lỗi hạ tầng giả. Sửa HĐ-2 để **tự tính** `giá gói + phụ thu` rồi so với giá hiển thị (thay vì so với 4 giá trị viết tay trong script) + xoá hàm `chonBang` chết.
+  - `node scripts/exit-check.mjs` → 4/8 → `reports/exit-criteria.md`.
+  - `npm run gate` → `req:check` 60 yêu cầu / 0 vi phạm · `rtm:check` độ phủ **100%** · `assign:check` Mạnh 56 · Tài 55 · Ngân 57 · Lộc 58 (chênh lệch 3, 0 module 1 người chạy) · `exit:check` 4/8 — **exit 0**.
+  - Gate: `reports/gates/day-13.md`.
+- Phát hiện: **`BR-06` mâu thuẫn nội bộ** — vế *"các gói khác không hỗ trợ tại nhà"* sai với thực tế (gói "Combo Tắm + Vệ sinh" có hỗ trợ tại nhà, +70.000₫). Phần liệt kê 3 mức tiền trong `BR-06` và `FR-M6-03` đều đúng. Không có test case nào Fail (vì `FR-M6-04` vẫn đạt) → **chưa mở defect**, chờ Test Lead chốt CR.
+- Còn dở / HUMAN:
+  - **Tài + Ngân** chạy 45 ca T1 + 63 ca T2 còn "Chưa thực thi" (ảnh hưởng EC-2 nếu có thêm lỗi).
+  - **Lộc + 5–8 người ngoài nhóm** chạy UAT (EC-7).
+  - **Mạnh** chạy `npm run lh:scan` lần cuối ở Ngày 14 để re-test `DEF-019`/`DEF-020`.
+  - **Test Lead** chốt `BR-06` + FAQ T1 ("70k cho Tắm" nhầm tên gói) + xem lại mâu thuẫn `PLN-01` §6.3 (gợi ý đóng lỗi site đích) với `usecase-workflow.md` §5.2 (giữ `Open`) — em đã giữ `Open`.
+- **Bước tiếp theo:** Phase 8 — Final Test Report (`reports/final-test-report.md`) · Lessons Learned (`docs/lessons-learned.md`) · Handoff checklist · đóng gói hồ sơ nộp (`submission/`) · tag `v1.0`.
 

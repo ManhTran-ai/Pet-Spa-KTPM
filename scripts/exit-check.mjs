@@ -118,21 +118,27 @@ async function main() {
   const systemsWithHeaders = new Set(headerRows.filter((s) => s.Present === 'Yes').map((s) => s.System)).size;
   const tlsRows = security.filter((s) => s.Header === 'TLS');
   const tlsMissing = tlsRows.filter((s) => s.Present === 'No');
+  const tlsOk = tlsRows.filter((s) => s.Present === 'Yes');
   const leakRows = security.filter((s) => s.Header.startsWith('Rò rỉ'));
   const leaks = leakRows.filter((s) => s.Present === 'Yes');
+  // Nhóm 4: cookie phiên — site nào để lộ cookie phiên (Present=Yes).
+  const cookieRows = security.filter((s) => s.Header === 'Cookie phiên');
+  const cookieLeaks = cookieRows.filter((s) => s.Present === 'Yes');
   criteria.push({
     id: 'EC-6',
     name: 'NFR-02 đạt: không có phát hiện bảo mật mức Critical/High',
     measured:
       `${axeCritical} phát hiện axe-core mức critical; ` +
-      `thiếu ${missingHeaders.length}/${headerRows.length} header bảo mật (đo trên ${systemsWithHeaders}/3 site); ` +
-      `TLS không lấy được chi tiết: ${tlsMissing.length}/${tlsRows.length}; ` +
-      `rò rỉ khoá API/chuỗi kết nối: ${leaks.length}/${leakRows.length} site`,
+      `thiếu ${missingHeaders.length}/${headerRows.length} header bảo mật (chỉ ${systemsWithHeaders}/3 site có ít nhất 1 header); ` +
+      `TLS hợp lệ ${tlsOk.length}/${tlsRows.length} site; ` +
+      `lộ cookie phiên ${cookieLeaks.length}/${cookieRows.length} site; ` +
+      `rò rỉ khoá API/chuỗi kết nối ${leaks.length}/${leakRows.length} site`,
     passed:
       axe.length > 0 &&
       axeCritical === 0 &&
       missingHeaders.length === 0 &&
       tlsMissing.length === 0 &&
+      cookieLeaks.length === 0 &&
       leaks.length === 0,
     source: 'reports/raw/axe-summary.csv, reports/raw/security-summary.csv',
   });
