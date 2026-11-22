@@ -1,4 +1,10 @@
 TC_ID,Requirement_ID,System,Title,Priority,Type,Owner,Executed_By,Executed_At,Result,Defect_ID,Note
+TC-NFR-01-001,NFR-01,ALL,Lighthouse Performance mobile trên trang chủ đạt thang điểm ≥ 70,High,Auto,Ngân,Ngân (Lighthouse),2026-11-20,Fail,DEF-019,"Lighthouse 3 lan/site, lay trung viet - reports/raw/lighthouse-summary.csv: T1 = 67, T2 = 59, T3 = 3, deu < 70"
+TC-NFR-01-002,NFR-01,ALL,Lighthouse Performance mobile trên trang đặt lịch đạt thang điểm ≥ 70,High,Auto,Ngân,Ngân (Lighthouse),2026-11-20,Fail,DEF-019,"Lighthouse trang dat lich 3 lan/site - reports/raw/lighthouse-booking-summary.csv: T1 = 55, T2 = 51, T3 = 5, deu < 70"
+TC-NFR-01-003,NFR-01,ALL,DOMContentLoaded trong ≤ 3 giây trên mạng 4G mô phỏng,High,Auto,Ngân,Ngân (script),2026-11-20,Fail,DEF-030,Playwright — bằng chứng trong reports/playwright/
+TC-NFR-01-004,NFR-01,ALL,"LCP ≤ 2,5 giây trên mạng 4G mô phỏng",High,Auto,Ngân,Ngân (script),2026-11-20,Fail,DEF-020 DEF-031,Playwright — bằng chứng trong reports/playwright/
+TC-NFR-01-005,NFR-01,ALL,"LCP ≤ 2,5 giây trên trang đặt lịch T1 và T2",High,Auto,Ngân,Ngân (script),2026-11-20,Fail,DEF-031,Playwright — bằng chứng trong reports/playwright/
+TC-NFR-01-006,NFR-01,ALL,k6 tải đọc 10 VU trong 1 phút không gây lỗi 5xx,Medium,Auto,Ngân,Ngân (k6),2026-11-20,Pass,,"k6 10 VU / 1m - reports/raw/k6-summary.json: 183 request, 0 loi 5xx, http_req_failed = 0.00%, p95 = 907.74 ms"
 TC-NFR-02-001,NFR-02,ALL,Site bật HTTPS và có HSTS,Critical,Auto,Mạnh,Mạnh (script),2026-11-22,Fail,DEF-002 DEF-009,Playwright — bằng chứng trong reports/playwright/
 TC-NFR-02-002,NFR-02,ALL,Trang trả về X-Content-Type-Options: nosniff,Critical,Auto,Mạnh,Mạnh (script),2026-11-22,Fail,DEF-003 DEF-006 DEF-010,Playwright — bằng chứng trong reports/playwright/
 TC-NFR-02-003,NFR-02,ALL,Trang có X-Frame-Options hoặc CSP frame-ancestors,Critical,Auto,Mạnh,Mạnh (script),2026-11-22,Fail,DEF-004 DEF-007 DEF-011,Playwright — bằng chứng trong reports/playwright/
@@ -12,8 +18,13 @@ TC-NFR-02-010,NFR-02,ALL,"Không rò rỉ khoá API, khoá xác thực hoặc ch
 TC-NFR-02-011,NFR-02,ALL,Không rò rỉ email hay SĐT thực của khách hàng trong HTML nguồn,High,Manual,Mạnh,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
 TC-NFR-02-012,NFR-02,ALL,Form giữ chỗ không gửi tới URL bên thứ ba,Critical,Manual,Mạnh,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
 TC-NFR-04-001,NFR-04,ALL,Chức năng tính giá chạy đúng trên Chrome,High,Auto,Tài,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-NFR-04-002,NFR-04,ALL,Chức năng tính giá chạy đúng trên Firefox,High,Manual,Tài,Tài (script),2026-11-20,Pass,,Playwright — xem reports/raw/playwright-report.json
 TC-NFR-04-005,NFR-04,ALL,Không có cuộn ngang ở màn hình 360px trên trang đặt lịch,High,Auto,Tài,Mạnh (script),2026-11-22,Fail,DEF-016,Playwright — bằng chứng trong reports/playwright/
 TC-NFR-04-006,NFR-04,ALL,Chức năng tính giá chạy đúng trên khung nhìn di động 360x740,High,Auto,Tài,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-NFR-05-001,NFR-05,ALL,Gửi form 3 lần liên tiếp không tạo bản ghi trùng,High,Manual,Ngân,Ngân (script),2026-11-20,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-NFR-05-002,NFR-05,ALL,"Lỗi mạng hiển thị thông báo, không treo trang",High,Manual,Ngân,Ngân (script),2026-11-20,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-NFR-05-003,NFR-05,ALL,Tải lại trang giữ nguyên trạng thái đã chọn,High,Manual,Ngân,Ngân (script),2026-11-20,Fail,DEF-029,Playwright — bằng chứng trong reports/playwright/
+TC-NFR-05-004,NFR-05,ALL,Tải lại trang trong luồng wizard không làm mất lựa chọn,High,Manual,Ngân,Ngân (script),2026-11-20,Fail,DEF-029,Playwright — bằng chứng trong reports/playwright/
 TC-NFR-06-001,NFR-06,ALL,Axe-core không phát hiện vi phạm mức critical trên 3 site,Critical,Auto,Lộc,Mạnh (script),2026-11-22,Fail,DEF-013,Playwright — bằng chứng trong reports/playwright/
 TC-NFR-06-002,NFR-06,ALL,"Mọi vùng chữ đạt tương phản ≥ 4,5:1",High,Auto,Lộc,Mạnh (script),2026-11-22,Fail,DEF-014 DEF-015,Playwright — bằng chứng trong reports/playwright/
 TC-NFR-06-003,NFR-06,ALL,Mọi trường form có nhãn gắn liền,High,Auto,Lộc,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
@@ -55,16 +66,57 @@ TC-T1-M6-014,FR-M6-03,T1,Tổng tiền = giá gói + phụ thu cố định + ph
 TC-T1-M6-015,FR-M6-04,T1,Mỗi gói tại nhà ghi rõ chưa gồm phí di chuyển,High,Manual,Mạnh,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
 TC-T1-M7-002,FR-M7-04,T1,"Có ít nhất 2 kênh liên hệ hoạt động, liên kết Zalo mở đúng ứng dụng",Critical,Manual,Mạnh,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
 TC-T2-M1-001,FR-M1-01,T2,Trang chủ Mật Pet trả HTTP 200 và hiển thị tiêu đề + điều hướng chính,Critical,Auto,Ngân,Tài (Newman),2026-11-22,Pass,,"Newman — 2 assertion, 0 fail"
+TC-T2-M1-002,FR-M1-02,T2,Mọi liên kết menu điều hướng đến trang con trả HTTP 200,High,Auto,Ngân,Ngân (script),2026-11-20,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T2-M1-003,FR-M1-03,T2,"Trang hiển thị đủ địa chỉ, điện thoại, email và giờ mở cửa",Critical,Manual,Ngân,Ngân (script),2026-11-20,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T2-M1-004,FR-M1-04,T2,Không có liên kết chết 404 trong menu và footer,Critical,Auto,Tài,Tài (script),2026-11-20,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T2-M2-001,FR-M2-01,T2,"Mỗi dịch vụ trong danh mục có đủ tên, mô tả, giá và thời lượng",Critical,Manual,Ngân,Ngân (script),2026-11-20,Fail,DEF-033,Playwright — bằng chứng trong reports/playwright/
+TC-T2-M2-002,FR-M2-02,T2,Mỗi dịch vụ nêu rõ thành phần bao gồm,High,Manual,Ngân,Ngân (script),2026-11-20,Fail,DEF-033,Playwright — bằng chứng trong reports/playwright/
+TC-T2-M2-004,FR-M2-04,T2,Danh mục tách nhóm Combo trọn gói và Dịch vụ lẻ,Medium,Manual,Ngân,Ngân (script),2026-11-20,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T2-M3-001,FR-M3-01,T2,Bảng giá có đủ cột cho mọi bậc cân nặng và mọi dịch vụ,Critical,Manual,Ngân,Ngân (script),2026-11-20,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T2-M3-002,FR-M3-02,T2,"Tra bảng giá đúng cho (Chó, bậc >3-6kg) + Combo Tắm Vệ Sinh = 200.000đ",Critical,Auto,Ngân,Ngân (script),2026-11-20,Pass,,Playwright — xem reports/raw/playwright-report.json (3 biến thể)
+TC-T2-M3-003,FR-M3-02,T2,T2 dùng chung bảng giá: Mèo cùng bậc cân nặng cho giá BẰNG Chó,Critical,Auto,Ngân,Ngân (script),2026-11-20,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T2-M3-004,FR-M3-03,T2,"Chọn xong loài, cân nặng, dịch vụ thì giá dự kiến hiển thị tức thì",Critical,Auto,Ngân,Ngân (script),2026-11-20,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T2-M3-005,FR-M3-03,T2,"Tóm tắt lựa chọn hiển thị loài, bậc cân nặng và dịch vụ",High,Auto,Ngân,Ngân (script),2026-11-20,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T2-M3-006,FR-M3-03,T2,Đổi lựa chọn bất kỳ thì giá cập nhật tức thì,Critical,Auto,Ngân,Ngân (script),2026-11-20,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T2-M3-007,FR-M3-04,T2,"Dịch vụ báo giá riêng hiển thị khoảng hoặc tuỳ thiết kế, không phải con số đơn lẻ",Critical,Auto,Ngân,Ngân (script),2026-11-20,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T2-M3-008,FR-M3-04,T2,DT: 6 dịch vụ báo giá riêng đều không hiện một con số đơn lẻ,Critical,Manual,Ngân,Ngân (script),2026-11-20,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T2-M3-009,FR-M3-05,T2,"Trang giá ghi rõ giá cuối xác nhận tại spa, giá hiển thị chỉ là dự kiến",Critical,Manual,Ngân,Ngân (script),2026-11-20,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T2-M3-010,FR-M3-06,T2,"Bảng giá ghi rõ ngoại lệ phát sinh phí gỡ rối, tẩy ố, tắm trắng",Medium,Manual,Ngân,Ngân (script),2026-11-20,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T2-M3-011,FR-M3-02,T2,Đối chiếu giá tính tức thì với bảng giá tĩnh trên cùng trang,Critical,Auto,Ngân,Ngân (script),2026-11-20,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T2-M3-012,FR-M3-02,T2,BVA ngưỡng 3kg: cân 2.9kg thuộc bậc dưới,Critical,Manual,Ngân,Ngân (script),2026-11-20,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T2-M4-001,FR-M4-01,T2,Form giữ chỗ hiển thị SĐT bắt buộc và tên bé tuỳ chọn,Critical,Auto,Ngân,Ngân (script),2026-11-20,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T2-M4-002,FR-M4-02,T2,Bỏ trống SĐT thì form không gửi được và báo đúng trường lỗi,Critical,Auto,Ngân,Ngân (script),2026-11-20,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T2-M4-003,FR-M4-03,T2,Nhập SĐT chứa chữ cái bị từ chối,Critical,Manual,Ngân,Ngân (script),2026-11-20,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T2-M4-004,FR-M4-03,T2,Nhập SĐT quá ngắn hoặc quá dài bị từ chối hoặc cảnh báo,High,Manual,Ngân,Ngân (script),2026-11-20,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T2-M4-005,FR-M4-03,T2,Nhập SĐT hợp lệ định dạng Việt Nam được chấp nhận,Critical,Auto,Ngân,Ngân (script),2026-11-20,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T2-M4-006,FR-M4-04,T2,"Ô ngày của T2 có min = hôm nay, kèm 2 mốc cố định ""Hôm nay"" và ""Ngày mai""",High,Manual,Ngân,Ngân (script),2026-11-20,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T2-M4-007,FR-M4-05,T2,Ngày quá 30 ngày được nhập vào ô ngày nhưng không có giới hạn max,Medium,Manual,Ngân,Ngân (script),2026-11-20,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T2-M4-008,FR-M4-07,T2,"Bước chọn dịch vụ hiển thị đầy đủ, không dịch vụ nào vô hình",Critical,Auto,Ngân,Ngân (script),2026-11-20,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T2-M5-001,FR-M5-01,T2,Trang mô tả quy trình 4 bước khớp thực tế,Critical,Manual,Ngân,Ngân (script),2026-11-20,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T2-M5-002,FR-M5-02,T2,Có nêu spa sẽ gọi xác nhận khung giờ với thời gian cụ thể,Critical,Manual,Ngân,Ngân (script),2026-11-20,Fail,DEF-034,Playwright — bằng chứng trong reports/playwright/
+TC-T2-M5-003,FR-M5-04,T2,"Nội dung hủy/đổi lịch và hoàn cọc tồn tại, không chỉ nói liên hệ tiệm",High,Manual,Ngân,Ngân (script),2026-11-20,Fail,DEF-035,Playwright — bằng chứng trong reports/playwright/
+TC-T2-M7-001,FR-M7-01,T2,Nhập từ khoá ra danh sách kết quả lọc theo từ khoá,Critical,Auto,Ngân,Ngân (script),2026-11-20,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T2-M7-002,FR-M7-02,T2,Tìm kiếm không phân biệt hoa thường: SPA và spa cho cùng kết quả,Critical,Auto,Ngân,Ngân (script),2026-11-20,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T2-M7-003,FR-M7-02,T2,Tìm kiếm với từ khoá rỗng không gây lỗi,High,Auto,Ngân,Ngân (script),2026-11-20,Pass,,Playwright — xem reports/raw/playwright-report.json
 TC-T3-M1-001,FR-M1-01,T3,Trang chủ Pretty Paws trả HTTP 200 và hiển thị tiêu đề + điều hướng chính,Critical,Auto,Mạnh,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
 TC-T3-M1-002,FR-M1-02,T3,Mọi liên kết menu điều hướng đến trang con trả HTTP 200,High,Auto,Mạnh,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
 TC-T3-M1-003,FR-M1-03,T3,"Trang hiển thị đủ địa chỉ, điện thoại, email và giờ mở cửa",Critical,Manual,Mạnh,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T3-M1-004,FR-M1-04,T3,Không có liên kết chết 404 trong menu và footer,Critical,Auto,Ngân,Ngân (script),2026-11-20,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T3-M1-005,FR-M1-05,T3,Trang chủ không cuộn ngang ở màn hình 360px,High,Auto,Ngân,Ngân (script),2026-11-20,Pass,,Playwright — xem reports/raw/playwright-report.json
 TC-T3-M2-001,FR-M2-01,T3,"Mỗi dịch vụ trong danh mục có đủ tên, mô tả, giá và thời lượng",Critical,Manual,Mạnh,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
 TC-T3-M2-002,FR-M2-02,T3,Mỗi dịch vụ nêu rõ thành phần bao gồm,High,Manual,Mạnh,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T3-M2-007,FR-M2-01,T3,Số dịch vụ niêm yết khớp bảng giá mục 3 của SRS,High,Manual,Ngân,Ngân (script),2026-11-20,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T3-M2-008,FR-M2-06,T3,Danh mục phân biệt dịch vụ cho chó và dịch vụ cho mèo,Medium,Manual,Ngân,Ngân (script),2026-11-20,Pass,,Playwright — xem reports/raw/playwright-report.json
 TC-T3-M3-001,FR-M3-01,T3,Bảng giá có đủ cột cho mọi bậc cân nặng và mọi dịch vụ,Critical,Manual,Mạnh,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
 TC-T3-M3-002,FR-M3-02,T3,Tra bảng giá đúng cho dịch vụ đã chọn theo bậc lbs trong tên (ví dụ Dog Bath 20-50lbs),Critical,Manual,Mạnh,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
 TC-T3-M3-003,FR-M3-02,T3,T3 tách nhóm dịch vụ Chó và Mèo: dịch vụ Mèo có bảng giá riêng,Critical,Auto,Mạnh,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
 TC-T3-M3-004,FR-M3-05,T3,"Trang giá ghi rõ giá cuối xác nhận tại spa, giá hiển thị chỉ là dự kiến",Critical,Manual,Mạnh,Mạnh (script),2026-11-22,Fail,DEF-026,Playwright — bằng chứng trong reports/playwright/
 TC-T3-M3-005,FR-M3-06,T3,"Bảng giá T3 nêu rõ các khoản phụ thu ngoại lệ (HOLIDAY FEE, Emergency fee)",Medium,Manual,Mạnh,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T3-M3-006,FR-M3-02,T3,BVA ngưỡng 20lbs (Dog Bath): 19lbs thuộc bậc 0-20lbs,Critical,Manual,Ngân,Ngân (script),2026-11-20,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T3-M3-007,FR-M3-02,T3,BVA ngưỡng 20lbs (Dog Bath): 20lbs thuộc bậc 0-20lbs,Critical,Manual,Ngân,Ngân (script),2026-11-20,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T3-M3-008,FR-M3-02,T3,BVA ngưỡng 20lbs (Dog Bath): 21lbs thuộc bậc 20-50lbs,Critical,Manual,Ngân,Ngân (script),2026-11-20,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T3-M3-009,FR-M3-02,T3,BVA ngưỡng 61lbs (Dog Full Groom): 60lbs thuộc bậc 41-60lbs,Critical,Manual,Ngân,Ngân (script),2026-11-20,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T3-M3-010,FR-M3-02,T3,BVA ngưỡng 61lbs (Dog Full Groom): 61lbs thuộc bậc 61-78lbs,Critical,Manual,Ngân,Ngân (script),2026-11-20,Pass,,Playwright — xem reports/raw/playwright-report.json
 TC-T3-M4-001,FR-M4-01,T3,Drawer Book Now của T3 có trường SĐT bắt buộc và chọn quốc gia,Critical,Manual,Mạnh,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
 TC-T3-M4-002,FR-M4-02,T3,Bỏ trống SĐT thì nút Login của T3 bị khoá và form không gửi được,Critical,Manual,Mạnh,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
 TC-T3-M4-003,FR-M4-03,T3,Nhập SĐT chứa chữ cái vào drawer T3 thì nút Login bị khoá,Critical,Manual,Mạnh,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
@@ -76,7 +128,11 @@ TC-T3-M4-008,FR-M4-11,T3,Nút Book Now của T3 không bị khoá ngoài khung g
 TC-T3-M4-009,FR-M4-12,T3,"T3 không có bước tạo tài khoản mới, chỉ tra cứu khách hiện có",Critical,Manual,Lộc,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json (2 biến thể)
 TC-T3-M4-010,FR-M4-03,T3,ST xoá hết ký tự SĐT đã nhập thì nút Login của T3 bị khoá lại,Critical,Auto,Lộc,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
 TC-T3-M4-011,FR-M4-12,T3,ST sau khi nhập SĐT hợp lệ nút Login được bật và dẫn tới màn tra cứu khách hiện có,High,Manual,Lộc,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T3-M4-012,FR-M4-07,T3,"Bước chọn dịch vụ hiển thị đầy đủ, không dịch vụ nào vô hình",Critical,Manual,Ngân,Ngân (script),2026-11-20,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T3-M4-013,FR-M4-08,T3,Quay lại bước trước giữ nguyên lựa chọn đã làm,Critical,Manual,Ngân,Ngân (thu cong),2026-11-20,Blocked,,Bi chan boi luong dang nhap cua T3 (chi danh cho khach hang da co tai khoan) - ADR-11 khong tao tai khoan tren site that. Xem reports/raw/survey-T3-select-state.csv
 TC-T3-M5-001,FR-M5-01,T3,Trang mô tả quy trình đặt lịch đến nhận thú cưng,High,Manual,Mạnh,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
 TC-T3-M5-002,FR-M5-04,T3,Nội dung hủy/đổi lịch và hoàn cọc tồn tại,High,Manual,Mạnh,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T3-M5-003,FR-M5-06,T3,Chọn khung giờ ngoài giờ mở cửa bị từ chối kèm lý do,Critical,Manual,Ngân,Ngân (script),2026-11-20,Fail,DEF-032,Playwright — bằng chứng trong reports/playwright/
+TC-T3-M5-004,FR-M5-06,T3,Chọn khung giờ nằm trong giờ mở cửa được chấp nhận,Critical,Manual,Ngân,Ngân (script),2026-11-20,Pass,,Playwright — xem reports/raw/playwright-report.json
 TC-T3-M5-005,FR-M5-07,T3,Trang hiển thị trạng thái Open/Closed và giờ mở cửa,Critical,Manual,Lộc,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
 TC-T3-M7-001,FR-M7-04,T3,"Có ít nhất 2 kênh liên hệ hoạt động, liên kết mở đúng ứng dụng",Critical,Manual,Mạnh,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json

@@ -25,8 +25,8 @@ FR-M4-03,Kiểm tra định dạng số điện thoại,"T1, T2, T3",Must,M4,TC-
 FR-M4-04,Cho phép chọn ngày mong muốn trong tương lai,"T1, T2",Must,M4,TC-T1-M4-003; TC-T2-M4-006,2,Covered,EP,"Tài, Ngân"
 FR-M4-05,Chặn ngày mong muốn nằm quá xa trong tương lai,T2,Should,M4,TC-T2-M4-007,1,Covered,EP,Ngân
 FR-M4-06,Chọn được loài và cân nặng trước khi xem giá,"T1, T2",Must,M4,TC-T1-M4-004; TC-T1-M4-005; TC-T1-M4-009; TC-T2-M4-013; TC-T2-M4-014,5,Covered,ST,"Tài, Mạnh, Lộc"
-FR-M4-07,Chọn được dịch vụ trước khi xác nhận,"T1, T2, T3",Must,M4,TC-T1-M4-006; TC-T1-M4-010; TC-T2-M4-008; TC-T2-M4-015,4,Covered,"UC, ST","Mạnh, Lộc, Ngân"
-FR-M4-08,Cho phép quay lại bước trước mà không mất lựa chọn,"T1, T2, T3",Must,M4,TC-T1-M4-007; TC-T1-M4-011; TC-T1-M4-012; TC-T2-M4-009; TC-T2-M4-016; TC-T2-M4-017,6,Covered,ST,"Mạnh, Lộc, Tài"
+FR-M4-07,Chọn được dịch vụ trước khi xác nhận,"T1, T2, T3",Must,M4,TC-T1-M4-006; TC-T1-M4-010; TC-T2-M4-008; TC-T2-M4-015; TC-T3-M4-012; TC-T3-M4-014,6,Covered,"UC, ST","Mạnh, Lộc, Ngân"
+FR-M4-08,Cho phép quay lại bước trước mà không mất lựa chọn,"T1, T2, T3",Must,M4,TC-T1-M4-007; TC-T1-M4-011; TC-T1-M4-012; TC-T2-M4-009; TC-T2-M4-016; TC-T2-M4-017; TC-T3-M4-013; TC-T3-M4-015,8,Covered,ST,"Mạnh, Lộc, Tài, Ngân"
 FR-M4-09,Hiển thị tóm tắt lựa chọn trước khi gửi,T2,Should,M4,TC-T2-M4-010,1,Covered,UC,Tài
 FR-M4-10,Yêu cầu sự đồng ý về việc liên hệ lại trước khi gửi,T2,Must,M4,TC-T2-M4-011,1,Covered,UC,Tài
 FR-M4-11,Cho phép đặt lịch ngoài giờ mở cửa,T3,Should,M4,TC-T3-M4-005; TC-T3-M4-008,2,Covered,"EP, UC",Ngân

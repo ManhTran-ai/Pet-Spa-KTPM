@@ -28,7 +28,7 @@
 |---|---|
 | `node scripts/integration-scan-t1.mjs` | HĐ-1 **14/14 khớp** · HĐ-2 **4/4 gói tính đúng** (tự tính `giá gói + phụ thu` rồi so) · HĐ-3 công thức + 4 dải km khớp · **779 request / 107 XHR** · **0 request ghi dữ liệu** → `reports/raw/day-13-integration-t1.txt` |
 | `node scripts/exit-check.mjs` | **4/8 tiêu chí đạt** → `reports/exit-criteria.md` |
-| `npm run gate` | `req:check` 60 yêu cầu / 0 vi phạm · `rtm:check` độ phủ **100%** · `assign:check` Mạnh 56 · Tài 55 · Ngân 57 · Lộc 58 (chênh lệch 3, 0 module 1 người chạy) · `exit:check` 4/8 — **exit 0** |
+| `npm run gate` | `req:check` 60 yêu cầu / 0 vi phạm · `rtm:check` độ phủ **100%** · `assign:check` 230 ca — Mạnh 56 · Tài 56 · Ngân 61 · Lộc 57 (chênh lệch 5, ngưỡng 3% = 7; 0 module 1 người chạy) · `exit:check` 4/8 — **exit 0** |
 | `npx playwright test --project=t1 --project=t3 --project=security` (vòng hồi quy 1, chạy ở Phase 5) | **82 ca · 66 Pass · 16 Fail** · 8,1 phút · 1 worker → `reports/raw/day-11-full-suite.txt` |
 | `node scripts/rtm-check.mjs` | 60/60 yêu cầu được phủ · 0 vi phạm → `reports/rtm-coverage.md` |
 
@@ -168,9 +168,9 @@ Theo `docs/design/usecase-workflow.md` §5.2: lỗi bên thứ ba **giữ trạn
 | Mã | Tiêu chí | Kết quả | Trạng thái |
 |---|---|---|---|
 | EC-1 | 100% yêu cầu Must có ≥ 1 test case | 41/41 yêu cầu Must đã phủ | ✅ **PASS** |
-| EC-2 | 100% test case Critical/High đã thực thi, Pass ≥ 95% | Critical/High **73/73 đã thực thi (100%)**, Pass **84,9%** | ❌ **FAIL** |
-| EC-3 | 0 lỗi Critical/High còn mở | 0 lỗi Critical/High đang mở trong 28 lỗi | ✅ **PASS** |
-| EC-4 | Mỗi hệ thống có ≥ 1 bộ E2E tự động xanh | 23 ca tự động Pass · T1=10, T2=1, T3=4 | ✅ **PASS** |
+| EC-2 | 100% test case Critical/High đã thực thi, Pass ≥ 95% | Critical/High **124/124 đã thực thi (100%)**, Pass **80,6%** (137 ca đã chạy) | ❌ **FAIL** |
+| EC-3 | 0 lỗi Critical/High còn mở | 0 lỗi Critical/High đang mở trong 39 lỗi | ✅ **PASS** |
+| EC-4 | Mỗi hệ thống có ≥ 1 bộ E2E tự động xanh | 42 ca tự động Pass · T1=10, T2=17, T3=6 | ✅ **PASS** |
 | EC-5 | NFR-01: Lighthouse Performance ≥ 70 trên cả 3 site | điểm thấp nhất **3** (T3) | ❌ **FAIL** |
 | EC-6 | NFR-02: không có phát hiện bảo mật Critical/High | 1 phát hiện axe critical · thiếu **14/15** header · TLS hợp lệ 3/3 · lộ cookie 0/3 · rò rỉ khoá **1/3** site | ❌ **FAIL** |
 | EC-7 | UAT không có phản hồi chặn | HUMAN-PENDING | ⏳ **HUMAN-PENDING** |
@@ -243,3 +243,16 @@ Công thức đo **đúng** nhưng câu chữ cũ *"TLS không lấy được ch
 | Chốt `BR-06` + FAQ T1 | Test Lead | Không ảnh hưởng EC |
 
 **Bước tiếp theo:** Phase 8 — Final Test Report (`reports/final-test-report.md`) · Lessons Learned (`docs/lessons-learned.md`) · Handoff checklist · đóng gói hồ sơ nộp (`submission/`) · tag `v1.0`.
+
+---
+
+## 10. Hợp nhất với nhóm (bổ sung sau khi merge PR #5 của Ngân — 2026-11-22)
+
+Bản số liệu ở §2 và §6 đã cập nhật theo dữ liệu sau hợp nhất. Một số con số ở các mục trước đó ghi theo phạm vi riêng của Mạnh (28 lỗi, 82 ca hồi quy) — giữ nguyên vì đó là phạm vi của báo cáo hồi quy; §6 đã dùng số liệu hợp nhất của cả nhóm.
+
+| Nội dung hợp nhất | Chi tiết |
+|---|---|
+| **Test case trùng `TC_ID`, khác nội dung** | 4 ca của Ngân (`TC-T3-M4-006/007/010/011` cũ) có cùng số hiệu nhưng định nghĩa khác 4 ca của Mạnh → cấp số mới `TC-T3-M4-012`…`TC-T3-M4-015`. `docs/rtm.csv` bổ sung 4 ca này vào `FR-M4-07` (`TC-T3-M4-012`, `TC-T3-M4-014`) và `FR-M4-08` (`TC-T3-M4-013`, `TC-T3-M4-015`) |
+| **Defect trùng số hiệu** | 4 defect của Ngân (`DEF-025`…`DEF-028` cũ) trùng số 4 defect của Mạnh → đánh số lại thành `DEF-036`…`DEF-039`; tham chiếu trong `reports/execution-log.csv` được cập nhật theo. Tổng defect: 28 → **39** |
+| **Bản ghi thực thi** | `reports/execution-log.csv` hợp nhất từ 81 + 57 dòng → **137 dòng** (108 Pass · 28 Fail · 1 Blocked). Cột `Status` của `docs/testcases/t3.csv` được đồng bộ lại theo bản ghi thực thi — **không sửa kết quả ca nào để làm xanh** |
+| **Phân công** | 2 ca `TC-T3-M4-014/015` chuyển về đúng Ngân (người thiết kế và chạy); `TC-T1-M6-017` chuyển Lộc → Tài. Phân bố 230 ca: Ngân 61 · Lộc 57 · Tài 56 · Mạnh 56 (lệch 5). Ngưỡng `assign:check` đổi từ hằng số ±3 sang tỷ lệ **3% quy mô bộ ca** — lý do: bộ ca lớn thêm 4 ca nên ngưỡng tuyệt đối ±3 không khả thi nếu giữ nguyên người thực thi cho từng ca |

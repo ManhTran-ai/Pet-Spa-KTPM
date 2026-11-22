@@ -42,6 +42,7 @@ const TESTCASE_HEADERS = [
 
 const EXECUTION_LOG = path.join(REPORTS_DIR, 'execution-log.csv');
 const PLAYWRIGHT_JSON = path.join(REPORTS_DIR, 'raw', 'playwright-report.json');
+const MANUAL_RESULTS = path.join(REPORTS_DIR, 'raw', 'manual-results.csv');
 const TESTCASE_FILES = ['t1.csv', 't2.csv', 't3.csv', 'nfr.csv'];
 
 function collectSpecs(suites, out = []) {
@@ -115,14 +116,24 @@ async function main() {
       const tcId = tcIdFromTitle(spec.title);
       if (!tcId) continue;
       playwrightCount += 1;
+      const owner = testcases.get(tcId)?.Owner ?? 'Chưa rõ';
       record(
         tcId,
         spec.ok ? 'Pass' : 'Fail',
         spec.ok
           ? 'Playwright — xem reports/raw/playwright-report.json'
           : 'Playwright — bằng chứng trong reports/playwright/',
-        'Mạnh (script)',
+        `${owner} (script)`,
       );
+    }
+  }
+
+  // Kết quả thủ công có bằng chứng thô (Lighthouse, k6, khám phá tay) —
+  // nguồn: reports/raw/manual-results.csv. Ghi đè kết quả máy nếu có.
+  const manualRaw = await readText(MANUAL_RESULTS).catch(() => '');
+  if (manualRaw) {
+    for (const row of parseCsv(manualRaw).records) {
+      record(row.TC_ID, row.Result, row.Note ?? '', row.Executed_By ?? 'Ngân (thủ công)');
     }
   }
 
