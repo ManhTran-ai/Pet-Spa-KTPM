@@ -71,12 +71,25 @@ async function main() {
     source: 'docs/defects/defects.csv',
   });
 
+  // EC-4 đòi "Mỗi hệ thống có ít nhất 1 bộ E2E tự động chạy được và xanh" —
+  // phải kiểm theo từng hệ thống, không được chỉ nhìn tổng số ca Pass toàn cục.
+  const AUTO_SYSTEMS = ['T1', 'T2', 'T3'];
+  const autoPassBySystem = new Map();
+  for (const sys of AUTO_SYSTEMS) {
+    autoPassBySystem.set(
+      sys,
+      execution.filter((e) => e.Type === 'Auto' && e.Result === 'Pass' && e.System === sys).length,
+    );
+  }
   const autoSuites = execution.filter((e) => e.Type === 'Auto' && e.Result === 'Pass').length;
+  const systemsWithoutAuto = AUTO_SYSTEMS.filter((s) => (autoPassBySystem.get(s) ?? 0) === 0);
   criteria.push({
     id: 'EC-4',
     name: 'Mỗi hệ thống có ít nhất 1 bộ E2E tự động chạy được và xanh',
-    measured: `${autoSuites} test case tự động Pass`,
-    passed: autoSuites > 0,
+    measured:
+      `${autoSuites} test case tự động Pass · theo hệ thống: ` +
+      AUTO_SYSTEMS.map((s) => `${s}=${autoPassBySystem.get(s) ?? 0}`).join(', '),
+    passed: autoSuites > 0 && systemsWithoutAuto.length === 0,
     source: 'reports/execution-log.csv, tests/e2e/',
   });
 
@@ -91,15 +104,36 @@ async function main() {
   });
 
   const axeCritical = axe.filter((a) => a.Severity === 'critical').length;
-  const missingHeaders = security.filter((s) => s.Present === 'No');
-  const systemsWithHeaders = new Set(security.filter((s) => s.Present === 'Yes').map((s) => s.System)).size;
+  // NFR-02 gồm 4 nhóm kiểm tra: header bảo mật · TLS · cookie phiên · rò rỉ khoá.
+  // Chỉ đếm "header bảo mật" trong nhóm header; các nhóm khác đo riêng.
+  const SECURITY_HEADER_NAMES = new Set([
+    'Strict-Transport-Security',
+    'X-Content-Type-Options',
+    'X-Frame-Options',
+    'Content-Security-Policy',
+    'Referrer-Policy',
+  ]);
+  const headerRows = security.filter((s) => SECURITY_HEADER_NAMES.has(s.Header));
+  const missingHeaders = headerRows.filter((s) => s.Present === 'No');
+  const systemsWithHeaders = new Set(headerRows.filter((s) => s.Present === 'Yes').map((s) => s.System)).size;
+  const tlsRows = security.filter((s) => s.Header === 'TLS');
+  const tlsMissing = tlsRows.filter((s) => s.Present === 'No');
+  const leakRows = security.filter((s) => s.Header.startsWith('Rò rỉ'));
+  const leaks = leakRows.filter((s) => s.Present === 'Yes');
   criteria.push({
     id: 'EC-6',
     name: 'NFR-02 đạt: không có phát hiện bảo mật mức Critical/High',
     measured:
       `${axeCritical} phát hiện axe-core mức critical; ` +
-      `${missingHeaders.length}/${security.length} header bảo mật thiếu trên ${systemsWithHeaders} hệ thống đo được`,
-    passed: axe.length > 0 && axeCritical === 0 && missingHeaders.length === 0,
+      `thiếu ${missingHeaders.length}/${headerRows.length} header bảo mật (đo trên ${systemsWithHeaders}/3 site); ` +
+      `TLS không lấy được chi tiết: ${tlsMissing.length}/${tlsRows.length}; ` +
+      `rò rỉ khoá API/chuỗi kết nối: ${leaks.length}/${leakRows.length} site`,
+    passed:
+      axe.length > 0 &&
+      axeCritical === 0 &&
+      missingHeaders.length === 0 &&
+      tlsMissing.length === 0 &&
+      leaks.length === 0,
     source: 'reports/raw/axe-summary.csv, reports/raw/security-summary.csv',
   });
 
