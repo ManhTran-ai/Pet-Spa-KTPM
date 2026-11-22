@@ -22,13 +22,14 @@ const DOC_LIST = [
 
 const REFERENCE_LIST = ['pricing-baseline.md', 'pricing-baseline.csv'];
 
-const REVIEW_LIST = ['inspection-srs.md', 'review-testdesign.md', 'review-testcases.md'];
+const REVIEW_LIST = ['inspection-srs.md', 'design-review.md', 'testcase-inspection.md'];
 
 const REPORT_LIST = [
   'rtm-coverage.md',
   'integration-report.md',
   'nfr-report.md',
   'regression-report.md',
+  'defect-retest-report.md',
   'uat-report.md',
   'exit-criteria.md',
   'final-test-report.md',
@@ -90,6 +91,35 @@ async function main() {
     );
     (ok ? copied : missing).push(`docs/testcases/${entry}`);
   }
+
+  // 5 tài liệu thiết kế test chuyên trách (H2-2) + bảng index tra cứu.
+  const designDir = path.join(DOCS_DIR, 'design');
+  const designEntries = await readdir(designDir).catch(() => []);
+  for (const entry of designEntries) {
+    const ok = await copyIfExists(
+      path.join(designDir, entry),
+      path.join(docsDir, 'design', entry),
+    );
+    (ok ? copied : missing).push(`docs/design/${entry}`);
+  }
+
+  // Biên bản gate theo từng ngày (bằng chứng tiến độ từng phiên).
+  const gatesDir = path.join(REPORTS_DIR, 'gates');
+  const gateEntries = await readdir(gatesDir).catch(() => []);
+  for (const entry of gateEntries) {
+    const ok = await copyIfExists(
+      path.join(gatesDir, entry),
+      path.join(reportsDir, 'gates', entry),
+    );
+    (ok ? copied : missing).push(`reports/gates/${entry}`);
+  }
+
+  // Bản ghi thực thi (nguồn số liệu chính thức cho Exit criteria).
+  const execOk = await copyIfExists(
+    path.join(REPORTS_DIR, 'execution-log.csv'),
+    path.join(reportsDir, 'execution-log.csv'),
+  );
+  (execOk ? copied : missing).push('reports/execution-log.csv');
 
   const index = [
     '# Hồ sơ nộp',

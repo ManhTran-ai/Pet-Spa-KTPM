@@ -143,13 +143,23 @@ async function main() {
     source: 'reports/raw/axe-summary.csv, reports/raw/security-summary.csv',
   });
 
+  // EC-7 đòi "UAT không có phản hồi chặn". Chỉ đạt khi UAT ĐÃ THỰC THI và không ghi nhận
+  // phản hồi chặn — báo cáo có mặt nhưng chưa chạy thì vẫn là HUMAN-PENDING.
   const uatRaw = await readText(path.join(REPORTS_DIR, 'uat-report.md')).catch(() => '');
   const blockingUat = uatRaw.match(/phản hồi chặn[^\n]*/i) ?? [];
+  const uatExecuted = /Đã thực thi\s*\|\s*\*\*(\d+)\*\*/i.test(uatRaw);
+  const uatDone = uatExecuted && /Đã thực thi\s*\|\s*\*\*[1-9]\d*\*/i.test(uatRaw);
   criteria.push({
     id: 'EC-7',
     name: 'UAT không có phản hồi chặn',
-    measured: uatRaw ? (blockingUat.length > 0 ? blockingUat[0] : 'báo cáo UAT đã có, không ghi nhận phản hồi chặn') : 'HUMAN-PENDING',
-    passed: uatRaw.length > 0 && blockingUat.length === 0,
+    measured: uatRaw
+      ? blockingUat.length > 0
+        ? blockingUat[0]
+        : uatDone
+          ? 'UAT đã thực thi, không ghi nhận phản hồi chặn'
+          : 'HUMAN-PENDING — báo cáo UAT đã có nhưng chưa thực thi'
+      : 'HUMAN-PENDING — chưa có báo cáo UAT',
+    passed: uatDone && blockingUat.length === 0,
     source: 'reports/uat-report.md',
   });
 
