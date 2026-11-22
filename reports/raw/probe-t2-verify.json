@@ -1,0 +1,37 @@
+{
+  "tablesTextContent": [
+    {
+      "thead": [
+        "Dịch vụ (Grooming)",
+        "<3kg",
+        ">3–6kg",
+        ">6–10kg",
+        ">10–20kg",
+        ">20–30kg",
+        ">30–40kg",
+        ">40kg"
+      ],
+      "tbodyRows": 12,
+      "textLen": 483
+    },
+    {
+      "thead": [
+        "Dịch vụ (Nhuộm)",
+        "<6kg",
+        ">6–15kg",
+        ">15–30kg",
+        ">30kg"
+      ],
+      "tbodyRows": 4,
+      "textLen": 145
+    },
+    {
+      "thead": [],
+      "tbodyRows": 7,
+      "textLen": 339
+    }
+  ],
+  "bookSummary": "TÓM TẮT LỰA CHỌN Chưa có lựa chọn — Giá cuối được xác nhận tại spa sau khi cân & kiểm tra tình trạng lông. Dịch vụ \"báo giá riêng\" sẽ được tư vấn khi spa gọi lại.",
+  "nextDisabledBuoc2ChuaChon": true,
+  "gia6_10": "~300.000đ"
+}

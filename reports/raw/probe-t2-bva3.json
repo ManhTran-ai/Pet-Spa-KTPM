@@ -1,0 +1,30 @@
+{
+  "kq": [
+    {
+      "band": "<3kg",
+      "railPrice": "~120.000đ",
+      "railLines": "Chó · <3kg\n—\nCombo Tắm Vệ Sinh\n120k"
+    },
+    {
+      "band": ">3–6kg",
+      "railPrice": "~200.000đ",
+      "railLines": "Chó · >3–6kg\n—\nCombo Tắm Vệ Sinh\n200k"
+    },
+    {
+      "band": ">6–10kg",
+      "railPrice": "~300.000đ",
+      "railLines": "Chó · >6–10kg\n—\nCombo Tắm Vệ Sinh\n300k"
+    },
+    {
+      "band": ">10–20kg",
+      "railPrice": "~400.000đ",
+      "railLines": "Chó · >10–20kg\n—\nCombo Tắm Vệ Sinh\n400k"
+    }
+  ],
+  "ketLuan": [
+    "<3kg => ~120.000đ | Chó · <3kg / — / Combo Tắm Vệ Sinh / 120k",
+    ">3–6kg => ~200.000đ | Chó · >3–6kg / — / Combo Tắm Vệ Sinh / 200k",
+    ">6–10kg => ~300.000đ | Chó · >6–10kg / — / Combo Tắm Vệ Sinh / 300k",
+    ">10–20kg => ~400.000đ | Chó · >10–20kg / — / Combo Tắm Vệ Sinh / 400k"
+  ]
+}

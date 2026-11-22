@@ -50,7 +50,7 @@ test.describe('T2 Mật Pet — M3 Bảng giá theo cân nặng', () => {
     });
   }
 
-  test('TC-T2-M3-004: giá cập nhật tức thì khi đổi bậc cân nặng', async ({ page }) => {
+  test('TC-T2-M3-004: Chọn xong loài, cân nặng, dịch vụ thì giá dự kiến hiển thị tức thì', async ({ page }) => {
     await chonCombo(page, '>3–6kg', 'Combo Tắm Vệ Sinh');
     const price = page.locator('.rail-price');
     await expect(price).toContainText('200.000');

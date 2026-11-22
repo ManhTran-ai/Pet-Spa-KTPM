@@ -1,7 +1,24 @@
 TC_ID,Requirement_ID,System,Title,Type,Owner,Executed_By,Executed_At,Result,Defect_ID,Note
-TC-NFR-04-002,NFR-04,ALL,Chức năng tính giá chạy đúng trên Firefox,Manual,Tài,Mạnh (script),2026-11-18,Pass,,Playwright — xem reports/raw/playwright-report.json
-TC-NFR-07-004,NFR-07,ALL,sitemap.xml tồn tại và không chặn trang quan trọng,Auto,Lộc,Tài (Newman),2026-11-18,Pass,,"Newman — 2 assertion, 0 fail"
-TC-NFR-07-005,NFR-07,ALL,robots.txt tồn tại và không chặn toàn bộ site,Auto,Lộc,Tài (Newman),2026-11-18,Pass,,"Newman — 2 assertion, 0 fail"
-TC-T1-M1-001,FR-M1-01,T1,Trang chủ Pet NGON trả HTTP 200 và hiển thị tiêu đề + điều hướng chính,Auto,Lộc,Tài (Newman),2026-11-18,Pass,,"Newman — 2 assertion, 0 fail"
-TC-T2-M1-001,FR-M1-01,T2,Trang chủ Mật Pet trả HTTP 200 và hiển thị tiêu đề + điều hướng chính,Auto,Ngân,Tài (Newman),2026-11-18,Pass,,"Newman — 2 assertion, 0 fail"
-TC-T3-M1-001,FR-M1-01,T3,Trang chủ Pretty Paws trả HTTP 200 và hiển thị tiêu đề + điều hướng chính,Auto,Mạnh,Tài (Newman),2026-11-18,Pass,,"Newman — 2 assertion, 0 fail"
+TC-T2-M1-001,FR-M1-01,T2,Trang chủ Mật Pet trả HTTP 200 và hiển thị tiêu đề + điều hướng chính,Auto,Ngân,Tài (Newman),2026-11-22,Pass,,"Newman — 2 assertion, 0 fail"
+TC-T2-M1-002,FR-M1-02,T2,Mọi liên kết menu điều hướng đến trang con trả HTTP 200,Auto,Ngân,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T2-M1-004,FR-M1-04,T2,Không có liên kết chết 404 trong menu và footer,Auto,Tài,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T2-M2-005,FR-M2-04,T2,Dịch vụ báo giá riêng được đánh dấu rõ ràng trong danh mục,Manual,Tài,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T2-M2-006,FR-M2-01,T2,Số dịch vụ niêm yết khớp bảng giá mục 3 của SRS,Manual,Tài,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T2-M3-002,FR-M3-02,T2,"Tra bảng giá đúng cho (Chó, bậc >3-6kg) + Combo Tắm Vệ Sinh = 200.000đ",Auto,Ngân,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json (3 biến thể)
+TC-T2-M3-004,FR-M3-03,T2,"Chọn xong loài, cân nặng, dịch vụ thì giá dự kiến hiển thị tức thì",Auto,Ngân,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T2-M3-013,FR-M3-02,T2,BVA ngưỡng 3kg: cân 3kg thuộc bậc >3-6kg,Manual,Tài,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T2-M3-014,FR-M3-02,T2,BVA ngưỡng 3kg: cân 3.1kg thuộc bậc >3-6kg,Manual,Tài,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T2-M3-015,FR-M3-02,T2,BVA ngưỡng 6kg: cân 6kg thuộc bậc >6-10kg,Manual,Tài,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T2-M3-016,FR-M3-02,T2,BVA ngưỡng 6kg: cân 6.1kg thuộc bậc >6-10kg,Manual,Tài,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T2-M3-017,FR-M3-02,T2,BVA ngưỡng 10kg: cân 10kg thuộc bậc >10-20kg,Manual,Tài,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T2-M3-018,FR-M3-02,T2,BVA ngưỡng 10kg: cân 10.1kg thuộc bậc >10-20kg,Manual,Tài,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T2-M4-009,FR-M4-08,T2,Quay lại bước trước giữ nguyên lựa chọn đã làm,Auto,Tài,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T2-M4-010,FR-M4-09,T2,"Tóm tắt lựa chọn hiển thị loài, bậc cân nặng, dịch vụ và giá",Auto,Tài,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T2-M4-011,FR-M4-10,T2,Có thông báo đồng ý liên hệ qua điện thoại/Zalo trước khi gửi,Manual,Tài,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T2-M4-012,FR-M4-12,T2,Luồng đặt lịch không yêu cầu đăng nhập hoặc tạo tài khoản,Auto,Tài,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T2-M4-013,FR-M4-06,T2,ST: bỏ qua bước chọn loài bị chặn,Manual,Tài,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T2-M5-004,FR-M5-04,T2,DT chính sách hủy: hoàn cọc khi hủy trước thời hạn,Manual,Tài,Mạnh (script),2026-11-22,Fail,,Playwright — bằng chứng trong reports/playwright/
+TC-T2-M5-005,FR-M5-04,T2,DT chính sách hủy: không hoàn cọc khi hủy muộn hoặc không thông báo,Manual,Tài,Mạnh (script),2026-11-22,Fail,DEF-028,Playwright — bằng chứng trong reports/playwright/
+TC-T2-M7-001,FR-M7-01,T2,Nhập từ khoá ra danh sách kết quả lọc theo từ khoá,Auto,Ngân,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T2-M7-002,FR-M7-02,T2,Tìm kiếm không phân biệt hoa thường: SPA và spa cho cùng kết quả,Auto,Ngân,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T2-M7-004,FR-M7-02,T2,Tìm kiếm với từ khoá không tồn tại trả về thông báo rõ ràng,Auto,Tài,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json

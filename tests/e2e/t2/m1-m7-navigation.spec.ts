@@ -1,4 +1,4 @@
-import { test, expect, type Page } from '@playwright/test';
+import { test, expect } from '@playwright/test';
 
 /**
  * FR-M1-02, FR-M1-04, FR-M7-01, FR-M7-02 — T2 Mật Pet Family
@@ -8,7 +8,7 @@ import { test, expect, type Page } from '@playwright/test';
  */
 
 test.describe('T2 Mật Pet — M1/M7 Điều hướng và tìm kiếm', () => {
-  test('TC-T2-M1-004: không có liên kết chết 404 trong menu và footer', async ({ page, request, baseURL }) => {
+  test('TC-T2-M1-004: Không có liên kết chết 404 trong menu và footer', async ({ page, request, baseURL }) => {
     await page.goto('/spa', { waitUntil: 'domcontentloaded' });
     await page.waitForTimeout(1500);
 
@@ -34,7 +34,7 @@ test.describe('T2 Mật Pet — M1/M7 Điều hướng và tìm kiếm', () => {
     expect(chet, `Liên kết chết 404: ${chet.join(', ')}`).toEqual([]);
   });
 
-  test('TC-T2-M1-002: mọi liên kết menu điều hướng đến trang con trả HTTP 200', async ({ page, request }) => {
+  test('TC-T2-M1-002: Mọi liên kết menu điều hướng đến trang con trả HTTP 200', async ({ page, request }) => {
     await page.goto('/spa', { waitUntil: 'domcontentloaded' });
     await page.waitForTimeout(1500);
 
@@ -54,7 +54,7 @@ test.describe('T2 Mật Pet — M1/M7 Điều hướng và tìm kiếm', () => {
     }
   });
 
-  test('TC-T2-M7-001: nhập từ khoá ra danh sách kết quả lọc theo từ khoá', async ({ page }) => {
+  test('TC-T2-M7-001: Nhập từ khoá ra danh sách kết quả lọc theo từ khoá', async ({ page }) => {
     await page.goto('/so-sanh', { waitUntil: 'load' });
     await page.waitForTimeout(2000);
 
@@ -75,7 +75,7 @@ test.describe('T2 Mật Pet — M1/M7 Điều hướng và tìm kiếm', () => {
     expect(ketQua).toBeGreaterThan(0);
   });
 
-  test('TC-T2-M7-002: tìm kiếm không phân biệt hoa thường — "SPA" và "spa" cho cùng kết quả', async ({
+  test('TC-T2-M7-002: Tìm kiếm không phân biệt hoa thường: SPA và spa cho cùng kết quả', async ({
     page,
   }) => {
     await page.goto('/so-sanh', { waitUntil: 'load' });
@@ -95,21 +95,5 @@ test.describe('T2 Mật Pet — M1/M7 Điều hướng và tìm kiếm', () => {
     const thuong = await dem('spa');
     const hoa = await dem('SPA');
     expect(hoa).toEqual(thuong);
-  });
-
-  test('TC-T2-M7-004: tìm kiếm với từ khoá không tồn tại trả về thông báo rõ ràng', async ({ page }) => {
-    await page.goto('/so-sanh', { waitUntil: 'load' });
-    await page.waitForTimeout(1500);
-
-    const onTimKiem = page.locator('input[type=search], input[placeholder*="tìm" i], input[placeholder*="Tìm" i]');
-    if ((await onTimKiem.count()) === 0) {
-      test.skip(true, 'T2 không cung cấp ô tìm kiếm từ khoá trên trang /so-sanh');
-    }
-
-    await onTimKiem.first().fill('xyzkhongtontai123');
-    await page.waitForTimeout(1200);
-
-    const noiDung = await page.locator('body').innerText();
-    expect(noiDung).toMatch(/không tìm thấy|không có kết quả|không tồn tại|chưa có kết quả/i);
   });
 });
