@@ -1,16 +1,25 @@
-﻿System,Header,Present,Value
+System,Header,Present,Value
+T1,Strict-Transport-Security,No,
 T1,X-Content-Type-Options,No,
 T1,X-Frame-Options,No,
 T1,Content-Security-Policy,No,
 T1,Referrer-Policy,No,
-T1,Strict-Transport-Security,No,
+T1,TLS,Yes,QUIC · chủ thể petngon.vn · issuer WE1 · hết hạn 2027-01-18
+T1,Cookie phiên,No,"không có cookie phiên · thiếu Secure: _ga_95JRC61WSG, _ga · thiếu HttpOnly: _ga_95JRC61WSG, _ga"
+T1,Rò rỉ khoá/chuỗi kết nối,No,"không phát hiện khoá API, kho xác thực hay chuỗi kết nối"
+T2,Strict-Transport-Security,Yes,max-age=63072000
 T2,X-Content-Type-Options,No,
 T2,X-Frame-Options,No,
 T2,Content-Security-Policy,No,
 T2,Referrer-Policy,No,
-T2,Strict-Transport-Security,Yes,max-age=63072000
+T2,TLS,Yes,TLS 1.3 · chủ thể matpet.vn · issuer YR2 · hết hạn 2027-01-17
+T2,Cookie phiên,No,"không có cookie phiên · thiếu Secure: _ga_WWZ31M3ZJZ, _ga · thiếu HttpOnly: _ga_WWZ31M3ZJZ, _ga, ph_phc_xRkHDRPuDwarZaoqkKrxhcNeQ7pq4EPRYvXmMQAtUfXi_posthog"
+T2,Rò rỉ khoá/chuỗi kết nối,No,"không phát hiện khoá API, kho xác thực hay chuỗi kết nối"
+T3,Strict-Transport-Security,No,
 T3,X-Content-Type-Options,No,
 T3,X-Frame-Options,No,
 T3,Content-Security-Policy,No,
 T3,Referrer-Policy,No,
-T3,Strict-Transport-Security,No,
+T3,TLS,Yes,TLS 1.2 · chủ thể *.groomore.com · issuer Amazon RSA 2048 M01 · hết hạn 2027-04-17
+T3,Cookie phiên,No,"không có cookie phiên · thiếu Secure: _gcl_au, _ga_C8K44JEMP0, _ga · thiếu HttpOnly: _gcl_au, _ga_C8K44JEMP0, _ga"
+T3,Rò rỉ khoá/chuỗi kết nối,Yes,"AIzaSyD8UC…Z-6kew (39 ký tự) ×1 | AIzaSyBqUd…70cvgw (39 ký tự) ×1 | apiKey: ""A…-6kew"" (49 ký tự) ×1"

@@ -1,0 +1,154 @@
+========== HĐ-1: BẢNG GIÁ TĨNH ==========
+tiêu đề cột: ["Loài & cân nặng","Tắm","Cắt tỉa lông","Cạo lông","Combo Tắm + Vệ sinh","Combo Tắm + Cắt tỉa","Combo Tắm + Cạo"]
+["Loài & cân nặng","Tắm","Cắt tỉa lông","Cạo lông","Combo Tắm + Vệ sinh","Combo Tắm + Cắt tỉa","Combo Tắm + Cạo"]
+["Chó"]
+["Chó mini< 3kg","88.000₫","145.000₫","88.000₫","130.000₫","240.000₫","185.000₫"]
+["Chó nhỏ3–5kg","155.000₫","165.000₫","110.000₫","265.000₫","405.000₫","350.000₫"]
+["Chó vừa5–10kg","240.000₫","220.000₫","165.000₫","375.000₫","515.000₫","460.000₫"]
+["Chó lớn10–15kg","350.000₫","275.000₫","220.000₫","460.000₫","605.000₫","550.000₫"]
+["Chó rất lớn15–20kg","460.000₫","330.000₫","275.000₫","550.000₫","660.000₫","605.000₫"]
+["Chó đại20–25kg","570.000₫","385.000₫","330.000₫","640.000₫","750.000₫","695.000₫"]
+["Chó siêu đại25–30kg","660.000₫","440.000₫","385.000₫","725.000₫","835.000₫","780.000₫"]
+["Mèo"]
+["Mèo mini≤ 3kg","110.000₫","160.000₫","110.000₫","155.000₫","240.000₫","210.000₫"]
+["Mèo nhỏ3–5kg","165.000₫","275.000₫","165.000₫","275.000₫","415.000₫","365.000₫"]
+["Mèo vừa5–10kg","275.000₫","370.000₫","220.000₫","405.000₫","565.000₫","495.000₫"]
+["Mèo lớn10–15kg","385.000₫","440.000₫","275.000₫","495.000₫","665.000₫","585.000₫"]
+["Mèo rất lớn15–20kg","460.000₫","455.000₫","330.000₫","550.000₫","690.000₫","605.000₫"]
+["Mèo đại20–25kg","570.000₫","520.000₫","385.000₫","640.000₫","795.000₫","695.000₫"]
+["Mèo siêu đại25–30kg","660.000₫","585.000₫","440.000₫","725.000₫","890.000₫","780.000₫"]
+
+========== HĐ-1: GIÁ WIZARD ↔ BẢNG GIÁ TĨNH ==========
+OK   Chó · Chó mini           < 3kg    wizard=88.000₫     bảng=88.000₫
+OK   Chó · Chó nhỏ            3–5kg    wizard=155.000₫    bảng=155.000₫
+OK   Chó · Chó vừa            5–10kg   wizard=240.000₫    bảng=240.000₫
+OK   Chó · Chó lớn            10–15kg  wizard=350.000₫    bảng=350.000₫
+OK   Chó · Chó rất lớn        15–20kg  wizard=460.000₫    bảng=460.000₫
+OK   Chó · Chó đại            20–25kg  wizard=570.000₫    bảng=570.000₫
+OK   Chó · Chó siêu đại       25–30kg  wizard=660.000₫    bảng=660.000₫
+OK   Mèo · Mèo mini           ≤ 3kg    wizard=110.000₫    bảng=110.000₫
+OK   Mèo · Mèo nhỏ            3–5kg    wizard=165.000₫    bảng=165.000₫
+OK   Mèo · Mèo vừa            5–10kg   wizard=275.000₫    bảng=275.000₫
+OK   Mèo · Mèo lớn            10–15kg  wizard=385.000₫    bảng=385.000₫
+OK   Mèo · Mèo rất lớn        15–20kg  wizard=460.000₫    bảng=460.000₫
+OK   Mèo · Mèo đại            20–25kg  wizard=570.000₫    bảng=570.000₫
+OK   Mèo · Mèo siêu đại       25–30kg  wizard=660.000₫    bảng=660.000₫
+
+→ khớp 14 · lệch 0 / 14 cặp (loài × bậc)
+
+========== HĐ-2: PHỤ THU TẠI NHÀ ==========
+{"tieuDe":"Tắm","badge":"home_workCó tận nhà","phuThu":"home_workPhụ thu tận nhà: +50.000₫ (chưa gồm phí di chuyển)"}
+{"tieuDe":"Cắt tỉa lông","badge":"storeChỉ tại spa","phuThu":null}
+{"tieuDe":"Cạo lông","badge":"home_workCó tận nhà","phuThu":"home_workPhụ thu tận nhà: +80.000₫ (chưa gồm phí di chuyển)"}
+{"tieuDe":"Combo Tắm + Vệ sinh","badge":"home_workCó tận nhà","phuThu":"home_workPhụ thu tận nhà: +70.000₫ (chưa gồm phí di chuyển)"}
+{"tieuDe":"Combo Tắm + Cắt tỉa","badge":"storeChỉ tại spa","phuThu":null}
+{"tieuDe":"Combo Tắm + Cạo","badge":"home_workCó tận nhà","phuThu":"home_workPhụ thu tận nhà: +100.000₫ (chưa gồm phí di chuyển)"}
+
+--- HĐ-2: tổng tiền bước 4 theo từng gói tại nhà ---
+  Tắm                    155.000₫ + 50.000₫     = 205.000₫    · Tạm tính=205.000₫    có ghi phụ thu · KHỚP
+  --- chi tiết bước 4 (gói Tắm) ---
+store
+Tại spa
+1.09 A1 Westgate, Bình Chánh
+KHÔNG PHỤ THU
+home_work
+Tận nhà
+Thợ đến địa chỉ của bạn
++50.000₫ + KM
+ĐỊA CHỈ CHI TIẾT
+Thông tin liên hệ
+HỌ TÊN
+SỐ ĐIỆN THOẠI
+Tắm · Chó nhỏ (3–5kg)
+155.000₫
++ Phụ thu tận nhà
++ 50.000₫
+Tạm tính
+205.000₫
+chevron_left
+Quay lại
+check
+Xác nhận đặt lịch
+  Cạo lông               110.000₫ + 80.000₫     = 190.000₫    · Tạm tính=190.000₫    có ghi phụ thu · KHỚP
+  Combo Tắm + Vệ sinh    265.000₫ + 70.000₫     = 335.000₫    · Tạm tính=335.000₫    có ghi phụ thu · KHỚP
+  Combo Tắm + Cạo        350.000₫ + 100.000₫    = 450.000₫    · Tạm tính=450.000₫    có ghi phụ thu · KHỚP
+
+========== HĐ-3: PHỤ THU DI CHUYỂN ==========
+Phụ thu di chuyển hiển thị ngay khi đặt. Tắm, cạo và combo tắm + cạo có thể thực hiện tại nhà.
+
+bathtub
+home_work
+Có tận nhà
+Tắm
+
+Gói tắm cơ bản — tắm sạch với sữa tắm dịu nhẹ, sấy khô và chải mượt. Đơn giản, nhanh gọn.
+
+home_work
+Phụ thu tận nhà:
++50.000₫
+(chưa gồm phí di chuyển)
+
+Chi tiết giá theo cân nặng — xem bảng bên dưới
+
+TỪ
+88.000₫
+schedule
+45 phút
+calendar_month
+Đặt lịch
+content_cut
+store
+Chỉ tại spa
+Cắt tỉa lông
+
+Cắt tỉa tạo kiểu theo giống chó/mèo của bé. Thợ tỉa chuyên nghiệp tư vấn kiểu phù hợp khuôn mặt, mùa vụ.
+
+Chi tiết giá theo cân nặng — xem bảng bên dưới
+
+TỪ
+145.000₫
+schedule
+90 phút
+calendar_month
+Đặt lịch
+cut
+home_work
+Có tận nhà
+Cạo lông
+
+Cạo lông toàn thân vào mùa nóng
+
+========== NETWORK ==========
+tổng request: 779 · XHR/fetch: 107
+theo domain:
+  petngon.vn: 693
+  www.googletagmanager.com: 42
+  www.google-analytics.com: 23
+  fonts.gstatic.com: 21
+
+request ngoài domain của site (dữ liệu gửi đi):
+  POST 204 https://www.google-analytics.com/g/collect?v=2&tid=G-95JRC61WSG&gtm=45je6bh1v9245127125za20ozb9245128752zd9245128752xf1&…
+  POST 204 https://www.google-analytics.com/g/collect?v=2&tid=G-95JRC61WSG&gtm=45je6bh1v9245127125za20ozb9245128752zd9245128752xf1&…
+  POST 204 https://www.google-analytics.com/g/collect?v=2&tid=G-95JRC61WSG&gtm=45je6bh1v9245127125za20ozb9245128752zd9245128752xf1&…
+  POST 204 https://www.google-analytics.com/g/collect?v=2&tid=G-95JRC61WSG&gtm=45je6bh1v9245127125za20ozb9245128752zd9245128752xf1&…
+  POST 204 https://www.google-analytics.com/g/collect?v=2&tid=G-95JRC61WSG&gtm=45je6bh1v9245127125za20ozb9245128752zd9245128752xf1&…
+  POST 204 https://www.google-analytics.com/g/collect?v=2&tid=G-95JRC61WSG&gtm=45je6bh1v9245127125za20ozb9245128752zd9245128752xf1&…
+  POST 204 https://www.google-analytics.com/g/collect?v=2&tid=G-95JRC61WSG&gtm=45je6bh1v9245127125za20ozb9245128752zd9245128752xf1&…
+  POST 204 https://www.google-analytics.com/g/collect?v=2&tid=G-95JRC61WSG&gtm=45je6bh1v9245127125za20ozb9245128752zd9245128752xf1&…
+  POST 204 https://www.google-analytics.com/g/collect?v=2&tid=G-95JRC61WSG&gtm=45je6bh1v9245127125za20ozb9245128752zd9245128752xf1&…
+  POST 204 https://www.google-analytics.com/g/collect?v=2&tid=G-95JRC61WSG&gtm=45je6bh1v9245127125za20ozb9245128752zd9245128752xf1&…
+  POST 204 https://www.google-analytics.com/g/collect?v=2&tid=G-95JRC61WSG&gtm=45je6bh1v9245127125za20ozb9245128752zd9245128752xf1&…
+  POST 204 https://www.google-analytics.com/g/collect?v=2&tid=G-95JRC61WSG&gtm=45je6bh1v9245127125za20ozb9245128752zd9245128752xf1&…
+  POST 204 https://www.google-analytics.com/g/collect?v=2&tid=G-95JRC61WSG&gtm=45je6bh1v9245127125za20ozb9245128752zd9245128752xf1&…
+  POST 204 https://www.google-analytics.com/g/collect?v=2&tid=G-95JRC61WSG&gtm=45je6bh1v9245127125za20ozb9245128752zd9245128752xf1&…
+  POST 204 https://www.google-analytics.com/g/collect?v=2&tid=G-95JRC61WSG&gtm=45je6bh1v9245127125za20ozb9245128752zd9245128752xf1&…
+  POST 204 https://www.google-analytics.com/g/collect?v=2&tid=G-95JRC61WSG&gtm=45je6bh1v9245127125za20ozb9245128752zd9245128752xf1&…
+  POST 204 https://www.google-analytics.com/g/collect?v=2&tid=G-95JRC61WSG&gtm=45je6bh1v9245127125z89245128752za20gzb9245128752zd92…
+  POST 204 https://www.google-analytics.com/g/collect?v=2&tid=G-95JRC61WSG&gtm=45je6bh1v9245127125za20ozb9245128752zd9245128752xf1&…
+  POST 204 https://www.google-analytics.com/g/collect?v=2&tid=G-95JRC61WSG&gtm=45je6bh1v9245127125z89245128752za20gzb9245128752zd92…
+  POST 204 https://www.google-analytics.com/g/collect?v=2&tid=G-95JRC61WSG&gtm=45je6bh1v9245127125za20ozb9245128752zd9245128752xf1&…
+  POST 204 https://www.google-analytics.com/g/collect?v=2&tid=G-95JRC61WSG&gtm=45je6bh1v9245127125z89245128752za20gzb9245128752zd92…
+  POST 204 https://www.google-analytics.com/g/collect?v=2&tid=G-95JRC61WSG&gtm=45je6bh1v9245127125za20ozb9245128752zd9245128752xf1&…
+  POST 204 https://www.google-analytics.com/g/collect?v=2&tid=G-95JRC61WSG&gtm=45je6bh1v9245127125z89245128752za20gzb9245128752zd92…
+
+phân bổ theo status: {"200":752,"204":23,"304":4}

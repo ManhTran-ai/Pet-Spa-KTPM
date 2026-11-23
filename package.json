@@ -24,6 +24,7 @@
     "assign:check": "node scripts/assign-check.mjs",
     "exit:check": "node scripts/exit-check.mjs",
     "lh:scan": "node scripts/lighthouse-scan.mjs",
+    "security:scan": "node scripts/security-scan.mjs",
     "lh:scan:booking": "node scripts/lighthouse-scan-booking.mjs",
     "exec:sync": "node scripts/exec-sync.mjs",
     "gate": "npm run req:check && npm run rtm:check && npm run assign:check && npm run exit:check"
