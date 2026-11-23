@@ -1,0 +1,36 @@
+{
+  "M2_005": {
+    "Gỡ rối": false,
+    "Tẩy ố": false,
+    "Tắm trắng": false,
+    "Xả dưỡng": false,
+    "Nhuộm hình lớn": false,
+    "Nhuộm tạo hình cơ thể": false,
+    "khoang50_500": false,
+    "tuyThietKe": false,
+    "coDichVuGrooming": true,
+    "coDichVuNhuom": false,
+    "coBaoGiaRiengBlock": false
+  },
+  "M2_006": {
+    "thieu": [
+      "Nhuộm 2 tai + đuôi",
+      "Nhuộm 4 chân",
+      "Nhuộm hình nhỏ",
+      "Gỡ rối",
+      "Tẩy ố",
+      "Tắm trắng",
+      "Xả dưỡng",
+      "Nhuộm hình lớn",
+      "Nhuộm tạo hình cơ thể"
+    ],
+    "bangGrooming": false,
+    "bangNhuom": false,
+    "vanXuatHien": []
+  },
+  "M4_013": {
+    "railLinesCount": 0,
+    "railEmpty": "Chọn dịch vụ để xem giá dự kiến cho bé của bạn 🐾",
+    "nextDisabled": true
+  }
+}

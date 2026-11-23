@@ -1,0 +1,772 @@
+[
+  {
+    "tag": "A",
+    "text": "",
+    "cls": "",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": true,
+    "coTheFocus": true
+  },
+  {
+    "tag": "A",
+    "text": "Trang chủ",
+    "cls": "transition-colors duration-300 ease-in-o",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": true,
+    "coTheFocus": true
+  },
+  {
+    "tag": "A",
+    "text": "Chó",
+    "cls": "transition-colors duration-300 ease-in-o",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": true,
+    "coTheFocus": true
+  },
+  {
+    "tag": "A",
+    "text": "Mèo",
+    "cls": "transition-colors duration-300 ease-in-o",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": true,
+    "coTheFocus": true
+  },
+  {
+    "tag": "A",
+    "text": "Tìm Bé Thương",
+    "cls": "transition-colors duration-300 ease-in-o",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": true,
+    "coTheFocus": true
+  },
+  {
+    "tag": "A",
+    "text": "Spa",
+    "cls": "transition-colors duration-300 ease-in-o",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": true,
+    "coTheFocus": true
+  },
+  {
+    "tag": "A",
+    "text": "Bảo hành",
+    "cls": "transition-colors duration-300 ease-in-o",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": true,
+    "coTheFocus": true
+  },
+  {
+    "tag": "A",
+    "text": "Về Mật Pet",
+    "cls": "transition-colors duration-300 ease-in-o",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": true,
+    "coTheFocus": true
+  },
+  {
+    "tag": "BUTTON",
+    "text": "",
+    "cls": "hidden items-center justify-center round",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": true,
+    "coTheFocus": true
+  },
+  {
+    "tag": "A",
+    "text": "VI",
+    "cls": "rounded-full px-2.5 py-1 transition-colo",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": true,
+    "coTheFocus": true
+  },
+  {
+    "tag": "A",
+    "text": "EN",
+    "cls": "rounded-full px-2.5 py-1 transition-colo",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": true,
+    "coTheFocus": true
+  },
+  {
+    "tag": "A",
+    "text": "0939.86.36.96",
+    "cls": "hidden items-center gap-2 rounded-full b",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": true,
+    "coTheFocus": true
+  },
+  {
+    "tag": "A",
+    "text": "VI",
+    "cls": "rounded-full px-2.5 py-1 transition-colo",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": false,
+    "coTheFocus": false
+  },
+  {
+    "tag": "A",
+    "text": "EN",
+    "cls": "rounded-full px-2.5 py-1 transition-colo",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": false,
+    "coTheFocus": false
+  },
+  {
+    "tag": "BUTTON",
+    "text": "",
+    "cls": "rounded-2xl border border-brand-deep/20 ",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": false,
+    "coTheFocus": false
+  },
+  {
+    "tag": "BUTTON",
+    "text": "",
+    "cls": "rounded-2xl border border-brand-deep/20 ",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": false,
+    "coTheFocus": false
+  },
+  {
+    "tag": "A",
+    "text": "Tính giá dự kiến →",
+    "cls": "btn btn-primary",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": true,
+    "coTheFocus": true
+  },
+  {
+    "tag": "A",
+    "text": "Xem bảng giá",
+    "cls": "btn btn-ghost",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": true,
+    "coTheFocus": true
+  },
+  {
+    "tag": "BUTTON",
+    "text": "1Loại béChó / Mèo",
+    "cls": "st active",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": true,
+    "coTheFocus": true
+  },
+  {
+    "tag": "BUTTON",
+    "text": "2Cân nặngBậc định sẵn",
+    "cls": "st",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": true,
+    "coTheFocus": true
+  },
+  {
+    "tag": "BUTTON",
+    "text": "3Dịch vụCombo hoặc lẻ",
+    "cls": "st",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": true,
+    "coTheFocus": true
+  },
+  {
+    "tag": "BUTTON",
+    "text": "✓🐶Chó",
+    "cls": "pet-opt dog",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": true,
+    "coTheFocus": true
+  },
+  {
+    "tag": "BUTTON",
+    "text": "✓🐱Mèo",
+    "cls": "pet-opt cat",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": true,
+    "coTheFocus": true
+  },
+  {
+    "tag": "BUTTON",
+    "text": "← Quay lại",
+    "cls": "btn back",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": true,
+    "hienThi": true,
+    "coTheFocus": false
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Tiếp tục →",
+    "cls": "btn btn-primary",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": true,
+    "hienThi": true,
+    "coTheFocus": false
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Giữ chỗ với mức giá này →",
+    "cls": "rail-cta",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": true,
+    "hienThi": true,
+    "coTheFocus": false
+  },
+  {
+    "tag": "INPUT",
+    "text": "0xxx xxx xxx",
+    "cls": "",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": true,
+    "coTheFocus": true
+  },
+  {
+    "tag": "INPUT",
+    "text": "Vd: Mochi",
+    "cls": "",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": true,
+    "coTheFocus": true
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Hôm nay22/11",
+    "cls": "date-pill",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": true,
+    "coTheFocus": true
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Ngày mai23/11",
+    "cls": "date-pill",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": true,
+    "coTheFocus": true
+  },
+  {
+    "tag": "BUTTON",
+    "text": "T324/11",
+    "cls": "date-pill",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": true,
+    "coTheFocus": true
+  },
+  {
+    "tag": "BUTTON",
+    "text": "T425/11",
+    "cls": "date-pill",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": true,
+    "coTheFocus": true
+  },
+  {
+    "tag": "BUTTON",
+    "text": "T526/11",
+    "cls": "date-pill",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": true,
+    "coTheFocus": true
+  },
+  {
+    "tag": "INPUT",
+    "text": "",
+    "cls": "date-other-input",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": true,
+    "coTheFocus": true
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Giữ chỗ cho bé →",
+    "cls": "btn btn-primary book-submit",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": true,
+    "coTheFocus": true
+  },
+  {
+    "tag": "INPUT",
+    "text": "",
+    "cls": "hp",
+    "tabIndexAttr": "-1",
+    "ariaHidden": "true",
+    "disabled": null,
+    "hienThi": false,
+    "coTheFocus": false
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Giữ chỗ →",
+    "cls": "btn btn-gold",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": false,
+    "coTheFocus": false
+  },
+  {
+    "tag": "A",
+    "text": "Chỉ đường →",
+    "cls": "btn btn-primary",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": true,
+    "coTheFocus": true
+  },
+  {
+    "tag": "A",
+    "text": "Gọi 0939.86.36.96",
+    "cls": "btn btn-ghost",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": true,
+    "coTheFocus": true
+  },
+  {
+    "tag": "A",
+    "text": "YouTube",
+    "cls": "transition-colors duration-300 ease-in-o",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": false,
+    "coTheFocus": false
+  },
+  {
+    "tag": "A",
+    "text": "Facebook",
+    "cls": "transition-colors duration-300 ease-in-o",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": false,
+    "coTheFocus": false
+  },
+  {
+    "tag": "A",
+    "text": "TikTok",
+    "cls": "transition-colors duration-300 ease-in-o",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": false,
+    "coTheFocus": false
+  },
+  {
+    "tag": "A",
+    "text": "YouTube",
+    "cls": "transition-colors duration-300 ease-in-o",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": true,
+    "coTheFocus": true
+  },
+  {
+    "tag": "A",
+    "text": "Facebook",
+    "cls": "transition-colors duration-300 ease-in-o",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": true,
+    "coTheFocus": true
+  },
+  {
+    "tag": "A",
+    "text": "TikTok",
+    "cls": "transition-colors duration-300 ease-in-o",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": true,
+    "coTheFocus": true
+  },
+  {
+    "tag": "A",
+    "text": "Trang chủ",
+    "cls": "transition-colors duration-300 ease-in-o",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": true,
+    "coTheFocus": true
+  },
+  {
+    "tag": "A",
+    "text": "Chó",
+    "cls": "transition-colors duration-300 ease-in-o",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": true,
+    "coTheFocus": true
+  },
+  {
+    "tag": "A",
+    "text": "Mèo",
+    "cls": "transition-colors duration-300 ease-in-o",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": true,
+    "coTheFocus": true
+  },
+  {
+    "tag": "A",
+    "text": "Tìm Bé Thương",
+    "cls": "transition-colors duration-300 ease-in-o",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": true,
+    "coTheFocus": true
+  },
+  {
+    "tag": "A",
+    "text": "Bảng giá",
+    "cls": "transition-colors duration-300 ease-in-o",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": true,
+    "coTheFocus": true
+  },
+  {
+    "tag": "A",
+    "text": "Bảo hành",
+    "cls": "transition-colors duration-300 ease-in-o",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": true,
+    "coTheFocus": true
+  },
+  {
+    "tag": "A",
+    "text": "Về Mật Pet",
+    "cls": "transition-colors duration-300 ease-in-o",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": true,
+    "coTheFocus": true
+  },
+  {
+    "tag": "A",
+    "text": "Tuyển dụng",
+    "cls": "transition-colors duration-300 ease-in-o",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": true,
+    "coTheFocus": true
+  },
+  {
+    "tag": "A",
+    "text": "Blog",
+    "cls": "transition-colors duration-300 ease-in-o",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": true,
+    "coTheFocus": true
+  },
+  {
+    "tag": "A",
+    "text": "Hướng dẫn chăm sóc",
+    "cls": "transition-colors duration-300 ease-in-o",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": true,
+    "coTheFocus": true
+  },
+  {
+    "tag": "A",
+    "text": "So sánh giống",
+    "cls": "transition-colors duration-300 ease-in-o",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": true,
+    "coTheFocus": true
+  },
+  {
+    "tag": "A",
+    "text": "Hỏi đáp",
+    "cls": "transition-colors duration-300 ease-in-o",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": true,
+    "coTheFocus": true
+  },
+  {
+    "tag": "A",
+    "text": "Đánh giá khách hàng",
+    "cls": "transition-colors duration-300 ease-in-o",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": true,
+    "coTheFocus": true
+  },
+  {
+    "tag": "A",
+    "text": "Showroom",
+    "cls": "transition-colors duration-300 ease-in-o",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": true,
+    "coTheFocus": true
+  },
+  {
+    "tag": "A",
+    "text": "239 Nguyễn Hồng Đào, Q. Tân Bình, TP.HCM",
+    "cls": "hover:text-white",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": true,
+    "coTheFocus": true
+  },
+  {
+    "tag": "A",
+    "text": "0939863696",
+    "cls": "hover:text-white",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": true,
+    "coTheFocus": true
+  },
+  {
+    "tag": "A",
+    "text": "matpetfamily2011@gmail.com",
+    "cls": "hover:text-white",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": true,
+    "coTheFocus": true
+  },
+  {
+    "tag": "A",
+    "text": "Trang chủ",
+    "cls": "transition-colors duration-300 ease-in-o",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": false,
+    "coTheFocus": false
+  },
+  {
+    "tag": "A",
+    "text": "Chó",
+    "cls": "transition-colors duration-300 ease-in-o",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": false,
+    "coTheFocus": false
+  },
+  {
+    "tag": "A",
+    "text": "Mèo",
+    "cls": "transition-colors duration-300 ease-in-o",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": false,
+    "coTheFocus": false
+  },
+  {
+    "tag": "A",
+    "text": "Tìm Bé Thương",
+    "cls": "transition-colors duration-300 ease-in-o",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": false,
+    "coTheFocus": false
+  },
+  {
+    "tag": "A",
+    "text": "Bảng giá",
+    "cls": "transition-colors duration-300 ease-in-o",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": false,
+    "coTheFocus": false
+  },
+  {
+    "tag": "A",
+    "text": "Bảo hành",
+    "cls": "transition-colors duration-300 ease-in-o",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": false,
+    "coTheFocus": false
+  },
+  {
+    "tag": "A",
+    "text": "Về Mật Pet",
+    "cls": "transition-colors duration-300 ease-in-o",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": false,
+    "coTheFocus": false
+  },
+  {
+    "tag": "A",
+    "text": "Tuyển dụng",
+    "cls": "transition-colors duration-300 ease-in-o",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": false,
+    "coTheFocus": false
+  },
+  {
+    "tag": "A",
+    "text": "Pet Hotel",
+    "cls": "transition-colors duration-300 ease-in-o",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": false,
+    "coTheFocus": false
+  },
+  {
+    "tag": "A",
+    "text": "Phụ kiện",
+    "cls": "transition-colors duration-300 ease-in-o",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": false,
+    "coTheFocus": false
+  },
+  {
+    "tag": "A",
+    "text": "Giao toàn quốc",
+    "cls": "transition-colors duration-300 ease-in-o",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": false,
+    "coTheFocus": false
+  },
+  {
+    "tag": "A",
+    "text": "0939863696",
+    "cls": "",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": false,
+    "coTheFocus": false
+  },
+  {
+    "tag": "A",
+    "text": "Nhắn Zalo",
+    "cls": "flex flex-1 flex-col items-center justif",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": false,
+    "coTheFocus": false
+  },
+  {
+    "tag": "A",
+    "text": "📞 Gọi ngay",
+    "cls": "flex flex-1 flex-col items-center justif",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": false,
+    "coTheFocus": false
+  },
+  {
+    "tag": "BUTTON",
+    "text": "",
+    "cls": "mat-fab relative block h-[92px] w-[84px]",
+    "tabIndexAttr": null,
+    "ariaHidden": null,
+    "disabled": null,
+    "hienThi": true,
+    "coTheFocus": true
+  }
+]

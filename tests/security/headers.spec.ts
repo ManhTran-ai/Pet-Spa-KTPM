@@ -53,7 +53,7 @@ test.describe('NFR-02 — Baseline bảo mật', () => {
     expect(rows.length - 1).toBe(TARGETS.length * SECURITY_HEADERS.length);
   });
 
-  test('TC-NFR-02-001: cả 3 site bật HTTPS và trả header Strict-Transport-Security', async ({ request }) => {
+  test('TC-NFR-02-001: Site bật HTTPS và có HSTS', async ({ request }) => {
     const missing: string[] = [];
     for (const target of TARGETS) {
       const response = await getWithRetry(request, target.url);
@@ -63,7 +63,7 @@ test.describe('NFR-02 — Baseline bảo mật', () => {
     expect(missing, missing.join('; ')).toEqual([]);
   });
 
-  test('TC-NFR-02-002: cả 3 site trả header X-Content-Type-Options: nosniff', async ({ request }) => {
+  test('TC-NFR-02-002: Trang trả về X-Content-Type-Options: nosniff', async ({ request }) => {
     const missing: string[] = [];
     for (const target of TARGETS) {
       const response = await getWithRetry(request, target.url);
@@ -75,7 +75,7 @@ test.describe('NFR-02 — Baseline bảo mật', () => {
     expect(missing, missing.join('; ')).toEqual([]);
   });
 
-  test('TC-NFR-02-003: cả 3 site có X-Frame-Options hoặc CSP frame-ancestors', async ({ request }) => {
+  test('TC-NFR-02-003: Trang có X-Frame-Options hoặc CSP frame-ancestors', async ({ request }) => {
     const missing: string[] = [];
     for (const target of TARGETS) {
       const response = await getWithRetry(request, target.url);
@@ -87,7 +87,7 @@ test.describe('NFR-02 — Baseline bảo mật', () => {
     expect(missing, missing.join('; ')).toEqual([]);
   });
 
-  test('TC-NFR-02-004: cả 3 site có header Referrer-Policy', async ({ request }) => {
+  test('TC-NFR-02-004: Trang có Referrer-Policy', async ({ request }) => {
     const missing: string[] = [];
     for (const target of TARGETS) {
       const response = await getWithRetry(request, target.url);
@@ -96,7 +96,7 @@ test.describe('NFR-02 — Baseline bảo mật', () => {
     expect(missing, missing.join('; ')).toEqual([]);
   });
 
-  test('TC-NFR-02-005: cookie phiên của cả 3 site có Secure và HttpOnly', async ({ request }) => {
+  test('TC-NFR-02-005: Cookie phiên có cờ Secure và HttpOnly', async ({ request }) => {
     const problems: string[] = [];
     for (const target of TARGETS) {
       const response = await getWithRetry(request, target.url);

@@ -1,0 +1,14 @@
+{
+  "soBang": 3,
+  "coCombo": true,
+  "coNhuom": false,
+  "coBaoGiaRieng": false,
+  "coKhoang": false,
+  "coTuyThietKe": false,
+  "chips": [],
+  "railBefore": {
+    "railBefore": 0,
+    "railEmptyText": "Chọn dịch vụ để xem giá dự kiến cho bé của bạn 🐾"
+  },
+  "chipExact3": []
+}

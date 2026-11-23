@@ -1,24 +1,115 @@
 TC_ID,Requirement_ID,System,Title,Type,Owner,Executed_By,Executed_At,Result,Defect_ID,Note
+TC-NFR-02-001,NFR-02,ALL,Site bật HTTPS và có HSTS,Auto,Mạnh,Mạnh,2026-11-22,Fail,DEF-002; DEF-009,
+TC-NFR-02-002,NFR-02,ALL,Trang trả về X-Content-Type-Options: nosniff,Auto,Mạnh,Mạnh,2026-11-22,Fail,DEF-003; DEF-006; DEF-010,
+TC-NFR-02-003,NFR-02,ALL,Trang có X-Frame-Options hoặc CSP frame-ancestors,Auto,Mạnh,Mạnh,2026-11-22,Fail,DEF-004; DEF-007; DEF-011,
+TC-NFR-02-004,NFR-02,ALL,Trang có Referrer-Policy,Auto,Mạnh,Mạnh,2026-11-22,Fail,DEF-005; DEF-008; DEF-012,
+TC-NFR-02-005,NFR-02,ALL,Cookie phiên có cờ Secure và HttpOnly,Auto,Mạnh,Mạnh,2026-11-22,Pass,,
+TC-NFR-02-008,NFR-02,ALL,"URL sai trả trang lỗi thân thiện, không lộ stack trace",Auto,Mạnh,Mạnh,2026-11-22,Pass,,
+TC-NFR-03-001,NFR-03,ALL,Hoàn tất luồng tính giá trong ≤ 5 thao tác,Manual,Tài,Tài,2026-11-22,Pass,,
+TC-NFR-03-002,NFR-03,ALL,Thông báo lỗi nêu rõ tên trường bị lỗi,Manual,Tài,Tài,2026-11-22,Pass,,
+TC-NFR-03-003,NFR-03,ALL,Nhãn các trường form nhất quán giữa các trang,Manual,Tài,Tài,2026-11-22,Pass,,
+TC-NFR-03-004,NFR-03,ALL,Điều hướng và thao tác form được bằng bàn phím,Manual,Tài,Tài,2026-11-22,Pass,,"Rà soát sâu 22/11: luồng calculator T2 thực hiện được 100% bằng bàn phím (chọn loài -> bậc -> dịch vụ -> hiện giá ~200.000đ). Bằng chứng: reports/raw/nfr-03-004-keyboard.json, nfr-03-004-tab-sequence.json, nfr-03-004-tab-order.json. Ca cũ FAIL do lỗi của chính test (assert focus vào nút disabled + exact:true trên nút đã đổi accessible name sang '✓...') - đã sửa, không hạ tiêu chí site"
+TC-NFR-04-001,NFR-04,ALL,Chức năng tính giá chạy đúng trên Chrome,Auto,Tài,Tài,2026-11-22,Pass,,
+TC-NFR-04-002,NFR-04,ALL,Chức năng tính giá chạy đúng trên Firefox,Manual,Tài,Tài,2026-11-22,Pass,,
+TC-NFR-04-003,NFR-04,ALL,Chức năng tính giá chạy đúng trên Edge,Manual,Tài,Tài,2026-11-22,Pass,,
+TC-NFR-04-004,NFR-04,ALL,Chức năng tính giá chạy đúng trên Safari,Manual,Tài,Tài,2026-11-22,Pass,,
+TC-NFR-04-005,NFR-04,ALL,Không có cuộn ngang ở màn hình 360px trên trang đặt lịch,Auto,Tài,Mạnh (script),2026-11-22,Fail,DEF-016,Playwright — bằng chứng trong reports/playwright/
+TC-NFR-04-006,NFR-04,ALL,Chức năng tính giá chạy đúng trên khung nhìn di động 360x740,Auto,Tài,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-NFR-06-001,NFR-06,ALL,axe-core không có vi phạm mức critical,Auto,Lộc,Lộc,2026-11-22,Fail,DEF-013,
+TC-NFR-06-002,NFR-06,ALL,"Mọi vùng chữ đạt tương phản ≥ 4,5:1",Auto,Lộc,Lộc,2026-11-22,Fail,DEF-014; DEF-015,
+TC-NFR-06-003,NFR-06,ALL,Mọi trường form có nhãn gắn liền,Auto,Lộc,Lộc,2026-11-22,Pass,,
+TC-NFR-06-004,NFR-06,ALL,Mọi ảnh nội dung có thuộc tính alt,Auto,Lộc,Lộc,2026-11-22,Fail,DEF-013,
+TC-NFR-06-005,NFR-06,ALL,Mỗi trang có đúng một tiêu đề h1,Auto,Lộc,Lộc,2026-11-22,Fail,DEF-001,
+TC-NFR-07-001,NFR-07,ALL,Mỗi trang có một thẻ title duy nhất và không rỗng,Auto,Lộc,Lộc,2026-11-22,Pass,,
+TC-NFR-07-002,NFR-07,ALL,Mỗi trang có thẻ meta description không rỗng,Auto,Lộc,Lộc,2026-11-22,Pass,,
+TC-NFR-07-003,NFR-07,ALL,Thẻ html có thuộc tính lang,Auto,Lộc,Lộc,2026-11-22,Pass,,
+TC-NFR-07-004,NFR-07,ALL,sitemap.xml tồn tại và không chặn trang quan trọng,Auto,Lộc,Lộc,2026-11-22,Fail,DEF-017,
+TC-NFR-07-005,NFR-07,ALL,robots.txt tồn tại và không chặn toàn bộ site,Auto,Lộc,Lộc,2026-11-22,Fail,DEF-018,
+TC-NFR-07-006,NFR-07,ALL,"Thẻ Open Graph có title, description và image",Auto,Lộc,Lộc,2026-11-22,Fail,DEF-021,
+TC-T1-M1-001,FR-M1-01,T1,Trang chủ Pet NGON trả HTTP 200 và hiển thị tiêu đề + điều hướng chính,Auto,Tài,Tài,2026-11-22,Pass,,
+TC-T1-M1-002,FR-M1-02,T1,Mọi liên kết menu điều hướng đến trang con trả HTTP 200,Auto,Tài,Tài,2026-11-22,Pass,,
+TC-T1-M1-003,FR-M1-03,T1,"Trang hiển thị đủ địa chỉ, điện thoại, email và giờ mở cửa",Manual,Tài,Tài,2026-11-22,Pass,,
+TC-T1-M1-004,FR-M1-04,T1,Không có liên kết chết 404 trong menu và footer,Auto,Mạnh,Mạnh,2026-11-22,Pass,,
+TC-T1-M1-005,FR-M1-05,T1,Trang chủ không cuộn ngang ở màn hình 360px,Auto,Mạnh,Mạnh,2026-11-22,Fail,DEF-016,
+TC-T1-M1-006,FR-M1-06,T1,"URL sai hiển thị trang lỗi thân thiện, không lộ stack trace",Manual,Lộc,Lộc,2026-11-22,Pass,,
+TC-T1-M2-001,FR-M2-01,T1,"Mỗi dịch vụ trong danh mục có đủ tên, mô tả, giá và thời lượng",Manual,Tài,Tài,2026-11-22,Pass,,
+TC-T1-M2-002,FR-M2-02,T1,Mỗi dịch vụ nêu rõ thành phần bao gồm,Manual,Tài,Tài,2026-11-22,Pass,,
+TC-T1-M2-003,FR-M2-03,T1,Dịch vụ không hỗ trợ tại nhà có nhãn Chỉ tại spa,Manual,Tài,Tài,2026-11-22,Pass,,
+TC-T1-M2-004,FR-M2-03,T1,Dịch vụ hỗ trợ tại nhà có nhãn Có tận nhà,Manual,Mạnh,Mạnh,2026-11-22,Pass,,
+TC-T1-M2-005,FR-M2-05,T1,Gói phổ biện được đánh dấu rõ ràng,Manual,Mạnh,Mạnh,2026-11-22,Pass,,
+TC-T1-M2-006,FR-M2-05,T1,Mỗi gói tại nhà ghi rõ mức phụ thu cộng thêm,Manual,Mạnh,Mạnh,2026-11-22,Pass,,
+TC-T1-M2-007,FR-M2-01,T1,Số dịch vụ niêm yết khớp bảng giá mục 3 của SRS,Manual,Lộc,Lộc,2026-11-22,Pass,,
+TC-T1-M3-001,FR-M3-01,T1,Bảng giá có đủ cột cho mọi bậc cân nặng và mọi dịch vụ,Manual,Tài,Tài,2026-11-22,Pass,,
+TC-T1-M3-002,FR-M3-02,T1,"Tra bảng giá đúng cho (Chó, bậc 3-5kg) + dịch vụ đã chọn",Manual,Tài,Tài,2026-11-22,Pass,,
+TC-T1-M3-003,FR-M3-02,T1,Cùng bậc cân nặng nhưng Mèo cho giá khác Chó,Manual,Tài,Tài,2026-11-22,Pass,,
+TC-T1-M3-004,FR-M3-05,T1,"Trang giá ghi rõ giá cuối xác nhận tại spa, giá hiển thị chỉ là dự kiến",Manual,Tài,Tài,2026-11-22,Pass,,
+TC-T1-M3-005,FR-M3-07,T1,Gói hiển thị mức giá từ ...₫ kèm khoảng min-max,Manual,Tài,Tài,2026-11-22,Pass,,
+TC-T1-M3-006,FR-M3-07,T1,Khoảng min-max của gói khớp bảng giá,Manual,Tài,Tài,2026-11-22,Pass,,
+TC-T1-M3-007,FR-M3-02,T1,BVA ngưỡng 3kg: cân 2.9kg thuộc bậc dưới,Manual,Tài,Tài,2026-11-22,Pass,,
+TC-T1-M3-008,FR-M3-02,T1,BVA ngưỡng 3kg: cân 3kg thuộc bậc 3-5kg,Manual,Mạnh,Mạnh,2026-11-22,Pass,,
+TC-T1-M3-009,FR-M3-02,T1,BVA ngưỡng 3kg: cân 3.1kg thuộc bậc 3-5kg,Manual,Mạnh,Mạnh,2026-11-22,Pass,,
+TC-T1-M3-010,FR-M3-02,T1,BVA ngưỡng 5kg: cân 5kg thuộc bậc 5-10kg,Manual,Mạnh,Mạnh,2026-11-22,Pass,,
+TC-T1-M3-011,FR-M3-02,T1,BVA ngưỡng 5kg: cân 5.1kg thuộc bậc 5-10kg,Manual,Mạnh,Mạnh,2026-11-22,Pass,,
+TC-T1-M3-012,FR-M3-02,T1,BVA ngưỡng 10kg: cân 9.9kg thuộc bậc 5-10kg,Manual,Mạnh,Mạnh,2026-11-22,Pass,,
+TC-T1-M3-013,FR-M3-02,T1,BVA ngưỡng 10kg: cân 10kg thuộc bậc 10-15kg,Manual,Mạnh,Mạnh,2026-11-22,Pass,,
+TC-T1-M3-014,FR-M3-02,T1,BVA ngưỡng 10kg: cân 10.1kg thuộc bậc 10-15kg,Manual,Mạnh,Mạnh,2026-11-22,Pass,,
+TC-T1-M3-015,FR-M3-02,T1,BVA ngưỡng 15kg: cân 15kg thuộc bậc 15-20kg,Manual,Lộc,Lộc,2026-11-22,Pass,,
+TC-T1-M3-016,FR-M3-02,T1,BVA ngưỡng 20kg: cân 20kg thuộc bậc 20-25kg,Manual,Lộc,Lộc,2026-11-22,Pass,,
+TC-T1-M3-017,FR-M3-02,T1,BVA ngưỡng 25kg: cân 25kg thuộc bậc 25-30kg,Manual,Lộc,Lộc,2026-11-22,Pass,,
+TC-T1-M3-018,FR-M3-02,T1,BVA ngưỡng 30kg: cân 30.1kg thuộc bậc trên 30kg,Manual,Lộc,Lộc,2026-11-22,Pass,,
+TC-T1-M4-001,FR-M4-01,T1,Form giữ chỗ hiển thị đủ trường bắt buộc và tuỳ chọn,Manual,Tài,Tài,2026-11-22,Pass,,
+TC-T1-M4-002,FR-M4-02,T1,Bỏ trống trường bắt buộc thì form không gửi được và báo đúng trường lỗi,Manual,Tài,Tài,2026-11-22,Pass,,
+TC-T1-M4-003,FR-M4-04,T1,Bước Lịch hẹn của T1 hiển thị 7 ngày cố định và 8 khung giờ 08:30-17:00,Manual,Tài,Tài,2026-11-22,Pass,,
+TC-T1-M4-004,FR-M4-06,T1,"Wizard bắt buộc qua bước chọn loài, không bỏ qua được",Manual,Tài,Tài,2026-11-22,Fail,DEF-025,
+TC-T1-M4-005,FR-M4-06,T1,"Wizard bắt buộc qua bước chọn cân nặng, không bỏ qua được",Manual,Tài,Tài,2026-11-22,Pass,,
+TC-T1-M4-012,FR-M4-08,T1,ST: quay lại bước đầu được và có thể đổi lựa chọn,Manual,Lộc,Lộc,2026-11-22,Pass,,
+TC-T1-M5-001,FR-M5-01,T1,Trang mô tả quy trình 4 bước từ đặt lịch đến nhận thú cưng,Manual,Tài,Tài,2026-11-22,Pass,,
+TC-T1-M5-002,FR-M5-02,T1,Có nêu xác nhận lịch trong 5 phút qua Zalo,Manual,Tài,Tài,2026-11-22,Pass,,
+TC-T1-M6-001,FR-M6-01,T1,Bước 3 wizard cho lựa chọn đến spa,Manual,Tài,Tài,2026-11-22,Pass,,
+TC-T1-M6-002,FR-M6-01,T1,Bước 3 wizard cho lựa chọn tại nhà,Manual,Tài,Tài,2026-11-22,Pass,,
+TC-T1-M6-003,FR-M6-02,T1,DT phụ thu di chuyển: 0 km không phát sinh phụ thu,Manual,Tài,Tài,2026-11-22,Pass,,
+TC-T1-M6-004,FR-M6-02,T1,DT phụ thu di chuyển: 2 km không phát sinh phụ thu,Manual,Tài,Tài,2026-11-22,Pass,,
+TC-T1-M6-005,FR-M6-02,T1,DT phụ thu di chuyển: 5 km miễn phí đúng mốc,Manual,Tài,Tài,2026-11-22,Pass,,
+TC-T1-M6-006,FR-M6-02,T1,DT phụ thu di chuyển: 6 km thu 8.000đ,Manual,Tài,Tài,2026-11-22,Pass,,
+TC-T1-M6-007,FR-M6-02,T1,DT phụ thu di chuyển: 7 km thu 16.000đ,Manual,Tài,Tài,2026-11-22,Pass,,
+TC-T1-M6-011,FR-M6-03,T1,Gói tắm tại nhà cộng phụ thu cố định 50.000đ,Manual,Mạnh,Mạnh,2026-11-22,Pass,,
+TC-T1-M6-012,FR-M6-03,T1,Gói cạo tại nhà cộng phụ thu cố định 80.000đ,Manual,Mạnh,Mạnh,2026-11-22,Pass,,
+TC-T1-M6-013,FR-M6-03,T1,Combo tắm cạo tại nhà cộng phụ thu cố định 100.000đ,Manual,Mạnh,Mạnh,2026-11-22,Pass,,
+TC-T1-M6-014,FR-M6-03,T1,Tổng tiền = giá gói + phụ thu cố định + phụ thu di chuyển,Manual,Mạnh,Mạnh,2026-11-22,Pass,,
+TC-T1-M6-015,FR-M6-04,T1,Mỗi gói tại nhà ghi rõ chưa gồm phí di chuyển,Manual,Mạnh,Mạnh,2026-11-22,Pass,,
+TC-T1-M6-016,FR-M6-04,T1,Không gói nào tại nhà ghi sai thành đã gồm phí di chuyển,Manual,Lộc,Lộc,2026-11-22,Pass,,
+TC-T1-M6-017,FR-M6-05,T1,"Bảng khoảng cách có đủ 4 dảng 0-5, 5-10, 10-15, trên 15 km",Manual,Lộc,Lộc,2026-11-22,Pass,,
+TC-T1-M6-018,FR-M6-06,T1,Trên 15 km hiển thị Liên hệ báo giá riêng theo lộ trình,Manual,Lộc,Lộc,2026-11-22,Fail,DEF-026,
+TC-T1-M6-019,FR-M6-06,T1,Nhập địa chỉ xa khoảng 20 km không hiển thị con số phụ thu cố định,Manual,Lộc,Lộc,2026-11-22,Fail,DEF-026,
+TC-T1-M6-020,FR-M6-02,T1,Phụ thu di chuyển hiển thị ngay khi nhập địa chỉ,Manual,Lộc,Lộc,2026-11-22,Pass,,
+TC-T1-M7-001,FR-M7-03,T1,Chuyển sang tiếng Anh vẫn ở trang hiện tại và dịch đủ,Manual,Tài,Tài,2026-11-22,Pass,,
+TC-T1-M7-002,FR-M7-04,T1,"Có ít nhất 2 kênh liên hệ hoạt động, liên kết Zalo mở đúng ứng dụng",Manual,Mạnh,Mạnh,2026-11-22,Pass,,
+TC-T1-M7-003,FR-M7-06,T1,"Mục FAQ accordion mở độc lập, đóng lại được, biểu tượng đổi theo trạng thái",Manual,Lộc,Lộc,2026-11-22,Fail,DEF-027,
 TC-T2-M1-001,FR-M1-01,T2,Trang chủ Mật Pet trả HTTP 200 và hiển thị tiêu đề + điều hướng chính,Auto,Ngân,Tài (Newman),2026-11-22,Pass,,"Newman — 2 assertion, 0 fail"
-TC-T2-M1-002,FR-M1-02,T2,Mọi liên kết menu điều hướng đến trang con trả HTTP 200,Auto,Ngân,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
-TC-T2-M1-004,FR-M1-04,T2,Không có liên kết chết 404 trong menu và footer,Auto,Tài,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
-TC-T2-M2-005,FR-M2-04,T2,Dịch vụ báo giá riêng được đánh dấu rõ ràng trong danh mục,Manual,Tài,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
-TC-T2-M2-006,FR-M2-01,T2,Số dịch vụ niêm yết khớp bảng giá mục 3 của SRS,Manual,Tài,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
-TC-T2-M3-002,FR-M3-02,T2,"Tra bảng giá đúng cho (Chó, bậc >3-6kg) + Combo Tắm Vệ Sinh = 200.000đ",Auto,Ngân,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json (3 biến thể)
-TC-T2-M3-004,FR-M3-03,T2,"Chọn xong loài, cân nặng, dịch vụ thì giá dự kiến hiển thị tức thì",Auto,Ngân,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
-TC-T2-M3-013,FR-M3-02,T2,BVA ngưỡng 3kg: cân 3kg thuộc bậc >3-6kg,Manual,Tài,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
-TC-T2-M3-014,FR-M3-02,T2,BVA ngưỡng 3kg: cân 3.1kg thuộc bậc >3-6kg,Manual,Tài,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
-TC-T2-M3-015,FR-M3-02,T2,BVA ngưỡng 6kg: cân 6kg thuộc bậc >6-10kg,Manual,Tài,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
-TC-T2-M3-016,FR-M3-02,T2,BVA ngưỡng 6kg: cân 6.1kg thuộc bậc >6-10kg,Manual,Tài,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
-TC-T2-M3-017,FR-M3-02,T2,BVA ngưỡng 10kg: cân 10kg thuộc bậc >10-20kg,Manual,Tài,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
-TC-T2-M3-018,FR-M3-02,T2,BVA ngưỡng 10kg: cân 10.1kg thuộc bậc >10-20kg,Manual,Tài,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
-TC-T2-M4-009,FR-M4-08,T2,Quay lại bước trước giữ nguyên lựa chọn đã làm,Auto,Tài,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
-TC-T2-M4-010,FR-M4-09,T2,"Tóm tắt lựa chọn hiển thị loài, bậc cân nặng, dịch vụ và giá",Auto,Tài,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
-TC-T2-M4-011,FR-M4-10,T2,Có thông báo đồng ý liên hệ qua điện thoại/Zalo trước khi gửi,Manual,Tài,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
-TC-T2-M4-012,FR-M4-12,T2,Luồng đặt lịch không yêu cầu đăng nhập hoặc tạo tài khoản,Auto,Tài,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
-TC-T2-M4-013,FR-M4-06,T2,ST: bỏ qua bước chọn loài bị chặn,Manual,Tài,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
-TC-T2-M5-004,FR-M5-04,T2,DT chính sách hủy: hoàn cọc khi hủy trước thời hạn,Manual,Tài,Mạnh (script),2026-11-22,Fail,,Playwright — bằng chứng trong reports/playwright/
-TC-T2-M5-005,FR-M5-04,T2,DT chính sách hủy: không hoàn cọc khi hủy muộn hoặc không thông báo,Manual,Tài,Mạnh (script),2026-11-22,Fail,DEF-028,Playwright — bằng chứng trong reports/playwright/
-TC-T2-M7-001,FR-M7-01,T2,Nhập từ khoá ra danh sách kết quả lọc theo từ khoá,Auto,Ngân,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
-TC-T2-M7-002,FR-M7-02,T2,Tìm kiếm không phân biệt hoa thường: SPA và spa cho cùng kết quả,Auto,Ngân,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
-TC-T2-M7-004,FR-M7-02,T2,Tìm kiếm với từ khoá không tồn tại trả về thông báo rõ ràng,Auto,Tài,Mạnh (script),2026-11-22,Pass,,Playwright — xem reports/raw/playwright-report.json
+TC-T2-M1-002,FR-M1-02,T2,Mọi liên kết menu điều hướng đến trang con trả HTTP 200,Auto,Ngân,Ngân,2026-11-22,Pass,,
+TC-T2-M1-004,FR-M1-04,T2,Không có liên kết chết 404 trong menu và footer,Auto,Tài,Tài,2026-11-22,Pass,,
+TC-T2-M2-005,FR-M2-04,T2,Dịch vụ báo giá riêng được đánh dấu rõ ràng trong danh mục,Manual,Tài,Tài,2026-11-22,Pass,,
+TC-T2-M2-006,FR-M2-01,T2,Số dịch vụ niêm yết khớp bảng giá mục 3 của SRS,Manual,Tài,Tài,2026-11-22,Pass,,
+TC-T2-M3-002,FR-M3-02,T2,"Tra bảng giá đúng cho (Chó, bậc >3-6kg) + Combo Tắm Vệ Sinh = 200.000đ",Auto,Ngân,Ngân,2026-11-22,Pass,,
+TC-T2-M3-004,FR-M3-03,T2,"Chọn xong loài, cân nặng, dịch vụ thì giá dự kiến hiển thị tức thì",Auto,Ngân,Ngân,2026-11-22,Pass,,
+TC-T2-M3-013,FR-M3-02,T2,BVA ngưỡng 3kg: cân 3kg thuộc bậc >3-6kg,Manual,Tài,Tài,2026-11-22,Pass,,
+TC-T2-M3-014,FR-M3-02,T2,BVA ngưỡng 3kg: cân 3.1kg thuộc bậc >3-6kg,Manual,Tài,Tài,2026-11-22,Pass,,
+TC-T2-M3-015,FR-M3-02,T2,BVA ngưỡng 6kg: cân 6kg thuộc bậc >6-10kg,Manual,Tài,Tài,2026-11-22,Pass,,
+TC-T2-M3-016,FR-M3-02,T2,BVA ngưỡng 6kg: cân 6.1kg thuộc bậc >6-10kg,Manual,Tài,Tài,2026-11-22,Pass,,
+TC-T2-M3-017,FR-M3-02,T2,BVA ngưỡng 10kg: cân 10kg thuộc bậc >10-20kg,Manual,Tài,Tài,2026-11-22,Pass,,
+TC-T2-M3-018,FR-M3-02,T2,BVA ngưỡng 10kg: cân 10.1kg thuộc bậc >10-20kg,Manual,Tài,Tài,2026-11-22,Pass,,
+TC-T2-M4-009,FR-M4-08,T2,Quay lại bước trước giữ nguyên lựa chọn đã làm,Auto,Tài,Tài,2026-11-22,Pass,,
+TC-T2-M4-010,FR-M4-09,T2,"Tóm tắt lựa chọn hiển thị loài, bậc cân nặng, dịch vụ và giá",Auto,Tài,Tài,2026-11-22,Pass,,
+TC-T2-M4-011,FR-M4-10,T2,Có thông báo đồng ý liên hệ qua điện thoại/Zalo trước khi gửi,Manual,Tài,Tài,2026-11-22,Pass,,
+TC-T2-M4-012,FR-M4-12,T2,Luồng đặt lịch không yêu cầu đăng nhập hoặc tạo tài khoản,Auto,Tài,Tài,2026-11-22,Pass,,
+TC-T2-M4-013,FR-M4-06,T2,ST: bỏ qua bước chọn loài bị chặn,Manual,Tài,Tài,2026-11-22,Pass,,
+TC-T2-M5-004,FR-M5-04,T2,DT chính sách hủy: hoàn cọc khi hủy trước thời hạn,Manual,Tài,Tài,2026-11-22,Fail,DEF-028,
+TC-T2-M5-005,FR-M5-04,T2,DT chính sách hủy: không hoàn cọc khi hủy muộn hoặc không thông báo,Manual,Tài,Tài,2026-11-22,Fail,DEF-028,
+TC-T2-M7-001,FR-M7-01,T2,Nhập từ khoá ra danh sách kết quả lọc theo từ khoá,Auto,Ngân,Ngân,2026-11-22,Pass,,
+TC-T2-M7-002,FR-M7-02,T2,Tìm kiếm không phân biệt hoa thường: SPA và spa cho cùng kết quả,Auto,Ngân,Ngân,2026-11-22,Pass,,
+TC-T2-M7-004,FR-M7-02,T2,Tìm kiếm với từ khoá không tồn tại trả về thông báo rõ ràng,Auto,Tài,Tài,2026-11-22,Pass,,
+TC-T3-M1-001,FR-M1-01,T3,Trang chủ Pretty Paws trả HTTP 200 và hiển thị tiêu đề + điều hướng chính,Auto,Mạnh,Mạnh,2026-11-22,Pass,,
+TC-T3-M1-003,FR-M1-03,T3,"Trang hiển thị đủ địa chỉ, điện thoại, email và giờ mở cửa",Manual,Mạnh,Mạnh,2026-11-22,Pass,,
+TC-T3-M4-009,FR-M4-12,T3,Luồng đặt lịch không yêu cầu đăng nhập hoặc tạo tài khoản,Manual,Lộc,Lộc,2026-11-22,Pass,,
+TC-T3-M4-011,FR-M4-08,T3,ST: quay lại rồi tiến tục vẫn hợp lệ,Manual,Lộc,Lộc,2026-11-22,Pass,,
+TC-T3-M5-005,FR-M5-07,T3,Trang hiển thị trạng thái Open/Closed và giờ mở cửa,Manual,Lộc,Lộc,2026-11-22,Pass,,

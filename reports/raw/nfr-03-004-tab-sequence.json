@@ -1,0 +1,202 @@
+[
+  {
+    "tag": "A",
+    "text": "",
+    "cls": ""
+  },
+  {
+    "tag": "A",
+    "text": "Trang chủ",
+    "cls": "transition-colors duration-300 ease-in-o"
+  },
+  {
+    "tag": "A",
+    "text": "Chó",
+    "cls": "transition-colors duration-300 ease-in-o"
+  },
+  {
+    "tag": "A",
+    "text": "Mèo",
+    "cls": "transition-colors duration-300 ease-in-o"
+  },
+  {
+    "tag": "A",
+    "text": "Tìm Bé Thương",
+    "cls": "transition-colors duration-300 ease-in-o"
+  },
+  {
+    "tag": "A",
+    "text": "Spa",
+    "cls": "transition-colors duration-300 ease-in-o"
+  },
+  {
+    "tag": "A",
+    "text": "Bảo hành",
+    "cls": "transition-colors duration-300 ease-in-o"
+  },
+  {
+    "tag": "A",
+    "text": "Về Mật Pet",
+    "cls": "transition-colors duration-300 ease-in-o"
+  },
+  {
+    "tag": "BUTTON",
+    "text": "",
+    "cls": "hidden items-center justify-center round"
+  },
+  {
+    "tag": "A",
+    "text": "VI",
+    "cls": "rounded-full px-2.5 py-1 transition-colo"
+  },
+  {
+    "tag": "A",
+    "text": "EN",
+    "cls": "rounded-full px-2.5 py-1 transition-colo"
+  },
+  {
+    "tag": "A",
+    "text": "0939.86.36.96",
+    "cls": "hidden items-center gap-2 rounded-full b"
+  },
+  {
+    "tag": "A",
+    "text": "Tính giá dự kiến →",
+    "cls": "btn btn-primary"
+  },
+  {
+    "tag": "A",
+    "text": "Xem bảng giá",
+    "cls": "btn btn-ghost"
+  },
+  {
+    "tag": "BUTTON",
+    "text": "1Loại béChó / Mèo",
+    "cls": "st active"
+  },
+  {
+    "tag": "BUTTON",
+    "text": "2Cân nặngBậc định sẵn",
+    "cls": "st"
+  },
+  {
+    "tag": "BUTTON",
+    "text": "3Dịch vụCombo hoặc lẻ",
+    "cls": "st"
+  },
+  {
+    "tag": "BUTTON",
+    "text": "✓🐶Chó",
+    "cls": "pet-opt dog"
+  },
+  {
+    "tag": "BUTTON",
+    "text": "✓🐱Mèo",
+    "cls": "pet-opt cat"
+  },
+  {
+    "tag": "INPUT",
+    "text": "",
+    "cls": ""
+  },
+  {
+    "tag": "INPUT",
+    "text": "",
+    "cls": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Hôm nay22/11",
+    "cls": "date-pill"
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Ngày mai23/11",
+    "cls": "date-pill"
+  },
+  {
+    "tag": "BUTTON",
+    "text": "T324/11",
+    "cls": "date-pill"
+  },
+  {
+    "tag": "BUTTON",
+    "text": "T425/11",
+    "cls": "date-pill"
+  },
+  {
+    "tag": "BUTTON",
+    "text": "T526/11",
+    "cls": "date-pill"
+  },
+  {
+    "tag": "INPUT",
+    "text": "",
+    "cls": "date-other-input"
+  },
+  {
+    "tag": "INPUT",
+    "text": "",
+    "cls": "date-other-input"
+  },
+  {
+    "tag": "INPUT",
+    "text": "",
+    "cls": "date-other-input"
+  },
+  {
+    "tag": "INPUT",
+    "text": "",
+    "cls": "date-other-input"
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Giữ chỗ cho bé →",
+    "cls": "btn btn-primary book-submit"
+  },
+  {
+    "tag": "A",
+    "text": "YouTube",
+    "cls": "transition-colors duration-300 ease-in-o"
+  },
+  {
+    "tag": "A",
+    "text": "Facebook",
+    "cls": "transition-colors duration-300 ease-in-o"
+  },
+  {
+    "tag": "A",
+    "text": "TikTok",
+    "cls": "transition-colors duration-300 ease-in-o"
+  },
+  {
+    "tag": "A",
+    "text": "Trang chủ",
+    "cls": "transition-colors duration-300 ease-in-o"
+  },
+  {
+    "tag": "A",
+    "text": "Chó",
+    "cls": "transition-colors duration-300 ease-in-o"
+  },
+  {
+    "tag": "A",
+    "text": "Mèo",
+    "cls": "transition-colors duration-300 ease-in-o"
+  },
+  {
+    "tag": "A",
+    "text": "Tìm Bé Thương",
+    "cls": "transition-colors duration-300 ease-in-o"
+  },
+  {
+    "tag": "A",
+    "text": "Bảng giá",
+    "cls": "transition-colors duration-300 ease-in-o"
+  },
+  {
+    "tag": "A",
+    "text": "Bảo hành",
+    "cls": "transition-colors duration-300 ease-in-o"
+  }
+]

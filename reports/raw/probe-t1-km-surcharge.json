@@ -1,0 +1,65 @@
+[
+  {
+    "diaChi": "Q.1 (trong 5km)",
+    "nhanNhap": "123 Nguyễn Huệ, Phường Bến Nghé, Quận 1",
+    "km": 3.2,
+    "phiDiChuyenHienThi": 0,
+    "congThucSRS": 0,
+    "khopCongThuc": true,
+    "coNhanLienHeBaoGiaRieng": true
+  },
+  {
+    "diaChi": "Q.7",
+    "nhanNhap": "Quận 7, TP. Hồ Chí Minh",
+    "km": 8.5,
+    "phiDiChuyenHienThi": 32000,
+    "congThucSRS": 28000,
+    "khopCongThuc": false,
+    "coNhanLienHeBaoGiaRieng": true
+  },
+  {
+    "diaChi": "Tân Bình",
+    "nhanNhap": "Tân Bình, TP. Hồ Chí Minh",
+    "km": 7.2,
+    "phiDiChuyenHienThi": 24000,
+    "congThucSRS": 17600,
+    "khopCongThuc": false,
+    "coNhanLienHeBaoGiaRieng": true
+  },
+  {
+    "diaChi": "Thủ Đức",
+    "nhanNhap": "Thủ Đức, TP. Hồ Chí Minh",
+    "km": 12.4,
+    "phiDiChuyenHienThi": 64000,
+    "congThucSRS": 59200,
+    "khopCongThuc": false,
+    "coNhanLienHeBaoGiaRieng": true
+  },
+  {
+    "diaChi": "Bình Chánh",
+    "nhanNhap": "Bình Chánh, TP. Hồ Chí Minh",
+    "km": 13.8,
+    "phiDiChuyenHienThi": 72000,
+    "congThucSRS": 70400,
+    "khopCongThuc": false,
+    "coNhanLienHeBaoGiaRieng": true
+  },
+  {
+    "diaChi": "Nhà Bè",
+    "nhanNhap": "Nhà Bè, TP. Hồ Chí Minh",
+    "km": 13.8,
+    "phiDiChuyenHienThi": 72000,
+    "congThucSRS": 70400,
+    "khopCongThuc": false,
+    "coNhanLienHeBaoGiaRieng": true
+  },
+  {
+    "diaChi": "Gò Vấp",
+    "nhanNhap": "Gò Vấp, TP. Hồ Chí Minh",
+    "km": 7.2,
+    "phiDiChuyenHienThi": 24000,
+    "congThucSRS": 17600,
+    "khopCongThuc": false,
+    "coNhanLienHeBaoGiaRieng": true
+  }
+]

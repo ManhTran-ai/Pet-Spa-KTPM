@@ -1,0 +1,114 @@
+{
+  "nutCombo": [
+    {
+      "cls": "svc combo",
+      "tag": "BUTTON",
+      "text": "Combo Tắm Vệ Sinh200k",
+      "visible": true
+    }
+  ],
+  "svc": [
+    {
+      "tag": "DIV",
+      "cls": "svc-toggle",
+      "text": "Combo trọn góiDịch vụ lẻ",
+      "visible": true
+    },
+    {
+      "tag": "DIV",
+      "cls": "svc-list",
+      "text": "Combo Tắm Vệ Sinh200kCombo Tắm Cạo250kCombo Tắm Cắ",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "svc combo",
+      "text": "Combo Tắm Vệ Sinh200k",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "svc combo",
+      "text": "Combo Tắm Cạo250k",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "svc combo",
+      "text": "Combo Tắm Cắt350k",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "svc combo",
+      "text": "Combo Tắm Cắt Tạo Hình400k",
+      "visible": true
+    },
+    {
+      "tag": "DIV",
+      "cls": "svc-group-label",
+      "text": "Nhuộm tạo kiểu",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "svc",
+      "text": "Nhuộm 2 tai + đuôi250k",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "svc",
+      "text": "Nhuộm 4 chân250k",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "svc",
+      "text": "Nhuộm hình nhỏ300k",
+      "visible": true
+    },
+    {
+      "tag": "DIV",
+      "cls": "svc-group-label",
+      "text": "Dịch vụ báo giá riêng",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "svc",
+      "text": "Gỡ rốiBáo giá theo tình trạng lông: 50.000 – 500.0",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "svc",
+      "text": "Tẩy ốBáo giá theo tình trạng lông: 50.000 – 500.00",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "svc",
+      "text": "Tắm trắngBáo giá theo tình trạng lông: 50.000 – 50",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "svc",
+      "text": "Xả dưỡngBáo giá theo tình trạng lông: 50.000 – 500",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "svc",
+      "text": "Nhuộm hình lớnBáo giá tuỳ kích thước & màuBáo giá ",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "svc",
+      "text": "Nhuộm tạo hình cơ thểBáo giá theo thiết kế riêngBá",
+      "visible": true
+    }
+  ]
+}

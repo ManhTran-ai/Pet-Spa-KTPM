@@ -1,0 +1,181 @@
+{
+  "TC-T2-M2-005": {
+    "tcId": "TC-T2-M2-005",
+    "kiemTra": "Dịch vụ báo giá riêng được đánh dấu rõ ràng trong danh mục",
+    "dat": {
+      "soBaoGiaRieng": 6,
+      "coNhan": true
+    },
+    "kyVong": {
+      "coNhan": true
+    },
+    "bangChung": "reports/raw/survey-T2-dom.json"
+  },
+  "TC-T2-M2-006": {
+    "tcId": "TC-T2-M2-006",
+    "kiemTra": "Số dịch vụ niêm yết khớp bảng giá mục 3 của SRS",
+    "dat": {
+      "comboTab": 4,
+      "leKhongComboTab": 9,
+      "baoGiaRiengTab": 6,
+      "leTab": 15,
+      "comboTrongLeTab": 0,
+      "baoGiaTrongLeTab": 6,
+      "tongDichVu": 19
+    },
+    "kyVong": {
+      "comboTab": 4,
+      "leKhongComboTab": 9,
+      "baoGiaRiengTab": 6,
+      "leTab": 9,
+      "comboTrongLeTab": 0,
+      "baoGiaTrongLeTab": 0,
+      "tongDichVu": 13
+    },
+    "bangChung": "reports/raw/survey-T2-matrix.csv"
+  },
+  "TC-T2-M3-013": {
+    "tcId": "TC-T2-M3-013",
+    "kiemTra": "BVA ngưỡng 3kg: cân 3kg thuộc bậc >3-6kg",
+    "dat": {
+      "bang3kg": ">3–6kg",
+      "gia": "~200.000đ"
+    },
+    "kyVong": {
+      "bang3kg": ">3–6kg"
+    },
+    "bangChung": "reports/raw/survey-T2-matrix.csv"
+  },
+  "TC-T2-M3-014": {
+    "tcId": "TC-T2-M3-014",
+    "kiemTra": "BVA ngưỡng 3kg: cân 3.1kg thuộc bậc >3-6kg",
+    "dat": {
+      "bang31kg": ">3–6kg",
+      "gia": "~200.000đ"
+    },
+    "kyVong": {
+      "bang31kg": ">3–6kg"
+    },
+    "bangChung": "reports/raw/survey-T2-matrix.csv"
+  },
+  "TC-T2-M3-015": {
+    "tcId": "TC-T2-M3-015",
+    "kiemTra": "BVA ngưỡng 6kg: cân 6kg thuộc bậc >3-6kg",
+    "dat": {
+      "bang6kg": ">3–6kg",
+      "gia": "~200.000đ"
+    },
+    "kyVong": {
+      "bang6kg": ">3–6kg"
+    },
+    "bangChung": "reports/raw/survey-T2-matrix.csv"
+  },
+  "TC-T2-M3-016": {
+    "tcId": "TC-T2-M3-016",
+    "kiemTra": "BVA ngưỡng 6kg: cân 6.1kg thuộc bậc >6-10kg",
+    "dat": {
+      "bang61kg": ">6–10kg",
+      "gia": "~300.000đ"
+    },
+    "kyVong": {
+      "bang61kg": ">6–10kg"
+    },
+    "bangChung": "reports/raw/survey-T2-matrix.csv"
+  },
+  "TC-T2-M3-017": {
+    "tcId": "TC-T2-M3-017",
+    "kiemTra": "BVA ngưỡng 10kg: cân 10kg thuộc bậc >6-10kg",
+    "dat": {
+      "bang10kg": ">6–10kg",
+      "gia": "~300.000đ"
+    },
+    "kyVong": {
+      "bang10kg": ">6–10kg"
+    },
+    "bangChung": "reports/raw/survey-T2-matrix.csv"
+  },
+  "TC-T2-M3-018": {
+    "tcId": "TC-T2-M3-018",
+    "kiemTra": "BVA ngưỡng 10kg: cân 10.1kg thuộc bậc >10-20kg",
+    "dat": {
+      "bang101kg": ">10–20kg",
+      "gia": "~400.000đ"
+    },
+    "kyVong": {
+      "bang101kg": ">10–20kg"
+    },
+    "bangChung": "reports/raw/survey-T2-matrix.csv"
+  },
+  "TC-T2-M3-017b": {
+    "tcId": "TC-T2-M3-017b",
+    "kiemTra": "Giá tăng đơn điệu khi bậc cân nặng tăng (Chó, Combo Tắm Vệ Sinh)",
+    "dat": {
+      "<3kg": "~120.000đ",
+      ">3-6kg": "~200.000đ",
+      ">6-10kg": "~300.000đ",
+      ">10-20kg": "~400.000đ"
+    },
+    "kyVong": {},
+    "bangChung": "reports/raw/survey-T2-matrix.csv"
+  },
+  "TC-T2-M4-011": {
+    "tcId": "TC-T2-M4-011",
+    "kiemTra": "Có thông báo đồng ý liên hệ qua điện thoại/Zalo trước khi gửi",
+    "dat": {
+      "coDongY": true
+    },
+    "kyVong": {
+      "coDongY": true
+    },
+    "bangChung": "reports/raw/survey-T2-dom2.json"
+  },
+  "TC-T2-M4-013": {
+    "tcId": "TC-T2-M4-013",
+    "kiemTra": "ST: bỏ qua bước chọn loài bị chặn",
+    "dat": {
+      "nextDisabled": true
+    },
+    "kyVong": {
+      "nextDisabled": true
+    },
+    "bangChung": "reports/raw/survey-T2-dom.json"
+  },
+  "TC-T2-M5-004": {
+    "tcId": "TC-T2-M5-004",
+    "kiemTra": "DT chính sách hủy: hoàn cọc khi hủy trước thời hạn",
+    "dat": {
+      "coHuy": false,
+      "coHoanCoc": false,
+      "trich": []
+    },
+    "kyVong": {
+      "coHuy": true,
+      "coHoanCoc": true
+    },
+    "bangChung": "reports/raw/survey-T2-search-dom.json"
+  },
+  "TC-T2-M5-005": {
+    "tcId": "TC-T2-M5-005",
+    "kiemTra": "DT chính sách hủy: không hoàn cọc khi hủy muộn hoặc không thông báo",
+    "dat": {
+      "coKhongHoan": false,
+      "trich": []
+    },
+    "kyVong": {
+      "coKhongHoan": true
+    },
+    "bangChung": "reports/raw/survey-T2-search-dom.json"
+  },
+  "TC-T2-M7-004": {
+    "tcId": "TC-T2-M7-004",
+    "kiemTra": "Tìm kiếm với từ khoá không tồn tại trả về thông báo rõ ràng",
+    "dat": {
+      "coOTimKiem": false,
+      "ghiChu": "T2 KHÔNG có ô tìm kiếm từ khoá trên /so-sanh và /cau-hoi-thuong-gap"
+    },
+    "kyVong": {
+      "coOTimKiem": true
+    },
+    "bangChung": "reports/raw/survey-T2-search-dom.json"
+  }
+}

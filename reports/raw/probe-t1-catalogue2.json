@@ -1,0 +1,226 @@
+{
+  "bangGia": [
+    {
+      "cls": "hm-pricing-matrix",
+      "id": "",
+      "head": [
+        "Loài & cân nặng",
+        "Tắm",
+        "Cắt tỉa lông",
+        "Cạo lông",
+        "Combo Tắm + Vệ sinh",
+        "Combo Tắm + Cắt tỉa",
+        "Combo Tắm + Cạo"
+      ],
+      "soDong": 16,
+      "hang": [
+        [
+          "Chó"
+        ],
+        [
+          "Chó mini< 3kg",
+          "88.000₫",
+          "145.000₫",
+          "88.000₫",
+          "130.000₫",
+          "240.000₫",
+          "185.000₫"
+        ],
+        [
+          "Chó nhỏ3–5kg",
+          "155.000₫",
+          "165.000₫",
+          "110.000₫",
+          "265.000₫",
+          "405.000₫",
+          "350.000₫"
+        ],
+        [
+          "Chó vừa5–10kg",
+          "240.000₫",
+          "220.000₫",
+          "165.000₫",
+          "375.000₫",
+          "515.000₫",
+          "460.000₫"
+        ],
+        [
+          "Chó lớn10–15kg",
+          "350.000₫",
+          "275.000₫",
+          "220.000₫",
+          "460.000₫",
+          "605.000₫",
+          "550.000₫"
+        ],
+        [
+          "Chó rất lớn15–20kg",
+          "460.000₫",
+          "330.000₫",
+          "275.000₫",
+          "550.000₫",
+          "660.000₫",
+          "605.000₫"
+        ],
+        [
+          "Chó đại20–25kg",
+          "570.000₫",
+          "385.000₫",
+          "330.000₫",
+          "640.000₫",
+          "750.000₫",
+          "695.000₫"
+        ],
+        [
+          "Chó siêu đại25–30kg",
+          "660.000₫",
+          "440.000₫",
+          "385.000₫",
+          "725.000₫",
+          "835.000₫",
+          "780.000₫"
+        ],
+        [
+          "Mèo"
+        ],
+        [
+          "Mèo mini≤ 3kg",
+          "110.000₫",
+          "160.000₫",
+          "110.000₫",
+          "155.000₫",
+          "240.000₫",
+          "210.000₫"
+        ],
+        [
+          "Mèo nhỏ3–5kg",
+          "165.000₫",
+          "275.000₫",
+          "165.000₫",
+          "275.000₫",
+          "415.000₫",
+          "365.000₫"
+        ],
+        [
+          "Mèo vừa5–10kg",
+          "275.000₫",
+          "370.000₫",
+          "220.000₫",
+          "405.000₫",
+          "565.000₫",
+          "495.000₫"
+        ],
+        [
+          "Mèo lớn10–15kg",
+          "385.000₫",
+          "440.000₫",
+          "275.000₫",
+          "495.000₫",
+          "665.000₫",
+          "585.000₫"
+        ],
+        [
+          "Mèo rất lớn15–20kg",
+          "460.000₫",
+          "455.000₫",
+          "330.000₫",
+          "550.000₫",
+          "690.000₫",
+          "605.000₫"
+        ],
+        [
+          "Mèo đại20–25kg",
+          "570.000₫",
+          "520.000₫",
+          "385.000₫",
+          "640.000₫",
+          "795.000₫",
+          "695.000₫"
+        ],
+        [
+          "Mèo siêu đại25–30kg",
+          "660.000₫",
+          "585.000₫",
+          "440.000₫",
+          "725.000₫",
+          "890.000₫",
+          "780.000₫"
+        ]
+      ]
+    }
+  ],
+  "theDichVu": [
+    {
+      "ten": "+50.000₫",
+      "gia": "Từ88.000₫schedule45 phút",
+      "coKhoang": false,
+      "full": "bathtubhome_workCó tận nhàTắmGói tắm cơ bản — tắm sạch với sữa tắm dịu nhẹ, sấy khô và chải mượt. Đơn giản, nhanh gọn.home_workPhụ thu tận nhà: +50.000₫ (chưa gồm phí di chuyển)Chi tiết giá theo cân nặng — xem bảng bên dướiTừ88.000₫schedule45 phútcalendar_monthĐặt lịch"
+    },
+    {
+      "ten": "145.000₫",
+      "gia": "Từ145.000₫schedule90 phút",
+      "coKhoang": false,
+      "full": "content_cutstoreChỉ tại spaCắt tỉa lôngCắt tỉa tạo kiểu theo giống chó/mèo của bé. Thợ tỉa chuyên nghiệp tư vấn kiểu phù hợp khuôn mặt, mùa vụ.Chi tiết giá theo cân nặng — xem bảng bên dướiTừ145.000₫schedule90 phútcalendar_monthĐặt lịch"
+    },
+    {
+      "ten": "+80.000₫",
+      "gia": "Từ88.000₫schedule60 phút",
+      "coKhoang": false,
+      "full": "cuthome_workCó tận nhàCạo lôngCạo lông toàn thân vào mùa nóng hoặc khi lông bết, rối khó cứu. Tông đơ chuyên dụng, lưỡi an toàn.home_workPhụ thu tận nhà: +80.000₫ (chưa gồm phí di chuyển)Chi tiết giá theo cân nặng — xem bảng bên dướiTừ88.000₫schedule60 phútcalendar_monthĐặt lịch"
+    },
+    {
+      "ten": "+70.000₫",
+      "gia": "Từ130.000₫schedule60 phút",
+      "coKhoang": false,
+      "full": "showerlocal_fire_departmentPhổ biếnhome_workCó tận nhàCombo Tắm + Vệ sinhTắm sạch toàn thân với sữa tắm chuyên dụng theo loại da, sấy khô, vệ sinh tai, cắt móng, làm sạch tuyến hôi.home_workPhụ thu tận nhà: +70.000₫ (chưa gồm phí di chuyển)Chi tiết giá theo cân nặng — xem bảng bên dướiTừ130.000₫schedule60 phútcalendar_monthĐặt lịch"
+    },
+    {
+      "ten": "240.000₫",
+      "gia": "Từ240.000₫schedule120 phút",
+      "coKhoang": false,
+      "full": "spastarTiết kiệmstoreChỉ tại spaCombo Tắm + Cắt tỉaCombo tiết kiệm — gói đầy đủ tắm vệ sinh và cắt tỉa tạo kiểu trong cùng một buổi.Chi tiết giá theo cân nặng — xem bảng bên dướiTừ240.000₫schedule120 phútcalendar_monthĐặt lịch"
+    },
+    {
+      "ten": "+100.000₫",
+      "gia": "Từ185.000₫schedule90 phút",
+      "coKhoang": false,
+      "full": "auto_awesomehome_workCó tận nhàCombo Tắm + CạoCạo lông sạch và tắm sạch da trong cùng buổi — lý tưởng cho mùa hè hoặc thú cưng bị bết lông.home_workPhụ thu tận nhà: +100.000₫ (chưa gồm phí di chuyển)Chi tiết giá theo cân nặng — xem bảng bên dướiTừ185.000₫schedule90 phútcalendar_monthĐặt lịch"
+    }
+  ],
+  "nhanPhuThu": [
+    "Phụ thu tận nhà:",
+    "Phụ thu tận nhà:",
+    "Phụ thu tận nhà:",
+    "Phụ thu tận nhà:"
+  ],
+  "xacNhanGia": {
+    "coXacNhanSpa": false,
+    "doan": ""
+  },
+  "faqAccordion": [
+    {
+      "txt": "Vì sao giá khác nhau giữa chó và mèo?",
+      "icon": "add"
+    },
+    {
+      "txt": "Cân nặng được xác định thế nào?",
+      "icon": "add"
+    },
+    {
+      "txt": "Dịch vụ nào có thể làm tại nhà?",
+      "icon": "add"
+    },
+    {
+      "txt": "Phụ thu tại nhà tính như thế nào?",
+      "icon": "remove"
+    },
+    {
+      "txt": "Tôi cần chuẩn bị gì khi thợ đến nhà?",
+      "icon": "add"
+    },
+    {
+      "txt": "Có thể đổi/huỷ lịch không?",
+      "icon": "add"
+    }
+  ]
+}

@@ -12,6 +12,7 @@
     "test:e2e:t3": "playwright test --project=t3",
     "test:perf": "k6 run tests/perf/read-load.js",
     "test:a11y": "playwright test --project=security tests/security/accessibility.spec.ts",
+    "test:nfr": "playwright test --project=nfr",
     "test:cross-browser": "playwright test --project=cross-browser-chromium --project=cross-browser-firefox --project=cross-browser-webkit --project=cross-browser-edge",
     "lint": "eslint tests scripts",
     "typecheck": "tsc --noEmit",

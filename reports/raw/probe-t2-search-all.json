@@ -1,0 +1,525 @@
+[
+  {
+    "duong": "/",
+    "status": 200,
+    "inputs": [],
+    "buttons": [
+      {
+        "text": "",
+        "aria": "Tìm kiếm",
+        "cls": "hidden items-center justify-center rounded-full p-2 text-brand-deep transition-colors duration-300 ease-in-out hover:text-brand-gold md:flex"
+      },
+      {
+        "text": "",
+        "aria": "Tìm kiếm",
+        "cls": "rounded-2xl border border-brand-deep/20 p-2.5 transition-colors duration-300 ease-in-out hover:bg-brand-deep/5 md:hidden"
+      },
+      {
+        "text": "Xem các bé đang tìm chủ →",
+        "aria": "",
+        "cls": "w-full rounded-full bg-brand-deep px-8 py-3 text-center text-base font-semibold text-white transition-transform duration-300 ease-in-out hover:scale-105 md:w-auto md:py-4 md:text-lg"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "w-full rounded-full bg-brand-deep py-2 text-xs font-semibold text-white transition-transform duration-300 ease-in-out hover:scale-105"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "w-full rounded-full bg-brand-deep py-2 text-xs font-semibold text-white transition-transform duration-300 ease-in-out hover:scale-105"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "w-full rounded-full bg-brand-deep py-2 text-xs font-semibold text-white transition-transform duration-300 ease-in-out hover:scale-105"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "w-full rounded-full bg-brand-deep py-2 text-xs font-semibold text-white transition-transform duration-300 ease-in-out hover:scale-105"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "w-full rounded-full bg-brand-deep py-2 text-xs font-semibold text-white transition-transform duration-300 ease-in-out hover:scale-105"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "w-full rounded-full bg-brand-deep py-2 text-xs font-semibold text-white transition-transform duration-300 ease-in-out hover:scale-105"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "w-full rounded-full bg-brand-deep py-2 text-xs font-semibold text-white transition-transform duration-300 ease-in-out hover:scale-105"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "w-full rounded-full bg-brand-deep py-2 text-xs font-semibold text-white transition-transform duration-300 ease-in-out hover:scale-105"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "w-full rounded-full bg-brand-deep py-2 text-xs font-semibold text-white transition-transform duration-300 ease-in-out hover:scale-105"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "w-full rounded-full bg-brand-deep py-2 text-xs font-semibold text-white transition-transform duration-300 ease-in-out hover:scale-105"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "w-full rounded-full bg-brand-deep py-2 text-xs font-semibold text-white transition-transform duration-300 ease-in-out hover:scale-105"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "w-full rounded-full bg-brand-deep py-2 text-xs font-semibold text-white transition-transform duration-300 ease-in-out hover:scale-105"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "w-full rounded-full bg-brand-deep py-2 text-xs font-semibold text-white transition-transform duration-300 ease-in-out hover:scale-105"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "w-full rounded-full bg-brand-deep py-2 text-xs font-semibold text-white transition-transform duration-300 ease-in-out hover:scale-105"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "w-full rounded-full bg-brand-deep py-2 text-xs font-semibold text-white transition-transform duration-300 ease-in-out hover:scale-105"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "w-full rounded-full bg-brand-deep py-2 text-xs font-semibold text-white transition-transform duration-300 ease-in-out hover:scale-105"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "w-full rounded-full bg-brand-deep py-2 text-xs font-semibold text-white transition-transform duration-300 ease-in-out hover:scale-105"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "w-full rounded-full bg-brand-deep py-2 text-xs font-semibold text-white transition-transform duration-300 ease-in-out hover:scale-105"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "w-full rounded-full bg-brand-deep py-2 text-xs font-semibold text-white transition-transform duration-300 ease-in-out hover:scale-105"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "w-full rounded-full bg-brand-deep py-2 text-xs font-semibold text-white transition-transform duration-300 ease-in-out hover:scale-105"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "w-full rounded-full bg-brand-deep py-2 text-xs font-semibold text-white transition-transform duration-300 ease-in-out hover:scale-105"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "w-full rounded-full bg-brand-deep py-2 text-xs font-semibold text-white transition-transform duration-300 ease-in-out hover:scale-105"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "w-full rounded-full bg-brand-deep py-2 text-xs font-semibold text-white transition-transform duration-300 ease-in-out hover:scale-105"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "w-full rounded-full bg-brand-deep py-2 text-xs font-semibold text-white transition-transform duration-300 ease-in-out hover:scale-105"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "w-full rounded-full bg-brand-deep py-2 text-xs font-semibold text-white transition-transform duration-300 ease-in-out hover:scale-105"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "w-full rounded-full bg-brand-deep py-2 text-xs font-semibold text-white transition-transform duration-300 ease-in-out hover:scale-105"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "w-full rounded-full bg-brand-deep py-2 text-xs font-semibold text-white transition-transform duration-300 ease-in-out hover:scale-105"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "w-full rounded-full bg-brand-deep py-2 text-xs font-semibold text-white transition-transform duration-300 ease-in-out hover:scale-105"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "w-full rounded-full bg-brand-deep py-2 text-xs font-semibold text-white transition-transform duration-300 ease-in-out hover:scale-105"
+      },
+      {
+        "text": "",
+        "aria": "Go to testimonial 1",
+        "cls": "h-2 rounded-full transition-all bg-brand-gold w-8"
+      },
+      {
+        "text": "",
+        "aria": "Go to testimonial 2",
+        "cls": "h-2 rounded-full transition-all bg-brand-deep/20 w-2"
+      },
+      {
+        "text": "",
+        "aria": "Go to testimonial 3",
+        "cls": "h-2 rounded-full transition-all bg-brand-deep/20 w-2"
+      }
+    ]
+  },
+  {
+    "duong": "/spa",
+    "status": 200,
+    "inputs": [
+      {
+        "type": "tel",
+        "placeholder": "0xxx xxx xxx",
+        "aria": "",
+        "name": "",
+        "id": "f_phone",
+        "cls": ""
+      },
+      {
+        "type": "text",
+        "placeholder": "Vd: Mochi",
+        "aria": "",
+        "name": "",
+        "id": "f_name",
+        "cls": ""
+      },
+      {
+        "type": "date",
+        "placeholder": "",
+        "aria": "Ngày khác",
+        "name": "",
+        "id": "",
+        "cls": "date-other-input"
+      },
+      {
+        "type": "text",
+        "placeholder": "",
+        "aria": "",
+        "name": "",
+        "id": "",
+        "cls": "hp"
+      }
+    ],
+    "buttons": [
+      {
+        "text": "",
+        "aria": "Tìm kiếm",
+        "cls": "hidden items-center justify-center rounded-full p-2 text-brand-deep transition-colors duration-300 ease-in-out hover:text-brand-gold md:flex"
+      },
+      {
+        "text": "",
+        "aria": "Tìm kiếm",
+        "cls": "rounded-2xl border border-brand-deep/20 p-2.5 transition-colors duration-300 ease-in-out hover:bg-brand-deep/5 md:hidden"
+      }
+    ]
+  },
+  {
+    "duong": "/so-sanh",
+    "status": 200,
+    "inputs": [],
+    "buttons": [
+      {
+        "text": "",
+        "aria": "Tìm kiếm",
+        "cls": "hidden items-center justify-center rounded-full p-2 text-brand-deep transition-colors duration-300 ease-in-out hover:text-brand-gold md:flex"
+      },
+      {
+        "text": "",
+        "aria": "Tìm kiếm",
+        "cls": "rounded-2xl border border-brand-deep/20 p-2.5 transition-colors duration-300 ease-in-out hover:bg-brand-deep/5 md:hidden"
+      }
+    ]
+  },
+  {
+    "duong": "/bang-gia",
+    "status": 200,
+    "inputs": [],
+    "buttons": [
+      {
+        "text": "",
+        "aria": "Tìm kiếm",
+        "cls": "hidden items-center justify-center rounded-full p-2 text-brand-deep transition-colors duration-300 ease-in-out hover:text-brand-gold md:flex"
+      },
+      {
+        "text": "",
+        "aria": "Tìm kiếm",
+        "cls": "rounded-2xl border border-brand-deep/20 p-2.5 transition-colors duration-300 ease-in-out hover:bg-brand-deep/5 md:hidden"
+      }
+    ]
+  },
+  {
+    "duong": "/cho",
+    "status": 200,
+    "inputs": [],
+    "buttons": [
+      {
+        "text": "",
+        "aria": "Tìm kiếm",
+        "cls": "hidden items-center justify-center rounded-full p-2 text-brand-deep transition-colors duration-300 ease-in-out hover:text-brand-gold md:flex"
+      },
+      {
+        "text": "",
+        "aria": "Tìm kiếm",
+        "cls": "rounded-2xl border border-brand-deep/20 p-2.5 transition-colors duration-300 ease-in-out hover:bg-brand-deep/5 md:hidden"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "text-xs font-semibold bg-[#192223] text-white px-3.5 py-2 rounded-xl hover:bg-[#192223]/90 transition-colors inline-flex items-center justify-center gap-1 whitespace-nowrap w-full"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "text-xs font-semibold bg-[#192223] text-white px-3.5 py-2 rounded-xl hover:bg-[#192223]/90 transition-colors inline-flex items-center justify-center gap-1 whitespace-nowrap w-full"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "text-xs font-semibold bg-[#192223] text-white px-3.5 py-2 rounded-xl hover:bg-[#192223]/90 transition-colors inline-flex items-center justify-center gap-1 whitespace-nowrap w-full"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "text-xs font-semibold bg-[#192223] text-white px-3.5 py-2 rounded-xl hover:bg-[#192223]/90 transition-colors inline-flex items-center justify-center gap-1 whitespace-nowrap w-full"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "text-xs font-semibold bg-[#192223] text-white px-3.5 py-2 rounded-xl hover:bg-[#192223]/90 transition-colors inline-flex items-center justify-center gap-1 whitespace-nowrap w-full"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "text-xs font-semibold bg-[#192223] text-white px-3.5 py-2 rounded-xl hover:bg-[#192223]/90 transition-colors inline-flex items-center justify-center gap-1 whitespace-nowrap w-full"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "text-xs font-semibold bg-[#192223] text-white px-3.5 py-2 rounded-xl hover:bg-[#192223]/90 transition-colors inline-flex items-center justify-center gap-1 whitespace-nowrap w-full"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "text-xs font-semibold bg-[#192223] text-white px-3.5 py-2 rounded-xl hover:bg-[#192223]/90 transition-colors inline-flex items-center justify-center gap-1 whitespace-nowrap w-full"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "text-xs font-semibold bg-[#192223] text-white px-3.5 py-2 rounded-xl hover:bg-[#192223]/90 transition-colors inline-flex items-center justify-center gap-1 whitespace-nowrap w-full"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "text-xs font-semibold bg-[#192223] text-white px-3.5 py-2 rounded-xl hover:bg-[#192223]/90 transition-colors inline-flex items-center justify-center gap-1 whitespace-nowrap w-full"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "text-xs font-semibold bg-[#192223] text-white px-3.5 py-2 rounded-xl hover:bg-[#192223]/90 transition-colors inline-flex items-center justify-center gap-1 whitespace-nowrap w-full"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "text-xs font-semibold bg-[#192223] text-white px-3.5 py-2 rounded-xl hover:bg-[#192223]/90 transition-colors inline-flex items-center justify-center gap-1 whitespace-nowrap w-full"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "text-xs font-semibold bg-[#192223] text-white px-3.5 py-2 rounded-xl hover:bg-[#192223]/90 transition-colors inline-flex items-center justify-center gap-1 whitespace-nowrap w-full"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "text-xs font-semibold bg-[#192223] text-white px-3.5 py-2 rounded-xl hover:bg-[#192223]/90 transition-colors inline-flex items-center justify-center gap-1 whitespace-nowrap w-full"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "text-xs font-semibold bg-[#192223] text-white px-3.5 py-2 rounded-xl hover:bg-[#192223]/90 transition-colors inline-flex items-center justify-center gap-1 whitespace-nowrap w-full"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "text-xs font-semibold bg-[#192223] text-white px-3.5 py-2 rounded-xl hover:bg-[#192223]/90 transition-colors inline-flex items-center justify-center gap-1 whitespace-nowrap w-full"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "text-xs font-semibold bg-[#192223] text-white px-3.5 py-2 rounded-xl hover:bg-[#192223]/90 transition-colors inline-flex items-center justify-center gap-1 whitespace-nowrap w-full"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "text-xs font-semibold bg-[#192223] text-white px-3.5 py-2 rounded-xl hover:bg-[#192223]/90 transition-colors inline-flex items-center justify-center gap-1 whitespace-nowrap w-full"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "text-xs font-semibold bg-[#192223] text-white px-3.5 py-2 rounded-xl hover:bg-[#192223]/90 transition-colors inline-flex items-center justify-center gap-1 whitespace-nowrap w-full"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "text-xs font-semibold bg-[#192223] text-white px-3.5 py-2 rounded-xl hover:bg-[#192223]/90 transition-colors inline-flex items-center justify-center gap-1 whitespace-nowrap w-full"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "inline-flex items-center gap-2 bg-[#192223] text-white px-7 py-3.5 rounded-xl font-bold text-base hover:bg-[#192223]/90 transition-all hover:shadow-lg"
+      }
+    ]
+  },
+  {
+    "duong": "/meo",
+    "status": 200,
+    "inputs": [],
+    "buttons": [
+      {
+        "text": "",
+        "aria": "Tìm kiếm",
+        "cls": "hidden items-center justify-center rounded-full p-2 text-brand-deep transition-colors duration-300 ease-in-out hover:text-brand-gold md:flex"
+      },
+      {
+        "text": "",
+        "aria": "Tìm kiếm",
+        "cls": "rounded-2xl border border-brand-deep/20 p-2.5 transition-colors duration-300 ease-in-out hover:bg-brand-deep/5 md:hidden"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "text-xs font-semibold bg-[#192223] text-white px-3.5 py-2 rounded-xl hover:bg-[#192223]/90 transition-colors inline-flex items-center justify-center gap-1 whitespace-nowrap w-full"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "text-xs font-semibold bg-[#192223] text-white px-3.5 py-2 rounded-xl hover:bg-[#192223]/90 transition-colors inline-flex items-center justify-center gap-1 whitespace-nowrap w-full"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "text-xs font-semibold bg-[#192223] text-white px-3.5 py-2 rounded-xl hover:bg-[#192223]/90 transition-colors inline-flex items-center justify-center gap-1 whitespace-nowrap w-full"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "text-xs font-semibold bg-[#192223] text-white px-3.5 py-2 rounded-xl hover:bg-[#192223]/90 transition-colors inline-flex items-center justify-center gap-1 whitespace-nowrap w-full"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "text-xs font-semibold bg-[#192223] text-white px-3.5 py-2 rounded-xl hover:bg-[#192223]/90 transition-colors inline-flex items-center justify-center gap-1 whitespace-nowrap w-full"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "text-xs font-semibold bg-[#192223] text-white px-3.5 py-2 rounded-xl hover:bg-[#192223]/90 transition-colors inline-flex items-center justify-center gap-1 whitespace-nowrap w-full"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "text-xs font-semibold bg-[#192223] text-white px-3.5 py-2 rounded-xl hover:bg-[#192223]/90 transition-colors inline-flex items-center justify-center gap-1 whitespace-nowrap w-full"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "text-xs font-semibold bg-[#192223] text-white px-3.5 py-2 rounded-xl hover:bg-[#192223]/90 transition-colors inline-flex items-center justify-center gap-1 whitespace-nowrap w-full"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "text-xs font-semibold bg-[#192223] text-white px-3.5 py-2 rounded-xl hover:bg-[#192223]/90 transition-colors inline-flex items-center justify-center gap-1 whitespace-nowrap w-full"
+      },
+      {
+        "text": "Đặt cọc tìm bé →",
+        "aria": "",
+        "cls": "inline-flex items-center gap-2 bg-[#192223] text-white px-7 py-3.5 rounded-xl font-bold text-base hover:bg-[#192223]/90 transition-all hover:shadow-lg"
+      }
+    ]
+  },
+  {
+    "duong": "/bao-hanh",
+    "status": 200,
+    "inputs": [],
+    "buttons": [
+      {
+        "text": "",
+        "aria": "Tìm kiếm",
+        "cls": "hidden items-center justify-center rounded-full p-2 text-brand-deep transition-colors duration-300 ease-in-out hover:text-brand-gold md:flex"
+      },
+      {
+        "text": "",
+        "aria": "Tìm kiếm",
+        "cls": "rounded-2xl border border-brand-deep/20 p-2.5 transition-colors duration-300 ease-in-out hover:bg-brand-deep/5 md:hidden"
+      }
+    ]
+  },
+  {
+    "duong": "/showroom",
+    "status": 200,
+    "inputs": [],
+    "buttons": [
+      {
+        "text": "",
+        "aria": "Tìm kiếm",
+        "cls": "hidden items-center justify-center rounded-full p-2 text-brand-deep transition-colors duration-300 ease-in-out hover:text-brand-gold md:flex"
+      },
+      {
+        "text": "",
+        "aria": "Tìm kiếm",
+        "cls": "rounded-2xl border border-brand-deep/20 p-2.5 transition-colors duration-300 ease-in-out hover:bg-brand-deep/5 md:hidden"
+      }
+    ]
+  },
+  {
+    "duong": "/cau-hoi-thuong-gap",
+    "status": 200,
+    "inputs": [],
+    "buttons": [
+      {
+        "text": "",
+        "aria": "Tìm kiếm",
+        "cls": "hidden items-center justify-center rounded-full p-2 text-brand-deep transition-colors duration-300 ease-in-out hover:text-brand-gold md:flex"
+      },
+      {
+        "text": "",
+        "aria": "Tìm kiếm",
+        "cls": "rounded-2xl border border-brand-deep/20 p-2.5 transition-colors duration-300 ease-in-out hover:bg-brand-deep/5 md:hidden"
+      }
+    ]
+  },
+  {
+    "duong": "/blog",
+    "status": 200,
+    "inputs": [],
+    "buttons": [
+      {
+        "text": "",
+        "aria": "Tìm kiếm",
+        "cls": "hidden items-center justify-center rounded-full p-2 text-brand-deep transition-colors duration-300 ease-in-out hover:text-brand-gold md:flex"
+      },
+      {
+        "text": "",
+        "aria": "Tìm kiếm",
+        "cls": "rounded-2xl border border-brand-deep/20 p-2.5 transition-colors duration-300 ease-in-out hover:bg-brand-deep/5 md:hidden"
+      }
+    ]
+  }
+]

@@ -1,0 +1,86 @@
+{
+  "kiemTraLuc": "2026-11-22T16:30:08.066Z",
+  "homNay": "2026-11-22",
+  "soNgay": 7,
+  "ngay": [
+    {
+      "txt": "Thứ 22311/26",
+      "disabled": false,
+      "cls": "bk-day is-on",
+      "ariaDisabled": null
+    },
+    {
+      "txt": "Thứ 32411/26",
+      "disabled": false,
+      "cls": "bk-day ",
+      "ariaDisabled": null
+    },
+    {
+      "txt": "Thứ 42511/26",
+      "disabled": false,
+      "cls": "bk-day ",
+      "ariaDisabled": null
+    },
+    {
+      "txt": "Thứ 52611/26",
+      "disabled": false,
+      "cls": "bk-day ",
+      "ariaDisabled": null
+    },
+    {
+      "txt": "Thứ 62711/26",
+      "disabled": false,
+      "cls": "bk-day ",
+      "ariaDisabled": null
+    },
+    {
+      "txt": "Thứ 72811/26",
+      "disabled": false,
+      "cls": "bk-day ",
+      "ariaDisabled": null
+    },
+    {
+      "txt": "CN2911/26",
+      "disabled": false,
+      "cls": "bk-day ",
+      "ariaDisabled": null
+    }
+  ],
+  "soKhoiGio": 8,
+  "khoiGio": [
+    {
+      "txt": "08:30",
+      "disabled": false
+    },
+    {
+      "txt": "09:30",
+      "disabled": false
+    },
+    {
+      "txt": "10:30",
+      "disabled": false
+    },
+    {
+      "txt": "13:00",
+      "disabled": false
+    },
+    {
+      "txt": "14:00",
+      "disabled": false
+    },
+    {
+      "txt": "15:00",
+      "disabled": false
+    },
+    {
+      "txt": "16:00",
+      "disabled": false
+    },
+    {
+      "txt": "17:00",
+      "disabled": false
+    }
+  ],
+  "coInputDate": 0,
+  "coChonNgayTuDo": true
+}

@@ -1,0 +1,224 @@
+{
+  "t1_buoc4_form": [
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "ph": "",
+      "required": false,
+      "maxlength": null,
+      "pattern": "",
+      "ariaRequired": "",
+      "cls": "bk-close",
+      "text": "close"
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "ph": "",
+      "required": false,
+      "maxlength": null,
+      "pattern": "",
+      "ariaRequired": "",
+      "cls": "bk-loc is-on",
+      "text": "storeTại spa1.09 A1 Westgate, Bình Chánh"
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "ph": "",
+      "required": false,
+      "maxlength": null,
+      "pattern": "",
+      "ariaRequired": "",
+      "cls": "bk-loc  ",
+      "text": "home_workTận nhàThợ đến địa chỉ của bạn+"
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "ph": "Nguyễn Văn A",
+      "required": false,
+      "maxlength": -1,
+      "pattern": "",
+      "ariaRequired": "",
+      "cls": "bk-input",
+      "text": ""
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "ph": "0987 654 321",
+      "required": false,
+      "maxlength": -1,
+      "pattern": "",
+      "ariaRequired": "",
+      "cls": "bk-input",
+      "text": ""
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "ph": "",
+      "required": false,
+      "maxlength": null,
+      "pattern": "",
+      "ariaRequired": "",
+      "cls": "bn-btn bn-btn--ghost",
+      "text": "chevron_leftQuay lại"
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "ph": "",
+      "required": false,
+      "maxlength": null,
+      "pattern": "",
+      "ariaRequired": "",
+      "cls": "bn-btn bn-btn--primary",
+      "text": "checkXác nhận đặt lịch"
+    }
+  ],
+  "t1_nutXacNhanCo": true,
+  "t1_nutXacNhanDisabled": true,
+  "t1_thongBaoLoi": [
+    "SỐ ĐIỆN THOẠI"
+  ],
+  "t1_giaVsFaq": {
+    "phuThu": [
+      {
+        "ten": "Tắm",
+        "phuThu": "50.000"
+      },
+      {
+        "ten": "Cắt tỉa lông"
+      },
+      {
+        "ten": "Cạo lông",
+        "phuThu": "80.000"
+      },
+      {
+        "ten": "Combo Tắm + Vệ sinh",
+        "phuThu": "70.000"
+      },
+      {
+        "ten": "Combo Tắm + Cắt tỉa"
+      },
+      {
+        "ten": "Combo Tắm + Cạo",
+        "phuThu": "100.000"
+      }
+    ],
+    "cau": [
+      "Vì sao giá khác nhau giữa chó và mèo?remove",
+      "Cân nặng được xác định thế nào?add",
+      "Dịch vụ nào có thể làm tại nhà?add",
+      "Phụ thu tại nhà tính như thế nào?add",
+      "Tôi cần chuẩn bị gì khi thợ đến nhà?add",
+      "Có thể đổi/huỷ lịch không?add"
+    ],
+    "faq": [
+      "help Câu hỏi thường gặpMọi thứ bạn cần biết trước khi đặt lịchVì sao giá khác nhau giữa chó và mèo?removeMèo và chó có loại lông, da và phản ứng với nước/máy sấy khác nhau. Mèo cần kỹ thuật giữ và sữa tắm riêng, lông mèo dễ bết. Chó được phân theo cân nặng vì lượng sữa tắm, thời gian sấy và công sức của thợ tỷ lệ thuận với kích thước.Cân nặng được xác định thế nào?addDịch vụ nào có thể làm tại nhà?addPhụ thu tại nhà tính như thế nào?addTôi cần chuẩn bị gì khi thợ đến nhà?addCó thể đổi/huỷ lịch không?add"
+    ]
+  },
+  "t2_form": {
+    "labels": [
+      "Số điện thoại / Zalo *",
+      "Tên bé",
+      "Ngày mong muốn",
+      "Ngày khác"
+    ],
+    "inputs": [
+      {
+        "id": "f_phone",
+        "type": "tel",
+        "ph": "0xxx xxx xxx",
+        "required": true,
+        "min": "",
+        "max": "",
+        "ariaReq": "true"
+      },
+      {
+        "id": "f_name",
+        "type": "text",
+        "ph": "Vd: Mochi",
+        "required": false,
+        "min": "",
+        "max": "",
+        "ariaReq": ""
+      },
+      {
+        "id": "",
+        "type": "date",
+        "ph": "",
+        "required": false,
+        "min": "2026-11-21",
+        "max": "",
+        "ariaReq": ""
+      },
+      {
+        "id": "",
+        "type": "text",
+        "ph": "",
+        "required": false,
+        "min": "",
+        "max": "",
+        "ariaReq": ""
+      }
+    ],
+    "buttons": [
+      "",
+      "",
+      "",
+      "1Loại béChó / Mèo",
+      "2Cân nặngBậc định sẵn",
+      "3Dịch vụCombo hoặc lẻ",
+      "✓🐶Chó",
+      "✓🐱Mèo",
+      "← Quay lại",
+      "Tiếp tục →",
+      "Giữ chỗ với mức giá này →",
+      "Hôm nay21/11",
+      "Ngày mai22/11",
+      "T223/11",
+      "T324/11",
+      "T425/11",
+      "Giữ chỗ cho bé →",
+      "Giữ chỗ →",
+      ""
+    ],
+    "coDongY": true,
+    "doanDongY": "gày mong muốn\nHôm nay\n21/11\nNgày mai\n22/11\nT2\n23/11\nT3\n24/11\nT4\n25/11\nNgày khác\n\nBằng việc gửi, bạn đồng ý để Mật Pet Family liên hệ lại qua điện thoại / Zalo để xác nhận lịch.\n\nGiữ chỗ cho bé →\n* Giá trên chưa bao gồm phí gỡ rối, tẩy ố và tắm trắng.\n\nPremium pet shop đồng hành tìm người bạn bốn chân phù hợp nhất cho từng gia đình Việt.\n\nYouTube\nFacebook\nTikTok\n\nPET SHOP\n\nTrang chủ\nChó\nMèo\nTìm Bé ",
+    "coGioXacNhan": false
+  },
+  "t2_searchNut": true,
+  "t2_searchOverlay": [
+    {
+      "ph": "Tìm giống chó/mèo, bé, bài viết…",
+      "type": "text",
+      "id": ""
+    },
+    {
+      "ph": "0xxx xxx xxx",
+      "type": "tel",
+      "id": "f_phone"
+    },
+    {
+      "ph": "Vd: Mochi",
+      "type": "text",
+      "id": "f_name"
+    },
+    {
+      "ph": "",
+      "type": "date",
+      "id": ""
+    },
+    {
+      "ph": "",
+      "type": "text",
+      "id": ""
+    }
+  ],
+  "t2_searchKetQua": "Trang chủ\nChó\nMèo\nTìm Bé Thương\nSpa\nBảo hành\nVề Mật Pet\nVI\n|\nEN\n0939.86.36.96\nBÀI VIẾT\nChó Cavalier King Charles Spaniel — Đặc Điểm, Tính Cách và Cách Nuôi Tại Việt Nam\nBài viết\nXem tất cả kết quả cho “spa”\nSPA & GROOMING · TỪ 2011\nBiết giá trước\nkhi đưa bé đến spa.\nChọn loại bé, cân nặng và dịch vụ — bạn thấy ngay mức giá dự kiến minh bạch, rồi giữ chỗ chỉ với số điện thoại. Không còn phải nhắn tin hỏi giá.\nTính giá dự kiến →\nXem bảng giá\n✓\nAn toàn cho bé\n✓\nHơn 15 năm kinh nghiệm\n✓\nNhân viên có nghề\n🐾\nĐÃ CHĂM SÓC\n10.000+\n1\nLoại bé\nChó / Mèo\n2\nCân nặng\nBậc định sẵn\n3\nDịch vụ\nCombo hoặc lẻ\nBé nhà bạn là?\nChọn loại để hiển thị đúng bậc cân nặng & dịch vụ.\n🐶\nChó\n🐱\nMèo\n← Quay lại\nTiếp tục →\nGIÁ DỰ KIẾN\nChọn dịch vụ để xem giá dự kiến cho bé của bạn 🐾\nGiữ chỗ với mức giá này →\nTÓM TẮT LỰA CHỌN\nChưa có lựa chọn\n—\nGiá cuối được xác nhận tại spa sau khi cân & kiểm tra tình trạng lông. Dịch vụ \"báo giá riêng\" sẽ được tư vấn khi spa gọi lại.\nSố điện thoại / Zalo *\nTên bé\nNgày mong muốn\nHôm nay\n21/11\nNgày mai\n22/11\nT2\n23/11\nT3\n24/11\nT4\n25/11\nNgày khác\nBằng việc gửi, bạn đồng ý để Mật Pet Family liên hệ lại qua điện thoại / Zalo để xác nhận lịch.\nGiữ chỗ cho bé →\n* Giá trên chưa bao gồm ph",
+  "t2_searchKetQuaHoa": "Trang chủ\nChó\nMèo\nTìm Bé Thương\nSpa\nBảo hành\nVề Mật Pet\nVI\n|\nEN\n0939.86.36.96\nBÀI VIẾT\nChó Cavalier King Charles Spaniel — Đặc Điểm, Tính Cách và Cách Nuôi Tại Việt Nam\nBài viết\nXem tất cả kết quả cho “SPA”\nSPA & GROOMING · TỪ 2011\nBiết giá trước\nkhi đưa bé đến spa.\nChọn loại bé, cân nặng và dịch vụ — bạn thấy ngay mức giá dự kiến minh bạch, rồi giữ chỗ chỉ với số điện thoại. Không còn phải nhắn tin hỏi giá.\nTính giá dự kiến →\nXem bảng giá\n✓\nAn toàn cho bé\n✓\nHơn 15 năm kinh nghiệm\n✓\nNhân viên có nghề\n🐾\nĐÃ CHĂM SÓC\n10.000+\n1\nLoại bé\nChó / Mèo\n2\nCân nặng\nBậc định sẵn\n3\nDịch vụ\nCombo hoặc lẻ\nBé nhà bạn là?\nChọn loại để hiển thị đúng bậc cân nặng & dịch vụ.\n🐶\nChó\n🐱\nMèo\n← Quay lại\nTiếp tục →\nGIÁ DỰ KIẾN\nChọn dịch vụ để xem giá dự kiến cho bé của bạn 🐾\nGiữ chỗ với mức giá này →\nTÓM TẮT LỰA CHỌN\nChưa có lựa chọn\n—\nGiá cuối được xác nhận tại spa sau khi cân & kiểm tra tình trạng lông. Dịch vụ \"báo giá riêng\" sẽ được tư vấn khi spa gọi lại.\nSố điện thoại / Zalo *\nTên bé\nNgày mong muốn\nHôm nay\n21/11\nNgày mai\n22/11\nT2\n23/11\nT3\n24/11\nT4\n25/11\nNgày khác\nBằng việc gửi, bạn đồng ý để Mật Pet Family liên hệ lại qua điện thoại / Zalo để xác nhận lịch.\nGiữ chỗ cho bé →\n* Giá trên chưa bao gồm ph",
+  "t2_searchRong": "Trang chủ\nChó\nMèo\nTìm Bé Thương\nSpa\nBảo hành\nVề Mật Pet\nVI\n|\nEN\n0939.86.36.96\nMỌI NGƯỜI HAY TÌM\nPoodle\nGolden Retriever\nCorgi\nMèo Anh lông ngắn\nSpa & grooming\nSPA & GROOMING · TỪ 2011\nBiết giá trước\nkhi đưa bé đến spa.\nChọn loại bé, cân nặng và dịch vụ — bạn thấy ngay mức giá dự kiến minh bạch, rồi giữ chỗ chỉ với số điện thoại. Không còn phải nhắn tin hỏi giá.\nTính giá dự kiến →\nXem bảng giá\n✓\nAn toàn cho bé\n✓\nHơn 15 năm kinh nghiệm\n✓\nNhân viên có nghề\n🐾\nĐÃ CHĂM SÓC\n10.000+\n1\nLoại bé\nChó / Mèo\n2\nCân nặng\nBậc định sẵn\n3\nDịch vụ\nCombo hoặc lẻ\nBé nhà bạn là?\nChọn loại để hiển thị đúng bậc cân nặng & dịch vụ.\n🐶\nChó\n🐱\nMèo\n← Quay lại\nTiếp tục →\nGIÁ DỰ KIẾN\nChọn dịch vụ để xem giá dự kiến cho bé của bạn 🐾\nGiữ chỗ với mức giá này →\nTÓM TẮT LỰA CHỌN\nChưa có lựa chọn\n—\nGiá cuối được xác nhận tại spa sau khi cân & kiểm tra tình trạng lông. Dịch vụ \"báo giá riêng\" sẽ được tư vấn khi spa gọi lại"
+}

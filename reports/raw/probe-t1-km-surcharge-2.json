@@ -1,0 +1,79 @@
+[
+  {
+    "diaChi": "Binh Chanh (0km - tai spa)",
+    "nhanNhap": "1.09 A1 Westgate, Binh Chanh",
+    "km": 9.5,
+    "phiDiChuyenHienThi": 40000,
+    "congThucSRS": 36000,
+    "quyTacThayThe": 40000,
+    "khopCongThucSRS": false,
+    "khopQuyTacThayThe": true,
+    "coNhanLienHeBaoGiaRieng": true
+  },
+  {
+    "diaChi": "Tan Xuan, Binh Chanh",
+    "nhanNhap": "Tan Xuan, Binh Chanh",
+    "km": 15,
+    "phiDiChuyenHienThi": 80000,
+    "congThucSRS": 80000,
+    "quyTacThayThe": 80000,
+    "khopCongThucSRS": true,
+    "khopQuyTacThayThe": true,
+    "coNhanLienHeBaoGiaRieng": true
+  },
+  {
+    "diaChi": "Phuoc Long, Binh Chanh",
+    "nhanNhap": "Phuoc Long, Binh Chanh",
+    "km": 3.8,
+    "phiDiChuyenHienThi": 0,
+    "congThucSRS": 0,
+    "quyTacThayThe": 0,
+    "khopCongThucSRS": true,
+    "khopQuyTacThayThe": true,
+    "coNhanLienHeBaoGiaRieng": true
+  },
+  {
+    "diaChi": "Ben Luc, Binh Chanh",
+    "nhanNhap": "Ben Luc, Binh Chanh",
+    "km": 12.6,
+    "phiDiChuyenHienThi": 64000,
+    "congThucSRS": 60800,
+    "quyTacThayThe": 64000,
+    "khopCongThucSRS": false,
+    "khopQuyTacThayThe": true,
+    "coNhanLienHeBaoGiaRieng": true
+  },
+  {
+    "diaChi": "Binh Tri, Binh Chanh",
+    "nhanNhap": "Binh Tri, Binh Chanh",
+    "km": 5.7,
+    "phiDiChuyenHienThi": 8000,
+    "congThucSRS": 5600.000000000002,
+    "quyTacThayThe": 8000,
+    "khopCongThucSRS": false,
+    "khopQuyTacThayThe": true,
+    "coNhanLienHeBaoGiaRieng": true
+  },
+  {
+    "diaChi": "Duc Hiep, Binh Chanh",
+    "nhanNhap": "Duc Hiep, Binh Chanh",
+    "km": 11.1,
+    "phiDiChuyenHienThi": 56000,
+    "congThucSRS": 48800,
+    "quyTacThayThe": 56000,
+    "khopCongThucSRS": false,
+    "khopQuyTacThayThe": true,
+    "coNhanLienHeBaoGiaRieng": true
+  },
+  {
+    "diaChi": "Can Tho (xa)",
+    "nhanNhap": "Ninh Kieu, Can Tho",
+    "km": 13.4,
+    "phiDiChuyenHienThi": 72000,
+    "congThucSRS": 67200,
+    "quyTacThayThe": 72000,
+    "khopCongThucSRS": false,
+    "khopQuyTacThayThe": true,
+    "coNhanLienHeBaoGiaRieng": true
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "TC-NFR-03-002-T1": {
+    "heThong": "T1",
+    "nutTiepTucDisabledKhiThieuTen": true,
+    "vanOCungBuoc2": true,
+    "coThongBaoLoi": false,
+    "doanLoi": [],
+    "chenhLechSoiChieu": "khong doi",
+    "domLoi": {
+      "inputOuter": "<input class=\"bk-input\" placeholder=\"VD: Bông, Mochi, Mun...\" value=\"\">",
+      "parentHtml": "<h4 class=\"bk-h4\">Thông tin bé cưng</h4><label class=\"bk-label\">Loài &amp; cân nặng</label><div class=\"bk-species-group\"><div class=\"bk-species-label\"><span class=\"material-symbols-outlined \" style=\"font-size: 14px; line-height: 1;\">pets</span>Chó</div><div class=\"bk-pet-grid\"><button class=\"bk-pet \" type=\"button\"><span class=\"material-symbols-outlined \" style=\"font-size: 22px; line-height: 1;\">pets</span><b>Chó mini</b><span>&lt; 3kg</span><em>88.000₫</em></button><button class=\"bk-pet is-on\" type=\"button\"><span class=\"material-symbols-outlined \" style=\"font-size: 22px; line-height: 1;\">pets</span><b>Chó nhỏ</b><span>3–5kg</span><em>155.000₫</em></button><button class=\"bk-pet \" type=\"button\"><span class=\"material-symbols-outlined \" style=\"font-size: 22px; line-height: 1;\">pets</span><b>Chó vừa</b><span>5–10kg</span><em>240.000₫</em></button><button class=\"bk-pet \" type=\"button\"><span cl",
+      "coTheLoi": false,
+      "parentCls": "bk-pane"
+    }
+  },
+  "TC-NFR-03-003-T1": {
+    "heThong": "T1",
+    "coFormLienHe": 0,
+    "soField": 0,
+    "fields": [],
+    "trichLienHe": "celebration\nĐặt lịch online lần đầu — Giảm ngay 10%!\nNEW10\nPet NGON\nTrang chủ\nDịch vụ Spa\nThú cưng bị bỏ rơii\nTuyển dụng\nBlog\nLiên hệ\nlanguage\nVI\n/ EN\ncalendar_month\nĐặt lịch\nforum\nLIÊN HỆ VỚI CHÚNG MÌNH\nPet NGON luôn sẵn sàng lắng nghe.\n\nĐặt lịch, hỏi chăm sóc sau spa, tư vấn nhận nuôi hay hợp tác — chọn kênh phù hợp nhất với bạn. Ghé spa Bình Chánh vui lòng đặt lịch trước.\n\nchat_bubble\nChat qua Zalo\n\nĐặt lịch, theo dõi sau spa và những câu hỏi nhanh — thường phản hồi trong vòng 1 giờ.\n\nzalo.me/0325305143\n\nchat_bubble\nMở Zalo\ncall\nGọi điện\n\nDành cho việc gấp về grooming hoặc cần đổi/hủy lịch hẹn.\n\n(+84) 325 305 143\n\ncall\nGọi ngay\nmail\nEmail\n\nPhù hợp cho hợp tác, ứng tuyển hoặc các trao đổi cần lưu lại văn bản.\n\nhello@petngon.vn\n\nmail\nGửi email\nlocation_on\nGhé spa\n\nGhé thăm để spa, giao nhận thú cưng hoặc gặp đội ngũ — vui lòng đặt lịch trước.\n\n1.09 block A1, chung cư Westgate, Tân Nhựt,"
+  }
+}

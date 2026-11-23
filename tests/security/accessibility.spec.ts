@@ -73,7 +73,7 @@ test.describe('NFR-06 — Khả năng tiếp cận', () => {
     writeFileSync(AXE_CSV, `﻿${toCsv(rows)}\n`, 'utf8');
   });
 
-  test('TC-NFR-06-001: axe-core không có vi phạm mức critical trên cả 3 site', () => {
+  test('TC-NFR-06-001: axe-core không có vi phạm mức critical', () => {
     const critical = scans.flatMap((scan) =>
       scan.violations
         .filter((v) => v.impact === 'critical')
@@ -82,7 +82,7 @@ test.describe('NFR-06 — Khả năng tiếp cận', () => {
     expect(critical, `vi phạm axe-core mức critical: ${critical.join('; ')}`).toEqual([]);
   });
 
-  test('TC-NFR-06-002: mọi vùng chữ đạt tương phản ≥ 4,5:1 trên cả 3 site', () => {
+  test('TC-NFR-06-002: Mọi vùng chữ đạt tương phản ≥ 4,5:1', () => {
     const violations = scans.flatMap((scan) =>
       scan.violations
         .filter((v) => v.id === 'color-contrast')
@@ -91,7 +91,7 @@ test.describe('NFR-06 — Khả năng tiếp cận', () => {
     expect(violations, `vi phạm tương phản màu: ${violations.join('; ')}`).toEqual([]);
   });
 
-  test('TC-NFR-06-003: mọi trường form có nhãn gắn liền trên cả 3 site', () => {
+  test('TC-NFR-06-003: Mọi trường form có nhãn gắn liền', () => {
     const violations = scans.flatMap((scan) =>
       scan.violations
         .filter((v) => v.id === 'label' || v.id === 'form-field-multiple-labels')
@@ -100,7 +100,7 @@ test.describe('NFR-06 — Khả năng tiếp cận', () => {
     expect(violations, `vi phạm nhãn trường form: ${violations.join('; ')}`).toEqual([]);
   });
 
-  test('TC-NFR-06-004: mọi ảnh nội dung có thuộc tính alt trên cả 3 site', () => {
+  test('TC-NFR-06-004: Mọi ảnh nội dung có thuộc tính alt', () => {
     const violations = scans.flatMap((scan) =>
       scan.violations
         .filter((v) => v.id === 'image-alt')
@@ -109,7 +109,7 @@ test.describe('NFR-06 — Khả năng tiếp cận', () => {
     expect(violations, `vi phạm thuộc tính alt: ${violations.join('; ')}`).toEqual([]);
   });
 
-  test('TC-NFR-06-005: mỗi trang có đúng một tiêu đề h1 trên cả 3 site', () => {
+  test('TC-NFR-06-005: Mỗi trang có đúng một tiêu đề h1', () => {
     const details = scans.filter((scan) => scan.h1Count !== 1).map((scan) => `${scan.id} có ${scan.h1Count} phần tử h1`);
     expect(details, `tiêu đề h1 không đúng: ${details.join('; ')}`).toEqual([]);
   });

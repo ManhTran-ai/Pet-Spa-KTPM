@@ -1,0 +1,101 @@
+﻿node.exe : npm warn Unknown env config "devdir". This will stop working in the next major version of npm. See `npm 
+help npmrc` for supported config options.
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (npm warn Unknow...config options.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+Running 59 tests using 1 worker
+
+(node:27544) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [t1] ΓÇ║ tests\e2e\t1\m1-navigation.spec.ts:10:3 ΓÇ║ T1 Pet NGON ΓÇö M1 Truy cß║¡p v├á ─æiß╗üu h╞░ß╗¢ng ΓÇ║ TC-T1-M1-001: Trang chß╗º Pet NGON trß║ú HTTP 200 v├á hiß╗ân thß╗ï ti├¬u ─æß╗ü + ─æiß╗üu h╞░ß╗¢ng ch├¡nh (1.5s)
+  ok  2 [t1] ΓÇ║ tests\e2e\t1\m1-navigation.spec.ts:16:3 ΓÇ║ T1 Pet NGON ΓÇö M1 Truy cß║¡p v├á ─æiß╗üu h╞░ß╗¢ng ΓÇ║ TC-T1-M1-002: Mß╗ìi li├¬n kß║┐t menu ─æiß╗üu h╞░ß╗¢ng ─æß║┐n trang con trß║ú HTTP 200 (4.7s)
+  x   3 [t1] ΓÇ║ tests\e2e\t1\m1-navigation.spec.ts:31:3 ΓÇ║ T1 Pet NGON ΓÇö M1 Truy cß║¡p v├á ─æiß╗üu h╞░ß╗¢ng ΓÇ║ TC-T1-M1-003: Trang hiß╗ân thß╗ï ─æß╗º ─æß╗ïa chß╗ë, ─æiß╗çn thoß║íi, email v├á giß╗¥ mß╗ƒ cß╗¡a (1.9s)
+(node:38492) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  4 [t1] ΓÇ║ tests\e2e\t1\m1-navigation.spec.ts:51:3 ΓÇ║ T1 Pet NGON ΓÇö M1 Truy cß║¡p v├á ─æiß╗üu h╞░ß╗¢ng ΓÇ║ TC-T1-M1-004: Kh├┤ng c├│ li├¬n kß║┐t chß║┐t 404 trong menu v├á footer (7.2s)
+  x   5 [t1] ΓÇ║ tests\e2e\t1\m1-navigation.spec.ts:68:3 ΓÇ║ T1 Pet NGON ΓÇö M1 Truy cß║¡p v├á ─æiß╗üu h╞░ß╗¢ng ΓÇ║ TC-T1-M1-005: Trang chß╗º kh├┤ng cuß╗Ön ngang ß╗ƒ m├án h├¼nh 360px (1.8s)
+(node:34820) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  6 [t1] ΓÇ║ tests\e2e\t1\m1-navigation.spec.ts:85:3 ΓÇ║ T1 Pet NGON ΓÇö M1 Truy cß║¡p v├á ─æiß╗üu h╞░ß╗¢ng ΓÇ║ TC-T1-M1-006: URL sai hiß╗ân thß╗ï trang lß╗ùi th├ón thiß╗çn, kh├┤ng lß╗Ö stack trace (1.2s)
+  ok  7 [t1] ΓÇ║ tests\e2e\t1\m2-catalogue.spec.ts:29:3 ΓÇ║ T1 Pet NGON ΓÇö M2 Danh mß╗Ñc dß╗ïch vß╗Ñ ΓÇ║ TC-T1-M2-001: Mß╗ùi dß╗ïch vß╗Ñ trong danh mß╗Ñc c├│ ─æß╗º t├¬n, m├┤ tß║ú, gi├í v├á thß╗¥i l╞░ß╗úng (1.4s)
+  x   8 [t1] ΓÇ║ tests\e2e\t1\m2-catalogue.spec.ts:48:3 ΓÇ║ T1 Pet NGON ΓÇö M2 Danh mß╗Ñc dß╗ïch vß╗Ñ ΓÇ║ TC-T1-M2-002: Mß╗ùi dß╗ïch vß╗Ñ n├¬u r├╡ th├ánh phß║ºn bao gß╗ôm (1.4s)
+(node:28816) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  9 [t1] ΓÇ║ tests\e2e\t1\m2-catalogue.spec.ts:64:3 ΓÇ║ T1 Pet NGON ΓÇö M2 Danh mß╗Ñc dß╗ïch vß╗Ñ ΓÇ║ TC-T1-M2-003: Dß╗ïch vß╗Ñ kh├┤ng hß╗ù trß╗ú tß║íi nh├á c├│ nh├ún Chß╗ë tß║íi spa (1.5s)
+  ok 10 [t1] ΓÇ║ tests\e2e\t1\m2-catalogue.spec.ts:77:3 ΓÇ║ T1 Pet NGON ΓÇö M2 Danh mß╗Ñc dß╗ïch vß╗Ñ ΓÇ║ TC-T1-M2-004: Dß╗ïch vß╗Ñ hß╗ù trß╗ú tß║íi nh├á c├│ nh├ún C├│ tß║¡n nh├á (1.3s)
+  ok 11 [t1] ΓÇ║ tests\e2e\t1\m2-catalogue.spec.ts:90:3 ΓÇ║ T1 Pet NGON ΓÇö M2 Danh mß╗Ñc dß╗ïch vß╗Ñ ΓÇ║ TC-T1-M2-005: G├│i phß╗ò biß╗çn ─æ╞░ß╗úc ─æ├ính dß║Ñu r├╡ r├áng (1.4s)
+  ok 12 [t1] ΓÇ║ tests\e2e\t1\m2-catalogue.spec.ts:111:3 ΓÇ║ T1 Pet NGON ΓÇö M2 Danh mß╗Ñc dß╗ïch vß╗Ñ ΓÇ║ TC-T1-M2-006: Mß╗ùi g├│i tß║íi nh├á ghi r├╡ mß╗⌐c phß╗Ñ thu cß╗Öng th├¬m (1.4s)
+  ok 13 [t1] ΓÇ║ tests\e2e\t1\m2-catalogue.spec.ts:122:3 ΓÇ║ T1 Pet NGON ΓÇö M2 Danh mß╗Ñc dß╗ïch vß╗Ñ ΓÇ║ TC-T1-M2-007: Sß╗æ dß╗ïch vß╗Ñ ni├¬m yß║┐t khß╗¢p bß║úng gi├í mß╗Ñc 3 cß╗ºa SRS (1.7s)
+  ok 14 [t1] ΓÇ║ tests\e2e\t1\m3-pricing.spec.ts:67:3 ΓÇ║ T1 Pet NGON ΓÇö M3 Bß║úng gi├í theo c├ón nß║╖ng ΓÇ║ TC-T1-M3-001: Bß║úng gi├í c├│ ─æß╗º cß╗Öt cho mß╗ìi bß║¡c c├ón nß║╖ng v├á mß╗ìi dß╗ïch vß╗Ñ (1.7s)
+  ok 15 [t1] ΓÇ║ tests\e2e\t1\m3-pricing.spec.ts:92:3 ΓÇ║ T1 Pet NGON ΓÇö M3 Bß║úng gi├í theo c├ón nß║╖ng ΓÇ║ TC-T1-M3-002: Tra bß║úng gi├í ─æ├║ng cho (Ch├│, bß║¡c 3-5kg) + dß╗ïch vß╗Ñ ─æ├ú chß╗ìn (2.6s)
+  ok 16 [t1] ΓÇ║ tests\e2e\t1\m3-pricing.spec.ts:115:3 ΓÇ║ T1 Pet NGON ΓÇö M3 Bß║úng gi├í theo c├ón nß║╖ng ΓÇ║ TC-T1-M3-003: C├╣ng bß║¡c c├ón nß║╖ng nh╞░ng M├¿o cho gi├í kh├íc Ch├│ (1.4s)
+  ok 17 [t1] ΓÇ║ tests\e2e\t1\m3-pricing.spec.ts:128:3 ΓÇ║ T1 Pet NGON ΓÇö M3 Bß║úng gi├í theo c├ón nß║╖ng ΓÇ║ TC-T1-M3-004: Trang gi├í ghi r├╡ gi├í cuß╗æi x├íc nhß║¡n tß║íi spa, gi├í hiß╗ân thß╗ï chß╗ë l├á dß╗▒ kiß║┐n (1.4s)
+  ok 18 [t1] ΓÇ║ tests\e2e\t1\m3-pricing.spec.ts:142:3 ΓÇ║ T1 Pet NGON ΓÇö M3 Bß║úng gi├í theo c├ón nß║╖ng ΓÇ║ TC-T1-M3-005: G├│i hiß╗ân thß╗ï mß╗⌐c gi├í tß╗½ ...Γé½ k├¿m khoß║úng min-max (1.4s)
+  x  19 [t1] ΓÇ║ tests\e2e\t1\m3-pricing.spec.ts:162:3 ΓÇ║ T1 Pet NGON ΓÇö M3 Bß║úng gi├í theo c├ón nß║╖ng ΓÇ║ TC-T1-M3-006: Khoß║úng min-max cß╗ºa g├│i khß╗¢p bß║úng gi├í (1.9s)
+(node:39096) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 20 [t1] ΓÇ║ tests\e2e\t1\m3-pricing.spec.ts:216:5 ΓÇ║ T1 Pet NGON ΓÇö M3 Bß║úng gi├í theo c├ón nß║╖ng ΓÇ║ TC-T1-M3-007: BVA ng╞░ß╗íng 2.9kg thuß╗Öc bß║¡c "Ch├│ mini" (1.5s)
+  ok 21 [t1] ΓÇ║ tests\e2e\t1\m3-pricing.spec.ts:216:5 ΓÇ║ T1 Pet NGON ΓÇö M3 Bß║úng gi├í theo c├ón nß║╖ng ΓÇ║ TC-T1-M3-008: BVA ng╞░ß╗íng 3kg thuß╗Öc bß║¡c "Ch├│ nhß╗Å" (1.5s)
+  ok 22 [t1] ΓÇ║ tests\e2e\t1\m3-pricing.spec.ts:216:5 ΓÇ║ T1 Pet NGON ΓÇö M3 Bß║úng gi├í theo c├ón nß║╖ng ΓÇ║ TC-T1-M3-009: BVA ng╞░ß╗íng 3.1kg thuß╗Öc bß║¡c "Ch├│ nhß╗Å" (1.5s)
+  x  23 [t1] ΓÇ║ tests\e2e\t1\m3-pricing.spec.ts:216:5 ΓÇ║ T1 Pet NGON ΓÇö M3 Bß║úng gi├í theo c├ón nß║╖ng ΓÇ║ TC-T1-M3-010: BVA ng╞░ß╗íng 5kg thuß╗Öc bß║¡c "Ch├│ vß╗½a" (1.5s)
+(node:5872) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 24 [t1] ΓÇ║ tests\e2e\t1\m3-pricing.spec.ts:216:5 ΓÇ║ T1 Pet NGON ΓÇö M3 Bß║úng gi├í theo c├ón nß║╖ng ΓÇ║ TC-T1-M3-011: BVA ng╞░ß╗íng 5.1kg thuß╗Öc bß║¡c "Ch├│ vß╗½a" (1.5s)
+  ok 25 [t1] ΓÇ║ tests\e2e\t1\m3-pricing.spec.ts:216:5 ΓÇ║ T1 Pet NGON ΓÇö M3 Bß║úng gi├í theo c├ón nß║╖ng ΓÇ║ TC-T1-M3-012: BVA ng╞░ß╗íng 9.9kg thuß╗Öc bß║¡c "Ch├│ vß╗½a" (1.5s)
+  x  26 [t1] ΓÇ║ tests\e2e\t1\m3-pricing.spec.ts:216:5 ΓÇ║ T1 Pet NGON ΓÇö M3 Bß║úng gi├í theo c├ón nß║╖ng ΓÇ║ TC-T1-M3-013: BVA ng╞░ß╗íng 10kg thuß╗Öc bß║¡c "Ch├│ lß╗¢n" (1.5s)
+(node:31160) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 27 [t1] ΓÇ║ tests\e2e\t1\m3-pricing.spec.ts:216:5 ΓÇ║ T1 Pet NGON ΓÇö M3 Bß║úng gi├í theo c├ón nß║╖ng ΓÇ║ TC-T1-M3-014: BVA ng╞░ß╗íng 10.1kg thuß╗Öc bß║¡c "Ch├│ lß╗¢n" (1.5s)
+  x  28 [t1] ΓÇ║ tests\e2e\t1\m3-pricing.spec.ts:216:5 ΓÇ║ T1 Pet NGON ΓÇö M3 Bß║úng gi├í theo c├ón nß║╖ng ΓÇ║ TC-T1-M3-015: BVA ng╞░ß╗íng 15kg thuß╗Öc bß║¡c "Ch├│ rß║Ñt lß╗¢n" (1.4s)
+(node:35912) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  29 [t1] ΓÇ║ tests\e2e\t1\m3-pricing.spec.ts:216:5 ΓÇ║ T1 Pet NGON ΓÇö M3 Bß║úng gi├í theo c├ón nß║╖ng ΓÇ║ TC-T1-M3-016: BVA ng╞░ß╗íng 20kg thuß╗Öc bß║¡c "Ch├│ ─æß║íi" (1.5s)
+(node:18624) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  30 [t1] ΓÇ║ tests\e2e\t1\m3-pricing.spec.ts:216:5 ΓÇ║ T1 Pet NGON ΓÇö M3 Bß║úng gi├í theo c├ón nß║╖ng ΓÇ║ TC-T1-M3-017: BVA ng╞░ß╗íng 25kg thuß╗Öc bß║¡c "Ch├│ si├¬u ─æß║íi" (1.5s)
+(node:36092) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  31 [t1] ΓÇ║ tests\e2e\t1\m3-pricing.spec.ts:216:5 ΓÇ║ T1 Pet NGON ΓÇö M3 Bß║úng gi├í theo c├ón nß║╖ng ΓÇ║ TC-T1-M3-018: BVA ng╞░ß╗íng 30.1kg thuß╗Öc bß║¡c "Ch├│ si├¬u ─æß║íi" (1.5s)
+(node:38940) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  32 [t1] ΓÇ║ tests\e2e\t1\m4-booking.spec.ts:27:3 ΓÇ║ T1 Pet NGON ΓÇö M4 Wizard ─æß║╖t lß╗ïch ΓÇ║ TC-T1-M4-001: Form giß╗» chß╗ù hiß╗ân thß╗ï ─æß╗º tr╞░ß╗¥ng bß║»t buß╗Öc v├á tuß╗│ chß╗ìn (19.5s)
+(node:37388) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 33 [t1] ΓÇ║ tests\e2e\t1\m4-booking.spec.ts:59:3 ΓÇ║ T1 Pet NGON ΓÇö M4 Wizard ─æß║╖t lß╗ïch ΓÇ║ TC-T1-M4-002: Bß╗Å trß╗æng tr╞░ß╗¥ng bß║»t buß╗Öc th├¼ form kh├┤ng gß╗¡i ─æ╞░ß╗úc v├á b├ío ─æ├║ng tr╞░ß╗¥ng lß╗ùi (4.2s)
+  ok 34 [t1] ΓÇ║ tests\e2e\t1\m4-booking.spec.ts:86:3 ΓÇ║ T1 Pet NGON ΓÇö M4 Wizard ─æß║╖t lß╗ïch ΓÇ║ TC-T1-M4-003: B╞░ß╗¢c Lß╗ïch hß║╣n cß╗ºa T1 hiß╗ân thß╗ï 7 ng├áy cß╗æ ─æß╗ïnh v├á 8 khung giß╗¥ 08:30-17:00 (3.5s)
+  ok 35 [t1] ΓÇ║ tests\e2e\t1\m4-booking.spec.ts:114:3 ΓÇ║ T1 Pet NGON ΓÇö M4 Wizard ─æß║╖t lß╗ïch ΓÇ║ TC-T1-M4-004: Wizard bß║»t buß╗Öc qua b╞░ß╗¢c chß╗ìn lo├ái, kh├┤ng bß╗Å qua ─æ╞░ß╗úc (2.2s)
+  ok 36 [t1] ΓÇ║ tests\e2e\t1\m4-booking.spec.ts:128:3 ΓÇ║ T1 Pet NGON ΓÇö M4 Wizard ─æß║╖t lß╗ïch ΓÇ║ TC-T1-M4-005: Wizard bß║»t buß╗Öc qua b╞░ß╗¢c chß╗ìn c├ón nß║╖ng, kh├┤ng bß╗Å qua ─æ╞░ß╗úc (4.0s)
+  ok 37 [t1] ΓÇ║ tests\e2e\t1\m4-booking.spec.ts:141:3 ΓÇ║ T1 Pet NGON ΓÇö M4 Wizard ─æß║╖t lß╗ïch ΓÇ║ TC-T1-M6-001: B╞░ß╗¢c 3 wizard cho lß╗▒a chß╗ìn ─æß║┐n spa (4.8s)
+  ok 38 [t1] ΓÇ║ tests\e2e\t1\m4-booking.spec.ts:163:3 ΓÇ║ T1 Pet NGON ΓÇö M4 Wizard ─æß║╖t lß╗ïch ΓÇ║ TC-T1-M6-002: B╞░ß╗¢c 3 wizard cho lß╗▒a chß╗ìn tß║íi nh├á (4.8s)
+  ok 39 [t1] ΓÇ║ tests\e2e\t1\m4-booking.spec.ts:177:3 ΓÇ║ T1 Pet NGON ΓÇö M4 Wizard ─æß║╖t lß╗ïch ΓÇ║ TC-T1-M4-012: ST: quay lß║íi b╞░ß╗¢c ─æß║ºu ─æ╞░ß╗úc v├á c├│ thß╗â ─æß╗òi lß╗▒a chß╗ìn (2.2s)
+  ok 40 [t1] ΓÇ║ tests\e2e\t1\m5-process.spec.ts:13:3 ΓÇ║ T1 Pet NGON ΓÇö M5 Quy tr├¼nh ─æß║╖t lß╗ïch ΓÇ║ TC-T1-M5-001: Trang m├┤ tß║ú quy tr├¼nh 4 b╞░ß╗¢c tß╗½ ─æß║╖t lß╗ïch ─æß║┐n nhß║¡n th├║ c╞░ng (1.5s)
+  ok 41 [t1] ΓÇ║ tests\e2e\t1\m5-process.spec.ts:34:3 ΓÇ║ T1 Pet NGON ΓÇö M5 Quy tr├¼nh ─æß║╖t lß╗ïch ΓÇ║ TC-T1-M5-002: C├│ n├¬u x├íc nhß║¡n lß╗ïch trong 5 ph├║t qua Zalo (1.5s)
+  x  42 [t1] ΓÇ║ tests\e2e\t1\m6-surcharge.spec.ts:58:3 ΓÇ║ T1 Pet NGON ΓÇö M6 Phß╗Ñ thu tß║íi nh├á ΓÇ║ TC-T1-M6-003: DT phß╗Ñ thu di chuyß╗ân: 0 km kh├┤ng ph├ít sinh phß╗Ñ thu (7.0s)
+(node:19392) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 43 [t1] ΓÇ║ tests\e2e\t1\m6-surcharge.spec.ts:66:3 ΓÇ║ T1 Pet NGON ΓÇö M6 Phß╗Ñ thu tß║íi nh├á ΓÇ║ TC-T1-M6-004: DT phß╗Ñ thu di chuyß╗ân: 2 km kh├┤ng ph├ít sinh phß╗Ñ thu (7.2s)
+  ok 44 [t1] ΓÇ║ tests\e2e\t1\m6-surcharge.spec.ts:77:3 ΓÇ║ T1 Pet NGON ΓÇö M6 Phß╗Ñ thu tß║íi nh├á ΓÇ║ TC-T1-M6-005: DT phß╗Ñ thu di chuyß╗ân: 5 km miß╗àn ph├¡ ─æ├║ng mß╗æc (7.1s)
+  ok 45 [t1] ΓÇ║ tests\e2e\t1\m6-surcharge.spec.ts:86:3 ΓÇ║ T1 Pet NGON ΓÇö M6 Phß╗Ñ thu tß║íi nh├á ΓÇ║ TC-T1-M6-006: DT phß╗Ñ thu di chuyß╗ân: 6 km thu 8.000─æ (7.0s)
+  ok 46 [t1] ΓÇ║ tests\e2e\t1\m6-surcharge.spec.ts:97:3 ΓÇ║ T1 Pet NGON ΓÇö M6 Phß╗Ñ thu tß║íi nh├á ΓÇ║ TC-T1-M6-007: DT phß╗Ñ thu di chuyß╗ân: 7 km thu 16.000─æ (7.0s)
+  ok 47 [t1] ΓÇ║ tests\e2e\t1\m6-surcharge.spec.ts:108:3 ΓÇ║ T1 Pet NGON ΓÇö M6 Phß╗Ñ thu tß║íi nh├á ΓÇ║ TC-T1-M6-020: Phß╗Ñ thu di chuyß╗ân hiß╗ân thß╗ï ngay khi nhß║¡p ─æß╗ïa chß╗ë (7.1s)
+  x  48 [t1] ΓÇ║ tests\e2e\t1\m6-surcharge.spec.ts:124:3 ΓÇ║ T1 Pet NGON ΓÇö M6 Phß╗Ñ thu tß║íi nh├á ΓÇ║ TC-T1-M6-011: G├│i tß║»m tß║íi nh├á cß╗Öng phß╗Ñ thu cß╗æ ─æß╗ïnh 50.000─æ (1.5s)
+(node:29008) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 49 [t1] ΓÇ║ tests\e2e\t1\m6-surcharge.spec.ts:131:3 ΓÇ║ T1 Pet NGON ΓÇö M6 Phß╗Ñ thu tß║íi nh├á ΓÇ║ TC-T1-M6-012: G├│i cß║ío tß║íi nh├á cß╗Öng phß╗Ñ thu cß╗æ ─æß╗ïnh 80.000─æ (3.3s)
+  ok 50 [t1] ΓÇ║ tests\e2e\t1\m6-surcharge.spec.ts:138:3 ΓÇ║ T1 Pet NGON ΓÇö M6 Phß╗Ñ thu tß║íi nh├á ΓÇ║ TC-T1-M6-013: Combo tß║»m cß║ío tß║íi nh├á cß╗Öng phß╗Ñ thu cß╗æ ─æß╗ïnh 100.000─æ (1.5s)
+  ok 51 [t1] ΓÇ║ tests\e2e\t1\m6-surcharge.spec.ts:145:3 ΓÇ║ T1 Pet NGON ΓÇö M6 Phß╗Ñ thu tß║íi nh├á ΓÇ║ TC-T1-M6-014: Tß╗òng tiß╗ün = gi├í g├│i + phß╗Ñ thu cß╗æ ─æß╗ïnh + phß╗Ñ thu di chuyß╗ân (7.0s)
+  ok 52 [t1] ΓÇ║ tests\e2e\t1\m6-surcharge.spec.ts:167:3 ΓÇ║ T1 Pet NGON ΓÇö M6 Phß╗Ñ thu tß║íi nh├á ΓÇ║ TC-T1-M6-015: Mß╗ùi g├│i tß║íi nh├á ghi r├╡ ch╞░a gß╗ôm ph├¡ di chuyß╗ân (1.5s)
+  ok 53 [t1] ΓÇ║ tests\e2e\t1\m6-surcharge.spec.ts:179:3 ΓÇ║ T1 Pet NGON ΓÇö M6 Phß╗Ñ thu tß║íi nh├á ΓÇ║ TC-T1-M6-016: Kh├┤ng g├│i n├áo tß║íi nh├á ghi sai th├ánh ─æ├ú gß╗ôm ph├¡ di chuyß╗ân (1.5s)
+  ok 54 [t1] ΓÇ║ tests\e2e\t1\m6-surcharge.spec.ts:186:3 ΓÇ║ T1 Pet NGON ΓÇö M6 Phß╗Ñ thu tß║íi nh├á ΓÇ║ TC-T1-M6-017: Bß║úng khoß║úng c├ích c├│ ─æß╗º 4 dß║úng 0-5, 5-10, 10-15, tr├¬n 15 km (1.4s)
+  x  55 [t1] ΓÇ║ tests\e2e\t1\m6-surcharge.spec.ts:198:3 ΓÇ║ T1 Pet NGON ΓÇö M6 Phß╗Ñ thu tß║íi nh├á ΓÇ║ TC-T1-M6-018: Tr├¬n 15 km hiß╗ân thß╗ï Li├¬n hß╗ç b├ío gi├í ri├¬ng theo lß╗Ö tr├¼nh (7.0s)
+(node:38092) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  56 [t1] ΓÇ║ tests\e2e\t1\m6-surcharge.spec.ts:210:3 ΓÇ║ T1 Pet NGON ΓÇö M6 Phß╗Ñ thu tß║íi nh├á ΓÇ║ TC-T1-M6-019: Nhß║¡p ─æß╗ïa chß╗ë xa khoß║úng 20 km kh├┤ng hiß╗ân thß╗ï con sß╗æ phß╗Ñ thu cß╗æ ─æß╗ïnh (7.2s)
+(node:7488) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 57 [t1] ΓÇ║ tests\e2e\t1\m7-info-i18n.spec.ts:13:3 ΓÇ║ T1 Pet NGON ΓÇö M7 Th├┤ng tin, li├¬n hß╗ç v├á FAQ ΓÇ║ TC-T1-M7-001: Chuyß╗ân sang tiß║┐ng Anh vß║½n ß╗ƒ trang hiß╗çn tß║íi v├á dß╗ïch ─æß╗º (2.9s)
+  ok 58 [t1] ΓÇ║ tests\e2e\t1\m7-info-i18n.spec.ts:45:3 ΓÇ║ T1 Pet NGON ΓÇö M7 Th├┤ng tin, li├¬n hß╗ç v├á FAQ ΓÇ║ TC-T1-M7-002: C├│ ├¡t nhß║Ñt 2 k├¬nh li├¬n hß╗ç hoß║ít ─æß╗Öng, li├¬n kß║┐t Zalo mß╗ƒ ─æ├║ng ß╗⌐ng dß╗Ñng (1.6s)

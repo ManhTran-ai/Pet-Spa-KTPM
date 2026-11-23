@@ -1,0 +1,35 @@
+{
+  "active": "Bé cưng",
+  "html": "<div class=\"bk-pane\"><h4 class=\"bk-h4\">Thông tin bé cưng</h4><label class=\"bk-label\">Loài &amp; cân nặng</label><div class=\"bk-species-group\"><div class=\"bk-species-label\"><span class=\"material-symbols-outlined \" style=\"font-size: 14px; line-height: 1;\">pets</span>Chó</div><div class=\"bk-pet-grid\"><button class=\"bk-pet \" type=\"button\"><span class=\"material-symbols-outlined \" style=\"font-size: 22px; line-height: 1;\">pets</span><b>Chó mini</b><span>&lt; 3kg</span><em>130.000₫</em></button><button class=\"bk-pet is-on\" type=\"button\"><span class=\"material-symbols-outlined \" style=\"font-size: 22px; line-height: 1;\">pets</span><b>Chó nhỏ</b><span>3–5kg</span><em>265.000₫</em></button><button class=\"bk-pet \" type=\"button\"><span class=\"material-symbols-outlined \" style=\"font-size: 22px; line-height: 1;\">pets</span><b>Chó vừa</b><span>5–10kg</span><em>375.000₫</em></button><button class=\"bk-pet \" type=\"button\"><span class=\"material-symbols-outlined \" style=\"font-size: 22px; line-height: 1;\">pets</span><b>Chó lớn</b><span>10–15kg</span><em>460.000₫</em></button><button class=\"bk-pet \" type=\"button\"><span class=\"material-symbols-outlined \" style=\"font-size: 22px; line-height: 1;\">pets</span><b>Chó rất lớn</b><span>15–20kg</span><em>550.000₫</em></button><button class=\"bk-pet \" type=\"button\"><span class=\"material-symbols-outlined \" style=\"font-size: 22px; line-height: 1;\">pets</span><b>Chó đại</b><span>20–25kg</span><em>640.000₫</em></button><button class=\"bk-pet \" type=\"button\"><span class=\"material-symbols-outlined \" style=\"font-size: 22px; line-height: 1;\">pets</span><b>Chó siêu đại</b><span>25–30kg</span><em>725.000₫</em></button></div></div><label class=\"bk-label\">Tên bé cưng</label><input class=\"bk-input\" placeholder=\"VD: Bông, Mochi, Mun...\" value=\"\"><label class=\"bk-label\">Ghi chú (tùy chọn)</label><textarea class=\"bk-input bk-textarea\" placeholder=\"Bé hơi nhát, cần được dỗ; có vết thương ở chân trái...\"></textarea><div class=\"bk-tip\"><span class=\"material-symbols-outlined \" style=\"font-size: 16px; line-height: 1;\">info</span><span>Khi thợ đến (hoặc tới spa), bé sẽ được cân lại. Nếu cân chênh sang khoảng khác, giá điều chỉnh đúng theo bảng — không phát sinh phí ẩn.</span></div></div>",
+  "summary": [
+    "Combo Tắm + Vệ sinh · Chó nhỏ (3–5kg)265.000₫",
+    "Tạm tính265.000₫"
+  ],
+  "apiCalls": [
+    {
+      "method": "GET",
+      "url": "https://petngon.vn/vi/pets?_rsc=oewu8",
+      "postData": null
+    },
+    {
+      "method": "GET",
+      "url": "https://petngon.vn/vi/careers?_rsc=oewu8",
+      "postData": null
+    },
+    {
+      "method": "GET",
+      "url": "https://petngon.vn/vi/blog?_rsc=oewu8",
+      "postData": null
+    },
+    {
+      "method": "GET",
+      "url": "https://petngon.vn/vi/contact?_rsc=oewu8",
+      "postData": null
+    },
+    {
+      "method": "POST",
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-95JRC61WSG&gtm=45je6bh1v9245127125za20ozb9245128752zd9245128752xf1&_p=1795363535324&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1139712133.1795363536&frm=0&ngs=1&pscdl=noapi&rcb=19&sr=1440x900&uaa=x86&uab=64&uafvl=Not-A.Brand%3B99.0.0.0%7CGoogle%2520Chrome%3B157.0.8103.79%7CChromium%3B157.0.8103.79&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=vi-vn&_s=1&tag_exp=115616985~115938465~115938468~120213116~120385422~120469145~120469153~121246026~121246034&sid=1795363535&sct=1&seg=0&dl=https%3A%2F%2Fpetngon.vn%2Fvi&dt=Pet%20NGON%20%E2%80%94%20Spa%20%26%20Grooming%20T%E1%BA%ADn%20Nh%C3%A0&en=page_view&_fv=1&_nsi=1&_ss=1&tfd=2364",
+      "postData": null
+    }
+  ]
+}

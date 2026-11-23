@@ -1,0 +1,263 @@
+{
+  "bangGia": [
+    {
+      "loai": "Chó",
+      "nhan": "Chó mini< 3kg",
+      "gia": [
+        "88.000₫",
+        "145.000₫",
+        "88.000₫",
+        "130.000₫",
+        "240.000₫",
+        "185.000₫"
+      ]
+    },
+    {
+      "loai": "Chó",
+      "nhan": "Chó nhỏ3–5kg",
+      "gia": [
+        "155.000₫",
+        "165.000₫",
+        "110.000₫",
+        "265.000₫",
+        "405.000₫",
+        "350.000₫"
+      ]
+    },
+    {
+      "loai": "Chó",
+      "nhan": "Chó vừa5–10kg",
+      "gia": [
+        "240.000₫",
+        "220.000₫",
+        "165.000₫",
+        "375.000₫",
+        "515.000₫",
+        "460.000₫"
+      ]
+    },
+    {
+      "loai": "Chó",
+      "nhan": "Chó lớn10–15kg",
+      "gia": [
+        "350.000₫",
+        "275.000₫",
+        "220.000₫",
+        "460.000₫",
+        "605.000₫",
+        "550.000₫"
+      ]
+    },
+    {
+      "loai": "Chó",
+      "nhan": "Chó rất lớn15–20kg",
+      "gia": [
+        "460.000₫",
+        "330.000₫",
+        "275.000₫",
+        "550.000₫",
+        "660.000₫",
+        "605.000₫"
+      ]
+    },
+    {
+      "loai": "Chó",
+      "nhan": "Chó đại20–25kg",
+      "gia": [
+        "570.000₫",
+        "385.000₫",
+        "330.000₫",
+        "640.000₫",
+        "750.000₫",
+        "695.000₫"
+      ]
+    },
+    {
+      "loai": "Chó",
+      "nhan": "Chó siêu đại25–30kg",
+      "gia": [
+        "660.000₫",
+        "440.000₫",
+        "385.000₫",
+        "725.000₫",
+        "835.000₫",
+        "780.000₫"
+      ]
+    },
+    {
+      "loai": "Mèo",
+      "nhan": "Mèo mini≤ 3kg",
+      "gia": [
+        "110.000₫",
+        "160.000₫",
+        "110.000₫",
+        "155.000₫",
+        "240.000₫",
+        "210.000₫"
+      ]
+    },
+    {
+      "loai": "Mèo",
+      "nhan": "Mèo nhỏ3–5kg",
+      "gia": [
+        "165.000₫",
+        "275.000₫",
+        "165.000₫",
+        "275.000₫",
+        "415.000₫",
+        "365.000₫"
+      ]
+    },
+    {
+      "loai": "Mèo",
+      "nhan": "Mèo vừa5–10kg",
+      "gia": [
+        "275.000₫",
+        "370.000₫",
+        "220.000₫",
+        "405.000₫",
+        "565.000₫",
+        "495.000₫"
+      ]
+    },
+    {
+      "loai": "Mèo",
+      "nhan": "Mèo lớn10–15kg",
+      "gia": [
+        "385.000₫",
+        "440.000₫",
+        "275.000₫",
+        "495.000₫",
+        "665.000₫",
+        "585.000₫"
+      ]
+    },
+    {
+      "loai": "Mèo",
+      "nhan": "Mèo rất lớn15–20kg",
+      "gia": [
+        "460.000₫",
+        "455.000₫",
+        "330.000₫",
+        "550.000₫",
+        "690.000₫",
+        "605.000₫"
+      ]
+    },
+    {
+      "loai": "Mèo",
+      "nhan": "Mèo đại20–25kg",
+      "gia": [
+        "570.000₫",
+        "520.000₫",
+        "385.000₫",
+        "640.000₫",
+        "795.000₫",
+        "695.000₫"
+      ]
+    },
+    {
+      "loai": "Mèo",
+      "nhan": "Mèo siêu đại25–30kg",
+      "gia": [
+        "660.000₫",
+        "585.000₫",
+        "440.000₫",
+        "725.000₫",
+        "890.000₫",
+        "780.000₫"
+      ]
+    }
+  ],
+  "headerBangGia": [
+    "LOÀI & CÂN NẶNG",
+    "TẮM",
+    "CẮT TỈA LÔNG",
+    "CẠO LÔNG",
+    "COMBO TẮM + VỆ SINH",
+    "COMBO TẮM + CẮT TỈA",
+    "COMBO TẮM + CẠO"
+  ],
+  "tam": {
+    "buoc1": [
+      {
+        "on": true,
+        "text": "bathtubTắm88.000₫ – 660.000₫schedule45'home_workCó tận nhàcheck_circle"
+      }
+    ],
+    "buoc2": [
+      {
+        "on": false,
+        "text": "petsChó mini< 3kg88.000₫"
+      },
+      {
+        "on": true,
+        "text": "petsChó nhỏ3–5kg155.000₫"
+      },
+      {
+        "on": false,
+        "text": "petsChó vừa5–10kg240.000₫"
+      },
+      {
+        "on": false,
+        "text": "petsChó lớn10–15kg350.000₫"
+      },
+      {
+        "on": false,
+        "text": "petsChó rất lớn15–20kg460.000₫"
+      },
+      {
+        "on": false,
+        "text": "petsChó đại20–25kg570.000₫"
+      },
+      {
+        "on": false,
+        "text": "petsChó siêu đại25–30kg660.000₫"
+      }
+    ]
+  },
+  "comboVeSinh": {
+    "buoc1": [
+      {
+        "on": true,
+        "text": "showerCombo Tắm + Vệ sinh130.000₫ – 725.000₫schedule60'home_workCó tận nhàcheck_circle"
+      }
+    ],
+    "buoc2": [
+      {
+        "on": false,
+        "text": "petsChó mini< 3kg130.000₫"
+      },
+      {
+        "on": true,
+        "text": "petsChó nhỏ3–5kg265.000₫"
+      },
+      {
+        "on": false,
+        "text": "petsChó vừa5–10kg375.000₫"
+      },
+      {
+        "on": false,
+        "text": "petsChó lớn10–15kg460.000₫"
+      },
+      {
+        "on": false,
+        "text": "petsChó rất lớn15–20kg550.000₫"
+      },
+      {
+        "on": false,
+        "text": "petsChó đại20–25kg640.000₫"
+      },
+      {
+        "on": false,
+        "text": "petsChó siêu đại25–30kg725.000₫"
+      }
+    ]
+  },
+  "tamBuoc4": {
+    "doan": " KM\nĐỊA CHỈ CHI TIẾT\nThông tin liên hệ\nHỌ TÊN\nSỐ ĐIỆN THOẠI\nTắm · Chó nhỏ (3–5kg)\n155.000₫\n+ Phụ thu tận nhà\n+ 50.000₫\nTạm tính\n205.000₫\nchevron_left\nQuay lại\ncheck\nXác nhận đặt lịch"
+  },
+  "comboVeSinhBuoc4": {
+    "doan": "A CHỈ CHI TIẾT\nThông tin liên hệ\nHỌ TÊN\nSỐ ĐIỆN THOẠI\nCombo Tắm + Vệ sinh · Chó nhỏ (3–5kg)\n265.000₫\n+ Phụ thu tận nhà\n+ 70.000₫\nTạm tính\n335.000₫\nchevron_left\nQuay lại\ncheck\nXác nhận đặt lịch"
+  }
+}

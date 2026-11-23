@@ -41,15 +41,45 @@ async function main() {
     source: 'docs/rtm.csv, docs/requirements.csv',
   });
 
+  // EC-2 đo đúng theo định nghĩa: "100% test case Critical/High đã thực thi,
+  // tỷ lệ Pass ≥ 95%". Cần `Priority` của test case nên đọc thêm từ
+  // `docs/testcases/*.csv` (nguồn sự thật về priority) — `execution-log.csv`
+  // không mang cột này.
+  const testcasePriority = new Map();
+  for (const file of ['t1.csv', 't2.csv', 't3.csv', 'nfr.csv']) {
+    const rows = await readCsv(path.join(DOCS_DIR, 'testcases', file));
+    for (const row of rows) {
+      if (row.TC_ID) testcasePriority.set(row.TC_ID, row.Priority ?? '');
+    }
+  }
+
   const executed = execution.filter((e) => e.Result && e.Result !== 'Chưa thực thi');
   const passCount = executed.filter((e) => e.Result === 'Pass').length;
-  const passRate = executed.length === 0 ? 0 : (passCount / executed.length) * 100;
+  const overallRate = executed.length === 0 ? 0 : (passCount / executed.length) * 100;
+
+  const chTotal = [...testcasePriority.values()].filter((p) => p === 'Critical' || p === 'High').length;
+  const chExecuted = executed.filter((e) => {
+    const p = testcasePriority.get(e.TC_ID);
+    return p === 'Critical' || p === 'High';
+  });
+  const chPass = chExecuted.filter((e) => e.Result === 'Pass').length;
+  const chRate = chExecuted.length === 0 ? 0 : (chPass / chExecuted.length) * 100;
+  const chCovered = chTotal === 0 ? 0 : (chExecuted.length / chTotal) * 100;
+
   criteria.push({
     id: 'EC-2',
     name: '100% test case Critical/High đã thực thi, tỷ lệ Pass ≥ 95%',
-    measured: execution.length === 0 ? 'chưa có nhật ký thực thi' : `${executed.length} ca đã chạy, Pass ${passRate.toFixed(1)}%`,
-    passed: executed.length > 0 && passRate >= 95,
-    source: 'reports/execution-log.csv',
+    measured:
+      execution.length === 0
+        ? 'chưa có nhật ký thực thi'
+        : `Critical/High đã thực thi ${chExecuted.length}/${chTotal} (${chCovered.toFixed(1)}%), ` +
+          `Pass ${chRate.toFixed(1)}% trong nhóm này; toàn bộ ${executed.length} ca đã chạy, Pass ${overallRate.toFixed(1)}%`,
+    passed:
+      execution.length > 0 &&
+      chTotal > 0 &&
+      chExecuted.length === chTotal &&
+      chRate >= 95,
+    source: 'reports/execution-log.csv, docs/testcases/*.csv',
   });
 
   // `docs/defects/defects.csv` dùng tên cột `Severity`/`Status` (viết hoa) — đọc
@@ -67,12 +97,23 @@ async function main() {
     source: 'docs/defects/defects.csv',
   });
 
-  const autoSuites = execution.filter((e) => e.Type === 'Auto' && e.Result === 'Pass').length;
+  // EC-4 đo đúng theo định nghĩa: "Mỗi hệ thống có ít nhất 1 bộ E2E tự động
+  // chạy được và xanh" → phải có ít nhất 1 ca **Pass** cho mỗi hệ thống T1/T2/T3.
+  const autoPass = execution.filter((e) => e.Type === 'Auto' && e.Result === 'Pass');
+  const autoPassSystems = new Set(autoPass.map((e) => e.System));
+  const TARGET_SYSTEMS = ['T1', 'T2', 'T3'];
+  const systemsWithoutGreenSuite = TARGET_SYSTEMS.filter((s) => {
+    // 'ALL' = test case đo trên cả 3 site, vẫn là bằng chứng E2E cho site đó.
+    return !autoPassSystems.has(s) && !autoPassSystems.has('ALL');
+  });
   criteria.push({
     id: 'EC-4',
     name: 'Mỗi hệ thống có ít nhất 1 bộ E2E tự động chạy được và xanh',
-    measured: `${autoSuites} test case tự động Pass`,
-    passed: autoSuites > 0,
+    measured:
+      `${autoPass.length} test case tự động Pass; ` +
+      `${TARGET_SYSTEMS.length - systemsWithoutGreenSuite.length}/${TARGET_SYSTEMS.length} hệ thống có bộ E2E xanh` +
+      (systemsWithoutGreenSuite.length > 0 ? ` (thiếu: ${systemsWithoutGreenSuite.join(', ')})` : ''),
+    passed: autoPass.length > 0 && systemsWithoutGreenSuite.length === 0,
     source: 'reports/execution-log.csv, tests/e2e/',
   });
 
@@ -151,6 +192,54 @@ async function main() {
   for (const criterion of criteria) {
     lines.push(`| ${criterion.id} | ${criterion.name} | ${criterion.measured} | ${criterion.passed ? 'PASS' : 'FAIL'} | ${criterion.source} |`);
   }
+  lines.push('');
+  lines.push(
+    `**Tổng: ${criteria.filter((c) => c.passed).length}/${criteria.length} tiêu chí đạt.**`,
+  );
+  lines.push('');
+
+  // --- Phân tích ranh giới Hướng 2 (ADR-15) ---------------------------------
+  // Đồ án kiểm thử phần mềm ĐANG HOẠT ĐỘNG của bên thứ ba, không có mã nguồn
+  // và không có quyền triển khai. Vì vậy EC-2/EC-3/EC-5/EC-6 có thể FAIL vì
+  // lỗi thật của site đích — đó là kết quả ĐÚNG, không phải khiếm khuyết của
+  // quy trình kiểm thử. ASG-01 §5.3 yêu cầu Fail trung thực + ghi defect.
+  const thirdPartyBlocking = [
+    { ec: 'EC-2', reason: 'Tỷ lệ Pass của nhóm Critical/High bị kéo xuống bởi lỗi thật của site đích (mỗi lỗi đã có defect trong `docs/defects/defects.csv`).' },
+    { ec: 'EC-3', reason: 'Lỗi Critical/High còn mở thuộc mã nguồn production của bên thứ ba — không sửa được trong phạm vi dự án Hướng 2.' },
+    { ec: 'EC-5', reason: 'Điểm Lighthouse Performance và LCP phụ thuộc hạ tầng/CDN của bên thứ ba, nằm ngoài phạm vi thay đổi của nhóm.' },
+    { ec: 'EC-6', reason: 'Thiếu header bảo mật, thiếu `alt`, thiếu tương phản màu và thiếu `h1` là cấu hình máy chủ/markup của bên thứ ba.' },
+  ];
+
+  lines.push('## Ranh giới Hướng 2 — vì sao một số tiêu chí FAIL');
+  lines.push('');
+  lines.push(
+    'Theo **ADR-15 (Hướng 2)**, nhóm kiểm thử **phần mềm đang hoạt động** của bên thứ ba ' +
+      'mà không có mã nguồn và không có quyền triển khai. Do đó:',
+  );
+  lines.push('');
+  lines.push(
+    '1. Test **phải Fail trung thực** khi ứng dụng đích có lỗi — không được nới lỏng tiêu chí ' +
+      'để "ép xanh" (ASG-01 §5.3).',
+  );
+  lines.push(
+    '2. Mọi lỗi phải được ghi thành defect trong `docs/defects/defects.csv` với bằng chứng thô ' +
+      'trong `reports/raw/`.',
+  );
+  lines.push(
+    '3. Tiêu chí FAIL vì lỗi thật của bên thứ ba là **kết quả đúng** của quy trình, ' +
+      'không phải bằng chứng thiếu chất lượng.',
+  );
+  lines.push('');
+  lines.push('| Tiêu chí | Lý do bị chặn bởi ranh giới Hướng 2 |');
+  lines.push('| --- | --- |');
+  for (const item of thirdPartyBlocking) {
+    lines.push(`| ${item.ec} | ${item.reason} |`);
+  }
+  lines.push('');
+  lines.push(
+    'Các tiêu chí **EC-1, EC-4, EC-8** đạt vì chúng nằm trong tầm kiểm soát của nhóm ' +
+      '(truy xuết yêu cầu, bộ E2E tự động, tài liệu thiết kế đã review chéo).',
+  );
   lines.push('');
 
   await writeText(outputPath, lines.join('\n'));

@@ -1,0 +1,234 @@
+{
+  "buoc1": {
+    "html": "<div class=\"bk-head\"><div><span class=\"eyebrow\"><span class=\"material-symbols-outlined \" style=\"font-size: 14px; line-height: 1;\">event_available</span> Đặt lịch grooming</span><h3>Hoàn tất 4 bước nhanh</h3></div><button class=\"bk-close\" type=\"button\" aria-label=\"Đóng\"><span class=\"material-symbols-outlined \" style=\"font-size: 20px; line-height: 1;\">close</span></button></div><div class=\"bk-steps\"><div class=\"bk-step is-active \"><span class=\"bk-step__num\">1</span><span class=\"bk-step__label\">Dịch vụ</span></div><div class=\"bk-step  \"><span class=\"bk-step__num\">2</span><span class=\"bk-step__label\">Bé cưng</span></div><div class=\"bk-step  \"><span class=\"bk-step__num\">3</span><span class=\"bk-step__label\">Lịch hẹn</span></div><div class=\"bk-step  \"><span class=\"bk-step__num\">4</span><span class=\"bk-step__label\">Địa điểm</span></div></div><div class=\"bk-body\"><div class=\"bk-pane\"><h4 class=\"bk-h4\">Chọn dịch vụ</h4><label class=\"bk-label\">Loài &amp; cân nặng</label><div class=\"bk-pet-grid bk-pet-grid--2\" style=\"max-width: 100%; margin-bottom: 12px;\"><button class=\"bk-pet is-on\" type=\"button\"><span class=\"material-symbols-outlined \" style=\"font-size: 22px; line-height: 1;\">pets</span><b>Chó</b></button><button class=\"bk-pet \" type=\"button\"><span class=\"material-symbols-outlined \" style=\"font-size: 22px; line-height: 1;\">pets</span><b>Mèo</b></button></div><p class=\"bk-hint\" style=\"font-size: 13px; color: var(--text-secondary); margin: 0px 0px 14px;\">Giá hiển thị là khoảng giá theo cân. Giá cuối cùng sẽ tính theo loài + cân nặng bạn chọn ở bước sau.</p><div class=\"bk-svc-list\"><button class=\"bk-svc is-on\" type=\"button\"><div class=\"bk-svc__ic\" style=\"background: linear-gradient(135deg, rgb(251, 231, 235), rgb(244, 114, 182));\"><span class=\"material-symbols-outlined \" style=\"font-size: 28px; line-height: 1;\">bathtub</span></div><div class=\"bk-svc__body\"><div class=\"bk-svc__row\"><b>Tắm</b><span class=\"bk-svc__price\">88.000₫ – 660.000₫</span></div><div class=\"bk-svc__meta\"><span><span class=\"material-symbols-outlined \" style=\"font-size: 13px; line-height: 1;\">schedule</span>45'</span><span class=\"is-on\"><span class=\"material-symbols-outlined \" style=\"font-size: 13px; line-height: 1;\">home_work</span>Có tận nhà</span></div></div><span class=\"material-symbols-outlined bk-svc__check\" style=\"font-size: 20px; line-height: 1; font-variation-settings: &quot;FILL&quot; 1;\">check_circle</span></button><button class=\"bk-svc \" type=\"button\"><div class=\"bk-svc__ic\" style=\"background: linear-gradient(135deg, rgb(219, 234, 254), rgb(99, 102, 241));\"><span class=\"material-symbols-outlined \" style=\"font-size: 28px; line-height: 1;\">content_cut</span></div><div class=\"bk-svc__body\"><div class=\"bk-svc__row\"><b>Cắt tỉa lông</b><span class=\"bk-svc__price\">145.000₫ – 440.000₫</span></div><div class=\"bk-svc__meta\"><span><span class=\"material-symbols-outlined \" style=\"font-size: 13px; line-height: 1;\">schedule</span>90'</span><span class=\"is-off\"><span class=\"material-symbols-outlined \" style=\"font-size: 13px; line-height: 1;\">store</span>Chỉ tại spa</span></div></div></button><button class=\"bk-svc \" type=\"button\"><div class=\"bk-svc__ic\" style=\"background: linear-gradient(135deg, rgb(254, 243, 199), rgb(245, 158, 11));\"><span class=\"material-symbols-outlined \" style=\"font-size: 28px; line-height: 1;\">cut</span></div><div class=\"bk-svc__body\"><div class=\"bk-svc__row\"><b>Cạo lông</b><span class=\"bk-svc__price\">88.000₫ – 385.000₫</span></div><div class=\"bk-svc__meta\"><span><span class=\"material-symbols-outlined \" style=\"font-size: 13px; line-height: 1;\">schedule</span>60'</span><span class=\"is-on\"><span class=\"material-symbols-outlined \" style=\"font-size: 13px; line-height: 1;\">home_work</span>Có tận nhà</span></div></div></button><button class=\"bk-svc \" type=\"button\"><div class=\"bk-svc__ic\" style=\"background: linear-gradient(135deg, rgb(254, 210, 220), rgb(240, 66, 110));\"><span class=\"material-symbols-outlined \" style=\"font-size: 28px; line-height: 1;\">shower</s",
+    "svcCount": 6
+  },
+  "nutSauChonDichVu": true,
+  "buoc2": {
+    "html": "<div class=\"bk-head\"><div><span class=\"eyebrow\"><span class=\"material-symbols-outlined \" style=\"font-size: 14px; line-height: 1;\">event_available</span> Đặt lịch grooming</span><h3>Hoàn tất 4 bước nhanh</h3></div><button class=\"bk-close\" type=\"button\" aria-label=\"Đóng\"><span class=\"material-symbols-outlined \" style=\"font-size: 20px; line-height: 1;\">close</span></button></div><div class=\"bk-steps\"><div class=\"bk-step  is-done\"><span class=\"bk-step__num\"><span class=\"material-symbols-outlined \" style=\"font-size: 14px; line-height: 1;\">check</span></span><span class=\"bk-step__label\">Dịch vụ</span></div><div class=\"bk-step is-active \"><span class=\"bk-step__num\">2</span><span class=\"bk-step__label\">Bé cưng</span></div><div class=\"bk-step  \"><span class=\"bk-step__num\">3</span><span class=\"bk-step__label\">Lịch hẹn</span></div><div class=\"bk-step  \"><span class=\"bk-step__num\">4</span><span class=\"bk-step__label\">Địa điểm</span></div></div><div class=\"bk-body\"><div class=\"bk-pane\"><h4 class=\"bk-h4\">Thông tin bé cưng</h4><label class=\"bk-label\">Loài &amp; cân nặng</label><div class=\"bk-species-group\"><div class=\"bk-species-label\"><span class=\"material-symbols-outlined \" style=\"font-size: 14px; line-height: 1;\">pets</span>Chó</div><div class=\"bk-pet-grid\"><button class=\"bk-pet \" type=\"button\"><span class=\"material-symbols-outlined \" style=\"font-size: 22px; line-height: 1;\">pets</span><b>Chó mini</b><span>&lt; 3kg</span><em>88.000₫</em></button><button class=\"bk-pet is-on\" type=\"button\"><span class=\"material-symbols-outlined \" style=\"font-size: 22px; line-height: 1;\">pets</span><b>Chó nhỏ</b><span>3–5kg</span><em>155.000₫</em></button><button class=\"bk-pet \" type=\"button\"><span class=\"material-symbols-outlined \" style=\"font-size: 22px; line-height: 1;\">pets</span><b>Chó vừa</b><span>5–10kg</span><em>240.000₫</em></button><button class=\"bk-pet \" type=\"button\"><span class=\"material-symbols-outlined \" style=\"font-size: 22px; line-height: 1;\">pets</span><b>Chó lớn</b><span>10–15kg</span><em>350.000₫</em></button><button class=\"bk-pet \" type=\"button\"><span class=\"material-symbols-outlined \" style=\"font-size: 22px; line-height: 1;\">pets</span><b>Chó rất lớn</b><span>15–20kg</span><em>460.000₫</em></button><button class=\"bk-pet \" type=\"button\"><span class=\"material-symbols-outlined \" style=\"font-size: 22px; line-height: 1;\">pets</span><b>Chó đại</b><span>20–25kg</span><em>570.000₫</em></button><button class=\"bk-pet \" type=\"button\"><span class=\"material-symbols-outlined \" style=\"font-size: 22px; line-height: 1;\">pets</span><b>Chó siêu đại</b><span>25–30kg</span><em>660.000₫</em></button></div></div><label class=\"bk-label\">Tên bé cưng</label><input class=\"bk-input\" placeholder=\"VD: Bông, Mochi, Mun...\" value=\"\"><label class=\"bk-label\">Ghi chú (tùy chọn)</label><textarea class=\"bk-input bk-textarea\" placeholder=\"Bé hơi nhát, cần được dỗ; có vết thương ở chân trái...\"></textarea><div class=\"bk-tip\"><span class=\"material-symbols-outlined \" style=\"font-size: 16px; line-height: 1;\">info</span><span>Khi thợ đến (hoặc tới spa), bé sẽ được cân lại. Nếu cân chênh sang khoảng khác, giá điều chỉnh đúng theo bảng — không phát sinh phí ẩn.</span></div></div></div><div class=\"bk-foot\"><div class=\"bk-summary\"><div class=\"bk-summary__row\"><span>Tắm · Chó nhỏ (3–5kg)</span><b>155.000₫</b></div><div class=\"bk-summary__row bk-summary__row--total\"><span>Tạm tính</span><b>155.000₫</b></div></div><div class=\"bk-nav\"><button class=\"bn-btn bn-btn--ghost\" type=\"button\"><span class=\"material-symbols-outlined \" style=\"font-size: 16px; line-height: 1;\">chevron_left</span>Quay lại</button><button class=\"bn-btn bn-btn--primary\" type=\"button\" disabled=\"\">Tiếp tục <span class=\"material-symbols-outlined \" style=\"font-size: 16px; line-height: 1;\">chevron_right</span></button></div></div>",
+    "petCount": 7,
+    "inputs": [
+      {
+        "ph": "VD: Bông, Mochi, Mun...",
+        "cls": "bk-input"
+      }
+    ],
+    "species": [
+      {
+        "tag": "DIV",
+        "cls": "bk-species-label",
+        "txt": "petsChó"
+      },
+      {
+        "tag": "SPAN",
+        "cls": "material-symbols-outlined ",
+        "txt": "pets"
+      },
+      {
+        "tag": "DIV",
+        "cls": "bk-pet-grid",
+        "txt": "petsChó mini< 3kg88.000₫petsChó nhỏ3–5kg"
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "bk-pet ",
+        "txt": "petsChó mini< 3kg88.000₫"
+      },
+      {
+        "tag": "SPAN",
+        "cls": "material-symbols-outlined ",
+        "txt": "pets"
+      },
+      {
+        "tag": "B",
+        "cls": "",
+        "txt": "Chó mini"
+      },
+      {
+        "tag": "SPAN",
+        "cls": "",
+        "txt": "< 3kg"
+      },
+      {
+        "tag": "EM",
+        "cls": "",
+        "txt": "88.000₫"
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "bk-pet is-on",
+        "txt": "petsChó nhỏ3–5kg155.000₫"
+      },
+      {
+        "tag": "SPAN",
+        "cls": "material-symbols-outlined ",
+        "txt": "pets"
+      },
+      {
+        "tag": "B",
+        "cls": "",
+        "txt": "Chó nhỏ"
+      },
+      {
+        "tag": "SPAN",
+        "cls": "",
+        "txt": "3–5kg"
+      },
+      {
+        "tag": "EM",
+        "cls": "",
+        "txt": "155.000₫"
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "bk-pet ",
+        "txt": "petsChó vừa5–10kg240.000₫"
+      },
+      {
+        "tag": "SPAN",
+        "cls": "material-symbols-outlined ",
+        "txt": "pets"
+      },
+      {
+        "tag": "B",
+        "cls": "",
+        "txt": "Chó vừa"
+      },
+      {
+        "tag": "SPAN",
+        "cls": "",
+        "txt": "5–10kg"
+      },
+      {
+        "tag": "EM",
+        "cls": "",
+        "txt": "240.000₫"
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "bk-pet ",
+        "txt": "petsChó lớn10–15kg350.000₫"
+      },
+      {
+        "tag": "SPAN",
+        "cls": "material-symbols-outlined ",
+        "txt": "pets"
+      },
+      {
+        "tag": "B",
+        "cls": "",
+        "txt": "Chó lớn"
+      },
+      {
+        "tag": "SPAN",
+        "cls": "",
+        "txt": "10–15kg"
+      },
+      {
+        "tag": "EM",
+        "cls": "",
+        "txt": "350.000₫"
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "bk-pet ",
+        "txt": "petsChó rất lớn15–20kg460.000₫"
+      },
+      {
+        "tag": "SPAN",
+        "cls": "material-symbols-outlined ",
+        "txt": "pets"
+      },
+      {
+        "tag": "B",
+        "cls": "",
+        "txt": "Chó rất lớn"
+      },
+      {
+        "tag": "SPAN",
+        "cls": "",
+        "txt": "15–20kg"
+      },
+      {
+        "tag": "EM",
+        "cls": "",
+        "txt": "460.000₫"
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "bk-pet ",
+        "txt": "petsChó đại20–25kg570.000₫"
+      },
+      {
+        "tag": "SPAN",
+        "cls": "material-symbols-outlined ",
+        "txt": "pets"
+      }
+    ]
+  },
+  "nutTiepTucBuoc2ChuaChon": false,
+  "speciesCount": 8,
+  "nutTiepTucBuoc2ChonCânNặngChưaTen": false,
+  "nutTiepTucBuoc2ChonCânNặngCóTen": true,
+  "buoc3": {
+    "dayCount": 7,
+    "dayText": [
+      "CN2211/26",
+      "Thứ 22311/26",
+      "Thứ 32411/26",
+      "Thứ 42511/26",
+      "Thứ 52611/26",
+      "Thứ 62711/26",
+      "Thứ 72811/26"
+    ],
+    "timeCount": 8,
+    "timeText": [
+      "08:30",
+      "09:30",
+      "10:30",
+      "13:00",
+      "14:00",
+      "15:00",
+      "16:00",
+      "17:00"
+    ],
+    "dateInputs": 0,
+    "html": "<div class=\"bk-head\"><div><span class=\"eyebrow\"><span class=\"material-symbols-outlined \" style=\"font-size: 14px; line-height: 1;\">event_available</span> Đặt lịch grooming</span><h3>Hoàn tất 4 bước nhanh</h3></div><button class=\"bk-close\" type=\"button\" aria-label=\"Đóng\"><span class=\"material-symbols-outlined \" style=\"font-size: 20px; line-height: 1;\">close</span></button></div><div class=\"bk-steps\"><div class=\"bk-step  is-done\"><span class=\"bk-step__num\"><span class=\"material-symbols-outlined \" style=\"font-size: 14px; line-height: 1;\">check</span></span><span class=\"bk-step__label\">Dịch vụ</span></div><div class=\"bk-step  is-done\"><span class=\"bk-step__num\"><span class=\"material-symbols-outlined \" style=\"font-size: 14px; line-height: 1;\">check</span></span><span class=\"bk-step__label\">Bé cưng</span></div><div class=\"bk-step is-active \"><span class=\"bk-step__num\">3</span><span class=\"bk-step__label\">Lịch hẹn</span></div><div class=\"bk-step  \"><span class=\"bk-step__num\">4</span><span class=\"bk-step__label\">Địa điểm</span></div></div><div class=\"bk-body\"><div class=\"bk-pane\"><h4 class=\"bk-h4\">Chọn ngày &amp; khung giờ</h4><label class=\"bk-label\">Ngày hẹn</label><div class=\"bk-day-row\"><button class=\"bk-day is-on\" type=\"button\"><span>CN</span><b>22</b><span>11/26</span></button><button class=\"bk-day \" type=\"button\"><span>Thứ 2</span><b>23</b><span>11/26</span></button><button class=\"bk-day \" type=\"button\"><span>Thứ 3</span><b>24</b><span>11/26</span></button><button class=\"bk-day \" type=\"button\"><span>Thứ 4</span><b>25</b><span>11/26</span></button><button class=\"bk-day \" type=\"button\"><span>Thứ 5</span><b>26</b><span>11/26</span></button><button class=\"bk-day \" type=\"button\"><span>Thứ 6</span><b>27</b><span>11/26</span></button><button class=\"bk-day \" type=\"button\"><span>Thứ 7</span><b>28</b><span>11/26</span></button></div><label class=\"bk-label\">Khung giờ</label><div class=\"bk-time-row\"><button class=\"bk-time \" type=\"button\">08:30</button><button class=\"bk-time \" type=\"button\">09:30</button><button class=\"bk-time is-on\" type=\"button\">10:30</button><button class=\"bk-time \" type=\"button\">13:00</button><button class=\"bk-time \" type=\"button\">14:00</button><button class=\"bk-time \" type=\"button\">15:00</button><button class=\"bk-time \" type=\"button\">16:00</button><button class=\"bk-time \" type=\"button\">17:00</button></div><div class=\"bk-tip\"><span class=\"material-symbols-outlined \" style=\"font-size: 16px; line-height: 1;\">info</span><span>Lịch tại nhà chỉ nhận từ 8h3"
+  },
+  "buoc2SauQuayLai": {
+    "petOn": [
+      "petsChó vừa5–10kg240.000₫"
+    ],
+    "inputs": [
+      "Bé Test"
+    ]
+  },
+  "nutTiepTucBuoc3": true,
+  "buoc4": {
+    "locCount": 2,
+    "locText": [
+      "storeTại spa1.09 A1 Westgate, Bình ChánhKhông phụ thu",
+      "home_workTận nhàThợ đến địa chỉ của bạn+50.000₫ + km"
+    ],
+    "inputs": [
+      {
+        "ph": "Nguyễn Văn A",
+        "cls": "bk-input",
+        "type": "text"
+      },
+      {
+        "ph": "0987 654 321",
+        "cls": "bk-input",
+        "type": "text"
+      }
+    ],
+    "btnLabels": [
+      "close",
+      "storeTại spa1.09 A1 Westgate, Bình ChánhKhông phụ thu",
+      "home_workTận nhàThợ đến địa chỉ của bạn+50.000₫ + km",
+      "chevron_leftQuay lại",
+      "checkXác nhận đặt lịch"
+    ],
+    "hasError": false
+  }
+}

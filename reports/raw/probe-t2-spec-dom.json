@@ -1,0 +1,185 @@
+{
+  "search": {
+    "coNut": true,
+    "aria": "Tìm kiếm",
+    "html": "<button type=\"button\" aria-label=\"Tìm kiếm\" class=\"hidden items-center justify-center rounded-full p-2 text-brand-deep transition-colors duration-300 ease-in-out hover:text-brand-gold md:flex\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"curr"
+  },
+  "searchSauMo": {
+    "coInput": true,
+    "ph": "Tìm giống chó/mèo, bé, bài viết…",
+    "cls": "min-w-0 flex-1 bg-transparent text-base text-brand-deep outline-none placeholder:text-brand-deep/40"
+  },
+  "ketQuaLower": "Trang chủ\nChó\nMèo\nTìm Bé Thương\nSpa\nBảo hành\nVề Mật Pet\nVI\n|\nEN\n0939.86.36.96\nBÀI VIẾT\n\nChó Cavalier King Charles Spaniel — Đặc Điểm, Tính Cách và Cách Nuôi Tại Việt Nam\n\nBài viết\n\nXem tất cả kết quả cho “spa”\nSPA & GROOMING · TỪ 2011\nBiết giá trước\nkhi đưa bé đến spa.\n\nChọn loại bé, cân nặng và dịch vụ — bạn thấy ngay mức giá dự kiến minh bạch, rồi giữ chỗ chỉ với số điện thoại. Không còn phải nhắn tin hỏi giá.\n\nTính giá dự kiến →\nXem bảng giá\n✓\nAn toàn cho bé\n✓\nHơn 15 năm kinh nghiệm\n✓\nNhân viên có nghề\n🐾\nĐÃ CHĂM SÓC\n10.000+\n1\nLoại bé\nChó / Mèo\n2\nCân nặng\nBậc định sẵn\n3\nDịch vụ\nCombo hoặc lẻ\nBé nhà bạn là?\n\nChọn loại để hiển thị đúng bậc cân nặng & dịch vụ.\n\n🐶\nChó\n🐱\nMèo\n← Quay lại\nTiếp tục →\nGIÁ DỰ KIẾN\nChọn dịch vụ để xem giá dự kiến cho bé của bạn 🐾\nGiữ chỗ với mức giá này →\nTÓM TẮT LỰA CHỌN\nChưa có lựa chọn\n—\n\nGiá cuối được xác nhận tại spa sau khi cân & kiểm tra tình trạng lông. Dịch vụ \"báo giá riêng\" sẽ được tư vấn khi spa gọi lại.\n\nSố điện thoại / Zalo *\nTên bé\nNgày mong muốn\nHôm nay\n21/11\nNgày mai\n22/11\nT2\n23/11\nT3\n24/11\nT4\n25/11\nNgày khác\n\nBằng việc gửi, bạn đồng ý để Mật Pet Family liên hệ lại qua điện thoại / Zalo để xác nhận lịch.\n\nGiữ chỗ cho bé →\n* Giá trên chưa bao gồm phí gỡ rối, tẩy ố và tắm trắng.\n\nPremium pet shop đồng hành tìm người bạn bốn chân phù hợp nhất cho từng gia đình Việt.\n\nYouTube\nFacebook\nTikTok\n\nPET SHOP\n\nTrang chủ\nChó\nMèo\nTìm Bé Thương\nBảng giá\nBảo hành\nVề Mật Pet\nTuyển dụng\n\nNỘI DUNG & CỘNG ĐỒNG\n\nBlog\nHướng dẫn chăm sóc\nSo sánh giống\nHỏ",
+  "ketQuaUpper": "Trang chủ\nChó\nMèo\nTìm Bé Thương\nSpa\nBảo hành\nVề Mật Pet\nVI\n|\nEN\n0939.86.36.96\nBÀI VIẾT\n\nChó Cavalier King Charles Spaniel — Đặc Điểm, Tính Cách và Cách Nuôi Tại Việt Nam\n\nBài viết\n\nXem tất cả kết quả cho “SPA”\nSPA & GROOMING · TỪ 2011\nBiết giá trước\nkhi đưa bé đến spa.\n\nChọn loại bé, cân nặng và dịch vụ — bạn thấy ngay mức giá dự kiến minh bạch, rồi giữ chỗ chỉ với số điện thoại. Không còn phải nhắn tin hỏi giá.\n\nTính giá dự kiến →\nXem bảng giá\n✓\nAn toàn cho bé\n✓\nHơn 15 năm kinh nghiệm\n✓\nNhân viên có nghề\n🐾\nĐÃ CHĂM SÓC\n10.000+\n1\nLoại bé\nChó / Mèo\n2\nCân nặng\nBậc định sẵn\n3\nDịch vụ\nCombo hoặc lẻ\nBé nhà bạn là?\n\nChọn loại để hiển thị đúng bậc cân nặng & dịch vụ.\n\n🐶\nChó\n🐱\nMèo\n← Quay lại\nTiếp tục →\nGIÁ DỰ KIẾN\nChọn dịch vụ để xem giá dự kiến cho bé của bạn 🐾\nGiữ chỗ với mức giá này →\nTÓM TẮT LỰA CHỌN\nChưa có lựa chọn\n—\n\nGiá cuối được xác nhận tại spa sau khi cân & kiểm tra tình trạng lông. Dịch vụ \"báo giá riêng\" sẽ được tư vấn khi spa gọi lại.\n\nSố điện thoại / Zalo *\nTên bé\nNgày mong muốn\nHôm nay\n21/11\nNgày mai\n22/11\nT2\n23/11\nT3\n24/11\nT4\n25/11\nNgày khác\n\nBằng việc gửi, bạn đồng ý để Mật Pet Family liên hệ lại qua điện thoại / Zalo để xác nhận lịch.\n\nGiữ chỗ cho bé →\n* Giá trên chưa bao gồm phí gỡ rối, tẩy ố và tắm trắng.\n\nPremium pet shop đồng hành tìm người bạn bốn chân phù hợp nhất cho từng gia đình Việt.\n\nYouTube\nFacebook\nTikTok\n\nPET SHOP\n\nTrang chủ\nChó\nMèo\nTìm Bé Thương\nBảng giá\nBảo hành\nVề Mật Pet\nTuyển dụng\n\nNỘI DUNG & CỘNG ĐỒNG\n\nBlog\nHướng dẫn chăm sóc\nSo sánh giống\nHỏ",
+  "ketQuaRong": "Trang chủ\nChó\nMèo\nTìm Bé Thương\nSpa\nBảo hành\nVề Mật Pet\nVI\n|\nEN\n0939.86.36.96\n\nKhông thấy kết quả cho “zzzkhongcothat123”.\n\nXem tất cả kết quả cho “zzzkhongcothat123”\nSPA & GROOMING · TỪ 2011\nBiết giá trước\nkhi đưa bé đến spa.\n\nChọn loại bé, cân nặng và dịch vụ — bạn thấy ngay mức giá dự kiến minh bạch, rồi giữ chỗ chỉ với số điện thoại. Không còn phải nhắn tin hỏi giá.\n\nTính giá dự kiến →\nXem bảng giá\n✓\nAn toàn cho bé\n✓\nHơn 15 năm kinh nghiệm\n✓\nNhân viên có nghề\n🐾\nĐÃ CHĂM SÓC\n10.000+\n1\nLoại bé\nChó / Mèo\n2\nCân nặng\nBậc định sẵn\n3\nDịch vụ\nCombo hoặc lẻ\nBé nhà bạn là?\n\nChọn loại để hiển thị đúng bậc cân nặng & dịch vụ.\n\n🐶\nChó\n🐱\nMèo\n← Quay lại\nTiếp tục →\nGIÁ DỰ KIẾN\nChọn dịch vụ để xem giá dự kiến cho bé của bạn 🐾\nGiữ chỗ với mức giá này →\nTÓM TẮT LỰA CHỌN\nChưa có lựa chọn\n—\n\nGiá cuối được xác nhận tại spa sau khi cân & kiểm tra tình trạng lông. Dịch vụ \"báo giá riêng\" sẽ được tư vấn khi spa gọi lại.\n\nSố điện thoại / Zalo *\nTên bé\nNgày mong muốn\nHôm nay\n21/11\nNgày mai\n22/11\nT2\n23/11\nT3\n24/11\nT4\n25/11\nNgày khác\n\nBằng việc gửi, bạn đồng ý để Mật Pet Family liên hệ lại qua điện thoại / Zalo để xác nhận lịch.\n\nGiữ chỗ cho bé →\n* Giá trên chưa bao gồm phí gỡ rối, tẩy ố và tắm trắng.\n\nPremium pet shop đồng hành tìm người bạn bốn chân phù hợp nhất cho từng gia đình Việt.\n\nYouTube\nFacebook\nTikTok\n\nPET SHOP\n\nTrang chủ\nChó\nMèo\nTìm Bé Thương\nBảng giá\nBảo hành\nVề Mật Pet\nTuyển dụng\n\nNỘI DUNG & CỘNG ĐỒNG\n\nBlog\nHướng dẫn chăm sóc\nSo sánh giống\nHỏi đáp\nĐánh giá khách hàng\nShowroom\n\nLIÊN HỆ",
+  "ketQuaEmpty": "Trang chủ\nChó\nMèo\nTìm Bé Thương\nSpa\nBảo hành\nVề Mật Pet\nVI\n|\nEN\n0939.86.36.96\nMỌI NGƯỜI HAY TÌM\nPoodle\nGolden Retriever\nCorgi\nMèo Anh lông ngắn\nSpa & grooming\nSPA & GROOMING · TỪ 2011\nBiết giá trước\nkhi đưa bé đến spa.\n\nChọn loại bé, cân nặng và dịch vụ — bạn thấy ngay mức giá dự kiến minh bạch, rồi giữ chỗ chỉ với số điện thoại. Không còn phải nhắn tin hỏi giá.\n\nTính giá dự kiến →\nXem bảng giá\n✓\nAn toàn cho bé\n✓\nHơn 15 năm kinh nghiệm\n✓\nNhân viên có nghề\n🐾\nĐÃ CHĂM SÓC\n10.000+\n1\nLoại bé\nChó / Mèo\n2\nCân nặng\nBậc định sẵn\n3\nDịch vụ\nCombo hoặc lẻ\nBé nhà bạn là?\n\nChọn loại để hiển thị đúng bậc cân nặng & dịch vụ.\n\n🐶\nChó\n🐱\nMèo\n← Quay lại\nTiếp tục →\nGIÁ DỰ KIẾN\nChọn dịch vụ để xem giá dự kiến cho bé của bạn 🐾\nGiữ chỗ với mức giá này →\nTÓM TẮT LỰA CHỌN\nChưa có lựa chọn\n—\n\nGiá cuối được xác nhận tại spa sau khi cân & kiểm tra tình trạng lông. Dịch vụ \"báo giá riêng\" sẽ được tư vấn khi spa gọi lại.\n\nSố điện thoại / Zalo *\nTên bé\nNgày mong muốn\nHôm nay\n21/11\nNgày mai\n22/11\nT2\n23/11\nT3\n24/11\nT4\n25/11\nNgày khác\n\nBằng việc gửi, bạn đồng ý để Mật Pet Family liên hệ lại qua điện thoại / Zalo để xác nhận lịch.\n\nGiữ chỗ cho bé →\n* Giá trên chưa bao gồm phí gỡ rối, tẩy ố và tắm trắng.\n\nPremium p",
+  "bangGia": [
+    {
+      "cls": "",
+      "head": [
+        "Dịch vụ (Grooming)",
+        "<3kg",
+        ">3–6kg",
+        ">6–10kg",
+        ">10–20kg",
+        ">20–30kg",
+        ">30–40kg",
+        ">40kg"
+      ],
+      "rows": 12,
+      "firstRow": [
+        "Combo trọn gói"
+      ]
+    },
+    {
+      "cls": "",
+      "head": [
+        "Dịch vụ (Nhuộm)",
+        "<6kg",
+        ">6–15kg",
+        ">15–30kg",
+        ">30kg"
+      ],
+      "rows": 4,
+      "firstRow": [
+        "Nhuộm tạo kiểu"
+      ]
+    },
+    {
+      "cls": "",
+      "head": [],
+      "rows": 7,
+      "firstRow": [
+        "Báo giá riêng — tuỳ tình trạng bé"
+      ]
+    }
+  ],
+  "danhMuc": [],
+  "nhom": [
+    {
+      "cls": "",
+      "txt": "Tính giá dự kiến cho bé"
+    },
+    {
+      "cls": "",
+      "txt": "Bé nhà bạn là?"
+    },
+    {
+      "cls": "",
+      "txt": "Giữ chỗ cho bé"
+    },
+    {
+      "cls": "",
+      "txt": "Tóm tắt lựa chọn"
+    },
+    {
+      "cls": "",
+      "txt": "Bảng giá tham khảo · Chó & Mèo"
+    },
+    {
+      "cls": "",
+      "txt": "Bé an toàn, bạn yên tâm"
+    },
+    {
+      "cls": "",
+      "txt": "An toàn trên hết"
+    },
+    {
+      "cls": "",
+      "txt": "Sản phẩm dịu nhẹ"
+    },
+    {
+      "cls": "",
+      "txt": "Thợ có tay nghề"
+    },
+    {
+      "cls": "",
+      "txt": "Minh bạch & báo cáo"
+    },
+    {
+      "cls": "",
+      "txt": "Đưa bé đến spa"
+    },
+    {
+      "cls": "",
+      "txt": "Pet Shop & Spa — TP.HCM"
+    }
+  ],
+  "form": {
+    "inputs": [
+      {
+        "tag": "INPUT",
+        "type": "text",
+        "name": "",
+        "ph": "Tìm giống chó/mèo, bé, bài viết…",
+        "min": "",
+        "max": ""
+      },
+      {
+        "tag": "INPUT",
+        "type": "tel",
+        "name": "",
+        "ph": "0xxx xxx xxx",
+        "min": "",
+        "max": ""
+      },
+      {
+        "tag": "INPUT",
+        "type": "text",
+        "name": "",
+        "ph": "Vd: Mochi",
+        "min": "",
+        "max": ""
+      },
+      {
+        "tag": "INPUT",
+        "type": "date",
+        "name": "",
+        "ph": "",
+        "min": "2026-11-21",
+        "max": ""
+      },
+      {
+        "tag": "INPUT",
+        "type": "text",
+        "name": "",
+        "ph": "",
+        "min": "",
+        "max": ""
+      }
+    ],
+    "labels": [
+      "Số điện thoại / Zalo *",
+      "Tên bé",
+      "Ngày mong muốn",
+      "Ngày khác"
+    ]
+  },
+  "trang_/": {
+    "status": 200
+  },
+  "trang_/faq": {
+    "status": 404
+  },
+  "trang_/chinh-sach": {
+    "status": 404
+  },
+  "trang_/dich-vu": {
+    "status": 404
+  },
+  "trang_/lien-he": {
+    "status": 404
+  },
+  "trang_/so-sanh": {
+    "status": 200
+  },
+  "trang_/tim-bem-thuong": {
+    "status": 404
+  },
+  "trang_/bao-hanh": {
+    "status": 200
+  },
+  "trang_/en/spa": {
+    "status": 200
+  }
+}

@@ -269,7 +269,7 @@ Bản tổng hợp: `docs/design/test-design-techniques.md` (do Tài tổng hợ
 |---|---|---|---|---|---|
 | **H2-1** | **Mô tả chi tiết yêu cầu và tính năng** của phần mềm cần kiểm thử | `docs/source/Đặc tả Yêu cầu Phần mềm (SRS).md` (SRS-01 v1.2): **58 yêu cầu** (51 FR + 7 NFR), **18 BR**, **8 UC**, **4 bảng quyết định**, mô tả chi tiết 3 hệ thống; mọi tiêu chí chấp nhận đều **định lượng** | Mạnh (tổng hợp) | Tài (T2) · Ngân (T3) · Lộc (BR, dữ liệu, NFR) | ✅ Xong |
 | **H2-2** | **Thiết kế test** | **226 test case** theo EP / BVA / DT / ST / UC / Workflow / Exploratory (`docs/testcases/*.csv`) + **5 tài liệu** trong `docs/design/` | Theo §3.3 | Theo §3.3 | ✅ 226 ca · ✅ 5/5 tài liệu đã review chéo |
-| **H2-3** | **Kiểm thử** phần mềm đang hoạt động, không phá hại | Bộ tự động Playwright (E2E + axe-core + Lighthouse + k6), execution log, defect log, báo cáo tích hợp, báo cáo phi chức năng | Tài (hạ tầng) · Ngân (perf) · Lộc (a11y/SEO) · Mạnh (security) | Cả 4 | 🔄 Ngày 9–13 |
+| **H2-3** | **Kiểm thử** phần mềm đang hoạt động, không phá hại | Bộ tự động Playwright (E2E + axe-core + Lighthouse + k6), execution log, defect log, báo cáo tích hợp, báo cáo phi chức năng | Tài (hạ tầng) · Ngân (perf) · Lộc (a11y/SEO) · Mạnh (security) | Cả 4 | ✅ Regression 98 Pass / 19 Fail (19/19 có defect) · ✅ 114 ca đã thực thi · 🔄 UAT (cần con người) |
 | **H2-4** | **Truy vết & báo cáo** chứng minh | RTM truy xuất 2 chiều 100%, biên bản Inspection SRS, Test Plan, Exit criteria EC-1..EC-8, Final Test Report, Lessons learned | Mạnh | Tài (RTM), Lộc (UAT), Ngân (regression) | ✅ RTM 100% · 🔄 báo cáo Ngày 14 |
 
 ### 3A.2 Phần "nghiên cứu kỹ thuật kiểm thử chuyên sâu" nằm ở đâu

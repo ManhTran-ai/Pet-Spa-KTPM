@@ -1,0 +1,47 @@
+{
+  "t1": {
+    "soNut": 1,
+    "nutHtml": "<button class=\"bn-locale\" type=\"button\" aria-label=\"Đổi ngôn ngữ\"><span class=\"material-symbols-outlined \" style=\"font-size:15px;line-height:1\">language</span><b>VI</b> / <!-- -->EN</button>",
+    "soOption": 0,
+    "url": "https://petngon.vn/en",
+    "tieuDe": "Pet NGON — At-home Spa & Grooming",
+    "viConLai": [],
+    "anh": [
+      "First-time online booking — Get 10% off!",
+      "Pet NGON",
+      "Home",
+      "Pets for Sale",
+      "Contact",
+      "Book Appointment",
+      "PET NGON SPA & GROOMING",
+      "A spa for your pet — warm hands, at your door.",
+      "Bath, trimming, shaving, and full-package combos. Many services can be done right in your home — we bring the spa to your doorstep.",
+      "Book now",
+      "menu_book",
+      "See services",
+      "home_work",
+      "At your home",
+      "Bath · Shave · Bath+Shave"
+    ]
+  },
+  "t2": {
+    "soNut": 1,
+    "nutHtml": "<a class=\"rounded-full px-2.5 py-1 transition-colors duration-200 text-brand-deep/35 hover:text-brand-deep/70\" aria-label=\"English\" href=\"/en/spa\">EN</a>",
+    "soOption": 2,
+    "url": "https://matpet.vn/en/en/spa",
+    "tieuDe": "404: This page could not be found.",
+    "viConLai": [],
+    "anh": [
+      "Home",
+      "About Mật Pet",
+      "Premium pet shop in Vietnam helping families — including expats — find their perfect four-legged companion since 2011.",
+      "Facebook",
+      "PET SHOP",
+      "Home",
+      "About Mật Pet",
+      "CONTACT",
+      "matpetfamily2011@gmail.com",
+      "© 2011–2026 Mật Pet Family. All rights reserved."
+    ]
+  }
+}

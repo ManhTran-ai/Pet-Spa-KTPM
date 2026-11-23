@@ -1,0 +1,177 @@
+{
+  "TC-T1-M1-003": {
+    "tcId": "TC-T1-M1-003",
+    "kiemTra": "Trang hiển thị đủ địa chỉ, điện thoại, email và giờ mở cửa",
+    "dat": {
+      "diaChi": true,
+      "dienThoai": true,
+      "email": true,
+      "gioMoCua": true
+    },
+    "kyVong": {
+      "diaChi": true,
+      "dienThoai": true,
+      "email": true,
+      "gioMoCua": true
+    },
+    "bangChung": "reports/raw/survey-T1-dom.json"
+  },
+  "TC-T1-M2-001": {
+    "tcId": "TC-T1-M2-001",
+    "kiemTra": "Mỗi dịch vụ có đủ tên, mô tả, giá và thời lượng",
+    "dat": {
+      "soDichVu": 6,
+      "thieuGia": 0,
+      "thieuThoiLuong": 0
+    },
+    "kyVong": {
+      "soDichVu": 6,
+      "thieuGia": 0,
+      "thieuThoiLuong": 0
+    },
+    "bangChung": "reports/raw/survey-T1-cards.json"
+  },
+  "TC-T1-M2-002": {
+    "tcId": "TC-T1-M2-002",
+    "kiemTra": "Mỗi dịch vụ nêu rõ thành phần bao gồm",
+    "dat": {
+      "soMoTaNgan": 0,
+      "nhanThieu": []
+    },
+    "kyVong": {
+      "soMoTaNgan": 0
+    },
+    "bangChung": "reports/raw/survey-T1-cards.json"
+  },
+  "TC-T1-M2-003": {
+    "tcId": "TC-T1-M2-003",
+    "kiemTra": "Dịch vụ không hỗ trợ tại nhà có nhãn Chỉ tại spa",
+    "dat": {
+      "soNhanSai": 0,
+      "chiTaiSpa": 2
+    },
+    "kyVong": {
+      "soNhanSai": 0,
+      "chiTaiSpa": 2
+    },
+    "bangChung": "reports/raw/survey-T1-cards.json"
+  },
+  "TC-T1-M3-001": {
+    "tcId": "TC-T1-M3-001",
+    "kiemTra": "Bảng giá có đủ cột cho mọi bậc cân nặng và mọi dịch vụ",
+    "dat": {
+      "soHang": 16,
+      "soCot": 7
+    },
+    "kyVong": {
+      "soHang": 16,
+      "soCot": 7
+    },
+    "bangChung": "reports/raw/survey-T1-wizard-3.json"
+  },
+  "TC-T1-M3-002": {
+    "tcId": "TC-T1-M3-002",
+    "kiemTra": "Tra bảng giá đúng cho (Chó, bậc 3-5kg) + dịch vụ đã chọn",
+    "dat": {
+      "hang": "Chó nhỏ3–5kg",
+      "comboTamVeSinh": "265.000₫"
+    },
+    "kyVong": {
+      "comboTamVeSinh": "265.000₫"
+    },
+    "bangChung": "reports/raw/survey-T1-wizard-3.json"
+  },
+  "TC-T1-M3-003": {
+    "tcId": "TC-T1-M3-003",
+    "kiemTra": "Cùng bậc cân nặng nhưng Mèo cho giá khác Chó",
+    "dat": {
+      "cho": "265.000₫",
+      "meo": "275.000₫",
+      "khacNhau": true
+    },
+    "kyVong": {
+      "khacNhau": true
+    },
+    "bangChung": "reports/raw/survey-T1-wizard-3.json"
+  },
+  "TC-T1-M3-004": {
+    "tcId": "TC-T1-M3-004",
+    "kiemTra": "Trang giá ghi rõ giá cuối xác nhận tại spa",
+    "dat": {
+      "coGiaCuoi": true
+    },
+    "kyVong": {
+      "coGiaCuoi": true
+    },
+    "bangChung": "reports/raw/survey-T1-dom.json"
+  },
+  "TC-T1-M3-005": {
+    "tcId": "TC-T1-M3-005",
+    "kiemTra": "Gói hiển thị mức giá từ ...₫ kèm khoảng min-max",
+    "dat": {
+      "coTu": 6
+    },
+    "kyVong": {
+      "coTu": 6
+    },
+    "bangChung": "reports/raw/survey-T1-cards.json"
+  },
+  "TC-T1-M3-005b": {
+    "tcId": "TC-T1-M3-005b",
+    "kiemTra": "Gói hiển thị khoảng min-max trong wizard đặt lịch",
+    "dat": {
+      "soDichVu": 6,
+      "coKhoangWizard": 6
+    },
+    "kyVong": {
+      "soDichVu": 6,
+      "coKhoangWizard": 6
+    },
+    "bangChung": "reports/raw/survey-T1-wizard-dom.json"
+  },
+  "TC-T1-M3-006": {
+    "tcId": "TC-T1-M3-006",
+    "kiemTra": "Khoảng min-max của gói khớp bảng giá",
+    "dat": {
+      "lechMinMax": 0
+    },
+    "kyVong": {
+      "lechMinMax": 0
+    },
+    "bangChung": "reports/raw/survey-T1-wizard-3.json"
+  },
+  "TC-T1-M5-001": {
+    "tcId": "TC-T1-M5-001",
+    "kiemTra": "Trang mô tả quy trình 4 bước từ đặt lịch đến nhận thú cưng",
+    "dat": {
+      "coQuyTrinh": true
+    },
+    "kyVong": {
+      "coQuyTrinh": true
+    },
+    "bangChung": "reports/raw/survey-T1-dom.json"
+  },
+  "TC-T1-M5-002": {
+    "tcId": "TC-T1-M5-002",
+    "kiemTra": "Có nêu xác nhận lịch trong 5 phút qua Zalo",
+    "dat": {
+      "coXacNhan5Phut": true
+    },
+    "kyVong": {
+      "coXacNhan5Phut": true
+    },
+    "bangChung": "reports/raw/survey-T1-dom.json"
+  },
+  "TC-T1-M7-001": {
+    "tcId": "TC-T1-M7-001",
+    "kiemTra": "Chuyển sang tiếng Anh vẫn ở trang hiện tại và dịch đủ",
+    "dat": {
+      "urlEN": "https://petngon.vn/en",
+      "sangEN": true
+    },
+    "kyVong": {
+      "sangEN": true
+    },
+    "bangChung": "reports/raw/survey-T1-dom.json"
+  }
+}

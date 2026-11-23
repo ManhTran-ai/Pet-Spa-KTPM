@@ -1,0 +1,46 @@
+{
+  "coOverlay": 5,
+  "inputs": [
+    {
+      "type": "(none)",
+      "placeholder": "Tìm giống chó/mèo, bé, bài viết…",
+      "aria": "Tìm kiếm",
+      "id": "",
+      "cls": "min-w-0 flex-1 bg-transparent text-base text-brand-deep outline-none placeholder:text-brand-deep/40",
+      "visible": true
+    },
+    {
+      "type": "tel",
+      "placeholder": "0xxx xxx xxx",
+      "aria": "",
+      "id": "f_phone",
+      "cls": "",
+      "visible": true
+    },
+    {
+      "type": "text",
+      "placeholder": "Vd: Mochi",
+      "aria": "",
+      "id": "f_name",
+      "cls": "",
+      "visible": true
+    },
+    {
+      "type": "date",
+      "placeholder": "",
+      "aria": "Ngày khác",
+      "id": "",
+      "cls": "date-other-input",
+      "visible": true
+    },
+    {
+      "type": "text",
+      "placeholder": "",
+      "aria": "",
+      "id": "",
+      "cls": "hp",
+      "visible": true
+    }
+  ],
+  "doanText": []
+}

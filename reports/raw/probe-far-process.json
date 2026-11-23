@@ -1,0 +1,94 @@
+{
+  "t1_diaChiXa": [
+    {
+      "diaChi": "Hà Nội",
+      "doan": "Phí di chuyển\n+ 8.000₫\nThông tin liên hệ\nHỌ TÊN\nSỐ ĐIỆN THOẠI\nTắm · Chó nhỏ (3–5kg)\n155.000₫\n+ Phụ thu tận nhà\n+ 50.000₫\n+ Phí di chuyển (5.4km)\n+ 8.000₫\nTạm tí",
+      "coLienHe": true
+    },
+    {
+      "diaChi": "Đà Lạt, Lâm Đồng",
+      "doan": "Phí di chuyển (miễn phí ≤ 5km)\nMiễn phí\nThông tin liên hệ\nHỌ TÊN\nSỐ ĐIỆN THOẠI\nTắm · Chó nhỏ (3–5kg)\n155.000₫\n+ Phụ thu tận nhà\n+ 50.000₫\nTạm tính\n205.000₫\nchev",
+      "coLienHe": true
+    },
+    {
+      "diaChi": "Quảng Ngãi",
+      "doan": "Phí di chuyển\n+ 80.000₫\nThông tin liên hệ\nHỌ TÊN\nSỐ ĐIỆN THOẠI\nTắm · Chó nhỏ (3–5kg)\n155.000₫\n+ Phụ thu tận nhà\n+ 50.000₫\n+ Phí di chuyển (14.3km)\n+ 80.000₫\nTạm",
+      "coLienHe": true
+    },
+    {
+      "diaChi": "Nha Trang, Khánh Hoà",
+      "doan": "Phí di chuyển\n+ 8.000₫\nThông tin liên hệ\nHỌ TÊN\nSỐ ĐIỆN THOẠI\nTắm · Chó nhỏ (3–5kg)\n155.000₫\n+ Phụ thu tận nhà\n+ 50.000₫\n+ Phí di chuyển (5.4km)\n+ 8.000₫\nTạm tí",
+      "coLienHe": true
+    },
+    {
+      "diaChi": "Hải Phòng",
+      "doan": "Phí di chuyển\n+ 72.000₫\nThông tin liên hệ\nHỌ TÊN\nSỐ ĐIỆN THOẠI\nTắm · Chó nhỏ (3–5kg)\n155.000₫\n+ Phụ thu tận nhà\n+ 50.000₫\n+ Phí di chuyển (13.5km)\n+ 72.000₫\nTạm",
+      "coLienHe": true
+    }
+  ],
+  "t2_quyTrinh": [
+    {
+      "duong": "/spa",
+      "status": 200,
+      "coBuoc": false,
+      "doanBuoc": "",
+      "coNenDat": false,
+      "coGoiXacNhan": false,
+      "coHuy": false
+    },
+    {
+      "duong": "/bang-gia",
+      "status": 200,
+      "coBuoc": false,
+      "doanBuoc": "",
+      "coNenDat": false,
+      "coGoiXacNhan": false,
+      "coHuy": false
+    },
+    {
+      "duong": "/cham-soc",
+      "status": 200,
+      "coBuoc": false,
+      "doanBuoc": "",
+      "coNenDat": false,
+      "coGoiXacNhan": false,
+      "coHuy": false
+    },
+    {
+      "duong": "/so-sanh",
+      "status": 200,
+      "coBuoc": false,
+      "doanBuoc": "",
+      "coNenDat": false,
+      "coGoiXacNhan": false,
+      "coHuy": false
+    },
+    {
+      "duong": "/showroom",
+      "status": 200,
+      "coBuoc": false,
+      "doanBuoc": "",
+      "coNenDat": false,
+      "coGoiXacNhan": false,
+      "coHuy": false
+    },
+    {
+      "duong": "/blog",
+      "status": 200,
+      "coBuoc": false,
+      "doanBuoc": "",
+      "coNenDat": false,
+      "coGoiXacNhan": false,
+      "coHuy": false
+    },
+    {
+      "duong": "/cau-hoi-thuong-gap",
+      "status": 200,
+      "coBuoc": false,
+      "doanBuoc": "",
+      "coNenDat": false,
+      "coGoiXacNhan": false,
+      "coHuy": false
+    }
+  ]
+}

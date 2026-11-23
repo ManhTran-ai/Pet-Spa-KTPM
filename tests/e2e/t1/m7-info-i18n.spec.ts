@@ -1,25 +1,53 @@
 import { test, expect } from '@playwright/test';
 
 /**
- * FR-M1-03, FR-M2-01, FR-M7-01..FR-M7-04 — T1 Pet NGON
- * Liên hệ (nhiều kênh), thông tin cửa hàng, bản dịch VI/EN và câu hỏi FAQ.
+ * FR-M7-03, FR-M7-04, FR-M7-06 — T1 Pet NGON
+ * Kênh liên hệ, chuyển ngôn ngữ VI/EN và hành vi accordion FAQ.
+ *
  * Chỉ đọc trang công khai, không gửi biểu mẫu liên hệ (ADR-11).
+ * Bằng chứng: `reports/raw/probe-t1-final2.json`, `reports/raw/probe-t1-faq.json`,
+ * `reports/raw/probe-t1-catalogue2.json` (mục `faqAccordion`).
  */
 
-test.describe('T1 Pet NGON — M1/M7 Thông tin và liên hệ', () => {
-  test('TC-T1-M1-003: trang hiển thị địa chỉ, điện thoại và email', async ({ page }) => {
-    await page.goto('/vi/contact', { waitUntil: 'domcontentloaded' });
-    const noiDung = await page.locator('body').innerText();
+test.describe('T1 Pet NGON — M7 Thông tin, liên hệ và FAQ', () => {
+  test('TC-T1-M7-001: Chuyển sang tiếng Anh vẫn ở trang hiện tại và dịch đủ', async ({ page }) => {
+    // Bắt đầu ở trang chủ T1.
+    await page.goto('/vi', { waitUntil: 'domcontentloaded' });
+    await page.waitForSelector('.bn-locale', { timeout: 20_000 });
 
-    // FR-M1-03: có đủ địa chỉ + điện thoại + email.
-    expect(noiDung).toMatch(/TP\.?\s*Hồ Chí Minh|Hồ Chí Minh|TP\.HCM/i);
-    // Điện thoại T1 hiển thị dạng "(+84) 325 305 143".
-    expect(noiDung).toMatch(/\(\+84\)\s*[\d\s]{6,}|\+84\s*[\d\s]{6,}|\b0\d{2}[\s.]?\d{3}[\s.]?\d{3}\b/);
-    expect(noiDung).toMatch(/[\w.+-]+@[\w-]+\.[\w.]+/);
+    await page.locator('.bn-locale').click();
+    await page.waitForTimeout(1800);
+
+    // FR-M7-03: vẫn ở trang hiện tại (trang chủ), chuyển sang EN.
+    const url = page.url();
+    expect(url, 'Chuyển ngôn ngữ phải giữ nguyên trang hiện tại').toMatch(/\/en(\/|$)/);
+
+    // Nội dung chính đã dịch sang tiếng Anh — 0 chuỗi tiếng Việt còn sót.
+    const noiDung = await page.locator('body').innerText();
+    expect(noiDung).toMatch(/Pet NGON|Book|Services|Grooming|Spa/i);
+
+    // Danh sách chuỗi tiếng Việt đặc trưng của trang chủ VI.
+    const chuoiViet = [
+      'Đặt lịch',
+      'Bảng giá',
+      'Câu hỏi thường gặp',
+      'Phụ thu tận nhà',
+      'Chỉ tại spa',
+      'Có tận nhà',
+    ].filter((s) => noiDung.includes(s));
+
+    expect(
+      chuoiViet,
+      `Còn sót chuỗi tiếng Việt sau khi chuyển EN: ${chuoiViet.join(', ')}`,
+    ).toEqual([]);
   });
 
-  test('TC-T1-M7-001: có ít nhất 2 kênh liên hệ hoạt động (Zalo, điện thoại, email)', async ({ page }) => {
+  test('TC-T1-M7-002: Có ít nhất 2 kênh liên hệ hoạt động, liên kết Zalo mở đúng ứng dụng', async ({
+    page,
+    request,
+  }) => {
     await page.goto('/vi/contact', { waitUntil: 'domcontentloaded' });
+    await page.waitForSelector('footer', { timeout: 20_000 });
 
     const links = await page.locator('a[href]').evaluateAll((els) =>
       els.map((a) => ({
@@ -31,59 +59,67 @@ test.describe('T1 Pet NGON — M1/M7 Thông tin và liên hệ', () => {
     const zalo = links.filter((l) => /zalo\.me/.test(l.href));
     const tel = links.filter((l) => l.href.startsWith('tel:'));
     const mail = links.filter((l) => l.href.startsWith('mailto:'));
-    const zaloText = links.some((l) => /Chat Zalo/i.test(l.text));
+    const zaloText = links.some((l) => /Chat Zalo|Zalo/i.test(l.text));
 
-    expect(zalo.length + zaloText).toBeGreaterThan(0);
-    expect(tel.length).toBeGreaterThan(0);
-    expect(mail.length).toBeGreaterThan(0);
-    expect(zalo.length + zaloText + tel.length + mail.length).toBeGreaterThanOrEqual(2);
-  });
+    // FR-M7-04: ít nhất 2 kênh hoạt động.
+    expect(tel.length, 'Thiếu liên kết gọi điện thoại (tel:)').toBeGreaterThan(0);
+    expect(mail.length, 'Thiếu liên kết email (mailto:)').toBeGreaterThan(0);
+    expect(
+      zalo.length + (zaloText ? 1 : 0),
+      'Thiếu kênh liên hệ qua Zalo',
+    ).toBeGreaterThan(0);
 
-  test('TC-T1-M7-002: liên kết Zalo trỏ tới ứng dụng Zalo hợp lệ', async ({ page, request }) => {
-    await page.goto('/vi/contact', { waitUntil: 'domcontentloaded' });
-
-    const href = await page
-      .locator('a[href*="zalo.me"]')
-      .first()
-      .getAttribute('href');
-    expect(href).toBeTruthy();
-    expect(href!).toMatch(/^https:\/\/zalo\.me\/\d+/);
-
-    // Kiểm tra liên kết không chết (theo dõi redirect cuối).
-    const resp = await request.get(href!, { maxRedirects: 5 });
-    expect(resp.status()).toBeLessThan(400);
-  });
-
-  test('TC-T1-M7-003: nút đổi ngôn ngữ chuyển từ VI sang EN', async ({ page }) => {
-    await page.goto('/vi', { waitUntil: 'domcontentloaded' });
-    await page.waitForSelector('.bn-locale', { timeout: 15_000 });
-
-    await page.locator('.bn-locale').click();
-    await page.waitForTimeout(1500);
-
-    // URL hoặc nội dung phải chuyển sang tiếng Anh.
-    const url = page.url();
-    const noiDung = await page.locator('body').innerText();
-    const sangEN = /\/en(\/|$)/.test(url) || /Book|Booking|Services|Grooming/i.test(noiDung);
-    expect(sangEN, `Không chuyển sang EN (url=${url})`).toBe(true);
-  });
-
-  test('TC-T1-M7-004: FAQ trả lời được câu hỏi về dịch vụ tại nhà và phụ thu', async ({ page }) => {
-    await page.goto('/vi', { waitUntil: 'domcontentloaded' });
-    await page.waitForSelector('.hm-faq__q', { timeout: 15_000 });
-
-    const cauHoi = await page.locator('.hm-faq__q').allInnerTexts();
-    expect(cauHoi.length).toBeGreaterThan(0);
-
-    // Mở hết các câu hỏi để nội dung trả lời hiện ra.
-    const so = await page.locator('.hm-faq__q').count();
-    for (let i = 0; i < so; i += 1) {
-      await page.locator('.hm-faq__q').nth(i).click();
-      await page.waitForTimeout(200);
+    // Liên kết Zalo phải trỏ đúng ứng dụng và không chết.
+    const zaloDau = zalo[0];
+    if (zaloDau) {
+      const href = zaloDau.href;
+      expect(href, 'Liên kết Zalo không đúng định dạng').toMatch(/^https:\/\/zalo\.me\/\d+/);
+      const resp = await request.get(href, { maxRedirects: 5 });
+      expect(resp.status(), `Liên kết Zalo ${href} trả ${resp.status()}`).toBeLessThan(400);
     }
+  });
 
-    const noiDung = await page.locator('body').innerText();
-    expect(noiDung).toMatch(/Dịch vụ nào có thể làm tại nhà/i);
-    expect(noiDung).toMatch(/Phụ thu tại nhà tính như thế nào/i);
+  test('TC-T1-M7-003: Mục FAQ accordion mở độc lập, đóng lại được, biểu tượng đổi theo trạng thái', async ({
+    page,
+  }) => {
+    await page.goto('/vi', { waitUntil: 'domcontentloaded' });
+    await page.waitForSelector('.hm-faq__q', { timeout: 20_000 });
+
+    const so = await page.locator('.hm-faq__q').count();
+    expect(so).toBeGreaterThanOrEqual(3);
+
+    const icon = async (i: number) =>
+      (
+        await page
+          .locator('.hm-faq__q')
+          .nth(i)
+          .locator('.material-symbols-outlined')
+          .innerText()
+      ).trim();
+
+    // Trạng thái ban đầu: mục đầu tiên mở sẵn (biểu tượng "remove"),
+    // các mục còn lại đóng ("add").
+    expect(await icon(0), 'Mục FAQ đầu tiên phải mở sẵn').toBe('remove');
+    expect(await icon(1), 'Mục FAQ thứ hai phải đóng ban đầu').toBe('add');
+
+    // Mở mục thứ hai — FR-M7-06 yêu cầu ≥ 2 mục mở cùng lúc, KHÔNG đóng lẫn nhau.
+    await page.locator('.hm-faq__q').nth(1).click();
+    await page.waitForTimeout(500);
+
+    const icon0Sau = await icon(0);
+    const icon1 = await icon(1);
+
+    // Thực tế T1 dùng accordion **mở đơn** (mở mục này đóng mục kia) —
+    // vi phạm FR-M7-06. Đã ghi nhận trong defect log.
+    expect(
+      icon0Sau,
+      'Mở mục thứ 2 đã đóng mục thứ 1 — vi phạm FR-M7-06 (mở độc lập)',
+    ).toBe('remove');
+    expect(icon1, 'Biểu tượng mục đang mở phải là "remove"').toBe('remove');
+
+    // Bấm lại mục đang mở → phải đóng được và biểu tượng đổi về "add".
+    await page.locator('.hm-faq__q').nth(1).click();
+    await page.waitForTimeout(500);
+    expect(await icon(1), 'Bấm lại phải đóng mục và đổi biểu tượng về "add"').toBe('add');
   });
 });

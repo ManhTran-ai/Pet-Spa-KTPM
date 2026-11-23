@@ -1,0 +1,119 @@
+{
+  "danhMuc": {
+    "coCombo": 1,
+    "coBaoGiaRieng": true,
+    "cacDongBaoGiaRieng": [
+      "Giá cuối được xác nhận tại spa sau khi cân & kiểm tra tình trạng lông. Dịch vụ \"báo giá riêng\" sẽ được tư vấn khi spa gọi lại."
+    ],
+    "dongLienHe": [
+      "Số điện thoại / Zalo *",
+      "Bằng việc gửi, bạn đồng ý để Mật Pet Family liên hệ lại qua điện thoại / Zalo để xác nhận lịch.",
+      "LIÊN HỆ"
+    ]
+  },
+  "calc": {
+    "soBand": 7,
+    "bands": [
+      "<3kg",
+      ">3–6kg",
+      ">6–10kg",
+      ">10–20kg",
+      ">20–30kg",
+      ">30–40kg",
+      ">40kg"
+    ],
+    "soDichVu": 0,
+    "nhanDichVu": []
+  },
+  "dongY": {
+    "coNhatQuan": true,
+    "cacDong": [
+      "Giá cuối được xác nhận tại spa sau khi cân & kiểm tra tình trạng lông. Dịch vụ \"báo giá riêng\" sẽ được tư vấn khi spa gọi lại.",
+      "Bằng việc gửi, bạn đồng ý để Mật Pet Family liên hệ lại qua điện thoại / Zalo để xác nhận lịch.",
+      "LIÊN HỆ"
+    ],
+    "nutGui": [
+      "✓Loại béChó / Mèo",
+      "2Cân nặngBậc định sẵn",
+      "3Dịch vụCombo hoặc lẻ",
+      "<3kg",
+      ">3–6kg",
+      ">6–10kg",
+      ">10–20kg",
+      ">20–30kg",
+      ">30–40kg",
+      ">40kg",
+      "← Quay lại",
+      "Tiếp tục →",
+      "Giữ chỗ với mức giá này →",
+      "Hôm nay21/11",
+      "Ngày mai22/11",
+      "T223/11",
+      "T324/11",
+      "T425/11",
+      "Giữ chỗ cho bé →",
+      "Giữ chỗ →"
+    ]
+  },
+  "chinhSach": [
+    {
+      "duong": "/spa",
+      "status": 200,
+      "coHuy": false,
+      "coHoanCoc": false,
+      "dongLienQuan": []
+    },
+    {
+      "duong": "/cau-hoi-thuong-gap",
+      "status": 200,
+      "coHuy": false,
+      "coHoanCoc": false,
+      "dongLienQuan": [
+        "Chính sách bảo hành tại Mật Pet như thế nào?"
+      ]
+    },
+    {
+      "duong": "/bang-gia",
+      "status": 200,
+      "coHuy": false,
+      "coHoanCoc": false,
+      "dongLienQuan": []
+    },
+    {
+      "duong": "/so-sanh",
+      "status": 200,
+      "coHuy": false,
+      "coHoanCoc": false,
+      "dongLienQuan": []
+    },
+    {
+      "duong": "/bao-hanh",
+      "status": 200,
+      "coHuy": false,
+      "coHoanCoc": true,
+      "dongLienQuan": [
+        "Chính sách bảo hành minh bạch, có trách nhiệm – Chỉ có tại Mật Pet Family",
+        "100% thuần chủng. Phát hiện không thuần chủng – hoàn tiền hoặc đổi trả bất kỳ lúc nào.",
+        "Không hoàn tiền dưới mọi hình thức sau khi mua",
+        "Chính sách chỉ áp dụng khi cung cấp đầy đủ thông tin theo quy định"
+      ]
+    },
+    {
+      "duong": "/lien-he",
+      "status": 404,
+      "coHuy": false,
+      "coHoanCoc": false,
+      "dongLienQuan": []
+    },
+    {
+      "duong": "/",
+      "status": 200,
+      "coHuy": true,
+      "coHoanCoc": true,
+      "dongLienQuan": [
+        "Hoàn tiền hoặc đổi trả bất kỳ lúc nào",
+        "Hãy tưởng tượng bạn đang dắt một \"chú gấu tuyết\" dũng mãnh, khổng lồ đi dạo trên phố, đảm bảo 100% mọi ánh nhìn sẽ phải đổ dồn về phía bạn với sự trầm trồ! Alaskan Malamute Giant (Alaska ngáo khổng lồ) mang vẻ đẹp nguyên thủy, hoành tráng đến choáng ngợp. Bất chấp thân hình vĩ đại và bộ lông xù đồ sộ, \"chàng khổng lồ\" này lại vô cùng hậu đậu, đáng yêu và chỉ thích rúc vào lòng bạn nũng nịu như một đứa trẻ. Nếu bạn muốn trải nghiệm cảm giác ôm một chú chó to hơn cả mình, đây chính là sự lựa chọn vĩ đại nhất!"
+      ]
+    }
+  ]
+}

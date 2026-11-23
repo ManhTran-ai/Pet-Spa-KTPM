@@ -1,0 +1,32 @@
+{
+  "trangThai": {
+    "soInput": 2,
+    "ph": [
+      "Nguyễn Văn A",
+      "0987 654 321"
+    ],
+    "nutDisabled": true
+  },
+  "chiSdt": {
+    "nutDisabled": true
+  },
+  "tenVaSdt": {
+    "nutDisabled": false
+  },
+  "chiTen": {
+    "nutDisabled": true,
+    "thongBao": [
+      "SỐ ĐIỆN THOẠI"
+    ],
+    "doanLoi": "event_available\nĐẶT LỊCH GROOMING\nHoàn tất 4 bước nhanh\nclose\ncheck\nDịch vụ\ncheck\nBé cưng\ncheck\nLịch hẹn\n4\nĐịa điểm\nĐịa điểm thực hiện\nstore\nTại spa\n1.09 A1 Westgate, Bình Chánh\nKHÔNG PHỤ THU\nhome_work\nTận nhà\nThợ đến địa chỉ của bạn\n+50.000₫ + KM\nThông tin liên hệ\nHỌ TÊN\nSỐ ĐIỆN THOẠI\nTắm · Chó nhỏ (3–5kg)\n155.000₫\nTạm tính\n155.000₫\nchevron_left\nQuay lại\ncheck\nXác nhận đặt lịch"
+  },
+  "sdtChu": {
+    "nutDisabled": true
+  },
+  "sdtNgan": {
+    "nutDisabled": true
+  },
+  "sdtHopLe": {
+    "nutDisabled": false
+  }
+}

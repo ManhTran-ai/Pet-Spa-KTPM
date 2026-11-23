@@ -1,0 +1,25 @@
+{
+  "buoc4": "event_available\nĐẶT LỊCH GROOMING\nHoàn tất 4 bước nhanh\nclose\ncheck\nDịch vụ\ncheck\nBé cưng\ncheck\nLịch hẹn\n4\nĐịa điểm\nĐịa điểm thực hiện\nstore\nTại spa\n1.09 A1 Westgate, Bình Chánh\nKHÔNG PHỤ THU\nhome_work\nTận nhà\nThợ đến địa chỉ của bạn\n+50.000₫ + KM\nThông tin liên hệ\nHỌ TÊN\nSỐ ĐIỆN THOẠI\nTắm · Chó mini (< 3kg)\n88.000₫\nTạm tính\n88.000₫\nchevron_left\nQuay lại\ncheck\nXác nhận đặt lịch",
+  "btns": [
+    {
+      "cls": "bk-close",
+      "text": "close"
+    },
+    {
+      "cls": "bk-loc is-on",
+      "text": "storeTại spa1.09 A1 Westgate, Bình ChánhKhông phụ thu"
+    },
+    {
+      "cls": "bk-loc  ",
+      "text": "home_workTận nhàThợ đến địa chỉ của bạn+50.000₫ + km"
+    },
+    {
+      "cls": "bn-btn bn-btn--ghost",
+      "text": "chevron_leftQuay lại"
+    },
+    {
+      "cls": "bn-btn bn-btn--primary",
+      "text": "checkXác nhận đặt lịch"
+    }
+  ]
+}

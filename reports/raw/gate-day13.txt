@@ -1,0 +1,61 @@
+﻿node.exe : npm warn Unknown env config "devdir". This will stop working in the next major version of npm. See `npm 
+help npmrc` for supported config options.
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (npm warn Unknow...config options.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+> petspa-ktpm@1.0.0 gate
+> npm run req:check && npm run rtm:check && npm run assign:check && npm run exit:check
+
+npm warn Unknown env config "devdir". This will stop working in the next major version of npm. See `npm help npmrc` 
+for supported config options.
+
+> petspa-ktpm@1.0.0 req:check
+> node scripts/req-check.mjs
+
+# Kß║┐t quß║ú Gate ΓÇö kiß╗âm tra requirements.csv v├á ti├¬u ch├¡ chß║Ñp nhß║¡n cß╗ºa SRS-01
+
+| Chß╗ë sß╗æ | Gi├í trß╗ï |
+| --- | --- |
+| Sß╗æ d├▓ng requirements.csv (kh├┤ng t├¡nh header) | 58 |
+| Sß╗æ FR | 51 |
+| Sß╗æ NFR | 7 |
+| ID tr├╣ng | 0 |
+| ID trong CSV kh├┤ng c├│ trong SRS | 0 |
+| ID trong SRS kh├┤ng c├│ trong CSV | 0 |
+| Sß╗æ vi phß║ím | 0 |
+
+## Vi phß║ím
+
+Kh├┤ng c├│.
+
+npm warn Unknown env config "devdir". This will stop working in the next major version of npm. See `npm help npmrc` 
+for supported config options.
+
+> petspa-ktpm@1.0.0 rtm:check
+> node scripts/rtm-check.mjs
+
+─É├ú ghi reports\rtm-coverage.md
+npm warn Unknown env config "devdir". This will stop working in the next major version of npm. See `npm help npmrc` 
+for supported config options.
+
+> petspa-ktpm@1.0.0 assign:check
+> node scripts/assign-check.mjs
+
+Tß╗òng test case: 226
+Sß╗æ ca theo Owner: {"T├ái":55,"Mß║ính":56,"Lß╗Öc":58,"Ng├ón":57}
+Ch├¬nh lß╗çch max-min: 3 (giß╗¢i hß║ín 3)
+Module chß╗ë c├│ 1 ng╞░ß╗¥i chß║íy: 0
+
+OK: 4/4 nguy├¬n tß║»c ph├ón c├┤ng ─æ╞░ß╗úc thoß║ú m├ún.
+npm warn Unknown env config "devdir". This will stop working in the next major version of npm. See `npm help npmrc` 
+for supported config options.
+
+> petspa-ktpm@1.0.0 exit:check
+> node scripts/exit-check.mjs
+
+─É├ú ghi reports\exit-criteria.md
+Sß╗æ ti├¬u ch├¡ ─æß║ít: 3/8

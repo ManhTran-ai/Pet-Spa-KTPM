@@ -1,0 +1,136 @@
+{
+  "controls": [
+    {
+      "tag": "BUTTON",
+      "cls": "st active",
+      "text": "1Loại béChó / Mèo",
+      "ariaExpanded": null,
+      "id": ""
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "st",
+      "text": "2Cân nặngBậc định sẵn",
+      "ariaExpanded": null,
+      "id": ""
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "st",
+      "text": "3Dịch vụCombo hoặc lẻ",
+      "ariaExpanded": null,
+      "id": ""
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "pet-opt dog",
+      "text": "✓🐶Chó",
+      "ariaExpanded": null,
+      "id": ""
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "pet-opt cat",
+      "text": "✓🐱Mèo",
+      "ariaExpanded": null,
+      "id": ""
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "btn back",
+      "text": "← Quay lại",
+      "ariaExpanded": null,
+      "id": ""
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "btn btn-primary",
+      "text": "Tiếp tục →",
+      "ariaExpanded": null,
+      "id": ""
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "rail-cta",
+      "text": "Giữ chỗ với mức giá này →",
+      "ariaExpanded": null,
+      "id": ""
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "date-pill",
+      "text": "Hôm nay22/11",
+      "ariaExpanded": null,
+      "id": ""
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "date-pill",
+      "text": "Ngày mai23/11",
+      "ariaExpanded": null,
+      "id": ""
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "date-pill",
+      "text": "T324/11",
+      "ariaExpanded": null,
+      "id": ""
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "date-pill",
+      "text": "T425/11",
+      "ariaExpanded": null,
+      "id": ""
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "date-pill",
+      "text": "T526/11",
+      "ariaExpanded": null,
+      "id": ""
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "btn btn-primary book-submit",
+      "text": "Giữ chỗ cho bé →",
+      "ariaExpanded": null,
+      "id": ""
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "btn btn-gold",
+      "text": "Giữ chỗ →",
+      "ariaExpanded": null,
+      "id": ""
+    }
+  ],
+  "sauClickBangGia": {
+    "coCombo": true,
+    "coGrooming": true,
+    "coNhuom": false,
+    "coBaoGiaRiengBlock": false
+  },
+  "sauWait3s": {
+    "coCombo": true,
+    "coGrooming": true
+  },
+  "tables": [
+    {
+      "visible": true,
+      "parentHidden": false,
+      "text": "Dịch vụ (Grooming)<3kg>3–6kg>6–10kg>10–20kg>20–30kg>30–40kg>40kgCombo trọn góiCombo Tắm Vệ Sinh120k200k300k400k500k600k7"
+    },
+    {
+      "visible": true,
+      "parentHidden": false,
+      "text": "Dịch vụ (Nhuộm)<6kg>6–15kg>15–30kg>30kgNhuộm tạo kiểuNhuộm 2 tai + đuôi250k300k350k400kNhuộm 4 chân250k300k350k400kNhuộm"
+    },
+    {
+      "visible": true,
+      "parentHidden": false,
+      "text": "Báo giá riêng — tuỳ tình trạng béGỡ rốiBáo giá theo tình trạng lông: 50.000 – 500.000đTẩy ốBáo giá theo tình trạng lông:"
+    }
+  ]
+}

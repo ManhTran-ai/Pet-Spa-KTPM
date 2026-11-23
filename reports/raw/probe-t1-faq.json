@@ -1,0 +1,27 @@
+{
+  "lienHe": {
+    "coDiaChi": true,
+    "coDienThoai": true,
+    "coEmail": true,
+    "coGioMoCua": false,
+    "cacKhoangGio": [],
+    "coTuKhoaMoCua": false,
+    "dongChuoiGioMoCua": []
+  },
+  "faq": {
+    "soMuc": 6,
+    "tieuDe": [
+      "Vì sao giá khác nhau giữa chó và mèo?remove",
+      "Cân nặng được xác định thế nào?add",
+      "Dịch vụ nào có thể làm tại nhà?add",
+      "Phụ thu tại nhà tính như thế nào?add",
+      "Tôi cần chuẩn bị gì khi thợ đến nhà?add",
+      "Có thể đổi/huỷ lịch không?add"
+    ],
+    "noiDung": [
+      "help\nCÂU HỎI THƯỜNG GẶP\nMọi thứ bạn cần biết trước khi đặt lịch\nVì sao giá khác nhau giữa chó và mèo?\nadd\nCân nặng được xác định thế nào?\nadd\nDịch vụ nào có thể làm tại nhà?\nremove\nTắm vệ sinh, Cạo lông, và Combo Tắm + Cạo. Cắt tỉa lông cần thực hiện tại spa vì cần bàn cố định, đèn chiếu sáng đúng chuẩn và đảm bảo an toàn lưỡi kéo.\nPhụ thu tại nhà tính như thế nào?\nadd\nTôi cần chuẩn bị gì khi thợ đến nhà?\nadd\nCó thể đổi/huỷ lịch không?\nadd",
+      "help\nCÂU HỎI THƯỜNG GẶP\nMọi thứ bạn cần biết trước khi đặt lịch\nVì sao giá khác nhau giữa chó và mèo?\nadd\nCân nặng được xác định thế nào?\nadd\nDịch vụ nào có thể làm tại nhà?\nadd\nPhụ thu tại nhà tính như thế nào?\nremove\nHai khoản: (1) Phụ thu cố định cho dịch vụ tận nhà — 70k cho Tắm, 80k cho Cạo, 100k cho Combo. (2) Phí di chuyển — 5km đầu miễn phí, sau đó 8.000₫/km. Form đặt lịch tự cộng cả hai vào tổng đơn.\nTôi cần chuẩn bị gì khi thợ đến nhà?\nadd\nCó thể đổi/huỷ lịch không?\nadd",
+      "help\nCÂU HỎI THƯỜNG GẶP\nMọi thứ bạn cần biết trước khi đặt lịch\nVì sao giá khác nhau giữa chó và mèo?\nadd\nCân nặng được xác định thế nào?\nadd\nDịch vụ nào có thể làm tại nhà?\nadd\nPhụ thu tại nhà tính như thế nào?\nadd\nTôi cần chuẩn bị gì khi thợ đến nhà?\nadd\nCó thể đổi/huỷ lịch không?\nremove\nBạn có thể huỷ hoặc đổi lịch miễn phí nếu thông báo trước 4 giờ. Trong vòng 4 giờ trước giờ hẹn, phụ thu 50% cho lịch tại nhà do đã điều phối thợ và xe."
+    ]
+  }
+}

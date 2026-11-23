@@ -1,0 +1,197 @@
+{
+  "buttons": [
+    {
+      "cls": "hidden items-center justify-center rounded-full p-2 text-brand-deep transition-colors duration-300 ease-in-out hover:text-brand-gold md:flex",
+      "text": "",
+      "visible": true,
+      "disabled": false
+    },
+    {
+      "cls": "rounded-2xl border border-brand-deep/20 p-2.5 transition-colors duration-300 ease-in-out hover:bg-brand-deep/5 md:hidden",
+      "text": "",
+      "visible": false,
+      "disabled": false
+    },
+    {
+      "cls": "rounded-2xl border border-brand-deep/20 p-2.5 transition-colors duration-300 ease-in-out hover:bg-brand-deep/5 md:hidden",
+      "text": "",
+      "visible": false,
+      "disabled": false
+    },
+    {
+      "cls": "st done",
+      "text": "✓Loại béChó / Mèo",
+      "visible": true,
+      "disabled": false
+    },
+    {
+      "cls": "st done",
+      "text": "✓Cân nặngBậc định sẵn",
+      "visible": true,
+      "disabled": false
+    },
+    {
+      "cls": "st active",
+      "text": "3Dịch vụCombo hoặc lẻ",
+      "visible": true,
+      "disabled": false
+    },
+    {
+      "cls": "active",
+      "text": "Combo trọn gói",
+      "visible": true,
+      "disabled": false
+    },
+    {
+      "cls": "",
+      "text": "Dịch vụ lẻ",
+      "visible": true,
+      "disabled": false
+    },
+    {
+      "cls": "svc combo sel",
+      "text": "✓Combo Tắm Vệ Sinh200k",
+      "visible": true,
+      "disabled": false
+    },
+    {
+      "cls": "svc combo",
+      "text": "Combo Tắm Cạo250k",
+      "visible": true,
+      "disabled": false
+    },
+    {
+      "cls": "svc combo",
+      "text": "Combo Tắm Cắt350k",
+      "visible": true,
+      "disabled": false
+    },
+    {
+      "cls": "svc combo",
+      "text": "Combo Tắm Cắt Tạo Hình400k",
+      "visible": true,
+      "disabled": false
+    },
+    {
+      "cls": "svc",
+      "text": "Nhuộm 2 tai + đuôi250k",
+      "visible": true,
+      "disabled": false
+    },
+    {
+      "cls": "svc",
+      "text": "Nhuộm 4 chân250k",
+      "visible": true,
+      "disabled": false
+    },
+    {
+      "cls": "svc",
+      "text": "Nhuộm hình nhỏ300k",
+      "visible": true,
+      "disabled": false
+    },
+    {
+      "cls": "svc",
+      "text": "Gỡ rốiBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+      "visible": true,
+      "disabled": false
+    },
+    {
+      "cls": "svc",
+      "text": "Tẩy ốBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+      "visible": true,
+      "disabled": false
+    },
+    {
+      "cls": "svc",
+      "text": "Tắm trắngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+      "visible": true,
+      "disabled": false
+    },
+    {
+      "cls": "svc",
+      "text": "Xả dưỡngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng",
+      "visible": true,
+      "disabled": false
+    },
+    {
+      "cls": "svc",
+      "text": "Nhuộm hình lớnBáo giá tuỳ kích thước & màuBáo giá riêng",
+      "visible": true,
+      "disabled": false
+    },
+    {
+      "cls": "svc",
+      "text": "Nhuộm tạo hình cơ thểBáo giá theo thiết kế riêngBáo giá riêng",
+      "visible": true,
+      "disabled": false
+    },
+    {
+      "cls": "btn back",
+      "text": "← Quay lại",
+      "visible": true,
+      "disabled": false
+    },
+    {
+      "cls": "btn btn-gold",
+      "text": "Giữ chỗ ngay →",
+      "visible": true,
+      "disabled": false
+    },
+    {
+      "cls": "rail-cta",
+      "text": "Giữ chỗ với mức giá này →",
+      "visible": true,
+      "disabled": false
+    },
+    {
+      "cls": "date-pill",
+      "text": "Hôm nay21/11",
+      "visible": true,
+      "disabled": false
+    },
+    {
+      "cls": "date-pill",
+      "text": "Ngày mai22/11",
+      "visible": true,
+      "disabled": false
+    },
+    {
+      "cls": "date-pill",
+      "text": "T223/11",
+      "visible": true,
+      "disabled": false
+    },
+    {
+      "cls": "date-pill",
+      "text": "T324/11",
+      "visible": true,
+      "disabled": false
+    },
+    {
+      "cls": "date-pill",
+      "text": "T425/11",
+      "visible": true,
+      "disabled": false
+    },
+    {
+      "cls": "btn btn-primary book-submit",
+      "text": "Giữ chỗ cho bé →",
+      "visible": true,
+      "disabled": false
+    },
+    {
+      "cls": "btn btn-gold",
+      "text": "Giữ chỗ →",
+      "visible": false,
+      "disabled": false
+    },
+    {
+      "cls": "mat-fab relative block h-[92px] w-[84px] rounded-3xl focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-4 focus-visible:outline-brand-deep md:h-[108px] md:w-[100px]",
+      "text": "",
+      "visible": true,
+      "disabled": false
+    }
+  ],
+  "body": "Trang chủ\nChó\nMèo\nTìm Bé Thương\nSpa\nBảo hành\nVề Mật Pet\nVI\n|\nEN\n0939.86.36.96\nSPA & GROOMING · TỪ 2011\nBiết giá trước\nkhi đưa bé đến spa.\n\nChọn loại bé, cân nặng và dịch vụ — bạn thấy ngay mức giá dự kiến minh bạch, rồi giữ chỗ chỉ với số điện thoại. Không còn phải nhắn tin hỏi giá.\n\nTính giá dự kiến →\nXem bảng giá\n✓\nAn toàn cho bé\n✓\nHơn 15 năm kinh nghiệm\n✓\nNhân viên có nghề\n🐾\nĐÃ CHĂM SÓC\n10.000+\nCALCULATOR\nTính giá dự kiến cho bé\n\nBa bước nhanh. Giá hiện ngay khi bạn chọn — chưa phải để lại thông tin gì.\n\n✓\nLoại bé\nChó / Mèo\n✓\nCân nặng\nBậc định sẵn\n3\nDịch vụ\nCombo hoặc lẻ\nChọn combo hoặc dịch vụ lẻ\n\nChọn 1 combo trọn gói, hoặc tự ghép dịch vụ lẻ. Nhuộm & dịch vụ \"báo giá riêng\" có thể thêm kèm.\n\nCombo trọn gói\nDịch vụ lẻ\n✓\nCombo Tắm Vệ Sinh\n200k\nCombo Tắm Cạo\n250k\nCombo Tắm Cắt\n350k\nCombo Tắm Cắt Tạo Hình\n400k\nNHUỘM TẠO KIỂU\nNhuộm 2 tai + đuôi\n250k\nNhuộm 4 chân\n250k\nNhuộm hình nhỏ\n300k\nDỊCH VỤ BÁO GIÁ RIÊNG\nGỡ rối\nBáo giá theo tình trạng lông: 50.000 – 500.000đ\nBáo giá riêng\nTẩy ố\nBáo giá theo tình trạng lông: 50.000 – 500.000đ\nBáo giá riêng\nTắm trắng\nBáo giá theo tình trạng lông: 50.000 – 500.000đ\nBáo giá riêng\nXả dưỡng\nBáo giá theo tình trạng lông: 50.000 – 500.000đ\nBáo giá riêng\nNhuộm hình lớn\nBáo giá tuỳ kích thước & màu\nBáo giá riêng\nNhuộm tạo hình cơ thể\nBáo giá theo thiết kế riêng\nBáo giá riêng\n← Quay lại\nGiữ chỗ ngay →\nGIÁ DỰ KIẾN\n~200.000đ\nChó · >3–6kg\n—\nCombo Tắm Vệ Sinh\n200k\nGiá cuối được xác nhận tại spa sau khi cân & kiểm tra tình trạng lông của bé.\nGiữ chỗ với mức giá này →\nTÓM TẮT LỰA CHỌN\nLoại bé\nChó\nCân nặng\n>3–6kg\nCombo Tắm Vệ Sinh\n200.000đ\nGiá dự kiến\n~200.000đ\n\nGiá cuối được xác nhận tại spa sau khi cân & kiểm tra tình trạng lông. Dịch vụ \"báo giá riêng\" sẽ được tư vấn khi spa gọi lại.\n\nSố điện thoại / Zalo *\nTên bé\nNgày mong muốn\nHôm nay\n21/11\nNgày mai\n22/11\nT2\n23/11\nT3\n24/11\nT4\n25/11\nNgày khác\n\nBằng việc gửi, bạn đồng ý để Mật Pet Family liên hệ lại qua điện thoại / Zalo để xác nhận lịch.\n\nGiữ chỗ cho bé →\n* Giá trên chưa bao gồm phí gỡ rối, tẩy ố và tắm trắng.\n\nPremium pet shop đồng hành tìm người bạn bốn chân phù hợp nhất cho từng gia đình Việt.\n\nYouTube\nFacebook\nTikTok\n\nPET SHOP\n\nTrang chủ\nChó\nMèo\nTìm Bé Thương\nBảng giá\nBảo hành\nVề Mật Pet\nTuyển dụng\n\nNỘI DUNG & CỘNG ĐỒNG\n\nBlog\nHướng dẫn chăm sóc\nSo sánh giống\nHỏi đáp\nĐánh giá khách hàng\nShowroom\n\nLIÊN HỆ\n\n239 Nguyễn Hồng Đào, Q. Tân Bình, TP.HCM\n0939863696\nmatpetfamily2011@gmail.com\n08:00 - 22:00 mỗi ngày\n© 2011–2026 Mật Pet Family. All rights reserved."
+}

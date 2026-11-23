@@ -228,3 +228,48 @@ Trạng thái: `TODO` | `IN-PROGRESS` | `DONE` | `DONE-HUMAN-PENDING` | `BLOCKED
   - Người dùng cần xác nhận lựa chọn **Hướng 2** (ADR-15) trong họp và phê duyệt ma trận phân công v3.0.
   - **Việc cần làm ở Ngày 5–8 (RV-D6):** tổ chức Inspection cho bộ test case 226 ca — hiện chỉ mới có review chéo, chưa đạt hình thức rà soát trang trọng nhất theo Cẩm nang §3.3.
   - `docs/decisions.md` chưa có ADR cho đợt Technical Review này — sẽ bổ sung khi chốt ADR-17.
+
+### Phân 10 — Ngày 10: Kiểm thử tích hợp T1 + điều tra sâu lỗi NFR của Tài · 2026-11-22
+- Đã làm:
+  - **Kiểm thử tích hợp T1 (Pet NGON)** — bộ `tests/e2e/t1/int-integration.spec.ts` gồm 5 ca `INT-T1-001…005`, báo cáo `reports/integration-t1.md`:
+    - `INT-T1-001` — **canary network**: xác nhận wizard **không gọi API giá** (dữ liệu đóng gói sẵn trong bundle SSR/RSC của Next.js). Đã lọc đúng `_rsc=` (route prefetch) và `google-analytics.com` (telemetry GA4) — nếu lọc sai, ca này báo động giả. Fail = dữ liệu đã chuyển sang API từ xa.
+    - `INT-T1-002` — **hợp đồng dữ liệu**: 12/12 khoảng giá min/max của 6 dịch vụ trong wizard khớp 1:1 với bảng giá tĩnh.
+    - `INT-T1-003` — 7/7 bậc cân nặng chó khớp bảng tĩnh (130.000₫ → 725.000₫).
+    - `INT-T1-004` — **validation biên**: 6/6 điểm biên (2,9 / 3 / 3,1 / 4,9 / 5 / 5,1 kg) ánh xạ đúng bậc.
+    - `INT-T1-005` — **công thức phụ thu di chuyển** `max(0, ⌈km⌉ − 5) × 8.000₫` khớp production (7,2 km → 24.000₫; 13,8 km → 72.000₫; 15,7 km → 88.000₫). Tổng = giá gói + 70.000₫ phụ thu tại nhà (Combo Tắm + Vệ sinh) + phí di chuyển.
+  - **Điều tra sâu 2 lỗi NFR của Tài** (Day 11–12) — bằng chứng, không phải "sửa cho xanh":
+    - `TC-NFR-03-004` — **phát hiện lỗi test harness, không phải lỗi ứng dụng**: theo HTML5, `<button disabled>` **không thể nhận focus**, nên `expect(next).toBeFocused()` là khẳng định sai. Thêm: tên truy cập của T2 đổi thành `"✓🐶Chó"` sau khi chọn → phải dùng regex locator thay vì `exact: true`. Kết luận: **calculator T2 thao tác được 100% bằng bàn phím** (thứ tự Tab: nav → bước → loài → ngày → nút gửi) → chuyển Fail → **Pass**.
+    - Bổ sung `TC-NFR-03-004b/c` — kiểm tra **thứ tự Tab** và **chuỗi Tab**. Phải loại trừ field honeypot chống spam (`aria-hidden="true"`, `tabindex="-1"`, offset âm) — đây là hành vi đúng, không phải lỗi.
+    - `TC-NFR-04-005` — **giữ nguyên Fail** (lỗi thật) nhưng bổ sung số liệu chẩn đoán: T1 tràn **19px** (`.bn-bar__right`) và **18px** (`.bn-hero__visual-glow`); T2/T3 = **0px**. Xác nhận người dùng **thực sự cuộn ngang được** (đặt `scrollLeft = 9999` → giữ nguyên giá trị).
+  - **Sửa race condition `TC-T3-M5-005`**: drawer MUI render giờ mở cửa bất đồng bộ + phân biệt hoa/thường (`CLOSED` vs `closed`). Thêm helper chờ trạng thái xuất hiện, regex không phân biệt hoa thường, chuẩn hóa text nhiều dòng. Xác nhận ổn định qua **3 lần chạy liên tiếp** (`4 passed` × 3).
+  - **Đóng `DEF-023`** (obsolete): SRS v1.2 đã sửa `FR-M4-04`; T1 thực tế có **7 ngày cố định + 8 khung giờ 08:30–17:00**, thỏa mãn yêu cầu hiện hành. Bằng chứng: `reports/raw/t1-m4-004-date-step.json`.
+  - Liên kết `TC-T1-M1-005` với `DEF-016`; làm giàu `DEF-016` bằng số liệu tràn cụ thể theo từng site.
+  - Viết `scripts/_rebuild-exec-log.mjs` — dựng lại `reports/execution-log.csv` từ `docs/testcases/*.csv` (nguồn sự thật) + tra `Defect_ID` từ `docs/defects/defects.csv`, tránh log bị thu hẹp khi chạy từng project riêng lẻ.
+- Lệnh đã chạy & kết quả thực tế:
+  - Regression toàn bộ: **98 passed · 19 failed · 1 skipped** (7,9 phút) → `reports/raw/regression-day13.txt`.
+  - **19/19 Fail đều truy về được defect**; sau khi tái dựng log, **0 dòng Fail nào còn `Defect_ID` rỗng**.
+- Cần dây / HUMAN:
+  - **CHG-2026-11-21-01** (bổ sung "Combo Tắm + Vệ sinh" +70.000₫ vào danh sách dịch vụ tại nhà của T1 — `BR-06` / `FR-M6-03`) **đang chờ Mạnh duyệt**; sau khi duyệt sẽ cập nhật SRS v1.3 và dựng lại RTM.
+
+### Phân 11 — Ngày 13: Regression tự động toàn bộ + chấm Exit criteria · 2026-11-22
+- Đã làm:
+  - **Regression tự động toàn bộ** (5 project `t1`, `t2`, `t3`, `nfr`, `security`) → báo cáo `reports/regression-report.md`:
+    - Kết quả **98 Pass / 19 Fail / 1 Skip** (skip có chủ đích: `TC-NFR-06-003` giữ kiểm thử thủ công).
+    - **0 Fail chưa xác định nguyên nhân**; 19/19 Fail đã có defect tương ứng.
+    - Bảng ánh xạ đầy đủ 19 lỗi → defect nằm trong `reports/regression-report.md` §2.
+  - **Sửa 2 lỗi TypeScript** phát sinh khi bổ sung bằng chứng chẩn đoán: `NodeListOf<Element>` không có `[Symbol.iterator]` → `Array.from(...)`; và ép kiểu thuộc tính `disabled` qua `Element & { disabled?: boolean }` (không phụ thuộc tag phần tử).
+  - **Cải thiện `scripts/exit-check.mjs`** để đo **đúng định nghĩa** từng tiêu chí:
+    - `EC-2` giờ đo riêng nhóm **Critical/High** (đọc `Priority` từ `docs/testcases/*.csv` — `execution-log.csv` không mang cột này): đã thực thi 104/203 (51,2%), Pass 87,5% trong nhóm này.
+    - `EC-4` giờ đo **từng hệ thống** (T1/T2/T3): 23 ca tự động Pass, **3/3 hệ thống có bộ E2E xanh**.
+    - Thêm mục **"Ranh giới Hướng 2"** vào `reports/exit-criteria.md` — giải thích vì sao EC-2/3/5/6 FAIL là **hệ quả đúng** của việc kiểm thử phần mềm đang hoạt động của bên thứ ba (ADR-15), không phải khiếm khuyết quy trình; theo ASG-01 §5.3 test phải **Fail trung thực** + **ghi defect**, không hạ ngưỡng để ép xanh.
+  - Viết `reports/gates/day-13.md` — bằng chứng gate theo §3A.4 mục 9.
+- Lệnh đã chạy & kết quả thực tế:
+  - `npm run gate` → **exit 0**: `req:check` 0 vi phạm (58 yêu cầu = 51 FR + 7 NFR) · `rtm:check` truy xuất 2 chiều 100% · `assign:check` 226 ca / Tài 55 · Mạnh 56 · Ngân 57 · Lộc 58, chênh lệch 3, 0 module chỉ 1 người chạy, **4/4 nguyên tắc OK** · `exit:check` **3/8 tiêu chí đạt**.
+  - `npm run lint` → 0 error (7 warning cũ) · `npm run typecheck` → **sạch**.
+  - `node scripts/_rebuild-exec-log.mjs` → 114 dòng (**95 Pass / 19 Fail**).
+- Tình trạng Definition of Done của Tài (§3A.4): **9/9 mục đạt** — trong đó mục 3 "chạy hết test case của mình" là **55/55**.
+- Cần dây / HUMAN:
+  - **EC-7 (UAT)** là phần việc cần **con người**: 8 kịch bản UAT trong `docs/testcases/uat.csv` đòi 5–8 người dùng ngoài nhóm — do **Lộc (TV4)** phụ trách Ngày 13. Không thể tự động hoá.
+  - **3 lỗi Critical/High còn mở** (`DEF-013` T3 thiếu `alt` trên 49 ảnh, `DEF-019` Lighthouse Performance < 70, `DEF-020` LCP > 2,5s) đều thuộc mã nguồn production bên thứ ba → **ngoài tầm sửa của nhóm**; cần gửi phản hồi cho bên thứ ba.
+  - **CHG-2026-11-21-01** vẫn chờ Mạnh duyệt.
+  - **Final Test Report + Lessons learned (Ngày 14)** — Mạnh là người tổng hợp; các đầu vào đã sẵn sàng: `reports/regression-report.md`, `reports/exit-criteria.md`, `reports/integration-t1.md`, `reports/gates/day-13.md`, `reports/execution-log.csv`, `docs/defects/defects.csv`.
