@@ -29,12 +29,12 @@ TC-T2-M3-015,FR-M3-02,T2,BVA ngưỡng 6kg: cân 6kg thuộc bậc >3-6kg,Critic
 TC-T2-M3-016,FR-M3-02,T2,BVA ngưỡng 6kg: cân 6.1kg thuộc bậc >6-10kg,Critical,BVA,Manual,Tài,Chưa thực thi
 TC-T2-M3-017,FR-M3-02,T2,BVA ngưỡng 10kg: cân 10kg thuộc bậc >6-10kg,Critical,BVA,Manual,Tài,Chưa thực thi
 TC-T2-M3-018,FR-M3-02,T2,BVA ngưỡng 10kg: cân 10.1kg thuộc bậc >10-20kg,Critical,BVA,Manual,Tài,Blocked
-TC-T2-M3-019,FR-M3-02,T2,BVA ngưỡng 20kg: cân 20kg thuộc bậc >10-20kg,Critical,BVA,Manual,Lộc,Blocked
-TC-T2-M3-020,FR-M3-02,T2,BVA ngưỡng 20kg: cân 20.1kg thuộc bậc >20-30kg,Critical,BVA,Manual,Lộc,Blocked
-TC-T2-M3-021,FR-M3-02,T2,BVA ngưỡng 30kg: cân 30kg thuộc bậc >20-30kg,Critical,BVA,Manual,Lộc,Blocked
-TC-T2-M3-022,FR-M3-02,T2,BVA ngưỡng 30kg: cân 30.1kg thuộc bậc >30-40kg,Critical,BVA,Manual,Lộc,Blocked
-TC-T2-M3-023,FR-M3-02,T2,BVA ngưỡng 40kg: cân 40kg thuộc bậc >30-40kg,Critical,BVA,Manual,Lộc,Blocked
-TC-T2-M3-024,FR-M3-02,T2,BVA ngưỡng 40kg: cân 40.1kg thuộc bậc trên 40kg,Critical,BVA,Manual,Lộc,Blocked
+TC-T2-M3-019,FR-M3-02,T2,BVA ngưỡng 20kg: cân 20kg thuộc bậc >10-20kg,Critical,BVA,Manual,Lộc,Pass
+TC-T2-M3-020,FR-M3-02,T2,BVA ngưỡng 20kg: cân 20.1kg thuộc bậc >20-30kg,Critical,BVA,Manual,Lộc,Pass
+TC-T2-M3-021,FR-M3-02,T2,BVA ngưỡng 30kg: cân 30kg thuộc bậc >20-30kg,Critical,BVA,Manual,Lộc,Pass
+TC-T2-M3-022,FR-M3-02,T2,BVA ngưỡng 30kg: cân 30.1kg thuộc bậc >30-40kg,Critical,BVA,Manual,Lộc,Pass
+TC-T2-M3-023,FR-M3-02,T2,BVA ngưỡng 40kg: cân 40kg thuộc bậc >30-40kg,Critical,BVA,Manual,Lộc,Pas
+TC-T2-M3-024,FR-M3-02,T2,BVA ngưỡng 40kg: cân 40.1kg thuộc bậc trên 40kg,Critical,BVA,Manual,Lộc,Pass
 TC-T2-M4-001,FR-M4-01,T2,Form giữ chỗ hiển thị SĐT bắt buộc và tên bé tuỳ chọn,Critical,UC,Auto,Ngân,Pass
 TC-T2-M4-002,FR-M4-02,T2,Bỏ trống SĐT thì form không gửi được và báo đúng trường lỗi,Critical,EP,Auto,Ngân,Pass
 TC-T2-M4-003,FR-M4-03,T2,Nhập SĐT chứa chữ cái bị từ chối,Critical,EP,Manual,Ngân,Pass
