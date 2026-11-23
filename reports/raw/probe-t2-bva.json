@@ -1,0 +1,258 @@
+{
+  "chips": [
+    {
+      "text": "<3kg",
+      "cls": "chip",
+      "title": "",
+      "aria": "",
+      "data": ""
+    },
+    {
+      "text": ">3–6kg",
+      "cls": "chip",
+      "title": "",
+      "aria": "",
+      "data": ""
+    },
+    {
+      "text": ">6–10kg",
+      "cls": "chip",
+      "title": "",
+      "aria": "",
+      "data": ""
+    },
+    {
+      "text": ">10–20kg",
+      "cls": "chip",
+      "title": "",
+      "aria": "",
+      "data": ""
+    },
+    {
+      "text": ">20–30kg",
+      "cls": "chip",
+      "title": "",
+      "aria": "",
+      "data": ""
+    },
+    {
+      "text": ">30–40kg",
+      "cls": "chip",
+      "title": "",
+      "aria": "",
+      "data": ""
+    },
+    {
+      "text": ">40kg",
+      "cls": "chip",
+      "title": "",
+      "aria": "",
+      "data": ""
+    }
+  ],
+  "htmlChip": "<button type=\"button\" class=\"chip\">&lt;3kg</button>",
+  "bangGia": [
+    {
+      "head": [
+        "Giống",
+        "Kích thước",
+        "Giá tham khảo",
+        "Sẵn có"
+      ],
+      "rows": [
+        [
+          "DachshundLạp Xưởng lông ngắn",
+          "Nhỏ",
+          "6.000.000 – 10.000.000 VND",
+          "Liên hệ"
+        ],
+        [
+          "Toy Poodle",
+          "Nhỏ",
+          "10.000.000 – 15.000.000 VND",
+          "Liên hệ"
+        ],
+        [
+          "Poodle Tiny",
+          "Nhỏ",
+          "11.000.000 – 35.000.000 VND",
+          "Liên hệ"
+        ],
+        [
+          "PomeranianPhốc Sóc / Pom",
+          "Nhỏ",
+          "14.000.000 – 35.000.000 VND",
+          "2 bé →"
+        ],
+        [
+          "Poodle Teacup",
+          "Nhỏ",
+          "15.000.000 – 25.000.000 VND",
+          "Liên hệ"
+        ],
+        [
+          "Labrador RetrieverChó săn mồi",
+          "Lớn",
+          "15.000.000 – 20.000.000 VND",
+          "Liên hệ"
+        ],
+        [
+          "BeagleChó săn thỏ",
+          "Trung bình",
+          "15.000.000 – 20.000.000 VND",
+          "Liên hệ"
+        ],
+        [
+          "Alaskan Malamute",
+          "Lớn",
+          "15.000.000 – 35.000.000 VND",
+          "Liên hệ"
+        ],
+        [
+          "Golden Retriever",
+          "Lớn",
+          "15.000.000 – 25.000.000 VND",
+          "Liên hệ"
+        ],
+        [
+          "Pembroke Welsh CorgiCorgi không đuôi",
+          "Trung bình",
+          "15.000.000 – 60.000.000 VND",
+          "Liên hệ"
+        ],
+        [
+          "Samoyed",
+          "Lớn",
+          "15.000.000 – 20.000.000 VND",
+          "Liên hệ"
+        ],
+        [
+          "Shiba Inu",
+          "Trung bình",
+          "15.000.000 – 30.000.000 VND",
+          "Liên hệ"
+        ],
+        [
+          "Husky",
+          "Lớn",
+          "15.000.000 – 20.000.000 VND",
+          "Liên hệ"
+        ],
+        [
+          "Cardigan Welsh CorgiCorgi có đuôi",
+          "Trung bình",
+          "16.000.000 – 35.000.000 VND",
+          "Liên hệ"
+        ],
+        [
+          "Shih TzuChó ông già",
+          "Nhỏ",
+          "20.000.000 – 50.000.000 VND",
+          "1 bé →"
+        ],
+        [
+          "Bull Pháp",
+          "Trung bình",
+          "20.000.000 – 30.000.000 VND",
+          "Liên hệ"
+        ],
+        [
+          "Bichon Frise",
+          "Nhỏ",
+          "24.000.000 – 60.000.000 VND",
+          "Liên hệ"
+        ],
+        [
+          "Chow ChowChow Chow",
+          "Trung bình",
+          "30.000.000 – 50.000.000 VND",
+          "Liên hệ"
+        ],
+        [
+          "Alaskan Malamute GiantAlaska ngáo khổng lồ",
+          "Rất lớn",
+          "35.000.000 – 70.000.000 VND",
+          "Liên hệ"
+        ],
+        [
+          "Maltese",
+          "Nhỏ",
+          "70.000.000 – 150.000.000 VND",
+          "Liên hệ"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Giống",
+        "Kích thước",
+        "Giá tham khảo",
+        "Sẵn có"
+      ],
+      "rows": [
+        [
+          "British Shorthair ClassicMèo Anh lông ngắn chân dài tai vểnh",
+          "Trung bình",
+          "15.000.000 – 30.000.000 VND",
+          "Liên hệ"
+        ],
+        [
+          "Scottish Fold ShorthairMèo Anh lông ngắn chân dài tai cụp",
+          "Trung bình",
+          "15.000.000 – 25.000.000 VND",
+          "Liên hệ"
+        ],
+        [
+          "British Longhair ClassicMèo Anh lông dài chân dài tai vểnh",
+          "Trung bình",
+          "15.000.000 – 30.000.000 VND",
+          "Liên hệ"
+        ],
+        [
+          "Scottish Fold LonghairMèo Anh lông dài chân dài tai cụp",
+          "Trung bình",
+          "15.000.000 – 30.000.000 VND",
+          "Liên hệ"
+        ],
+        [
+          "Munchkin Scottish Fold ShorthairMèo Anh lông ngắn chân ngắn tai cụp",
+          "Trung bình",
+          "15.000.000 – 30.000.000 VND",
+          "Liên hệ"
+        ],
+        [
+          "SphynxMèo Sphynx không lông",
+          "Trung bình",
+          "20.000.000 – 50.000.000 VND",
+          "Liên hệ"
+        ],
+        [
+          "Munchkin British ShorthairMèo Anh lông ngắn chân ngắn tai vểnh",
+          "Trung bình",
+          "20.000.000 – 25.000.000 VND",
+          "Liên hệ"
+        ],
+        [
+          "Ragdoll",
+          "Lớn",
+          "25.000.000 – 50.000.000 VND",
+          "Liên hệ"
+        ],
+        [
+          "Munchkin British LonghairMèo Anh lông dài chân ngắn tai vểnh",
+          "Trung bình",
+          "25.000.000 – 50.000.000 VND",
+          "Liên hệ"
+        ]
+      ]
+    }
+  ],
+  "baoGiaRieng": [
+    "\tNhỏ\t20.000.000 – 50.000.000 VND\t1 bé →",
+    "\tTrung bình\t30.000.000 – 50.000.000 VND\tLiên hệ",
+    "Maltese\tNhỏ\t70.000.000 – 150.000.000 VND\tLiên hệ",
+    "\tTrung bình\t20.000.000 – 50.000.000 VND\tLiên hệ",
+    "Ragdoll\tLớn\t25.000.000 – 50.000.000 VND\tLiên hệ",
+    "\tTrung bình\t25.000.000 – 50.000.000 VND\tLiên hệ"
+  ]
+}

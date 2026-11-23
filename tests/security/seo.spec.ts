@@ -13,7 +13,7 @@ const TARGETS = [
 ];
 
 test.describe('NFR-07 — SEO và kỹ thuật bảo trì', () => {
-  test('TC-NFR-07-001: mỗi trang có đúng một thẻ title không rỗng', async ({ browser }) => {
+  test('TC-NFR-07-001: Mỗi trang có một thẻ title duy nhất và không rỗng', async ({ browser }) => {
     const problems: string[] = [];
     for (const target of TARGETS) {
       const context = await browser.newContext();
@@ -27,7 +27,7 @@ test.describe('NFR-07 — SEO và kỹ thuật bảo trì', () => {
     expect(problems, problems.join('; ')).toEqual([]);
   });
 
-  test('TC-NFR-07-002: mỗi trang có thẻ meta description không rỗng', async ({ browser }) => {
+  test('TC-NFR-07-002: Mỗi trang có thẻ meta description không rỗng', async ({ browser }) => {
     const problems: string[] = [];
     for (const target of TARGETS) {
       const context = await browser.newContext();
@@ -45,7 +45,7 @@ test.describe('NFR-07 — SEO và kỹ thuật bảo trì', () => {
     expect(problems, problems.join('; ')).toEqual([]);
   });
 
-  test('TC-NFR-07-003: thẻ html có thuộc tính lang', async ({ browser }) => {
+  test('TC-NFR-07-003: Thẻ html có thuộc tính lang', async ({ browser }) => {
     const problems: string[] = [];
     for (const target of TARGETS) {
       const context = await browser.newContext();
@@ -91,7 +91,7 @@ test.describe('NFR-07 — SEO và kỹ thuật bảo trì', () => {
     expect(problems, problems.join('; ')).toEqual([]);
   });
 
-  test('TC-NFR-07-006: thẻ Open Graph có title, description và image', async ({ browser }) => {
+  test('TC-NFR-07-006: Thẻ Open Graph có title, description và image', async ({ browser }) => {
     const problems: string[] = [];
     for (const target of TARGETS) {
       const context = await browser.newContext();

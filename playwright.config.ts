@@ -109,5 +109,11 @@ export default defineConfig({
       testMatch: /crossbrowser[\\/].*\.spec\.ts/,
       use: { ...devices['Desktop Chrome'], channel: 'msedge' },
     },
+    {
+      // NFR-03 — khả năng dùng: chạy trên T2 (mục tiêu chính của NFR-03).
+      name: 'nfr',
+      testMatch: /nfr[\\/].*\.spec\.ts/,
+      use: { ...devices['Desktop Chrome'], baseURL: TARGETS.t2.origin, channel: 'chrome' },
+    },
   ],
 });

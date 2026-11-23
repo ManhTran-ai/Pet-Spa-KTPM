@@ -1,0 +1,97 @@
+{
+  "trangSauMoForm": {
+    "doan": "GIỮ CHỖ Giữ chỗ cho bé Chỉ cần số điện thoại — spa sẽ gọi xác nhận khung giờ. Lựa chọn từ calculator đã được điền sẵn. TÓM TẮT LỰA CHỌN Loại bé Chó Cân nặng >3–6kg Combo Tắm Vệ Sinh 200.000đ Giá dự kiến ~200.000đ Giá cuối được xác nhận tại spa sau khi cân & kiểm tra tình trạng lông. Dịch vụ \"báo giá riêng\" sẽ được tư vấn khi spa gọi lại. Số điện thoại / Zalo * Tên bé Ngày mong muốn Hôm nay 21/11 Ngày mai 22/11 T2 23/11 T3 24/11 T4 25/11 Ngày khác Bằng việc gửi, bạn đồng ý để Mật Pet Family liên hệ lại qua điện thoại / Zalo để xác nhận lịch. Giữ chỗ cho bé → BẢNG GIÁ ĐẦY ĐỦ Bảng giá tham khảo · Chó & Mèo Giá theo từng bậc cân nặng. Dịch vụ đặc biệt hiển thị \"báo giá riêng\" — spa kiểm t",
+    "inputs": [
+      {
+        "type": "tel",
+        "ph": "0xxx xxx xxx",
+        "required": true,
+        "min": "",
+        "max": "",
+        "visible": true
+      },
+      {
+        "type": "text",
+        "ph": "Vd: Mochi",
+        "required": false,
+        "min": "",
+        "max": "",
+        "visible": true
+      },
+      {
+        "type": "date",
+        "ph": "",
+        "required": false,
+        "min": "2026-11-21",
+        "max": "",
+        "visible": true
+      },
+      {
+        "type": "text",
+        "ph": "",
+        "required": false,
+        "min": "",
+        "max": "",
+        "visible": true
+      }
+    ],
+    "buttons": [
+      {
+        "txt": "Nhuộm tạo hình cơ thểBáo giá theo thiết kế riêngBáo giá riêng",
+        "disabled": false
+      },
+      {
+        "txt": "← Quay lại",
+        "disabled": false
+      },
+      {
+        "txt": "Giữ chỗ ngay →",
+        "disabled": false
+      },
+      {
+        "txt": "Giữ chỗ với mức giá này →",
+        "disabled": false
+      },
+      {
+        "txt": "Hôm nay21/11",
+        "disabled": false
+      },
+      {
+        "txt": "Ngày mai22/11",
+        "disabled": false
+      },
+      {
+        "txt": "T223/11",
+        "disabled": false
+      },
+      {
+        "txt": "T324/11",
+        "disabled": false
+      },
+      {
+        "txt": "T425/11",
+        "disabled": false
+      },
+      {
+        "txt": "Giữ chỗ cho bé →",
+        "disabled": false
+      },
+      {
+        "txt": "×",
+        "disabled": false
+      },
+      {
+        "txt": "",
+        "disabled": false
+      }
+    ]
+  },
+  "coNut": 0,
+  "sdtChu": {
+    "doan": "Chọn loại bé, cân nặng và dịch vụ — bạn thấy ngay mức giá dự kiến minh bạch, rồi giữ chỗ chỉ với số điện thoại. Không còn phải nhắn tin hỏi giá.",
+    "coLoi": false
+  },
+  "sdtHopLe": {
+    "coLoi": false
+  }
+}

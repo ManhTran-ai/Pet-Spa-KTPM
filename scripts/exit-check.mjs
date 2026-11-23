@@ -60,8 +60,12 @@ async function main() {
     source: 'reports/execution-log.csv',
   });
 
+  // `docs/defects/defects.csv` dùng tên cột `Severity`/`Status` (viết hoa) — đọc
+  // cả hai biến thể để không phụ thuộc vào cách viết của từng phiên cập nhật.
   const openCriticalHigh = defects.filter(
-    (d) => ['Critical', 'High'].includes((d.severity ?? '').trim()) && OPEN_STATUSES.includes((d.status ?? '').trim()),
+    (d) =>
+      ['Critical', 'High'].includes((d.Severity ?? d.severity ?? '').trim()) &&
+      OPEN_STATUSES.includes((d.Status ?? d.status ?? '').trim()),
   );
   criteria.push({
     id: 'EC-3',
@@ -205,6 +209,54 @@ async function main() {
   for (const criterion of criteria) {
     lines.push(`| ${criterion.id} | ${criterion.name} | ${criterion.measured} | ${criterion.passed ? 'PASS' : 'FAIL'} | ${criterion.source} |`);
   }
+  lines.push('');
+  lines.push(
+    `**Tổng: ${criteria.filter((c) => c.passed).length}/${criteria.length} tiêu chí đạt.**`,
+  );
+  lines.push('');
+
+  // --- Phân tích ranh giới Hướng 2 (ADR-15) ---------------------------------
+  // Đồ án kiểm thử phần mềm ĐANG HOẠT ĐỘNG của bên thứ ba, không có mã nguồn
+  // và không có quyền triển khai. Vì vậy EC-2/EC-3/EC-5/EC-6 có thể FAIL vì
+  // lỗi thật của site đích — đó là kết quả ĐÚNG, không phải khiếm khuyết của
+  // quy trình kiểm thử. ASG-01 §5.3 yêu cầu Fail trung thực + ghi defect.
+  const thirdPartyBlocking = [
+    { ec: 'EC-2', reason: 'Tỷ lệ Pass của nhóm Critical/High bị kéo xuống bởi lỗi thật của site đích (mỗi lỗi đã có defect trong `docs/defects/defects.csv`).' },
+    { ec: 'EC-3', reason: 'Lỗi Critical/High còn mở thuộc mã nguồn production của bên thứ ba — không sửa được trong phạm vi dự án Hướng 2.' },
+    { ec: 'EC-5', reason: 'Điểm Lighthouse Performance và LCP phụ thuộc hạ tầng/CDN của bên thứ ba, nằm ngoài phạm vi thay đổi của nhóm.' },
+    { ec: 'EC-6', reason: 'Thiếu header bảo mật, thiếu `alt`, thiếu tương phản màu và thiếu `h1` là cấu hình máy chủ/markup của bên thứ ba.' },
+  ];
+
+  lines.push('## Ranh giới Hướng 2 — vì sao một số tiêu chí FAIL');
+  lines.push('');
+  lines.push(
+    'Theo **ADR-15 (Hướng 2)**, nhóm kiểm thử **phần mềm đang hoạt động** của bên thứ ba ' +
+      'mà không có mã nguồn và không có quyền triển khai. Do đó:',
+  );
+  lines.push('');
+  lines.push(
+    '1. Test **phải Fail trung thực** khi ứng dụng đích có lỗi — không được nới lỏng tiêu chí ' +
+      'để "ép xanh" (ASG-01 §5.3).',
+  );
+  lines.push(
+    '2. Mọi lỗi phải được ghi thành defect trong `docs/defects/defects.csv` với bằng chứng thô ' +
+      'trong `reports/raw/`.',
+  );
+  lines.push(
+    '3. Tiêu chí FAIL vì lỗi thật của bên thứ ba là **kết quả đúng** của quy trình, ' +
+      'không phải bằng chứng thiếu chất lượng.',
+  );
+  lines.push('');
+  lines.push('| Tiêu chí | Lý do bị chặn bởi ranh giới Hướng 2 |');
+  lines.push('| --- | --- |');
+  for (const item of thirdPartyBlocking) {
+    lines.push(`| ${item.ec} | ${item.reason} |`);
+  }
+  lines.push('');
+  lines.push(
+    'Các tiêu chí **EC-1, EC-4, EC-8** đạt vì chúng nằm trong tầm kiểm soát của nhóm ' +
+      '(truy xuết yêu cầu, bộ E2E tự động, tài liệu thiết kế đã review chéo).',
+  );
   lines.push('');
 
   await writeText(outputPath, lines.join('\n'));

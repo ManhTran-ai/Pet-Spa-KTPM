@@ -1,0 +1,53 @@
+{
+  "chipInfo": [
+    {
+      "text": "<3kg",
+      "visible": true,
+      "cls": "chip"
+    },
+    {
+      "text": ">3–6kg",
+      "visible": true,
+      "cls": "chip"
+    },
+    {
+      "text": ">6–10kg",
+      "visible": true,
+      "cls": "chip"
+    },
+    {
+      "text": ">10–20kg",
+      "visible": true,
+      "cls": "chip"
+    },
+    {
+      "text": ">20–30kg",
+      "visible": true,
+      "cls": "chip"
+    },
+    {
+      "text": ">30–40kg",
+      "visible": true,
+      "cls": "chip"
+    },
+    {
+      "text": ">40kg",
+      "visible": true,
+      "cls": "chip"
+    }
+  ],
+  "nhanh": [
+    "<3kg",
+    ">3–6kg",
+    ">6–10kg",
+    ">10–20kg",
+    ">20–30kg",
+    ">30–40kg",
+    ">40kg"
+  ],
+  "co3kg": false,
+  "coTren3": true,
+  "railPrice": "~200.000đ",
+  "railLines": "Chó · >3–6kg\n—\nCombo Tắm Vệ Sinh\n200k",
+  "railHTML": "<div class=\"rk\">Giá dự kiến</div><div class=\"rail-price\">~200.000<small>đ</small></div><div class=\"rail-lines\"><div class=\"rail-line muted\"><span>Chó · &gt;3–6kg</span><span>—</span></div><div class=\"rail-line\"><span>Combo Tắm Vệ Sinh</span><span>200k</span></div></div><div class=\"rail-note\">Giá cuối được xác nhận tại spa sau khi cân &amp; kiểm tra tình trạng lông của bé.</div><button type=\"button\" class=\"rail-cta\">Giữ chỗ với mức giá này →</button>"
+}

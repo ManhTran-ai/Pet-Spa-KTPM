@@ -1,0 +1,466 @@
+[
+  {
+    "diaChi": "Quận 1, TP. Hồ Chí Minh",
+    "km": "3.2",
+    "phi": "Miễn phí",
+    "coBaoGiaRieng": false,
+    "dongPhi": [
+      "Phí di chuyển (miễn phí ≤ 5km)"
+    ]
+  },
+  {
+    "diaChi": "1.09 A1 Westgate, Bình Chánh",
+    "km": "13.8",
+    "phi": "72.000",
+    "coBaoGiaRieng": false,
+    "dongPhi": [
+      "Phí di chuyển",
+      "Phí di chuyển (13.8km)"
+    ]
+  },
+  {
+    "diaChi": "Phước Long, Bình Chánh",
+    "km": "13.8",
+    "phi": "72.000",
+    "coBaoGiaRieng": false,
+    "dongPhi": [
+      "Phí di chuyển",
+      "Phí di chuyển (13.8km)"
+    ]
+  },
+  {
+    "diaChi": "Chung cư The Manor, Bình Chánh",
+    "km": "13.8",
+    "phi": "72.000",
+    "coBaoGiaRieng": false,
+    "dongPhi": [
+      "Phí di chuyển",
+      "Phí di chuyển (13.8km)"
+    ]
+  },
+  {
+    "diaChi": "Bình Hưng Hòa A, Bình Tân, TP. Hồ Chí Minh",
+    "km": "10.2",
+    "phi": "48.000",
+    "coBaoGiaRieng": false,
+    "dongPhi": [
+      "Phí di chuyển",
+      "Phí di chuyển (10.2km)"
+    ]
+  },
+  {
+    "diaChi": "An Phú, Quận 2, TP. Hồ Chí Minh",
+    "km": "12.4",
+    "phi": "64.000",
+    "coBaoGiaRieng": false,
+    "dongPhi": [
+      "Phí di chuyển",
+      "Phí di chuyển (12.4km)"
+    ]
+  },
+  {
+    "diaChi": "Phú Mỹ Hưng, Quận 7",
+    "km": "8.5",
+    "phi": "32.000",
+    "coBaoGiaRieng": false,
+    "dongPhi": [
+      "Phí di chuyển",
+      "Phí di chuyển (8.5km)"
+    ]
+  },
+  {
+    "diaChi": "Tân Tạo, Bình Tân",
+    "km": "8.4",
+    "phi": "32.000",
+    "coBaoGiaRieng": false,
+    "dongPhi": [
+      "Phí di chuyển",
+      "Phí di chuyển (8.4km)"
+    ]
+  },
+  {
+    "diaChi": "Tân Vạn, Bình Dương",
+    "km": "9.5",
+    "phi": "40.000",
+    "coBaoGiaRieng": false,
+    "dongPhi": [
+      "Phí di chuyển",
+      "Phí di chuyển (9.5km)"
+    ]
+  },
+  {
+    "diaChi": "Gò Vấp, TP. Hồ Chí Minh",
+    "km": "7.2",
+    "phi": "24.000",
+    "coBaoGiaRieng": false,
+    "dongPhi": [
+      "Phí di chuyển",
+      "Phí di chuyển (7.2km)"
+    ]
+  },
+  {
+    "diaChi": "Tân Bình, TP. Hồ Chí Minh",
+    "km": "7.2",
+    "phi": "24.000",
+    "coBaoGiaRieng": false,
+    "dongPhi": [
+      "Phí di chuyển",
+      "Phí di chuyển (7.2km)"
+    ]
+  },
+  {
+    "diaChi": "Bến Tây, Bình Dương",
+    "km": "6.6",
+    "phi": "16.000",
+    "coBaoGiaRieng": false,
+    "dongPhi": [
+      "Phí di chuyển",
+      "Phí di chuyển (6.6km)"
+    ]
+  },
+  {
+    "diaChi": "Diện Thạnh, Bình Dương",
+    "km": "6.9",
+    "phi": "16.000",
+    "coBaoGiaRieng": false,
+    "dongPhi": [
+      "Phí di chuyển",
+      "Phí di chuyển (6.9km)"
+    ]
+  },
+  {
+    "diaChi": "Võ Văn Kiệt, Thủ Dầu Một",
+    "km": "4.4",
+    "phi": "Miễn phí",
+    "coBaoGiaRieng": false,
+    "dongPhi": [
+      "Phí di chuyển (miễn phí ≤ 5km)"
+    ]
+  },
+  {
+    "diaChi": "Trí Chánh, Củ Chi",
+    "km": "5.3",
+    "phi": "8.000",
+    "coBaoGiaRieng": false,
+    "dongPhi": [
+      "Phí di chuyển",
+      "Phí di chuyển (5.3km)"
+    ]
+  },
+  {
+    "diaChi": "Đông Hóa, Củ Chi",
+    "km": "5.4",
+    "phi": "8.000",
+    "coBaoGiaRieng": false,
+    "dongPhi": [
+      "Phí di chuyển",
+      "Phí di chuyển (5.4km)"
+    ]
+  },
+  {
+    "diaChi": "Cần Thơ",
+    "km": "5.3",
+    "phi": "8.000",
+    "coBaoGiaRieng": false,
+    "dongPhi": [
+      "Phí di chuyển",
+      "Phí di chuyển (5.3km)"
+    ]
+  },
+  {
+    "diaChi": "Nha Trang, Khánh Hoà",
+    "km": "5.4",
+    "phi": "8.000",
+    "coBaoGiaRieng": false,
+    "dongPhi": [
+      "Phí di chuyển",
+      "Phí di chuyển (5.4km)"
+    ]
+  },
+  {
+    "diaChi": "Vinh, Nghệ An",
+    "km": "8",
+    "phi": "24.000",
+    "coBaoGiaRieng": false,
+    "dongPhi": [
+      "Phí di chuyển",
+      "Phí di chuyển (8km)"
+    ]
+  },
+  {
+    "diaChi": "Hà Nội",
+    "km": "5.4",
+    "phi": "8.000",
+    "coBaoGiaRieng": false,
+    "dongPhi": [
+      "Phí di chuyển",
+      "Phí di chuyển (5.4km)"
+    ]
+  },
+  {
+    "diaChi": "Điện Biên Phủ",
+    "km": "10.3",
+    "phi": "48.000",
+    "coBaoGiaRieng": false,
+    "dongPhi": [
+      "Phí di chuyển",
+      "Phí di chuyển (10.3km)"
+    ]
+  },
+  {
+    "diaChi": "Hà Giang",
+    "km": "15",
+    "phi": "80.000",
+    "coBaoGiaRieng": false,
+    "dongPhi": [
+      "Phí di chuyển",
+      "Phí di chuyển (15km)"
+    ]
+  },
+  {
+    "diaChi": "Yên Bái",
+    "km": "15.7",
+    "phi": "88.000",
+    "coBaoGiaRieng": false,
+    "dongPhi": [
+      "Phí di chuyển",
+      "Phí di chuyển (15.7km)"
+    ]
+  },
+  {
+    "diaChi": "Tiền Giang",
+    "km": "15.2",
+    "phi": "88.000",
+    "coBaoGiaRieng": false,
+    "dongPhi": [
+      "Phí di chuyển",
+      "Phí di chuyển (15.2km)"
+    ]
+  },
+  {
+    "diaChi": "Sa Pa, Lào Cai",
+    "km": "15.3",
+    "phi": "88.000",
+    "coBaoGiaRieng": false,
+    "dongPhi": [
+      "Phí di chuyển",
+      "Phí di chuyển (15.3km)"
+    ]
+  },
+  {
+    "diaChi": "Bến Tre",
+    "km": "14.6",
+    "phi": "80.000",
+    "coBaoGiaRieng": false,
+    "dongPhi": [
+      "Phí di chuyển",
+      "Phí di chuyển (14.6km)"
+    ]
+  },
+  {
+    "diaChi": "Quảng Ngãi",
+    "km": "14.3",
+    "phi": "80.000",
+    "coBaoGiaRieng": false,
+    "dongPhi": [
+      "Phí di chuyển",
+      "Phí di chuyển (14.3km)"
+    ]
+  },
+  {
+    "diaChi": "Thanh Hoá",
+    "km": "14.1",
+    "phi": "80.000",
+    "coBaoGiaRieng": false,
+    "dongPhi": [
+      "Phí di chuyển",
+      "Phí di chuyển (14.1km)"
+    ]
+  },
+  {
+    "diaChi": "Khánh Hoà",
+    "km": "13.5",
+    "phi": "72.000",
+    "coBaoGiaRieng": false,
+    "dongPhi": [
+      "Phí di chuyển",
+      "Phí di chuyển (13.5km)"
+    ]
+  },
+  {
+    "diaChi": "Hải Phòng",
+    "km": "13.5",
+    "phi": "72.000",
+    "coBaoGiaRieng": false,
+    "dongPhi": [
+      "Phí di chuyển",
+      "Phí di chuyển (13.5km)"
+    ]
+  },
+  {
+    "diaChi": "Bạc Liêu",
+    "km": "12",
+    "phi": "56.000",
+    "coBaoGiaRieng": false,
+    "dongPhi": [
+      "Phí di chuyển",
+      "Phí di chuyển (12km)"
+    ]
+  },
+  {
+    "diaChi": "Cà Mau",
+    "km": "11.8",
+    "phi": "56.000",
+    "coBaoGiaRieng": false,
+    "dongPhi": [
+      "Phí di chuyển",
+      "Phí di chuyển (11.8km)"
+    ]
+  },
+  {
+    "diaChi": "Đà Nẵng",
+    "km": "12.5",
+    "phi": "64.000",
+    "coBaoGiaRieng": false,
+    "dongPhi": [
+      "Phí di chuyển",
+      "Phí di chuyển (12.5km)"
+    ]
+  },
+  {
+    "diaChi": "Phú Cường, Thủ Dầu Một, Bình Dương",
+    "km": "5",
+    "phi": "Miễn phí",
+    "coBaoGiaRieng": false,
+    "dongPhi": [
+      "Phí di chuyển (miễn phí ≤ 5km)"
+    ]
+  },
+  {
+    "diaChi": "Hà Đông, Hà Nội",
+    "km": "12.8",
+    "phi": "64.000",
+    "coBaoGiaRieng": false,
+    "dongPhi": [
+      "Phí di chuyển",
+      "Phí di chuyển (12.8km)"
+    ]
+  },
+  {
+    "diaChi": "Đống Đa, Hà Nội",
+    "km": "4.3",
+    "phi": "Miễn phí",
+    "coBaoGiaRieng": false,
+    "dongPhi": [
+      "Phí di chuyển (miễn phí ≤ 5km)"
+    ]
+  },
+  {
+    "diaChi": "Hoàng Mai, Hà Nội",
+    "km": "15.7",
+    "phi": "88.000",
+    "coBaoGiaRieng": false,
+    "dongPhi": [
+      "Phí di chuyển",
+      "Phí di chuyển (15.7km)"
+    ]
+  },
+  {
+    "diaChi": "Long Biên, Hà Nội",
+    "km": "5.9",
+    "phi": "8.000",
+    "coBaoGiaRieng": false,
+    "dongPhi": [
+      "Phí di chuyển",
+      "Phí di chuyển (5.9km)"
+    ]
+  },
+  {
+    "diaChi": "Thanh Xuân, Hà Nội",
+    "km": "13.4",
+    "phi": "72.000",
+    "coBaoGiaRieng": false,
+    "dongPhi": [
+      "Phí di chuyển",
+      "Phí di chuyển (13.4km)"
+    ]
+  },
+  {
+    "diaChi": "Cầu Giấy, Hà Nội",
+    "km": "12.3",
+    "phi": "64.000",
+    "coBaoGiaRieng": false,
+    "dongPhi": [
+      "Phí di chuyển",
+      "Phí di chuyển (12.3km)"
+    ]
+  },
+  {
+    "diaChi": "Sóc Sơn, Hà Nội",
+    "km": "8.9",
+    "phi": "32.000",
+    "coBaoGiaRieng": false,
+    "dongPhi": [
+      "Phí di chuyển",
+      "Phí di chuyển (8.9km)"
+    ]
+  },
+  {
+    "diaChi": "Thanh Trì, Hà Nội",
+    "km": "12.3",
+    "phi": "64.000",
+    "coBaoGiaRieng": false,
+    "dongPhi": [
+      "Phí di chuyển",
+      "Phí di chuyển (12.3km)"
+    ]
+  },
+  {
+    "diaChi": "Hoài Đức, Hà Nội",
+    "km": "7.3",
+    "phi": "24.000",
+    "coBaoGiaRieng": false,
+    "dongPhi": [
+      "Phí di chuyển",
+      "Phí di chuyển (7.3km)"
+    ]
+  },
+  {
+    "diaChi": "Mê Linh, Hà Nội",
+    "km": "3.2",
+    "phi": "Miễn phí",
+    "coBaoGiaRieng": false,
+    "dongPhi": [
+      "Phí di chuyển (miễn phí ≤ 5km)"
+    ]
+  },
+  {
+    "diaChi": "Ứng Hòa, Hà Nội",
+    "km": "15.3",
+    "phi": "88.000",
+    "coBaoGiaRieng": false,
+    "dongPhi": [
+      "Phí di chuyển",
+      "Phí di chuyển (15.3km)"
+    ]
+  },
+  {
+    "diaChi": "Thanh Oai, Hà Nội",
+    "km": "3.8",
+    "phi": "Miễn phí",
+    "coBaoGiaRieng": false,
+    "dongPhi": [
+      "Phí di chuyển (miễn phí ≤ 5km)"
+    ]
+  },
+  {
+    "diaChi": "Quốc Oai, Hà Nội",
+    "km": "9.9",
+    "phi": "40.000",
+    "coBaoGiaRieng": false,
+    "dongPhi": [
+      "Phí di chuyển",
+      "Phí di chuyển (9.9km)"
+    ]
+  }
+]

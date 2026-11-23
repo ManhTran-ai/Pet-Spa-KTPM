@@ -1,0 +1,293 @@
+{
+  "M4_001": {
+    "sdtCount": 1,
+    "disabledTruoc": true,
+    "disabledSau": true,
+    "inputs": [
+      {
+        "ph": "Nguyễn Văn A",
+        "val": "",
+        "cls": "bk-input"
+      },
+      {
+        "ph": "0987 654 321",
+        "val": "0987 654 321",
+        "cls": "bk-input"
+      }
+    ],
+    "text": "event_available\nĐẶT LỊCH GROOMING\nHoàn tất 4 bước nhanh\nclose\ncheck\nDịch vụ\ncheck\nBé cưng\ncheck\nLịch hẹn\n4\nĐịa điểm\nĐịa điểm thực hiện\nstore\nTại spa\n1.09 A1 Westgate, Bình Chánh\nKHÔNG PHỤ THU\nhome_work\nTận nhà\nThợ đến địa chỉ của bạn\n+50.000₫ + KM\nThông tin liên hệ\nHỌ TÊN\nSỐ ĐIỆN THOẠI\nTắm · Chó nhỏ (3–5kg)\n155.000₫\nTạm tính\n155.000₫\nchevron_left\nQuay lại\ncheck\nXác nhận đặt lịch"
+  },
+  "M4_004": {
+    "nutDisabledChuaChonDichVu": false,
+    "stepLabels": [
+      "1Dịch vụ",
+      "2Bé cưng",
+      "3Lịch hẹn",
+      "4Địa điểm"
+    ],
+    "activeSau": [
+      "2Bé cưng"
+    ],
+    "coClassIsActive": 1,
+    "text": "event_available\nĐẶT LỊCH GROOMING\nHoàn tất 4 bước nhanh\nclose\ncheck\nDịch vụ\n2\nBé cưng\n3\nLịch hẹn\n4\nĐịa điểm\nThông tin bé cưng\nLOÀI & CÂN NẶNG\npets\nCHÓ\npets\nChó mini\n< 3kg\n88.000₫\npets\nChó nhỏ\n3–5kg\n155.000₫\npets\nChó vừa\n5–10kg\n240.000₫\npets\nChó lớn\n10–15kg\n350.000₫\npets\nChó rất lớn\n15–20kg\n460.000₫\npets\nChó đại\n20–25kg\n570.000₫\npets\nChó siêu đại\n25–30kg\n660.000₫\nTÊN BÉ CƯNG\nGHI CHÚ (TÙY CHỌN)\ninfo\nKhi thợ đến (hoặc tới spa), bé sẽ được cân lại. Nếu cân chênh sang khoảng khác, giá điều chỉnh đúng theo bảng — không phát sinh phí ẩn.\nTắm · Chó nhỏ (3–5kg)\n155.000₫\nTạm tính\n155.000₫\nchevron_left\nQuay lại\nTiếp tục\nchevron_right"
+  },
+  "M6": [
+    {
+      "diaChi": "Phước Long, Bình Chánh",
+      "km": "13.8",
+      "phiDong": [
+        "Phí di chuyển",
+        "Phí di chuyển (13.8km)"
+      ],
+      "coBaoGia": false,
+      "coLienHe": true,
+      "excerpt": "iểm thực hiện\nstore\nTại spa\n1.09 A1 Westgate, Bình Chánh\nKHÔNG PHỤ THU\nhome_work\nTận nhà\nThợ đến địa chỉ của bạn\n+50.000₫ + KM\nĐỊA CHỈ CHI TIẾT\nroute\nKhoảng cách ước tính\n13.8 km\nhome_work\nPhụ thu tận nhà (cố định)\n+ 50.000₫\npayments\nPhí di chuyển\n+ 72.000₫\nThông tin liên hệ\nHỌ TÊN\nSỐ ĐIỆN THOẠI\nTắm · Chó nhỏ (3–5kg)\n155.000₫\n+ Phụ thu tận nhà\n+ 50.000₫\n+ Phí di chuyển (13.8km)\n+ 72.000₫\nTạm tính\n277.000₫\nchevron_left\nQuay lại\ncheck\nXác nhận đặt lịch"
+    },
+    {
+      "diaChi": "Yên Bái",
+      "km": "15.7",
+      "phiDong": [
+        "Phí di chuyển",
+        "Phí di chuyển (15.7km)"
+      ],
+      "coBaoGia": false,
+      "coLienHe": true,
+      "excerpt": "iểm thực hiện\nstore\nTại spa\n1.09 A1 Westgate, Bình Chánh\nKHÔNG PHỤ THU\nhome_work\nTận nhà\nThợ đến địa chỉ của bạn\n+50.000₫ + KM\nĐỊA CHỈ CHI TIẾT\nroute\nKhoảng cách ước tính\n15.7 km\nhome_work\nPhụ thu tận nhà (cố định)\n+ 50.000₫\npayments\nPhí di chuyển\n+ 88.000₫\nThông tin liên hệ\nHỌ TÊN\nSỐ ĐIỆN THOẠI\nTắm · Chó nhỏ (3–5kg)\n155.000₫\n+ Phụ thu tận nhà\n+ 50.000₫\n+ Phí di chuyển (15.7km)\n+ 88.000₫\nTạm tính\n293.000₫\nchevron_left\nQuay lại\ncheck\nXác nhận đặt lịch"
+    },
+    {
+      "diaChi": "Phú Cường, Thủ Dầu Một, Bình Dương",
+      "km": "5",
+      "phiDong": [
+        "Phí di chuyển (miễn phí ≤ 5km)"
+      ],
+      "coBaoGia": false,
+      "coLienHe": true,
+      "excerpt": "iểm thực hiện\nstore\nTại spa\n1.09 A1 Westgate, Bình Chánh\nKHÔNG PHỤ THU\nhome_work\nTận nhà\nThợ đến địa chỉ của bạn\n+50.000₫ + KM\nĐỊA CHỈ CHI TIẾT\nroute\nKhoảng cách ước tính\n5 km\nhome_work\nPhụ thu tận nhà (cố định)\n+ 50.000₫\npayments\nPhí di chuyển (miễn phí ≤ 5km)\nMiễn phí\nThông tin liên hệ\nHỌ TÊN\nSỐ ĐIỆN THOẠI\nTắm · Chó nhỏ (3–5kg)\n155.000₫\n+ Phụ thu tận nhà\n+ 50.000₫\nTạm tính\n205.000₫\nchevron_left\nQuay lại\ncheck\nXác nhận đặt lịch"
+    },
+    {
+      "diaChi": "Gò Vấp, TP. Hồ Chí Minh",
+      "km": "7.2",
+      "phiDong": [
+        "Phí di chuyển",
+        "Phí di chuyển (7.2km)"
+      ],
+      "coBaoGia": false,
+      "coLienHe": true,
+      "excerpt": "iểm thực hiện\nstore\nTại spa\n1.09 A1 Westgate, Bình Chánh\nKHÔNG PHỤ THU\nhome_work\nTận nhà\nThợ đến địa chỉ của bạn\n+50.000₫ + KM\nĐỊA CHỈ CHI TIẾT\nroute\nKhoảng cách ước tính\n7.2 km\nhome_work\nPhụ thu tận nhà (cố định)\n+ 50.000₫\npayments\nPhí di chuyển\n+ 24.000₫\nThông tin liên hệ\nHỌ TÊN\nSỐ ĐIỆN THOẠI\nTắm · Chó nhỏ (3–5kg)\n155.000₫\n+ Phụ thu tận nhà\n+ 50.000₫\n+ Phí di chuyển (7.2km)\n+ 24.000₫\nTạm tính\n229.000₫\nchevron_left\nQuay lại\ncheck\nXác nhận đặt lịch"
+    }
+  ],
+  "M3_006": {
+    "theGia": [
+      "bathtubTắm88.000₫ – 660.000₫schedule45'home_workCó tận nhàcheck_circle",
+      "content_cutCắt tỉa lông145.000₫ – 440.000₫schedule90'storeChỉ tại spa",
+      "cutCạo lông88.000₫ – 385.000₫schedule60'home_workCó tận nhà",
+      "showerCombo Tắm + Vệ sinh130.000₫ – 725.000₫schedule60'home_workCó tận nhà",
+      "spaCombo Tắm + Cắt tỉa240.000₫ – 835.000₫schedule120'storeChỉ tại spa",
+      "auto_awesomeCombo Tắm + Cạo185.000₫ – 780.000₫schedule90'home_workCó tận nhà"
+    ],
+    "theGiaPrice": [
+      "88.000₫ – 660.000₫",
+      "145.000₫ – 440.000₫",
+      "88.000₫ – 385.000₫",
+      "130.000₫ – 725.000₫",
+      "240.000₫ – 835.000₫",
+      "185.000₫ – 780.000₫"
+    ]
+  },
+  "M7_003": {
+    "icon0": "remove",
+    "icon1": "add",
+    "icon2": "add",
+    "sauClick1": [
+      "add",
+      "remove",
+      "add"
+    ],
+    "sauClickLai": [
+      "add",
+      "add",
+      "add"
+    ]
+  },
+  "M1_005": {
+    "scrollWidth": 379,
+    "clientWidth": 360,
+    "tran": [
+      {
+        "tag": "DIV",
+        "cls": "bn-bar__right",
+        "right": 379,
+        "w": 138,
+        "text": "languageVI / ENcalendar_monthĐặt lịch"
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "bn-btn bn-btn--primary bn-bar__book ga-booking-btn",
+        "right": 379,
+        "w": 40,
+        "text": "calendar_monthĐặt lịch"
+      },
+      {
+        "tag": "SPAN",
+        "cls": "material-symbols-outlined ",
+        "right": 367,
+        "w": 16,
+        "text": "calendar_month"
+      },
+      {
+        "tag": "DIV",
+        "cls": "bn-hero__visual-glow",
+        "right": 378,
+        "w": 384,
+        "text": ""
+      },
+      {
+        "tag": "TABLE",
+        "cls": "hm-pricing-matrix",
+        "right": 741,
+        "w": 720,
+        "text": "Loài & cân nặngTắmCắt tỉa lôngCạo lôngCombo Tắm + "
+      },
+      {
+        "tag": "THEAD",
+        "cls": "",
+        "right": 741,
+        "w": 720,
+        "text": "Loài & cân nặngTắmCắt tỉa lôngCạo lôngCombo Tắm + "
+      },
+      {
+        "tag": "TR",
+        "cls": "",
+        "right": 741,
+        "w": 720,
+        "text": "Loài & cân nặngTắmCắt tỉa lôngCạo lôngCombo Tắm + "
+      },
+      {
+        "tag": "TH",
+        "cls": "hm-pricing-matrix__svc-head",
+        "right": 443,
+        "w": 88,
+        "text": "Cạo lông"
+      },
+      {
+        "tag": "TH",
+        "cls": "hm-pricing-matrix__svc-head",
+        "right": 542,
+        "w": 99,
+        "text": "Combo Tắm + Vệ sinh"
+      },
+      {
+        "tag": "TH",
+        "cls": "hm-pricing-matrix__svc-head",
+        "right": 642,
+        "w": 99,
+        "text": "Combo Tắm + Cắt tỉa"
+      },
+      {
+        "tag": "TH",
+        "cls": "hm-pricing-matrix__svc-head",
+        "right": 741,
+        "w": 99,
+        "text": "Combo Tắm + Cạo"
+      },
+      {
+        "tag": "TBODY",
+        "cls": "",
+        "right": 741,
+        "w": 720,
+        "text": "ChóChó mini< 3kg88.000₫145.000₫88.000₫130.000₫240."
+      },
+      {
+        "tag": "TR",
+        "cls": "hm-pricing-matrix__group",
+        "right": 741,
+        "w": 720,
+        "text": "Chó"
+      },
+      {
+        "tag": "TD",
+        "cls": "",
+        "right": 741,
+        "w": 720,
+        "text": "Chó"
+      },
+      {
+        "tag": "TR",
+        "cls": "hm-pricing-matrix__row",
+        "right": 741,
+        "w": 720,
+        "text": "Chó mini< 3kg88.000₫145.000₫88.000₫130.000₫240.000"
+      },
+      {
+        "tag": "TD",
+        "cls": "hm-pricing-matrix__amt",
+        "right": 443,
+        "w": 88,
+        "text": "88.000₫"
+      },
+      {
+        "tag": "TD",
+        "cls": "hm-pricing-matrix__amt",
+        "right": 542,
+        "w": 99,
+        "text": "130.000₫"
+      },
+      {
+        "tag": "TD",
+        "cls": "hm-pricing-matrix__amt",
+        "right": 642,
+        "w": 99,
+        "text": "240.000₫"
+      },
+      {
+        "tag": "TD",
+        "cls": "hm-pricing-matrix__amt",
+        "right": 741,
+        "w": 99,
+        "text": "185.000₫"
+      },
+      {
+        "tag": "TR",
+        "cls": "hm-pricing-matrix__row hm-pricing-matrix__row--alt",
+        "right": 741,
+        "w": 720,
+        "text": "Chó nhỏ3–5kg155.000₫165.000₫110.000₫265.000₫405.00"
+      },
+      {
+        "tag": "TD",
+        "cls": "hm-pricing-matrix__amt",
+        "right": 443,
+        "w": 88,
+        "text": "110.000₫"
+      },
+      {
+        "tag": "TD",
+        "cls": "hm-pricing-matrix__amt",
+        "right": 542,
+        "w": 99,
+        "text": "265.000₫"
+      },
+      {
+        "tag": "TD",
+        "cls": "hm-pricing-matrix__amt",
+        "right": 642,
+        "w": 99,
+        "text": "405.000₫"
+      },
+      {
+        "tag": "TD",
+        "cls": "hm-pricing-matrix__amt",
+        "right": 741,
+        "w": 99,
+        "text": "350.000₫"
+      },
+      {
+        "tag": "TR",
+        "cls": "hm-pricing-matrix__row",
+        "right": 741,
+        "w": 720,
+        "text": "Chó vừa5–10kg240.000₫220.000₫165.000₫375.000₫515.0"
+      }
+    ]
+  }
+}

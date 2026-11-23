@@ -1,0 +1,113 @@
+{
+  "timKiem": [
+    {
+      "duong": "/spa",
+      "status": 200,
+      "soInput": 4,
+      "oTimKiem": [],
+      "tatCaInput": [
+        "tel:0xxx xxx xxx",
+        "text:Vd: Mochi",
+        "date:",
+        "text:"
+      ]
+    },
+    {
+      "duong": "/so-sanh",
+      "status": 200,
+      "soInput": 0,
+      "oTimKiem": [],
+      "tatCaInput": []
+    },
+    {
+      "duong": "/bang-gia",
+      "status": 200,
+      "soInput": 0,
+      "oTimKiem": [],
+      "tatCaInput": []
+    },
+    {
+      "duong": "/cho",
+      "status": 200,
+      "soInput": 0,
+      "oTimKiem": [],
+      "tatCaInput": []
+    },
+    {
+      "duong": "/meo",
+      "status": 200,
+      "soInput": 0,
+      "oTimKiem": [],
+      "tatCaInput": []
+    },
+    {
+      "duong": "/bao-hanh",
+      "status": 200,
+      "soInput": 0,
+      "oTimKiem": [],
+      "tatCaInput": []
+    },
+    {
+      "duong": "/showroom",
+      "status": 200,
+      "soInput": 0,
+      "oTimKiem": [],
+      "tatCaInput": []
+    },
+    {
+      "duong": "/cau-hoi-thuong-gap",
+      "status": 200,
+      "soInput": 0,
+      "oTimKiem": [],
+      "tatCaInput": []
+    },
+    {
+      "duong": "/dat-lich",
+      "status": 404,
+      "soInput": 0,
+      "oTimKiem": [],
+      "tatCaInput": []
+    },
+    {
+      "duong": "/tin-tuc",
+      "status": 404,
+      "soInput": 0,
+      "oTimKiem": [],
+      "tatCaInput": []
+    },
+    {
+      "duong": "/blog",
+      "status": 200,
+      "soInput": 0,
+      "oTimKiem": [],
+      "tatCaInput": []
+    },
+    {
+      "duong": "/tuyen-dung",
+      "status": 404,
+      "soInput": 0,
+      "oTimKiem": [],
+      "tatCaInput": []
+    },
+    {
+      "duong": "/tim-kiem-bebe-thuong",
+      "status": 404,
+      "soInput": 0,
+      "oTimKiem": [],
+      "tatCaInput": []
+    }
+  ],
+  "faq": {
+    "soPhanTuMo": 24,
+    "doDai": 8107,
+    "coTuHuy": false,
+    "coDatCoc": true,
+    "coHoanCoc": false,
+    "coKhongHoan": true,
+    "trich": [
+      " ▶ Có thể đặt cọc giữ bé trước không? Có.",
+      " Bạn có thể đặt cọc giữ bé qua form trực tuyến trên trang chi tiết bé hoặc qua hotline 0939863696.",
+      " KHÔNG hoàn tiền dưới mọi hình thức — chính sách đổi bé."
+    ]
+  }
+}

@@ -120,6 +120,21 @@ Nguyên tắc áp dụng trong dự án: **mỗi giá trị không hợp lệ m�
 | 30 kg | 29,9 kg | 30 kg | 30,1 kg | `>30–40` | `TC-T2-M3-021/022` |
 | 40 kg | 39,9 kg | 40 kg | 40,1 kg | `>40` | `TC-T2-M3-023/024` |
 
+> **Quy tắc biên của T2: cận dưới ĐÓNG.** Mỗi bậc chứa cân nặng từ cận dưới
+> của nó trở đi cho tới cận trên của bậc kế tiếp:
+> `<3kg` = kg < 3 · `>3–6kg` = 3 ≤ kg ≤ 6 · `>6–10kg` = 6 < kg ≤ 10 ·
+> `>10–20kg` = 10 < kg ≤ 20 · … · `>40kg` = kg > 40.
+>
+> Nhãn trên site (`>3–6kg`, `>6–10kg`…) là **quy ước đặt tên**: mỗi bậc mang
+> nhãn cận dưới của bậc kế tiếp, chứ không phải phép so sánh nghiêm ngặt.
+> Vì vậy **cân nặng đúng bằng cận dưới thuộc bậc có nhãn đó** (6 kg → `>6–10kg`,
+> không phải `>3–6kg`).
+>
+> **Bằng chứng hành vi thật** (`reports/raw/probe-t2-bva3.json`): calculator tính
+> giá đúng theo bảng giá tĩnh — `<3kg` = 120k, `>3–6kg` = 200k, `>6–10kg` = 300k,
+> `>10–20kg` = 400k (Combo Tắm Vệ Sinh). Cài đặt: `tests/e2e/t2/m3-bva.spec.ts`
+> (`bacCho`), quy tắc chọn bậc = bậc có **cận dưới lớn nhất** mà vẫn ≤ kg.
+
 ### 3.3 Ngưỡng cân nặng T3 (BR-03, đơn vị lbs) — 9 ca
 
 **BVA phải áp dụng *trên từng dòng sản phẩm***, vì `BR-03` quy định mỗi dòng có bộ ngưỡng riêng. Bộ 9 ca dưới đây chia cho **2 dòng sản phẩm**:

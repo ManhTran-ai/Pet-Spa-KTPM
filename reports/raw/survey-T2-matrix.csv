@@ -1,0 +1,267 @@
+System,Pet,Band,Service,Price,Combo,BaoGiaRieng
+T2,Cho,<3kg,Combo Tắm Vệ Sinh,120k,Yes,No
+T2,Cho,<3kg,Combo Tắm Cạo,200k,Yes,No
+T2,Cho,<3kg,Combo Tắm Cắt,300k,Yes,No
+T2,Cho,<3kg,Combo Tắm Cắt Tạo Hình,350k,Yes,No
+T2,Cho,<3kg,Nhuộm 2 tai + đuôi,250k,No,No
+T2,Cho,<3kg,Nhuộm 4 chân,250k,No,No
+T2,Cho,<3kg,Nhuộm hình nhỏ,300k,No,No
+T2,Cho,<3kg,Gỡ rốiBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng,,No,Yes
+T2,Cho,<3kg,Tẩy ốBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng,,No,Yes
+T2,Cho,<3kg,Tắm trắngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng,,No,Yes
+T2,Cho,<3kg,Xả dưỡngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng,,No,Yes
+T2,Cho,<3kg,Nhuộm hình lớnBáo giá tuỳ kích thước & màuBáo giá riêng,,No,Yes
+T2,Cho,<3kg,Nhuộm tạo hình cơ thểBáo giá theo thiết kế riêngBáo giá riêng,,No,Yes
+T2,Cho,<3kg,Cắt dũa + Móng,30k,No,No
+T2,Cho,<3kg,Vệ sinh tai,30k,No,No
+T2,Cho,<3kg,Cạo bụng + Bàn + Hậu môn,30k,No,No
+T2,Cho,<3kg,Tắm sấy,100k,No,No
+T2,Cho,<3kg,Cạo lông,150k,No,No
+T2,Cho,<3kg,Cắt lông,200k,No,No
+T2,Cho,>3–6kg,Combo Tắm Vệ Sinh,200k,Yes,No
+T2,Cho,>3–6kg,Combo Tắm Cạo,250k,Yes,No
+T2,Cho,>3–6kg,Combo Tắm Cắt,350k,Yes,No
+T2,Cho,>3–6kg,Combo Tắm Cắt Tạo Hình,400k,Yes,No
+T2,Cho,>3–6kg,Nhuộm 2 tai + đuôi,250k,No,No
+T2,Cho,>3–6kg,Nhuộm 4 chân,250k,No,No
+T2,Cho,>3–6kg,Nhuộm hình nhỏ,300k,No,No
+T2,Cho,>3–6kg,Gỡ rốiBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng,,No,Yes
+T2,Cho,>3–6kg,Tẩy ốBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng,,No,Yes
+T2,Cho,>3–6kg,Tắm trắngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng,,No,Yes
+T2,Cho,>3–6kg,Xả dưỡngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng,,No,Yes
+T2,Cho,>3–6kg,Nhuộm hình lớnBáo giá tuỳ kích thước & màuBáo giá riêng,,No,Yes
+T2,Cho,>3–6kg,Nhuộm tạo hình cơ thểBáo giá theo thiết kế riêngBáo giá riêng,,No,Yes
+T2,Cho,>3–6kg,Cắt dũa + Móng,30k,No,No
+T2,Cho,>3–6kg,Vệ sinh tai,30k,No,No
+T2,Cho,>3–6kg,Cạo bụng + Bàn + Hậu môn,30k,No,No
+T2,Cho,>3–6kg,Tắm sấy,150k,No,No
+T2,Cho,>3–6kg,Cạo lông,200k,No,No
+T2,Cho,>3–6kg,Cắt lông,300k,No,No
+T2,Cho,>6–10kg,Combo Tắm Vệ Sinh,300k,Yes,No
+T2,Cho,>6–10kg,Combo Tắm Cạo,350k,Yes,No
+T2,Cho,>6–10kg,Combo Tắm Cắt,400k,Yes,No
+T2,Cho,>6–10kg,Combo Tắm Cắt Tạo Hình,500k,Yes,No
+T2,Cho,>6–10kg,Nhuộm 2 tai + đuôi,300k,No,No
+T2,Cho,>6–10kg,Nhuộm 4 chân,300k,No,No
+T2,Cho,>6–10kg,Nhuộm hình nhỏ,350k,No,No
+T2,Cho,>6–10kg,Gỡ rốiBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng,,No,Yes
+T2,Cho,>6–10kg,Tẩy ốBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng,,No,Yes
+T2,Cho,>6–10kg,Tắm trắngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng,,No,Yes
+T2,Cho,>6–10kg,Xả dưỡngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng,,No,Yes
+T2,Cho,>6–10kg,Nhuộm hình lớnBáo giá tuỳ kích thước & màuBáo giá riêng,,No,Yes
+T2,Cho,>6–10kg,Nhuộm tạo hình cơ thểBáo giá theo thiết kế riêngBáo giá riêng,,No,Yes
+T2,Cho,>6–10kg,Cắt dũa + Móng,50k,No,No
+T2,Cho,>6–10kg,Vệ sinh tai,50k,No,No
+T2,Cho,>6–10kg,Cạo bụng + Bàn + Hậu môn,50k,No,No
+T2,Cho,>6–10kg,Tắm sấy,250k,No,No
+T2,Cho,>6–10kg,Cạo lông,300k,No,No
+T2,Cho,>6–10kg,Cắt lông,400k,No,No
+T2,Cho,>10–20kg,Combo Tắm Vệ Sinh,400k,Yes,No
+T2,Cho,>10–20kg,Combo Tắm Cạo,450k,Yes,No
+T2,Cho,>10–20kg,Combo Tắm Cắt,550k,Yes,No
+T2,Cho,>10–20kg,Combo Tắm Cắt Tạo Hình,650k,Yes,No
+T2,Cho,>10–20kg,Nhuộm 2 tai + đuôi,300k,No,No
+T2,Cho,>10–20kg,Nhuộm 4 chân,300k,No,No
+T2,Cho,>10–20kg,Nhuộm hình nhỏ,350k,No,No
+T2,Cho,>10–20kg,Gỡ rốiBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng,,No,Yes
+T2,Cho,>10–20kg,Tẩy ốBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng,,No,Yes
+T2,Cho,>10–20kg,Tắm trắngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng,,No,Yes
+T2,Cho,>10–20kg,Xả dưỡngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng,,No,Yes
+T2,Cho,>10–20kg,Nhuộm hình lớnBáo giá tuỳ kích thước & màuBáo giá riêng,,No,Yes
+T2,Cho,>10–20kg,Nhuộm tạo hình cơ thểBáo giá theo thiết kế riêngBáo giá riêng,,No,Yes
+T2,Cho,>10–20kg,Cắt dũa + Móng,50k,No,No
+T2,Cho,>10–20kg,Vệ sinh tai,50k,No,No
+T2,Cho,>10–20kg,Cạo bụng + Bàn + Hậu môn,50k,No,No
+T2,Cho,>10–20kg,Tắm sấy,350k,No,No
+T2,Cho,>10–20kg,Cạo lông,400k,No,No
+T2,Cho,>10–20kg,Cắt lông,500k,No,No
+T2,Cho,>20–30kg,Combo Tắm Vệ Sinh,500k,Yes,No
+T2,Cho,>20–30kg,Combo Tắm Cạo,600k,Yes,No
+T2,Cho,>20–30kg,Combo Tắm Cắt,700k,Yes,No
+T2,Cho,>20–30kg,Combo Tắm Cắt Tạo Hình,800k,Yes,No
+T2,Cho,>20–30kg,Nhuộm 2 tai + đuôi,350k,No,No
+T2,Cho,>20–30kg,Nhuộm 4 chân,350k,No,No
+T2,Cho,>20–30kg,Nhuộm hình nhỏ,400k,No,No
+T2,Cho,>20–30kg,Gỡ rốiBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng,,No,Yes
+T2,Cho,>20–30kg,Tẩy ốBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng,,No,Yes
+T2,Cho,>20–30kg,Tắm trắngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng,,No,Yes
+T2,Cho,>20–30kg,Xả dưỡngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng,,No,Yes
+T2,Cho,>20–30kg,Nhuộm hình lớnBáo giá tuỳ kích thước & màuBáo giá riêng,,No,Yes
+T2,Cho,>20–30kg,Nhuộm tạo hình cơ thểBáo giá theo thiết kế riêngBáo giá riêng,,No,Yes
+T2,Cho,>20–30kg,Cắt dũa + Móng,70k,No,No
+T2,Cho,>20–30kg,Vệ sinh tai,70k,No,No
+T2,Cho,>20–30kg,Cạo bụng + Bàn + Hậu môn,70k,No,No
+T2,Cho,>20–30kg,Tắm sấy,450k,No,No
+T2,Cho,>20–30kg,Cạo lông,500k,No,No
+T2,Cho,>20–30kg,Cắt lông,650k,No,No
+T2,Cho,>30–40kg,Combo Tắm Vệ Sinh,600k,Yes,No
+T2,Cho,>30–40kg,Combo Tắm Cạo,700k,Yes,No
+T2,Cho,>30–40kg,Combo Tắm Cắt,800k,Yes,No
+T2,Cho,>30–40kg,Combo Tắm Cắt Tạo Hình,1tr,Yes,No
+T2,Cho,>30–40kg,Nhuộm 2 tai + đuôi,400k,No,No
+T2,Cho,>30–40kg,Nhuộm 4 chân,400k,No,No
+T2,Cho,>30–40kg,Nhuộm hình nhỏ,500k,No,No
+T2,Cho,>30–40kg,Gỡ rốiBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng,,No,Yes
+T2,Cho,>30–40kg,Tẩy ốBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng,,No,Yes
+T2,Cho,>30–40kg,Tắm trắngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng,,No,Yes
+T2,Cho,>30–40kg,Xả dưỡngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng,,No,Yes
+T2,Cho,>30–40kg,Nhuộm hình lớnBáo giá tuỳ kích thước & màuBáo giá riêng,,No,Yes
+T2,Cho,>30–40kg,Nhuộm tạo hình cơ thểBáo giá theo thiết kế riêngBáo giá riêng,,No,Yes
+T2,Cho,>30–40kg,Cắt dũa + Móng,70k,No,No
+T2,Cho,>30–40kg,Vệ sinh tai,70k,No,No
+T2,Cho,>30–40kg,Cạo bụng + Bàn + Hậu môn,70k,No,No
+T2,Cho,>30–40kg,Tắm sấy,550k,No,No
+T2,Cho,>30–40kg,Cạo lông,600k,No,No
+T2,Cho,>30–40kg,Cắt lông,750k,No,No
+T2,Cho,>40kg,Combo Tắm Vệ Sinh,700k,Yes,No
+T2,Cho,>40kg,Combo Tắm Cạo,800k,Yes,No
+T2,Cho,>40kg,Combo Tắm Cắt,1tr,Yes,No
+T2,Cho,>40kg,Combo Tắm Cắt Tạo Hình,"1,2tr",Yes,No
+T2,Cho,>40kg,Nhuộm 2 tai + đuôi,400k,No,No
+T2,Cho,>40kg,Nhuộm 4 chân,400k,No,No
+T2,Cho,>40kg,Nhuộm hình nhỏ,500k,No,No
+T2,Cho,>40kg,Gỡ rốiBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng,,No,Yes
+T2,Cho,>40kg,Tẩy ốBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng,,No,Yes
+T2,Cho,>40kg,Tắm trắngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng,,No,Yes
+T2,Cho,>40kg,Xả dưỡngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng,,No,Yes
+T2,Cho,>40kg,Nhuộm hình lớnBáo giá tuỳ kích thước & màuBáo giá riêng,,No,Yes
+T2,Cho,>40kg,Nhuộm tạo hình cơ thểBáo giá theo thiết kế riêngBáo giá riêng,,No,Yes
+T2,Cho,>40kg,Cắt dũa + Móng,70k,No,No
+T2,Cho,>40kg,Vệ sinh tai,70k,No,No
+T2,Cho,>40kg,Cạo bụng + Bàn + Hậu môn,70k,No,No
+T2,Cho,>40kg,Tắm sấy,650k,No,No
+T2,Cho,>40kg,Cạo lông,700k,No,No
+T2,Cho,>40kg,Cắt lông,900k,No,No
+T2,Meo,<3kg,Combo Tắm Vệ Sinh,120k,Yes,No
+T2,Meo,<3kg,Combo Tắm Cạo,200k,Yes,No
+T2,Meo,<3kg,Combo Tắm Cắt,300k,Yes,No
+T2,Meo,<3kg,Combo Tắm Cắt Tạo Hình,350k,Yes,No
+T2,Meo,<3kg,Nhuộm 2 tai + đuôi,250k,No,No
+T2,Meo,<3kg,Nhuộm 4 chân,250k,No,No
+T2,Meo,<3kg,Nhuộm hình nhỏ,300k,No,No
+T2,Meo,<3kg,Gỡ rốiBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng,,No,Yes
+T2,Meo,<3kg,Tẩy ốBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng,,No,Yes
+T2,Meo,<3kg,Tắm trắngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng,,No,Yes
+T2,Meo,<3kg,Xả dưỡngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng,,No,Yes
+T2,Meo,<3kg,Nhuộm hình lớnBáo giá tuỳ kích thước & màuBáo giá riêng,,No,Yes
+T2,Meo,<3kg,Nhuộm tạo hình cơ thểBáo giá theo thiết kế riêngBáo giá riêng,,No,Yes
+T2,Meo,<3kg,Cắt dũa + Móng,30k,No,No
+T2,Meo,<3kg,Vệ sinh tai,30k,No,No
+T2,Meo,<3kg,Cạo bụng + Bàn + Hậu môn,30k,No,No
+T2,Meo,<3kg,Tắm sấy,100k,No,No
+T2,Meo,<3kg,Cạo lông,150k,No,No
+T2,Meo,<3kg,Cắt lông,200k,No,No
+T2,Meo,>3–6kg,Combo Tắm Vệ Sinh,200k,Yes,No
+T2,Meo,>3–6kg,Combo Tắm Cạo,250k,Yes,No
+T2,Meo,>3–6kg,Combo Tắm Cắt,350k,Yes,No
+T2,Meo,>3–6kg,Combo Tắm Cắt Tạo Hình,400k,Yes,No
+T2,Meo,>3–6kg,Nhuộm 2 tai + đuôi,250k,No,No
+T2,Meo,>3–6kg,Nhuộm 4 chân,250k,No,No
+T2,Meo,>3–6kg,Nhuộm hình nhỏ,300k,No,No
+T2,Meo,>3–6kg,Gỡ rốiBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng,,No,Yes
+T2,Meo,>3–6kg,Tẩy ốBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng,,No,Yes
+T2,Meo,>3–6kg,Tắm trắngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng,,No,Yes
+T2,Meo,>3–6kg,Xả dưỡngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng,,No,Yes
+T2,Meo,>3–6kg,Nhuộm hình lớnBáo giá tuỳ kích thước & màuBáo giá riêng,,No,Yes
+T2,Meo,>3–6kg,Nhuộm tạo hình cơ thểBáo giá theo thiết kế riêngBáo giá riêng,,No,Yes
+T2,Meo,>3–6kg,Cắt dũa + Móng,30k,No,No
+T2,Meo,>3–6kg,Vệ sinh tai,30k,No,No
+T2,Meo,>3–6kg,Cạo bụng + Bàn + Hậu môn,30k,No,No
+T2,Meo,>3–6kg,Tắm sấy,150k,No,No
+T2,Meo,>3–6kg,Cạo lông,200k,No,No
+T2,Meo,>3–6kg,Cắt lông,300k,No,No
+T2,Meo,>6–10kg,Combo Tắm Vệ Sinh,300k,Yes,No
+T2,Meo,>6–10kg,Combo Tắm Cạo,350k,Yes,No
+T2,Meo,>6–10kg,Combo Tắm Cắt,400k,Yes,No
+T2,Meo,>6–10kg,Combo Tắm Cắt Tạo Hình,500k,Yes,No
+T2,Meo,>6–10kg,Nhuộm 2 tai + đuôi,300k,No,No
+T2,Meo,>6–10kg,Nhuộm 4 chân,300k,No,No
+T2,Meo,>6–10kg,Nhuộm hình nhỏ,350k,No,No
+T2,Meo,>6–10kg,Gỡ rốiBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng,,No,Yes
+T2,Meo,>6–10kg,Tẩy ốBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng,,No,Yes
+T2,Meo,>6–10kg,Tắm trắngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng,,No,Yes
+T2,Meo,>6–10kg,Xả dưỡngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng,,No,Yes
+T2,Meo,>6–10kg,Nhuộm hình lớnBáo giá tuỳ kích thước & màuBáo giá riêng,,No,Yes
+T2,Meo,>6–10kg,Nhuộm tạo hình cơ thểBáo giá theo thiết kế riêngBáo giá riêng,,No,Yes
+T2,Meo,>6–10kg,Cắt dũa + Móng,50k,No,No
+T2,Meo,>6–10kg,Vệ sinh tai,50k,No,No
+T2,Meo,>6–10kg,Cạo bụng + Bàn + Hậu môn,50k,No,No
+T2,Meo,>6–10kg,Tắm sấy,250k,No,No
+T2,Meo,>6–10kg,Cạo lông,300k,No,No
+T2,Meo,>6–10kg,Cắt lông,400k,No,No
+T2,Meo,>10–20kg,Combo Tắm Vệ Sinh,400k,Yes,No
+T2,Meo,>10–20kg,Combo Tắm Cạo,450k,Yes,No
+T2,Meo,>10–20kg,Combo Tắm Cắt,550k,Yes,No
+T2,Meo,>10–20kg,Combo Tắm Cắt Tạo Hình,650k,Yes,No
+T2,Meo,>10–20kg,Nhuộm 2 tai + đuôi,300k,No,No
+T2,Meo,>10–20kg,Nhuộm 4 chân,300k,No,No
+T2,Meo,>10–20kg,Nhuộm hình nhỏ,350k,No,No
+T2,Meo,>10–20kg,Gỡ rốiBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng,,No,Yes
+T2,Meo,>10–20kg,Tẩy ốBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng,,No,Yes
+T2,Meo,>10–20kg,Tắm trắngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng,,No,Yes
+T2,Meo,>10–20kg,Xả dưỡngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng,,No,Yes
+T2,Meo,>10–20kg,Nhuộm hình lớnBáo giá tuỳ kích thước & màuBáo giá riêng,,No,Yes
+T2,Meo,>10–20kg,Nhuộm tạo hình cơ thểBáo giá theo thiết kế riêngBáo giá riêng,,No,Yes
+T2,Meo,>10–20kg,Cắt dũa + Móng,50k,No,No
+T2,Meo,>10–20kg,Vệ sinh tai,50k,No,No
+T2,Meo,>10–20kg,Cạo bụng + Bàn + Hậu môn,50k,No,No
+T2,Meo,>10–20kg,Tắm sấy,350k,No,No
+T2,Meo,>10–20kg,Cạo lông,400k,No,No
+T2,Meo,>10–20kg,Cắt lông,500k,No,No
+T2,Meo,>20–30kg,Combo Tắm Vệ Sinh,500k,Yes,No
+T2,Meo,>20–30kg,Combo Tắm Cạo,600k,Yes,No
+T2,Meo,>20–30kg,Combo Tắm Cắt,700k,Yes,No
+T2,Meo,>20–30kg,Combo Tắm Cắt Tạo Hình,800k,Yes,No
+T2,Meo,>20–30kg,Nhuộm 2 tai + đuôi,350k,No,No
+T2,Meo,>20–30kg,Nhuộm 4 chân,350k,No,No
+T2,Meo,>20–30kg,Nhuộm hình nhỏ,400k,No,No
+T2,Meo,>20–30kg,Gỡ rốiBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng,,No,Yes
+T2,Meo,>20–30kg,Tẩy ốBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng,,No,Yes
+T2,Meo,>20–30kg,Tắm trắngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng,,No,Yes
+T2,Meo,>20–30kg,Xả dưỡngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng,,No,Yes
+T2,Meo,>20–30kg,Nhuộm hình lớnBáo giá tuỳ kích thước & màuBáo giá riêng,,No,Yes
+T2,Meo,>20–30kg,Nhuộm tạo hình cơ thểBáo giá theo thiết kế riêngBáo giá riêng,,No,Yes
+T2,Meo,>20–30kg,Cắt dũa + Móng,70k,No,No
+T2,Meo,>20–30kg,Vệ sinh tai,70k,No,No
+T2,Meo,>20–30kg,Cạo bụng + Bàn + Hậu môn,70k,No,No
+T2,Meo,>20–30kg,Tắm sấy,450k,No,No
+T2,Meo,>20–30kg,Cạo lông,500k,No,No
+T2,Meo,>20–30kg,Cắt lông,650k,No,No
+T2,Meo,>30–40kg,Combo Tắm Vệ Sinh,600k,Yes,No
+T2,Meo,>30–40kg,Combo Tắm Cạo,700k,Yes,No
+T2,Meo,>30–40kg,Combo Tắm Cắt,800k,Yes,No
+T2,Meo,>30–40kg,Combo Tắm Cắt Tạo Hình,1tr,Yes,No
+T2,Meo,>30–40kg,Nhuộm 2 tai + đuôi,400k,No,No
+T2,Meo,>30–40kg,Nhuộm 4 chân,400k,No,No
+T2,Meo,>30–40kg,Nhuộm hình nhỏ,500k,No,No
+T2,Meo,>30–40kg,Gỡ rốiBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng,,No,Yes
+T2,Meo,>30–40kg,Tẩy ốBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng,,No,Yes
+T2,Meo,>30–40kg,Tắm trắngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng,,No,Yes
+T2,Meo,>30–40kg,Xả dưỡngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng,,No,Yes
+T2,Meo,>30–40kg,Nhuộm hình lớnBáo giá tuỳ kích thước & màuBáo giá riêng,,No,Yes
+T2,Meo,>30–40kg,Nhuộm tạo hình cơ thểBáo giá theo thiết kế riêngBáo giá riêng,,No,Yes
+T2,Meo,>30–40kg,Cắt dũa + Móng,70k,No,No
+T2,Meo,>30–40kg,Vệ sinh tai,70k,No,No
+T2,Meo,>30–40kg,Cạo bụng + Bàn + Hậu môn,70k,No,No
+T2,Meo,>30–40kg,Tắm sấy,550k,No,No
+T2,Meo,>30–40kg,Cạo lông,600k,No,No
+T2,Meo,>30–40kg,Cắt lông,750k,No,No
+T2,Meo,>40kg,Combo Tắm Vệ Sinh,700k,Yes,No
+T2,Meo,>40kg,Combo Tắm Cạo,800k,Yes,No
+T2,Meo,>40kg,Combo Tắm Cắt,1tr,Yes,No
+T2,Meo,>40kg,Combo Tắm Cắt Tạo Hình,"1,2tr",Yes,No
+T2,Meo,>40kg,Nhuộm 2 tai + đuôi,400k,No,No
+T2,Meo,>40kg,Nhuộm 4 chân,400k,No,No
+T2,Meo,>40kg,Nhuộm hình nhỏ,500k,No,No
+T2,Meo,>40kg,Gỡ rốiBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng,,No,Yes
+T2,Meo,>40kg,Tẩy ốBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng,,No,Yes
+T2,Meo,>40kg,Tắm trắngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng,,No,Yes
+T2,Meo,>40kg,Xả dưỡngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng,,No,Yes
+T2,Meo,>40kg,Nhuộm hình lớnBáo giá tuỳ kích thước & màuBáo giá riêng,,No,Yes
+T2,Meo,>40kg,Nhuộm tạo hình cơ thểBáo giá theo thiết kế riêngBáo giá riêng,,No,Yes
+T2,Meo,>40kg,Cắt dũa + Móng,70k,No,No
+T2,Meo,>40kg,Vệ sinh tai,70k,No,No
+T2,Meo,>40kg,Cạo bụng + Bàn + Hậu môn,70k,No,No
+T2,Meo,>40kg,Tắm sấy,650k,No,No
+T2,Meo,>40kg,Cạo lông,700k,No,No
+T2,Meo,>40kg,Cắt lông,900k,No,No

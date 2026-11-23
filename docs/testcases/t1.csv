@@ -1,7 +1,7 @@
 TC_ID,Requirement_ID,System,Title,Priority,Technique,Type,Owner,Status
 TC-T1-M1-001,FR-M1-01,T1,Trang chủ Pet NGON trả HTTP 200 và hiển thị tiêu đề + điều hướng chính,Critical,UC,Auto,Tài,Pass
 TC-T1-M1-002,FR-M1-02,T1,Mọi liên kết menu điều hướng đến trang con trả HTTP 200,High,UC,Auto,Tài,Pass
-TC-T1-M1-003,FR-M1-03,T1,"Trang hiển thị đủ địa chỉ, điện thoại, email và giờ mở cửa",Critical,Use case,Manual,Tài,Chưa thực thi
+TC-T1-M1-003,FR-M1-03,T1,"Trang hiển thị đủ địa chỉ, điện thoại, email và giờ mở cửa",Critical,Use case,Manual,Tài,Pass
 TC-T1-M1-004,FR-M1-04,T1,Không có liên kết chết 404 trong menu và footer,Critical,Use case,Auto,Mạnh,Pass
 TC-T1-M1-005,FR-M1-05,T1,Trang chủ không cuộn ngang ở màn hình 360px,High,Use case,Auto,Mạnh,Fail
 TC-T1-M1-006,FR-M1-06,T1,"URL sai hiển thị trang lỗi không thân thiện, không lộ stack trace",High,Use case,Manual,Lộc,Pass
@@ -12,52 +12,52 @@ TC-T1-M2-004,FR-M2-03,T1,Dịch vụ hỗ trợ tại nhà có nhãn Có tận n
 TC-T1-M2-005,FR-M2-05,T1,Gói phổ biện được đánh dấu rõ ràng,Medium,UC,Manual,Mạnh,Pass
 TC-T1-M2-006,FR-M2-05,T1,Mỗi gói tại nhà ghi rõ mức phụ thu cộng thêm,Critical,UC,Manual,Mạnh,Pass
 TC-T1-M2-007,FR-M2-01,T1,Số dịch vụ niêm yết khớp bảng giá mục 3 của SRS,High,UC,Manual,Lộc,Pass
-TC-T1-M3-001,FR-M3-01,T1,Bảng giá có đủ cột cho mọi bậc cân nặng và mọi dịch vụ,Critical,UC,Manual,Tài,Chưa thực thi
-TC-T1-M3-002,FR-M3-02,T1,"Tra bảng giá đúng cho (Chó, bậc 3-5kg) + dịch vụ đã chọn",Critical,EP,Manual,Tài,Chưa thực thi
-TC-T1-M3-003,FR-M3-02,T1,Cùng bậc cân nặng nhưng Mèo cho giá khác Chó,Critical,DT,Manual,Tài,Chưa thực thi
-TC-T1-M3-004,FR-M3-05,T1,"Trang giá ghi rõ giá cuối xác nhận tại spa, giá hiển thị chỉ là dự kiến",Critical,UC,Manual,Tài,Chưa thực thi
-TC-T1-M3-005,FR-M3-07,T1,Gói hiển thị mức giá từ ...₫ kèm khoảng min-max,Medium,UC,Manual,Tài,Chưa thực thi
-TC-T1-M3-006,FR-M3-07,T1,Khoảng min-max của gói khớp bảng giá,High,EP,Manual,Tài,Chưa thực thi
-TC-T1-M3-007,FR-M3-02,T1,BVA ngưỡng 3kg: cân 2.9kg thuộc bậc dưới,Critical,BVA,Manual,Tài,Chưa thực thi
-TC-T1-M3-008,FR-M3-02,T1,BVA ngưỡng 3kg: bậc cân nặng 3–5kg có mức giá riêng trong bảng giá,Critical,BVA,Auto,Mạnh,Pass
-TC-T1-M3-009,FR-M3-02,T1,BVA ngưỡng 3kg: bậc 3–5kg liền kề <3kg — giá tăng đơn điệu theo bậc,Critical,BVA,Auto,Mạnh,Pass
-TC-T1-M3-010,FR-M3-02,T1,BVA ngưỡng 5kg: bậc cân nặng 5–10kg có mức giá riêng trong bảng giá,Critical,BVA,Auto,Mạnh,Pass
-TC-T1-M3-011,FR-M3-02,T1,BVA ngưỡng 5kg: bậc 5–10kg liền kề 3–5kg — giá tăng đơn điệu theo bậc,Critical,BVA,Auto,Mạnh,Pass
-TC-T1-M3-012,FR-M3-02,T1,BVA ngưỡng 10kg: bậc 5–10kg liền kề 10–15kg — giá tăng đơn điệu theo bậc,Critical,BVA,Auto,Mạnh,Pass
-TC-T1-M3-013,FR-M3-02,T1,BVA ngưỡng 10kg: bậc cân nặng 10–15kg có mức giá riêng trong bảng giá,Critical,BVA,Auto,Mạnh,Pass
-TC-T1-M3-014,FR-M3-02,T1,BVA ngưỡng 10kg: bậc 10–15kg liền kề 5–10kg — giá tăng đơn điệu theo bậc,Critical,BVA,Auto,Mạnh,Pass
+TC-T1-M3-001,FR-M3-01,T1,Bảng giá có đủ cột cho mọi bậc cân nặng và mọi dịch vụ,Critical,UC,Manual,Tài,Pass
+TC-T1-M3-002,FR-M3-02,T1,"Tra bảng giá đúng cho (Chó, bậc 3-5kg) + dịch vụ đã chọn",Critical,EP,Manual,Tài,Pass
+TC-T1-M3-003,FR-M3-02,T1,Cùng bậc cân nặng nhưng Mèo cho giá khác Chó,Critical,DT,Manual,Tài,Pass
+TC-T1-M3-004,FR-M3-05,T1,"Trang giá ghi rõ giá cuối xác nhận tại spa, giá hiển thị chỉ là dự kiến",Critical,UC,Manual,Tài,Pass
+TC-T1-M3-005,FR-M3-07,T1,Gói hiển thị mức giá từ ...₫ kèm khoảng min-max,Medium,UC,Manual,Tài,Pass
+TC-T1-M3-006,FR-M3-07,T1,Khoảng min-max của gói khớp bảng giá,High,EP,Manual,Tài,Pass
+TC-T1-M3-007,FR-M3-02,T1,BVA ngưỡng 3kg: cân 2.9kg thuộc bậc dưới,Critical,BVA,Manual,Tài,Pass
+TC-T1-M3-008,FR-M3-02,T1,BVA ngưỡng 3kg: cân 3kg thuộc bậc 3-5kg,Critical,BVA,Manual,Mạnh,Pass
+TC-T1-M3-009,FR-M3-02,T1,BVA ngưỡng 3kg: cân 3.1kg thuộc bậc 3-5kg,Critical,BVA,Manual,Mạnh,Pass
+TC-T1-M3-010,FR-M3-02,T1,BVA ngưỡng 5kg: cân 5kg thuộc bậc 5-10kg,Critical,BVA,Manual,Mạnh,Pass
+TC-T1-M3-011,FR-M3-02,T1,BVA ngưỡng 5kg: cân 5.1kg thuộc bậc 5-10kg,Critical,BVA,Manual,Mạnh,Pass
+TC-T1-M3-012,FR-M3-02,T1,BVA ngưỡng 10kg: cân 9.9kg thuộc bậc 5-10kg,Critical,BVA,Manual,Mạnh,Pass
+TC-T1-M3-013,FR-M3-02,T1,BVA ngưỡng 10kg: cân 10kg thuộc bậc 10-15kg,Critical,BVA,Manual,Mạnh,Pass
+TC-T1-M3-014,FR-M3-02,T1,BVA ngưỡng 10kg: cân 10.1kg thuộc bậc 10-15kg,Critical,BVA,Manual,Mạnh,Pass
 TC-T1-M3-015,FR-M3-02,T1,BVA ngưỡng 15kg: cân 15kg thuộc bậc 15-20kg,Critical,BVA,Manual,Lộc,Pass
 TC-T1-M3-016,FR-M3-02,T1,BVA ngưỡng 20kg: cân 20kg thuộc bậc 20-25kg,Critical,BVA,Manual,Lộc,Pass
 TC-T1-M3-017,FR-M3-02,T1,BVA ngưỡng 25kg: cân 25kg thuộc bậc 25-30kg,Critical,BVA,Manual,Lộc,Pass
-TC-T1-M3-018,FR-M3-02,T1,BVA ngưỡng 30kg: cân 30.1kg thuộc bậc trên 30kg,Critical,BVA,Manual,Lộc,Fail
-TC-T1-M4-001,FR-M4-01,T1,Form giữ chỗ hiển thị đủ trường bắt buộc và tuỳ chọn,Critical,UC,Manual,Tài,Chưa thực thi
-TC-T1-M4-002,FR-M4-02,T1,Bỏ trống trường bắt buộc thì form không gửi được và báo đúng trường lỗi,Critical,EP,Manual,Tài,Chưa thực thi
-TC-T1-M4-003,FR-M4-04,T1,Bước Lịch hẹn của T1 hiển thị 7 ngày cố định và 8 khung giờ 08:30-17:00,High,EP,Manual,Tài,Chưa thực thi
-TC-T1-M4-004,FR-M4-06,T1,"Wizard bắt buộc qua bước chọn loài, không bỏ qua được",Critical,ST,Manual,Tài,Chưa thực thi
-TC-T1-M4-005,FR-M4-06,T1,"Wizard bắt buộc qua bước chọn cân nặng, không bỏ qua được",Critical,ST,Manual,Tài,Chưa thực thi
-TC-T1-M4-006,FR-M4-07,T1,"Bước chọn dịch vụ hiển thị đầy đủ, không dịch vụ nào vô hình",Critical,UC,Manual,Mạnh,Pass
-TC-T1-M4-007,FR-M4-08,T1,Quay lại từ bước 3 giữ nguyên loài và cân nặng đã chọn,Critical,ST,Manual,Mạnh,Pass
-TC-T1-M4-008,FR-M4-12,T1,Luồng đặt lịch không yêu cầu đăng nhập hoặc tạo tài khoản,Critical,UC,Manual,Mạnh,Pass
-TC-T1-M4-009,FR-M4-06,T1,ST: bỏ qua bước 1 và đi thẳng bước 2 bị chặn,Critical,ST,Manual,Mạnh,Pass
-TC-T1-M4-010,FR-M4-07,T1,ST: nhảy thẳng từ bước 2 sang bước xác nhận bị chặn,Critical,ST,Manual,Lộc,Blocked
-TC-T1-M4-011,FR-M4-08,T1,ST: quay lại rồi tiến tục vẫn hợp lệ,High,ST,Manual,Lộc,Pass
+TC-T1-M3-018,FR-M3-02,T1,BVA ngưỡng 30kg: cân 30.1kg thuộc bậc trên 30kg,Critical,BVA,Manual,Lộc,Pass
+TC-T1-M4-001,FR-M4-01,T1,Form giữ chỗ hiển thị đủ trường bắt buộc và tuỳ chọn,Critical,UC,Manual,Tài,Pass
+TC-T1-M4-002,FR-M4-02,T1,Bỏ trống trường bắt buộc thì form không gửi được và báo đúng trường lỗi,Critical,EP,Manual,Tài,Pass
+TC-T1-M4-003,FR-M4-04,T1,Bước Lịch hẹn của T1 hiển thị 7 ngày cố định và 8 khung giờ 08:30-17:00,High,EP,Manual,Tài,Pass
+TC-T1-M4-004,FR-M4-06,T1,"Wizard bắt buộc qua bước chọn loài, không bỏ qua được",Critical,ST,Manual,Tài,Fail
+TC-T1-M4-005,FR-M4-06,T1,"Wizard bắt buộc qua bước chọn cân nặng, không bỏ qua được",Critical,ST,Manual,Tài,Pass
+TC-T1-M4-006,FR-M4-07,T1,"Bước chọn dịch vụ hiển thị đầy đủ, không dịch vụ nào vô hình",Critical,UC,Manual,Mạnh,Chưa thực thi
+TC-T1-M4-007,FR-M4-08,T1,Quay lại từ bước 3 giữ nguyên loài và cân nặng đã chọn,Critical,ST,Manual,Mạnh,Chưa thực thi
+TC-T1-M4-008,FR-M4-12,T1,Luồng đặt lịch không yêu cầu đăng nhập hoặc tạo tài khoản,Critical,UC,Manual,Mạnh,Chưa thực thi
+TC-T1-M4-009,FR-M4-06,T1,ST: bỏ qua bước 1 và đi thẳng bước 2 bị chặn,Critical,ST,Manual,Mạnh,Chưa thực thi
+TC-T1-M4-010,FR-M4-07,T1,ST: nhảy thẳng từ bước 2 sang bước xác nhận bị chặn,Critical,ST,Manual,Lộc,Chưa thực thi
+TC-T1-M4-011,FR-M4-08,T1,ST: quay lại rồi tiến tục vẫn hợp lệ,High,ST,Manual,Lộc,Chưa thực thi
 TC-T1-M4-012,FR-M4-08,T1,ST: quay lại bước đầu được và có thể đổi lựa chọn,High,ST,Manual,Lộc,Pass
-TC-T1-M5-001,FR-M5-01,T1,Trang mô tả quy trình 4 bước từ đặt lịch đến nhận thú cưng,Critical,UC,Manual,Tài,Chưa thực thi
-TC-T1-M5-002,FR-M5-02,T1,Có nêu xác nhận lịch trong 5 phút qua Zalo,Critical,UC,Manual,Tài,Chưa thực thi
-TC-T1-M5-003,FR-M5-03,T1,FAQ Có thể đổi/hủy lịch không trả lời có điều kiện cụ thể,High,UC,Manual,Mạnh,Pass
-TC-T1-M5-004,FR-M5-03,T1,Điều kiện đổi lịch nêu rõ thời gian và phí,High,DT,Manual,Mạnh,Pass
-TC-T1-M5-005,FR-M5-03,T1,DT chính sách hủy: hủy trước khi cân nặng đạt mức miễn phí,High,DT,Manual,Lộc,Pass
-TC-T1-M5-006,FR-M5-04,T1,Nội dung hoàn tiền hoặc điều khoản tương ứng tồn tại,Medium,UC,Manual,Lộc,Blocked
-TC-T1-M6-001,FR-M6-01,T1,Bước 3 wizard cho lựa chọn đến spa,Critical,ST,Manual,Tài,Chưa thực thi
-TC-T1-M6-002,FR-M6-01,T1,Bước 3 wizard cho lựa chọn tại nhà,Critical,ST,Manual,Tài,Chưa thực thi
-TC-T1-M6-003,FR-M6-02,T1,DT phụ thu di chuyển: 0 km không phát sinh phụ thu,Critical,DT,Manual,Tài,Chưa thực thi
-TC-T1-M6-004,FR-M6-02,T1,DT phụ thu di chuyển: 2 km không phát sinh phụ thu,Critical,DT,Manual,Tài,Chưa thực thi
-TC-T1-M6-005,FR-M6-02,T1,DT phụ thu di chuyển: 5 km miễn phí đúng mốc,Critical,DT,Manual,Tài,Chưa thực thi
-TC-T1-M6-006,FR-M6-02,T1,DT phụ thu di chuyển: 6 km thu 8.000đ,Critical,DT,Manual,Tài,Chưa thực thi
-TC-T1-M6-007,FR-M6-02,T1,DT phụ thu di chuyển: 7 km thu 16.000đ,Critical,DT,Manual,Tài,Chưa thực thi
-TC-T1-M6-008,FR-M6-02,T1,DT phụ thu di chuyển: 10 km thu 40.000đ,Critical,DT,Manual,Mạnh,Pass
-TC-T1-M6-009,FR-M6-02,T1,DT phụ thu di chuyển: 15 km thu 80.000đ,Critical,DT,Manual,Mạnh,Pass
-TC-T1-M6-010,FR-M6-06,T1,DT phụ thu di chuyển: 20 km hiển thị Liên hệ báo giá riêng thay vì con số,Critical,DT,Manual,Mạnh,Pass
+TC-T1-M5-001,FR-M5-01,T1,Trang mô tả quy trình 4 bước từ đặt lịch đến nhận thú cưng,Critical,UC,Manual,Tài,Pass
+TC-T1-M5-002,FR-M5-02,T1,Có nêu xác nhận lịch trong 5 phút qua Zalo,Critical,UC,Manual,Tài,Pass
+TC-T1-M5-003,FR-M5-03,T1,FAQ Có thể đổi/hủy lịch không trả lời có điều kiện cụ thể,High,UC,Manual,Mạnh,Chưa thực thi
+TC-T1-M5-004,FR-M5-03,T1,Điều kiện đổi lịch nêu rõ thời gian và phí,High,DT,Manual,Mạnh,Chưa thực thi
+TC-T1-M5-005,FR-M5-03,T1,DT chính sách hủy: hủy trước khi cân nặng đạt mức miễn phí,High,DT,Manual,Lộc,Chưa thực thi
+TC-T1-M5-006,FR-M5-04,T1,Nội dung hoàn tiền hoặc điều khoản tương ứng tồn tại,Medium,UC,Manual,Lộc,Chưa thực thi
+TC-T1-M6-001,FR-M6-01,T1,Bước 3 wizard cho lựa chọn đến spa,Critical,ST,Manual,Tài,Pass
+TC-T1-M6-002,FR-M6-01,T1,Bước 3 wizard cho lựa chọn tại nhà,Critical,ST,Manual,Tài,Pass
+TC-T1-M6-003,FR-M6-02,T1,DT phụ thu di chuyển: 0 km không phát sinh phụ thu,Critical,DT,Manual,Tài,Pass
+TC-T1-M6-004,FR-M6-02,T1,DT phụ thu di chuyển: 2 km không phát sinh phụ thu,Critical,DT,Manual,Tài,Pass
+TC-T1-M6-005,FR-M6-02,T1,DT phụ thu di chuyển: 5 km miễn phí đúng mốc,Critical,DT,Manual,Tài,Pass
+TC-T1-M6-006,FR-M6-02,T1,DT phụ thu di chuyển: 6 km thu 8.000đ,Critical,DT,Manual,Tài,Pass
+TC-T1-M6-007,FR-M6-02,T1,DT phụ thu di chuyển: 7 km thu 16.000đ,Critical,DT,Manual,Tài,Pass
+TC-T1-M6-008,FR-M6-02,T1,DT phụ thu di chuyển: 10 km thu 40.000đ,Critical,DT,Manual,Mạnh,Chưa thực thi
+TC-T1-M6-009,FR-M6-02,T1,DT phụ thu di chuyển: 15 km thu 80.000đ,Critical,DT,Manual,Mạnh,Chưa thực thi
+TC-T1-M6-010,FR-M6-06,T1,DT phụ thu di chuyển: 20 km hiển thị Liên hệ báo giá riêng thay vì con số,Critical,DT,Manual,Mạnh,Chưa thực thi
 TC-T1-M6-011,FR-M6-03,T1,Gói tắm tại nhà cộng phụ thu cố định 50.000đ,Critical,DT,Manual,Mạnh,Pass
 TC-T1-M6-012,FR-M6-03,T1,Gói cạo tại nhà cộng phụ thu cố định 80.000đ,Critical,DT,Manual,Mạnh,Pass
 TC-T1-M6-013,FR-M6-03,T1,Combo tắm cạo tại nhà cộng phụ thu cố định 100.000đ,Critical,DT,Manual,Mạnh,Pass
@@ -65,9 +65,9 @@ TC-T1-M6-014,FR-M6-03,T1,Tổng tiền = giá gói + phụ thu cố định + ph
 TC-T1-M6-015,FR-M6-04,T1,Mỗi gói tại nhà ghi rõ chưa gồm phí di chuyển,High,UC,Manual,Mạnh,Pass
 TC-T1-M6-016,FR-M6-04,T1,Không gói nào tại nhà ghi sai thành đã gồm phí di chuyển,High,UC,Manual,Lộc,Pass
 TC-T1-M6-017,FR-M6-05,T1,"Bảng khoảng cách có đủ 4 dảng 0-5, 5-10, 10-15, trên 15 km",High,UC,Manual,Lộc,Pass
-TC-T1-M6-018,FR-M6-06,T1,Trên 15 km hiển thị Liên hệ báo giá riêng theo lộ trình,Critical,EP,Manual,Lộc,Pass
-TC-T1-M6-019,FR-M6-06,T1,Nhập địa chỉ xa khoảng 20 km không hiển thị con số phụ thu cố định,High,EP,Manual,Lộc,Pass
+TC-T1-M6-018,FR-M6-06,T1,Trên 15 km hiển thị Liên hệ báo giá riêng theo lộ trình,Critical,EP,Manual,Lộc,Fail
+TC-T1-M6-019,FR-M6-06,T1,Nhập địa chỉ xa khoảng 20 km không hiển thị con số phụ thu cố định,High,EP,Manual,Lộc,Fail
 TC-T1-M6-020,FR-M6-02,T1,Phụ thu di chuyển hiển thị ngay khi nhập địa chỉ,High,UC,Manual,Lộc,Pass
-TC-T1-M7-001,FR-M7-03,T1,Chuyển sang tiếng Anh vẫn ở trang hiện tại và dịch đủ,High,UC,Manual,Tài,Chưa thực thi
-TC-T1-M7-002,FR-M7-04,T1,"Có ít nhất 2 kênh liên hệ hoạt động, liên kết Zalo mở đúng ứng dụng",Critical,UC,Manual,Mạnh,Chưa thực thi
-TC-T1-M7-003,FR-M7-06,T1,"Mục FAQ accordion mở độc lập, đóng lại được, biểu tượng đổi theo trạng thái",Medium,ST,Manual,Lộc,Pass
+TC-T1-M7-001,FR-M7-03,T1,Chuyển sang tiếng Anh vẫn ở trang hiện tại và dịch đủ,High,UC,Manual,Tài,Pass
+TC-T1-M7-002,FR-M7-04,T1,"Có ít nhất 2 kênh liên hệ hoạt động, liên kết Zalo mở đúng ứng dụng",Critical,UC,Manual,Mạnh,Pass
+TC-T1-M7-003,FR-M7-06,T1,"Mục FAQ accordion mở độc lập, đóng lại được, biểu tượng đổi theo trạng thái",Medium,ST,Manual,Lộc,Fail

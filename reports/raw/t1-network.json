@@ -1,0 +1,30 @@
+{
+  "capturedAt": "2026-11-22T16:33:50.552Z",
+  "apiCalls": [
+    {
+      "method": "GET",
+      "url": "https://petngon.vn/vi/pets?_rsc=oewu8",
+      "type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "https://petngon.vn/vi/careers?_rsc=oewu8",
+      "type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "https://petngon.vn/vi/blog?_rsc=oewu8",
+      "type": "fetch"
+    },
+    {
+      "method": "GET",
+      "url": "https://petngon.vn/vi/contact?_rsc=oewu8",
+      "type": "fetch"
+    },
+    {
+      "method": "POST",
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-95JRC61WSG&gtm=45je6bh1v9245127125za20ozb9245128752zd9245128752xf1&_p=1795365227499&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1884745046.1795365228&frm=0&ngs=1&pscdl=noapi&rcb=8&sr=1920x1080&uaa=x86&uab=64&uafvl=Not-A.Brand%3B99.0.0.0%7CGoogle%2520Chrome%3B157.0.8103.79%7CChromium%3B157.0.8103.79&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=1&tag_exp=115616986~115938466~115938468~120213116~120385423~120469145~120469153~121246026~121246034&sid=1795365227&sct=1&seg=0&dl=https%3A%2F%2Fpetngon.vn%2Fvi&dt=Pet%20NGON%20%E2%80%94%20Spa%20%26%20Grooming%20T%E1%BA%ADn%20Nh%C3%A0&en=page_view&_fv=1&_nsi=1&_ss=1&tfd=1697",
+      "type": "fetch"
+    }
+  ]
+}

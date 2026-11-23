@@ -1,0 +1,104 @@
+{
+  "t1_quyTrinh": {
+    "doan": "QUY TRÌNH ĐẶT LỊCH\n4 bước — đặt lịch xong trong 2 phút\n01\ntouch_app\nChọn dịch vụ\nLướt 5 gói, đọc kỹ phần \"bao gồm\" và bảng giá theo cân.\n02\nedit_calendar\nĐặt lịch trên web\nChọn loài + cân nặng, ngày giờ. Mất 1-2 phút.\n03\nhome_work\nTại spa hoặc tại nhà\nChọn đến spa hoặc nhập địa chỉ — phụ thu hiện rõ.\n04\nverified\nXác nhận & thanh toán\nTổng kết đơn, nhận tin nhắn xác nhận trong 5 phút.\ndirections_car PHỤ THU DI CHUYỂN\nBảng giá rõ ràng theo khoảng cách\nPhụ thu được tính tự động khi bạn nhập địa chỉ trong form đặt lịch — không có phí ẩn. 5km đầu miễn phí, sau đó 8.000₫/km. Ngoài phụ thu này, dịch vụ tận nhà cộng thêm phụ thu cố định riêng theo gói (xem bảng giá ở mỗi dịch vụ).\nPhụ thu = max(0, km − 5) × 8.000₫\nlocation_on\n0 – 5 km\nMiễn phí\nKhu trung tâm Q.1, Q.3, Bình Thạnh, Phú Nhuận\nlocation_on\n5 – 10 km\n40.000₫ – 80.000₫\nQ.7, Q.10, Tân Bình, Gò Vấp\nlocation_on\n10 – 15 km\n80.000₫ – 120.000₫\nBình Chánh, Thủ Đức, Nhà Bè\nlocation_on\nTrên 15 km\nLiên hệ\nBáo giá riêng theo lộ trình\nreviews\nKHÁCH HÀNG NÓI GÌ\nHơn 2.000 bé cưng đã được pamper\nstar\nstar\nstar\nstar\nstar\n“Đặt lịch tắm tại nhà siêu tiện. Bé Bông không phải đi xe nên không stress, thợ rất nhẹ tay.”\nM\nChị Mai\nPoodle Bông 4kg · Tắm vệ sinh tại nhà\nstar\nstar\nstar\nstar\nstar\n“Combo tắm + cạo mùa hè. Mun nóng quá nên cạo cho mát, thợ làm gọn trong 1.5 tiếng tại nhà luôn.”\nT\nAnh Tuấn\nMèo Anh lông ngắn Mun 5kg · Combo Tắm + Cạo tại nhà\nstar\nstar\nstar\nstar\nstar\n“Form cắt chuẩn breed, chụp hình đẹp như đi show. Giá theo cân hợp lý, biết trước rõ ràng.”\nH\nChị Hà\nGolden Mochi 25kg · Combo Tắm + Cắt tỉa tại spa\nhelp\nCÂU HỎI THƯỜNG GẶP\nM",
+    "co4Buoc": true,
+    "co5PhutZalo": true,
+    "coHoanCoc": false,
+    "coDoiLich": true
+  },
+  "t1_buoc2": {
+    "soLoai": 7,
+    "coInputTen": 2,
+    "nutTiepTucDisabled": true
+  },
+  "t1_buoc2_nutSauChon": true,
+  "t1_buoc3": {
+    "tieuDeBuoc": "check Dịch vụ check Bé cưng 3 Lịch hẹn 4 Địa điểm",
+    "soNgay": 7,
+    "ngay": [
+      "CN\n22\n11/26",
+      "THỨ 2\n23\n11/26",
+      "THỨ 3\n24\n11/26",
+      "THỨ 4\n25\n11/26",
+      "THỨ 5\n26\n11/26",
+      "THỨ 6\n27\n11/26",
+      "THỨ 7\n28\n11/26"
+    ],
+    "soKhungGio": 8,
+    "khungGio": [
+      "08:30",
+      "09:30",
+      "10:30",
+      "13:00",
+      "14:00",
+      "15:00",
+      "16:00",
+      "17:00"
+    ],
+    "coInputDate": 0
+  },
+  "t1_buoc4": {
+    "tieuDeBuoc": "check Dịch vụ check Bé cưng check Lịch hẹn 4 Địa điểm",
+    "text": "event_available\nĐẶT LỊCH GROOMING\nHoàn tất 4 bước nhanh\nclose\ncheck\nDịch vụ\ncheck\nBé cưng\ncheck\nLịch hẹn\n4\nĐịa điểm\nĐịa điểm thực hiện\nstore\nTại spa\n1.09 A1 Westgate, Bình Chánh\nKHÔNG PHỤ THU\nhome_work\nTận nhà\nThợ đến địa chỉ của bạn\n+50.000₫ + KM\nThông tin liên hệ\nHỌ TÊN\nSỐ ĐIỆN THOẠI\nTắm · Chó nhỏ (3–5kg)\n155.000₫\nTạm tính\n155.000₫\nchevron_left\nQuay lại\ncheck\nXác nhận đặt lịch",
+    "coLuaChonDiaDiem": true
+  },
+  "t1_buoc4_soBuoc": "4",
+  "t2": {
+    "coQuyTrinh4Buoc": false,
+    "doanQuyTrinh": "",
+    "coGoiXacNhan": false,
+    "coHuyDoi": false,
+    "coHoanCoc": false,
+    "coNenDatLich": false
+  },
+  "t2_trangFaq": [
+    {
+      "duong": "/spa",
+      "status": 200,
+      "coHuy": false,
+      "coDoiLich": false,
+      "coHoanCoc": false,
+      "doanLienQuan": ""
+    },
+    {
+      "duong": "/faq",
+      "status": 404,
+      "coHuy": false,
+      "coDoiLich": false,
+      "coHoanCoc": false,
+      "doanLienQuan": ""
+    },
+    {
+      "duong": "/chinh-sach",
+      "status": 404,
+      "coHuy": false,
+      "coDoiLich": false,
+      "coHoanCoc": false,
+      "doanLienQuan": ""
+    },
+    {
+      "duong": "/dich-vu",
+      "status": 404,
+      "coHuy": false,
+      "coDoiLich": false,
+      "coHoanCoc": false,
+      "doanLienQuan": ""
+    },
+    {
+      "duong": "/ve-mat-pet",
+      "status": 404,
+      "coHuy": false,
+      "coDoiLich": false,
+      "coHoanCoc": false,
+      "doanLienQuan": ""
+    },
+    {
+      "duong": "/lien-he",
+      "status": 404,
+      "coHuy": false,
+      "coDoiLich": false,
+      "coHoanCoc": false,
+      "doanLienQuan": ""
+    }
+  ]
+}

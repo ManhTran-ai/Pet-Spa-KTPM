@@ -1,0 +1,161 @@
+{
+  "dichVu": [
+    {
+      "cls": "svc combo",
+      "text": "Combo Tắm Vệ Sinh200k"
+    },
+    {
+      "cls": "svc combo",
+      "text": "Combo Tắm Cạo250k"
+    },
+    {
+      "cls": "svc combo",
+      "text": "Combo Tắm Cắt350k"
+    },
+    {
+      "cls": "svc combo",
+      "text": "Combo Tắm Cắt Tạo Hình400k"
+    },
+    {
+      "cls": "svc",
+      "text": "Nhuộm 2 tai + đuôi250k"
+    },
+    {
+      "cls": "svc",
+      "text": "Nhuộm 4 chân250k"
+    },
+    {
+      "cls": "svc",
+      "text": "Nhuộm hình nhỏ300k"
+    },
+    {
+      "cls": "svc",
+      "text": "Gỡ rốiBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng"
+    },
+    {
+      "cls": "svc",
+      "text": "Tẩy ốBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng"
+    },
+    {
+      "cls": "svc",
+      "text": "Tắm trắngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng"
+    },
+    {
+      "cls": "svc",
+      "text": "Xả dưỡngBáo giá theo tình trạng lông: 50.000 – 500.000đBáo giá riêng"
+    },
+    {
+      "cls": "svc",
+      "text": "Nhuộm hình lớnBáo giá tuỳ kích thước & màuBáo giá riêng"
+    },
+    {
+      "cls": "svc",
+      "text": "Nhuộm tạo hình cơ thểBáo giá theo thiết kế riêngBáo giá riêng"
+    }
+  ],
+  "soSvc": 13,
+  "soCombo": 4,
+  "soLe": 9,
+  "bangGia": [
+    {
+      "rows": 12,
+      "cols": 8,
+      "headers": [
+        "Dịch vụ (Grooming)",
+        "<3kg",
+        ">3–6kg",
+        ">6–10kg",
+        ">10–20kg",
+        ">20–30kg",
+        ">30–40kg",
+        ">40kg"
+      ],
+      "sample": [
+        [
+          "Combo trọn gói"
+        ],
+        [
+          "Combo Tắm Vệ Sinh",
+          "120k",
+          "200k",
+          "300k",
+          "400k",
+          "500k",
+          "600k",
+          "700k"
+        ],
+        [
+          "Combo Tắm Cạo",
+          "200k",
+          "250k",
+          "350k",
+          "450k",
+          "600k",
+          "700k",
+          "800k"
+        ]
+      ]
+    },
+    {
+      "rows": 4,
+      "cols": 5,
+      "headers": [
+        "Dịch vụ (Nhuộm)",
+        "<6kg",
+        ">6–15kg",
+        ">15–30kg",
+        ">30kg"
+      ],
+      "sample": [
+        [
+          "Nhuộm tạo kiểu"
+        ],
+        [
+          "Nhuộm 2 tai + đuôi",
+          "250k",
+          "300k",
+          "350k",
+          "400k"
+        ],
+        [
+          "Nhuộm 4 chân",
+          "250k",
+          "300k",
+          "350k",
+          "400k"
+        ]
+      ]
+    },
+    {
+      "rows": 7,
+      "cols": 0,
+      "headers": [],
+      "sample": [
+        [
+          "Báo giá riêng — tuỳ tình trạng bé"
+        ],
+        [
+          "Gỡ rối",
+          "Báo giá theo tình trạng lông: 50.000 – 500.000đ"
+        ],
+        [
+          "Tẩy ố",
+          "Báo giá theo tình trạng lông: 50.000 – 500.000đ"
+        ]
+      ]
+    }
+  ],
+  "dongGia": [
+    "khi đưa bé đến spa.",
+    "Chọn loại bé, cân nặng và dịch vụ — bạn thấy ngay mức giá dự kiến minh bạch, rồi giữ chỗ chỉ với số điện thoại. Không còn phải nhắn tin hỏi giá.",
+    "10.000+",
+    "Bậc định sẵn",
+    "Chọn loại để hiển thị đúng bậc cân nặng & dịch vụ.",
+    "Chọn dịch vụ để xem giá dự kiến cho bé của bạn 🐾",
+    "Giá cuối được xác nhận tại spa sau khi cân & kiểm tra tình trạng lông. Dịch vụ \"báo giá riêng\" sẽ được tư vấn khi spa gọi lại.",
+    "Số điện thoại / Zalo *",
+    "Bằng việc gửi, bạn đồng ý để Mật Pet Family liên hệ lại qua điện thoại / Zalo để xác nhận lịch.",
+    "Premium pet shop đồng hành tìm người bạn bốn chân phù hợp nhất cho từng gia đình Việt.",
+    "Hỏi đáp"
+  ]
+}

@@ -1,0 +1,215 @@
+{
+  "buoc1": {
+    "stepEls": [
+      {
+        "tag": "DIV",
+        "cls": "bk-steps",
+        "text": "1Dịch vụ2Bé cưng3Lịch hẹn4Địa điểm"
+      },
+      {
+        "tag": "DIV",
+        "cls": "bk-step is-active ",
+        "text": "1Dịch vụ"
+      },
+      {
+        "tag": "SPAN",
+        "cls": "bk-step__num",
+        "text": "1"
+      },
+      {
+        "tag": "SPAN",
+        "cls": "bk-step__label",
+        "text": "Dịch vụ"
+      },
+      {
+        "tag": "DIV",
+        "cls": "bk-step  ",
+        "text": "2Bé cưng"
+      },
+      {
+        "tag": "SPAN",
+        "cls": "bk-step__num",
+        "text": "2"
+      },
+      {
+        "tag": "SPAN",
+        "cls": "bk-step__label",
+        "text": "Bé cưng"
+      },
+      {
+        "tag": "DIV",
+        "cls": "bk-step  ",
+        "text": "3Lịch hẹn"
+      },
+      {
+        "tag": "SPAN",
+        "cls": "bk-step__num",
+        "text": "3"
+      },
+      {
+        "tag": "SPAN",
+        "cls": "bk-step__label",
+        "text": "Lịch hẹn"
+      },
+      {
+        "tag": "DIV",
+        "cls": "bk-step  ",
+        "text": "4Địa điểm"
+      },
+      {
+        "tag": "SPAN",
+        "cls": "bk-step__num",
+        "text": "4"
+      },
+      {
+        "tag": "SPAN",
+        "cls": "bk-step__label",
+        "text": "Địa điểm"
+      }
+    ],
+    "nutDisabled": false,
+    "nutText": "Tiếp tục\nchevron_right"
+  },
+  "buoc2": {
+    "stepEls": [
+      {
+        "tag": "DIV",
+        "cls": "bk-steps",
+        "text": "checkDịch vụ2Bé cưng3Lịch hẹn4Địa điểm"
+      },
+      {
+        "tag": "DIV",
+        "cls": "bk-step  is-done",
+        "text": "checkDịch vụ"
+      },
+      {
+        "tag": "SPAN",
+        "cls": "bk-step__num",
+        "text": "check"
+      },
+      {
+        "tag": "SPAN",
+        "cls": "bk-step__label",
+        "text": "Dịch vụ"
+      },
+      {
+        "tag": "DIV",
+        "cls": "bk-step is-active ",
+        "text": "2Bé cưng"
+      },
+      {
+        "tag": "SPAN",
+        "cls": "bk-step__num",
+        "text": "2"
+      },
+      {
+        "tag": "SPAN",
+        "cls": "bk-step__label",
+        "text": "Bé cưng"
+      },
+      {
+        "tag": "DIV",
+        "cls": "bk-step  ",
+        "text": "3Lịch hẹn"
+      },
+      {
+        "tag": "SPAN",
+        "cls": "bk-step__num",
+        "text": "3"
+      },
+      {
+        "tag": "SPAN",
+        "cls": "bk-step__label",
+        "text": "Lịch hẹn"
+      },
+      {
+        "tag": "DIV",
+        "cls": "bk-step  ",
+        "text": "4Địa điểm"
+      },
+      {
+        "tag": "SPAN",
+        "cls": "bk-step__num",
+        "text": "4"
+      },
+      {
+        "tag": "SPAN",
+        "cls": "bk-step__label",
+        "text": "Địa điểm"
+      }
+    ],
+    "nutDisabled": true,
+    "nutText": "Tiếp tục\nchevron_right"
+  },
+  "buoc2b": {
+    "stepEls": [
+      {
+        "tag": "DIV",
+        "cls": "bk-steps",
+        "text": "checkDịch vụ2Bé cưng3Lịch hẹn4Địa điểm"
+      },
+      {
+        "tag": "DIV",
+        "cls": "bk-step  is-done",
+        "text": "checkDịch vụ"
+      },
+      {
+        "tag": "SPAN",
+        "cls": "bk-step__num",
+        "text": "check"
+      },
+      {
+        "tag": "SPAN",
+        "cls": "bk-step__label",
+        "text": "Dịch vụ"
+      },
+      {
+        "tag": "DIV",
+        "cls": "bk-step is-active ",
+        "text": "2Bé cưng"
+      },
+      {
+        "tag": "SPAN",
+        "cls": "bk-step__num",
+        "text": "2"
+      },
+      {
+        "tag": "SPAN",
+        "cls": "bk-step__label",
+        "text": "Bé cưng"
+      },
+      {
+        "tag": "DIV",
+        "cls": "bk-step  ",
+        "text": "3Lịch hẹn"
+      },
+      {
+        "tag": "SPAN",
+        "cls": "bk-step__num",
+        "text": "3"
+      },
+      {
+        "tag": "SPAN",
+        "cls": "bk-step__label",
+        "text": "Lịch hẹn"
+      },
+      {
+        "tag": "DIV",
+        "cls": "bk-step  ",
+        "text": "4Địa điểm"
+      },
+      {
+        "tag": "SPAN",
+        "cls": "bk-step__num",
+        "text": "4"
+      },
+      {
+        "tag": "SPAN",
+        "cls": "bk-step__label",
+        "text": "Địa điểm"
+      }
+    ],
+    "nutDisabled": true,
+    "nutText": "Tiếp tục\nchevron_right"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "text": "Trang chủ Chó Mèo Tìm Bé Thương Spa Bảo hành Về Mật Pet VI | EN 0939.86.36.96 SPA & GROOMING · TỪ 2011 Biết giá trước khi đưa bé đến spa. Chọn loại bé, cân nặng và dịch vụ — bạn thấy ngay mức giá dự kiến minh bạch, rồi giữ chỗ chỉ với số điện thoại. Không còn phải nhắn tin hỏi giá. Tính giá dự kiến → Xem bảng giá ✓ An toàn cho bé ✓ Hơn 15 năm kinh nghiệm ✓ Nhân viên có nghề 🐾 ĐÃ CHĂM SÓC 10.000+ 1 Loại bé Chó / Mèo 2 Cân nặng Bậc định sẵn 3 Dịch vụ Combo hoặc lẻ Bé nhà bạn là? Chọn loại để hiển thị đúng bậc cân nặng & dịch vụ. 🐶 Chó 🐱 Mèo ← Quay lại Tiếp tục → GIÁ DỰ KIẾN Chọn dịch vụ để xem giá dự kiến cho bé của bạn 🐾 Giữ chỗ với mức giá này → TÓM TẮT LỰA CHỌN Chưa có lựa chọn — Giá cuối được xác nhận tại spa sau khi cân & kiểm tra tình trạng lông. Dịch vụ \"báo giá riêng\" sẽ được tư vấn khi spa gọi lại. Số điện thoại / Zalo * Tên bé Ngày mong muốn Hôm nay 22/11 Ngày mai 23/11 T3 24/11 T4 25/11 T5 26/11 Ngày khác Bằng việc gửi, bạn đồng ý để Mật Pet Family liên hệ lại qua điện thoại / Zalo để xác nhận lịch. Giữ chỗ cho bé → * Giá trên chưa bao gồm phí gỡ rối, tẩy ố và tắm trắng. Premium pet shop đồng hành tìm người bạn bốn chân phù hợp nhất cho từng gia đình Việt. YouTube Facebook TikTok PET SHOP Trang chủ Chó Mèo Tìm Bé Thương Bảng giá Bảo hành Về Mật Pet Tuyển dụng NỘI DUNG & CỘNG ĐỒNG Blog Hướng dẫn chăm sóc So sánh giống Hỏi đáp Đánh giá khách hàng Showroom LIÊN HỆ 239 Nguyễn Hồng Đào, Q. Tân Bình, TP.HCM 0939863696 matpetfamily2011@gmail.com 08:00 - 22:00 mỗi ngày © 2011–2026 Mật Pet Family. All rights reserved.",
+  "M2_005": {
+    "Gỡ rối": false,
+    "Tẩy ố": false,
+    "Tắm trắng": false,
+    "Xả dưỡng": false,
+    "Nhuộm hình lớn": false,
+    "Nhuộm tạo hình cơ thể": false,
+    "nhanBaoGiaRieng": true,
+    "khoang50_500": false,
+    "tuyThietKe": false,
+    "coDichVuGrooming": false,
+    "coDichVuNhuom": false,
+    "coBaoGiaRiengBlock": false
+  },
+  "M2_006": {
+    "thieu": [
+      "Combo Tắm Vệ Sinh",
+      "Combo Tắm Cạo",
+      "Combo Tắm Cắt",
+      "Combo Tắm Cắt Tạo Hình",
+      "Cắt dũa + Móng",
+      "Vệ sinh tai",
+      "Cạo bụng + Bàn + Hậu môn",
+      "Tắm sấy",
+      "Cạo lông",
+      "Cắt lông",
+      "Nhuộm 2 tai + đuôi",
+      "Nhuộm 4 chân",
+      "Nhuộm hình nhỏ",
+      "Gỡ rối",
+      "Tẩy ố",
+      "Tắm trắng",
+      "Xả dưỡng",
+      "Nhuộm hình lớn",
+      "Nhuộm tạo hình cơ thể"
+    ],
+    "bangGrooming": false,
+    "bangNhuom": false,
+    "vanXuatHien": []
+  },
+  "M4_010": {
+    "railLinesCount": 0,
+    "railCount": 1,
+    "railPriceCount": 0,
+    "railHTML": "<div class=\"rail-card\" aria-live=\"polite\"><div class=\"rk\">Giá dự kiến</div><div class=\"rail-empty\">Chọn dịch vụ để xem giá dự kiến cho bé của bạn 🐾</div><button type=\"button\" class=\"rail-cta\" disabled=\"\">Giữ chỗ với mức giá này →</button></div>",
+    "railLinesText": "Chó · >3–6kg\n—\nCombo Tắm Vệ Sinh\n200k",
+    "railPriceText": "~200.000đ",
+    "railLinesHTML": "<div class=\"rail-card\" aria-live=\"polite\"><div class=\"rk\">Giá dự kiến</div><div class=\"rail-price\">~200.000<small>đ</small></div><div class=\"rail-lines\"><div class=\"rail-line muted\"><span>Chó · &gt;3–6kg</span><span>—</span></div><div class=\"rail-line\"><span>Combo Tắm Vệ Sinh</span><span>200k</span></div></div><div class=\"rail-note\">Giá cuối được xác nhận tại spa sau khi cân &amp; kiểm tra tình trạng lông của bé.</div><button type=\"button\" class=\"rail-cta\">Giữ chỗ với mức giá này →</button></div>"
+  }
+}

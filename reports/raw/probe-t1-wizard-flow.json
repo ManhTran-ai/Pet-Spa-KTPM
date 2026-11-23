@@ -1,0 +1,115 @@
+{
+  "buoc1": {
+    "nutDisabled": false,
+    "coLoaiChon": 2,
+    "loaiTexts": [
+      "petsChó",
+      "petsMèo"
+    ],
+    "coDichVu": 6
+  },
+  "sauBamTiepTucBuoc1": {
+    "buocDangActive": "2",
+    "buocLabel": "Bé cưng",
+    "nutDisabled": true,
+    "coBuoc2": 7
+  },
+  "sauChonDichVu": {
+    "nutDisabled": false
+  },
+  "buoc2": {
+    "nutDisabled": true,
+    "chips": [
+      {
+        "cls": "bk-pet ",
+        "t": "petsChó mini< 3kg88.000₫"
+      },
+      {
+        "cls": "bk-pet is-on",
+        "t": "petsChó nhỏ3–5kg155.000₫"
+      },
+      {
+        "cls": "bk-pet ",
+        "t": "petsChó vừa5–10kg240.000₫"
+      },
+      {
+        "cls": "bk-pet ",
+        "t": "petsChó lớn10–15kg350.000₫"
+      },
+      {
+        "cls": "bk-pet ",
+        "t": "petsChó rất lớn15–20kg460.000₫"
+      },
+      {
+        "cls": "bk-pet ",
+        "t": "petsChó đại20–25kg570.000₫"
+      },
+      {
+        "cls": "bk-pet ",
+        "t": "petsChó siêu đại25–30kg660.000₫"
+      }
+    ],
+    "coChonTruoc": 1
+  },
+  "nutBiuTocBuoc2": "disabled",
+  "sauBamTiepTucBuoc2": {
+    "buocDangActive": "2",
+    "buocLabel": "Bé cưng",
+    "nutDisabled": true
+  },
+  "quayLai": {
+    "t3": {
+      "buoc": "3",
+      "soNgay": 7
+    },
+    "quayLaiState": {
+      "buoc": "2",
+      "chips": [
+        {
+          "cls": "bk-pet ",
+          "t": "petsChó mini< 3kg88.000₫"
+        },
+        {
+          "cls": "bk-pet ",
+          "t": "petsChó nhỏ3–5kg155.000₫"
+        },
+        {
+          "cls": "bk-pet is-on",
+          "t": "petsChó vừa5–10kg240.000₫"
+        },
+        {
+          "cls": "bk-pet ",
+          "t": "petsChó lớn10–15kg350.000₫"
+        },
+        {
+          "cls": "bk-pet ",
+          "t": "petsChó rất lớn15–20kg460.000₫"
+        },
+        {
+          "cls": "bk-pet ",
+          "t": "petsChó đại20–25kg570.000₫"
+        },
+        {
+          "cls": "bk-pet ",
+          "t": "petsChó siêu đại25–30kg660.000₫"
+        }
+      ],
+      "giaTen": "Bé Test"
+    }
+  },
+  "soQuayVeBuoc1": 1,
+  "doiDichVu": {
+    "chips": [
+      {
+        "cls": "bk-pet is-on",
+        "t": "petsChó"
+      },
+      {
+        "cls": "bk-pet ",
+        "t": "petsMèo"
+      }
+    ],
+    "soInput": 0
+  },
+  "coYeuCauDangNhap": 0
+}

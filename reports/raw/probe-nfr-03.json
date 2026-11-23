@@ -1,0 +1,75 @@
+{
+  "TC-NFR-03-001": {
+    "heThong": "T1",
+    "soThaoTac": 7,
+    "coHienThiTongGia": true,
+    "trich": "Tạm tính\n138.000₫\nchevron_left\nQuay lại\ncheck\nXá",
+    "ghiChu": "Tính giá T1 đòi hỏi chọn dịch vụ + bậc cân nặng + hình thức (tại nhà/tại spa) + tên bé — vượt 5 thao tác nếu tính cả bước mở wizard."
+  },
+  "TC-NFR-03-002": {
+    "heThong": "T1",
+    "coThongBaoLoi": false,
+    "doanLoi": [],
+    "trich": "event_available\nĐẶT LỊCH GROOMING\nHoàn tất 4 bước nhanh\nclose\ncheck\nDịch vụ\ncheck\nBé cưng\n3\nLịch hẹn\n4\nĐịa điểm\nChọn ngày & khung giờ\nNGÀY HẸN\nCN\n22\n11/26\nTHỨ 2\n23\n11/26\nTHỨ 3\n24\n11/26\nTHỨ 4\n25\n11/26\nTHỨ 5\n26\n11/26\nTHỨ 6\n27\n11/26\nTHỨ 7\n28\n11/26\nKHUNG GIỜ\n08:30\n09:30\n10:30\n13:00\n14:00\n15:00\n16:00\n17:00\ninfo\nLịch tại nhà chỉ nhận từ 8h30 – 17h00. Cuối tuần đông, nên đặt sớm.\nTắm · Chó mini (< 3kg)\n8"
+  },
+  "TC-NFR-03-003": {
+    "heThong": "T1",
+    "soNhanTrangChu": 21,
+    "soNhanTrangLienHe": 0,
+    "soNhanChung": 0,
+    "nhanTrangChu": [
+      "Từ",
+      "Chó mini",
+      "Chó nhỏ",
+      "Chó vừa",
+      "Chó lớn",
+      "Chó rất lớn",
+      "Chó đại",
+      "Chó siêu đại",
+      "Mèo mini",
+      "Mèo nhỏ",
+      "Mèo vừa",
+      "Mèo lớn",
+      "Mèo rất lớn",
+      "Mèo đại",
+      "Mèo siêu đại",
+      "Dịch vụ",
+      "Bé cưng",
+      "Lịch hẹn",
+      "Địa điểm",
+      "Ngày hẹn",
+      "Khung giờ"
+    ],
+    "nhanTrangLienHe": []
+  },
+  "TC-NFR-03-004": {
+    "heThong": "T1",
+    "soPhimTab": 5,
+    "phanTuTieuDien": {
+      "tag": "BUTTON",
+      "cls": "bn-btn bn-btn--primary ga-booking-btn",
+      "text": "calendar_monthĐặt lịch"
+    },
+    "enterKichHoatModal": true
+  },
+  "TC-NFR-03-001-T2": {
+    "heThong": "T2",
+    "soThaoTac": 6,
+    "giaHienThi": "~200.000đ",
+    "nhanTrongTinhGia": true
+  },
+  "TC-NFR-03-002-T2": {
+    "heThong": "T2",
+    "coThongBaoLoi": false,
+    "doanLoi": []
+  },
+  "TC-NFR-03-004-T2": {
+    "heThong": "T2",
+    "phanTuTieuDien": {
+      "tag": "INPUT",
+      "cls": "",
+      "text": ""
+    },
+    "enterKichHoat": true
+  }
+}

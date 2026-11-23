@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import fs from 'node:fs';
 
 /**
  * NFR-04 — Tương thích: trang không cuộn ngang ở màn hình 360px và
@@ -14,40 +15,65 @@ const TARGETS = [
 const VIEWPORT = { width: 360, height: 740 };
 
 test.describe('NFR-04 — Tương thích di động 360px', () => {
-  test('TC-NFR-04-001: chức năng tính giá của T2 chạy đúng trên Chrome', async ({ page }) => {
-    await page.goto('https://matpet.vn/spa', { waitUntil: 'load' });
-    await page.waitForTimeout(3000);
-
-    const next = page.getByRole('button', { name: 'Tiếp tục →' });
-    for (let i = 0; i < 5; i += 1) {
-      await page.getByRole('button', { name: '🐶 Chó', exact: true }).click();
-      if (await next.isEnabled()) break;
-      await page.waitForTimeout(1000);
-    }
-    await expect(next).toBeEnabled();
-    await next.click();
-
-    // Khối "GIÁ DỰ KIẾN" xuất hiện sau khi chọn đủ loài/cân nặng/dịch vụ.
-    await expect(page.getByText('GIÁ DỰ KIẾN').first()).toBeVisible();
-  });
-
-  test('TC-NFR-04-005: không có cuộn ngang ở màn hình 360px trên cả 3 site', async ({ browser }) => {
+  test('TC-NFR-04-005: Không có cuộn ngang ở màn hình 360px trên trang đặt lịch', async ({ browser }) => {
     const problems: string[] = [];
+    const bangChung: Record<string, unknown> = {};
+
     for (const target of TARGETS) {
       const context = await browser.newContext({ viewport: VIEWPORT });
       const page = await context.newPage();
       await page.goto(target.url, { waitUntil: 'load' });
       await page.waitForTimeout(2000);
-      const overflow = await page.evaluate(
-        () => document.documentElement.scrollWidth - document.documentElement.clientWidth,
-      );
-      if (overflow > 2) problems.push(`${target.id} tràn ngang ${overflow}px ở 360px`);
+
+      const doD = await page.evaluate(() => {
+        const de = document.documentElement;
+        const clientWidth = de.clientWidth;
+        const scrollWidth = de.scrollWidth;
+
+        // Phần tử vượt mép phải (loại trừ nội dung nằm trong vùng cuộn riêng).
+        const vuot = Array.from(document.querySelectorAll('*'))
+          .map((el) => {
+            const r = el.getBoundingClientRect();
+            return {
+              tag: el.tagName,
+              cls: (el.className || '').toString().slice(0, 60),
+              right: Math.round(r.right),
+              width: Math.round(r.width),
+            };
+          })
+          .filter((e) => e.width > 0 && e.right > clientWidth + 1);
+
+        // Xác nhận người dùng THỰC SỰ cuộn ngang được (không chỉ tràn vô hại).
+        de.scrollLeft = 9999;
+        const maxScroll = de.scrollLeft;
+        de.scrollLeft = 0;
+
+        return { clientWidth, scrollWidth, tran: scrollWidth - clientWidth, maxScroll, vuot };
+      });
+
+      if (doD.tran > 2) {
+        const nguyenNhan = doD.vuot
+          .slice(0, 5)
+          .map((v) => `<${v.tag}.${v.cls}> right=${v.right}`)
+          .join(' | ');
+        problems.push(
+          `${target.id} tràn ngang ${doD.tran}px ở 360px ` +
+            `(scrollWidth ${doD.scrollWidth} > clientWidth ${doD.clientWidth}, ` +
+            `scrollLeft tối đa = ${doD.maxScroll}) — phần tử vượt mép: ${nguyenNhan}`,
+        );
+      }
+      bangChung[target.id] = doD;
       await context.close();
     }
-    expect(problems, problems.join('; ')).toEqual([]);
+
+    // Ghi bằng chứng thô — cần cho báo cáo defect DEF-016.
+    fs.mkdirSync('reports/raw', { recursive: true });
+    fs.writeFileSync('reports/raw/nfr-04-005-overflow.json', JSON.stringify(bangChung, null, 2), 'utf8');
+
+    expect(problems, problems.join('\n')).toEqual([]);
   });
 
-  test('TC-NFR-04-006: luồng tính giá của T2 dùng được trên khung nhìn 360x740', async ({ browser }) => {
+  test('TC-NFR-04-006: Chức năng tính giá chạy đúng trên khung nhìn di động 360x740', async ({ browser }) => {
     const context = await browser.newContext({ viewport: VIEWPORT });
     const page = await context.newPage();
     await page.goto('https://matpet.vn/spa', { waitUntil: 'load' });

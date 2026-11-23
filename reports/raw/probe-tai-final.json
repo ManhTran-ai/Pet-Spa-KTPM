@@ -1,0 +1,120 @@
+{
+  "t1_404": {
+    "status": 404,
+    "coStackTrace": false,
+    "tieuDe": "404: This page could not be found.",
+    "doan": [
+      "404",
+      "This page could not be found."
+    ]
+  },
+  "t1_gioMoCua": {
+    "coGio": false,
+    "cacDong": [],
+    "coTuKhoa": [
+      "Chọn loài + cân nặng, ngày giờ. Mất 1-2 phút."
+    ]
+  },
+  "t1_langLinks": [
+    {
+      "tag": "BUTTON",
+      "href": "",
+      "text": "menu"
+    },
+    {
+      "tag": "BUTTON",
+      "href": "",
+      "text": "languageVI / EN"
+    },
+    {
+      "tag": "BUTTON",
+      "href": "",
+      "text": "calendar_monthĐặt lịch"
+    },
+    {
+      "tag": "BUTTON",
+      "href": "",
+      "text": "calendar_monthĐặt lịch ngay"
+    },
+    {
+      "tag": "BUTTON",
+      "href": "",
+      "text": "calendar_monthĐặt lịch"
+    },
+    {
+      "tag": "BUTTON",
+      "href": "",
+      "text": "calendar_monthĐặt lịch"
+    },
+    {
+      "tag": "BUTTON",
+      "href": "",
+      "text": "calendar_monthĐặt lịch"
+    },
+    {
+      "tag": "BUTTON",
+      "href": "",
+      "text": "calendar_monthĐặt lịch"
+    },
+    {
+      "tag": "BUTTON",
+      "href": "",
+      "text": "calendar_monthĐặt lịch"
+    },
+    {
+      "tag": "BUTTON",
+      "href": "",
+      "text": "calendar_monthĐặt lịch"
+    },
+    {
+      "tag": "BUTTON",
+      "href": "",
+      "text": "calendar_monthĐặt lịch ngay"
+    }
+  ],
+  "t1_bands": {
+    "cho": [
+      "petsChó mini< 3kg88.000₫",
+      "petsChó nhỏ3–5kg155.000₫",
+      "petsChó vừa5–10kg240.000₫",
+      "petsChó lớn10–15kg350.000₫",
+      "petsChó rất lớn15–20kg460.000₫",
+      "petsChó đại20–25kg570.000₫",
+      "petsChó siêu đại25–30kg660.000₫"
+    ],
+    "meo": [],
+    "soLuong": 7
+  },
+  "t1_buc3": {
+    "soNgay": 7,
+    "ngay": [
+      "CN\n22\n11/26",
+      "THỨ 2\n23\n11/26",
+      "THỨ 3\n24\n11/26",
+      "THỨ 4\n25\n11/26",
+      "THỨ 5\n26\n11/26",
+      "THỨ 6\n27\n11/26",
+      "THỨ 7\n28\n11/26"
+    ],
+    "soKhungGio": 8,
+    "khungGio": [
+      "08:30",
+      "09:30",
+      "10:30",
+      "13:00",
+      "14:00",
+      "15:00",
+      "16:00",
+      "17:00"
+    ]
+  },
+  "t2_bangGia": {
+    "soDong": 0,
+    "cacDong": [],
+    "coBaoGiaRieng": false,
+    "dongBaoGiaRieng": []
+  },
+  "t2__spa_dichVu": [],
+  "t2__cho_dichVu": [],
+  "t2__meo_dichVu": []
+}

@@ -1,0 +1,59 @@
+{
+  "t1": {
+    "trangChu": {
+      "coGio": false,
+      "doan": "",
+      "coZalo": true,
+      "coEmail": true,
+      "coPhone": true
+    },
+    "contact": {
+      "coGio": true,
+      "doan": "GIỜ LÀM VIỆC"
+    },
+    "quyTrinh": {
+      "coQuyTrinh4Buoc": true,
+      "co5Phut": true,
+      "doan5Phut": "ạch với sữa tắm dịu nhẹ, sấy khô và chải mượt. Đơn giản, nhanh gọn. home_work Phụ thu tận nhà: +50.000₫ (chưa gồm phí di chuyển) Chi tiết giá theo cân nặng — xem bảng bên dưới TỪ 88.000₫ schedule 45 phút calendar_month Đặt lịch content_cut store Chỉ tại spa Cắt tỉa lông Cắt tỉa tạo kiểu theo giống chó/mèo của bé. T",
+      "coZaloTrong5Phut": false,
+      "quyTrinh": "QUY TRÌNH ĐẶT LỊCH 4 bước — đặt lịch xong trong 2 phút 01 touch_app Chọn dịch vụ Lướt 5 gói, đọc kỹ phần \"bao gồm\" và bảng giá theo cân. 02 edit_calendar Đặt lịch trên web Chọn loài + cân nặng, ngày giờ. Mất 1-2 phút. 03 home_work Tại spa hoặc tại nhà Chọn đến spa hoặc nhập địa chỉ — phụ thu hiện rõ. 04 verified Xác nhận & thanh toán Tổng kết đơn, nhận tin nhắn xác nhận trong 5 phút. directions_car PHỤ THU DI CHUYỂN Bảng giá rõ ràng theo khoảng cách Phụ thu được tính tự động khi bạn nhập địa chỉ trong form đặt lịch — không có phí ẩn. 5km đầu miễn phí, sau đó 8.000₫/km. Ngoài phụ thu này, dịch vụ tận nhà cộng thêm phụ thu cố định riêng theo gói (xem bảng giá ở mỗi dịch vụ). Phụ thu "
+    },
+    "faq": {
+      "so": 6,
+      "html": "<button class=\"hm-faq__q\" type=\"button\"><span>Vì sao giá khác nhau giữa chó và mèo?</span><span class=\"material-symbols-outlined \" style=\"font-size:20px;line-height:1\">remove</span></button>"
+    },
+    "buoc1Initial": {
+      "nutDisabled": false,
+      "svcDangChon": 1,
+      "loaiDangChon": 1
+    },
+    "bypassLoai": {
+      "loaiMacDinh": "pets\nChó",
+      "nutDisabled": false
+    },
+    "buoc2": {
+      "nutDisabledChuaChon": true,
+      "soPet": 7,
+      "petOn": 1,
+      "petOnText": "pets\nChó nhỏ\n3–5kg\n155.000₫"
+    },
+    "sdtChu": {
+      "nutDisabled": true,
+      "coThongBao": false
+    },
+    "sdtHopLe": {
+      "nutDisabled": true,
+      "tong": "205.000₫"
+    },
+    "sdtNgan": {
+      "nutDisabled": true,
+      "coThongBao": false
+    },
+    "en": {
+      "tieuDe": "Pet NGON — At-home Spa & Grooming",
+      "soChuoiViet": 0,
+      "vi": [],
+      "dau": "celebration First-time online booking — Get 10% off! NEW10 Pet NGON Home Spa & Grooming Pets for Sale Careers Blog Contact language EN / VI calendar_month Book Appointment spa PET NGON SPA & GROOMING A spa for your pet — warm hands, at your door. Bath, trimming, shaving, and full-package combos. Many services can be done right in your home — we bring the spa to your doorstep. calendar_month Book"
+    }
+  }
+}

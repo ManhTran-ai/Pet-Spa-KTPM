@@ -1,0 +1,32 @@
+{
+  "truocKhiMo": [
+    {
+      "tag": "DIV",
+      "cls": "svc-toggle",
+      "text": "Combo trọn góiDịch vụ lẻ",
+      "visible": true
+    }
+  ],
+  "soSvcTruoc": 13,
+  "soSvcList": 1,
+  "soSvcListVisible": [
+    {
+      "cls": "svc-list",
+      "visible": true,
+      "display": "flex",
+      "maxHeight": "none",
+      "text": "Combo Tắm Vệ Sinh200kCombo Tắm Cạo250kCombo Tắm Cắ"
+    }
+  ],
+  "sauKhiMo": {
+    "soSvc": 13,
+    "toggleCls": "svc-toggle",
+    "svcList": [
+      {
+        "cls": "svc-list",
+        "visible": true,
+        "display": "flex"
+      }
+    ]
+  }
+}

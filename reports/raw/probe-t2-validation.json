@@ -1,0 +1,62 @@
+{
+  "nhan": {
+    "labels": [
+      "Nhuộm tạo kiểu",
+      "Dịch vụ báo giá riêng",
+      "Số điện thoại / Zalo *",
+      "Tên bé",
+      "Ngày mong muốn",
+      "Ngày khác"
+    ],
+    "inputs": [
+      {
+        "type": "tel",
+        "ph": "0xxx xxx xxx",
+        "name": "",
+        "id": "f_phone",
+        "required": true,
+        "ariaReq": "true",
+        "cls": ""
+      },
+      {
+        "type": "text",
+        "ph": "Vd: Mochi",
+        "name": "",
+        "id": "f_name",
+        "required": false,
+        "ariaReq": "",
+        "cls": ""
+      },
+      {
+        "type": "date",
+        "ph": "",
+        "name": "",
+        "id": "",
+        "required": false,
+        "ariaReq": "",
+        "cls": "date-other-input"
+      },
+      {
+        "type": "text",
+        "ph": "",
+        "name": "",
+        "id": "",
+        "required": false,
+        "ariaReq": "",
+        "cls": "hp"
+      }
+    ]
+  },
+  "validation": {
+    "nutText": "Giữ chỗ cho bé",
+    "noiDungThayDoi": true,
+    "coThongBaoLoi": true,
+    "doanLoi": [
+      "Chọn loại bé, cân nặng và dịch vụ — bạn thấy ngay mức giá dự kiến minh bạch, rồi giữ chỗ chỉ với số điện thoại",
+      "Chỉ cần số điện thoại — spa sẽ gọi xác nhận khung giờ",
+      "Số điện thoại / Zalo *",
+      "Vui lòng nhập số điện thoại hợp lệ để spa liên hệ"
+    ],
+    "soPhanTuLoi": 4
+  }
+}

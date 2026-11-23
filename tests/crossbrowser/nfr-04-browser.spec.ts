@@ -38,7 +38,27 @@ async function tinhGiaT2(page: Page): Promise<string> {
 }
 
 test.describe('NFR-04 — Tương thích trình duyệt', () => {
-  test('TC-NFR-04-002: chức năng tính giá của T2 chạy đúng trên trình duyệt này', async ({ page }) => {
+  test('TC-NFR-04-001: Chức năng tính giá chạy đúng trên Chrome', async ({ page, browserName }) => {
+    test.skip(browserName !== 'chromium', 'Chỉ chạy trên Chromium');
+    const price = await tinhGiaT2(page);
+    expect(price, `giá tính tức thì ở trình duyệt hiện tại: ${price}`).toContain('200.000');
+  });
+
+  test('TC-NFR-04-002: Chức năng tính giá chạy đúng trên Firefox', async ({ page, browserName }) => {
+    test.skip(browserName !== 'firefox', 'Chỉ chạy trên Firefox');
+    const price = await tinhGiaT2(page);
+    expect(price, `giá tính tức thì ở trình duyệt hiện tại: ${price}`).toContain('200.000');
+  });
+
+  test('TC-NFR-04-003: Chức năng tính giá chạy đúng trên Edge', async ({ page, browserName }) => {
+    // Edge dùng chung engine Chromium; project `cross-browser-edge` khai báo channel 'msedge'.
+    test.skip(browserName !== 'chromium', 'Chỉ chạy trên engine Chromium của Edge');
+    const price = await tinhGiaT2(page);
+    expect(price, `giá tính tức thì ở trình duyệt hiện tại: ${price}`).toContain('200.000');
+  });
+
+  test('TC-NFR-04-004: Chức năng tính giá chạy đúng trên Safari', async ({ page, browserName }) => {
+    test.skip(browserName !== 'webkit', 'Chỉ chạy trên WebKit (Safari)');
     const price = await tinhGiaT2(page);
     expect(price, `giá tính tức thì ở trình duyệt hiện tại: ${price}`).toContain('200.000');
   });

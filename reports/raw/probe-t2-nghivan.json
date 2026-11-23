@@ -1,0 +1,315 @@
+{
+  "M4_013": {
+    "nextDisabledDau": true,
+    "railLinesDau": null
+  },
+  "M2": {
+    "soSvc": 0,
+    "svc": []
+  },
+  "tables": [
+    {
+      "rows": 12,
+      "head": [
+        "Dịch vụ (Grooming)",
+        "<3kg",
+        ">3–6kg",
+        ">6–10kg",
+        ">10–20kg",
+        ">20–30kg",
+        ">30–40kg",
+        ">40kg"
+      ],
+      "firstRows": [
+        [
+          "Combo trọn gói"
+        ],
+        [
+          "Combo Tắm Vệ Sinh",
+          "120k",
+          "200k",
+          "300k",
+          "400k",
+          "500k",
+          "600k",
+          "700k"
+        ],
+        [
+          "Combo Tắm Cạo",
+          "200k",
+          "250k",
+          "350k",
+          "450k",
+          "600k",
+          "700k",
+          "800k"
+        ]
+      ]
+    },
+    {
+      "rows": 4,
+      "head": [
+        "Dịch vụ (Nhuộm)",
+        "<6kg",
+        ">6–15kg",
+        ">15–30kg",
+        ">30kg"
+      ],
+      "firstRows": [
+        [
+          "Nhuộm tạo kiểu"
+        ],
+        [
+          "Nhuộm 2 tai + đuôi",
+          "250k",
+          "300k",
+          "350k",
+          "400k"
+        ],
+        [
+          "Nhuộm 4 chân",
+          "250k",
+          "300k",
+          "350k",
+          "400k"
+        ]
+      ]
+    },
+    {
+      "rows": 7,
+      "head": [],
+      "firstRows": [
+        [
+          "Báo giá riêng — tuỳ tình trạng bé"
+        ],
+        [
+          "Gỡ rối",
+          "Báo giá theo tình trạng lông: 50.000 – 500.000đ"
+        ],
+        [
+          "Tẩy ố",
+          "Báo giá theo tình trạng lông: 50.000 – 500.000đ"
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "text": "Trang chủ",
+      "href": "/"
+    },
+    {
+      "text": "Chó",
+      "href": "/cho"
+    },
+    {
+      "text": "Mèo",
+      "href": "/meo"
+    },
+    {
+      "text": "Tìm Bé Thương",
+      "href": "/tim-be-thuong"
+    },
+    {
+      "text": "Spa",
+      "href": "/spa"
+    },
+    {
+      "text": "Bảo hành",
+      "href": "/bao-hanh"
+    },
+    {
+      "text": "Về Mật Pet",
+      "href": "/vematpet"
+    },
+    {
+      "text": "VI",
+      "href": "/spa"
+    },
+    {
+      "text": "EN",
+      "href": "/en/spa"
+    },
+    {
+      "text": "0939.86.36.96",
+      "href": "tel:0939863696"
+    },
+    {
+      "text": "VI",
+      "href": "/spa"
+    },
+    {
+      "text": "EN",
+      "href": "/en/spa"
+    },
+    {
+      "text": "Tính giá dự kiến →",
+      "href": "#calc"
+    },
+    {
+      "text": "Xem bảng giá",
+      "href": "#pricing"
+    },
+    {
+      "text": "Chỉ đường →",
+      "href": "https://maps.app.goo.gl/Di98ypjgr86ohKJp6"
+    },
+    {
+      "text": "Gọi 0939.86.36.96",
+      "href": "tel:0939863696"
+    },
+    {
+      "text": "YouTube",
+      "href": "https://www.youtube.com/@matpetfamily2011"
+    },
+    {
+      "text": "Facebook",
+      "href": "https://www.facebook.com/matpetfamily"
+    },
+    {
+      "text": "TikTok",
+      "href": "https://www.tiktok.com/@matpetfamilyshop"
+    },
+    {
+      "text": "YouTube",
+      "href": "https://www.youtube.com/@matpetfamily2011"
+    },
+    {
+      "text": "Facebook",
+      "href": "https://www.facebook.com/matpetfamily"
+    },
+    {
+      "text": "TikTok",
+      "href": "https://www.tiktok.com/@matpetfamilyshop"
+    },
+    {
+      "text": "Trang chủ",
+      "href": "/"
+    },
+    {
+      "text": "Chó",
+      "href": "/cho"
+    },
+    {
+      "text": "Mèo",
+      "href": "/meo"
+    },
+    {
+      "text": "Tìm Bé Thương",
+      "href": "/tim-be-thuong"
+    },
+    {
+      "text": "Bảng giá",
+      "href": "/bang-gia"
+    },
+    {
+      "text": "Bảo hành",
+      "href": "/bao-hanh"
+    },
+    {
+      "text": "Về Mật Pet",
+      "href": "/vematpet"
+    },
+    {
+      "text": "Tuyển dụng",
+      "href": "/tuyendung"
+    },
+    {
+      "text": "Blog",
+      "href": "/blog"
+    },
+    {
+      "text": "Hướng dẫn chăm sóc",
+      "href": "/cham-soc"
+    },
+    {
+      "text": "So sánh giống",
+      "href": "/so-sanh"
+    },
+    {
+      "text": "Hỏi đáp",
+      "href": "/cau-hoi-thuong-gap"
+    },
+    {
+      "text": "Đánh giá khách hàng",
+      "href": "/danh-gia-khach-hang"
+    },
+    {
+      "text": "Showroom",
+      "href": "/showroom"
+    },
+    {
+      "text": "239 Nguyễn Hồng Đào, Q. Tân Bình, TP.HCM",
+      "href": "https://maps.app.goo.gl/Di98ypjgr86ohKJp6"
+    },
+    {
+      "text": "0939863696",
+      "href": "tel:0939863696"
+    },
+    {
+      "text": "matpetfamily2011@gmail.com",
+      "href": "mailto:matpetfamily2011@gmail.com"
+    },
+    {
+      "text": "Trang chủ",
+      "href": "/"
+    },
+    {
+      "text": "Chó",
+      "href": "/cho"
+    },
+    {
+      "text": "Mèo",
+      "href": "/meo"
+    },
+    {
+      "text": "Tìm Bé Thương",
+      "href": "/tim-be-thuong"
+    },
+    {
+      "text": "Bảng giá",
+      "href": "/bang-gia"
+    },
+    {
+      "text": "Bảo hành",
+      "href": "/bao-hanh"
+    },
+    {
+      "text": "Về Mật Pet",
+      "href": "/vematpet"
+    },
+    {
+      "text": "Tuyển dụng",
+      "href": "/tuyendung"
+    },
+    {
+      "text": "Pet Hotel",
+      "href": "#"
+    },
+    {
+      "text": "Phụ kiện",
+      "href": "#"
+    },
+    {
+      "text": "Giao toàn quốc",
+      "href": "#"
+    },
+    {
+      "text": "0939863696",
+      "href": "tel:0939863696"
+    },
+    {
+      "text": "Nhắn Zalo",
+      "href": "https://zalo.me/0939863696"
+    },
+    {
+      "text": "📞 Gọi ngay",
+      "href": "tel:0939863696"
+    },
+    {
+      "text": "Mật đây! 🐾Cần chọn bé cưng? Để Mật giúp nha.",
+      "href": "/tim-be-thuong"
+    }
+  ],
+  "coHuyLich": false
+}

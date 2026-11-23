@@ -1,0 +1,160 @@
+{
+  "t1": [
+    {
+      "p": "/xác nhận tại spa/i",
+      "khop": false,
+      "doan": ""
+    },
+    {
+      "p": "/giá cuối cùng[^.\\n]{0,80}/i",
+      "khop": false,
+      "doan": ""
+    },
+    {
+      "p": "/xác nhận & thanh toán/i",
+      "khop": true,
+      "doan": "Xác nhận & thanh toán"
+    },
+    {
+      "p": "/giá cuối[^.\\n]{0,80}/i",
+      "khop": false,
+      "doan": ""
+    }
+  ],
+  "t2": {
+    "lienKetEN": [
+      {
+        "href": "/en/spa",
+        "text": "EN"
+      },
+      {
+        "href": "/en/spa",
+        "text": "EN"
+      },
+      {
+        "href": "/tuyendung",
+        "text": "Tuyển dụng"
+      },
+      {
+        "href": "/tuyendung",
+        "text": "Tuyển dụng"
+      }
+    ],
+    "sauClickEN": {
+      "url": "https://matpet.vn/en/spa",
+      "tieuDe": "Pet Spa & Grooming for dogs & cats — transparent pricing | Mật Pet Family"
+    },
+    "lienKetENtrenEN": [
+      "/en",
+      "/en",
+      "/en/cho",
+      "/en/meo",
+      "/en/bao-hanh",
+      "/en/vematpet",
+      "/en/en/spa",
+      "/en/en/spa"
+    ],
+    "sauClickEN2": {
+      "url": "https://matpet.vn/en",
+      "tieuDe": "Mật Pet Family — Premium pet shop in Vietnam | Trusted since 2011"
+    },
+    "trangMenu": [
+      {
+        "href": "/",
+        "status": 200
+      },
+      {
+        "href": "/cho",
+        "status": 200
+      },
+      {
+        "href": "/meo",
+        "status": 200
+      },
+      {
+        "href": "/tim-be-thuong",
+        "status": 200
+      },
+      {
+        "href": "/spa",
+        "status": 200
+      },
+      {
+        "href": "/bao-hanh",
+        "status": 200
+      },
+      {
+        "href": "/vematpet",
+        "status": 200
+      },
+      {
+        "href": "/en/spa",
+        "status": 200
+      },
+      {
+        "href": "/bang-gia",
+        "status": 200
+      },
+      {
+        "href": "/tuyendung",
+        "status": 200
+      },
+      {
+        "href": "/blog",
+        "status": 200
+      },
+      {
+        "href": "/cham-soc",
+        "status": 200
+      },
+      {
+        "href": "/so-sanh",
+        "status": 200
+      },
+      {
+        "href": "/cau-hoi-thuong-gap",
+        "status": 200
+      },
+      {
+        "href": "/danh-gia-khach-hang",
+        "status": 200
+      },
+      {
+        "href": "/showroom",
+        "status": 200
+      }
+    ],
+    "nextEnabledSauLoai": true,
+    "nextEnabledSauCanNang": true,
+    "trangSauChon": "Trang chủ Chó Mèo Tìm Bé Thương Spa Bảo hành Về Mật Pet VI | EN 0939.86.36.96 SPA & GROOMING · TỪ 2011 Biết giá trước khi đưa bé đến spa. Chọn loại bé, cân nặng và dịch vụ — bạn thấy ngay mức giá dự kiến minh bạch, rồi giữ chỗ chỉ với số điện thoại. Không còn phải nhắn tin hỏi giá. Tính giá dự kiến → Xem bảng giá ✓ An toàn cho bé ✓ Hơn 15 năm kinh nghiệm ✓ Nhân viên có nghề 🐾 ĐÃ CHĂM SÓC 10.000+ CALCULATOR Tính giá dự kiến cho bé Ba bước nhanh. Giá hiện ngay khi bạn chọn — chưa phải để lại thông tin gì. ✓ Loại bé Chó / Mèo ✓ Cân nặng Bậc định sẵn 3 Dịch vụ Combo hoặc lẻ Chọn combo hoặc dịch vụ lẻ Chọn 1 combo trọn gói, hoặc tự ghép dịch vụ lẻ. Nhuộm & dịch vụ \"báo giá riêng\" có thể thêm kèm. Combo trọn gói Dịch vụ lẻ ✓ Combo Tắm Vệ Sinh 200k Combo Tắm Cạo 250k Combo Tắm Cắt 350k Combo Tắm Cắt Tạo Hình 400k NHUỘM TẠO KIỂU Nhuộm 2 tai + đuôi 250k Nhuộm 4 chân 250k Nhuộm hình nhỏ 300k DỊCH VỤ BÁO GIÁ RIÊNG Gỡ rối Báo giá theo tình trạng lông: 50.000 – 500.000đ Báo giá riêng Tẩy ố Báo giá theo tình trạng lông: 50.000 – 500.000đ Báo giá riêng Tắm trắng Báo giá theo tình trạng lông: 50.000 – 500.000đ Báo giá riêng Xả dưỡng Báo giá theo tình trạng lông: 50.000 – 500.000đ Báo giá riêng Nhuộm hình lớn Báo giá tuỳ kích thước & màu Báo giá riêng Nhuộm tạo hình cơ thể Báo giá theo thiết kế riêng Báo giá riêng ← Quay lại Giữ chỗ ngay → GIÁ DỰ KIẾN ~200.000đ Chó · >3–6kg — Combo Tắm V",
+    "coNutGiuCho": 1,
+    "nutLabels": [
+      "",
+      "✓Loại béChó / Mèo",
+      "✓Cân nặngBậc định sẵn",
+      "3Dịch vụCombo hoặc lẻ",
+      "Combo trọn gói",
+      "Dịch vụ lẻ",
+      "✓Combo Tắm Vệ Sinh200k",
+      "Combo Tắm Cạo250k",
+      "Combo Tắm Cắt350k",
+      "Combo Tắm Cắt Tạo Hình400k",
+      "Nhuộm 2 tai + đuôi250k",
+      "Nhuộm 4 chân250k",
+      "Nhuộm hình nhỏ300k",
+      "Nhuộm hình lớnBáo giá tuỳ kích thước & màuBáo giá riêng",
+      "← Quay lại",
+      "Giữ chỗ ngay →",
+      "Giữ chỗ với mức giá này →",
+      "Hôm nay21/11",
+      "Ngày mai22/11",
+      "T223/11",
+      "T324/11",
+      "T425/11",
+      "Giữ chỗ cho bé →",
+      "Giữ chỗ →",
+      ""
+    ],
+    "sauBamGiuCho": "Trang chủ Chó Mèo Tìm Bé Thương Spa Bảo hành Về Mật Pet VI | EN 0939.86.36.96 SPA & GROOMING · TỪ 2011 Biết giá trước khi đưa bé đến spa. Chọn loại bé, cân nặng và dịch vụ — bạn thấy ngay mức giá dự kiến minh bạch, rồi giữ chỗ chỉ với số điện thoại. Không còn phải nhắn tin hỏi giá. Tính giá dự kiến → Xem bảng giá ✓ An toàn cho bé ✓ Hơn 15 năm kinh nghiệm ✓ Nhân viên có nghề 🐾 ĐÃ CHĂM SÓC 10.000+ CALCULATOR Tính giá dự kiến cho bé Ba bước nhanh. Giá hiện ngay khi bạn chọn — chưa phải để lại thông tin gì. ✓ Loại bé Chó / Mèo ✓ Cân nặng Bậc định sẵn 3 Dịch vụ Combo hoặc lẻ Chọn combo hoặc dịch vụ lẻ Chọn 1 combo trọn gói, hoặc tự ghép dịch vụ lẻ. Nhuộm & dịch vụ \"báo giá riêng\" có thể thêm kèm. Combo trọn gói Dịch vụ lẻ ✓ Combo Tắm Vệ Sinh 200k Combo Tắm Cạo 250k Combo Tắm Cắt 350k Combo Tắm Cắt Tạo Hình 400k NHUỘM TẠO KIỂU Nhuộm 2 tai + đuôi 250k Nhuộm 4 chân 250k Nhuộm hình nhỏ 300k DỊCH VỤ BÁO GIÁ RIÊNG Gỡ rối Báo giá theo tình trạng lông: 50.000 – 500.000đ Báo giá riêng Tẩy ố Báo giá theo tình trạng lông: 50.000 – 500.000đ Báo giá riêng Tắm trắng Báo giá theo tình trạng lông: 50.000 – 500.000đ Báo giá riêng Xả dưỡng Báo giá theo tình trạng lông: 50.000 – 500.000đ Báo giá riêng Nhuộm hình lớn Báo giá tuỳ kích thước & màu Báo giá riêng Nhuộm tạo hình cơ thể Báo giá theo thiết kế riêng Báo giá riêng ← Quay lại Giữ chỗ ngay → GIÁ DỰ KIẾN ~200.000đ Chó · >3–6kg — Combo Tắm Vệ Sinh 200k Giá cuối được xác nhận tại spa sau khi cân & kiểm tra tình trạng lông của bé. Giữ chỗ với mức giá này → GIỮ CHỖ Giữ chỗ cho bé Chỉ cần số điện thoại — spa sẽ gọi xác nhận khung giờ. Lựa c"
+  }
+}

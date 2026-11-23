@@ -1,0 +1,416 @@
+{
+  "tables": [
+    {
+      "cls": "hm-pricing-matrix",
+      "rows": [
+        [
+          "Loài & cân nặng",
+          "Tắm",
+          "Cắt tỉa lông",
+          "Cạo lông",
+          "Combo Tắm + Vệ sinh",
+          "Combo Tắm + Cắt tỉa",
+          "Combo Tắm + Cạo"
+        ],
+        [
+          "Chó"
+        ],
+        [
+          "Chó mini< 3kg",
+          "88.000₫",
+          "145.000₫",
+          "88.000₫",
+          "130.000₫",
+          "240.000₫",
+          "185.000₫"
+        ],
+        [
+          "Chó nhỏ3–5kg",
+          "155.000₫",
+          "165.000₫",
+          "110.000₫",
+          "265.000₫",
+          "405.000₫",
+          "350.000₫"
+        ],
+        [
+          "Chó vừa5–10kg",
+          "240.000₫",
+          "220.000₫",
+          "165.000₫",
+          "375.000₫",
+          "515.000₫",
+          "460.000₫"
+        ],
+        [
+          "Chó lớn10–15kg",
+          "350.000₫",
+          "275.000₫",
+          "220.000₫",
+          "460.000₫",
+          "605.000₫",
+          "550.000₫"
+        ],
+        [
+          "Chó rất lớn15–20kg",
+          "460.000₫",
+          "330.000₫",
+          "275.000₫",
+          "550.000₫",
+          "660.000₫",
+          "605.000₫"
+        ],
+        [
+          "Chó đại20–25kg",
+          "570.000₫",
+          "385.000₫",
+          "330.000₫",
+          "640.000₫",
+          "750.000₫",
+          "695.000₫"
+        ],
+        [
+          "Chó siêu đại25–30kg",
+          "660.000₫",
+          "440.000₫",
+          "385.000₫",
+          "725.000₫",
+          "835.000₫",
+          "780.000₫"
+        ],
+        [
+          "Mèo"
+        ],
+        [
+          "Mèo mini≤ 3kg",
+          "110.000₫",
+          "160.000₫",
+          "110.000₫",
+          "155.000₫",
+          "240.000₫",
+          "210.000₫"
+        ],
+        [
+          "Mèo nhỏ3–5kg",
+          "165.000₫",
+          "275.000₫",
+          "165.000₫",
+          "275.000₫",
+          "415.000₫",
+          "365.000₫"
+        ],
+        [
+          "Mèo vừa5–10kg",
+          "275.000₫",
+          "370.000₫",
+          "220.000₫",
+          "405.000₫",
+          "565.000₫",
+          "495.000₫"
+        ],
+        [
+          "Mèo lớn10–15kg",
+          "385.000₫",
+          "440.000₫",
+          "275.000₫",
+          "495.000₫",
+          "665.000₫",
+          "585.000₫"
+        ],
+        [
+          "Mèo rất lớn15–20kg",
+          "460.000₫",
+          "455.000₫",
+          "330.000₫",
+          "550.000₫",
+          "690.000₫",
+          "605.000₫"
+        ],
+        [
+          "Mèo đại20–25kg",
+          "570.000₫",
+          "520.000₫",
+          "385.000₫",
+          "640.000₫",
+          "795.000₫",
+          "695.000₫"
+        ],
+        [
+          "Mèo siêu đại25–30kg",
+          "660.000₫",
+          "585.000₫",
+          "440.000₫",
+          "725.000₫",
+          "890.000₫",
+          "780.000₫"
+        ]
+      ]
+    }
+  ],
+  "btns": [
+    {
+      "tag": "A",
+      "text": "Pet NGON",
+      "cls": "bn-brand",
+      "href": "/vi"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "menu",
+      "cls": "bn-nav-toggle",
+      "href": ""
+    },
+    {
+      "tag": "A",
+      "text": "Trang chủ",
+      "cls": "active",
+      "href": "/vi"
+    },
+    {
+      "tag": "A",
+      "text": "Dịch vụ Spa",
+      "cls": "",
+      "href": "/vi#services"
+    },
+    {
+      "tag": "A",
+      "text": "Thú cưng bị bỏ rơii",
+      "cls": "",
+      "href": "/vi/pets"
+    },
+    {
+      "tag": "A",
+      "text": "Tuyển dụng",
+      "cls": "",
+      "href": "/vi/careers"
+    },
+    {
+      "tag": "A",
+      "text": "Blog",
+      "cls": "",
+      "href": "/vi/blog"
+    },
+    {
+      "tag": "A",
+      "text": "Liên hệ",
+      "cls": "",
+      "href": "/vi/contact"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "languageVI / EN",
+      "cls": "bn-locale",
+      "href": ""
+    },
+    {
+      "tag": "BUTTON",
+      "text": "calendar_monthĐặt lịch",
+      "cls": "bn-btn bn-btn--primary bn-bar__book ga-booking-btn",
+      "href": ""
+    },
+    {
+      "tag": "A",
+      "text": "Trang chủ",
+      "cls": "active",
+      "href": "/vi"
+    },
+    {
+      "tag": "A",
+      "text": "Dịch vụ Spa",
+      "cls": "",
+      "href": "/vi#services"
+    },
+    {
+      "tag": "A",
+      "text": "Thú cưng bị bỏ rơii",
+      "cls": "",
+      "href": "/vi/pets"
+    },
+    {
+      "tag": "A",
+      "text": "Tuyển dụng",
+      "cls": "",
+      "href": "/vi/careers"
+    },
+    {
+      "tag": "A",
+      "text": "Blog",
+      "cls": "",
+      "href": "/vi/blog"
+    },
+    {
+      "tag": "A",
+      "text": "Liên hệ",
+      "cls": "",
+      "href": "/vi/contact"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "calendar_monthĐặt lịch ngay",
+      "cls": "bn-btn bn-btn--primary bn-btn--lg ga-booking-btn",
+      "href": ""
+    },
+    {
+      "tag": "A",
+      "text": "menu_bookXem dịch vụ",
+      "cls": "bn-btn bn-btn--ghost bn-btn--lg",
+      "href": "/vi#services"
+    },
+    {
+      "tag": "A",
+      "text": "Chi tiết giá theo cân nặng — xem bảng bên dưới",
+      "cls": "",
+      "href": "#service-pricing"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "calendar_monthĐặt lịch",
+      "cls": "bn-btn bn-btn--primary ga-booking-btn",
+      "href": ""
+    },
+    {
+      "tag": "A",
+      "text": "Chi tiết giá theo cân nặng — xem bảng bên dưới",
+      "cls": "",
+      "href": "#service-pricing"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "calendar_monthĐặt lịch",
+      "cls": "bn-btn bn-btn--primary ga-booking-btn",
+      "href": ""
+    },
+    {
+      "tag": "A",
+      "text": "Chi tiết giá theo cân nặng — xem bảng bên dưới",
+      "cls": "",
+      "href": "#service-pricing"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "calendar_monthĐặt lịch",
+      "cls": "bn-btn bn-btn--primary ga-booking-btn",
+      "href": ""
+    },
+    {
+      "tag": "A",
+      "text": "Chi tiết giá theo cân nặng — xem bảng bên dưới",
+      "cls": "",
+      "href": "#service-pricing"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "calendar_monthĐặt lịch",
+      "cls": "bn-btn bn-btn--primary ga-booking-btn",
+      "href": ""
+    },
+    {
+      "tag": "A",
+      "text": "Chi tiết giá theo cân nặng — xem bảng bên dưới",
+      "cls": "",
+      "href": "#service-pricing"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "calendar_monthĐặt lịch",
+      "cls": "bn-btn bn-btn--primary ga-booking-btn",
+      "href": ""
+    },
+    {
+      "tag": "A",
+      "text": "Chi tiết giá theo cân nặng — xem bảng bên dưới",
+      "cls": "",
+      "href": "#service-pricing"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "calendar_monthĐặt lịch",
+      "cls": "bn-btn bn-btn--primary ga-booking-btn",
+      "href": ""
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Vì sao giá khác nhau giữa chó và mèo?remove",
+      "cls": "hm-faq__q",
+      "href": ""
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Cân nặng được xác định thế nào?add",
+      "cls": "hm-faq__q",
+      "href": ""
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Dịch vụ nào có thể làm tại nhà?add",
+      "cls": "hm-faq__q",
+      "href": ""
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Phụ thu tại nhà tính như thế nào?add",
+      "cls": "hm-faq__q",
+      "href": ""
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Tôi cần chuẩn bị gì khi thợ đến nhà?add",
+      "cls": "hm-faq__q",
+      "href": ""
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Có thể đổi/huỷ lịch không?add",
+      "cls": "hm-faq__q",
+      "href": ""
+    },
+    {
+      "tag": "BUTTON",
+      "text": "calendar_monthĐặt lịch ngay",
+      "cls": "bn-btn bn-btn--light bn-btn--lg ga-booking-btn",
+      "href": ""
+    },
+    {
+      "tag": "A",
+      "text": "chat_bubbleChat Zalo",
+      "cls": "bn-btn bn-btn--ghost bn-btn--lg",
+      "href": "https://zalo.me/0325305143"
+    },
+    {
+      "tag": "A",
+      "text": "Facebook",
+      "cls": "",
+      "href": "https://www.facebook.com/spapetngon/"
+    },
+    {
+      "tag": "A",
+      "text": "Messenger",
+      "cls": "",
+      "href": "https://www.messenger.com/t/spapetngon/"
+    },
+    {
+      "tag": "A",
+      "text": "Instagram",
+      "cls": "",
+      "href": "https://www.instagram.com/petngon/"
+    },
+    {
+      "tag": "A",
+      "text": "TikTok",
+      "cls": "",
+      "href": "https://www.tiktok.com/@petngonspa"
+    },
+    {
+      "tag": "A",
+      "text": "call (+84) 325 305 143",
+      "cls": "",
+      "href": "tel:+84325305143"
+    },
+    {
+      "tag": "A",
+      "text": "mail hello@petngon.vn",
+      "cls": "",
+      "href": "mailto:hello@petngon.vn"
+    }
+  ]
+}

@@ -164,9 +164,7 @@
           "/crossbrowser[\\\\/].*\\.spec\\.ts/"
         ],
         "timeout": 60000
-      }
-    ],
-    "filteredProjects": [
+      },
       {
         "grep": {},
         "grepInvert": null,
@@ -383,32 +381,13 @@
         "testDir": "D:\\testing\\Pet-Spa-KTPM\\tests",
         "snapshotDir": "D:\\testing\\Pet-Spa-KTPM\\tests",
         "testIgnore": [],
-        "testMatch": {},
-        "timeout": 60000,
-        "use": {
-          "trace": "off",
-          "screenshot": "only-on-failure",
-          "video": "off",
-          "actionTimeout": 15000,
-          "navigationTimeout": 60000,
-          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/158.0.8127.18 Safari/537.36",
-          "viewport": {
-            "width": 1280,
-            "height": 720
-          },
-          "screen": {
-            "width": 1920,
-            "height": 1080
-          },
-          "deviceScaleFactor": 1,
-          "isMobile": false,
-          "hasTouch": false,
-          "defaultBrowserType": "chromium"
-        },
-        "dependencies": [],
-        "ignoreSnapshots": false,
-        "__projectId": "cross-browser-chromium"
-      },
+        "testMatch": [
+          "/nfr[\\\\/].*\\.spec\\.ts/"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "filteredProjects": [
       {
         "grep": {},
         "grepInvert": null,
@@ -430,7 +409,7 @@
           "video": "off",
           "actionTimeout": 15000,
           "navigationTimeout": 60000,
-          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:159.0) Gecko/20100101 Firefox/159.0",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/158.0.8127.18 Safari/537.36",
           "viewport": {
             "width": 1280,
             "height": 720
@@ -485,7 +464,7 @@
         },
         "dependencies": [],
         "ignoreSnapshots": false,
-        "__projectId": "cross-browser-webkit"
+        "__projectId": "security"
       },
       {
         "grep": {},
@@ -521,11 +500,12 @@
           "isMobile": false,
           "hasTouch": false,
           "defaultBrowserType": "chromium",
-          "channel": "msedge"
+          "baseURL": "https://matpet.vn",
+          "channel": "chrome"
         },
         "dependencies": [],
         "ignoreSnapshots": false,
-        "__projectId": "cross-browser-edge"
+        "__projectId": "nfr"
       }
     ],
     "quiet": false,
@@ -588,6 +568,136 @@
                   "results": [
                     {
                       "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 13271,
+                      "error": {
+                        "message": "Error: T1 tràn ngang 19px ở 360px (scrollWidth 379 > clientWidth 360, scrollLeft tối đa = 19) — phần tử vượt mép: <DIV.bn-bar__right> right=379 | <BUTTON.bn-btn bn-btn--primary bn-bar__book ga-booking-btn> right=379 | <SPAN.material-symbols-outlined > right=367 | <DIV.bn-hero__visual-glow> right=378 | <TABLE.hm-pricing-matrix> right=741\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T1 tràn ngang 19px ở 360px (scrollWidth 379 > clientWidth 360, scrollLeft tối đa = 19) — phần tử vượt mép: <DIV.bn-bar__right> right=379 | <BUTTON.bn-btn bn-btn--primary bn-bar__book ga-booking-btn> right=379 | <SPAN.material-symbols-outlined > right=367 | <DIV.bn-hero__visual-glow> right=378 | <TABLE.hm-pricing-matrix> right=741\",\u001b[39m\n\u001b[31m+ ]\u001b[39m",
+                        "stack": "Error: T1 tràn ngang 19px ở 360px (scrollWidth 379 > clientWidth 360, scrollLeft tối đa = 19) — phần tử vượt mép: <DIV.bn-bar__right> right=379 | <BUTTON.bn-btn bn-btn--primary bn-bar__book ga-booking-btn> right=379 | <SPAN.material-symbols-outlined > right=367 | <DIV.bn-hero__visual-glow> right=378 | <TABLE.hm-pricing-matrix> right=741\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T1 tràn ngang 19px ở 360px (scrollWidth 379 > clientWidth 360, scrollLeft tối đa = 19) — phần tử vượt mép: <DIV.bn-bar__right> right=379 | <BUTTON.bn-btn bn-btn--primary bn-bar__book ga-booking-btn> right=379 | <SPAN.material-symbols-outlined > right=367 | <DIV.bn-hero__visual-glow> right=378 | <TABLE.hm-pricing-matrix> right=741\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at C:\\Users\\Tai\\Downloads\\test\\Pet-Spa-KTPM\\tests\\security\\responsive.spec.ts:73:43",
+                        "location": {
+                          "file": "C:\\Users\\Tai\\Downloads\\test\\Pet-Spa-KTPM\\tests\\security\\responsive.spec.ts",
+                          "column": 43,
+                          "line": 73
+                        },
+                        "snippet": "  71 |     fs.writeFileSync('reports/raw/nfr-04-005-overflow.json', JSON.stringify(bangChung, null, 2), 'utf8');\n  72 |\n> 73 |     expect(problems, problems.join('\\n')).toEqual([]);\n     |                                           ^\n  74 |   });\n  75 |\n  76 |   test('TC-NFR-04-006: Chức năng tính giá chạy đúng trên khung nhìn di động 360x740', async ({ browser }) => {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Tai\\Downloads\\test\\Pet-Spa-KTPM\\tests\\security\\responsive.spec.ts",
+                            "column": 43,
+                            "line": 73
+                          },
+                          "message": "Error: T1 tràn ngang 19px ở 360px (scrollWidth 379 > clientWidth 360, scrollLeft tối đa = 19) — phần tử vượt mép: <DIV.bn-bar__right> right=379 | <BUTTON.bn-btn bn-btn--primary bn-bar__book ga-booking-btn> right=379 | <SPAN.material-symbols-outlined > right=367 | <DIV.bn-hero__visual-glow> right=378 | <TABLE.hm-pricing-matrix> right=741\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"T1 tràn ngang 19px ở 360px (scrollWidth 379 > clientWidth 360, scrollLeft tối đa = 19) — phần tử vượt mép: <DIV.bn-bar__right> right=379 | <BUTTON.bn-btn bn-btn--primary bn-bar__book ga-booking-btn> right=379 | <SPAN.material-symbols-outlined > right=367 | <DIV.bn-hero__visual-glow> right=378 | <TABLE.hm-pricing-matrix> right=741\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n\n  71 |     fs.writeFileSync('reports/raw/nfr-04-005-overflow.json', JSON.stringify(bangChung, null, 2), 'utf8');\n  72 |\n> 73 |     expect(problems, problems.join('\\n')).toEqual([]);\n     |                                           ^\n  74 |   });\n  75 |\n  76 |   test('TC-NFR-04-006: Chức năng tính giá chạy đúng trên khung nhìn di động 360x740', async ({ browser }) => {\n    at C:\\Users\\Tai\\Downloads\\test\\Pet-Spa-KTPM\\tests\\security\\responsive.spec.ts:73:43"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-22T16:45:00.872Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Tai\\Downloads\\test\\Pet-Spa-KTPM\\reports\\playwright\\security-responsive-NFR-04-6ff74-h-360px-trên-trang-đặt-lịch-security\\test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Tai\\Downloads\\test\\Pet-Spa-KTPM\\reports\\playwright\\security-responsive-NFR-04-6ff74-h-360px-trên-trang-đặt-lịch-security\\test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Tai\\Downloads\\test\\Pet-Spa-KTPM\\reports\\playwright\\security-responsive-NFR-04-6ff74-h-360px-trên-trang-đặt-lịch-security\\test-failed-3.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Tai\\Downloads\\test\\Pet-Spa-KTPM\\reports\\playwright\\security-responsive-NFR-04-6ff74-h-360px-trên-trang-đặt-lịch-security\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Tai\\Downloads\\test\\Pet-Spa-KTPM\\tests\\security\\responsive.spec.ts",
+                        "column": 43,
+                        "line": 73
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "0db8434525e8702bbaf4-0d9f56f99e6764a638b0",
+              "file": "security/responsive.spec.ts",
+              "line": 18,
+              "column": 3
+            },
+            {
+              "title": "TC-NFR-04-006: Chức năng tính giá chạy đúng trên khung nhìn di động 360x740",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "security",
+                  "projectName": "security",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4255,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-22T16:45:14.652Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0db8434525e8702bbaf4-82a36e4f171b059ca838",
+              "file": "security/responsive.spec.ts",
+              "line": 76,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "nfr\\nfr-03-usability.spec.ts",
+      "file": "nfr/nfr-03-usability.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "NFR-03 — Khả năng dùng",
+          "file": "nfr/nfr-03-usability.spec.ts",
+          "line": 57,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-NFR-03-001: Hoàn tất luồng tính giá trong ≤ 5 thao tác",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "nfr",
+                  "projectName": "nfr",
+                  "results": [
+                    {
+                      "workerIndex": 2,
                       "parallelIndex": 0,
                       "status": "passed",
                       "duration": 2097,
@@ -4616,9 +4726,9 @@
                   "status": "expected"
                 }
               ],
-              "id": "2f8c7b4ac5459514cbc0-be1cc2e0fa219d23c881",
-              "file": "crossbrowser/nfr-04-browser.spec.ts",
-              "line": 41,
+              "id": "77cf7068abcb2be80a60-c94a7fc58044a274fe35",
+              "file": "nfr/nfr-03-usability.spec.ts",
+              "line": 248,
               "column": 3
             }
           ]

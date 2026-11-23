@@ -1,0 +1,146 @@
+{
+  "doanNhuom": "Nhuộm 2 tai + đuôi 250k 300k 350k 400k Nhuộm 4 chân 250k 300k 350k 400k Nhuộm hình nhỏ 300k 350k 400k 500k BÁO GIÁ RIÊNG — TUỲ TÌNH TRẠNG BÉ Gỡ rối Báo giá theo tình trạng lông: 50.000 – 500.000đ Tẩy ố Báo giá theo tình trạng lông: 50.000 – 500.000đ Tắm trắng Báo giá theo tình trạng lông: 50.000 – 500.00",
+  "tables": [
+    {
+      "id": "",
+      "cls": "",
+      "visible": true,
+      "rows": 13,
+      "headers": [
+        "Dịch vụ (Grooming)",
+        "<3kg",
+        ">3–6kg",
+        ">6–10kg",
+        ">10–20kg",
+        ">20–30kg",
+        ">30–40kg",
+        ">40kg"
+      ],
+      "firstRows": [
+        [
+          "Combo trọn gói"
+        ],
+        [
+          "Combo Tắm Vệ Sinh",
+          "120k",
+          "200k",
+          "300k",
+          "400k",
+          "500k",
+          "600k",
+          "700k"
+        ],
+        [
+          "Combo Tắm Cạo",
+          "200k",
+          "250k",
+          "350k",
+          "450k",
+          "600k",
+          "700k",
+          "800k"
+        ],
+        [
+          "Combo Tắm Cắt",
+          "300k",
+          "350k",
+          "400k",
+          "550k",
+          "700k",
+          "800k",
+          "1tr"
+        ],
+        [
+          "Combo Tắm Cắt Tạo Hình",
+          "350k",
+          "400k",
+          "500k",
+          "650k",
+          "800k",
+          "1tr",
+          "1,2tr"
+        ],
+        [
+          "Dịch vụ lẻ"
+        ]
+      ],
+      "parentCls": "ptable-scroll",
+      "parentStyle": "block"
+    },
+    {
+      "id": "",
+      "cls": "",
+      "visible": true,
+      "rows": 5,
+      "headers": [
+        "Dịch vụ (Nhuộm)",
+        "<6kg",
+        ">6–15kg",
+        ">15–30kg",
+        ">30kg"
+      ],
+      "firstRows": [
+        [
+          "Nhuộm tạo kiểu"
+        ],
+        [
+          "Nhuộm 2 tai + đuôi",
+          "250k",
+          "300k",
+          "350k",
+          "400k"
+        ],
+        [
+          "Nhuộm 4 chân",
+          "250k",
+          "300k",
+          "350k",
+          "400k"
+        ],
+        [
+          "Nhuộm hình nhỏ",
+          "300k",
+          "350k",
+          "400k",
+          "500k"
+        ]
+      ],
+      "parentCls": "ptable-scroll",
+      "parentStyle": "block"
+    },
+    {
+      "id": "",
+      "cls": "",
+      "visible": true,
+      "rows": 7,
+      "headers": [],
+      "firstRows": [
+        [
+          "Báo giá riêng — tuỳ tình trạng bé"
+        ],
+        [
+          "Gỡ rối",
+          "Báo giá theo tình trạng lông: 50.000 – 500.000đ"
+        ],
+        [
+          "Tẩy ố",
+          "Báo giá theo tình trạng lông: 50.000 – 500.000đ"
+        ],
+        [
+          "Tắm trắng",
+          "Báo giá theo tình trạng lông: 50.000 – 500.000đ"
+        ],
+        [
+          "Xả dưỡng",
+          "Báo giá theo tình trạng lông: 50.000 – 500.000đ"
+        ],
+        [
+          "Nhuộm hình lớn",
+          "Báo giá tuỳ kích thước & màu"
+        ]
+      ],
+      "parentCls": "ptable",
+      "parentStyle": "block"
+    }
+  ]
+}

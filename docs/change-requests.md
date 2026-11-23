@@ -12,6 +12,7 @@ Trạng thái CR: `Chờ nhóm` | `Đã chấp nhận` | `Từ chối` | `Đã �
 | CHG-2026-11-13-03 | 2026-11-13 | Mạnh | Đổi hướng đồ án: kiểm thử 3 hệ thống web đang vận hành thay vì tự xây hệ thống | Toàn bộ FR/NFR (SRS-01 v1.0 mới) | Đã áp dụng | Theo ADR-09..ADR-13; mốc 14 ngày tính lại từ 2026-11-13; bộ testware cũ archive |
 | CHG-2026-11-14-01 | 2026-11-14 | Mạnh | Sửa SRS-01 theo khảo sát giá REF-01: `BR-03`, `BR-12`, `FR-M3-02`, mục 3.2/3.3/3.4; bổ sung `BR-17`, `BR-18` | FR-M3-02, BR-03, BR-12 | Đã áp dụng | SRS v1.0 → v1.1; căn cứ `docs/reference/pricing-baseline.md` §3.4, §4.1 |
 | CHG-2026-11-14-02 | 2026-11-14 | Mạnh | Sửa tiêu chí chấp nhận `FR-M3-02` cho T2: bỏ yêu cầu "cùng bậc cân nặng nhưng Mèo → giá khác" | FR-M3-02 | **Đã áp dụng** | Quyết định Inspection 2026-11-18 (RV-01): coi bảng giá dùng chung Chó/Mèo của T2 là **hành vi thiết kế hợp lệ**, không phải lỗi site. Tiêu chí `FR-M3-02` tách theo từng hệ thống: T1 giữ yêu cầu Chó ≠ Mèo, **T2 bỏ**, T3 giữ. SRS v1.1 → v1.2 |
+| **CHG-2026-11-21-01** | **2026-11-21** | **Tài** | **Bổ sung gói "Combo Tắm + Vệ sinh" vào danh sách dịch vụ hỗ trợ tại nhà của T1 (phụ thu +70.000₫) trong `BR-06` và `FR-M6-03`** | BR-06, FR-M6-03, FR-M2-03, FR-M2-05 | **Chờ Mạnh duyệt** | Bằng chứng: `reports/raw/survey-T1-cards.json` (khảo sát DOM trực tiếp 21/11/2026). Chi tiết bên dưới. SRS v1.2 → v1.3 (dự kiến) |
 | CHG-2026-11-18-01 | 2026-11-18 | Ngân | Sửa `BR-03`: bỏ 5 ngưỡng cân nặng khai cho dòng `Cat Bath`; ghi rõ T3 chỉ chia nhóm cân nặng cho dòng Chó | BR-03, FR-M3-02 | **Chờ nhóm** | Đối chiếu `reports/raw/survey-T3-weight-bands.csv`: danh mục API chỉ có 1 dịch vụ `Cat Bath` ($60.00, 30 phút) không mã hoá ngưỡng nào; 3 dịch vụ Mèo còn lại cũng không mang ngưỡng. Ghi DEF-027 |
 
 | CHG-2026-11-19-01 | 2026-11-19 | Mạnh | Reconcile phạm vi hệ thống (HĐ) của 9 yêu cầu giữa §4 (use case) và §5 (bảng yêu cầu), theo hành vi quan sát được trên site đích | FR-M3-06, FR-M4-01, FR-M4-02, FR-M4-03, FR-M4-06, FR-M4-07, FR-M4-08, FR-M5-04, FR-M7-03 | **Đã áp dụng** | Phát hiện trong Inspection bộ test case Phase 1 (14 Major). SRS v1.2 → v1.3. Chi tiết ở bảng "Thay đổi đã áp dụng" bên dưới |
@@ -76,3 +77,98 @@ Nguồn: quan sát ban đầu trên 3 site đích. Trạng thái hiện tại: *
 | CR-13 | T3: bảng giá theo lbs nhưng form đặt lịch có nhập cân nặng bằng lbs hay kg — cần chốt đơn vị nhập để viết BVA | **Đã kiểm chứng 18/11** → `book-online-setting` trả `weight_unit = "Lb"` → T3 dùng **lbs** |
 | CR-14 | T3: phí lễ tân 52 USD/30 phút gắn với dịch vụ nào, có hiển thị trong bảng giá hay chỉ ở trang đặt lịch | **Đã kiểm chứng 14/11** → không tồn tại; đã sửa `BR-12` trong CHG-2026-11-14-01 |
 | CR-15 | Cả 3 site: ngưỡng "trong vòng 30 ngày" của FR-M4-05 (chỉ ghi ở T2) có áp dụng đồng nhất cho T1 và T3 hay không | Chờ Ngày 3 |
+
+---
+
+## CHG-2026-11-21-01 — Bổ sung gói "Combo Tắm + Vệ sinh" vào dịch vụ tại nhà của T1
+
+```
+CR-nn:        Bổ sung "Combo Tắm + Vệ sinh" vào danh sách dịch vụ hỗ trợ tại nhà của T1
+Ngày mở:      2026-11-21 · Người đề xuất: Tài (TV2) · Người duyệt: Mạnh (TV1)
+Trạng thái:   Chờ Mạnh duyệt
+```
+
+### 1. Vấn đề
+
+SRS-01 v1.2 §6 (`BR-06`) ghi:
+
+> Phụ thu tại nhà cố định của T1: Tắm +50.000₫; Cạo +80.000₫; Combo Tắm+Cạo +100.000₫; **các gói khác không hỗ trợ tại nhà**
+
+Và `FR-M6-03` (tiêu chí chấp nhận) liệt kê đúng 3 mức: "Tắm +50.000₫, Cạo +80.000₫, Combo Tắm+Cạo +100.000₫".
+
+Khảo sát trực tiếp DOM trang `https://petngon.vn/vi` ngày 2026-11-21 cho thấy T1 thực tế có **4** dịch vụ hỗ trợ tại nhà, trong đó có gói mà SRS chưa ghi nhận:
+
+| # | Dịch vụ | Nhãn tại nhà | Phụ thu tại nhà | Đã có trong BR-06? |
+|---|---|---|---|---|
+| 1 | Tắm | "Có tận nhà" | +50.000₫ | ✅ có |
+| 2 | Cắt tỉa lông | "Chỉ tại spa" | — | ✅ có (không tại nhà) |
+| 3 | Cạo lông | "Có tận nhà" | +80.000₫ | ✅ có |
+| 4 | **Combo Tắm + Vệ sinh** | **"Có tận nhà"** | **+70.000₫** | ❌ **thiếu** |
+| 5 | Combo Tắm + Cắt tỉa | "Chỉ tại spa" | — | ✅ có (không tại nhà) |
+| 6 | Combo Tắm + Cạo | "Có tận nhà" | +100.000₫ | ✅ có |
+
+Văn bản DOM thô (rút gọn, từ `reports/raw/survey-T1-cards.json`):
+
+```
+shower  home_work  Có tận nhà  Combo Tắm + Vệ sinh
+  Tắm sạch toàn thân với sữa tắm chuyên dụng theo loại da, sấy khô, vệ sinh tai, cắt móng, làm sạch tuyến hôi.
+  home_work  Phụ thu tận nhà: +70.000₫ (chưa gồm phí di chuyển)
+  Chi tiết giá theo cân nặng — xem bảng bên dưới  Từ 130.000₫  60 phút
+```
+
+Các phát hiện đi kèm:
+
+- `FR-M2-03` yêu cầu "0 dịch vụ thiếu nhãn" — nhãn của gói này là "Có tận nhà", nên **đang đúng**, nhưng `FR-M6-03` thì sai.
+- `FR-M2-05` yêu cầu "100% gói tại nhà ghi rõ mức phụ thu cộng thêm bằng số (₫)" — gói này có ghi `+70.000₫` → **đang đúng**.
+- Do `BR-06` là nguồn chuẩn cho cả `FR-M6-03` và `FR-M6-04`, mọi test case kiểm tra phụ thu tại nhà hiện đang **thiếu 1 dịch vụ** trong phạm vi.
+
+### 2. Yêu cầu liên quan
+
+`BR-06` (quy tắc nghiệp vụ) · `FR-M6-03` (Must) · `FR-M6-04` (Must) · `FR-M2-03` (Must) · `FR-M2-05` (Should)
+
+### 3. Đề xuất
+
+**(a) Sửa `BR-06`** — bỏ mệnh đề "các gói khác không hỗ trợ tại nhà" (vì sai) và ghi rõ đủ 4 gói:
+
+> Phụ thu tại nhà cố định của T1: Tắm +50.000₫; Cạo +80.000₫; **Combo Tắm+Vệ sinh +70.000₫**; Combo Tắm+Cạo +100.000₫; chỉ Combo Tắm+Cắt tỉa là dịch vụ duy nhất không hỗ trợ tại nhà.
+
+**(b) Sửa tiêu chí chấp nhận `FR-M6-03`** trong `docs/requirements.csv`:
+
+> "Tắm +50.000₫, Cạo +80.000₫, **Combo Tắm+Vệ sinh +70.000₫**, Combo Tắm+Cạo +100.000₫"
+
+**(c) Sửa mô tả `FR-M6-03`** (tên yêu cầu) để không còn hàm ý chỉ có 3 gói: "Cùng phụ thu cố định của gói tại nhà" → giữ nguyên, chỉ sửa tiêu chí (b).
+
+**(d) Không cần sửa `FR-M2-03` / `FR-M2-05`** — đã khớp thực tế.
+
+### 4. Tác động
+
+| Hạng mục | Tác động |
+|---|---|
+| SRS §6 `BR-06` | Sửa 1 dòng. SRS-01 v1.2 → **v1.3** |
+| `docs/requirements.csv` | Sửa tiêu chí chấp nhận của `FR-M6-03` (không đổi số dòng) |
+| `docs/rtm.csv` / `docs/rtm.md` | Dòng `FR-M6-03` đổi tiêu chí → chạy `npm run rtm:build` để đồng bộ |
+| Test case hiện có | `TC-T1-M6-011`, `TC-T1-M6-012`, `TC-T1-M6-013` đang kiểm tra 3 mức phụ thu → cần **bổ sung 1 ca** cho Combo Tắm+Vệ sinh +70.000₫ |
+| Test case mới (đề xuất) | `TC-T1-M6-019` (FR-M6-03, Critical, DT) — "Gói Combo Tắm + Vệ sinh tại nhà công phụ thu cố định 70.000₫" (Owner: Tài) |
+| Test case mới (đề xuất) | `TC-T1-M2-008` (FR-M2-03, High, UC) — "0 dịch vụ nào của T1 thiếu nhãn tại spa / tại nhà" (Owner: Tài) |
+| Tổng số test case | 226 → **228** (sau khi Mạnh duyệt) |
+| `docs/change-requests.md` | Dòng này (mục trạng thái chuyển sang "Đã áp dụng" khi được duyệt) |
+
+### 5. Bằng chứng
+
+| Tệp | Nội dung |
+|---|---|
+| `reports/raw/survey-T1-cards.json` | Dump DOM 6 thẻ dịch vụ T1, có nhãn + mức phụ thu tại nhà |
+| `reports/raw/survey-T1-text.txt` (dòng 107–115) | Bản text thô: "Combo Tắm + Vệ sinh … Phụ thu tận nhà: +70.000₫" |
+| `scripts/survey-t1-home-service.mjs` | Script tái lập khảo sát (chạy lại được bằng `node scripts/survey-t1-home-service.mjs`) |
+
+Khảo sát tuân thủ ADR-11: chỉ GET trang công khai, không đăng nhập, không gửi form, không tạo dữ liệu.
+
+### 6. Quyết định của nhóm
+
+_(chờ Mạnh TV1 duyệt)_
+
+### 7. Ghi chú thêm cho người duyệt
+
+- Đây **không phải defect của site T1** — site hiển thị đúng và nhất quán. Đây là **sai lệch giữa đặc tả SRS và thực tế**, nên đi theo quy trình CR chứ không mở DEF.
+- Quy trình: Mạnh duyệt → Tài sửa SRS §6 + `requirements.csv` → `npm run req:build && npm run rtm:build` → thêm 2 test case → `npm run rtm:check` xác nhận truy xuất vẫn 100%.
+- Nếu nhóm quyết định **giữ nguyên BR-06** (coi như biến thể), cần mở 1 DEF mức Low ghi nhận sai lệch đặc tả và ghi vào `docs/reviews/inspection-srs.md` — đề nghị Mạnh chọn rõ 1 trong 2 hướng.

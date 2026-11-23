@@ -1,0 +1,224 @@
+{
+  "buoc1": [
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "name": "",
+      "cls": "bk-close",
+      "text": "close",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "name": "",
+      "cls": "bk-pet is-on",
+      "text": "petsChó",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "name": "",
+      "cls": "bk-pet ",
+      "text": "petsMèo",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "name": "",
+      "cls": "bk-svc is-on",
+      "text": "bathtubTắm88.000₫ – 660.000₫schedule45'home_workCó tận nhàcheck_circle",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "name": "",
+      "cls": "bk-svc ",
+      "text": "content_cutCắt tỉa lông145.000₫ – 440.000₫schedule90'storeChỉ tại spa",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "name": "",
+      "cls": "bk-svc ",
+      "text": "cutCạo lông88.000₫ – 385.000₫schedule60'home_workCó tận nhà",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "name": "",
+      "cls": "bk-svc ",
+      "text": "showerCombo Tắm + Vệ sinh130.000₫ – 725.000₫schedule60'home_workCó tận",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "name": "",
+      "cls": "bk-svc ",
+      "text": "spaCombo Tắm + Cắt tỉa240.000₫ – 835.000₫schedule120'storeChỉ tại spa",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "name": "",
+      "cls": "bk-svc ",
+      "text": "auto_awesomeCombo Tắm + Cạo185.000₫ – 780.000₫schedule90'home_workCó t",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "name": "",
+      "cls": "bn-btn bn-btn--primary",
+      "text": "Tiếp tục chevron_right",
+      "visible": true
+    }
+  ],
+  "buoc2": [
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "name": "",
+      "cls": "bk-close",
+      "text": "close",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "name": "",
+      "cls": "bk-pet ",
+      "text": "petsChó mini< 3kg130.000₫",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "name": "",
+      "cls": "bk-pet is-on",
+      "text": "petsChó nhỏ3–5kg265.000₫",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "name": "",
+      "cls": "bk-pet ",
+      "text": "petsChó vừa5–10kg375.000₫",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "name": "",
+      "cls": "bk-pet ",
+      "text": "petsChó lớn10–15kg460.000₫",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "name": "",
+      "cls": "bk-pet ",
+      "text": "petsChó rất lớn15–20kg550.000₫",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "name": "",
+      "cls": "bk-pet ",
+      "text": "petsChó đại20–25kg640.000₫",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "name": "",
+      "cls": "bk-pet ",
+      "text": "petsChó siêu đại25–30kg725.000₫",
+      "visible": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "",
+      "name": "",
+      "cls": "bk-input",
+      "text": "",
+      "visible": true
+    },
+    {
+      "tag": "TEXTAREA",
+      "type": "",
+      "name": "",
+      "cls": "bk-input bk-textarea",
+      "text": "",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "name": "",
+      "cls": "bn-btn bn-btn--ghost",
+      "text": "chevron_leftQuay lại",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "name": "",
+      "cls": "bn-btn bn-btn--primary",
+      "text": "Tiếp tục chevron_right",
+      "visible": true
+    }
+  ],
+  "opts": [
+    {
+      "cls": "bk-close",
+      "text": "close"
+    },
+    {
+      "cls": "bk-pet ",
+      "text": "petsChó mini< 3kg130.000₫"
+    },
+    {
+      "cls": "bk-pet is-on",
+      "text": "petsChó nhỏ3–5kg265.000₫"
+    },
+    {
+      "cls": "bk-pet ",
+      "text": "petsChó vừa5–10kg375.000₫"
+    },
+    {
+      "cls": "bk-pet ",
+      "text": "petsChó lớn10–15kg460.000₫"
+    },
+    {
+      "cls": "bk-pet ",
+      "text": "petsChó rất lớn15–20kg550.000₫"
+    },
+    {
+      "cls": "bk-pet ",
+      "text": "petsChó đại20–25kg640.000₫"
+    },
+    {
+      "cls": "bk-pet ",
+      "text": "petsChó siêu đại25–30kg725.000₫"
+    },
+    {
+      "cls": "bn-btn bn-btn--ghost",
+      "text": "chevron_leftQuay lại"
+    },
+    {
+      "cls": "bn-btn bn-btn--primary",
+      "text": "Tiếp tục chevron_right"
+    }
+  ]
+}

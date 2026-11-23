@@ -1,0 +1,32 @@
+{
+  "buoc4Nha": "event_available\nĐẶT LỊCH GROOMING\nHoàn tất 4 bước nhanh\nclose\ncheck\nDịch vụ\ncheck\nBé cưng\ncheck\nLịch hẹn\n4\nĐịa điểm\nĐịa điểm thực hiện\nstore\nTại spa\n1.09 A1 Westgate, Bình Chánh\nKHÔNG PHỤ THU\nhome_work\nTận nhà\nThợ đến địa chỉ của bạn\n+50.000₫ + KM\nĐỊA CHỈ CHI TIẾT\nThông tin liên hệ\nHỌ TÊN\nSỐ ĐIỆN THOẠI\nTắm · Chó nhỏ (3–5kg)\n155.000₫\n+ Phụ thu tận nhà\n+ 50.000₫\nTạm tính\n205.000₫\nchevron_left\nQuay lại\ncheck\nXác nhận đặt lịch",
+  "fields": [
+    {
+      "tag": "INPUT",
+      "type": "",
+      "ph": "VD: 123 Nguyễn Huệ, Phường Bến Nghé, Quận 1",
+      "name": "",
+      "cls": "bk-input",
+      "id": "",
+      "maxlength": ""
+    },
+    {
+      "tag": "INPUT",
+      "type": "",
+      "ph": "Nguyễn Văn A",
+      "name": "",
+      "cls": "bk-input",
+      "id": "",
+      "maxlength": ""
+    },
+    {
+      "tag": "INPUT",
+      "type": "",
+      "ph": "0987 654 321",
+      "name": "",
+      "cls": "bk-input",
+      "id": "",
+      "maxlength": ""
+    }
+  ]
+}

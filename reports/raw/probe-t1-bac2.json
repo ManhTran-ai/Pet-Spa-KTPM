@@ -1,0 +1,22 @@
+{
+  "inputs": [
+    {
+      "tag": "INPUT",
+      "type": null,
+      "name": null,
+      "placeholder": "VD: Bông, Mochi, Mun...",
+      "value": "",
+      "cls": "bk-input"
+    },
+    {
+      "tag": "TEXTAREA",
+      "type": null,
+      "name": null,
+      "placeholder": "Bé hơi nhát, cần được dỗ; có vết thương ở chân trái...",
+      "value": "",
+      "cls": "bk-input bk-textarea"
+    }
+  ],
+  "textModal": "event_available\nĐẶT LỊCH GROOMING\nHoàn tất 4 bước nhanh\nclose\ncheck\nDịch vụ\n2\nBé cưng\n3\nLịch hẹn\n4\nĐịa điểm\nThông tin bé cưng\nLOÀI & CÂN NẶNG\npets\nCHÓ\npets\nChó mini\n< 3kg\n88.000₫\npets\nChó nhỏ\n3–5kg\n155.000₫\npets\nChó vừa\n5–10kg\n240.000₫\npets\nChó lớn\n10–15kg\n350.000₫\npets\nChó rất lớn\n15–20kg\n460.000₫\npets\nChó đại\n20–25kg\n570.000₫\npets\nChó siêu đại\n25–30kg\n660.000₫\nTÊN BÉ CƯNG\nGHI CHÚ (TÙY CHỌN)\ninfo\nKhi thợ đến (hoặc tới spa), bé sẽ được cân lại. Nếu cân chênh sang khoảng khác, giá điều chỉnh đúng theo bảng — không phát sinh phí ẩn.\nTắm · Chó nhỏ (3–5kg)\n155.000₫\nTạm tính\n155.000₫\nchevron_left\nQuay lại\nTiếp tục\nchevron_right",
+  "htmlPet": "<button class=\"bk-pet \" type=\"button\"><span class=\"material-symbols-outlined \" style=\"font-size: 22px; line-height: 1;\">pets</span><b>Chó mini</b><span>&lt; 3kg</span><em>88.000₫</em></button>"
+}

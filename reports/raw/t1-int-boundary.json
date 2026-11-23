@@ -1,0 +1,32 @@
+[
+  {
+    "kg": 2.9,
+    "bacKyVong": "Chó mini",
+    "tong": 130000
+  },
+  {
+    "kg": 3,
+    "bacKyVong": "Chó nhỏ",
+    "tong": 265000
+  },
+  {
+    "kg": 3.1,
+    "bacKyVong": "Chó nhỏ",
+    "tong": 265000
+  },
+  {
+    "kg": 4.9,
+    "bacKyVong": "Chó nhỏ",
+    "tong": 265000
+  },
+  {
+    "kg": 5,
+    "bacKyVong": "Chó vừa",
+    "tong": 375000
+  },
+  {
+    "kg": 5.1,
+    "bacKyVong": "Chó vừa",
+    "tong": 375000
+  }
+]

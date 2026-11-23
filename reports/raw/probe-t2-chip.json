@@ -1,0 +1,115 @@
+{
+  "containers": [
+    {
+      "cls": "calc-shell",
+      "tag": "DIV",
+      "rect": {
+        "w": 1100,
+        "h": 469,
+        "t": 1011
+      },
+      "overflowY": "visible"
+    },
+    {
+      "cls": "calc-card",
+      "tag": "DIV",
+      "rect": {
+        "w": 736,
+        "h": 469,
+        "t": 1011
+      },
+      "overflowY": "hidden"
+    },
+    {
+      "cls": "stepper",
+      "tag": "DIV",
+      "rect": {
+        "w": 734,
+        "h": 70,
+        "t": 1012
+      },
+      "overflowY": "visible"
+    },
+    {
+      "cls": "st active",
+      "tag": "BUTTON",
+      "rect": {
+        "w": 245,
+        "h": 69,
+        "t": 1012
+      },
+      "overflowY": "visible"
+    },
+    {
+      "cls": "st",
+      "tag": "BUTTON",
+      "rect": {
+        "w": 245,
+        "h": 69,
+        "t": 1012
+      },
+      "overflowY": "visible"
+    },
+    {
+      "cls": "st",
+      "tag": "BUTTON",
+      "rect": {
+        "w": 244,
+        "h": 69,
+        "t": 1012
+      },
+      "overflowY": "visible"
+    },
+    {
+      "cls": "calc-body",
+      "tag": "DIV",
+      "rect": {
+        "w": 734,
+        "h": 397,
+        "t": 1082
+      },
+      "overflowY": "visible"
+    },
+    {
+      "cls": "calc-panel",
+      "tag": "DIV",
+      "rect": {
+        "w": 670,
+        "h": 333,
+        "t": 1114
+      },
+      "overflowY": "visible"
+    },
+    {
+      "cls": "calc-nav",
+      "tag": "DIV",
+      "rect": {
+        "w": 670,
+        "h": 48,
+        "t": 1399
+      },
+      "overflowY": "visible"
+    },
+    {
+      "cls": "fixed inset-x-0 bottom-0 z-40 border-t border-brand-deep/10 bg-white/9",
+      "tag": "DIV",
+      "rect": {
+        "w": 0,
+        "h": 0,
+        "t": 0
+      },
+      "overflowY": "visible"
+    },
+    {
+      "cls": "fixed right-3 z-40 bottom-[calc(1rem+env(safe-area-inset-bottom))] md:",
+      "tag": "DIV",
+      "rect": {
+        "w": 100,
+        "h": 108,
+        "t": 588
+      },
+      "overflowY": "visible"
+    }
+  ],
+  "nut": []
+}
