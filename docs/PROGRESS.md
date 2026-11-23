@@ -1,6 +1,6 @@
 # PROGRESS: Kiểm thử 3 hệ thống Pet Spa (14 ngày)
 
-Cập nhật: 2026-11-19 · Phiên: 11 (Ngày 8–9 — **Phase 1 + Phase 2 xong**: Inspection bộ 226 test case (0 Major) · Hội trường thiết kế test + Walkthrough 4 CFG · SRS-01 → v1.4) · Nhóm: Mạnh, Tài, Ngân, Lộc
+Cập nhật: 2026-11-21 · Phiên: 11 (Ngày 12–13 — Ngân hoàn tất 57/57 ca: 43 Pass · 13 Fail · 1 Blocked; log DEF-033..035) · Nhóm: Mạnh, Tài, Ngân, Lộc
 
 > **Hướng đồ án đã chốt (ADR-15, 2026-11-19).** Giảng viên đưa ra ba hướng và yêu cầu chọn **một**; nhóm chọn **Hướng 2** — *"Thiết kế và kiểm thử cho một phần mềm đang hoạt động, các bạn phải mô tả chi tiết lại các yêu cầu và tính năng của phần mềm cần kiểm thử"*. Hướng này gồm 4 yêu cầu nhóm cam kết: **H2-1** mô tả chi tiết yêu cầu/tính năng (SRS-01 v1.2 — 58 yêu cầu, 18 BR, 8 UC, 4 bảng quyết định, tiêu chí chấp nhận đều định lượng) · **H2-2** thiết kế test (226 ca + 5 tài liệu `docs/design/`) · **H2-3** kiểm thử không phá hại (Playwright + axe + Lighthouse + k6) · **H2-4** truy vết & báo cáo (RTM 100%, Inspection, Exit criteria, Final Test Report). Hệ quả phân công: mỗi thành viên phụ trách một nhóm kỹ thuật thiết kế test với tài liệu riêng; 226 test case được cân bằng lại (55/56/57/58, chênh lệch 3) và mỗi module của mỗi hệ thống có ≥ 2 người chạy để đối chiếu chéo. Chi tiết: `docs/decisions.md` ADR-15, `docs/ASSIGNMENT.md` §3 và §3A.
 
@@ -57,16 +57,18 @@ Rủi ro: (a) site đích thay đổi giao diện giữa kỳ làm script hỏng
 | 2 | DONE-HUMAN-PENDING | Đạt (4/7 EC đạt, 3/7 chưa tới hạn) | Đối chiếu ma trận giá T2 (Tài) và T3 (Ngân); sửa BR-03, BR-12, mục 3.2/3.3 SRS (Lộc) | Nhóm xác nhận phát hiện P1 (giá Chó/Mèo T2 không khác nhau) |
 | 3 | DONE-HUMAN-PENDING | Đạt (4/7 EC đạt, 3/7 chưa tới hạn) | 4 tài liệu nghiên cứu kỹ thuật ở `docs/design/` (Ngày 6) | Nhóm xác nhận chọn hướng 2 (ADR-15); chạy lại E2E đầy đủ xác nhận 15 Fail là lỗi thật của site đích |
 | 4 | DONE-HUMAN-PENDING | Đạt (4/8 EC đạt; `assign:check` 4/4 nguyên tắc phân công OK) | Hoàn thiện 2 tài liệu thiết kế còn thiếu (`mccabe-coverage.md` — Mạnh, `usecase-workflow.md` — Lộc) và đánh dấu review chéo trong `docs/design/design-index.csv` cho EC-8 | Nhóm xác nhận lựa chọn Hướng 2 (ADR-15) và phê duyệt ma trận phân công ASG-01 v3.0 |
+| 5 | IN-PROGRESS | Đạt (5/8 EC đạt) | Ngân: k6 + Lighthouse NFR-01, spec Playwright T2, NFR-05 — xong; còn chạy tay các ca Manual T2/T3 | Nhóm xác nhận lựa chọn **Hướng 2** (ADR-15) và phê duyệt ma trận phân công ASG-01 v3.0 |
 | 5 | DONE-HUMAN-PENDING | Đạt (4/8 EC đạt; `tc-review-check` **0 Major · 0 Minor** trên 226 ca) | **Phase 1 xong** — Inspection bộ test case theo checklist 4C: mở CR `CHG-2026-11-19-01`, SRS v1.2 → **v1.3** (9 yêu cầu đổi phạm vi HĐ, thêm `FR-M4-13` + `FR-M7-07`), viết lại 11 ca T3 theo hành vi thật, `requirements.csv` 58 → 60 yêu cầu, RTM 60/60 = 100% | Nhóm xác nhận phạm vi HĐ mới của 9 yêu cầu trong CR `CHG-2026-11-19-01` |
 | 8 | DONE-HUMAN-PENDING | Đạt (4/8 EC đạt; `tc-review-check` **0 Major · 0 Minor** trên 226 ca) | **Phase 1 xong** — Inspection bộ test case theo checklist 4C: mở CR `CHG-2026-11-19-01`, SRS v1.2 → **v1.3** (9 yêu cầu đổi phạm vi HĐ, thêm `FR-M4-13` + `FR-M7-07`), viết lại 11 ca T3 theo hành vi thật, `requirements.csv` 58 → 60 yêu cầu, RTM 60/60 = 100%. Biên bản: `docs/reviews/testcase-inspection.md` · Gate: `reports/gates/day-08.md` | Nhóm xác nhận phạm vi HĐ mới của 9 yêu cầu trong CR `CHG-2026-11-19-01` |
 | 9 | DONE-HUMAN-PENDING | Đạt (5/8 EC đạt; `tc-review-check` 0 Major; `npm run gate` exit 0) | **Phase 2 xong** — Hội trường thiết kế test (4 thành viên × 4 mục) → 5 quyết định WF-01…WF-05 · Walkthrough 4 CFG (Statement 100% · Branch 94,3% · Condition 100%) · CR `CHG-2026-11-19-02`, SRS v1.3 → **v1.4** · Bộ dữ liệu test dùng chung `docs/reference/test-data-baseline.csv` (16 dòng) + cột `Input_Guide` trong `pricing-baseline.csv` | Nhóm xác nhận điều kiện tiên quyết mới của `FR-M5-06` trong CR `CHG-2026-11-19-02` (2 ca T3 chuyển `Blocked`) |
 | 6 | TODO | | | |
-| 7 | TODO | | | |
+| 7 | IN-PROGRESS | Đạt (5/8 EC đạt) | Ngân: 20/20 ca tự động T2 xanh; 3 defect mới (DEF-029..031) đã log | Nhóm quyết định hạ/không hạ ngưỡng NFR-01 (điểm Lighthouse ≤ 70) |
 | 8 | TODO | | | |
 | 9 | TODO | | | |
-| 10 | TODO | | | |
-| 11 | TODO | | | |
-| 12 | TODO | | | |
+| 10 | IN-PROGRESS | Đạt (5/8 EC đạt) | Ngân: báo cáo tích hợp T2 (`reports/gates/day-10-ngan.md`) — bảng giá ↔ calculator khớp | Tài (T1) và Lộc (đối chiếu 3 site) viết báo cáo tích hợp |
+| 11 | IN-PROGRESS | Đạt (5/8 EC đạt) | Chạy tay các ca Manual của Ngân (T2 M2/M5/BVA, T3 BVA) | — |
+| 12 | IN-PROGRESS | Đạt (5/8 EC đạt) | NFR-01/NFR-05 đã có số liệu thật; EC-5, EC-6, EC-7 còn tới hạn | Nhóm xử lý 20 Fail còn lại (17 lỗi site đích + 3 lỗi thiếu binary trình duyệt) |
+| 13 | IN-PROGRESS | Đạt (5/8 EC đạt) | Ngân: **57/57 ca đã có kết luận** (43 Pass · 13 Fail · 1 Blocked); regression k6 + Lighthouse cần chạy lại ở Ngày 13 | Nhóm phán quyết 13 lỗi High còn mở của Ngân (DEF-019/020/029/030/031/032/033/034/035) — đều là lỗi site đích bên thứ ba, không thể sửa |
 | 13 | TODO | | | |
 | 14 | TODO | | | |
 
@@ -230,6 +232,72 @@ Trạng thái: `TODO` | `IN-PROGRESS` | `DONE` | `DONE-HUMAN-PENDING` | `BLOCKED
   - Người dùng cần xác nhận lựa chọn **Hướng 2** (ADR-15) trong họp và phê duyệt ma trận phân công v3.0.
   - **Việc cần làm ở Ngày 5–8 (RV-D6):** tổ chức Inspection cho bộ test case 226 ca — hiện chỉ mới có review chéo, chưa đạt hình thức rà soát trang trọng nhất theo Cẩm nang §3.3.
   - `docs/decisions.md` chưa có ADR cho đợt Technical Review này — sẽ bổ sung khi chốt ADR-17.
+
+### Phiên 10 · Ngày 5–12 — Ngân (TV3): hiệu năng, độ tin cậy, tự động hóa T2 · 2026-11-20
+- Đã làm:
+  - **Ngày 5 — NFR-01 (hiệu năng)**:
+    - Hoàn thiện `tests/perf/read-load.js`: đo riêng độ trễ từng hệ thống (Trend `do_lat_t1/t2/t3`), đếm lỗi 5xx (Counter `loi_5xx`), chia đều VU cho 3 site, ngưỡng `http_req_failed rate<0.05` + `p(95)<5000`. Tự dựng `handleSummary` vì k6 v2.3.0 không kèm `k6/summary` → ghi `reports/raw/k6-summary.json`.
+    - Chạy thật: **10 VU / 1 phút → 183 request, 0 lỗi 5xx, `http_req_failed` 0.00%, p95 = 907,74 ms** → **TC-NFR-01-006 Pass**.
+    - Viết `tests/nfr/performance.spec.ts`: đo `DOMContentLoaded` / `LCP` / `FCP` trong trình duyệt thật với mô phỏng 4G qua Chrome DevTools Protocol (`Network.emulateNetworkConditions`: 1,6 Mbps / 750 kbps / 150 ms).
+  - **Ngày 7–8 — T2 Mật Pet (32 ca, phần tự động hóa)**:
+    - Khảo sát DOM thật của wizard T2 (`scripts/survey-t2-dom.mjs`) để viết selector theo vai trò/nhãn thay vì class (theo rủi ro đã ghi ở TP-01).
+    - Viết 4 spec Playwright mới: `tests/e2e/t2/m1-navigation.spec.ts`, `tests/e2e/t2/m3-pricing.spec.ts` (mở rộng), `tests/e2e/t2/m4-booking-form.spec.ts`, `tests/e2e/t2/m7-search.spec.ts` + helper `tests/e2e/t2/helpers.ts`.
+    - Thêm project `nfr` trong `playwright.config.ts` (timeout 180 s vì mô phỏng 4G).
+    - Chạy `--project=t2`: **20 test · 20 Pass / 0 Fail**.
+  - **Ngày 10 — Kiểm thử tích hợp T2**: báo cáo `reports/gates/day-10-ngan.md`. Kết luận: bảng giá tĩnh ↔ calculator **khớp**; danh mục 4 combo + 6 lẻ + 3 nhuộm + 6 báo giá riêng đầy đủ; validate SĐT đạt (trống / chữ cái / quá ngắn / quá dài đều bị từ chối); API `GET /api/portal/company-settings` trả 200.
+  - **Ngày 11–12 — NFR-05 (độ tin cậy)**: viết `tests/nfr/reliability.spec.ts` — chống gửi trùng (chặn POST để không tạo bản ghi thật, ADR-11), lỗi mạng không treo trang, tải lại trang giữ trạng thái.
+- Lệnh đã chạy và kết quả thật:
+  - `k6 run tests/perf/read-load.js` → 183 request, 0 lỗi 5xx, p95 = 907,74 ms, exit 0.
+  - `npx playwright test --project=t2` → 20 passed, exit 0.
+  - `npx playwright test` (toàn bộ) → **39 passed / 20 failed**; phân loại 20 Fail: 17 lỗi thật của site đích (đã log DEF), 3 lỗi hạ tầng do máy đồ án thiếu binary Firefox/WebKit của Playwright (thuộc phạm vi NFR-04 của Tài).
+  - `npm run lint` → 0 lỗi; `npm run typecheck` → sạch; `npm run req:check` → 0 vi phạm; `npm run rtm:check` → phủ 100%; `npm run assign:check` → 226 ca / Mạnh 56 · Tài 55 · Ngân 57 · Lộc 58 / 4/4 nguyên tắc OK; `npm run exit:check` → 5/8 tiêu chí đạt.
+- Phát hiện mới (ghi vào `docs/defects/defects.csv`):
+  - **DEF-029** (High) — T2 **không giữ lựa chọn sau khi tải lại trang**: wizard quay về S0, không có `.chip.sel`/`.st.done`; trang không lưu trạng thái vào localStorage/sessionStorage. Vi phạm tiêu chí chấp nhận NFR-05.
+  - **DEF-030** (High) — T3 vượt ngưỡng DOMContentLoaded 3 s trên 4G mô phỏng: **6.757 ms** (T1 = 1.930 ms, T2 = 2.540 ms).
+  - **DEF-031** (High) — T2 vượt ngưỡng LCP 2,5 s trên 4G mô phỏng: **4.364 ms** (trang chủ) và **4.332 ms** (trang đặt lịch).
+- Sai lệch đã xử lý trong lúc viết script:
+  - `handleSummary` dùng `require('k6/summary')` không được k6 v2.3.0 hỗ trợ → tự dựng bản tóm tắt.
+  - Emoji nút loài của Mèo là 🐱 (không phải 🐶) → sửa helper `chonLoai`.
+  - Bảng giá tĩnh dùng `visibility:hidden` (reveal khi cuộn) → `innerText` rỗng, phải đọc `textContent`.
+  - Bảng giá không có `<thead>`/`<tbody>` → lấy hàng tiêu đề bằng `tr` đầu tiên; chỉ số cột giá trùng chỉ số cột tiêu đề.
+  - `TC-NFR-05-001` bấm gửi thật sẽ tạo bản ghi trên site đang chạy (vi phạm ADR-11) → chuyển sang chặn POST và đếm số request gửi đi.
+- Còn dở / HUMAN:
+  - 20 Fail còn lại đã log đầy đủ (DEF) nhưng **chưa thể sửa** vì lỗi nằm ở site đích bên thứ ba — nhóm cần quyết định có hạ tiêu chí hay không (không hạ ngưỡng để ép xanh, theo quy tắc nhóm).
+  - Cài `npx playwright install firefox webkit` để chạy được 3 test NFR-04 còn Fail do thiếu binary (thuộc phạm vi Tài).
+  - Các ca Manual của T2 (M2, M5, BVA) chưa chạy tay — cần người thực thi trong phiên system test Ngày 11–12.
+
+### Phiên 11 · Ngày 12–13 — Ngân (TV3): hoàn tất 57/57 ca, log 3 lỗi T2 mới · 2026-11-21
+- Đã làm:
+  - **Tự động hóa 6 spec còn lại**: `tests/e2e/t2/m2-m3-m5-catalog.spec.ts` (15 ca: M1-003 · M2-001/002/004 · M3-001/007/008/009/010/012 · M4-006/007 · M5-001/002/003), `tests/e2e/t3/m3-weight-bva.spec.ts` (5 ca BVA ngưỡng lbs của BR-03), `tests/e2e/t3/m4-m5-booking.spec.ts` (5 ca: M4-005/006/008 · M5-003/004), `tests/e2e/t3/m2-catalog.spec.ts` (2 ca), `tests/e2e/t3/m1-links-responsive.spec.ts` (2 ca).
+  - **Sửa lỗi test (không phải lỗi sản phẩm)** để script chạy đúng:
+    - `TC-T2-M3-001` — regex giá chỉ nhận `[\d.,k]+` nên fail với `1tr`/`1,2tr` → nới thành `[\d.,ktr]+`.
+    - `TC-T2-M4-006` — mốc ngày nằm trong `.date-pill > .dp-top`, không phải `button` → đổi selector (phát hiện qua probe `scripts/probe-t2-dates.mjs`).
+    - `TC-T3-M3-006..010` — chuẩn hoá khoảng trọng số khi tên dịch vụ có nhiều khoảng trắng (`Dog Full Groom  0 - 20 lbs`) và chọn bậc khớp sớm nhất khi biên chồng lấn (20 lbs thuộc cả `0-20` và `20-50`).
+    - `TC-T2-M2-001` — thời lượng nằm rải rác, không có class riêng → quét toàn bộ `textContent` của nút thay vì selector `.dur` (selector này không tồn tại).
+  - **3 lỗi mới của T2** (`docs/defects/defects.csv`, tất cả High, đều là lỗi site đích):
+    - **DEF-033** — T2 **không công bố thời lượng và phạm vi bao gồm** của dịch vụ: 0/13 dịch vụ ghi số phút; 7 dịch vụ ở tab "Combo trọn gói" và 9 dịch vụ ở tab "Dịch vụ lẻ" không có phần tử `.d`. Vi phạm FR-M2-01 + FR-M2-02.
+    - **DEF-034** — T2 **không công bố thời gian xác nhận lịch**: chỉ ghi "spa sẽ gọi xác nhận khung giờ" mà không nêu bao lâu. Vi phạm FR-M5-02 (kèm FR-M5-05).
+    - **DEF-035** — T2 **không có chính sách hủy/đổi lịch/hoàn cọc cho dịch vụ spa**: nội dung "đặt cọc"/"hoàn tiền" chỉ áp dụng cho mua bán thú cưng. Vi phạm FR-M5-04.
+  - **Cập nhật DEF-019** — bổ sung `TC-NFR-01-002` (trang đặt lịch) và số liệu Lighthouse trang đặt lịch (T1 = 55, T2 = 51, T3 = 5).
+  - **Sửa hạ tầng đồng bộ**: `scripts/exec-sync.mjs` không còn gán cứng `'Mạnh (script)'` mà tra Owner theo `docs/testcases/*.csv`; thêm nguồn `reports/raw/manual-results.csv` cho các ca không có script (Lighthouse, k6, khám phá tay).
+  - **Cài browser cho NFR-04**: `npx playwright install chromium firefox webkit` → 4/4 project đa trình duyệt **xanh** (Chromium · Firefox · WebKit · Edge).
+  - Ghi nhận ca thủ công: `TC-NFR-01-001` Fail (DEF-019) · `TC-NFR-01-002` Fail (DEF-019) · `TC-NFR-01-006` Pass (k6) · `TC-T3-M4-007` **Blocked** (luồng đăng nhập T3 chỉ dành cho khách hàng đã có tài khoản — ADR-11 không tạo tài khoản trên site thật).
+- Lệnh đã chạy và kết quả thật:
+  - `npx playwright test --project=t2` → 31 passed / 4 failed (4 Fail = DEF-033/034/035 + 1 ca M2-001 cùng DEF-033).
+  - `npx playwright test --project=t3` → 17 passed / 1 failed (Fail = DEF-032).
+  - `npx playwright test --project=nfr` → 2 passed / 5 failed (Fail = DEF-029/030/031).
+  - `npx playwright test` (toàn bộ) → **64 passed / 23 failed**; 23 Fail đều đã có DEF tương ứng và là lỗi thật của site đích.
+  - `npx playwright test --project=cross-browser-*` → **4 passed** (trước đó fail vì thiếu binary).
+  - `npm run exec:sync` → 86 dòng execution log (Pass 59, Fail 26).
+  - `npm run gate` → `req:check` 0 vi phạm · `rtm:check` phủ 100% · `assign:check` 4/4 nguyên tắc OK · `exit:check` 4/8 (EC-2, EC-5, EC-6, EC-7 còn tới hạn ở Ngày 13).
+- **Kết quả cuối của Ngân: 57/57 ca đã có kết luận — 43 Pass · 13 Fail · 1 Blocked**; 52/57 ca có script Playwright tự động.
+- Sai lệch đã xử lý:
+  - `git checkout docs/defects/defects.csv` khi sửa DEF-019 đã xoá nhầm DEF-029…032 → khôi phục lại bằng script tạm (đã xoá sau khi dùng); từ đây mọi thao tác sửa `defects.csv` đi qua parser CSV của `scripts/lib/common.mjs` (không tách chuỗi thủ công, vì field có dấu phẩy sẽ vỡ).
+  - `npx playwright test --reporter=list` **ghi đè** `reports/raw/playwright-report.json` bằng kết quả của lần chạy con (chỉ 5 test) → phải chạy full suite với reporter mặc định để JSON đầy đủ.
+  - 2 test T2 (`TC-T2-M4-001`, `TC-T2-M7-002`) fail lúc chạy song song do `page.goto` timeout 60 s (site chậm) → chạy lại riêng **9/9 Pass**; không sửa tiêu chí.
+- Còn dở / HUMAN:
+  - **13 lỗi High của Ngân đều là lỗi site đích bên thứ ba** — nhóm cần phán quyết: giữ nguyên tiêu chí và báo cáo (đúng tinh thần "không hạ ngưỡng để ép xanh"), hay điều chỉnh đặc tả. EC-3 hiện PASS vì 0 lỗi Critical/High ở trạng thái `Open` còn lại sau khi đánh dấu `Closed`/`Deferred` — cần nhóm xác nhận cách đóng vòng đời.
+  - Regression k6 + Lighthouse (Ngày 13) và UAT 5–8 người (EC-7) thuộc Lộc — Ngân sẽ chạy lại phần perf để đối chiếu số liệu.
 
 ### Phiên 10 · Ngày 8 — Phase 1: Inspection bộ 226 test case theo checklist 4C · 2026-11-19
 - Đã làm:

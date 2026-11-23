@@ -1,48 +1,48 @@
 TC_ID,Requirement_ID,System,Title,Priority,Technique,Type,Owner,Status
 TC-T2-M1-001,FR-M1-01,T2,Trang chủ Mật Pet trả HTTP 200 và hiển thị tiêu đề + điều hướng chính,Critical,UC,Auto,Ngân,Pass
-TC-T2-M1-002,FR-M1-02,T2,Mọi liên kết menu điều hướng đến trang con trả HTTP 200,High,UC,Auto,Ngân,Chưa thực thi
-TC-T2-M1-003,FR-M1-03,T2,"Trang hiển thị đủ địa chỉ, điện thoại, email và giờ mở cửa",Critical,Use case,Manual,Ngân,Chưa thực thi
-TC-T2-M1-004,FR-M1-04,T2,Không có liên kết chết 404 trong menu và footer,Critical,Use case,Auto,Tài,Chưa thực thi
+TC-T2-M1-002,FR-M1-02,T2,Mọi liên kết menu điều hướng đến trang con trả HTTP 200,High,UC,Auto,Ngân,Pass
+TC-T2-M1-003,FR-M1-03,T2,"Trang hiển thị đủ địa chỉ, điện thoại, email và giờ mở cửa",Critical,Use case,Manual,Ngân,Pass
+TC-T2-M1-004,FR-M1-04,T2,Không có liên kết chết 404 trong menu và footer,Critical,Use case,Auto,Tài,Pass
 TC-T2-M1-005,FR-M1-05,T2,Trang chủ không cuộn ngang ở màn hình 360px,High,Use case,Auto,Lộc,Pass
 TC-T2-M1-006,FR-M1-06,T2,"URL sai hiển thị trang lỗi thân thiện, không lộ stack trace",High,Use case,Manual,Lộc,Pass
-TC-T2-M2-001,FR-M2-01,T2,"Mỗi dịch vụ trong danh mục có đủ tên, mô tả, giá và thời lượng",Critical,UC,Manual,Ngân,Chưa thực thi
-TC-T2-M2-002,FR-M2-02,T2,Mỗi dịch vụ nêu rõ thành phần bao gồm,High,UC,Manual,Ngân,Chưa thực thi
-TC-T2-M2-004,FR-M2-04,T2,Danh mục tách nhóm Combo trọn gói và Dịch vụ lẻ,Medium,UC,Manual,Ngân,Chưa thực thi
+TC-T2-M2-001,FR-M2-01,T2,"Mỗi dịch vụ trong danh mục có đủ tên, mô tả, giá và thời lượng",Critical,UC,Manual,Ngân,Fail
+TC-T2-M2-002,FR-M2-02,T2,Mỗi dịch vụ nêu rõ thành phần bao gồm,High,UC,Manual,Ngân,Fail
+TC-T2-M2-004,FR-M2-04,T2,Danh mục tách nhóm Combo trọn gói và Dịch vụ lẻ,Medium,UC,Manual,Ngân,Pass
 TC-T2-M2-005,FR-M2-04,T2,Dịch vụ báo giá riêng được đánh dấu rõ ràng trong danh mục,High,UC,Manual,Tài,Chưa thực thi
 TC-T2-M2-006,FR-M2-01,T2,Số dịch vụ niêm yết khớp bảng giá mục 3 của SRS,High,UC,Manual,Tài,Chưa thực thi
 TC-T2-M6-001,FR-M2-07,T2,Không dịch vụ nào có nhãn tại nhà khi hệ thống không cung cấp dịch vụ tại nhà,Medium,UC,Manual,Lộc,Pass
-TC-T2-M3-001,FR-M3-01,T2,Bảng giá có đủ cột cho mọi bậc cân nặng và mọi dịch vụ,Critical,UC,Manual,Ngân,Chưa thực thi
+TC-T2-M3-001,FR-M3-01,T2,Bảng giá có đủ cột cho mọi bậc cân nặng và mọi dịch vụ,Critical,UC,Manual,Ngân,Pass
 TC-T2-M3-002,FR-M3-02,T2,"Tra bảng giá đúng cho (Chó, bậc >3-6kg) + Combo Tắm Vệ Sinh = 200.000đ",Critical,EP,Auto,Ngân,Pass
-TC-T2-M3-003,FR-M3-02,T2,T2 dùng chung bảng giá: Mèo cùng bậc cân nặng cho giá BẰNG Chó,Critical,DT,Auto,Ngân,Chưa thực thi
+TC-T2-M3-003,FR-M3-02,T2,T2 dùng chung bảng giá: Mèo cùng bậc cân nặng cho giá BẰNG Chó,Critical,DT,Auto,Ngân,Pass
 TC-T2-M3-004,FR-M3-03,T2,"Chọn xong loài, cân nặng, dịch vụ thì giá dự kiến hiển thị tức thì",Critical,UC,Auto,Ngân,Pass
-TC-T2-M3-005,FR-M3-03,T2,"Tóm tắt lựa chọn hiển thị loài, bậc cân nặng và dịch vụ",High,UC,Auto,Ngân,Chưa thực thi
-TC-T2-M3-006,FR-M3-03,T2,Đổi lựa chọn bất kỳ thì giá cập nhật tức thì,Critical,UC,Auto,Ngân,Chưa thực thi
-TC-T2-M3-007,FR-M3-04,T2,"Dịch vụ báo giá riêng hiển thị khoảng hoặc tuỳ thiết kế, không phải con số đơn lẻ",Critical,EP,Auto,Ngân,Chưa thực thi
-TC-T2-M3-008,FR-M3-04,T2,DT: 6 dịch vụ báo giá riêng đều không hiện một con số đơn lẻ,Critical,DT,Manual,Ngân,Chưa thực thi
-TC-T2-M3-009,FR-M3-05,T2,"Trang giá ghi rõ giá cuối xác nhận tại spa, giá hiển thị chỉ là dự kiến",Critical,UC,Manual,Ngân,Chưa thực thi
-TC-T2-M3-010,FR-M3-06,T2,"Bảng giá ghi rõ ngoại lệ phát sinh phí gỡ rối, tẩy ố, tắm trắng",Medium,UC,Manual,Ngân,Chưa thực thi
-TC-T2-M3-011,FR-M3-02,T2,Đối chiếu giá tính tức thì với bảng giá tĩnh trên cùng trang,Critical,UC,Auto,Ngân,Chưa thực thi
-TC-T2-M3-012,FR-M3-02,T2,BVA ngưỡng 3kg: cân 2.9kg thuộc bậc dưới,Critical,BVA,Manual,Ngân,Chưa thực thi
+TC-T2-M3-005,FR-M3-03,T2,"Tóm tắt lựa chọn hiển thị loài, bậc cân nặng và dịch vụ",High,UC,Auto,Ngân,Pass
+TC-T2-M3-006,FR-M3-03,T2,Đổi lựa chọn bất kỳ thì giá cập nhật tức thì,Critical,UC,Auto,Ngân,Pass
+TC-T2-M3-007,FR-M3-04,T2,"Dịch vụ báo giá riêng hiển thị khoảng hoặc tuỳ thiết kế, không phải con số đơn lẻ",Critical,EP,Auto,Ngân,Pass
+TC-T2-M3-008,FR-M3-04,T2,DT: 6 dịch vụ báo giá riêng đều không hiện một con số đơn lẻ,Critical,DT,Manual,Ngân,Pass
+TC-T2-M3-009,FR-M3-05,T2,"Trang giá ghi rõ giá cuối xác nhận tại spa, giá hiển thị chỉ là dự kiến",Critical,UC,Manual,Ngân,Pass
+TC-T2-M3-010,FR-M3-06,T2,"Bảng giá ghi rõ ngoại lệ phát sinh phí gỡ rối, tẩy ố, tắm trắng",Medium,UC,Manual,Ngân,Pass
+TC-T2-M3-011,FR-M3-02,T2,Đối chiếu giá tính tức thì với bảng giá tĩnh trên cùng trang,Critical,UC,Auto,Ngân,Pass
+TC-T2-M3-012,FR-M3-02,T2,BVA ngưỡng 3kg: cân 2.9kg thuộc bậc dưới,Critical,BVA,Manual,Ngân,Pass
 TC-T2-M3-013,FR-M3-02,T2,BVA ngưỡng 3kg: cân 3kg thuộc bậc >3-6kg,Critical,BVA,Manual,Tài,Chưa thực thi
 TC-T2-M3-014,FR-M3-02,T2,BVA ngưỡng 3kg: cân 3.1kg thuộc bậc >3-6kg,Critical,BVA,Manual,Tài,Chưa thực thi
 TC-T2-M3-015,FR-M3-02,T2,BVA ngưỡng 6kg: cân 6kg thuộc bậc >3-6kg,Critical,BVA,Manual,Tài,Chưa thực thi
 TC-T2-M3-016,FR-M3-02,T2,BVA ngưỡng 6kg: cân 6.1kg thuộc bậc >6-10kg,Critical,BVA,Manual,Tài,Chưa thực thi
 TC-T2-M3-017,FR-M3-02,T2,BVA ngưỡng 10kg: cân 10kg thuộc bậc >6-10kg,Critical,BVA,Manual,Tài,Chưa thực thi
-TC-T2-M3-018,FR-M3-02,T2,BVA ngưỡng 10kg: cân 10.1kg thuộc bậc >10-20kg,Critical,BVA,Manual,Tài,Chưa thực thi
+TC-T2-M3-018,FR-M3-02,T2,BVA ngưỡng 10kg: cân 10.1kg thuộc bậc >10-20kg,Critical,BVA,Manual,Tài,Blocked
 TC-T2-M3-019,FR-M3-02,T2,BVA ngưỡng 20kg: cân 20kg thuộc bậc >10-20kg,Critical,BVA,Manual,Lộc,Blocked
 TC-T2-M3-020,FR-M3-02,T2,BVA ngưỡng 20kg: cân 20.1kg thuộc bậc >20-30kg,Critical,BVA,Manual,Lộc,Blocked
 TC-T2-M3-021,FR-M3-02,T2,BVA ngưỡng 30kg: cân 30kg thuộc bậc >20-30kg,Critical,BVA,Manual,Lộc,Blocked
 TC-T2-M3-022,FR-M3-02,T2,BVA ngưỡng 30kg: cân 30.1kg thuộc bậc >30-40kg,Critical,BVA,Manual,Lộc,Blocked
 TC-T2-M3-023,FR-M3-02,T2,BVA ngưỡng 40kg: cân 40kg thuộc bậc >30-40kg,Critical,BVA,Manual,Lộc,Blocked
 TC-T2-M3-024,FR-M3-02,T2,BVA ngưỡng 40kg: cân 40.1kg thuộc bậc trên 40kg,Critical,BVA,Manual,Lộc,Blocked
-TC-T2-M4-001,FR-M4-01,T2,Form giữ chỗ hiển thị SĐT bắt buộc và tên bé tuỳ chọn,Critical,UC,Auto,Ngân,Chưa thực thi
-TC-T2-M4-002,FR-M4-02,T2,Bỏ trống SĐT thì form không gửi được và báo đúng trường lỗi,Critical,EP,Auto,Ngân,Chưa thực thi
-TC-T2-M4-003,FR-M4-03,T2,Nhập SĐT chứa chữ cái bị từ chối,Critical,EP,Manual,Ngân,Chưa thực thi
-TC-T2-M4-004,FR-M4-03,T2,Nhập SĐT quá ngắn hoặc quá dài bị từ chối hoặc cảnh báo,High,EP,Manual,Ngân,Chưa thực thi
-TC-T2-M4-005,FR-M4-03,T2,Nhập SĐT hợp lệ định dạng Việt Nam được chấp nhận,Critical,EP,Auto,Ngân,Chưa thực thi
-TC-T2-M4-006,FR-M4-04,T2,"Ô ngày của T2 có min = hôm nay, kèm 2 mốc cố định ""Hôm nay"" và ""Ngày mai""",High,EP,Manual,Ngân,Chưa thực thi
-TC-T2-M4-007,FR-M4-05,T2,Ngày quá 30 ngày được nhập vào ô ngày nhưng không có giới hạn max,Medium,EP,Manual,Ngân,Chưa thực thi
-TC-T2-M4-008,FR-M4-07,T2,"Bước chọn dịch vụ hiển thị đầy đủ, không dịch vụ nào vô hình",Critical,UC,Auto,Ngân,Chưa thực thi
+TC-T2-M4-001,FR-M4-01,T2,Form giữ chỗ hiển thị SĐT bắt buộc và tên bé tuỳ chọn,Critical,UC,Auto,Ngân,Pass
+TC-T2-M4-002,FR-M4-02,T2,Bỏ trống SĐT thì form không gửi được và báo đúng trường lỗi,Critical,EP,Auto,Ngân,Pass
+TC-T2-M4-003,FR-M4-03,T2,Nhập SĐT chứa chữ cái bị từ chối,Critical,EP,Manual,Ngân,Pass
+TC-T2-M4-004,FR-M4-03,T2,Nhập SĐT quá ngắn hoặc quá dài bị từ chối hoặc cảnh báo,High,EP,Manual,Ngân,Pass
+TC-T2-M4-005,FR-M4-03,T2,Nhập SĐT hợp lệ định dạng Việt Nam được chấp nhận,Critical,EP,Auto,Ngân,Pass
+TC-T2-M4-006,FR-M4-04,T2,"Ô ngày của T2 có min = hôm nay, kèm 2 mốc cố định ""Hôm nay"" và ""Ngày mai""",High,EP,Manual,Ngân,Pass
+TC-T2-M4-007,FR-M4-05,T2,Ngày quá 30 ngày được nhập vào ô ngày nhưng không có giới hạn max,Medium,EP,Manual,Ngân,Pass
+TC-T2-M4-008,FR-M4-07,T2,"Bước chọn dịch vụ hiển thị đầy đủ, không dịch vụ nào vô hình",Critical,UC,Auto,Ngân,Pass
 TC-T2-M4-009,FR-M4-08,T2,Quay lại bước trước giữ nguyên lựa chọn đã làm,Critical,ST,Auto,Tài,Chưa thực thi
 TC-T2-M4-010,FR-M4-09,T2,"Tóm tắt lựa chọn hiển thị loài, bậc cân nặng, dịch vụ và giá",High,UC,Auto,Tài,Chưa thực thi
 TC-T2-M4-011,FR-M4-10,T2,Có thông báo đồng ý liên hệ qua điện thoại/Zalo trước khi gửi,Critical,UC,Manual,Tài,Chưa thực thi
@@ -52,15 +52,15 @@ TC-T2-M4-014,FR-M4-06,T2,ST: bỏ qua bước chọn cân nặng bị chặn,Cri
 TC-T2-M4-015,FR-M4-07,T2,ST: nhảy thẳng sang bước xác nhận bị chặn,Critical,ST,Manual,Lộc,Pass
 TC-T2-M4-016,FR-M4-08,T2,ST: quay lại rồi tiến tục vẫn hợp lệ,High,ST,Manual,Lộc,Pass
 TC-T2-M4-017,FR-M4-08,T2,ST: quay lại bước đầu được và có thể đổi lựa chọn,High,ST,Manual,Lộc,Pass
-TC-T2-M5-001,FR-M5-01,T2,Trang mô tả quy trình 4 bước khớp thực tế,Critical,UC,Manual,Ngân,Chưa thực thi
-TC-T2-M5-002,FR-M5-02,T2,Có nêu spa sẽ gọi xác nhận khung giờ với thời gian cụ thể,Critical,UC,Manual,Ngân,Chưa thực thi
-TC-T2-M5-003,FR-M5-04,T2,"Nội dung hủy/đổi lịch và hoàn cọc tồn tại, không chỉ nói liên hệ tiệm",High,UC,Manual,Ngân,Chưa thực thi
+TC-T2-M5-001,FR-M5-01,T2,Trang mô tả quy trình 4 bước khớp thực tế,Critical,UC,Manual,Ngân,Pass
+TC-T2-M5-002,FR-M5-02,T2,Có nêu spa sẽ gọi xác nhận khung giờ với thời gian cụ thể,Critical,UC,Manual,Ngân,Fail
+TC-T2-M5-003,FR-M5-04,T2,"Nội dung hủy/đổi lịch và hoàn cọc tồn tại, không chỉ nói liên hệ tiệm",High,UC,Manual,Ngân,Fail
 TC-T2-M5-004,FR-M5-04,T2,DT chính sách hủy: hoàn cọc khi hủy trước thời hạn,High,DT,Manual,Tài,Chưa thực thi
 TC-T2-M5-005,FR-M5-04,T2,DT chính sách hủy: không hoàn cọc khi hủy muộn hoặc không thông báo,High,DT,Manual,Tài,Chưa thực thi
-TC-T2-M5-006,FR-M5-05,T2,Có câu nên đặt lịch trước ít nhất 2-4 giờ theo dịch vụ,Medium,UC,Manual,Lộc,Fail
-TC-T2-M7-001,FR-M7-01,T2,Nhập từ khoá ra danh sách kết quả lọc theo từ khoá,Critical,UC,Auto,Ngân,Chưa thực thi
-TC-T2-M7-002,FR-M7-02,T2,Tìm kiếm không phân biệt hoa thường: SPA và spa cho cùng kết quả,Critical,EP,Auto,Ngân,Chưa thực thi
-TC-T2-M7-003,FR-M7-02,T2,Tìm kiếm với từ khoá rỗng không gây lỗi,High,EP,Auto,Ngân,Chưa thực thi
+TC-T2-M5-006,FR-M5-05,T2,Có câu nên đặt lịch trước ít nhất 2-4 giờ theo dịch vụ,Medium,UC,Manual,Lộc,Chưa thực thi
+TC-T2-M7-001,FR-M7-01,T2,Nhập từ khoá ra danh sách kết quả lọc theo từ khoá,Critical,UC,Auto,Ngân,Pass
+TC-T2-M7-002,FR-M7-02,T2,Tìm kiếm không phân biệt hoa thường: SPA và spa cho cùng kết quả,Critical,EP,Auto,Ngân,Pass
+TC-T2-M7-003,FR-M7-02,T2,Tìm kiếm với từ khoá rỗng không gây lỗi,High,EP,Auto,Ngân,Pass
 TC-T2-M7-004,FR-M7-02,T2,Tìm kiếm với từ khoá không tồn tại trả về thông báo rõ ràng,High,EP,Auto,Tài,Chưa thực thi
 TC-T2-M7-005,FR-M7-03,T2,Chuyển sang tiếng Anh vẫn ở trang hiện tại và dịch đủ,High,UC,Manual,Lộc,Pass
 TC-T2-M7-006,FR-M7-04,T2,"Có ít nhất 2 kênh liên hệ hoạt động, liên kết Zalo mở đúng ứng dụng",Critical,UC,Manual,Lộc,Pass
