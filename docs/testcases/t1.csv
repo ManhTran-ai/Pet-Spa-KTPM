@@ -26,10 +26,10 @@ TC-T1-M3-011,FR-M3-02,T1,BVA ngưỡng 5kg: bậc 5–10kg liền kề 3–5kg �
 TC-T1-M3-012,FR-M3-02,T1,BVA ngưỡng 10kg: bậc 5–10kg liền kề 10–15kg — giá tăng đơn điệu theo bậc,Critical,BVA,Auto,Mạnh,Pass
 TC-T1-M3-013,FR-M3-02,T1,BVA ngưỡng 10kg: bậc cân nặng 10–15kg có mức giá riêng trong bảng giá,Critical,BVA,Auto,Mạnh,Pass
 TC-T1-M3-014,FR-M3-02,T1,BVA ngưỡng 10kg: bậc 10–15kg liền kề 5–10kg — giá tăng đơn điệu theo bậc,Critical,BVA,Auto,Mạnh,Pass
-TC-T1-M3-015,FR-M3-02,T1,BVA ngưỡng 15kg: cân 15kg thuộc bậc 15-20kg,Critical,BVA,Manual,Lộc,Blocked
-TC-T1-M3-016,FR-M3-02,T1,BVA ngưỡng 20kg: cân 20kg thuộc bậc 20-25kg,Critical,BVA,Manual,Lộc,Blocked
-TC-T1-M3-017,FR-M3-02,T1,BVA ngưỡng 25kg: cân 25kg thuộc bậc 25-30kg,Critical,BVA,Manual,Lộc,Blocked
-TC-T1-M3-018,FR-M3-02,T1,BVA ngưỡng 30kg: cân 30.1kg thuộc bậc trên 30kg,Critical,BVA,Manual,Lộc,Blocked
+TC-T1-M3-015,FR-M3-02,T1,BVA ngưỡng 15kg: cân 15kg thuộc bậc 15-20kg,Critical,BVA,Manual,Lộc,Pass
+TC-T1-M3-016,FR-M3-02,T1,BVA ngưỡng 20kg: cân 20kg thuộc bậc 20-25kg,Critical,BVA,Manual,Lộc,Pass
+TC-T1-M3-017,FR-M3-02,T1,BVA ngưỡng 25kg: cân 25kg thuộc bậc 25-30kg,Critical,BVA,Manual,Lộc,Pass
+TC-T1-M3-018,FR-M3-02,T1,BVA ngưỡng 30kg: cân 30.1kg thuộc bậc trên 30kg,Critical,BVA,Manual,Lộc,Fail
 TC-T1-M4-001,FR-M4-01,T1,Form giữ chỗ hiển thị đủ trường bắt buộc và tuỳ chọn,Critical,UC,Manual,Tài,Chưa thực thi
 TC-T1-M4-002,FR-M4-02,T1,Bỏ trống trường bắt buộc thì form không gửi được và báo đúng trường lỗi,Critical,EP,Manual,Tài,Chưa thực thi
 TC-T1-M4-003,FR-M4-04,T1,Bước Lịch hẹn của T1 hiển thị 7 ngày cố định và 8 khung giờ 08:30-17:00,High,EP,Manual,Tài,Chưa thực thi
