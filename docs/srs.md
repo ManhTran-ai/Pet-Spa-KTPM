@@ -7,6 +7,9 @@
 | **1.0** | **Ngày 3** | **Mạnh** | **Baseline mới: đặc tả yêu cầu ĐÍCH (as-is) của 3 hệ thống pet spa có sẵn, theo hướng kiểm thử hệ thống có sẵn** |
 | 1.1 | Ngày 2 | Mạnh | Sửa mục 3.2, 3.3, 3.4, `BR-03`, `BR-12` và `FR-M3-02` theo khảo sát giá REF-01; bổ sung `BR-17`, `BR-18` |
 | **1.2** | **Ngày 3** | **Mạnh** | **Baseline sau Inspection (biên bản `docs/reviews/inspection-srs.md`): sửa theo RV-01…RV-08 — `FR-M3-02` (T2), `FR-M2-01` (T3), `FR-M4-04`, §3.2, §3.4, §4 (cột luồng rẽ nhánh), §7 (bậc cân nặng T3); bổ sung tiêu chí chấp nhận định lượng cho 18 yêu cầu** |
+| **1.3** | **Ngày 8** | **Mạnh** | **Baseline sau Inspection bộ test case (`docs/reviews/testcase-inspection.md`, CR `CHG-2026-11-19-01`): reconcile phạm vi hệ thống (HĐ) của 9 yêu cầu giữa §4 và §5 — `FR-M5-04` +T1, `FR-M4-06` +T2, `FR-M4-01/02/03/07/08` +T3, `FR-M3-06` +T3; `FR-M7-03` ghi rõ loại trừ T3 (chỉ tiếng Anh)** |
+| **1.4** | **Ngày 8** | **Mạnh** | **Baseline sau Walkthrough thiết kế test (CR `CHG-2026-11-19-02`): làm rõ điều kiện tiên quyết của `FR-M5-06` (T3) — bước chọn khung giờ nằm sau cổng khách hàng `FR-M4-13`, không quan sát được trên luồng công khai** |
+| **1.5** | **Ngày 9** | **Mạnh** | **Sửa `BR-03` theo CR `CHG-2026-11-22-01`: nhóm dịch vụ **Mèo** của T3 **không chia bậc cân nặng lbs** (4 dịch vụ giá cố định $60/$80/$110/$125); bậc lbs chỉ áp dụng cho nhóm `Dog (bath included)` (16 dịch vụ)** |
 
 > **Hướng tài liệu (quan trọng).** Tài liệu này **không** đặc tả một hệ thống để nhóm xây. Nó đặc tả **ba hệ thống web đang vận hành thật** mà nhóm sẽ kiểm thử: T1 Pet NGON, T2 Mật Pet Family, T3 Pretty Paws. Mọi yêu cầu ở đây là **yêu cầu đích** — hệ thống thật *đang* làm vậy, và ta kiểm tra xem nó có làm đúng, đầy đủ và nhất quán không. Yêu cầu được trích xuất bằng quan sát hành vi thực tế (đọc trang, tương tác form, theo dõi lưu lượng mạng). Đây là **test basis** cho Test Plan, RTM và test case.
 
@@ -151,6 +154,7 @@ Không có vai trò nhân viên hay quản trị trên giao diện công khai c�
 |---|---|
 | Công nghệ | Groomore — nền tảng đặt lịch SaaS cho tiệm grooming |
 | Kết nối chính | Danh mục dịch vụ theo nhóm cân nặng + nút "Book Now" 24/7 + giờ mở cửa. **Bậc cân nặng lbs mã hoá trong tên dịch vụ**, không có ô nhập cân nặng; form đặt lịch chỉ có ô "Mobile number" + chọn quốc gia |
+| Luồng đặt lịch | **Không có wizard nhiều bước**: danh mục 41 dịch vụ / 5 nhóm → nút "Book Now" mở drawer → nhập SĐT → nút `Login`. Không có bước chọn loài, cân nặng, ngày, khung giờ hay nút "Tiếp tục"/quay lại. Drawer chỉ phục vụ **khách đã có hồ sơ**: khách mới được hướng dẫn điền form intake qua Facebook page hoặc nhắn tin `609-816-7755`; nhập SĐT lạ → thông báo "Sorry, it is only available for existing client." |
 | Dịch vụ | Dog Bath 0-20lbs ($52, 30 phút), Dog Bath 20-50lbs ($65, 30 phút), Dog Bath short hair over 50lbs ($72, 1h), Dog bath medium/long hair over 50lbs ($79, 1h), Dog Full groom theo 7 nhóm lbs ($69–$175), Cat Bath ($60, 30 phút), Cat Bath and trim ($80, 30 phút), Cat Bath and shave down / lion cut ($110, 1,5h), Cat bath and full body hair cut ($125, 1,5h), Nails/sanitary/eye trim ($10–$29) |
 | Phí lễ tân | Không có dịch vụ "phí lễ tân" riêng; 2 khoản phụ thu: `*HOLIDAY FEE*` ($27) và `Emergency appointment fee` ($25, chỉ khi kín lịch) |
 | Kết nối chính | "Book Now" 24/7; có địa chỉ, điện thoại, email, trạng thái mở cửa |
@@ -180,7 +184,7 @@ Không có vai trò nhân viên hay quản trị trên giao diện công khai c�
 |---|---|---|---|---|
 | UC-01 | Xem danh mục dịch vụ và bảng giá | T1, T2, T3 | FR-M2-01…03, FR-M3-01 | N1: dịch vụ "báo giá riêng" không có giá cố định → hiển thị khoảng 50.000–500.000₫ (T2). N2: T3 công bố phụ thu ngày lế và phí khẩn cấp tách riêng khỏi dịch vụ. N3: danh mục rỗng/không tải được → thông báo lỗi thay vì trang trắng |
 | UC-02 | Tính giá dự kiến bằng calculator | T2, T3 | FR-M3-02…05 | N1: bỏ qua bước cân nặng → giá không hiển thị (T2). N2: chọn dịch vụ "báo giá riêng" → khung giá hiện dạng tham khảo, không có con số đơn lẻ. N3: đổi bất kỳ lựa chọn nào → giá tính lại tức thì. N4: T3 không có bước chọn bậc cân nặng → chọn dịch vụ theo bậc lbs trong tên |
-| UC-03 | Giữ chỗ / đặt lịch | T1, T2, T3 | FR-M4-01…08 | N1: chưa chọn loài → nút "Tiếp tục" bị khoá. N2: bỏ trống SĐT → form không gửi được. N3: chọn ngày trong quá khứ → không chọn được. N4: T2 chọn ngày quá 30 ngày → được nhập nhưng phải giải thích theo lịch mở cửa. Xem bảng luồng chi tiết bên dưới |
+| UC-03 | Giữ chỗ / đặt lịch | T1, T2, T3 | FR-M4-01…08 | N1: chưa chọn loài → nút "Tiếp tục" bị khoá (T1, T2). N2: bỏ trống SĐT → form không gửi được (T1, T2) hoặc nút `Login` bị khoá (T3). N3: chọn ngày trong quá khứ → không chọn được. N4: T2 chọn ngày quá 30 ngày → được nhập nhưng phải giải thích theo lịch mở cửa. N5: T3 không có bước chọn dịch vụ/ngày/khung giờ; SĐT không thuộc hồ sơ cũ → báo "Sorry, it is only available for existing client." Xem bảng luồng chi tiết bên dưới |
 | UC-04 | Gửi thông tin giữ chỗ qua form | T1, T2 | FR-M4-01…04 | N1: SĐT sai định dạng → báo lỗi tại chỗ. N2: ngày mong muốn nằm ngoài lịch mở cửa → không có khung giờ khả dụng. N3: gửi thành công → hiện thông báo xác nhận và mã lịch hẹn |
 | UC-05 | Xem chính sách lịch (hủy/đổi) | T1 | FR-M5-01…04 | N1: hủy trong khung xác nhận qua Zalo → trừ 1 lượt đặt lịch. N2: không có Zalo → được hướng dẫn kênh liên hệ khác. N3: hủy trong vòng 24h giờ đã đặt → không hoàn cọc |
 | UC-06 | Tìm kiếm nội dung | T2 | FR-M7-01…02 | N1: từ khoá không có kết quả → hiển thị thông báo "không tìm thấy". N2: từ khoá rỗng → không gọi tìm kiếm. N3: kết quả trả về từ nhiều nhóm nội dung |
@@ -232,25 +236,26 @@ Không có vai trò nhân viên hay quản trị trên giao diện công khai c�
 | FR-M3-03 | Giá hiển thị được tính tức thì khi chọn đủ loài, cân nặng, dịch vụ | T2 | Must | Chọn xong bước 3 → hiển thị giá dự kiến cụ thể và tóm tắt lựa chọn; đổi bất kỳ lựa chọn nào → giá cập nhật |
 | FR-M3-04 | Tính giá riêng cho dịch vụ cần khảo giá | T2 | Must | Dịch vụ "báo giá riêng" hiển thị khoảng 50.000–500.000₫ hoặc "tuỳ thiết kế", tuyệt đối không hiện một con số đơn lẻ |
 | FR-M3-05 | Giá dự kiến được ghi rõ là dự kiến, không phải giá cuối | T1, T2, T3 | Must | Mỗi trang có bảng giá phải chứa ≥ 1 câu ghi rõ giá cuối xác nhận tại spa/cân thực tế |
-| FR-M3-06 | Bảng giá nêu rõ điều kiện bảo hành hoặc ngoại lệ phát sinh phí | T2 | Should | Có ≥ 1 ghi chú bảng giá liệt kê 3 phí không bao gồm: gỡ rối, tẩy ố, tắm trắng |
+| FR-M3-06 | Bảng giá nêu rõ điều kiện bảo hành hoặc ngoại lệ phát sinh phí | T2, T3 | Should | T2: có ≥ 1 ghi chú bảng giá liệt kê 3 phí không bao gồm: gỡ rối, tẩy ố, tắm trắng. T3: nhóm `EMERGENCY APPOINTMENT (2)` niêm yết đúng 2 khoản phụ thu: `*HOLIDAY FEE*` $27 và `Emergency appointment fee *WAIT LIST ONLY*` $25 (xem `BR-17`) |
 | FR-M3-07 | Nêu giá "từ ...₫" và khoảng min–max cho gói | T1 | Should | 100% gói hiển thị cả 2 thành phần: mức tối thiểu ("Từ ...₫") và khoảng min–max; giá trị khớp bảng |
 
 ### 5.4 M4 – Form giữ chỗ / đặt lịch
 
 | ID | Yêu cầu | HĐ | Ưu tiên | Tiêu chí chấp nhận |
 |---|---|---|---|---|
-| FR-M4-01 | Cung cấp form giữ chỗ với trường liên hệ bắt buộc và tuỳ chọn | T1, T2 | Must | T2: SĐT bắt buộc, tên bé tuỳ chọn; T1: có bước chọn loài, cân nặng, ngày giờ, địa chỉ |
-| FR-M4-02 | Từ chối gửi form khi thiếu trường bắt buộc | T1, T2 | Must | Bỏ trống SĐT → không gửi được; thông báo lỗi nêu đúng tên trường "Số điện thoại" (1 thông báo) |
-| FR-M4-03 | Kiểm tra định dạng số điện thoại | T1, T2 | Must | Chuỗi không phải số bị từ chối; số dưới 9 chữ số bị từ chối hoặc cảnh báo; cả 2 mẫu lỗi đều không gửi được form |
+| FR-M4-01 | Cung cấp form giữ chỗ với trường liên hệ bắt buộc và tuỳ chọn | T1, T2, T3 | Must | T2: SĐT bắt buộc, tên bé tuỳ chọn; T1: có bước chọn loài, cân nặng, ngày giờ, địa chỉ; T3: drawer "Book Now" chỉ có 1 trường bắt buộc (`Mobile number`) + 1 trường tuỳ chọn (chọn quốc gia), không có trường thú cưng |
+| FR-M4-02 | Từ chối gửi form khi thiếu trường bắt buộc | T1, T2, T3 | Must | T1, T2: bỏ trống SĐT → không gửi được; thông báo lỗi nêu đúng tên trường "Số điện thoại" (1 thông báo). T3: bỏ trống `Mobile number` → nút `Login` bị khoá (`disabled`), không gửi được yêu cầu |
+| FR-M4-03 | Kiểm tra định dạng số điện thoại | T1, T2, T3 | Must | T1, T2: chuỗi không phải số bị từ chối; số dưới 9 chữ số bị từ chối hoặc cảnh báo; cả 2 mẫu lỗi đều không gửi được form. T3: chuỗi chứa chữ cái bị khoá nút `Login`; chuỗi chỉ gồm chữ số được chấp nhận (không kiểm tra độ dài tối thiểu) |
 | FR-M4-04 | Cho phép chọn ngày mong muốn trong tương lai | T1, T2 | Must | T1: bước "Lịch hẹn" hiển thị **7 ngày cố định** (từ hôm nay trở đi) kèm **8 khung giờ** 08:30–17:00; ngày trong quá khứ không chọn được. T2: ô ngày có `min` = hôm nay, kèm **2 mốc cố định** nhãn "Hôm nay" và "Ngày mai" cùng 4 ngày cuối tuần/tuần kế và lựa chọn "Ngày khác" |
 | FR-M4-05 | Chặn ngày mong muốn nằm quá xa trong tương lai | T2 | Should | Ngày quá 30 ngày **được nhập vào ô ngày** nhưng phải được giới hạn hoặc giải thích theo lịch mở cửa (T2 chỉ chặn ngày quá khứ ở tầng input, không đặt `max`) |
-| FR-M4-06 | Chọn được loài và cân nặng trước khi xem giá | T1 | Must | Wizard bắt buộc qua 2 bước loài và cân nặng; 0 cách bỏ qua (nút "Tiếp tục" bị khoá khi chưa chọn) |
-| FR-M4-07 | Chọn được dịch vụ trước khi xác nhận | T1, T2 | Must | Mỗi hệ thống có 1 bước chọn dịch vụ rõ ràng; 0 dịch vụ nào bị ẩn khi bấm "Tiếp tục" |
-| FR-M4-08 | Cho phép quay lại bước trước mà không mất lựa chọn | T1, T2 | Must | Quay lại từ bước 3 giữ nguyên loài và cân nặng; nút quay lại hoạt động |
+| FR-M4-06 | Chọn được loài và cân nặng trước khi xem giá | T1, T2 | Must | T1, T2: wizard bắt buộc qua 2 bước loài và cân nặng (T2 theo máy trạng thái `S0 → S1 → S2`, xem §8.1); 0 cách bỏ qua (nút "Tiếp tục" bị khoá khi chưa chọn) |
+| FR-M4-07 | Chọn được dịch vụ trước khi xác nhận | T1, T2, T3 | Must | T1, T2: mỗi hệ thống có 1 bước chọn dịch vụ rõ ràng; 0 dịch vụ nào bị ẩn khi bấm "Tiếp tục". T3: danh mục 41 dịch vụ trong 5 nhóm (`EMERGENCY APPOINTMENT` 2, `Dog (bath included)` 16, `Cat (bath included)` 4, `QUICK SERVICE` 12, `ADD ON TO GROOM` 7), mỗi dịch vụ hiện đủ tên + giá + thời lượng; 0 dịch vụ nào bị ẩn |
+| FR-M4-08 | Cho phép quay lại bước trước mà không mất lựa chọn | T1, T2, T3 | Must | T1, T2: quay lại từ bước 3 giữ nguyên loài và cân nặng; nút quay lại hoạt động. T3: mỗi nhóm trong danh mục 41 dịch vụ mở/thu gọn độc lập, đóng 1 nhóm không ảnh hưởng nhóm khác |
 | FR-M4-09 | Hiển thị tóm tắt lựa chọn trước khi gửi | T2 | Should | Tóm tắt hiển thị đủ 4 trường: loài, bậc cân nặng, dịch vụ, giá |
 | FR-M4-10 | Yêu cầu sự đồng ý về việc liên hệ lại trước khi gửi | T2 | Must | Có 1 thông báo đồng ý liên hệ qua điện thoại/Zalo và 1 điều khoản che khuất tùy chọn |
 | FR-M4-11 | Cho phép đặt lịch ngoài giờ mở cửa | T3 | Should | Nút "Book Now" hoạt động 24/7, kể cả ngoài giờ mở cửa |
 | FR-M4-12 | Không yêu cầu tạo tài khoản để đặt lịch | T1, T2, T3 | Must | 0 bước đăng ký/đăng nhập trong toàn bộ luồng đặt lịch (kiểm tra từ trang chủ đến màn xác nhận) |
+| FR-M4-13 | Chỉ cho khách đã có hồ sơ đặt lịch trực tuyến, khách mới được hướng dẫn tiếp nhận | T3 | Must | T3: nhập SĐT không thuộc hồ sơ cũ → báo "Sorry, it is only available for existing client."; trang chủ có banner hướng khách mới tới form tiếp nhận trên Facebook page hoặc nhắn tin `609-816-7755` |
 
 ### 5.5 M5 – Vòng đời lịch hẹn và chính sách
 
@@ -259,9 +264,9 @@ Không có vai trò nhân viên hay quản trị trên giao diện công khai c�
 | FR-M5-01 | Nêu rõ quy trình từ đặt lịch đến nhận thú cưng | T1, T2, T3 | Must | Có mô tả 4 bước (T1) hoặc 4 bước (T2) khớp thực tế |
 | FR-M5-02 | Công bố thời gian xác nhận lịch | T1, T2 | Must | T1: "xác nhận trong 5 phút qua Zalo"; T2: "spa sẽ gọi xác nhận khung giờ" — thời gian nêu rõ |
 | FR-M5-03 | Nêu rõ có thể đổi hoặc hủy lịch và điều kiện | T1 | Must | Mục FAQ "Có thể đổi/huỷ lịch không?" trả lời có ≥ 2 điều kiện cụ thể về thời gian và phí |
-| FR-M5-04 | Nêu rõ chính sách hủy và hoàn tiền | T2, T3 | Must | Có nội dung cho cả 3 mục: hủy, đổi, hoàn cọc; không chỉ nêu "liên hệ tiệm" |
+| FR-M5-04 | Nêu rõ chính sách hủy và hoàn tiền | T1, T2, T3 | Must | T2, T3: có nội dung cho cả 3 mục: hủy, đổi, hoàn cọc; không chỉ nêu "liên hệ tiệm". T1: mục "Đổi/huỷ lịch" nêu điều kiện thời gian cụ thể (báo trước 4 giờ) và hệ quả tài chính (phụ thu 50% cho lịch tại nhà nếu hủy trong 4 giờ cuối) |
 | FR-M5-05 | Nêu rõ thời gian nên đặt trước cho từng loại dịch vụ | T2 | Should | Có câu "nên đặt lịch trước ít nhất 2–4 giờ" theo dịch vụ |
-| FR-M5-06 | Thông báo khi bị từ chối lịch do ngoài giờ làm việc | T3 | Must | Chọn khung giờ ngoài giờ mở cửa bị từ chối kèm ≥ 1 câu giải thích lý do |
+| FR-M5-06 | Thông báo khi bị từ chối lịch do ngoài giờ làm việc | T3 | Must | Chọn khung giờ ngoài giờ mở cửa bị từ chối kèm ≥ 1 câu giải thích lý do. **Điều kiện tiên quyết**: bước chọn khung giờ nằm **sau** cổng tra cứu khách đã có hồ sơ (`FR-M4-13`), nên chỉ kiểm chứng được khi đã đăng nhập bằng SĐT thuộc hồ sơ khách đã có. Trên luồng công khai (trước bước `Login`) T3 **không có** màn chọn khung giờ (xem §3.3 và §8.2b) |
 | FR-M5-07 | Hiển thị trạng thái hiện tại của tiệm (đang mở/đã đóng) | T3 | Must | Trang hiển thị 1 trạng thái "Open"/"Closed" kèm khung giờ mở cửa đầy đủ |
 
 ### 5.6 M6 – Dịch vụ tận nhà và phụ thu di chuyển
@@ -281,10 +286,11 @@ Không có vai trò nhân viên hay quản trị trên giao diện công khai c�
 |---|---|---|---|---|
 | FR-M7-01 | Có chức năng tìm kiếm nội dung | T2 | Must | Nhập 1 từ khoá ra ≥ 1 kết quả lọc theo từ khoá |
 | FR-M7-02 | Tìm kiếm không phân biệt hoa thường và xử lý từ khoá rỗng | T2 | Must | 2 chuỗi "SPA" và "spa" cho cùng tập kết quả; từ khoá rỗng không gây lỗi mà hiện ≥ 1 thông báo hướng dẫn |
-| FR-M7-03 | Chuyển đổi ngôn ngữ và giữ ngữ cảnh trang | T1, T2 | Should | Chuyển sang tiếng Anh vẫn ở trang hiện tại; 0 chuỗi tiếng Việt còn sót lại ở nội dung chính |
+| FR-M7-03 | Chuyển đổi ngôn ngữ và giữ ngữ cảnh trang | T1, T2 | Should | Chuyển sang tiếng Anh vẫn ở trang hiện tại; 0 chuỗi tiếng Việt còn sót lại ở nội dung chính. **T3 không thuộc phạm vi**: T3 chỉ có tiếng Anh, không có điều khiển chuyển ngữ (xem §3.4 và `UC-07` N3) |
 | FR-M7-04 | Cung cấp kênh liên hệ đa dạng (điện thoại, email, Zalo/chat) | T1, T2, T3 | Must | Ít nhất 2 kênh liên hệ hoạt động; liên kết Zalo/messenger mở đúng ứng dụng |
 | FR-M7-05 | Trang tìm bé thương và bảo hành không chặn người dùng | T2 | Could | 2 trang mở được (HTTP 200), 0 yêu cầu đăng nhập |
 | FR-M7-06 | Nội dung FAQ dạng accordion mở/đóng được | T1 | Should | Mỗi mục mở độc lập; ≥ 2 mục mở cùng lúc mà không đóng lẫn nhau; biểu tượng đổi theo trạng thái |
+| FR-M7-07 | Hiển thị nội dung bằng một ngôn ngữ duy nhất khi hệ thống không hỗ trợ đa ngôn ngữ | T3 | Should | T3: toàn bộ nội dung hiển thị bằng tiếng Anh; 0 điều khiển chuyển ngôn ngữ trên trang (không có nút, link hay select đổi ngữ) |
 
 ### 5.8 M2/M3/M4/M5 bổ sung theo hệ thống (nhóm Mạnh)
 
@@ -300,7 +306,7 @@ Các quy tắc dưới đây là **quy tắc của hệ thống đích** (đọc
 |---|---|---|---|
 | BR-01 | Bậc cân nặng chó của T1: `<3`, `3–5`, `5–10`, `10–15`, `15–20`, `20–25`, `25–30` kg; mèo: `≤3`, `3–5`, `5–10`, `10–15`, `15–20`, `20–25`, `25–30` kg | T1 | FR-M3-01, FR-M3-02 |
 | BR-02 | Bậc cân nặng của T2: `<3`, `>3–6`, `>6–10`, `>10–20`, `>20–30`, `>30–40`, `>40` kg | T2 | FR-M3-01, FR-M3-02 |
-| BR-03 | Ngưỡng cân nặng của T3 tính theo lbs và **khác nhau theo từng dòng sản phẩm**: `Dog Bath` dùng `0–20`, `20–50`, `over 50` (chia theo độ dài lông: short hair / medium-long hair); `Dog Bath and tidy up` dùng `0–20`, `21–40`, `41–60`, `61–79`, `79+`; `Dog Full Groom` dùng `0–20`, `21–30`, `31–40`, `41–60`, `61–78`, `79–90`, `91–100+`; `Cat Bath` dùng `0–20`, `21–40`, `41–60`, `61–79`, `79+`. **T3 không có ô nhập cân nặng** — bậc cân nặng lbs được mã hoá trong tên dịch vụ; khách chọn *dịch vụ* đúng bậc | T3 | FR-M3-01, FR-M3-02 |
+| BR-03 | Ngưỡng cân nặng của T3 tính theo lbs và **khác nhau theo từng dòng sản phẩm**, **chỉ áp dụng cho nhóm `Dog (bath included)`**: `Dog Bath` dùng `0–20`, `20–50`, `over 50` (chia theo độ dài lông: short hair / medium-long hair); `Dog Bath and tidy up` dùng `0–20`, `21–40`, `41–60`, `61–79`, `79+`; `Dog Full Groom` dùng `0–20`, `21–30`, `31–40`, `41–60`, `61–78`, `79–90`, `91–100+`. **Nhóm `Cat (bath included)` của T3 KHÔNG chia bậc cân nặng** — 4 dịch vụ mèo có giá cố định: `Cat Bath` $60, `Cat Bath and trim` $80, `Cat Bath and shave down, or lion cut` $110, `Cat bath and full body hair cut` $125. **T3 không có ô nhập cân nặng** — bậc cân nặng lbs được mã hoá trong tên dịch vụ; khách chọn *dịch vụ* đúng bậc | T3 | FR-M3-01, FR-M3-02 |
 | BR-04 | Phụ thu di chuyển T1 = `max(0, km − 5) × 8.000₫`; 5 km đầu miễn phí | T1 | FR-M6-02, FR-M6-05 |
 | BR-05 | Dải phụ thu di chuyển T1: 0–5 km miễn phí; 5–10 km: 40.000–80.000₫; 10–15 km: 80.000–120.000₫; trên 15 km: liên hệ báo giá riêng | T1 | FR-M6-05, FR-M6-06 |
 | BR-06 | Phụ thu tại nhà cố định của T1: Tắm +50.000₫; Cạo +80.000₫; Combo Tắm+Cạo +100.000₫; các gói khác không hỗ trợ tại nhà | T1 | FR-M6-03, FR-M6-04 |
@@ -325,7 +331,7 @@ Bảng này là đầu vào trực tiếp cho phân vùng tương đương và p
 
 | Trường | HĐ | Kiểu | Bắt buộc | Min | Max | Định dạng, ghi chú |
 |---|---|---|---|---|---|---|
-| Số điện thoại / Zalo | T2 | Chuỗi số | Có | 10 chữ số | 15 chữ số | Bắt đầu bằng 0 (số Việt Nam); placeholder `0xxx xxx xxx` |
+| Số điện thoại / Zalo | T2, T3 | Chuỗi số | Có | 10 chữ số (T2) | 15 chữ số (T2) | Bắt đầu bằng 0 (số Việt Nam); placeholder `0xxx xxx xxx`. **T3**: placeholder `Mobile number`, chỉ chứa chữ số, không kiểm tra độ dài tối thiểu |
 | Tên bé | T1, T2 | Chuỗi | Không (T2) | 1 ký tự | 50 ký tự | T2 có placeholder "Vd: Mochi" |
 | Ngày mong muốn | T1, T2 | Ngày | Có | Hôm nay | +30 ngày (T2) | Định dạng ngày/tháng; T2 có 5 nút ngày nhanh + ô "Ngày khác" |
 | Loài thú cưng | T1, T2 | Liệt kê | Có | | | Chó hoặc Mèo |
@@ -365,6 +371,19 @@ Trạng thái: `W0 Mở modal` → `W1 Đã chọn loài` → `W2 Đã chọn g�
 | W2 | — | — | → W1 | ✗ |
 | W3..W6 | — | — | → bước trước | → W7 |
 | W7 (terminal) | ✗ | ✗ | ✗ | ✗ |
+
+### 8.2b Luồng đặt lịch (T3) — **không phải wizard**
+
+T3 là nền tảng SaaS Groomore: luồng đặt lịch là **1 màn hình tra cứu khách hàng**, không phải chuỗi bước. Trạng thái: `P0 Chưa mở drawer` → `P1 Đã mở drawer` → `P2 Đã nhập SĐT hợp lệ` → `P3 Đã gửi` / `P4 Bị từ chối`.
+
+| Từ | Mở drawer | Nhập SĐT | Bấm `Login` |
+|---|---|---|---|
+| P0 | → P1 | ✗ | ✗ |
+| P1 | — | → P2 | ✗ (nút `Login` bị khoá khi SĐT rỗng hoặc chứa chữ cái) |
+| P2 | — | — | → P3 (SĐT thuộc hồ sơ cũ) hoặc → P4 (báo "Sorry, it is only available for existing client.") |
+| P3, P4 (terminal) | ✗ | ✗ | ✗ |
+
+T3 **không** có các bước chọn loài, cân nặng, dịch vụ, ngày, khung giờ; cũng không có nút "Tiếp tục" hay quay lại. Vì vậy các ca kiểm thử chuyển trạng thái (`ST`) của T3 chỉ áp dụng cho 2 trạng thái khoá nút — xem `FR-M4-02`, `FR-M4-03`.
 
 ### 8.3 Chính sách hủy / đổi lịch — bảng quyết định kiểm thử
 

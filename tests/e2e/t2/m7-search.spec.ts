@@ -1,33 +1,71 @@
-import { test, expect } from '@playwright/test';
+import { test, expect, type Page } from '@playwright/test';
 
 /**
  * FR-M7-01, FR-M7-02 — T2 Mật Pet Family
- * Tìm kiếm nội dung qua overlay "Tìm kiếm" (button[aria-label="Tìm kiếm"]).
- *
- * ADR-11: chỉ GET trang công khai, không đăng nhập, không gửi form.
- * Bằng chứng: `reports/raw/probe-t2-spec-dom.json` (mục `search`),
- * `reports/raw/probe-t2-search-all.json`.
+ * Tìm kiếm nội dung: lọc theo từ khoá, không phân biệt hoa thường, từ khoá rỗng.
+ * ADR-11: chỉ đọc, không điều hướng tới kết quả và không tạo dữ liệu.
  */
 
-const OVERLAY_INPUT = 'input[placeholder*="Tìm giống chó/mèo" i]';
+const O_TIM_KIEM = 'input[aria-label="Tìm kiếm"]';
 
-test.describe('T2 Mật Pet — M7 Tìm kiếm', () => {
-  test('TC-T2-M7-004: Tìm kiếm với từ khoá không tồn tại trả về thông báo rõ ràng', async ({
+/** Mở ô tìm kiếm và nhập từ khoá, trả về danh sách tiêu đề kết quả. */
+async function timKiem(page: Page, tuKhoa: string): Promise<string[]> {
+  await page.goto('/spa', { waitUntil: 'load' });
+  await page.getByRole('button', { name: 'Tìm kiếm' }).last().click();
+
+  const o = page.locator(O_TIM_KIEM);
+  await o.waitFor({ state: 'visible' });
+  await o.fill(tuKhoa);
+  // Đợi kết quả render (site dùng bộ lọc phía client).
+  await page.waitForTimeout(1_200);
+
+  return page.evaluate(() => {
+    const the = Array.from(document.querySelectorAll('h3, h4, a[href*="/blog"], [class*="result"]'));
+    return the.map((e) => e.textContent?.trim() ?? '').filter((t) => t.length > 0);
+  });
+}
+
+test.describe('T2 Mật Pet — M7 Tìm kiếm nội dung', () => {
+  test('TC-T2-M7-001: nhập từ khoá ra danh sách kết quả lọc theo từ khoá', async ({ page }) => {
+    await page.goto('/spa', { waitUntil: 'load' });
+    await page.getByRole('button', { name: 'Tìm kiếm' }).last().click();
+
+    const o = page.locator(O_TIM_KIEM);
+    await o.waitFor({ state: 'visible' });
+    await o.fill('spa');
+    await page.waitForTimeout(1_200);
+
+    // Có kết quả khớp từ khoá.
+    const body = await page.locator('body').innerText();
+    expect(body.toLowerCase()).toContain('spa');
+    // Ô tìm kiếm giữ nguyên giá trị đã nhập.
+    await expect(o).toHaveValue('spa');
+  });
+
+  test('TC-T2-M7-002: tìm kiếm không phân biệt hoa thường — "SPA" và "spa" cho cùng tập kết quả', async ({
     page,
   }) => {
+    const ketQuaThuong = await timKiem(page, 'spa');
+    const ketQuaHoa = await timKiem(page, 'SPA');
+
+    expect(ketQuaThuong.length).toBeGreaterThan(0);
+    expect(ketQuaHoa).toEqual(ketQuaThuong);
+  });
+
+  test('TC-T2-M7-003: tìm kiếm với từ khoá rỗng không gây lỗi', async ({ page }) => {
+    const loi: string[] = [];
+    page.on('pageerror', (e) => loi.push(e.message));
+
     await page.goto('/spa', { waitUntil: 'load' });
-    await page.waitForTimeout(1200);
+    await page.getByRole('button', { name: 'Tìm kiếm' }).last().click();
 
-    // Mở overlay tìm kiếm.
-    await page.locator('button[aria-label="Tìm kiếm"]').first().click();
-    await page.waitForSelector(OVERLAY_INPUT, { timeout: 10_000 });
+    const o = page.locator(O_TIM_KIEM);
+    await o.waitFor({ state: 'visible' });
+    await o.fill('');
+    await page.waitForTimeout(800);
 
-    await page.locator(OVERLAY_INPUT).fill('zzzkhongcothat123');
-    await page.waitForTimeout(1200);
-
-    const noiDung = await page.locator('body').innerText();
-    expect(noiDung, 'Tìm kiếm không có kết quả phải có thông báo rõ ràng').toMatch(
-      /Không thấy kết quả|không tìm thấy|không có kết quả/i,
-    );
+    expect(loi).toEqual([]);
+    await expect(o).toBeVisible();
+    await expect(page.locator('body')).toBeVisible();
   });
 });

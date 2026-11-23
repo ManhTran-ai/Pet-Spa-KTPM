@@ -51,7 +51,29 @@ test.describe('T3 Pretty Paws — M1/M5 Truy cập, liên hệ và trạng thái
     await expect(page).toHaveTitle(/Pretty Paws/i);
   });
 
-  test('TC-T3-M1-003: Trang hiển thị đủ địa chỉ, điện thoại, email và giờ mở cửa', async ({ page }) => {
+  test('TC-T3-M1-002: mọi liên kết điều hướng đều trả HTTP 200', async ({ page, request }) => {
+    await page.goto('/', { waitUntil: 'load' });
+    await noiDungTrang(page);
+
+    const hrefs = await page
+      .locator('a[href]')
+      .evaluateAll((els) => [...new Set(els.map((e) => e.getAttribute('href') || '').filter(Boolean))]);
+
+    // T3 là trang một trang: không có liên kết nội bộ dạng đường dẫn.
+    // Mọi liên kết đều là kênh liên hệ hoặc liên kết ra ngoài.
+    expect(hrefs.length).toBeGreaterThan(0);
+
+    const errors: string[] = [];
+    for (const href of hrefs) {
+      // Bỏ qua liên kết gọi ứng dụng khác (sms:, mailto:, tel:).
+      if (/^(sms:|mailto:|tel:)/i.test(href)) continue;
+      const response = await request.get(href, { maxRedirects: 5, timeout: 30_000 });
+      if (response.status() !== 200) errors.push(`${href} → HTTP ${response.status()}`);
+    }
+    expect(errors, errors.join('; ')).toEqual([]);
+  });
+
+  test('TC-T3-M1-003: trang hiển thị đủ điện thoại, email và địa chỉ', async ({ page }) => {
     await page.goto('/', { waitUntil: 'load' });
     const body = await noiDungTrang(page);
 
@@ -62,30 +84,16 @@ test.describe('T3 Pretty Paws — M1/M5 Truy cập, liên hệ và trạng thái
 
   test('TC-T3-M5-005: Trang hiển thị trạng thái Open/Closed và giờ mở cửa', async ({ page }) => {
     await page.goto('/', { waitUntil: 'load' });
-    // Chờ trạng thái mở/đóng render xong (xem ghi chú ở `choTrangThaiXuatHien`).
-    await choTrangThaiXuatHien(page);
-    const body = await noiDungTrang(page);
+    const drawer = page.locator('.MuiDrawer-paper');
+    await drawer.waitFor({ state: 'visible', timeout: 20_000 });
 
-    /**
-     * Ghi chú (rà soát 22/11 — Tài):
-     * Trạng thái mở/đóng của T3 được render trong Drawer với CSS
-     * `text-transform: uppercase` → `innerText` trả về **"CLOSED"** (in hoa).
-     * Regex cũ `/\b(Open|Closed)\b/` **phân biệt hoa thường** nên không khớp.
-     * Đây là lỗi của **test**, không phải lỗi site — site hiển thị đúng trạng thái.
-     * → Dùng regex không phân biệt hoa thường. Không hạ tiêu chí.
-     */
-    expect(body, 'T3 không hiển thị trạng thái Open/Closed').toMatch(/\b(open|closed)\b/i);
+    // Trạng thái mở/đóng do API giờ mở cửa quyết định nên render sau khung giờ;
+    // chờ chính thẻ trạng thái xuất hiện thay vì đọc text một lần.
+    const trangThai = drawer.locator('span.text-bold').filter({ hasText: /^(Open|Closed)$/ });
+    await expect(trangThai.first()).toBeVisible({ timeout: 20_000 });
 
-    /**
-     * Giờ mở cửa: T3 render giờ trong Drawer **mỗi phần tử một dòng**, nên
-     * `innerText` có thể cho ra "8:00 AM\n-\n8:00 PM" chứ không phải
-     * "8:00 AM - 8:00 PM". Vì vậy chuẩn hoá khoảng trắng (kể cả xuống dòng)
-     * trước khi so khớp — và dùng `\s*` quanh dấu gạch nối.
-     */
-    const bodyMotDong = body.replace(/\s+/g, ' ');
-    expect(bodyMotDong, 'T3 không hiển thị giờ mở cửa dạng AM - PM').toMatch(
-      /\d{1,2}:\d{2}\s*AM\s*-\s*\d{1,2}:\d{2}\s*PM/i,
-    );
+    const body = await drawer.innerText();
+    expect(body).toMatch(/\d{1,2}:\d{2}\s*AM\s*-\s*\d{1,2}:\d{2}\s*PM/);
   });
 
   test('TC-T3-M4-009: Luồng đặt lịch không yêu cầu đăng nhập hoặc tạo tài khoản', async ({ page }) => {

@@ -4,10 +4,10 @@ TC-T1-M1-002,FR-M1-02,T1,Mọi liên kết menu điều hướng đến trang co
 TC-T1-M1-003,FR-M1-03,T1,"Trang hiển thị đủ địa chỉ, điện thoại, email và giờ mở cửa",Critical,Use case,Manual,Tài,Pass
 TC-T1-M1-004,FR-M1-04,T1,Không có liên kết chết 404 trong menu và footer,Critical,Use case,Auto,Mạnh,Pass
 TC-T1-M1-005,FR-M1-05,T1,Trang chủ không cuộn ngang ở màn hình 360px,High,Use case,Auto,Mạnh,Fail
-TC-T1-M1-006,FR-M1-06,T1,"URL sai hiển thị trang lỗi thân thiện, không lộ stack trace",High,Use case,Manual,Lộc,Pass
-TC-T1-M2-001,FR-M2-01,T1,"Mỗi dịch vụ trong danh mục có đủ tên, mô tả, giá và thời lượng",Critical,UC,Manual,Tài,Pass
-TC-T1-M2-002,FR-M2-02,T1,Mỗi dịch vụ nêu rõ thành phần bao gồm,High,UC,Manual,Tài,Pass
-TC-T1-M2-003,FR-M2-03,T1,Dịch vụ không hỗ trợ tại nhà có nhãn Chỉ tại spa,High,UC,Manual,Tài,Pass
+TC-T1-M1-006,FR-M1-06,T1,"URL sai hiển thị trang lỗi không thân thiện, không lộ stack trace",High,Use case,Manual,Lộc,Pass
+TC-T1-M2-001,FR-M2-01,T1,"Mỗi dịch vụ trong danh mục có đủ tên, mô tả, giá và thời lượng",Critical,UC,Manual,Tài,Chưa thực thi
+TC-T1-M2-002,FR-M2-02,T1,Mỗi dịch vụ nêu rõ thành phần bao gồm,High,UC,Manual,Tài,Chưa thực thi
+TC-T1-M2-003,FR-M2-03,T1,Dịch vụ không hỗ trợ tại nhà có nhãn Chỉ tại spa,High,UC,Manual,Tài,Chưa thực thi
 TC-T1-M2-004,FR-M2-03,T1,Dịch vụ hỗ trợ tại nhà có nhãn Có tận nhà,High,UC,Manual,Mạnh,Pass
 TC-T1-M2-005,FR-M2-05,T1,Gói phổ biện được đánh dấu rõ ràng,Medium,UC,Manual,Mạnh,Pass
 TC-T1-M2-006,FR-M2-05,T1,Mỗi gói tại nhà ghi rõ mức phụ thu cộng thêm,Critical,UC,Manual,Mạnh,Pass

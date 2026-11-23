@@ -41,45 +41,23 @@ async function main() {
     source: 'docs/rtm.csv, docs/requirements.csv',
   });
 
-  // EC-2 đo đúng theo định nghĩa: "100% test case Critical/High đã thực thi,
-  // tỷ lệ Pass ≥ 95%". Cần `Priority` của test case nên đọc thêm từ
-  // `docs/testcases/*.csv` (nguồn sự thật về priority) — `execution-log.csv`
-  // không mang cột này.
-  const testcasePriority = new Map();
-  for (const file of ['t1.csv', 't2.csv', 't3.csv', 'nfr.csv']) {
-    const rows = await readCsv(path.join(DOCS_DIR, 'testcases', file));
-    for (const row of rows) {
-      if (row.TC_ID) testcasePriority.set(row.TC_ID, row.Priority ?? '');
-    }
-  }
-
+  // Test Plan §5.2: "100% test case ưu tiên Critical và High đã thực thi; tỷ lệ Pass ≥ 95%".
+  // Tỷ lệ Pass chỉ tính trên tập Critical/High, không tính trên toàn bộ ca đã chạy.
   const executed = execution.filter((e) => e.Result && e.Result !== 'Chưa thực thi');
-  const passCount = executed.filter((e) => e.Result === 'Pass').length;
-  const overallRate = executed.length === 0 ? 0 : (passCount / executed.length) * 100;
-
-  const chTotal = [...testcasePriority.values()].filter((p) => p === 'Critical' || p === 'High').length;
-  const chExecuted = executed.filter((e) => {
-    const p = testcasePriority.get(e.TC_ID);
-    return p === 'Critical' || p === 'High';
-  });
+  const criticalHigh = execution.filter((e) => ['Critical', 'High'].includes((e.Priority ?? '').trim()));
+  const chExecuted = criticalHigh.filter((e) => e.Result && e.Result !== 'Chưa thực thi');
   const chPass = chExecuted.filter((e) => e.Result === 'Pass').length;
-  const chRate = chExecuted.length === 0 ? 0 : (chPass / chExecuted.length) * 100;
-  const chCovered = chTotal === 0 ? 0 : (chExecuted.length / chTotal) * 100;
-
+  const chPassRate = chExecuted.length === 0 ? 0 : (chPass / chExecuted.length) * 100;
+  const chCoverage = criticalHigh.length === 0 ? 0 : (chExecuted.length / criticalHigh.length) * 100;
   criteria.push({
     id: 'EC-2',
     name: '100% test case Critical/High đã thực thi, tỷ lệ Pass ≥ 95%',
     measured:
-      execution.length === 0
+      criticalHigh.length === 0
         ? 'chưa có nhật ký thực thi'
-        : `Critical/High đã thực thi ${chExecuted.length}/${chTotal} (${chCovered.toFixed(1)}%), ` +
-          `Pass ${chRate.toFixed(1)}% trong nhóm này; toàn bộ ${executed.length} ca đã chạy, Pass ${overallRate.toFixed(1)}%`,
-    passed:
-      execution.length > 0 &&
-      chTotal > 0 &&
-      chExecuted.length === chTotal &&
-      chRate >= 95,
-    source: 'reports/execution-log.csv, docs/testcases/*.csv',
+        : `Critical/High: ${chExecuted.length}/${criticalHigh.length} đã thực thi (${chCoverage.toFixed(1)}%), Pass ${chPassRate.toFixed(1)}% · toàn bộ ca đã chạy: ${executed.length}`,
+    passed: criticalHigh.length > 0 && chExecuted.length === criticalHigh.length && chPassRate >= 95,
+    source: 'reports/execution-log.csv',
   });
 
   // `docs/defects/defects.csv` dùng tên cột `Severity`/`Status` (viết hoa) — đọc
@@ -97,23 +75,25 @@ async function main() {
     source: 'docs/defects/defects.csv',
   });
 
-  // EC-4 đo đúng theo định nghĩa: "Mỗi hệ thống có ít nhất 1 bộ E2E tự động
-  // chạy được và xanh" → phải có ít nhất 1 ca **Pass** cho mỗi hệ thống T1/T2/T3.
-  const autoPass = execution.filter((e) => e.Type === 'Auto' && e.Result === 'Pass');
-  const autoPassSystems = new Set(autoPass.map((e) => e.System));
-  const TARGET_SYSTEMS = ['T1', 'T2', 'T3'];
-  const systemsWithoutGreenSuite = TARGET_SYSTEMS.filter((s) => {
-    // 'ALL' = test case đo trên cả 3 site, vẫn là bằng chứng E2E cho site đó.
-    return !autoPassSystems.has(s) && !autoPassSystems.has('ALL');
-  });
+  // EC-4 đòi "Mỗi hệ thống có ít nhất 1 bộ E2E tự động chạy được và xanh" —
+  // phải kiểm theo từng hệ thống, không được chỉ nhìn tổng số ca Pass toàn cục.
+  const AUTO_SYSTEMS = ['T1', 'T2', 'T3'];
+  const autoPassBySystem = new Map();
+  for (const sys of AUTO_SYSTEMS) {
+    autoPassBySystem.set(
+      sys,
+      execution.filter((e) => e.Type === 'Auto' && e.Result === 'Pass' && e.System === sys).length,
+    );
+  }
+  const autoSuites = execution.filter((e) => e.Type === 'Auto' && e.Result === 'Pass').length;
+  const systemsWithoutAuto = AUTO_SYSTEMS.filter((s) => (autoPassBySystem.get(s) ?? 0) === 0);
   criteria.push({
     id: 'EC-4',
     name: 'Mỗi hệ thống có ít nhất 1 bộ E2E tự động chạy được và xanh',
     measured:
-      `${autoPass.length} test case tự động Pass; ` +
-      `${TARGET_SYSTEMS.length - systemsWithoutGreenSuite.length}/${TARGET_SYSTEMS.length} hệ thống có bộ E2E xanh` +
-      (systemsWithoutGreenSuite.length > 0 ? ` (thiếu: ${systemsWithoutGreenSuite.join(', ')})` : ''),
-    passed: autoPass.length > 0 && systemsWithoutGreenSuite.length === 0,
+      `${autoSuites} test case tự động Pass · theo hệ thống: ` +
+      AUTO_SYSTEMS.map((s) => `${s}=${autoPassBySystem.get(s) ?? 0}`).join(', '),
+    passed: autoSuites > 0 && systemsWithoutAuto.length === 0,
     source: 'reports/execution-log.csv, tests/e2e/',
   });
 
@@ -128,25 +108,62 @@ async function main() {
   });
 
   const axeCritical = axe.filter((a) => a.Severity === 'critical').length;
-  const missingHeaders = security.filter((s) => s.Present === 'No');
-  const systemsWithHeaders = new Set(security.filter((s) => s.Present === 'Yes').map((s) => s.System)).size;
+  // NFR-02 gồm 4 nhóm kiểm tra: header bảo mật · TLS · cookie phiên · rò rỉ khoá.
+  // Chỉ đếm "header bảo mật" trong nhóm header; các nhóm khác đo riêng.
+  const SECURITY_HEADER_NAMES = new Set([
+    'Strict-Transport-Security',
+    'X-Content-Type-Options',
+    'X-Frame-Options',
+    'Content-Security-Policy',
+    'Referrer-Policy',
+  ]);
+  const headerRows = security.filter((s) => SECURITY_HEADER_NAMES.has(s.Header));
+  const missingHeaders = headerRows.filter((s) => s.Present === 'No');
+  const systemsWithHeaders = new Set(headerRows.filter((s) => s.Present === 'Yes').map((s) => s.System)).size;
+  const tlsRows = security.filter((s) => s.Header === 'TLS');
+  const tlsMissing = tlsRows.filter((s) => s.Present === 'No');
+  const tlsOk = tlsRows.filter((s) => s.Present === 'Yes');
+  const leakRows = security.filter((s) => s.Header.startsWith('Rò rỉ'));
+  const leaks = leakRows.filter((s) => s.Present === 'Yes');
+  // Nhóm 4: cookie phiên — site nào để lộ cookie phiên (Present=Yes).
+  const cookieRows = security.filter((s) => s.Header === 'Cookie phiên');
+  const cookieLeaks = cookieRows.filter((s) => s.Present === 'Yes');
   criteria.push({
     id: 'EC-6',
     name: 'NFR-02 đạt: không có phát hiện bảo mật mức Critical/High',
     measured:
       `${axeCritical} phát hiện axe-core mức critical; ` +
-      `${missingHeaders.length}/${security.length} header bảo mật thiếu trên ${systemsWithHeaders} hệ thống đo được`,
-    passed: axe.length > 0 && axeCritical === 0 && missingHeaders.length === 0,
+      `thiếu ${missingHeaders.length}/${headerRows.length} header bảo mật (chỉ ${systemsWithHeaders}/3 site có ít nhất 1 header); ` +
+      `TLS hợp lệ ${tlsOk.length}/${tlsRows.length} site; ` +
+      `lộ cookie phiên ${cookieLeaks.length}/${cookieRows.length} site; ` +
+      `rò rỉ khoá API/chuỗi kết nối ${leaks.length}/${leakRows.length} site`,
+    passed:
+      axe.length > 0 &&
+      axeCritical === 0 &&
+      missingHeaders.length === 0 &&
+      tlsMissing.length === 0 &&
+      cookieLeaks.length === 0 &&
+      leaks.length === 0,
     source: 'reports/raw/axe-summary.csv, reports/raw/security-summary.csv',
   });
 
+  // EC-7 đòi "UAT không có phản hồi chặn". Chỉ đạt khi UAT ĐÃ THỰC THI và không ghi nhận
+  // phản hồi chặn — báo cáo có mặt nhưng chưa chạy thì vẫn là HUMAN-PENDING.
   const uatRaw = await readText(path.join(REPORTS_DIR, 'uat-report.md')).catch(() => '');
   const blockingUat = uatRaw.match(/phản hồi chặn[^\n]*/i) ?? [];
+  const uatExecuted = /Đã thực thi\s*\|\s*\*\*(\d+)\*\*/i.test(uatRaw);
+  const uatDone = uatExecuted && /Đã thực thi\s*\|\s*\*\*[1-9]\d*\*/i.test(uatRaw);
   criteria.push({
     id: 'EC-7',
     name: 'UAT không có phản hồi chặn',
-    measured: uatRaw ? (blockingUat.length > 0 ? blockingUat[0] : 'báo cáo UAT đã có, không ghi nhận phản hồi chặn') : 'HUMAN-PENDING',
-    passed: uatRaw.length > 0 && blockingUat.length === 0,
+    measured: uatRaw
+      ? blockingUat.length > 0
+        ? blockingUat[0]
+        : uatDone
+          ? 'UAT đã thực thi, không ghi nhận phản hồi chặn'
+          : 'HUMAN-PENDING — báo cáo UAT đã có nhưng chưa thực thi'
+      : 'HUMAN-PENDING — chưa có báo cáo UAT',
+    passed: uatDone && blockingUat.length === 0,
     source: 'reports/uat-report.md',
   });
 

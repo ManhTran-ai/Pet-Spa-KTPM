@@ -78,6 +78,14 @@ export default defineConfig({
       use: { ...devices['Desktop Chrome'], channel: 'chrome' },
     },
     {
+      // NFR-01 / NFR-05 — hiệu năng và độ tin cậy, chạy trên cả 3 site.
+      // Đặt timeout riêng vì mô phỏng 4G làm mỗi lần tải chậm hơn bình thường.
+      name: 'nfr',
+      testMatch: /nfr[\\/].*\.spec\.ts/,
+      timeout: 180_000,
+      use: { ...devices['Desktop Chrome'], channel: 'chrome' },
+    },
+    {
       // NFR-04 — tương thích trình duyệt: chạy cùng một ca kiểm thử trên
       // nhiều engine. `channel` chỉ áp dụng cho Chromium nên phải khai báo
       // riêng cho từng project, không đặt ở cấp `use` chung.

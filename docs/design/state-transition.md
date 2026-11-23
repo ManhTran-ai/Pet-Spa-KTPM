@@ -167,12 +167,14 @@ Trạng thái: `W0` mở modal → `W1` đã chọn loài → `W2` đã chọn g
 |---|---|---|
 | **B0** | Drawer đóng, nút "Book Now" hiện trên trang | `TC-T3-M4-005` |
 | **B1** | Drawer mở, đã nhập số điện thoại hợp lệ | `TC-T3-M4-001` |
-| **B2** | Drawer mở, SĐT sai định dạng → bị từ chối kèm lý do | `TC-T3-M4-003`, `TC-T3-M4-004` |
-| **B3** | Chọn khung giờ **trong** giờ mở cửa (08:00–20:00) → được chấp nhận | `TC-T3-M5-004` |
-| **B4** | Chọn khung giờ **ngoài** giờ mở cửa → bị từ chối kèm lý do | `TC-T3-M5-003` |
+| **B2** | Drawer mở, SĐT sai định dạng → nút `Login` bị khoá | `TC-T3-M4-003`, `TC-T3-M4-004`, `TC-T3-M4-010` |
+| **B3** | *(sau cổng khách hàng)* Chọn khung giờ **trong** giờ mở cửa (08:00–20:00) → được chấp nhận | `TC-T3-M5-004` |
+| **B4** | *(sau cổng khách hàng)* Chọn khung giờ **ngoài** giờ mở cửa → bị từ chối kèm lý do | `TC-T3-M5-003` |
 | **B5** | Quay lại giữ nguyên lựa chọn | `TC-T3-M4-007`, `TC-T3-M4-011` |
 
 **Điểm khác biệt quan trọng (từ RV-06, Inspection Ngày 3):** T3 **không có bước chọn ngày** và **không có ô nhập cân nặng** — trạng thái luồng của T3 ngắn hơn hẳn T1/T2. Nếu thiết kế test theo khuôn mẫu wizard T1/T2 thì sẽ sinh ra ca test cho một bước **không tồn tại**.
+
+> **Giới hạn kiểm thử của `B3`/`B4` (bổ sung 2026-11-19, CR `CHG-2026-11-19-02`).** Kiểm chứng sống ngày 19 cho thấy drawer "Book Now" của T3 chỉ có **1 ô nhập SĐT + 1 ô chọn quốc gia + 1 nút `Login`** — **không có màn chọn khung giờ** trong luồng công khai (DOM: `1 input[type=tel]`, `1 select`, `0` phần tử chứa `AM`/`PM`, `0` nút chọn ngày; API `/booking-api/v1/appointment` → HTTP 404). Bước chọn khung giờ chỉ xuất hiện **sau khi** SĐT được xác thực thuộc hồ sơ khách đã có, tức nằm sau cổng `FR-M4-13` và **vượt ra ngoài ranh giới kiểm thử không phá hại** (ADR-11). Vì vậy `TC-T3-M5-003` / `TC-T3-M5-004` được đánh dấu **Blocked** — không phải Pass, cũng không phải lỗi của site đích.
 
 ---
 

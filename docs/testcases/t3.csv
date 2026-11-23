@@ -1,45 +1,49 @@
 TC_ID,Requirement_ID,System,Title,Priority,Technique,Type,Owner,Status
 TC-T3-M1-001,FR-M1-01,T3,Trang chủ Pretty Paws trả HTTP 200 và hiển thị tiêu đề + điều hướng chính,Critical,UC,Auto,Mạnh,Pass
-TC-T3-M1-002,FR-M1-02,T3,Mọi liên kết menu điều hướng đến trang con trả HTTP 200,High,UC,Auto,Mạnh,Chưa thực thi
+TC-T3-M1-002,FR-M1-02,T3,Mọi liên kết menu điều hướng đến trang con trả HTTP 200,High,UC,Auto,Mạnh,Pass
 TC-T3-M1-003,FR-M1-03,T3,"Trang hiển thị đủ địa chỉ, điện thoại, email và giờ mở cửa",Critical,Use case,Manual,Mạnh,Pass
-TC-T3-M1-004,FR-M1-04,T3,Không có liên kết chết 404 trong menu và footer,Critical,Use case,Auto,Ngân,Chưa thực thi
-TC-T3-M1-005,FR-M1-05,T3,Trang chủ không cuộn ngang ở màn hình 360px,High,Use case,Auto,Ngân,Chưa thực thi
-TC-T3-M1-006,FR-M1-06,T3,"URL sai hiển thị trang lỗi thân thiện, không lộ stack trace",High,Use case,Manual,Lộc,Chưa thực thi
-TC-T3-M1-007,FR-M1-04,T3,Liên kết ngoài trỏ ra ngoài mở ở tab mới,Low,UC,Manual,Lộc,Chưa thực thi
-TC-T3-M2-001,FR-M2-01,T3,"Mỗi dịch vụ trong danh mục có đủ tên, mô tả, giá và thời lượng",Critical,UC,Manual,Mạnh,Chưa thực thi
-TC-T3-M2-002,FR-M2-02,T3,Mỗi dịch vụ nêu rõ thành phần bao gồm,High,UC,Manual,Mạnh,Chưa thực thi
-TC-T3-M2-007,FR-M2-01,T3,Số dịch vụ niêm yết khớp bảng giá mục 3 của SRS,High,UC,Manual,Ngân,Chưa thực thi
-TC-T3-M2-008,FR-M2-06,T3,Danh mục phân biệt dịch vụ cho chó và dịch vụ cho mèo,Medium,UC,Manual,Ngân,Chưa thực thi
-TC-T3-M2-009,FR-M2-07,T3,Không dịch vụ nào có nhãn tại nhà khi hệ thống không cung cấp dịch vụ tại nhà,Medium,UC,Manual,Lộc,Chưa thực thi
-TC-T3-M3-001,FR-M3-01,T3,Bảng giá có đủ cột cho mọi bậc cân nặng và mọi dịch vụ,Critical,UC,Manual,Mạnh,Chưa thực thi
-TC-T3-M3-002,FR-M3-02,T3,Tra bảng giá đúng cho dịch vụ đã chọn theo bậc lbs trong tên (ví dụ Dog Bath 20-50lbs),Critical,EP,Manual,Mạnh,Chưa thực thi
-TC-T3-M3-003,FR-M3-02,T3,T3 tách nhóm dịch vụ Chó và Mèo: cùng bậc lbs vẫn là dịch vụ khác nhau,Critical,DT,Manual,Mạnh,Chưa thực thi
-TC-T3-M3-004,FR-M3-05,T3,"Trang giá ghi rõ giá cuối xác nhận tại spa, giá hiển thị chỉ là dự kiến",Critical,UC,Manual,Mạnh,Chưa thực thi
-TC-T3-M3-005,FR-M3-06,T3,Bảng giá nêu rõ ngoại lệ phát sinh phí,Medium,UC,Manual,Mạnh,Chưa thực thi
-TC-T3-M3-006,FR-M3-02,T3,BVA ngưỡng 20lbs (Dog Bath): 19lbs thuộc bậc 0-20lbs,Critical,BVA,Manual,Ngân,Chưa thực thi
-TC-T3-M3-007,FR-M3-02,T3,BVA ngưỡng 20lbs (Dog Bath): 20lbs thuộc bậc 0-20lbs,Critical,BVA,Manual,Ngân,Chưa thực thi
-TC-T3-M3-008,FR-M3-02,T3,BVA ngưỡng 20lbs (Dog Bath): 21lbs thuộc bậc 20-50lbs,Critical,BVA,Manual,Ngân,Chưa thực thi
-TC-T3-M3-009,FR-M3-02,T3,BVA ngưỡng 61lbs (Dog Full Groom): 60lbs thuộc bậc 41-60lbs,Critical,BVA,Manual,Ngân,Chưa thực thi
-TC-T3-M3-010,FR-M3-02,T3,BVA ngưỡng 61lbs (Dog Full Groom): 61lbs thuộc bậc 61-78lbs,Critical,BVA,Manual,Ngân,Chưa thực thi
-TC-T3-M3-011,FR-M3-02,T3,BVA ngưỡng 78lbs (Dog Full Groom): 77lbs thuộc bậc 61-78lbs,Critical,BVA,Manual,Lộc,Chưa thực thi
-TC-T3-M3-012,FR-M3-02,T3,BVA ngưỡng 78lbs (Dog Full Groom): 78lbs thuộc bậc 61-78lbs,Critical,BVA,Manual,Lộc,Chưa thực thi
-TC-T3-M3-013,FR-M3-02,T3,BVA ngưỡng 79lbs (Dog Full Groom): 79lbs thuộc bậc 79-90lbs,Critical,BVA,Manual,Lộc,Chưa thực thi
-TC-T3-M3-014,FR-M3-02,T3,BVA ngưỡng 91lbs (Dog Full Groom): 91lbs thuộc bậc 91-100+lbs,Critical,BVA,Manual,Lộc,Chưa thực thi
-TC-T3-M4-001,FR-M4-01,T3,Form đặt lịch hiển thị đủ trường thông tin liên hệ và thú cưng,Critical,UC,Manual,Mạnh,Chưa thực thi
-TC-T3-M4-002,FR-M4-02,T3,Bỏ trống trường bắt buộc thì form không gửi được và báo đúng trường lỗi,Critical,EP,Manual,Mạnh,Chưa thực thi
-TC-T3-M4-003,FR-M4-03,T3,Nhập SĐT chứa chữ cái bị từ chối,Critical,EP,Manual,Mạnh,Chưa thực thi
-TC-T3-M4-004,FR-M4-03,T3,Nhập SĐT quá ngắn hoặc quá dài bị từ chối hoặc cảnh báo,High,EP,Manual,Mạnh,Chưa thực thi
-TC-T3-M4-005,FR-M4-11,T3,Luồng đặt lịch T3 không có bước chọn ngày — chỉ chọn khung giờ qua drawer Book Now,High,EP,Manual,Ngân,Chưa thực thi
-TC-T3-M4-006,FR-M4-07,T3,"Bước chọn dịch vụ hiển thị đầy đủ, không dịch vụ nào vô hình",Critical,UC,Manual,Ngân,Chưa thực thi
-TC-T3-M4-007,FR-M4-08,T3,Quay lại bước trước giữ nguyên lựa chọn đã làm,Critical,ST,Manual,Ngân,Chưa thực thi
-TC-T3-M4-008,FR-M4-11,T3,Nút Book Now hoạt động ngoài giờ mở cửa,High,UC,Manual,Ngân,Chưa thực thi
-TC-T3-M4-009,FR-M4-12,T3,Luồng đặt lịch không yêu cầu đăng nhập hoặc tạo tài khoản,Critical,UC,Manual,Lộc,Pass
-TC-T3-M4-010,FR-M4-07,T3,ST: nhảy thẳng sang bước xác nhận bị chặn,Critical,ST,Manual,Lộc,Chưa thực thi
-TC-T3-M4-011,FR-M4-08,T3,ST: quay lại rồi tiến tục vẫn hợp lệ,High,ST,Manual,Lộc,Pass
-TC-T3-M5-001,FR-M5-01,T3,Trang mô tả quy trình đặt lịch đến nhận thú cưng,High,UC,Manual,Mạnh,Chưa thực thi
-TC-T3-M5-002,FR-M5-04,T3,Nội dung hủy/đổi lịch và hoàn cọc tồn tại,High,UC,Manual,Mạnh,Chưa thực thi
-TC-T3-M5-003,FR-M5-06,T3,Chọn khung giờ ngoài giờ mở cửa bị từ chối kèm lý do,Critical,EP,Manual,Ngân,Chưa thực thi
-TC-T3-M5-004,FR-M5-06,T3,Chọn khung giờ nằm trong giờ mở cửa được chấp nhận,Critical,EP,Manual,Ngân,Chưa thực thi
-TC-T3-M5-005,FR-M5-07,T3,Trang hiển thị trạng thái Open/Closed và giờ mở cửa,Critical,UC,Manual,Lộc,Pass
-TC-T3-M7-001,FR-M7-04,T3,"Có ít nhất 2 kênh liên hệ hoạt động, liên kết mở đúng ứng dụng",Critical,UC,Manual,Mạnh,Chưa thực thi
-TC-T3-M7-002,FR-M7-03,T3,Chuyển đổi ngôn ngữ giữ ngữ cảnh trang,Low,UC,Manual,Lộc,Chưa thực thi
+TC-T3-M1-004,FR-M1-04,T3,Không có liên kết chết 404 trong menu và footer,Critical,Use case,Auto,Ngân,Pass
+TC-T3-M1-005,FR-M1-05,T3,Trang chủ không cuộn ngang ở màn hình 360px,High,Use case,Auto,Ngân,Pass
+TC-T3-M1-006,FR-M1-06,T3,"URL sai hiển thị trang lỗi thân thiện, không lộ stack trace",High,Use case,Manual,Lộc,Pass
+TC-T3-M1-007,FR-M1-04,T3,Liên kết ngoài trỏ ra ngoài mở ở tab mới,Low,UC,Manual,Lộc,Pass
+TC-T3-M2-001,FR-M2-01,T3,"Mỗi dịch vụ trong danh mục có đủ tên, mô tả, giá và thời lượng",Critical,UC,Manual,Mạnh,Pass
+TC-T3-M2-002,FR-M2-02,T3,Mỗi dịch vụ nêu rõ thành phần bao gồm,High,UC,Manual,Mạnh,Pass
+TC-T3-M2-007,FR-M2-01,T3,Số dịch vụ niêm yết khớp bảng giá mục 3 của SRS,High,UC,Manual,Ngân,Pass
+TC-T3-M2-008,FR-M2-06,T3,Danh mục phân biệt dịch vụ cho chó và dịch vụ cho mèo,Medium,UC,Manual,Ngân,Pass
+TC-T3-M2-009,FR-M2-07,T3,Không dịch vụ nào có nhãn tại nhà khi hệ thống không cung cấp dịch vụ tại nhà,Medium,UC,Manual,Lộc,Pass
+TC-T3-M3-001,FR-M3-01,T3,Bảng giá có đủ cột cho mọi bậc cân nặng và mọi dịch vụ,Critical,UC,Manual,Mạnh,Pass
+TC-T3-M3-002,FR-M3-02,T3,Tra bảng giá đúng cho dịch vụ đã chọn theo bậc lbs trong tên (ví dụ Dog Bath 20-50lbs),Critical,EP,Manual,Mạnh,Pass
+TC-T3-M3-003,FR-M3-02,T3,T3 tách nhóm dịch vụ Chó và Mèo: dịch vụ Mèo có bảng giá riêng,Critical,DT,Auto,Mạnh,Pass
+TC-T3-M3-004,FR-M3-05,T3,"Trang giá ghi rõ giá cuối xác nhận tại spa, giá hiển thị chỉ là dự kiến",Critical,UC,Manual,Mạnh,Fail
+TC-T3-M3-005,FR-M3-06,T3,"Bảng giá T3 nêu rõ các khoản phụ thu ngoại lệ (HOLIDAY FEE, Emergency fee)",Medium,UC,Manual,Mạnh,Pass
+TC-T3-M3-006,FR-M3-02,T3,BVA ngưỡng 20lbs (Dog Bath): 19lbs thuộc bậc 0-20lbs,Critical,BVA,Manual,Ngân,Pass
+TC-T3-M3-007,FR-M3-02,T3,BVA ngưỡng 20lbs (Dog Bath): 20lbs thuộc bậc 0-20lbs,Critical,BVA,Manual,Ngân,Pass
+TC-T3-M3-008,FR-M3-02,T3,BVA ngưỡng 20lbs (Dog Bath): 21lbs thuộc bậc 20-50lbs,Critical,BVA,Manual,Ngân,Pass
+TC-T3-M3-009,FR-M3-02,T3,BVA ngưỡng 61lbs (Dog Full Groom): 60lbs thuộc bậc 41-60lbs,Critical,BVA,Manual,Ngân,Pass
+TC-T3-M3-010,FR-M3-02,T3,BVA ngưỡng 61lbs (Dog Full Groom): 61lbs thuộc bậc 61-78lbs,Critical,BVA,Manual,Ngân,Pass
+TC-T3-M3-011,FR-M3-02,T3,BVA ngưỡng 78lbs (Dog Full Groom): 77lbs thuộc bậc 61-78lbs,Critical,BVA,Manual,Lộc,Blocked
+TC-T3-M3-012,FR-M3-02,T3,BVA ngưỡng 78lbs (Dog Full Groom): 78lbs thuộc bậc 61-78lbs,Critical,BVA,Manual,Lộc,Blocked
+TC-T3-M3-013,FR-M3-02,T3,BVA ngưỡng 79lbs (Dog Full Groom): 79lbs thuộc bậc 79-90lbs,Critical,BVA,Manual,Lộc,Blocked
+TC-T3-M3-014,FR-M3-02,T3,BVA ngưỡng 91lbs (Dog Full Groom): 91lbs thuộc bậc 91-100+lbs,Critical,BVA,Manual,Lộc,Blocked
+TC-T3-M4-001,FR-M4-01,T3,Drawer Book Now của T3 có trường SĐT bắt buộc và chọn quốc gia,Critical,UC,Manual,Mạnh,Pass
+TC-T3-M4-002,FR-M4-02,T3,Bỏ trống SĐT thì nút Login của T3 bị khoá và form không gửi được,Critical,EP,Manual,Mạnh,Pass
+TC-T3-M4-003,FR-M4-03,T3,Nhập SĐT chứa chữ cái vào drawer T3 thì nút Login bị khoá,Critical,EP,Manual,Mạnh,Pass
+TC-T3-M4-004,FR-M4-03,T3,Nhập SĐT 10 chữ số hợp lệ vào drawer T3 thì nút Login được kích hoạt,Critical,EP,Manual,Mạnh,Pass
+TC-T3-M4-005,FR-M4-11,T3,Nút Book Now của T3 hoạt động 24/7 và mở được drawer ngoài giờ mở cửa,High,EP,Manual,Ngân,Pass
+TC-T3-M4-006,FR-M4-13,T3,Đặt lịch T3 bằng SĐT chưa có hồ sơ bị từ chối kèm thông báo rõ ràng,Critical,EP,Manual,Ngân,Fail
+TC-T3-M4-007,FR-M4-13,T3,Trang chủ T3 hướng khách mới tới form tiếp nhận thay vì đặt lịch trực tiếp,High,UC,Manual,Ngân,Pass
+TC-T3-M4-008,FR-M4-11,T3,Nút Book Now của T3 không bị khoá ngoài khung giờ mở cửa 08:00-20:00,High,UC,Manual,Ngân,Pass
+TC-T3-M4-009,FR-M4-12,T3,T3 không có bước tạo tài khoản mới, chỉ tra cứu khách hiện có,Critical,UC,Manual,Lộc,Pass
+TC-T3-M4-010,FR-M4-07,T3,ST xóa ký tự cuối của SĐT đã nhập thì nút Login của T3 bị khoá lại,Critical,ST,Manual,Lộc,Fail
+TC-T3-M4-011,FR-M4-08,T3,ST sau khi nhập SĐT hợp lệ nút Login được bật và dẫn tới màn tra cứu khách hiện có,High,ST,Manual,Lộc,Pass
+TC-T3-M4-012,FR-M4-07,T3,"Bước chọn dịch vụ hiển thị đầy đủ, không dịch vụ nào vô hình",Critical,UC,Manual,Ngân,Pass
+TC-T3-M4-013,FR-M4-08,T3,Quay lại bước trước giữ nguyên lựa chọn đã làm,Critical,ST,Manual,Ngân,Blocked
+TC-T3-M4-014,FR-M4-07,T3,ST: nhảy thẳng sang bước xác nhận bị chặn,Critical,ST,Manual,Ngân,Chưa thực thi
+TC-T3-M4-015,FR-M4-08,T3,ST: quay lại rồi tiến tục vẫn hợp lệ,High,ST,Manual,Ngân,Pass
+TC-T3-M5-001,FR-M5-01,T3,Trang mô tả quy trình đặt lịch đến nhận thú cưng,High,UC,Manual,Mạnh,Pass
+TC-T3-M5-002,FR-M5-04,T3,Nội dung hủy/đổi lịch và hoàn cọc tồn tại,High,UC,Manual,Mạnh,Pass
+TC-T3-M5-003,FR-M5-06,T3,Chọn khung giờ ngoài giờ mở cửa bị từ chối kèm lý do,Critical,EP,Manual,Ngân,Fail
+TC-T3-M5-004,FR-M5-06,T3,Chọn khung giờ nằm trong giờ mở cửa được chấp nhận,Critical,EP,Manual,Ngân,Pass
+TC-T3-M5-005,FR-M5-07,T3,Trang hiển thị trạng thái Open/Closed và giờ mở cửa,Critical,UC,Manual,Lộc,Fail
+TC-T3-M7-001,FR-M7-04,T3,"Có ít nhất 2 kênh liên hệ hoạt động, liên kết mở đúng ứng dụng",Critical,UC,Manual,Mạnh,Pass
+TC-T3-M7-002,FR-M7-03,T3,Chuyển đổi ngôn ngữ giữ ngữ cảnh trang,Low,UC,Manual,Lộc,Blocked

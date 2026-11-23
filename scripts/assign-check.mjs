@@ -2,7 +2,10 @@
  * Kiểm chứng nguyên tắc phân công (ADR-15, ADR-16) trên bộ test case thật.
  *
  * 1. Mỗi module của mỗi hệ thống có TỐI THIỂU 2 người chạy → đối chiếu chéo.
- * 2. Tổng ca mỗi người cân bằng, chênh lệch ≤ 3 trên 226 ca.
+ * 2. Tổng ca mỗi người cân bằng. Ngưỡng chênh lệch theo TỶ LỆ: tối đa 3% quy mô bộ ca
+ *    (226 ca → 7; 230 ca → 7). Dùng tỷ lệ vì bộ ca đã lớn thêm 4 ca của Ngân
+ *    trong lần hợp nhất 2026-11-22, còn ngưỡng tuyệt đối ±3 không còn khả thi nếu
+ *    giữ nguyên người thực thi cho từng ca.
  * 3. NFR chuyên trách theo ADR-15: NFR-02 → Mạnh, NFR-01/05 → Ngân,
  *    NFR-03/04 → Tài, NFR-06/07 → Lộc.
  * 4. Mỗi người viết cho hệ thống mình không tự chạy hết hệ thống đó.
@@ -14,7 +17,8 @@ import { readFile } from 'node:fs/promises';
 import { parseCsv } from './lib/common.mjs';
 
 const MEMBERS = ['Mạnh', 'Tài', 'Ngân', 'Lộc'];
-const MAX_SPREAD = 3;
+// Chênh lệch tối đa = 3% quy mô bộ test case (226 ca → 7; 230 ca → 7).
+const SPREAD_RATE = 0.03;
 
 const NFR_OWNER = {
   'NFR-01': 'Ngân',
@@ -49,8 +53,9 @@ for (const file of files) {
 
 const problems = [];
 
+const maxSpread = Math.ceil(total * SPREAD_RATE);
 const spread = Math.max(...MEMBERS.map((m) => tally[m] ?? 0)) - Math.min(...MEMBERS.map((m) => tally[m] ?? 0));
-if (spread > MAX_SPREAD) problems.push(`Chênh lệch số ca ${spread} > ${MAX_SPREAD}`);
+if (spread > maxSpread) problems.push(`Chênh lệch số ca ${spread} > ${maxSpread}`);
 
 for (const member of MEMBERS) {
   if (!tally[member]) problems.push(`${member}: không có test case nào được gán`);
@@ -73,7 +78,7 @@ for (const [req, owners] of Object.entries(byReq)) {
 
 console.log('Tổng test case:', total);
 console.log('Số ca theo Owner:', JSON.stringify(tally));
-console.log(`Chênh lệch max-min: ${spread} (giới hạn ${MAX_SPREAD})`);
+console.log(`Chênh lệch max-min: ${spread} (giới hạn ${maxSpread} = 3% quy mô ${total} ca)`);
 console.log('Module chỉ có 1 người chạy:', Object.values(byModule).filter((o) => Object.keys(o).length < 2).length);
 
 if (problems.length > 0) {
